@@ -1,0 +1,17 @@
+✔ archive-v1: valid pack, complete four-station playthrough (3.00761ms)
+✔ harbor-v1: valid pack, complete four-station playthrough (0.447003ms)
+✔ numeric model: independent hand calculation, review changes both economics and quality (0.237317ms)
+✔ material rejection: missing, unrelated, malformed, wrong source and impossible parameters (1.273318ms)
+✔ same world, changed content and answer keys: second pack actually changes transfer outcome (0.273973ms)
+✔ broken storage safely starts fresh; wrong pack cannot reuse progress (0.29186ms)
+✔ imported material changes actual task state, not only title (0.296777ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.687928
+PASS: startup, NPCs, both complete UI journeys, workflow reordering, slider, transfer, invalid/valid import, reset.
+LIMIT: simulated DOM only; no actual browser rendering, keyboard focus, downloads or mobile layout verified.

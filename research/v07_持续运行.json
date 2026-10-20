@@ -1,0 +1,55 @@
+{
+  "started": "2026-10-19T21:59:35.208Z",
+  "targetSeconds": 10800,
+  "elapsedSeconds": 4095,
+  "cycles": 410,
+  "operations": 34440,
+  "restores": 3280,
+  "versions": [
+    {
+      "sha": "75e6ed544bb5bfa4e76167d6ad9c0382ef0d5017dbc22a5f8f6a720618ea5b2d",
+      "firstSeen": "2026-10-19T21:59:35.232Z"
+    },
+    {
+      "sha": "2a65537ed027d55da51db575b19d9411da3a27fef36e3e7bed01ecf9b299a387",
+      "firstSeen": "2026-10-19T22:03:35.426Z"
+    },
+    {
+      "sha": "1ef073d4ab785819c331aa5431c0af7ff6258bfecec2d09a4b6d13a2f85ee0ff",
+      "firstSeen": "2026-10-19T22:12:45.857Z"
+    },
+    {
+      "sha": "6145202abe956320007f9353e422db12d538a2a3f56c4217f742ec5cd33f94ff",
+      "firstSeen": "2026-10-19T22:13:05.877Z"
+    },
+    {
+      "sha": "7ac609612e2015c8de37a01a44ff9d9c1c8bbcf35604277e241a0b9d63c173f9",
+      "firstSeen": "2026-10-19T22:15:46.003Z"
+    },
+    {
+      "sha": "43f3929a62f6617b1c5500de7f228db43c2186ad01cb2e7b5de0a9ff21d07df8",
+      "firstSeen": "2026-10-19T22:29:06.974Z"
+    },
+    {
+      "sha": "96522500516ad17e1212a28ec165bc272a7638adf9887ed4a7b503d9fffdca8c",
+      "firstSeen": "2026-10-19T22:33:07.290Z"
+    },
+    {
+      "sha": "3e87adaee4c6548342e13b2b6e93e5477d699835cfdb986fda510893bc5f4e72",
+      "firstSeen": "2026-10-19T23:05:29.951Z"
+    },
+    {
+      "sha": "de6ce0bfac3862b90eed574fff32e9e285682846dbac810b4564f4836152f29d",
+      "firstSeen": "2026-10-19T23:07:10.098Z"
+    },
+    {
+      "sha": "2f5417c0b9e8891e4a1f340d71b9a4de7f932d3864f40d884b3924fea6324038",
+      "firstSeen": "2026-10-19T23:07:30.117Z"
+    }
+  ],
+  "failures": [],
+  "capacity": [],
+  "rssPeak": 68898816,
+  "finished": false,
+  "environment": "Node simulated learning engine and JSON persistence; not browser/device QA"
+}

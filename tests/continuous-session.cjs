@@ -1,0 +1,16 @@
+// Wall-clock burn-in: replays mixed learning/storage operations while the project evolves.
+// Not a real browser test and not a learning-effectiveness test.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),duration=Number(process.env.TOWN_SOAK_SECONDS||10800)*1000,started=Date.now(),out=path.join(root,'research/v07_持续运行.json');
+const report={started:new Date(started).toISOString(),targetSeconds:duration/1000,elapsedSeconds:0,cycles:0,operations:0,restores:0,versions:[],failures:[],capacity:[],rssPeak:0,finished:false,environment:'Node simulated learning engine and JSON persistence; not browser/device QA'};
+let stop=false;process.on('SIGTERM',()=>stop=true);process.on('SIGINT',()=>stop=true);
+function write(){report.elapsedSeconds=Math.round((Date.now()-started)/1000);report.rssPeak=Math.max(report.rssPeak,process.memoryUsage().rss);fs.writeFileSync(out,JSON.stringify(report,null,2));}
+async function tick(){if(stop||Date.now()-started>=duration){report.finished=!stop;report.ended=new Date().toISOString();write();console.log(JSON.stringify({done:true,cycles:report.cycles,operations:report.operations,failures:report.failures.length,seconds:report.elapsedSeconds}));return;}
+ try{const enginePath=path.join(root,'dist/learn-engine.js'),parserPath=path.join(root,'dist/learn-parser.js'),sha=crypto.createHash('sha256').update(fs.readFileSync(enginePath)).digest('hex');delete require.cache[enginePath];delete require.cache[parserPath];const L=require(enginePath),P=require(parserPath);let s=L.fresh((report.cycles*1777+83)>>>0),now=Date.now();
+ const draft=P.parse('问题：怎样核对知识来源？\n答案：核对原文位置与适用条件。\n错误选项：只看封面|完全忽略原文\n\n问题：什么是试点基线？\n答案：用来比较使用前后表现的测量记录。\n错误选项：营销口号|任意承诺','持续运行样本.md');L.addBank(s,draft,now);L.start(s,now);
+ for(let batch=0;batch<8;batch++){const r=L.current(s);for(const i of [...r.items]){if(i.valid&&batch%3===0){const bad=L.collect(s,i.id,false,now);assert.ok(!bad.ok);const e=s.bin.find(x=>x.recover&&x.item===i.id&&x.run===r.id);assert.ok(e);assert.ok(L.recover(s,e.id).ok);report.operations+=2;}assert.ok(L.collect(s,i.id,i.valid,now).ok);report.operations++;}
+ const ids=[...r.cards];for(const id of ids){const item=r.items.find(x=>x.card===id&&x.valid);assert.ok(L.archive(s,item.id,now).ok);report.operations++;}const fin=L.finish(s,now);assert.ok(fin);assert.equal(L.finish(s,now),null);report.operations+=2;const snapshot=JSON.stringify(s),restored=L.restore(snapshot);assert.ok(restored,'valid progress failed restore');s=restored;report.restores++;now+=batch%2?86400000:60000;L.start(s,now,true);report.operations++;}
+ if(!report.versions.some(x=>x.sha===sha))report.versions.push({sha,firstSeen:new Date().toISOString()});report.cycles++;
+ }catch(e){report.failures.push({at:new Date().toISOString(),message:e.stack});if(report.failures.length>200)report.failures=report.failures.slice(-200);}
+ write();if(report.cycles%10===0)console.log(JSON.stringify({minutes:Math.floor(report.elapsedSeconds/60),cycles:report.cycles,operations:report.operations,failures:report.failures.length,rssMiB:Math.round(process.memoryUsage().rss/1048576)}));setTimeout(tick,10000);}
+write();tick();

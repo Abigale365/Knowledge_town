@@ -1,0 +1,55 @@
+{
+  "started": "2026-10-19T22:16:29.802Z",
+  "targetSeconds": 10020,
+  "cycles": 308,
+  "quests": 14784,
+  "combinations": 308,
+  "restores": 2464,
+  "failures": [
+    {
+      "cycle": 0,
+      "at": "2026-10-19T22:16:29.819Z",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at cycle (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:4:1653)\n    at loop (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:5:66)\n    at Object.<anonymous> (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:5:797)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47"
+    },
+    {
+      "cycle": 1,
+      "at": "2026-10-19T22:16:39.831Z",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at cycle (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:4:1653)\n    at loop (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:5:66)"
+    },
+    {
+      "cycle": 2,
+      "at": "2026-10-19T22:16:49.851Z",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at cycle (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:4:1653)\n    at loop (/workspace/scratch/92915147adea/knowledge-quest/tests/continuous-venture.cjs:5:66)"
+    }
+  ],
+  "versions": [
+    {
+      "sha": "015e87cae36b96a5d3ccb716a7c2aec230e9272ccc8ef74feb606bdb064e1244",
+      "firstSeen": "2026-10-19T22:16:29.805Z"
+    },
+    {
+      "sha": "f3ef19b6b5e1af38c87af9cce19d1333e6f80c0d24f9e8c338319dbde271b971",
+      "firstSeen": "2026-10-19T22:16:59.858Z"
+    },
+    {
+      "sha": "dcf868effd095be3b891d80bf541af419040e1ea619e1e1b7901d22fab67ecee",
+      "firstSeen": "2026-10-19T22:20:50.170Z"
+    },
+    {
+      "sha": "d89e61f3d6a26e14571a64dc27ccec4d4a4499657614a5e50f038815a8939344",
+      "firstSeen": "2026-10-19T22:25:00.497Z"
+    },
+    {
+      "sha": "962987fc125f364aa13c2de3de857ce653003832cb881e20f29328bc73806a5e",
+      "firstSeen": "2026-10-19T22:27:10.673Z"
+    },
+    {
+      "sha": "ba561ef0c311580da1cda9a0dae1754e614fb7280fea7b61914b744060d84ba7",
+      "firstSeen": "2026-10-19T22:39:02.053Z"
+    }
+  ],
+  "rssPeak": 80158720,
+  "finished": false,
+  "environment": "Node business-state soak, randomized sequences; not a browser/device test",
+  "elapsedSeconds": 3075
+}

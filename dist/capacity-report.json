@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-10-19T23:12:13.159Z",
+  "questions": 1000,
+  "quests": 1000,
+  "modeCounts": {
+    "scenario": 166,
+    "order": 167,
+    "sort": 167,
+    "cloze": 166,
+    "numeric": 167,
+    "multi": 167
+  },
+  "archived": 1000,
+  "batches": 167,
+  "restored": true,
+  "bytes": 700928,
+  "elapsedMs": 169,
+  "environment": "Node v24.19.0 / linux x64",
+  "scope": "合成材料的数据与业务逻辑测试；不包含真实浏览器、手机渲染或任意长文本性能。"
+}

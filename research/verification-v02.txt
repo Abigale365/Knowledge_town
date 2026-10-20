@@ -1,0 +1,22 @@
+✔ archive-cn-v2: valid pack, complete four-station playthrough (3.202564ms)
+✔ harbor-cn-v2: valid pack, complete four-station playthrough (0.401715ms)
+✔ numeric model: independent hand calculation, review changes both economics and quality (0.189125ms)
+✔ material rejection: missing, unrelated, malformed, wrong source and impossible parameters (0.934858ms)
+✔ same world, changed content and answer keys: second pack actually changes transfer outcome (0.295395ms)
+✔ broken storage safely starts fresh; wrong pack cannot reuse progress (0.215926ms)
+✔ imported material changes actual task state, not only title (0.405842ms)
+✔ reject impossible imported scenarios before a learner gets trapped (0.330358ms)
+✔ cannot unlock final reward by skipping earlier tasks or corrupting the save order (0.342796ms)
+✔ default player-facing copy and import errors are Chinese (0.415265ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.235733
+PASS: Chinese startup, locked path, both NPCs, both complete map→task→map journeys, close/resume, slider continuity, final badge, dialog exclusivity, invalid/valid import, reset, cancelled movement, image fallback.
+LIMIT: DOM adapter; not a real browser layout/keyboard/touch test.
+PASS: static IDs/assets, Chinese accessible labels, map-label/HUD bounds, selected text contrasts.
+LIMIT: geometry and contrast calculations do not replace browser rendering or device QA.

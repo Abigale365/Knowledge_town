@@ -1,0 +1,30 @@
+✔ archive-cn-v3: valid pack, complete four-station playthrough (2.713911ms)
+✔ harbor-cn-v3: valid pack, complete four-station playthrough (0.353692ms)
+✔ numeric model: independent hand calculation, review changes both economics and quality (0.179951ms)
+✔ material rejection: missing, unrelated, malformed, wrong source and impossible parameters (0.675836ms)
+✔ same world, changed content and answer keys: second pack actually changes transfer outcome (0.194252ms)
+✔ broken storage safely starts fresh; wrong pack cannot reuse progress (0.230536ms)
+✔ imported material changes actual task state, not only title (0.227412ms)
+✔ reject impossible imported scenarios before a learner gets trapped (0.290276ms)
+✔ cannot unlock final reward by skipping earlier tasks or corrupting the save order (0.276997ms)
+✔ default player-facing copy and import errors are Chinese (0.618861ms)
+✔ investigation gates cannot be bypassed by selecting a correct tool alone (1.778435ms)
+✔ wrong letter choice is recoverable, keeps evidence and preserves first performance (0.695696ms)
+✔ rooms require previous completion; arbitrary unrelated objects cannot grant evidence (0.148384ms)
+✔ early exploration does not complete the machine; all necessary investigation remains required (0.358759ms)
+✔ survey, quality record and apparatus are independently required (0.258639ms)
+✔ malformed journey safely resets, valid room/evidence progress survives serialization (0.403256ms)
+✔ tutorial state does not award formal experience; event history is bounded (0.551459ms)
+✔ a first letter failure cannot turn into an independent first-pass bonus (0.280041ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113.409999
+PASS: first launch, four-step hands-on tutorial, tutorial mistakes without score, map doors, four distinct room images, evidence gates, per-letter consequences, physical step swap, permission failure/repair, live experiment, transfer failure/repair, ending, replay, progress resume, optional skip, cancelled travel, content import, image failure and reset.
+LIMIT: simulated DOM and event handlers, not a real browser/device interaction test.
+PASS: unique static IDs, required assets, Chinese accessible labels, five independent 3:2 scene images, nonoverlapping machine sockets, selected text contrast.
+LIMIT: static inspection is not browser rendering or device QA.
