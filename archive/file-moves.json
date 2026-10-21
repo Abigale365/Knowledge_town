@@ -1,0 +1,233 @@
+{
+  "purpose": "区分当前维护内容与历史资料；文件保留，历史脚本不作为当前测试",
+  "moves": [
+    {
+      "from": "COURSE_SETUP.md",
+      "to": "docs/GAME_GUIDE.md",
+      "reason": "当前使用说明"
+    },
+    {
+      "from": "START_HERE_上传与运行说明.md",
+      "to": "archive/history/UPLOAD_AND_RUN.md",
+      "reason": "被当前 README 与使用说明取代"
+    },
+    {
+      "from": "research/build-aib-pack.py",
+      "to": "scripts/build-aib-pack.py",
+      "reason": "当前题库构建脚本"
+    },
+    {
+      "from": "research/build-chapter-course.py",
+      "to": "scripts/build-chapter-course.py",
+      "reason": "当前课程构建脚本"
+    },
+    {
+      "from": "research/aib-concepts.tsv",
+      "to": "content/aib-concepts.tsv",
+      "reason": "当前题库原料"
+    },
+    {
+      "from": "research/sources/AI_Business_Strategist_Outline.md",
+      "to": "content/sources/AI_Business_Strategist_Outline.md",
+      "reason": "课程来源资料"
+    },
+    {
+      "from": "research/sources/AIB_C01_Collected_Study_Materials.md",
+      "to": "content/sources/AIB_C01_Collected_Study_Materials.md",
+      "reason": "课程来源资料"
+    },
+    {
+      "from": "research/scene-art-prompts.md",
+      "to": "docs/art/scene-art-prompts.md",
+      "reason": "当前场景美术提示词"
+    },
+    {
+      "from": "research/v06_美术提示词.json",
+      "to": "docs/art/world-art-prompts.json",
+      "reason": "保留的主场景美术来源"
+    },
+    {
+      "from": "research/迭代自检记录.md",
+      "to": "archive/plans/迭代自检记录.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/知识副本_落地研究与Demo说明.md",
+      "to": "archive/plans/知识副本_落地研究与Demo说明.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/知识副本_执行流程.md",
+      "to": "archive/plans/知识副本_执行流程.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v03_玩家体验与迭代记录.md",
+      "to": "archive/plans/v03_玩家体验与迭代记录.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v04_寻物玩法计划.md",
+      "to": "archive/plans/v04_寻物玩法计划.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v05_八站寻物冒险.md",
+      "to": "archive/plans/v05_八站寻物冒险.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v06_持续学习小镇.md",
+      "to": "archive/plans/v06_持续学习小镇.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_1000题容量测试.json",
+      "to": "archive/reports/v07_1000题容量测试.json",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_材料到玩法编排.md",
+      "to": "archive/plans/v07_材料到玩法编排.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_持续运行.json",
+      "to": "archive/reports/v07_持续运行.json",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_迭代检查记录.md",
+      "to": "archive/plans/v07_迭代检查记录.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_互动持续运行.json",
+      "to": "archive/reports/v07_互动持续运行.json",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_界面流程持续运行.json",
+      "to": "archive/reports/v07_界面流程持续运行.json",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v07_三小时迭代计划.md",
+      "to": "archive/plans/v07_三小时迭代计划.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v08_续跑计划.md",
+      "to": "archive/plans/v08_续跑计划.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v09_考试内容与画面迭代.md",
+      "to": "archive/plans/v09_考试内容与画面迭代.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/v10_六小时迭代记录.md",
+      "to": "archive/plans/v10_六小时迭代记录.md",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/verification-v02.txt",
+      "to": "archive/reports/verification-v02.txt",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/verification-v03.txt",
+      "to": "archive/reports/verification-v03.txt",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "research/verification.txt",
+      "to": "archive/reports/verification.txt",
+      "reason": "历史计划或历史验证结果，不属于当前运行代码"
+    },
+    {
+      "from": "dist/world-v06.html",
+      "to": "archive/prototypes/world-v06.html",
+      "reason": "v0.6 首页快照，当前首页与经典游戏均另有正式入口"
+    },
+    {
+      "from": "tests/continuous-session.cjs",
+      "to": "archive/experiments/continuous-session.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "tests/continuous-ui.cjs",
+      "to": "archive/experiments/continuous-ui.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "tests/continuous-venture.cjs",
+      "to": "archive/experiments/continuous-venture.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "tests/monitor-soaks.cjs",
+      "to": "archive/experiments/monitor-soaks.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "tests/long-session-v08.cjs",
+      "to": "archive/experiments/long-session-v08.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "tests/three-hour-review.cjs",
+      "to": "archive/experiments/three-hour-review.cjs.txt",
+      "reason": "旧版定时长跑与监控脚本，保留原文供查阅，不纳入当前测试命令"
+    },
+    {
+      "from": "research/runtime/v07_互动持续运行.json",
+      "to": "archive/reports/runtime/v07_互动持续运行.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v07_持续运行.json",
+      "to": "archive/reports/runtime/v07_持续运行.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v07_界面流程持续运行.json",
+      "to": "archive/reports/runtime/v07_界面流程持续运行.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v08_三小时续跑.json",
+      "to": "archive/reports/runtime/v08_三小时续跑.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v08_补足运行.json",
+      "to": "archive/reports/runtime/v08_补足运行.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v08_补跑存档检查点.json",
+      "to": "artifacts/runtime/legacy-v08-checkpoint.json",
+      "reason": "旧测试状态检查点不再入库，本机副本保留",
+      "mode": "local-artifact-untracked"
+    },
+    {
+      "from": "research/runtime/v08_补跑长期存档流程.json",
+      "to": "archive/reports/runtime/v08_补跑长期存档流程.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    },
+    {
+      "from": "research/runtime/v08_长期存档流程.json",
+      "to": "archive/reports/runtime/v08_长期存档流程.json",
+      "reason": "旧公开运行摘要归档，本机旧输出保持原位并停止跟踪",
+      "mode": "archive-copy-and-untrack"
+    }
+  ]
+}

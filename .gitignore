@@ -4,3 +4,7 @@ research/runtime/
 !.env.example
 node_modules/
 *.log
+artifacts/
+__pycache__/
+*.pyc
+research/*.png

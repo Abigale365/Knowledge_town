@@ -1,7 +1,7 @@
 """Build a reading-first course from the user's outline plus explicit authored teaching notes."""
 import json,re,pathlib
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-outline=(ROOT/'research/sources/AI_Business_Strategist_Outline.md').read_text(encoding='utf-8')
+outline=(ROOT/'content/sources/AI_Business_Strategist_Outline.md').read_text(encoding='utf-8')
 skills=dict(re.findall(r'技能\s+(\d+\.\d+\.\d+)：\s*(.+)',outline))
 tasks=dict(re.findall(r'^## 任务 (\d+\.\d+)：\s*(.+)',outline,re.M))
 # These are original explanations, not quotations from an exam provider.

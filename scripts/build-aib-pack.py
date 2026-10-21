@@ -1,8 +1,8 @@
 import json,re,pathlib,collections
 root=pathlib.Path(__file__).resolve().parents[1]
-source=(root/'research/sources/AIB_C01_Collected_Study_Materials.md').read_text()
+source=(root/'content/sources/AIB_C01_Collected_Study_Materials.md').read_text(encoding='utf-8')
 units=[]
-for line in (root/'research/aib-concepts.tsv').read_text().splitlines():
+for line in (root/'content/aib-concepts.tsv').read_text(encoding='utf-8').splitlines():
  task,term,q,a,w1,w2,why=line.split('|');units.append(dict(task=task,term=term,q=q,a=a,wrong=[w1,w2],why=why))
 titles={'1.1':'AI概念与数据','1.2':'选择合适方案','1.3':'生成式AI技术','2.1':'战略与项目取舍','2.2':'价值与收益','2.3':'竞争与商业模式','3.1':'负责任的决策','3.2':'治理与访问权限','3.3':'风险处置','4.1':'组织准备度','4.2':'数据与基础设施','4.3':'团队与变革','4.4':'从试点到规模化'}
 sections={k:re.search(r'### '+re.escape(k)+r' .*?(?=\n### |\n## |\Z)',source,re.S).group(0) for k in ['7.1','7.2','7.3','7.4','7.5','7.6','7.7']}
