@@ -24,7 +24,8 @@ renderLoot=function(){
   el.draggable=true;bindDraggable(el,{scenePiece:q.id,key:piece.key});
  });
  const reserved=new Set(q.pieces.map(piece=>pieceAppearance(q,piece).location.id));
- document.querySelectorAll('[data-object]').forEach(el=>{if(reserved.has(el.dataset.object)){el.hidden=true;}});
+ const answerArt=new Set(q.pieces.map(piece=>pieceAppearance(q,piece).art));
+ document.querySelectorAll('[data-object]').forEach(el=>{const o=CAT.objects(state.zone).find(o=>o.id===el.dataset.object);if(typeof currentCourse==='function'&&currentCourse()){if(reserved.has(el.dataset.object)||o&&answerArt.has(o.art??A.types[o.type]?.[1]??0)){el.hidden=true;el.remove();}}else if(reserved.has(el.dataset.object))el.hidden=true;});
  const st=document.querySelectorAll('[data-station]');
  st.forEach(el=>{if(el.dataset.station===q.station){el.classList.add('learning-event');el.title=q.question;}});
 };

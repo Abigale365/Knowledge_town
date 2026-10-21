@@ -1,6 +1,6 @@
 {
   "name": "knowledge-town",
-  "version": "0.14.0",
+  "version": "0.14.1",
   "private": true,
   "description": "Reading-first chapter adventures with a configurable local course-generation API",
   "scripts": {
