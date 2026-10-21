@@ -1,0 +1,79 @@
+{
+  "ml": {
+    "title": "AWS Machine Learning Lens",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html"
+  },
+  "agent": {
+    "title": "Amazon Bedrock agent action groups",
+    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+  },
+  "monitor": {
+    "title": "AWS ML lifecycle best practices",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/best-practices-by-ml-lifecycle-phase.html"
+  },
+  "govern": {
+    "title": "NIST AI RMF Core — GOVERN",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+  },
+  "prompt": {
+    "title": "Amazon Bedrock prompt engineering",
+    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-prompt-engineering.html"
+  },
+  "context": {
+    "title": "Amazon Bedrock token accounting",
+    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-burndown.html"
+  },
+  "rag": {
+    "title": "AWS RAG writing practices",
+    "url": "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+  },
+  "strategy": {
+    "title": "Microsoft Cloud Adoption Framework — AI strategy",
+    "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+  },
+  "operations": {
+    "title": "AWS GenAI lifecycle operational excellence",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+  },
+  "value": {
+    "title": "AWS Path-to-Value framework",
+    "url": "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+  },
+  "finance": {
+    "title": "用户提供的学习伴读资料 §7.4 财务推理",
+    "url": "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html",
+    "local": "content/sources/AIB_C01_Collected_Study_Materials.md"
+  },
+  "trust": {
+    "title": "AWS Responsible AI Lens — dimensions",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+  },
+  "risk": {
+    "title": "NIST AI RMF — MAP, MEASURE, MANAGE",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+  },
+  "responsible": {
+    "title": "AWS Responsible AI design principles",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/design-principles.html"
+  },
+  "maturity": {
+    "title": "AWS generative AI maturity model",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+  },
+  "data": {
+    "title": "AWS data strategy and permissions",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+  },
+  "people": {
+    "title": "Microsoft organizational and people readiness",
+    "url": "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+  },
+  "journey": {
+    "title": "AWS generative AI adoption stages",
+    "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+  },
+  "platform": {
+    "title": "AWS enterprise-ready generative AI platform",
+    "url": "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+  }
+}

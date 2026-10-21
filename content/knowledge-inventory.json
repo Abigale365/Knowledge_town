@@ -1,5 +1,6 @@
 {
-  "version": 2,
+  "version": 3,
+  "scope": "用户提供的四章大纲及58项技能；不宣称穷尽所有官方考点",
   "units": [
     {
       "id": "1.1-lesson-6",
@@ -9,6 +10,7 @@
       "term": "人工智能 AI",
       "category": "AI领域与学习方法",
       "definition": "人工智能是较广的领域，关注让系统执行与智能有关的任务。机器学习是其中一类方法，并非所有自动化都需要机器学习。",
+      "example": "清晰、固定的审批条件可直接编写规则，无需为了使用AI而换成模型。",
       "en": {
         "title": "Artificial intelligence (AI)",
         "body": "A field concerned with systems performing tasks such as perception, reasoning and decision making. Machine learning is one approach within AI.",
@@ -32,6 +34,7 @@
       "term": "机器学习 ML",
       "category": "AI领域与学习方法",
       "definition": "机器学习利用数据学习模式，而不是为所有情况逐一编写规则。数据、目标和验证方式共同影响模型是否适用。",
+      "example": "通过历史交易学习异常模式，与人工写定额阈值规则不同。",
       "en": {
         "title": "Machine learning (ML)",
         "body": "Learning patterns from data rather than explicitly coding a rule for every case; evaluate against a defined task on unseen data.",
@@ -55,6 +58,7 @@
       "term": "深度学习 DL",
       "category": "AI领域与学习方法",
       "definition": "使用多层神经网络学习数据表示的机器学习方法；它属于机器学习，而不是与AI并列的领域。",
+      "example": "识别商品照片中的缺陷。",
       "en": {
         "title": "Deep learning",
         "body": "Machine learning using multilayer neural networks to learn representations.",
@@ -78,6 +82,7 @@
       "term": "神经网络",
       "category": "AI领域与学习方法",
       "definition": "由相连的计算节点和可学习权重组成的模型，通过层间计算处理输入。",
+      "example": "学习交易特征与欺诈风险的关系。",
       "en": {
         "title": "Neural network",
         "body": "A model of connected computational nodes with learnable weights.",
@@ -101,6 +106,7 @@
       "term": "自然语言处理 NLP",
       "category": "AI领域与学习方法",
       "definition": "使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。",
+      "example": "从工单文字中识别客户诉求。",
       "en": {
         "title": "Natural language processing (NLP)",
         "body": "AI methods for processing human language, including classification, extraction and translation.",
@@ -124,6 +130,7 @@
       "term": "计算机视觉 CV",
       "category": "AI领域与学习方法",
       "definition": "从图像或视频中提取和解释信息的AI领域。",
+      "example": "从产线照片中定位瑕疵。",
       "en": {
         "title": "Computer vision",
         "body": "AI methods for extracting and interpreting information from images or video.",
@@ -147,6 +154,7 @@
       "term": "生成式人工智能 GenAI",
       "category": "AI领域与学习方法",
       "definition": "生成式AI能产生文本、图像等内容。语言流畅并不等于事实正确，业务使用需要核对事实、适用性与复核成本。",
+      "example": "起草访谈摘要之后，由负责人对照原文检查遗漏和误解。",
       "en": {
         "title": "Generative AI (GenAI)",
         "body": "AI that generates content such as text or images. Fluent output may still contain unsupported claims.",
@@ -170,6 +178,7 @@
       "term": "算法 Algorithm",
       "category": "模型与运行机制",
       "definition": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+      "example": "按订单金额排序是一种算法；从订单记录学习需求规律则会得到预测模型。",
       "en": {
         "title": "Algorithm",
         "body": "An executable sequence of steps for solving a task; a training algorithm produces a model rather than being that model.",
@@ -193,6 +202,7 @@
       "term": "模型 Model",
       "category": "模型与运行机制",
       "definition": "模型是用于将输入映射为输出的表示。在机器学习中，模型的参数通过训练从数据中学习。它的输出需要根据任务目标验证。",
+      "example": "将历史销量与日期输入需求模型，得到下一周销量估计。",
       "en": {
         "title": "Model",
         "body": "A representation that maps inputs to outputs. In machine learning, training adjusts its parameters using data.",
@@ -216,6 +226,7 @@
       "term": "训练 Training",
       "category": "模型与运行机制",
       "definition": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+      "example": "用过去的订单记录学习需求规律，之后用未参与训练的时段检验。",
       "en": {
         "title": "Training",
         "body": "The process of adjusting model parameters using examples to learn patterns. Training performance alone does not establish generalization.",
@@ -239,6 +250,7 @@
       "term": "推理 Inference",
       "category": "模型与运行机制",
       "definition": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+      "example": "上线的客服模型为一张新工单起草回复，属于推理。",
       "en": {
         "title": "Inference",
         "body": "Using an already trained model on an input to produce an output, normally without updating its parameters.",
@@ -262,6 +274,7 @@
       "term": "预测 Prediction",
       "category": "模型与运行机制",
       "definition": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。",
+      "example": "需求高估可能造成库存积压；低估则可能造成缺货。",
       "en": {
         "title": "Prediction",
         "body": "An estimate of an unknown outcome from input information and learned patterns; assess both error and its business consequences.",
@@ -285,6 +298,7 @@
       "term": "监督学习",
       "category": "AI领域与学习方法",
       "definition": "使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。",
+      "example": "利用已标记是否欺诈的交易训练分类器。",
       "en": {
         "title": "Supervised learning",
         "body": "Learning an input-to-target mapping from labeled examples, for classification or regression.",
@@ -308,6 +322,7 @@
       "term": "无监督学习",
       "category": "AI领域与学习方法",
       "definition": "从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。",
+      "example": "按购买特征形成客户分群。",
       "en": {
         "title": "Unsupervised learning",
         "body": "Finding structure or patterns in data without target labels, such as clustering similar cases.",
@@ -331,6 +346,7 @@
       "term": "强化学习",
       "category": "AI领域与学习方法",
       "definition": "智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。",
+      "example": "在模拟环境中学习库存补货策略。",
       "en": {
         "title": "Reinforcement learning",
         "body": "Learning an action policy through interaction and reward feedback to improve cumulative return.",
@@ -354,6 +370,7 @@
       "term": "结构化数据",
       "category": "数据形态",
       "definition": "结构化数据有相对明确的字段或模式，便于按统一口径查询、统计和校验。结构清晰不等于内容必然准确。",
+      "example": "订单表中的日期、商品编号、数量，是明确的字段。",
       "en": {
         "title": "Structured data",
         "body": "Data organized with a defined schema or fields. A clear structure does not guarantee accurate values.",
@@ -374,6 +391,7 @@
       "term": "非结构化数据",
       "category": "数据形态",
       "definition": "非结构化数据通常不像关系表那样具有固定字段结构，常见形式有正文、图片和录音。使用前可能需要提取与组织信息。",
+      "example": "客户录音可先转写，再提取诉求；不能把转写过程当成事实核验。",
       "en": {
         "title": "Unstructured data",
         "body": "Information without the fixed field structure of a conventional table, such as prose, images and audio.",
@@ -394,6 +412,7 @@
       "term": "数据质量",
       "category": "数据质量",
       "definition": "数据质量要结合用途检查准确性、完整性、一致性、时效性及相关性。更大的模型无法自动补救所有数据缺陷。",
+      "example": "销售数据存在重复订单，先调查重复来源再比较模型方案。",
       "en": {
         "title": "Data quality",
         "body": "The fitness of data for its intended use, including accuracy, completeness, consistency, timeliness and relevance.",
@@ -414,6 +433,7 @@
       "term": "历史数据与泛化",
       "category": "验证与泛化",
       "definition": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。",
+      "example": "用过去节日销量训练的模型，遇到新的促销方式时仍需监测。",
       "en": {
         "title": "Generalization and historical data",
         "body": "Generalization is useful performance on unseen cases; historical conditions may differ from deployment conditions.",
@@ -437,6 +457,7 @@
       "term": "训练集与验证",
       "category": "验证与泛化",
       "definition": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。",
+      "example": "不要将上线测试工单的标准答案直接放进待评估模型的输入。",
       "en": {
         "title": "Training, validation and test sets",
         "body": "Training fits parameters, validation supports development choices, and a held-out test estimates final performance. Leakage makes evaluation misleading.",
@@ -460,6 +481,7 @@
       "term": "AI框架与统一词汇",
       "category": "词汇与标准",
       "definition": "团队应先统一算法、模型、训练和推理等词的含义，再讨论方案。标准或框架可以帮助组织概念，但不能当作准确率保证。",
+      "example": "业务说的“模型上线”与技术说的“模型训练完成”不是同一件事。",
       "en": {
         "title": "Shared AI vocabulary",
         "body": "Consistent definitions help teams distinguish models, algorithms, training and inference when making decisions.",
@@ -480,6 +502,7 @@
       "term": "ISO框架意识",
       "category": "词汇与标准",
       "definition": "按本课程大纲，需了解ISO/IEC 23053与ISO/IEC 42001等框架。前者关注使用机器学习的AI系统框架，后者关注组织AI管理体系；具体要求应查正式标准。",
+      "example": "讨论组织责任和管理流程时，不把管理体系标准解释为模型零错误认证。",
       "en": {
         "title": "AI standards and management frameworks",
         "body": "ISO/IEC 23053 addresses frameworks for AI systems using ML; ISO/IEC 42001 addresses an organizational AI management system. Neither guarantees zero model errors.",
@@ -501,14 +524,15 @@
       "task": "1.2",
       "skill": "1.2.1",
       "term": "规则还是AI",
-      "category": "确定并选择适当的 AI 解决方案类型",
+      "category": "全节概览",
       "definition": "条件明确且稳定时，优先考虑确定性规则。模式复杂、规则难穷举时再评估AI；比较价值、错误后果和维护成本。",
+      "example": "报销超过明确金额需审批，可以先采用固定规则。",
       "en": {
         "title": "Rules or AI",
         "body": "Prefer explicit rules for stable, well-defined conditions; assess AI for complex patterns, accounting for value, errors and maintenance.",
         "example": "A fixed expense threshold can use a deterministic rule.",
         "quote": "Learning objective 1.2.1 · Choosing and operating AI solutions",
-        "category": "Choosing and operating AI solutions"
+        "category": "Section overview"
       },
       "objective": "确定何时使用基于规则的自动化以及何时使用 AI 解决方案。",
       "source": "用户提供的学习大纲 · 技能 1.2.1",
@@ -521,14 +545,15 @@
       "task": "1.2",
       "skill": "1.2.2",
       "term": "AI代理与工具",
-      "category": "确定并选择适当的 AI 解决方案类型",
+      "category": "全节概览",
       "definition": "代理围绕目标协调步骤和工具，可能具有一定自主性。代理的行动权限、失败处理和监督方式需要单独设计。",
+      "example": "能调用退款工具的助手，需要退款额度、日志和人工升级边界。",
       "en": {
         "title": "AI agents and tools",
         "body": "An agent coordinates actions and tools toward a goal with some autonomy; permissions, supervision and failure handling require explicit design.",
         "example": "A refund agent needs an amount limit and escalation path.",
         "quote": "Learning objective 1.2.2 · Choosing and operating AI solutions",
-        "category": "Choosing and operating AI solutions"
+        "category": "Section overview"
       },
       "objective": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
       "source": "用户提供的学习大纲 · 技能 1.2.2",
@@ -541,14 +566,15 @@
       "task": "1.2",
       "skill": "1.2.2",
       "term": "代理协作与编排",
-      "category": "确定并选择适当的 AI 解决方案类型",
+      "category": "全节概览",
       "definition": "多个代理的角色分工、信息交换和执行顺序属于编排问题。角色越多不自动代表效果越好，要检查任务完成与交接质量。",
+      "example": "检索代理交给起草代理的资料仍需保留来源和访问范围。",
       "en": {
         "title": "Multi-agent orchestration",
         "body": "Coordinating roles, information exchange and execution among agents. More agents do not automatically improve outcomes.",
         "example": "Preserve sources and permissions when handing retrieved evidence to a drafting agent.",
         "quote": "Learning objective 1.2.2 · Choosing and operating AI solutions",
-        "category": "Choosing and operating AI solutions"
+        "category": "Section overview"
       },
       "objective": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
       "source": "用户提供的学习大纲 · 技能 1.2.2",
@@ -561,14 +587,15 @@
       "task": "1.2",
       "skill": "1.2.3",
       "term": "模型漂移与持续监测",
-      "category": "确定并选择适当的 AI 解决方案类型",
+      "category": "全节概览",
       "definition": "输入分布或业务关系变化可能使模型表现变差。部署后持续观察质量、成本和反馈，发现变化后调查原因并纠正。",
+      "example": "客户群变化后投诉分类变差，应调查新文本与原有训练样本的差别。",
       "en": {
         "title": "Drift and ongoing monitoring",
         "body": "Changes in inputs or relationships can reduce model performance; monitor quality, costs and feedback after deployment.",
         "example": "Investigate new customer language when complaint classification degrades.",
         "quote": "Learning objective 1.2.3 · Choosing and operating AI solutions",
-        "category": "Choosing and operating AI solutions"
+        "category": "Section overview"
       },
       "objective": "描述为什么需要持续监控和更新 AI 解决方案，以便检测和修复模型漂移和性能变化。",
       "source": "用户提供的学习大纲 · 技能 1.2.3",
@@ -581,18 +608,219 @@
       "task": "1.2",
       "skill": "1.2.4",
       "term": "工具分类与影子AI",
-      "category": "确定并选择适当的 AI 解决方案类型",
+      "category": "全节概览",
       "definition": "明确哪些工具已批准、受限、被阻止或仍在评估，说明数据使用边界并提供合适替代方案，有助于减少未经批准的使用。",
+      "example": "员工需要处理敏感文档时，应知道可用工具和求助渠道。",
       "en": {
         "title": "Tool policies and shadow AI",
         "body": "Define approved, restricted, blocked and evaluated tools, their data boundaries and supported alternatives.",
         "example": "Tell employees which approved service can handle sensitive documents.",
         "quote": "Learning objective 1.2.4 · Choosing and operating AI solutions",
-        "category": "Choosing and operating AI solutions"
+        "category": "Section overview"
       },
       "objective": "建立透明的 AI 工具分类体系（例如，已批准、已阻止、正在评估），减少影子 AI 风险。",
       "source": "用户提供的学习大纲 · 技能 1.2.4",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.1-unit-1",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.1",
+      "term": "确定性与可重复执行",
+      "category": "能力选择",
+      "definition": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+      "example": "报销超过5000元必须审批，用金额规则执行。",
+      "boundary": "不是所有自动化都需要学习模型。",
+      "en": {
+        "title": "Deterministic execution",
+        "body": "Rules map explicit conditions to actions and should give repeatable results for the same input and rule version.",
+        "example": "Apply an explicit approval rule above 5,000.",
+        "boundary": "Not every automation requires a learned model.",
+        "category": "Capability selection",
+        "quote": "Learning objective 1.2.1 · Choosing and operating AI solutions"
+      },
+      "objective": "确定何时使用基于规则的自动化以及何时使用 AI 解决方案。",
+      "source": "用户大纲 1.2.1；教学补充：AWS Machine Learning Lens",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.1-unit-2",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.1",
+      "term": "预测、生成与行动的边界",
+      "category": "能力选择",
+      "definition": "预测估计未知结果；生成产生新内容；代理协调工具和步骤执行目标。一个业务系统可以组合三者，应分别验收预测误差、内容质量和行动权限。",
+      "example": "预测缺货后起草补货建议，实际下单仍需授权。",
+      "boundary": "能写出行动建议，不等于已被允许执行。",
+      "en": {
+        "title": "Prediction, generation and action",
+        "body": "Prediction estimates outcomes, generation produces content, and an agent coordinates actions. Evaluate their errors, content and authority separately.",
+        "example": "Forecast shortages, draft a recommendation, then authorize any order.",
+        "boundary": "A recommendation is not authorization to act.",
+        "category": "Capability selection",
+        "quote": "Learning objective 1.2.1 · Choosing and operating AI solutions"
+      },
+      "objective": "确定何时使用基于规则的自动化以及何时使用 AI 解决方案。",
+      "source": "用户大纲 1.2.1；教学补充：AWS Machine Learning Lens",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.2-unit-1",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.2",
+      "term": "自主性与停止条件",
+      "category": "代理控制",
+      "definition": "代理的自主性是无需逐步人工指令即可选择行动的程度。应明确目标、可用工具、次数或金额限制、停止条件和异常升级，而不是把自主性理解为无限权限。",
+      "example": "连续两次检索失败后停止，转给人工核对。",
+      "boundary": "自主性越高，监督和边界越不能省略。",
+      "en": {
+        "title": "Autonomy and stop conditions",
+        "body": "Autonomy is the scope of independent action; constrain goals, tools, budgets, stopping conditions and escalation.",
+        "example": "Stop after two failed retrieval attempts and escalate.",
+        "boundary": "Greater autonomy increases the need for boundaries.",
+        "category": "Agent controls",
+        "quote": "Learning objective 1.2.2 · Choosing and operating AI solutions"
+      },
+      "objective": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
+      "source": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.2-unit-2",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.2",
+      "term": "工具契约与最小行动权限",
+      "category": "代理控制",
+      "definition": "工具调用需要约定输入、输出、错误、授权和副作用。退款、发邮件等改变外部状态的工具，应在服务端检查权限并保存审计记录。",
+      "example": "退款工具拒绝超过额度的请求，并记录调用者。",
+      "boundary": "提示词中的提醒不能替代服务端权限检查。",
+      "en": {
+        "title": "Tool contracts and action permissions",
+        "body": "Tool contracts define inputs, outputs, errors, authorization and side effects; enforce permissions outside the model.",
+        "example": "A refund service rejects requests above its limit and logs callers.",
+        "boundary": "A prompt cannot replace service-side authorization.",
+        "category": "Agent controls",
+        "quote": "Learning objective 1.2.2 · Choosing and operating AI solutions"
+      },
+      "objective": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
+      "source": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.2-unit-3",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.2",
+      "term": "交接与编排",
+      "category": "代理协作",
+      "definition": "多代理编排规定谁做什么、传什么证据以及何时交接。串行流程适合依赖关系，受控并行可处理独立任务；交接应保留来源、状态和失败责任。",
+      "example": "检索角色交付带出处的资料，审核角色核对后交给起草者。",
+      "boundary": "增加角色数量本身不是质量证据。",
+      "en": {
+        "title": "Handoffs and orchestration",
+        "body": "Orchestration assigns roles, dependencies and evidence-preserving handoffs; parallelize only independent work.",
+        "example": "Retrieval hands sourced evidence to a reviewer before drafting.",
+        "boundary": "More roles alone do not establish quality.",
+        "category": "Agent coordination",
+        "quote": "Learning objective 1.2.2 · Choosing and operating AI solutions"
+      },
+      "objective": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
+      "source": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.3-unit-1",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.3",
+      "term": "数据漂移与概念漂移",
+      "category": "运行监测",
+      "definition": "数据漂移是输入分布变化；概念漂移是输入与目标关系变化。发现分布变化不等于已经证明业务损害，需要结合真实结果和任务指标调查。",
+      "example": "新客户用词变了是输入变化，促销使同一价格对应的需求改变是关系变化。",
+      "boundary": "不能看到漂移告警就不加验证地自动重训上线。",
+      "en": {
+        "title": "Data drift and concept drift",
+        "body": "Data drift changes input distributions; concept drift changes input-to-target relationships. Investigate performance and business impact.",
+        "example": "New customer language changes inputs; a promotion can change price-demand relationships.",
+        "boundary": "A drift alert is not sufficient grounds for automatic release.",
+        "category": "Operational monitoring",
+        "quote": "Learning objective 1.2.3 · Choosing and operating AI solutions"
+      },
+      "objective": "描述为什么需要持续监控和更新 AI 解决方案，以便检测和修复模型漂移和性能变化。",
+      "source": "用户大纲 1.2.3；教学补充：AWS ML lifecycle best practices",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/best-practices-by-ml-lifecycle-phase.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.3-unit-2",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.3",
+      "term": "监测基线与反馈闭环",
+      "category": "运行监测",
+      "definition": "上线前记录可比较的质量、延迟、成本和失败率。运行时监测变化，调查原因，验证修复，再决定重训、回退或调整用途。",
+      "example": "投诉分类准确率下降时，抽查新样本并比较旧版模型。",
+      "boundary": "一次上线验收不能替代持续监测。",
+      "en": {
+        "title": "Monitoring baselines and feedback",
+        "body": "Record quality, latency, cost and failure baselines, then monitor, investigate, validate fixes and decide deployment action.",
+        "example": "Inspect new examples and compare model versions after classification degrades.",
+        "boundary": "Acceptance testing does not replace ongoing monitoring.",
+        "category": "Operational monitoring",
+        "quote": "Learning objective 1.2.3 · Choosing and operating AI solutions"
+      },
+      "objective": "描述为什么需要持续监控和更新 AI 解决方案，以便检测和修复模型漂移和性能变化。",
+      "source": "用户大纲 1.2.3；教学补充：AWS ML lifecycle best practices",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/best-practices-by-ml-lifecycle-phase.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.2.4-unit-1",
+      "chapter": "1",
+      "task": "1.2",
+      "skill": "1.2.4",
+      "term": "工具分级与影子AI",
+      "category": "工具治理",
+      "definition": "把工具标为已批准、受限、评估中或禁止，同时说明适用数据和用途。影子AI是未经组织批准或管理的使用，应提供可用替代、培训和反馈渠道。",
+      "example": "公开可用工具清单，并提供敏感文档的合规处理渠道。",
+      "boundary": "只列禁用名单而不解决工作需求，难以形成可执行治理。",
+      "en": {
+        "title": "Tool classification and shadow AI",
+        "body": "Classify tools and permitted data uses; reduce unmanaged AI use with workable approved alternatives and guidance.",
+        "example": "Publish allowed tools and a supported route for sensitive documents.",
+        "boundary": "A ban list alone does not resolve employees' needs.",
+        "category": "Tool governance",
+        "quote": "Learning objective 1.2.4 · Choosing and operating AI solutions"
+      },
+      "objective": "建立透明的 AI 工具分类体系（例如，已批准、已阻止、正在评估），减少影子 AI 风险。",
+      "source": "用户大纲 1.2.4；教学补充：NIST AI RMF Core — GOVERN",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
       "interaction": "read"
     },
     {
@@ -601,14 +829,15 @@
       "task": "1.3",
       "skill": "1.3.1",
       "term": "提示工程",
-      "category": "应用生成式人工智能概念和技术",
+      "category": "全节概览",
       "definition": "提示应说明目标、必要背景、约束和期望输出。用代表性任务测试提示，避免只看一条漂亮回答。",
+      "example": "要求依据提供的访谈生成三点摘要，并为每点标出对应原文。",
       "en": {
         "title": "Prompt engineering",
         "body": "Design instructions with a goal, relevant context, constraints and output expectations; evaluate on representative tasks.",
         "example": "Ask for three summary points with supporting passages.",
         "quote": "Learning objective 1.3.1 · Generative AI techniques",
-        "category": "Generative AI techniques"
+        "category": "Section overview"
       },
       "objective": "应用基本的提示工程原理来实现所需的 AI 输出。",
       "source": "用户提供的学习大纲 · 技能 1.3.1",
@@ -621,14 +850,15 @@
       "task": "1.3",
       "skill": "1.3.2",
       "term": "词元与上下文窗口",
-      "category": "应用生成式人工智能概念和技术",
+      "category": "全节概览",
       "definition": "模型一次请求可处理的上下文有上限，输入与输出预算需要规划。资料过多时应筛选相关片段，而不是假设全部文件都会被有效使用。",
+      "example": "先按章节切分教材，再提供与当前问题直接相关的段落。",
       "en": {
         "title": "Tokens and context windows",
         "body": "Tokens are units processed by a model; the context window limits information available in a request, including input and output budgets.",
         "example": "Select relevant textbook passages instead of assuming every file fits.",
         "quote": "Learning objective 1.3.2 · Generative AI techniques",
-        "category": "Generative AI techniques"
+        "category": "Section overview"
       },
       "objective": "确定词元限制或上下文窗口限制何时影响生成式人工智能系统性能。",
       "source": "用户提供的学习大纲 · 技能 1.3.2",
@@ -641,14 +871,15 @@
       "task": "1.3",
       "skill": "1.3.3",
       "term": "检索增强生成 RAG",
-      "category": "应用生成式人工智能概念和技术",
+      "category": "全节概览",
       "definition": "RAG先检索相关且获授权的资料，再把资料提供给生成过程。它改善可用信息条件，但不保证检索和回答一定正确。",
+      "example": "制度频繁更新时，核对检索资料的版本、权限和回答引用。",
       "en": {
         "title": "Retrieval-augmented generation (RAG)",
         "body": "Retrieve relevant authorized information and provide it as context for generation. Retrieval and answers still require verification.",
         "example": "Check a policy assistant's source version and access permissions.",
         "quote": "Learning objective 1.3.3 · Generative AI techniques",
-        "category": "Generative AI techniques"
+        "category": "Section overview"
       },
       "objective": "认识模型自适应技术（例如，检索增强生成 [RAG]、微调）如何改善 AI 对特定业务需求的响应。",
       "source": "用户提供的学习大纲 · 技能 1.3.3",
@@ -661,18 +892,169 @@
       "task": "1.3",
       "skill": "1.3.3",
       "term": "微调 Fine-tuning",
-      "category": "应用生成式人工智能概念和技术",
+      "category": "全节概览",
       "definition": "微调利用训练样本调整模型行为或任务适应性。它与在请求中加入新资料不同，也不能替代对不断变化事实的维护。",
+      "example": "统一输出风格与补充最新制度属于不同需求，先辨别问题再选技术。",
       "en": {
         "title": "Fine-tuning",
         "body": "Further training that adjusts model parameters for a task or behavior, distinct from adding information to a prompt.",
         "example": "Separate a style adaptation need from a need for current policy facts.",
         "quote": "Learning objective 1.3.3 · Generative AI techniques",
-        "category": "Generative AI techniques"
+        "category": "Section overview"
       },
       "objective": "认识模型自适应技术（例如，检索增强生成 [RAG]、微调）如何改善 AI 对特定业务需求的响应。",
       "source": "用户提供的学习大纲 · 技能 1.3.3",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.1-unit-1",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.1",
+      "term": "任务、上下文、约束与格式",
+      "category": "提示设计",
+      "definition": "提示应交代要做的工作、相关资料、不可越过的边界及期望输出。把原始资料与操作指令分隔，能减少模型把文档文字误当指令的机会。",
+      "example": "依据访谈提取三项需求，逐项引用，未出现的内容写未知。",
+      "boundary": "更长的提示不必然更好，必须验证输出是否满足任务。",
+      "en": {
+        "title": "Task, context, constraints and format",
+        "body": "Specify the task, relevant context, boundaries and output format; separate source content from instructions.",
+        "example": "Extract three needs with citations and mark unsupported details unknown.",
+        "boundary": "Length alone does not establish prompt quality.",
+        "category": "Prompt design",
+        "quote": "Learning objective 1.3.1 · Generative AI techniques"
+      },
+      "objective": "应用基本的提示工程原理来实现所需的 AI 输出。",
+      "source": "用户大纲 1.3.1；教学补充：Amazon Bedrock prompt engineering",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-prompt-engineering.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.1-unit-2",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.1",
+      "term": "代表性样例与提示版本",
+      "category": "提示验证",
+      "definition": "用典型、边界和失败案例测试提示，记录版本和成功标准。少样本示例应展示期望任务模式，而不是把测试题答案泄漏给模型。",
+      "example": "同时测试普通工单、缺失资料工单与无权访问工单。",
+      "boundary": "单次漂亮回答不能证明提示可稳定复用。",
+      "en": {
+        "title": "Representative tests and prompt versions",
+        "body": "Test typical, edge and failure cases and version prompts against explicit success criteria.",
+        "example": "Test normal tickets, missing evidence and unauthorized requests.",
+        "boundary": "One impressive answer does not show reliability.",
+        "category": "Prompt evaluation",
+        "quote": "Learning objective 1.3.1 · Generative AI techniques"
+      },
+      "objective": "应用基本的提示工程原理来实现所需的 AI 输出。",
+      "source": "用户大纲 1.3.1；教学补充：Amazon Bedrock prompt engineering",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-prompt-engineering.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.2-unit-1",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.2",
+      "term": "输入与输出共享预算",
+      "category": "上下文规划",
+      "definition": "上下文窗口有限。规划时需计入指令、检索片段、历史对话、工具消息和预留输出，超过限制时应筛选、压缩或拆分。",
+      "example": "窗口8000，指令1000、资料5000、历史1000，输出1500会超过500。",
+      "boundary": "词元不等于中文字数，实际计数依模型分词器。",
+      "en": {
+        "title": "Shared input and output budget",
+        "body": "Budget instructions, retrieved material, conversation, tool messages and reserved output within the context limit.",
+        "example": "An 8,000-token window cannot fit 7,000 input tokens plus 1,500 output tokens.",
+        "boundary": "Tokens are not identical to characters; use the model tokenizer.",
+        "category": "Context planning",
+        "quote": "Learning objective 1.3.2 · Generative AI techniques"
+      },
+      "objective": "确定词元限制或上下文窗口限制何时影响生成式人工智能系统性能。",
+      "source": "用户大纲 1.3.2；教学补充：Amazon Bedrock token accounting",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-burndown.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.2-unit-2",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.2",
+      "term": "相关性与信息位置",
+      "category": "上下文规划",
+      "definition": "资料能放入窗口不代表所有内容都会被正确使用。优先提供当前问题相关、获授权且版本明确的片段，并验证回答是否真正引用了支持结论的内容。",
+      "example": "只取当前退款政策相关段落，而不是拼进所有部门手册。",
+      "boundary": "上下文容量不是事实准确率的保证。",
+      "en": {
+        "title": "Relevance and information selection",
+        "body": "Fitting within the window does not ensure correct use; select relevant authorized evidence and verify support.",
+        "example": "Retrieve the refund policy instead of every department manual.",
+        "boundary": "Context capacity does not guarantee factual accuracy.",
+        "category": "Context planning",
+        "quote": "Learning objective 1.3.2 · Generative AI techniques"
+      },
+      "objective": "确定词元限制或上下文窗口限制何时影响生成式人工智能系统性能。",
+      "source": "用户大纲 1.3.2；教学补充：Amazon Bedrock token accounting",
+      "references": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-burndown.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.3-unit-1",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.3",
+      "term": "RAG的检索与生成两道关",
+      "category": "适配技术",
+      "definition": "RAG先检索资料，再把相关片段提供给模型生成。分别评估是否找对资料，以及回答是否被资料支持；同时维护版本、权限和缺失证据时的处理。",
+      "example": "政策更新后重建索引，并测试旧版本是否仍被错误引用。",
+      "boundary": "有引用不等于引用支持结论。",
+      "en": {
+        "title": "Retrieval and generation checks",
+        "body": "Evaluate retrieval relevance separately from answer grounding, with source versions and permissions enforced.",
+        "example": "Refresh policy indexes and test whether obsolete versions are still cited.",
+        "boundary": "A citation may fail to support a claim.",
+        "category": "Adaptation techniques",
+        "quote": "Learning objective 1.3.3 · Generative AI techniques"
+      },
+      "objective": "认识模型自适应技术（例如，检索增强生成 [RAG]、微调）如何改善 AI 对特定业务需求的响应。",
+      "source": "用户大纲 1.3.3；教学补充：AWS RAG writing practices",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "1.3.3-unit-2",
+      "chapter": "1",
+      "task": "1.3",
+      "skill": "1.3.3",
+      "term": "微调与外部知识更新",
+      "category": "适配技术",
+      "definition": "微调通过训练调整参数，适合评估任务行为、格式或风格适配；外部资料频繁更新时，通常先评估检索和资料维护需求。两者可组合，但不能相互冒充。",
+      "example": "统一客服回复风格可评估微调，今天更新的退货政策需要及时资料。",
+      "boundary": "不要把微调当成随时更新的事实数据库。",
+      "en": {
+        "title": "Fine-tuning versus external updates",
+        "body": "Fine-tuning adjusts parameters for behavior or task adaptation; frequently changing facts also need source maintenance and retrieval.",
+        "example": "Style adaptation and today's policy update are different requirements.",
+        "boundary": "Fine-tuning is not a live factual database.",
+        "category": "Adaptation techniques",
+        "quote": "Learning objective 1.3.3 · Generative AI techniques"
+      },
+      "objective": "认识模型自适应技术（例如，检索增强生成 [RAG]、微调）如何改善 AI 对特定业务需求的响应。",
+      "source": "用户大纲 1.3.3；教学补充：AWS RAG writing practices",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
       "interaction": "read"
     },
     {
@@ -681,14 +1063,15 @@
       "task": "2.1",
       "skill": "2.1.1",
       "term": "从业务问题到用例",
-      "category": "制定符合业务目标的 AI 战略",
+      "category": "全节概览",
       "definition": "先明确谁在什么流程中遇到什么问题，再把AI能力映射到可观察的业务结果。技术选择要服务目标。",
+      "example": "将“做一个AI助手”改为“减少客服查找获授权制度的时间，同时保持答复质量”。",
       "en": {
         "title": "From business problems to use cases",
         "body": "Specify the affected people, workflow and observable problem before mapping AI capabilities to desired outcomes.",
         "example": "Reduce time spent finding authorized policies while preserving response quality.",
         "quote": "Learning objective 2.1.1 · Strategy and use-case decisions",
-        "category": "Strategy and use-case decisions"
+        "category": "Section overview"
       },
       "objective": "确定跨业务职能（例如，客户运营、销售和营销、研发、软件开发）的高影响力 AI 使用案例，并将 AI 功能与特定业务成果对应起来。",
       "source": "用户提供的学习大纲 · 技能 2.1.1",
@@ -701,14 +1084,15 @@
       "task": "2.1",
       "skill": "2.1.2",
       "term": "自建、购买或合作",
-      "category": "制定符合业务目标的 AI 战略",
+      "category": "全节概览",
       "definition": "比较预算、交付时间、内部能力、供应商条件和合规需求。也要考虑集成、维护、迁移与持续运营成本。",
+      "example": "现有团队缺少运维能力时，不能只比较模型购买价格。",
       "en": {
         "title": "Build, buy or partner",
         "body": "Compare internal capabilities, delivery time, budget, supplier constraints, integration, maintenance and exit costs.",
         "example": "A team without operations capability must consider support requirements.",
         "quote": "Learning objective 2.1.2 · Strategy and use-case decisions",
-        "category": "Strategy and use-case decisions"
+        "category": "Section overview"
       },
       "objective": "评估 AI 实施的自建、购买或合作开发决策（考虑的因素包括预算、时间表、能力、供应商提议和监管合规要求）。",
       "source": "用户提供的学习大纲 · 技能 2.1.2",
@@ -721,14 +1105,15 @@
       "task": "2.1",
       "skill": "2.1.3",
       "term": "项目优先级",
-      "category": "制定符合业务目标的 AI 战略",
+      "category": "全节概览",
       "definition": "综合商业价值、可行性、可持续性及战略契合度，决定扩展、暂停还是终止。先定义检验假设和停止条件。",
+      "example": "高潜在收益但数据不可用的项目，应先验证准备条件。",
       "en": {
         "title": "Project prioritization",
         "body": "Rank initiatives by value, feasibility, sustainability and strategic fit; define evidence and conditions for stopping or scaling.",
         "example": "Validate data availability before committing to a high-return proposal.",
         "quote": "Learning objective 2.1.3 · Strategy and use-case decisions",
-        "category": "Strategy and use-case decisions"
+        "category": "Section overview"
       },
       "objective": "根据商业价值、可行性、可持续性和战略契合度，来确定 AI 计划的优先级（决定是扩展、暂停还是终止计划）。",
       "source": "用户提供的学习大纲 · 技能 2.1.3",
@@ -741,14 +1126,15 @@
       "task": "2.1",
       "skill": "2.1.4",
       "term": "什么时候不该用AI",
-      "category": "制定符合业务目标的 AI 战略",
+      "category": "全节概览",
       "definition": "当明确规则或流程改进已能解决问题，或错误风险与收益不相称时，AI可能不是合适选择。先比较可行替代方案。",
+      "example": "资料命名混乱导致找不到文件，可以先改进归档与检索。",
       "en": {
         "title": "When not to use AI",
         "body": "Choose alternatives when rules or process improvements solve the problem more reliably or errors outweigh benefits.",
         "example": "Improve document organization before commissioning a new AI system.",
         "quote": "Learning objective 2.1.4 · Strategy and use-case decisions",
-        "category": "Strategy and use-case decisions"
+        "category": "Section overview"
       },
       "objective": "确定在什么情况下 AI 并非解决业务问题的合适解决方案。",
       "source": "用户提供的学习大纲 · 技能 2.1.4",
@@ -761,14 +1147,15 @@
       "task": "2.1",
       "skill": "2.1.5",
       "term": "迁移与业务连续性",
-      "category": "制定符合业务目标的 AI 战略",
+      "category": "全节概览",
       "definition": "切换流程或平台要检查数据准备、性能、权限、成本以及回退路径，避免演示成功后直接替换关键流程。",
+      "example": "先小范围试用新客服系统，保留可用的人工处理方式。",
       "en": {
         "title": "Migration and business continuity",
         "body": "Plan dependencies, staged migration, fallback procedures and ownership to maintain essential operations.",
         "example": "Keep an approved fallback route during a system transition.",
         "quote": "Learning objective 2.1.5 · Strategy and use-case decisions",
-        "category": "Strategy and use-case decisions"
+        "category": "Section overview"
       },
       "objective": "针对准备将业务流程转向基于 AI 的解决方案或在不同 AI 平台之间进行迁移的情况，评估关键注意事项（例如，业务连续性、成本影响、数据准备情况、性能影响）。",
       "source": "用户提供的学习大纲 · 技能 2.1.5",
@@ -776,19 +1163,145 @@
       "interaction": "assemble"
     },
     {
+      "id": "2.1.1-unit-1",
+      "chapter": "2",
+      "task": "2.1",
+      "skill": "2.1.1",
+      "term": "问题、受益者与可观测结果",
+      "category": "用例设计",
+      "definition": "用例要说明谁在什么流程遇到什么问题、现有基线是什么、预期改变如何测量，再选择合适能力。跨职能用例的成功标准会不同。",
+      "example": "客服看处理质量，销售看合格线索，研发看验证周期，开发看评审后交付质量。",
+      "boundary": "工具名称不是业务问题。",
+      "en": {
+        "title": "Problem, beneficiary and outcome",
+        "body": "State the affected workflow, beneficiaries, baseline and measurable outcome before selecting AI capabilities.",
+        "example": "Support, sales, research and software teams require different outcome measures.",
+        "boundary": "A tool name is not a business problem.",
+        "category": "Use-case design",
+        "quote": "Learning objective 2.1.1 · Strategy and use-case decisions"
+      },
+      "objective": "确定跨业务职能（例如，客户运营、销售和营销、研发、软件开发）的高影响力 AI 使用案例，并将 AI 功能与特定业务成果对应起来。",
+      "source": "用户大纲 2.1.1；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.1.2-unit-1",
+      "chapter": "2",
+      "task": "2.1",
+      "skill": "2.1.2",
+      "term": "自建、购买与合作的比较维度",
+      "category": "实施路径",
+      "definition": "比较时间、预算、差异化需求、内部能力、集成、持续运营、供应商条款和退出成本。已有产品适配且交付期紧时，购买可能比自建更可行。",
+      "example": "缺少运维团队且三个月要上线，先核对现成服务的能力与约束。",
+      "boundary": "购买服务不免除本企业的数据和用途责任。",
+      "en": {
+        "title": "Build, buy and partner criteria",
+        "body": "Compare delivery time, capability, differentiation, integration, operating support, supplier terms and exit costs.",
+        "example": "With no operations team and a short deadline, evaluate a managed service's fit.",
+        "boundary": "Buying a service does not transfer all use-case responsibilities.",
+        "category": "Delivery choices",
+        "quote": "Learning objective 2.1.2 · Strategy and use-case decisions"
+      },
+      "objective": "评估 AI 实施的自建、购买或合作开发决策（考虑的因素包括预算、时间表、能力、供应商提议和监管合规要求）。",
+      "source": "用户大纲 2.1.2；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.1.3-unit-1",
+      "chapter": "2",
+      "task": "2.1",
+      "skill": "2.1.3",
+      "term": "价值、可行性与硬性约束",
+      "category": "项目组合",
+      "definition": "先识别必须满足的数据授权、安全和业务连续性条件，再比较价值、实施能力与战略契合度。高预期收益不能抵消尚未满足的硬约束。",
+      "example": "收益最高的项目没有合法可用资料，应先暂停补齐条件。",
+      "boundary": "评分模型用于辅助讨论，权重与门槛应明确。",
+      "en": {
+        "title": "Value, feasibility and hard constraints",
+        "body": "Check mandatory permissions and operational constraints before ranking value, feasibility and strategic fit.",
+        "example": "Pause a high-return project when usable authorized data is unavailable.",
+        "boundary": "Make scoring assumptions and mandatory gates explicit.",
+        "category": "Project portfolio",
+        "quote": "Learning objective 2.1.3 · Strategy and use-case decisions"
+      },
+      "objective": "根据商业价值、可行性、可持续性和战略契合度，来确定 AI 计划的优先级（决定是扩展、暂停还是终止计划）。",
+      "source": "用户大纲 2.1.3；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.1.4-unit-1",
+      "chapter": "2",
+      "task": "2.1",
+      "skill": "2.1.4",
+      "term": "不使用AI也是方案",
+      "category": "替代方案",
+      "definition": "若明确规则、检索或流程改进已解决问题，应把它们纳入比较。也应停止不具备可验证收益、可用数据或可接受风险边界的AI方案。",
+      "example": "文件命名混乱先完善归档，而不是默认训练模型。",
+      "boundary": "暂停或终止是有效的项目决策。",
+      "en": {
+        "title": "Non-AI alternatives",
+        "body": "Compare rules, search and process redesign with AI; stop initiatives lacking feasible evidence or acceptable controls.",
+        "example": "Fix document organization before assuming model training is needed.",
+        "boundary": "Pausing or ending a project can be appropriate.",
+        "category": "Alternatives",
+        "quote": "Learning objective 2.1.4 · Strategy and use-case decisions"
+      },
+      "objective": "确定在什么情况下 AI 并非解决业务问题的合适解决方案。",
+      "source": "用户大纲 2.1.4；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.1.5-unit-1",
+      "chapter": "2",
+      "task": "2.1",
+      "skill": "2.1.5",
+      "term": "切换、回退与业务连续性",
+      "category": "迁移方案",
+      "definition": "迁移前验证新旧系统表现、接口、数据准备和成本，明确切换窗口、责任人、回退触发及恢复方式；迁移成功不能只看系统已启动。",
+      "example": "先在部分请求上验证新平台，异常时可回到原处理流程。",
+      "boundary": "回退方案也需要演练与可用资源。",
+      "en": {
+        "title": "Cutover, rollback and continuity",
+        "body": "Validate performance, interfaces, data and costs and define cutover owners, rollback triggers and recovery.",
+        "example": "Validate on a limited traffic share with a functioning fallback.",
+        "boundary": "A fallback must be tested and resourced.",
+        "category": "Migration",
+        "quote": "Learning objective 2.1.5 · Strategy and use-case decisions"
+      },
+      "objective": "针对准备将业务流程转向基于 AI 的解决方案或在不同 AI 平台之间进行迁移的情况，评估关键注意事项（例如，业务连续性、成本影响、数据准备情况、性能影响）。",
+      "source": "用户大纲 2.1.5；教学补充：AWS GenAI lifecycle operational excellence",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "interaction": "read"
+    },
+    {
       "id": "2.2-lesson-1",
       "chapter": "2",
       "task": "2.2",
       "skill": "2.2.1",
       "term": "有形与无形收益",
-      "category": "衡量和演示 AI 商业价值",
+      "category": "全节概览",
       "definition": "KPI应对应业务目标。有形收益如实际节支或收入，无形收益如满意度；两者需要清楚的测量方式，不能随意互相折算。",
+      "example": "同时记录客服处理时间与答复质量，避免只优化生成速度。",
       "en": {
         "title": "Tangible and intangible benefits",
         "body": "Distinguish measurable financial or operational benefits from less direct effects such as trust or experience; state measurement assumptions.",
         "example": "Measure time saved and assess customer experience separately.",
         "quote": "Learning objective 2.2.1 · Measuring business value",
-        "category": "Measuring business value"
+        "category": "Section overview"
       },
       "objective": "为 AI 计划定义关键绩效指标 (KPI)，包括有形收益（例如，降低成本、增加收入）和无形收益（例如，客户满意度、员工生产力）。",
       "source": "用户提供的学习大纲 · 技能 2.2.1",
@@ -801,14 +1314,15 @@
       "task": "2.2",
       "skill": "2.2.2",
       "term": "业务基线",
-      "category": "衡量和演示 AI 商业价值",
+      "category": "全节概览",
       "definition": "实施前记录可比较的原流程表现，包括时间、成本和质量。上线后保持口径一致，才能合理讨论改善。",
+      "example": "原流程60分钟，AI生成10分钟且复核15分钟，净节省是35分钟。",
       "en": {
         "title": "Business baseline",
         "body": "A measured reference for the existing process, needed for a meaningful before-and-after comparison.",
         "example": "Record current handling time and error rates before a pilot.",
         "quote": "Learning objective 2.2.2 · Measuring business value",
-        "category": "Measuring business value"
+        "category": "Section overview"
       },
       "objective": "在实施 AI 解决方案之前先建立基准指标，以便准确衡量采用 AI 带来的成果。",
       "source": "用户提供的学习大纲 · 技能 2.2.2",
@@ -821,14 +1335,15 @@
       "task": "2.2",
       "skill": "2.2.3",
       "term": "收益与ROI",
-      "category": "衡量和演示 AI 商业价值",
+      "category": "全节概览",
       "definition": "简单ROI为（同期间收益减成本）除以成本。完整成本应覆盖部署、调用、培训、维护和复核，避免重复计算同一份收益。",
+      "example": "释放工时不自动等于现金节支，也不能同时无依据地再记作新增收入。",
       "en": {
         "title": "Benefits and ROI",
         "body": "ROI compares net benefit with investment over a defined period; include ongoing costs and explicit assumptions.",
         "example": "If benefits are 150 and costs are 100, ROI is (150-100)/100 = 50%.",
         "quote": "Learning objective 2.2.3 · Measuring business value",
-        "category": "Measuring business value"
+        "category": "Section overview"
       },
       "objective": "通过使用全面的框架来计算 AI 的投资回报 (ROI)（例如节省时间、降低成本、增加收入、提升生产力）。",
       "source": "用户提供的学习大纲 · 技能 2.2.3",
@@ -841,14 +1356,15 @@
       "task": "2.2",
       "skill": "2.2.4",
       "term": "先导性指标",
-      "category": "衡量和演示 AI 商业价值",
+      "category": "全节概览",
       "definition": "先导指标用于较早观察成功条件，结果指标用于观察已实现的成果。先导信号有价值，但不构成最终成功保证。",
+      "example": "合适的活跃使用与流程采用可作为信号，仍需观察实际质量和业务价值。",
       "en": {
         "title": "Leading indicators",
         "body": "Early measures signal likely progress but are not proof of realized business value.",
         "example": "Usage can inform adoption monitoring without proving improved profit.",
         "quote": "Learning objective 2.2.4 · Measuring business value",
-        "category": "Measuring business value"
+        "category": "Section overview"
       },
       "objective": "确定用于预测 AI 项目成功与否的先导性指标。",
       "source": "用户提供的学习大纲 · 技能 2.2.4",
@@ -861,18 +1377,194 @@
       "task": "2.2",
       "skill": "2.2.5",
       "term": "成本规划与优化",
-      "category": "衡量和演示 AI 商业价值",
+      "category": "全节概览",
       "definition": "明确初期和持续成本、用量假设与预算边界；观察实际调用和复核开销，在质量约束下优化方案。",
+      "example": "比较方案时把培训、集成、监测和人工复核一起计入。",
       "en": {
         "title": "Cost planning and optimization",
         "body": "Account for development, data, integration, inference, monitoring, support and maintenance over the lifecycle.",
         "example": "Include review effort and ongoing operating costs in the budget.",
         "quote": "Learning objective 2.2.5 · Measuring business value",
-        "category": "Measuring business value"
+        "category": "Section overview"
       },
       "objective": "为 AI 实施建立基本的成本因素控制措施，包括成本规划和优化策略。",
       "source": "用户提供的学习大纲 · 技能 2.2.5",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.1-unit-1",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.1",
+      "term": "结果指标与活动指标",
+      "category": "价值度量",
+      "definition": "活动指标记录做了多少，如开通账号；结果指标记录业务改变，如差错率、处理周期、转化率。效率必须与质量和复核代价一起看。",
+      "example": "账号增长但处理错误增加，不能仅凭采用率宣布成功。",
+      "boundary": "单一速度指标容易掩盖质量损失。",
+      "en": {
+        "title": "Outcome and activity measures",
+        "body": "Activity measures track use; outcome measures track changed results. Evaluate speed alongside quality and review effort.",
+        "example": "Higher adoption with more errors is insufficient evidence of success.",
+        "boundary": "Speed alone can hide quality losses.",
+        "category": "Value measurement",
+        "quote": "Learning objective 2.2.1 · Measuring business value"
+      },
+      "objective": "为 AI 计划定义关键绩效指标 (KPI)，包括有形收益（例如，降低成本、增加收入）和无形收益（例如，客户满意度、员工生产力）。",
+      "source": "用户大纲 2.2.1；教学补充：AWS Path-to-Value framework",
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.1-unit-2",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.1",
+      "term": "有形收益与无形收益",
+      "category": "价值度量",
+      "definition": "有形收益可以形成可核验的金额或运营变化；满意度、信任等无形收益应设计独立测量，不能任意折算成已经实现的现金。",
+      "example": "分别报告已兑现成本减少与客户满意度变化。",
+      "boundary": "无形收益不是无需证据的收益。",
+      "en": {
+        "title": "Tangible and intangible benefits",
+        "body": "Measure financial and operational effects separately from experience or trust; justify any monetary conversion.",
+        "example": "Report realized cost reductions and satisfaction changes separately.",
+        "boundary": "Intangible benefits still require evidence.",
+        "category": "Value measurement",
+        "quote": "Learning objective 2.2.1 · Measuring business value"
+      },
+      "objective": "为 AI 计划定义关键绩效指标 (KPI)，包括有形收益（例如，降低成本、增加收入）和无形收益（例如，客户满意度、员工生产力）。",
+      "source": "用户大纲 2.2.1；教学补充：AWS Path-to-Value framework",
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.2-unit-1",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.2",
+      "term": "可比较基线与归因",
+      "category": "对照设计",
+      "definition": "记录实施前同口径指标，并尽量控制任务难度、业务量和时间因素。对照组或分阶段试验有助于区分AI效果与同期其他改变。",
+      "example": "相同类型工单比较总处理时间，包括人工复核。",
+      "boundary": "上线前后数字不同，不自动证明因果关系。",
+      "en": {
+        "title": "Comparable baselines and attribution",
+        "body": "Use consistent definitions and comparable workloads; controls or staged tests help distinguish AI effects from other changes.",
+        "example": "Compare similar tickets using total handling time including review.",
+        "boundary": "A before-and-after difference alone does not prove causation.",
+        "category": "Comparison design",
+        "quote": "Learning objective 2.2.2 · Measuring business value"
+      },
+      "objective": "在实施 AI 解决方案之前先建立基准指标，以便准确衡量采用 AI 带来的成果。",
+      "source": "用户大纲 2.2.2；教学补充：AWS Path-to-Value framework",
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.3-unit-1",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.3",
+      "term": "ROI公式与核算边界",
+      "category": "财务核算",
+      "definition": "简单ROI等于同期收益减同期完整成本，再除以同期完整成本。明确期间、单位、收益实现条件和成本范围，才能比较不同方案。",
+      "example": "收益150万元、完整成本100万元，ROI为50%。",
+      "boundary": "不能用净收益除以收益冒充ROI。",
+      "en": {
+        "title": "ROI and accounting boundaries",
+        "body": "Simple ROI is net benefit divided by total cost over a consistent period; define units, scope and realization assumptions.",
+        "example": "Benefits of 150 and total costs of 100 yield a 50% ROI.",
+        "boundary": "Net benefit divided by benefits is not this ROI definition.",
+        "category": "Financial accounting",
+        "quote": "Learning objective 2.2.3 · Measuring business value"
+      },
+      "objective": "通过使用全面的框架来计算 AI 的投资回报 (ROI)（例如节省时间、降低成本、增加收入、提升生产力）。",
+      "source": "用户大纲 2.2.3；教学补充：用户提供的学习伴读资料 §7.4 财务推理",
+      "references": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.3-unit-2",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.3",
+      "term": "释放产能与现金节省",
+      "category": "财务核算",
+      "definition": "节省工时可释放产能，但只有支出实际减少才构成现金成本节省。若把产能用于新增产出，还需证明需求、人员安排和新增收入能够实现。",
+      "example": "每周省十小时但工资未减少，先记为可用产能。",
+      "boundary": "同一批省时不能无依据地重复计入减员与新增收益。",
+      "en": {
+        "title": "Released capacity and cash savings",
+        "body": "Freed time is capacity; cash savings require actual expenditure reduction. Additional output needs realization evidence.",
+        "example": "Ten freed hours with unchanged payroll are released capacity.",
+        "boundary": "Do not double-count the same time saving.",
+        "category": "Financial accounting",
+        "quote": "Learning objective 2.2.3 · Measuring business value"
+      },
+      "objective": "通过使用全面的框架来计算 AI 的投资回报 (ROI)（例如节省时间、降低成本、增加收入、提升生产力）。",
+      "source": "用户大纲 2.2.3；教学补充：用户提供的学习伴读资料 §7.4 财务推理",
+      "references": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.4-unit-1",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.4",
+      "term": "先导信号与滞后结果",
+      "category": "收益跟踪",
+      "definition": "培训完成、使用频率等可作为早期信号；留存、服务质量、净收益等结果需要后续观察。应说明预期联系，并检验先导指标能否预测结果。",
+      "example": "培训后继续追踪独立核验正确率，而不只统计出勤。",
+      "boundary": "先导指标向好不等于收益已兑现。",
+      "en": {
+        "title": "Leading and lagging indicators",
+        "body": "Training and usage can signal progress, but later quality and value outcomes must validate their usefulness.",
+        "example": "Track verification performance after training, not attendance alone.",
+        "boundary": "Positive leading indicators are not realized benefits.",
+        "category": "Benefits tracking",
+        "quote": "Learning objective 2.2.4 · Measuring business value"
+      },
+      "objective": "确定用于预测 AI 项目成功与否的先导性指标。",
+      "source": "用户大纲 2.2.4；教学补充：AWS Path-to-Value framework",
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.2.5-unit-1",
+      "chapter": "2",
+      "task": "2.2",
+      "skill": "2.2.5",
+      "term": "全生命周期成本",
+      "category": "成本控制",
+      "definition": "预算包括数据整理、集成、部署、调用或计算、培训、人工复核、监测、维护和退出迁移。按业务量变化分析单位成本和总成本。",
+      "example": "减少模型调用费却增加大量人工复核，可能没有降低完整成本。",
+      "boundary": "单次调用价格不能代表系统总成本。",
+      "en": {
+        "title": "Lifecycle cost",
+        "body": "Include data, integration, deployment, usage, training, review, monitoring, maintenance and exit costs.",
+        "example": "Cheaper inference may not lower total cost if review effort rises.",
+        "boundary": "Per-call price is not total system cost.",
+        "category": "Cost controls",
+        "quote": "Learning objective 2.2.5 · Measuring business value"
+      },
+      "objective": "为 AI 实施建立基本的成本因素控制措施，包括成本规划和优化策略。",
+      "source": "用户大纲 2.2.5；教学补充：用户提供的学习伴读资料 §7.4 财务推理",
+      "references": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
       "interaction": "read"
     },
     {
@@ -881,14 +1573,15 @@
       "task": "2.3",
       "skill": "2.3.1",
       "term": "竞争格局",
-      "category": "确立 AI 所能带来的竞争优势",
+      "category": "全节概览",
       "definition": "比较客户需求、竞争者能力和自己的独特条件，找到AI可改善的业务环节，而不是仅追随流行工具。",
+      "example": "同样购买一个模型，并不意味着获得与竞争者不同的能力。",
       "en": {
         "title": "Competitive landscape",
         "body": "Assess industry conditions, competitors and customer expectations before choosing an AI investment.",
         "example": "Identify a customer need rather than copying a competitor's demo.",
         "quote": "Learning objective 2.3.1 · Competition and business models",
-        "category": "Competition and business models"
+        "category": "Section overview"
       },
       "objective": "评估竞争格局并确定采用 AI 的优势。",
       "source": "用户提供的学习大纲 · 技能 2.3.1",
@@ -901,14 +1594,15 @@
       "task": "2.3",
       "skill": "2.3.2",
       "term": "业务模式转型",
-      "category": "确立 AI 所能带来的竞争优势",
+      "category": "全节概览",
       "definition": "AI可能改变产品、服务、交付或价值获取方式。评估客户价值与运营要求，而不是只给原流程加一个聊天窗口。",
+      "example": "将一次性报告服务改成持续辅助决策，需要新的数据维护和服务流程。",
       "en": {
         "title": "Business model transformation",
         "body": "AI can change how value is created, delivered and captured, beyond automating an existing task.",
         "example": "Consider whether a personalized service changes the revenue model.",
         "quote": "Learning objective 2.3.2 · Competition and business models",
-        "category": "Competition and business models"
+        "category": "Section overview"
       },
       "objective": "确定使用 AI 解决方案实现业务模式转型的机会。",
       "source": "用户提供的学习大纲 · 技能 2.3.2",
@@ -921,14 +1615,15 @@
       "task": "2.3",
       "skill": "2.3.3",
       "term": "可持续优势",
-      "category": "确立 AI 所能带来的竞争优势",
+      "category": "全节概览",
       "definition": "可持续优势往往来自相关数据、流程、组织能力和反馈的组合。单一工具上线不保证长期优势。",
+      "example": "把客户反馈持续转成流程改进，比只记录软件安装数更有意义。",
       "en": {
         "title": "Sustainable advantage",
         "body": "Durable advantage depends on capabilities, workflows, data and learning that competitors cannot easily reproduce.",
         "example": "A widely available model alone is unlikely to be a lasting differentiator.",
         "quote": "Learning objective 2.3.3 · Competition and business models",
-        "category": "Competition and business models"
+        "category": "Section overview"
       },
       "objective": "描述 AI 如何推动实现可持续的竞争优势和运营改进。",
       "source": "用户提供的学习大纲 · 技能 2.3.3",
@@ -941,18 +1636,119 @@
       "task": "2.3",
       "skill": "2.3.4",
       "term": "投资与成熟度",
-      "category": "确立 AI 所能带来的竞争优势",
+      "category": "全节概览",
       "definition": "投资规模应结合行业变化、竞争压力、组织准备度及风险承受能力。需要验证条件与分阶段投入。",
+      "example": "在数据基础不稳时，先投入治理与小范围验证，而非立即全企业扩展。",
       "en": {
         "title": "Investment and maturity",
         "body": "Match investment to organizational readiness, competitive conditions and risk tolerance; stage commitments around evidence.",
         "example": "Improve data governance before expanding an unproven enterprise rollout.",
         "quote": "Learning objective 2.3.4 · Competition and business models",
-        "category": "Competition and business models"
+        "category": "Section overview"
       },
       "objective": "根据行业成熟度和竞争动态，确定合适的 AI 投资水平。",
       "source": "用户提供的学习大纲 · 技能 2.3.4",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "2.3.1-unit-1",
+      "chapter": "2",
+      "task": "2.3",
+      "skill": "2.3.1",
+      "term": "客户问题与竞争位置",
+      "category": "竞争判断",
+      "definition": "分析竞争变化如何影响客户期待、交付效率和价值链，再决定投资方向。相同工具在不同业务条件下可能产生不同价值。",
+      "example": "同行推出智能客服，本企业先核对客户最常见的服务障碍。",
+      "boundary": "竞争对手的投入金额不是本企业的投资依据。",
+      "en": {
+        "title": "Customer need and competitive position",
+        "body": "Examine customer expectations, delivery and value-chain effects rather than copying a competitor's tool choice.",
+        "example": "Investigate service barriers before copying a competitor's chatbot.",
+        "boundary": "A competitor's budget is not your business case.",
+        "category": "Competitive analysis",
+        "quote": "Learning objective 2.3.1 · Competition and business models"
+      },
+      "objective": "评估竞争格局并确定采用 AI 的优势。",
+      "source": "用户大纲 2.3.1；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.3.2-unit-1",
+      "chapter": "2",
+      "task": "2.3",
+      "skill": "2.3.2",
+      "term": "价值主张、交付与收益逻辑",
+      "category": "价值创造",
+      "definition": "业务模式变化涉及提供何种客户价值、如何交付以及如何获得收益。给现有产品贴AI标签不等于重构业务模式。",
+      "example": "按项目交付咨询转为持续监测服务，需要重新评估定价和运营责任。",
+      "boundary": "新的技术能力必须连接具体付费或价值实现方式。",
+      "en": {
+        "title": "Value proposition, delivery and revenue",
+        "body": "A business model links customer value, delivery and revenue; an AI label alone changes none of these.",
+        "example": "Moving from projects to ongoing monitoring changes pricing and operations.",
+        "boundary": "Connect capabilities to a concrete value-realization mechanism.",
+        "category": "Value creation",
+        "quote": "Learning objective 2.3.2 · Competition and business models"
+      },
+      "objective": "确定使用 AI 解决方案实现业务模式转型的机会。",
+      "source": "用户大纲 2.3.2；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.3.3-unit-1",
+      "chapter": "2",
+      "task": "2.3",
+      "skill": "2.3.3",
+      "term": "互补能力与学习闭环",
+      "category": "持续优势",
+      "definition": "可持续优势常来自获授权的数据、嵌入流程、领域经验、客户关系和持续反馈的组合，而不是人人都能购买的同一基础模型。",
+      "example": "积累经核验的维修反馈，并把它用于改进服务流程。",
+      "boundary": "数据多不等于数据独有、可用或有权使用。",
+      "en": {
+        "title": "Complementary capabilities and learning",
+        "body": "Differentiation can come from authorized data, workflows, expertise and feedback rather than a commodity model alone.",
+        "example": "Use verified maintenance feedback to improve service workflows.",
+        "boundary": "More data does not establish exclusivity or permission.",
+        "category": "Durable advantage",
+        "quote": "Learning objective 2.3.3 · Competition and business models"
+      },
+      "objective": "描述 AI 如何推动实现可持续的竞争优势和运营改进。",
+      "source": "用户大纲 2.3.3；教学补充：Microsoft Cloud Adoption Framework — AI strategy",
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "2.3.4-unit-1",
+      "chapter": "2",
+      "task": "2.3",
+      "skill": "2.3.4",
+      "term": "分阶段承诺与停止条件",
+      "category": "投资节奏",
+      "definition": "结合行业条件和自身准备度，先验证关键假设，再逐步扩大投入。预先定义价值、质量、风险和成本不达标时的暂停或退出条件。",
+      "example": "先验证获客质量，再决定是否扩展生成内容预算。",
+      "boundary": "试点投入已发生不是继续投入的充分理由。",
+      "en": {
+        "title": "Staged commitments and stop conditions",
+        "body": "Stage investment around tested assumptions and define value, quality, risk and cost stop conditions.",
+        "example": "Validate lead quality before expanding a content-generation budget.",
+        "boundary": "Sunk pilot costs alone do not justify more investment.",
+        "category": "Investment pacing",
+        "quote": "Learning objective 2.3.4 · Competition and business models"
+      },
+      "objective": "根据行业成熟度和竞争动态，确定合适的 AI 投资水平。",
+      "source": "用户大纲 2.3.4；教学补充：AWS Path-to-Value framework",
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
       "interaction": "read"
     },
     {
@@ -961,14 +1757,15 @@
       "task": "3.1",
       "skill": "3.1.1",
       "term": "负责任的AI原则",
-      "category": "在制订业务决策时应用负责任的 AI 原则",
+      "category": "全节概览",
       "definition": "公平性、可说明性、隐私、安全、透明度和稳健性需要进入实际决策与控制，而不仅是口号。不同任务需要相应评估。",
+      "example": "除平均准确率外，也检查不同群体的错误和影响。",
       "en": {
         "title": "Responsible AI principles",
         "body": "Fairness, explainability, privacy, security, transparency and robustness should become concrete evaluation and control practices.",
         "example": "Examine errors across relevant groups as well as overall accuracy.",
         "quote": "Learning objective 3.1.1 · Responsible AI decisions",
-        "category": "Responsible AI decisions"
+        "category": "Section overview"
       },
       "objective": "在业务场景中应用负责任的 AI 原则和维度（例如，公平性、可说明性、隐私、安全、透明度、稳健性）。",
       "source": "用户提供的学习大纲 · 技能 3.1.1",
@@ -981,14 +1778,15 @@
       "task": "3.1",
       "skill": "3.1.2",
       "term": "目标冲突与取舍",
-      "category": "在制订业务决策时应用负责任的 AI 原则",
+      "category": "全节概览",
       "definition": "效率、成本与责任要求可能冲突。把影响、约束和决策责任公开，选择与风险相称的措施并记录理由。",
+      "example": "更快地自动发送高影响决定，不一定比保留人工复核更合适。",
       "en": {
         "title": "Competing objectives and trade-offs",
         "body": "Document conflicts between business objectives and responsibility requirements, affected parties, decision owners and proportionate controls.",
         "example": "Consider human review before automating a high-impact decision.",
         "quote": "Learning objective 3.1.2 · Responsible AI decisions",
-        "category": "Responsible AI decisions"
+        "category": "Section overview"
       },
       "objective": "当业务目标与负责任的 AI 原则冲突时，进行权衡取舍。",
       "source": "用户提供的学习大纲 · 技能 3.1.2",
@@ -1001,14 +1799,15 @@
       "task": "3.1",
       "skill": "3.1.3",
       "term": "从设计时纳入治理",
-      "category": "在制订业务决策时应用负责任的 AI 原则",
+      "category": "全节概览",
       "definition": "在项目规划和设计阶段确定数据用途、责任、验证与监督，避免上线后才补救关键问题。",
+      "example": "选数据之前就讨论访问权限和允许用途。",
       "en": {
         "title": "Governance by design",
         "body": "Define intended use, data responsibilities, evaluation and oversight during planning and design, before deployment.",
         "example": "Review permitted data use before selecting a dataset.",
         "quote": "Learning objective 3.1.3 · Responsible AI decisions",
-        "category": "Responsible AI decisions"
+        "category": "Section overview"
       },
       "objective": "确定在 AI 项目规划中应何时融入负责任的 AI 实践，确保在设计时便纳入了监管措施。",
       "source": "用户提供的学习大纲 · 技能 3.1.3",
@@ -1021,18 +1820,169 @@
       "task": "3.1",
       "skill": "3.1.4",
       "term": "人工监督与升级",
-      "category": "在制订业务决策时应用负责任的 AI 原则",
+      "category": "全节概览",
       "definition": "明确何时人工检查、何时停止自动行动、何时上报，以及由谁接手。模型的自信措辞不能替代正式授权。",
+      "example": "出现缺乏来源的重要结论时，交给有责任的人员核验。",
       "en": {
         "title": "Human oversight and escalation",
         "body": "Specify when people review, stop or take over an AI process and who has decision authority.",
         "example": "Escalate an important unsupported claim for authorized verification.",
         "quote": "Learning objective 3.1.4 · Responsible AI decisions",
-        "category": "Responsible AI decisions"
+        "category": "Section overview"
       },
       "objective": "识别 AI 系统需要人工监督的情况，并确定适当的保障措施（例如，幻觉检测、防护机制、进行上报的标准）。",
       "source": "用户提供的学习大纲 · 技能 3.1.4",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.1-unit-1",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.1",
+      "term": "公平性与分组表现",
+      "category": "责任原则",
+      "definition": "公平性评估要结合具体用途和受影响群体，检查差错、机会和影响的差异。总体平均指标不能替代相关群体评估，目标之间也可能存在取舍。",
+      "example": "总体错误率低，但某地区用户频繁受损，需要单独调查。",
+      "boundary": "不存在脱离用途、适用于一切情境的单一公平指标。",
+      "en": {
+        "title": "Fairness and subgroup outcomes",
+        "body": "Assess relevant groups and impacts for the use case; overall averages cannot substitute for subgroup evaluation.",
+        "example": "Investigate a region with disproportionately harmful errors.",
+        "boundary": "No single fairness metric fits every context.",
+        "category": "Responsible AI principles",
+        "quote": "Learning objective 3.1.1 · Responsible AI decisions"
+      },
+      "objective": "在业务场景中应用负责任的 AI 原则和维度（例如，公平性、可说明性、隐私、安全、透明度、稳健性）。",
+      "source": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.1-unit-2",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.1",
+      "term": "可说明性与透明度",
+      "category": "责任原则",
+      "definition": "可说明性帮助理解系统行为或判断依据；透明度使相关人员了解AI参与、适用边界和重要限制，以便作出知情选择。",
+      "example": "告知客户使用AI，并提供可理解的判断依据和申诉渠道。",
+      "boundary": "展示技术术语不等于给出可用解释。",
+      "en": {
+        "title": "Explainability and transparency",
+        "body": "Explainability supports understanding behavior; transparency supports informed choices about AI use and its limits.",
+        "example": "Disclose AI use and provide understandable grounds and recourse.",
+        "boundary": "Technical jargon is not necessarily a useful explanation.",
+        "category": "Responsible AI principles",
+        "quote": "Learning objective 3.1.1 · Responsible AI decisions"
+      },
+      "objective": "在业务场景中应用负责任的 AI 原则和维度（例如，公平性、可说明性、隐私、安全、透明度、稳健性）。",
+      "source": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.1-unit-3",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.1",
+      "term": "隐私、安全与稳健性",
+      "category": "责任原则",
+      "definition": "隐私关注个人资料的适当使用与保护；安全关注防止未授权访问或破坏；稳健性关注系统在合理变化和异常条件下仍能适当运行。",
+      "example": "检查访问权限，限制敏感数据，并测试异常输入。",
+      "boundary": "这些维度相关但不能互相替代。",
+      "en": {
+        "title": "Privacy, security and robustness",
+        "body": "Privacy concerns appropriate personal-data use; security concerns unauthorized access or harm; robustness concerns behavior under changing conditions.",
+        "example": "Enforce access, limit sensitive data and test abnormal inputs.",
+        "boundary": "These dimensions overlap but do not replace one another.",
+        "category": "Responsible AI principles",
+        "quote": "Learning objective 3.1.1 · Responsible AI decisions"
+      },
+      "objective": "在业务场景中应用负责任的 AI 原则和维度（例如，公平性、可说明性、隐私、安全、透明度、稳健性）。",
+      "source": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.2-unit-1",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.2",
+      "term": "收益、影响与比例原则",
+      "category": "责任取舍",
+      "definition": "讨论效率收益时同时说明受影响对象、损害可能性、严重程度和可逆性。选择与影响相称的控制，并记录取舍和决定责任。",
+      "example": "高影响决定保留有效人工复核，而非只追求自动处理率。",
+      "boundary": "业务指标提高不能自动抵消对个人的严重损害。",
+      "en": {
+        "title": "Benefits, impacts and proportionate controls",
+        "body": "Assess affected parties, likelihood, severity and reversibility when balancing benefits and controls.",
+        "example": "Retain meaningful human review for high-impact decisions.",
+        "boundary": "Business improvement does not automatically offset serious harm.",
+        "category": "Responsible trade-offs",
+        "quote": "Learning objective 3.1.2 · Responsible AI decisions"
+      },
+      "objective": "当业务目标与负责任的 AI 原则冲突时，进行权衡取舍。",
+      "source": "用户大纲 3.1.2；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.3-unit-1",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.3",
+      "term": "从用途定义开始设置保障",
+      "category": "设计时治理",
+      "definition": "在选择数据、设计功能和定义验收标准时纳入责任要求，识别不允许的用途和需要人工介入的情形，再迭代验证。",
+      "example": "设计客服检索时就实施权限，而不是上线后只加免责声明。",
+      "boundary": "设计时治理不意味着不允许小范围迭代。",
+      "en": {
+        "title": "Safeguards from use-case definition",
+        "body": "Define permitted uses, safeguards and review conditions during data and feature design, then test them.",
+        "example": "Implement retrieval permissions during design, not just a later notice.",
+        "boundary": "Governance by design can coexist with controlled iteration.",
+        "category": "Governance by design",
+        "quote": "Learning objective 3.1.3 · Responsible AI decisions"
+      },
+      "objective": "确定在 AI 项目规划中应何时融入负责任的 AI 实践，确保在设计时便纳入了监管措施。",
+      "source": "用户大纲 3.1.3；教学补充：AWS Responsible AI design principles",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/design-principles.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.1.4-unit-1",
+      "chapter": "3",
+      "task": "3.1",
+      "skill": "3.1.4",
+      "term": "复核能力与升级阈值",
+      "category": "人工监督",
+      "definition": "监督者需要证据、时间、训练和停止或修改行动的权限。为无来源结论、异常指标和高影响操作定义升级条件与接手者。",
+      "example": "不能核验的重要结论转给负责人，不能只要求点击确认。",
+      "boundary": "有人工按钮不代表已经形成有效监督。",
+      "en": {
+        "title": "Review capability and escalation triggers",
+        "body": "Reviewers need evidence, time, training and authority; define escalation triggers and owners.",
+        "example": "Escalate an important unsupported result rather than requesting ceremonial approval.",
+        "boundary": "A human button alone is not meaningful oversight.",
+        "category": "Human oversight",
+        "quote": "Learning objective 3.1.4 · Responsible AI decisions"
+      },
+      "objective": "识别 AI 系统需要人工监督的情况，并确定适当的保障措施（例如，幻觉检测、防护机制、进行上报的标准）。",
+      "source": "用户大纲 3.1.4；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
       "interaction": "read"
     },
     {
@@ -1041,14 +1991,15 @@
       "task": "3.2",
       "skill": "3.2.1",
       "term": "跨职能治理与问责",
-      "category": "建立 AI 监管结构并确保监管合规",
+      "category": "全节概览",
       "definition": "业务、技术、数据、法务及合规等角色共同参与，并明确谁负责哪些决策。多人参与不代表责任可以模糊。",
+      "example": "明确谁批准用途、谁维护资料、谁处理异常。",
       "en": {
         "title": "Cross-functional governance and accountability",
         "body": "Include business, technical, data and relevant oversight roles with explicit decision responsibilities.",
         "example": "Assign owners for use approval, source maintenance and incident handling.",
         "quote": "Learning objective 3.2.1 · Governance and access control",
-        "category": "Governance and access control"
+        "category": "Section overview"
       },
       "objective": "建立具有合理跨职能部门代表性和明确问责机制的 AI 监管结构。",
       "source": "用户提供的学习大纲 · 技能 3.2.1",
@@ -1061,14 +2012,15 @@
       "task": "3.2",
       "skill": "3.2.2",
       "term": "合规风险识别",
-      "category": "建立 AI 监管结构并确保监管合规",
+      "category": "全节概览",
       "definition": "先确定业务用途、数据类型、适用地区与组织要求，再由相关责任人评估合规风险。通用清单不能代替具体判断。",
+      "example": "新用途涉及个人资料时，应先进行适用要求与授权核对。",
       "en": {
         "title": "Compliance risk identification",
         "body": "Determine intended use, data types, jurisdictions and applicable organizational requirements before evaluating compliance risks.",
         "example": "Consult the responsible specialists before reusing personal information.",
         "quote": "Learning objective 3.2.2 · Governance and access control",
-        "category": "Governance and access control"
+        "category": "Section overview"
       },
       "objective": "确定并解决使用 AI 的业务流程的监管合规风险。",
       "source": "用户提供的学习大纲 · 技能 3.2.2",
@@ -1081,14 +2033,15 @@
       "task": "3.2",
       "skill": "3.2.3",
       "term": "访问控制与数据安全",
-      "category": "建立 AI 监管结构并确保监管合规",
+      "category": "全节概览",
       "definition": "只授予完成工作所需的访问与操作权限，并在资料和工具层执行控制。仅靠提示词不能可靠替代权限系统。",
+      "example": "无权读取人事档案的员工，不应通过检索助手得到档案内容。",
       "en": {
         "title": "Access control and data security",
         "body": "Grant only necessary permissions and enforce them in data and tool systems; prompts alone cannot implement reliable access control.",
         "example": "A retrieval assistant must not expose personnel files to unauthorized users.",
         "quote": "Learning objective 3.2.3 · Governance and access control",
-        "category": "Governance and access control"
+        "category": "Section overview"
       },
       "objective": "针对 AI 系统，确定合适的访问控制和数据安全措施。",
       "source": "用户提供的学习大纲 · 技能 3.2.3",
@@ -1101,18 +2054,119 @@
       "task": "3.2",
       "skill": "3.2.4",
       "term": "AI风险分类",
-      "category": "建立 AI 监管结构并确保监管合规",
+      "category": "全节概览",
       "definition": "结合用途、受影响对象、潜在损害和控制条件分类风险，再安排评估与治理优先级；不要仅按模型大小分类。",
+      "example": "内部草稿辅助与影响个人重要权益的自动决定，需要不同控制。",
       "en": {
         "title": "AI risk classification",
         "body": "Classify a use case by potential impact, affected parties and controls to prioritize oversight.",
         "example": "An internal drafting aid and a consequential automated decision need different controls.",
         "quote": "Learning objective 3.2.4 · Governance and access control",
-        "category": "Governance and access control"
+        "category": "Section overview"
       },
       "objective": "应用 AI 风险分类框架，确立 AI 生命周期中监管和合规性决策的优先顺序。",
       "source": "用户提供的学习大纲 · 技能 3.2.4",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "3.2.1-unit-1",
+      "chapter": "3",
+      "task": "3.2",
+      "skill": "3.2.1",
+      "term": "负责执行与最终问责",
+      "category": "治理角色",
+      "definition": "执行者完成工作，最终问责者对决定和结果负责。业务、技术、数据和监督职能需要明确协作与授权边界，避免多人参与却无人作决定。",
+      "example": "业务负责人批准用途，数据负责人维护资料，运维负责告警。",
+      "boundary": "供应商负责模型服务，不等于替客户承担全部业务决定。",
+      "en": {
+        "title": "Responsible versus accountable",
+        "body": "Distinguish doing the work from owning a decision; define cross-functional authority and handoffs.",
+        "example": "Business approves use, data owners maintain sources, and operations handle alerts.",
+        "boundary": "A supplier does not own all customer use decisions.",
+        "category": "Governance roles",
+        "quote": "Learning objective 3.2.1 · Governance and access control"
+      },
+      "objective": "建立具有合理跨职能部门代表性和明确问责机制的 AI 监管结构。",
+      "source": "用户大纲 3.2.1；教学补充：NIST AI RMF Core — GOVERN",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.2.2-unit-1",
+      "chapter": "3",
+      "task": "3.2",
+      "skill": "3.2.2",
+      "term": "用途、资料与适用要求",
+      "category": "合规识别",
+      "definition": "合规识别需要知道系统用途、受影响人群、数据类别、使用地区及组织要求，再由有责任的专业人员核对适用条件。",
+      "example": "内部文稿辅助改为影响客户权益的自动决定，需要重新评估。",
+      "boundary": "通用清单不能替代针对具体用途的判断。",
+      "en": {
+        "title": "Use, data and applicable requirements",
+        "body": "Assess intended use, people, data, location and organizational requirements with responsible specialists.",
+        "example": "Reassess when a drafting aid becomes a consequential decision system.",
+        "boundary": "A generic checklist is not a use-specific determination.",
+        "category": "Compliance assessment",
+        "quote": "Learning objective 3.2.2 · Governance and access control"
+      },
+      "objective": "确定并解决使用 AI 的业务流程的监管合规风险。",
+      "source": "用户大纲 3.2.2；教学补充：NIST AI RMF Core — GOVERN",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.2.3-unit-1",
+      "chapter": "3",
+      "task": "3.2",
+      "skill": "3.2.3",
+      "term": "最小权限与检索前过滤",
+      "category": "权限实施",
+      "definition": "只授予工作所需的数据与工具权限，在检索或执行前验证身份和授权。输出后再遮盖，不能代替阻止越权检索。",
+      "example": "客服可读获准政策，不能读人事档案，也不能自行批准高额退款。",
+      "boundary": "提示层拒绝不构成可靠权限边界。",
+      "en": {
+        "title": "Least privilege and pre-retrieval filtering",
+        "body": "Authorize identities and data or tools before retrieval and execution; grant only needed access.",
+        "example": "Support may read policy but not personnel records or approve large refunds.",
+        "boundary": "A model refusal is not a reliable access boundary.",
+        "category": "Access implementation",
+        "quote": "Learning objective 3.2.3 · Governance and access control"
+      },
+      "objective": "针对 AI 系统，确定合适的访问控制和数据安全措施。",
+      "source": "用户大纲 3.2.3；教学补充：AWS data strategy and permissions",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.2.4-unit-1",
+      "chapter": "3",
+      "task": "3.2",
+      "skill": "3.2.4",
+      "term": "按影响分配治理力度",
+      "category": "风险分级",
+      "definition": "以用途、受影响对象、潜在损害和控制情况确定评估优先级，生命周期中用途或环境改变时重新分级。模型规模不是唯一风险标准。",
+      "example": "内部摘要与自动影响个人权益的决策需要不同审查力度。",
+      "boundary": "风险分级不是一次立项表格。",
+      "en": {
+        "title": "Risk-proportionate governance",
+        "body": "Prioritize by use, affected people, harm and controls, and reassess when conditions change.",
+        "example": "Internal summaries and consequential decisions need different scrutiny.",
+        "boundary": "Risk classification is not a one-time form.",
+        "category": "Risk prioritization",
+        "quote": "Learning objective 3.2.4 · Governance and access control"
+      },
+      "objective": "应用 AI 风险分类框架，确立 AI 生命周期中监管和合规性决策的优先顺序。",
+      "source": "用户大纲 3.2.4；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
       "interaction": "read"
     },
     {
@@ -1121,14 +2175,15 @@
       "task": "3.3",
       "skill": "3.3.1",
       "term": "生产监控与事件处理",
-      "category": "确定企业人工智能风险以及制定缓解策略",
+      "category": "全节概览",
       "definition": "为运行质量、日志、异常处理、人工升级和回退设定机制。控制要在上线后持续发挥作用。",
+      "example": "错误率突然升高时限制受影响用途，再调查原因。",
       "en": {
         "title": "Production monitoring and incidents",
         "body": "Operate logging, quality checks, escalation, fallback and incident response throughout deployment.",
         "example": "Restrict an affected use when error rates rise, then investigate.",
         "quote": "Learning objective 3.3.1 · Risk management",
-        "category": "Risk management"
+        "category": "Section overview"
       },
       "objective": "确定生产环境中 AI 系统的风险控制和监控机制需求。",
       "source": "用户提供的学习大纲 · 技能 3.3.1",
@@ -1141,14 +2196,15 @@
       "task": "3.3",
       "skill": "3.3.2",
       "term": "生命周期中的偏差",
-      "category": "确定企业人工智能风险以及制定缓解策略",
+      "category": "全节概览",
       "definition": "偏差可能来自采样、标注、训练目标和部署环境等阶段。持续观察分组表现及环境变化，不把一次检查当作永久结论。",
+      "example": "整体分数稳定时，某一群体的错误仍可能增加。",
       "en": {
         "title": "Bias across the lifecycle",
         "body": "Sampling, labeling, objectives and deployment context can introduce bias; evaluate relevant subgroup outcomes over time.",
         "example": "A stable average score may hide worsening performance for one group.",
         "quote": "Learning objective 3.3.2 · Risk management",
-        "category": "Risk management"
+        "category": "Section overview"
       },
       "objective": "了解在 AI 生命周期的多个阶段中可能会出现偏差，并说明持续监控偏差偏移的重要性。",
       "source": "用户提供的学习大纲 · 技能 3.3.2",
@@ -1161,14 +2217,15 @@
       "task": "3.3",
       "skill": "3.3.3",
       "term": "有害内容与知识产权",
-      "category": "确定企业人工智能风险以及制定缓解策略",
+      "category": "全节概览",
       "definition": "检查内容风险、资料使用授权和输出用途，设置适当审核与处置流程。不假定模型生成就天然无害或无权利限制。",
+      "example": "公开发布生成内容前，根据用途检查来源与使用条件。",
       "en": {
         "title": "Harmful content and intellectual property",
         "body": "Review content risks, input permissions and intended output uses; define review and remediation processes.",
         "example": "Check publication rights and content suitability before releasing generated material.",
         "quote": "Learning objective 3.3.3 · Risk management",
-        "category": "Risk management"
+        "category": "Section overview"
       },
       "objective": "管理 AI 系统的有害内容风险和知识产权 (IP) 问题。",
       "source": "用户提供的学习大纲 · 技能 3.3.3",
@@ -1181,18 +2238,119 @@
       "task": "3.3",
       "skill": "3.3.4",
       "term": "幻觉与可靠性",
-      "category": "确定企业人工智能风险以及制定缓解策略",
+      "category": "全节概览",
       "definition": "幻觉可能表现为看似可信但无依据的内容。结合来源核验、数据质量检查、监测和必要人工复核来管理风险。",
+      "example": "带引用的回答仍需核对引用是否真正支持结论。",
       "en": {
         "title": "Hallucination and reliability",
         "body": "A hallucination is plausible but unsupported or incorrect generated content; manage reliability through evidence, evaluation and appropriate review.",
         "example": "Check whether a citation actually supports the claim.",
         "quote": "Learning objective 3.3.4 · Risk management",
-        "category": "Risk management"
+        "category": "Section overview"
       },
       "objective": "确定并减轻与 AI 系统可靠性相关的风险（例如，幻觉、数据质量下降、模型漂移）。",
       "source": "用户提供的学习大纲 · 技能 3.3.4",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "3.3.1-unit-1",
+      "chapter": "3",
+      "task": "3.3",
+      "skill": "3.3.1",
+      "term": "检测、限制、调查与恢复",
+      "category": "事件处置",
+      "definition": "记录模型版本、输入、输出和告警以便追踪；出现异常时先控制影响，再调查、修复和验证，满足恢复条件后再扩大使用。",
+      "example": "投诉激增时暂停自动发送，保留辅助起草并安排人工审核。",
+      "boundary": "事故演练顺序服务于具体条件，不是所有组织的唯一流程。",
+      "en": {
+        "title": "Detection, containment, investigation and recovery",
+        "body": "Log relevant versions and events, contain impact, investigate and validate remediation before restoring use.",
+        "example": "Pause automatic sending while investigating an error spike.",
+        "boundary": "An exercise sequence is not a universal incident procedure.",
+        "category": "Incident response",
+        "quote": "Learning objective 3.3.1 · Risk management"
+      },
+      "objective": "确定生产环境中 AI 系统的风险控制和监控机制需求。",
+      "source": "用户大纲 3.3.1；教学补充：AWS GenAI lifecycle operational excellence",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.3.2-unit-1",
+      "chapter": "3",
+      "task": "3.3",
+      "skill": "3.3.2",
+      "term": "采样、标注、目标与部署",
+      "category": "偏差管理",
+      "definition": "偏差可能源自缺乏代表性的样本、不一致标注、优化目标和部署人群差异。对相关群体持续监测，并调查差异的原因。",
+      "example": "新地区加入后，检查当地表达方式是否被原数据覆盖。",
+      "boundary": "仅扩大样本量不保证消除偏差。",
+      "en": {
+        "title": "Sampling, labels, objectives and deployment",
+        "body": "Bias can originate in sampling, labeling, objectives and deployment populations; investigate subgroup differences over time.",
+        "example": "Check whether new regional language is represented in the data.",
+        "boundary": "Larger datasets do not automatically remove bias.",
+        "category": "Bias management",
+        "quote": "Learning objective 3.3.2 · Risk management"
+      },
+      "objective": "了解在 AI 生命周期的多个阶段中可能会出现偏差，并说明持续监控偏差偏移的重要性。",
+      "source": "用户大纲 3.3.2；教学补充：AWS Responsible AI Lens — dimensions",
+      "references": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.3.3-unit-1",
+      "chapter": "3",
+      "task": "3.3",
+      "skill": "3.3.3",
+      "term": "来源授权、输出用途与有害内容",
+      "category": "内容与权利",
+      "definition": "核对输入资料允许的使用方式，并根据输出用途设置内容审核、投诉和处置流程。来源有授权不等于输出一定安全，过滤有害内容也不能证明已获版权许可。",
+      "example": "公开发布前同时检查素材使用条件和输出风险。",
+      "boundary": "模型生成不自动意味着无权利限制。",
+      "en": {
+        "title": "Source rights, output uses and harmful content",
+        "body": "Review source permissions and output use and operate content review and remediation; rights and harmful-content controls are distinct.",
+        "example": "Review both use rights and harmful content before publication.",
+        "boundary": "Generated material is not automatically unrestricted.",
+        "category": "Content and rights",
+        "quote": "Learning objective 3.3.3 · Risk management"
+      },
+      "objective": "管理 AI 系统的有害内容风险和知识产权 (IP) 问题。",
+      "source": "用户大纲 3.3.3；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE",
+      "references": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "3.3.4-unit-1",
+      "chapter": "3",
+      "task": "3.3",
+      "skill": "3.3.4",
+      "term": "证据支持与不确定性",
+      "category": "可靠性",
+      "definition": "幻觉是看似可信却错误或无依据的内容。核对资料相关性、引用支持和版本，对重要未知保留不确定性并升级复核。",
+      "example": "回答引用存在，但引用没有包含声称的退款期限。",
+      "boundary": "检索、引用或人工复核都不是零错误保证。",
+      "en": {
+        "title": "Evidence support and uncertainty",
+        "body": "Check relevance, support and source versions; communicate uncertainty and escalate important unknowns.",
+        "example": "A citation exists but does not support the claimed refund deadline.",
+        "boundary": "Retrieval, citations and review are not zero-error guarantees.",
+        "category": "Reliability",
+        "quote": "Learning objective 3.3.4 · Risk management"
+      },
+      "objective": "确定并减轻与 AI 系统可靠性相关的风险（例如，幻觉、数据质量下降、模型漂移）。",
+      "source": "用户大纲 3.3.4；教学补充：AWS RAG writing practices",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
       "interaction": "read"
     },
     {
@@ -1201,14 +2359,15 @@
       "task": "4.1",
       "skill": "4.1.1",
       "term": "组织准备度",
-      "category": "评估 AI 业务的准备情况和成熟度",
+      "category": "全节概览",
       "definition": "评估领导共识、数据、文化、基础设施与治理等维度；不能只检查是否买到了模型。",
+      "example": "演示效果好，但没有数据负责人和运营人员，仍不足以规模部署。",
       "en": {
         "title": "Organizational readiness",
         "body": "Assess leadership alignment, data, culture, infrastructure and governance required to adopt and sustain AI.",
         "example": "A successful demo is insufficient without data owners and operating support.",
         "quote": "Learning objective 4.1.1 · Organizational readiness",
-        "category": "Organizational readiness"
+        "category": "Section overview"
       },
       "objective": "根据各关键维度（例如，领导层共识、数据质量、文化适应性、技术基础设施、监管框架），评估企业在采用 AI 方面的准备情况。",
       "source": "用户提供的学习大纲 · 技能 4.1.1",
@@ -1221,14 +2380,15 @@
       "task": "4.1",
       "skill": "4.1.2",
       "term": "AI成熟度",
-      "category": "评估 AI 业务的准备情况和成熟度",
+      "category": "全节概览",
       "definition": "成熟度描述从探索、实验到可持续运营等能力状态。它用于识别下一步发展方向，不只是给组织打一个漂亮分数。",
+      "example": "能运行一次试点与能持续监测和维护多个应用，是不同能力。",
       "en": {
         "title": "AI maturity",
         "body": "The stage of organizational capability, from exploration through experiments to repeatable operation at scale.",
         "example": "Running one pilot differs from maintaining several monitored services.",
         "quote": "Learning objective 4.1.2 · Organizational readiness",
-        "category": "Organizational readiness"
+        "category": "Section overview"
       },
       "objective": "运用 AI 成熟度模型，评估企业在 AI 旅程中所处的阶段（例如实验阶段、企业规模部署阶段）。",
       "source": "用户提供的学习大纲 · 技能 4.1.2",
@@ -1241,14 +2401,15 @@
       "task": "4.1",
       "skill": "4.1.3",
       "term": "能力差距",
-      "category": "评估 AI 业务的准备情况和成熟度",
+      "category": "全节概览",
       "definition": "从人员、流程、技术和治理找出具体缺口，区分缺少技能、缺少权限和缺少合适流程等问题。",
+      "example": "员工不会核验答案，不能只通过更换模型来解决。",
       "en": {
         "title": "Capability gaps",
         "body": "Identify specific shortfalls in people, processes, technology and governance that prevent intended outcomes.",
         "example": "Replacing a model does not teach employees how to verify its answers.",
         "quote": "Learning objective 4.1.3 · Organizational readiness",
-        "category": "Organizational readiness"
+        "category": "Section overview"
       },
       "objective": "确定在人员、流程、技术和监管等方面阻碍 AI 成功转型的具体能力差距。",
       "source": "用户提供的学习大纲 · 技能 4.1.3",
@@ -1261,14 +2422,15 @@
       "task": "4.1",
       "skill": "4.1.4",
       "term": "发展路线与投入顺序",
-      "category": "评估 AI 业务的准备情况和成熟度",
+      "category": "全节概览",
       "definition": "把能力建设与战略目标连接，依据当前准备程度安排可验证的阶段目标和投入。",
+      "example": "先建立数据责任和验证机制，再扩大相关业务用途。",
       "en": {
         "title": "Roadmaps and investment sequencing",
         "body": "Connect capability building to strategic goals and current readiness through evidence-based milestones.",
         "example": "Establish data ownership and evaluation before expanding the use case.",
         "quote": "Learning objective 4.1.4 · Organizational readiness",
-        "category": "Organizational readiness"
+        "category": "Section overview"
       },
       "objective": "确定开发投资的优先顺序，并根据战略目标和当前业务成熟度水平制定发展路线。",
       "source": "用户提供的学习大纲 · 技能 4.1.4",
@@ -1276,19 +2438,120 @@
       "interaction": "assemble"
     },
     {
+      "id": "4.1.1-unit-1",
+      "chapter": "4",
+      "task": "4.1",
+      "skill": "4.1.1",
+      "term": "领导、数据、文化、技术与治理",
+      "category": "准备度维度",
+      "definition": "准备度是能否开展并维持特定用途的条件。分别检查领导共识、数据可用性、文化与技能、基础设施和治理，记录证据而非只填写自评分。",
+      "example": "有预算和演示，但没有资料负责人，数据准备仍有缺口。",
+      "boundary": "准备度会随用途改变，不能只给全企业一个分数。",
+      "en": {
+        "title": "Leadership, data, culture, technology and governance",
+        "body": "Assess use-specific readiness across leadership, data, culture, skills, infrastructure and governance using evidence.",
+        "example": "A funded demo without data owners still has a readiness gap.",
+        "boundary": "Readiness varies by use case, not just by company.",
+        "category": "Readiness dimensions",
+        "quote": "Learning objective 4.1.1 · Organizational readiness"
+      },
+      "objective": "根据各关键维度（例如，领导层共识、数据质量、文化适应性、技术基础设施、监管框架），评估企业在采用 AI 方面的准备情况。",
+      "source": "用户大纲 4.1.1；教学补充：AWS generative AI maturity model",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.1.2-unit-1",
+      "chapter": "4",
+      "task": "4.1",
+      "skill": "4.1.2",
+      "term": "探索、实验与可持续运营",
+      "category": "成熟度评估",
+      "definition": "成熟度关注能力是否可重复、可治理并能持续运营。一次试点成功与多团队稳定使用不同；具体阶段模型应说明定义和证据要求。",
+      "example": "多个演示都依靠同一人手动修复，不代表已具备规模化能力。",
+      "boundary": "成熟度模型是诊断工具，不是准确率认证。",
+      "en": {
+        "title": "Exploration, experiments and sustainable operations",
+        "body": "Maturity concerns repeatable, governed operations; a successful pilot differs from sustained multi-team capability.",
+        "example": "Many demos depending on one expert do not establish scalable operations.",
+        "boundary": "A maturity model is a diagnostic tool, not an accuracy certificate.",
+        "category": "Maturity assessment",
+        "quote": "Learning objective 4.1.2 · Organizational readiness"
+      },
+      "objective": "运用 AI 成熟度模型，评估企业在 AI 旅程中所处的阶段（例如实验阶段、企业规模部署阶段）。",
+      "source": "用户大纲 4.1.2；教学补充：AWS generative AI maturity model",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.1.3-unit-1",
+      "chapter": "4",
+      "task": "4.1",
+      "skill": "4.1.3",
+      "term": "区分技能、流程、技术与权限缺口",
+      "category": "能力诊断",
+      "definition": "推广受阻可能因为不会操作、流程未改、系统不可用或没有授权。先确定具体阻碍，再安排对应干预，避免所有问题都用采购或培训解决。",
+      "example": "员工知道如何核验，但无权查看原文，应解决访问与流程问题。",
+      "boundary": "相同的低采用率可能有不同原因。",
+      "en": {
+        "title": "Distinguishing capability gaps",
+        "body": "Diagnose whether a gap concerns skills, workflow, technology or authority before selecting an intervention.",
+        "example": "A trained reviewer lacking source access needs permissions, not just more training.",
+        "boundary": "The same low adoption measure can have different causes.",
+        "category": "Capability diagnosis",
+        "quote": "Learning objective 4.1.3 · Organizational readiness"
+      },
+      "objective": "确定在人员、流程、技术和监管等方面阻碍 AI 成功转型的具体能力差距。",
+      "source": "用户大纲 4.1.3；教学补充：AWS generative AI maturity model",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.1.4-unit-1",
+      "chapter": "4",
+      "task": "4.1",
+      "skill": "4.1.4",
+      "term": "依赖关系与阶段成果",
+      "category": "投资路线",
+      "definition": "把战略目标拆成可核验的阶段成果，识别前置依赖和责任人，优先补齐阻碍价值实现的关键条件，再验证下一步投入。",
+      "example": "先统一资料责任和质量标准，再扩大使用团队。",
+      "boundary": "不能按“容易展示”替代战略与依赖分析。",
+      "en": {
+        "title": "Dependencies and staged outcomes",
+        "body": "Build evidence-based milestones with dependencies and owners and address bottlenecks before expanding investment.",
+        "example": "Establish data ownership and quality standards before expansion.",
+        "boundary": "Demo appeal is not a substitute for dependency analysis.",
+        "category": "Investment roadmap",
+        "quote": "Learning objective 4.1.4 · Organizational readiness"
+      },
+      "objective": "确定开发投资的优先顺序，并根据战略目标和当前业务成熟度水平制定发展路线。",
+      "source": "用户大纲 4.1.4；教学补充：AWS generative AI maturity model",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "interaction": "read"
+    },
+    {
       "id": "4.2-lesson-1",
       "chapter": "4",
       "task": "4.2",
       "skill": "4.2.1",
       "term": "数据准备与孤岛",
-      "category": "为 AI 建立数据基础和基础设施基础",
+      "category": "全节概览",
       "definition": "检查资料质量、可访问性和共享障碍。分散资料是否能适当地用于当前用途，比单纯的数据总量更重要。",
+      "example": "多个部门各有不同版本的客户字段，需要先统一口径与权限。",
       "en": {
         "title": "Data readiness and silos",
         "body": "Assess quality, accessibility and appropriate sharing; disconnected data sources can obstruct consistent use.",
         "example": "Reconcile different customer-field definitions across departments.",
         "quote": "Learning objective 4.2.1 · Data and infrastructure",
-        "category": "Data and infrastructure"
+        "category": "Section overview"
       },
       "objective": "评估数据准备情况（包括数据质量、可访问性），以及数据孤岛对 AI 计划的影响。",
       "source": "用户提供的学习大纲 · 技能 4.2.1",
@@ -1301,14 +2564,15 @@
       "task": "4.2",
       "skill": "4.2.2",
       "term": "数据策略与所有权",
-      "category": "为 AI 建立数据基础和基础设施基础",
+      "category": "全节概览",
       "definition": "明确数据用途、责任人、质量维护和共享规则。数据能够共享不等于应对所有人开放。",
+      "example": "为制度资料指定更新责任人，并保留版本和使用范围。",
       "en": {
         "title": "Data strategy and ownership",
         "body": "Assign intended uses, accountable owners, quality maintenance and sharing rules.",
         "example": "Name an owner for policy updates and retain versions and access limits.",
         "quote": "Learning objective 4.2.2 · Data and infrastructure",
-        "category": "Data and infrastructure"
+        "category": "Section overview"
       },
       "objective": "描述为 AI 奠定基础的数据策略、数据所有权和数据共享框架的重要性。",
       "source": "用户提供的学习大纲 · 技能 4.2.2",
@@ -1321,14 +2585,15 @@
       "task": "4.2",
       "skill": "4.2.3",
       "term": "基础设施要求",
-      "category": "为 AI 建立数据基础和基础设施基础",
+      "category": "全节概览",
       "definition": "按工作负载评估计算、存储、网络、集成、监测和安全需求，并考虑运维与成本；不只比较硬件性能。",
+      "example": "交互式客服系统还要考虑延迟、可用性和失败时的处理方式。",
       "en": {
         "title": "Infrastructure requirements",
         "body": "Assess compute, storage, networks, integration, monitoring, security and operations against workload needs and cost.",
         "example": "An interactive service also needs acceptable latency and fallback behavior.",
         "quote": "Learning objective 4.2.3 · Data and infrastructure",
-        "category": "Data and infrastructure"
+        "category": "Section overview"
       },
       "objective": "评估支持 AI 计划的基础技术和基础设施要求。",
       "source": "用户提供的学习大纲 · 技能 4.2.3",
@@ -1336,19 +2601,95 @@
       "interaction": "assemble"
     },
     {
+      "id": "4.2.1-unit-1",
+      "chapter": "4",
+      "task": "4.2",
+      "skill": "4.2.1",
+      "term": "质量维度与数据契约",
+      "category": "数据准备",
+      "definition": "针对用途检查准确、完整、一致、及时和相关性，约定字段意义、主键、格式及缺失值处理。数据孤岛还会带来重复和不同口径。",
+      "example": "同一客户有两条订单副本，先查主键与来源而不是直接相加。",
+      "boundary": "格式统一不等于数值真实，清洗需要保留依据。",
+      "en": {
+        "title": "Quality dimensions and data contracts",
+        "body": "Assess fitness for use and define field meanings, keys, formats and missing-value handling across sources.",
+        "example": "Investigate duplicate order keys before summing totals.",
+        "boundary": "Consistent formatting does not establish factual correctness.",
+        "category": "Data preparation",
+        "quote": "Learning objective 4.2.1 · Data and infrastructure"
+      },
+      "objective": "评估数据准备情况（包括数据质量、可访问性），以及数据孤岛对 AI 计划的影响。",
+      "source": "用户大纲 4.2.1；教学补充：AWS data strategy and permissions",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.2.2-unit-1",
+      "chapter": "4",
+      "task": "4.2",
+      "skill": "4.2.2",
+      "term": "所有者、血缘与版本",
+      "category": "数据治理",
+      "definition": "资料需要明确维护责任、来源去向、版本和共享边界，以便核验答案、修复错误并追踪变化。共享应保留权限而不是复制后全面公开。",
+      "example": "制度更新后能查到负责部门、有效日期与旧版去向。",
+      "boundary": "能访问数据不等于可以任意再利用。",
+      "en": {
+        "title": "Owners, lineage and versions",
+        "body": "Track accountable owners, lineage, versions and sharing boundaries for maintainable and verifiable information.",
+        "example": "Track policy ownership, effective dates and superseded versions.",
+        "boundary": "Access does not imply unrestricted reuse.",
+        "category": "Data governance",
+        "quote": "Learning objective 4.2.2 · Data and infrastructure"
+      },
+      "objective": "描述为 AI 奠定基础的数据策略、数据所有权和数据共享框架的重要性。",
+      "source": "用户大纲 4.2.2；教学补充：AWS data strategy and permissions",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.2.3-unit-1",
+      "chapter": "4",
+      "task": "4.2",
+      "skill": "4.2.3",
+      "term": "延迟、容量、可用性与运营",
+      "category": "基础设施",
+      "definition": "基础设施需服务实际工作负载，包括并发、数据存储、网络、模型调用、监测和故障恢复；评估成本、可扩展性与支持责任。",
+      "example": "客服系统除了生成质量，还要验证高峰响应和服务故障时的接手方式。",
+      "boundary": "购买更大算力不能替代数据与运营准备。",
+      "en": {
+        "title": "Latency, capacity, availability and operations",
+        "body": "Assess workload concurrency, storage, networks, inference, monitoring and recovery together with cost and ownership.",
+        "example": "Test peak support traffic and fallback behavior as well as response quality.",
+        "boundary": "More compute does not replace data or operating readiness.",
+        "category": "Infrastructure",
+        "quote": "Learning objective 4.2.3 · Data and infrastructure"
+      },
+      "objective": "评估支持 AI 计划的基础技术和基础设施要求。",
+      "source": "用户大纲 4.2.3；教学补充：AWS GenAI lifecycle operational excellence",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "interaction": "read"
+    },
+    {
       "id": "4.3-lesson-1",
       "chapter": "4",
       "task": "4.3",
       "skill": "4.3.1",
       "term": "高管支持与AI倡导者",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "领导层统一目标、提供资源并明确责任；倡导者推动沟通与实践，而不是替代正式治理。",
+      "example": "由业务负责人解释试点目标，并支持员工反馈问题。",
       "en": {
         "title": "Executive support and AI champions",
         "body": "Leaders align goals, resources and accountability; champions support communication and practice within governance.",
         "example": "A business sponsor explains pilot goals and invites employee feedback.",
         "quote": "Learning objective 4.3.1 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "建立高管层支持和领导层共识，识别并赋能 AI 倡导者，在整个企业中保持发展动力。",
       "source": "用户提供的学习大纲 · 技能 4.3.1",
@@ -1361,14 +2702,15 @@
       "task": "4.3",
       "skill": "4.3.2",
       "term": "跨职能团队",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "把业务、技术、法律与合规等能力放进协作机制，明确交付、评估和异常处理的责任。",
+      "example": "试点负责人应知道谁可以决定暂停高风险功能。",
       "en": {
         "title": "Cross-functional teams",
         "body": "Combine business, technical and oversight capabilities with clear delivery and incident responsibilities.",
         "example": "Know who can pause a risky feature during a pilot.",
         "quote": "Learning objective 4.3.2 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "组建涵盖不同专业领域（例如业务负责人、技术专家、法律、合规性等）的跨职能团队，并为 AI 计划制定明确的责任标准。",
       "source": "用户提供的学习大纲 · 技能 4.3.2",
@@ -1381,14 +2723,15 @@
       "task": "4.3",
       "skill": "4.3.3",
       "term": "透明沟通",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "说明实施时间、预期结果、岗位影响和支持安排；承认不确定性，提供双向反馈渠道。",
+      "example": "员工担心岗位变化时，不能只发布“必须使用”的通知。",
       "en": {
         "title": "Transparent communication",
         "body": "Explain timing, expected outcomes, role impacts, support and uncertainties; enable two-way feedback.",
         "example": "Address employees' job concerns rather than only mandating tool use.",
         "quote": "Learning objective 4.3.3 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "制定透明的沟通策略，解决员工对 AI 的担忧（例如，实施时间表、预期结果、对员工角色的影响）。",
       "source": "用户提供的学习大纲 · 技能 4.3.3",
@@ -1401,14 +2744,15 @@
       "task": "4.3",
       "skill": "4.3.4",
       "term": "文化障碍",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "区分风险规避、抵触改变和害怕失败等原因，用反馈、安全试验和合适支持来回应。",
+      "example": "低使用率可能是信任与任务适配问题，而不只是安装不足。",
       "en": {
         "title": "Cultural barriers",
         "body": "Distinguish risk aversion, resistance to change and fear of failure; respond with feedback, safe experimentation and support.",
         "example": "Low adoption may reflect poor task fit or trust problems.",
         "quote": "Learning objective 4.3.4 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "认识 AI 采用中的文化障碍（例如，规避风险、抗拒改变、害怕失败），并确定领导层用来应对这些问题的干预措施。",
       "source": "用户提供的学习大纲 · 技能 4.3.4",
@@ -1421,14 +2765,15 @@
       "task": "4.3",
       "skill": "4.3.5",
       "term": "员工培养",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "围绕岗位任务、实际风险和人机协作设计练习，可结合POC、培训或黑客马拉松；签到不代表形成能力。",
+      "example": "让客服练习核对引用、纠正草稿并识别需要上报的情况。",
       "en": {
         "title": "Workforce development",
         "body": "Build role-specific AI literacy through practical tasks, training, proofs of concept and responsible use exercises.",
         "example": "Practice verifying citations and escalating uncertain answers.",
         "quote": "Learning objective 4.3.5 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "确定合适的员工培养方法，来加速提升整个企业的 AI 素养（例如，概念验证 [POC] 计划、黑客马拉松、培训计划、负责任的 AI 培训）。",
       "source": "用户提供的学习大纲 · 技能 4.3.5",
@@ -1441,18 +2786,169 @@
       "task": "4.3",
       "skill": "4.3.6",
       "term": "角色转变与人的优势",
-      "category": "领导企业范围的变革，打造具备 AI 能力的员工队伍",
+      "category": "全节概览",
       "definition": "重新设计人工操作、人工监督和AI协作的分工，保留批判性思考、同理心与创造力的作用。",
+      "example": "AI起草沟通内容，人类判断对方处境并承担发送责任。",
       "en": {
         "title": "Changing roles and human strengths",
         "body": "Redesign manual work, oversight and AI collaboration while preserving human judgment, empathy and creativity.",
         "example": "AI drafts a message; a person assesses its context and authorizes sending.",
         "quote": "Learning objective 4.3.6 · People and change",
-        "category": "People and change"
+        "category": "Section overview"
       },
       "objective": "发现各种机会来转变人员的角色，从人工操作转向人工监督并与 AI 系统进行协作，以及制定战略决策，在人工优势（例如批判性思维、同理心、创造力）与 AI 功能之间取得平衡。",
       "source": "用户提供的学习大纲 · 技能 4.3.6",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.1-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.1",
+      "term": "赞助者与业务倡导者",
+      "category": "变革支持",
+      "definition": "高层赞助者提供方向、资源和跨部门协调；业务倡导者帮助发现实际需求、示范使用和反馈。两者都需要明确权责，不能只有口号。",
+      "example": "业务赞助者解决部门间资源冲突，倡导者组织岗位试用。",
+      "boundary": "热情志愿者不能替代正式的资源与责任安排。",
+      "en": {
+        "title": "Sponsors and business champions",
+        "body": "Sponsors provide direction and resources; champions connect practical needs, demonstrations and feedback within clear authority.",
+        "example": "A sponsor resolves resource conflicts while champions organize role-specific trials.",
+        "boundary": "Enthusiastic volunteers cannot replace formal ownership.",
+        "category": "Change support",
+        "quote": "Learning objective 4.3.1 · People and change"
+      },
+      "objective": "建立高管层支持和领导层共识，识别并赋能 AI 倡导者，在整个企业中保持发展动力。",
+      "source": "用户大纲 4.3.1；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.2-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.2",
+      "term": "业务、技术与监督角色",
+      "category": "跨职能协作",
+      "definition": "团队需具备需求判断、数据维护、技术实现、风险审查和运营能力，明确交付标准、接手关系和谁能暂停不适当用途。",
+      "example": "上线审批中明确业务目标验收者和运行支持接手者。",
+      "boundary": "团队名单齐全不代表决策机制清晰。",
+      "en": {
+        "title": "Business, technical and oversight roles",
+        "body": "Combine requirements, data, implementation, oversight and operations with explicit deliverables and stop authority.",
+        "example": "Name business acceptance and operational handover owners.",
+        "boundary": "A complete roster does not guarantee clear decisions.",
+        "category": "Cross-functional work",
+        "quote": "Learning objective 4.3.2 · People and change"
+      },
+      "objective": "组建涵盖不同专业领域（例如业务负责人、技术专家、法律、合规性等）的跨职能团队，并为 AI 计划制定明确的责任标准。",
+      "source": "用户大纲 4.3.2；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.3-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.3",
+      "term": "事实、未知、岗位影响与反馈",
+      "category": "沟通设计",
+      "definition": "沟通实施时间、已验证与尚未验证的结果、工作变化和支持措施，并建立双向反馈。不应为推动采用而许诺未经证实的岗位或收益结果。",
+      "example": "说明哪些任务会被辅助，哪些决定仍由人承担。",
+      "boundary": "只宣传收益而回避员工担忧会损害信任。",
+      "en": {
+        "title": "Facts, uncertainty, role impacts and feedback",
+        "body": "Explain timing, verified results, uncertainty, role changes and support with two-way feedback.",
+        "example": "Explain which tasks are assisted and which decisions remain human-owned.",
+        "boundary": "Ignoring employee concerns can undermine trust.",
+        "category": "Communication design",
+        "quote": "Learning objective 4.3.3 · People and change"
+      },
+      "objective": "制定透明的沟通策略，解决员工对 AI 的担忧（例如，实施时间表、预期结果、对员工角色的影响）。",
+      "source": "用户大纲 4.3.3；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.4-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.4",
+      "term": "安全试验与问题反馈",
+      "category": "文化与激励",
+      "definition": "当员工担心犯错受罚时，建立限定范围的安全练习、报告渠道和改进机制。区分抵触改变、合理风险担忧和工具不适配。",
+      "example": "让员工在测试材料上练习核验，报告失败不扣采用率。",
+      "boundary": "强制使用或更换工具不一定解决文化障碍。",
+      "en": {
+        "title": "Safe experimentation and issue reporting",
+        "body": "Use bounded practice and issue reporting and distinguish resistance from justified risk concerns or poor fit.",
+        "example": "Practice verification on test material without penalizing issue reporting.",
+        "boundary": "Mandates or replacement tools may not resolve cultural barriers.",
+        "category": "Culture and incentives",
+        "quote": "Learning objective 4.3.4 · People and change"
+      },
+      "objective": "认识 AI 采用中的文化障碍（例如，规避风险、抗拒改变、害怕失败），并确定领导层用来应对这些问题的干预措施。",
+      "source": "用户大纲 4.3.4；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.5-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.5",
+      "term": "从会操作到能判断",
+      "category": "岗位培养",
+      "definition": "按岗位设计真实任务，练习核验、边界识别、升级与人机交接，并以实际表现评估。POC和黑客马拉松也需要责任与验证目标。",
+      "example": "客服训练核对政策和升级投诉，开发者训练代码评审与测试。",
+      "boundary": "签到或通过工具介绍不能证明岗位胜任。",
+      "en": {
+        "title": "From tool operation to judgment",
+        "body": "Train role-specific verification, boundaries, escalation and handoffs and assess demonstrated performance.",
+        "example": "Support verifies policies; developers practice review and testing.",
+        "boundary": "Attendance does not establish role competence.",
+        "category": "Role-based development",
+        "quote": "Learning objective 4.3.5 · People and change"
+      },
+      "objective": "确定合适的员工培养方法，来加速提升整个企业的 AI 素养（例如，概念验证 [POC] 计划、黑客马拉松、培训计划、负责任的 AI 培训）。",
+      "source": "用户大纲 4.3.5；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.3.6-unit-1",
+      "chapter": "4",
+      "task": "4.3",
+      "skill": "4.3.6",
+      "term": "判断、同理心与责任",
+      "category": "人机分工",
+      "definition": "把可重复的辅助工作与需要语境、价值取舍和授权的判断分开，重新设计人的监督、沟通和创造性职责，明确最终责任。",
+      "example": "AI起草投诉回复，人类理解处境、核验事实并决定发送。",
+      "boundary": "自动化一个任务不等于可以移交整个岗位责任。",
+      "en": {
+        "title": "Judgment, empathy and responsibility",
+        "body": "Separate repeatable assistance from contextual judgment and authority and redesign oversight, communication and creative work.",
+        "example": "AI drafts a complaint reply; a person verifies and authorizes it.",
+        "boundary": "Automating a task does not transfer all role accountability.",
+        "category": "Human-AI responsibilities",
+        "quote": "Learning objective 4.3.6 · People and change"
+      },
+      "objective": "发现各种机会来转变人员的角色，从人工操作转向人工监督并与 AI 系统进行协作，以及制定战略决策，在人工优势（例如批判性思维、同理心、创造力）与 AI 功能之间取得平衡。",
+      "source": "用户大纲 4.3.6；教学补充：Microsoft organizational and people readiness",
+      "references": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
       "interaction": "read"
     },
     {
@@ -1461,14 +2957,15 @@
       "task": "4.4",
       "skill": "4.4.1",
       "term": "迭代式转型",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "按构想、实验、启动和扩展等阶段逐步验证。阶段之间应有反馈与决策依据，而非一次性替换全部流程。",
+      "example": "从小范围验证开始，观察结果后决定是否继续。",
       "en": {
         "title": "Iterative transformation",
         "body": "Progress through ideation, experimentation, launch and scaling with feedback and decision gates.",
         "example": "Start with a small test and use its results to decide the next step.",
         "quote": "Learning objective 4.4.1 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "采用分阶段进行的迭代式转型方法（例如，构想、实验、启动、扩展）。",
       "source": "用户提供的学习大纲 · 技能 4.4.1",
@@ -1481,14 +2978,15 @@
       "task": "4.4",
       "skill": "4.4.2",
       "term": "从短期成果到扩展",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "先获得可核验的小范围成果，再确认数据、流程和支持条件能否迁移到其他团队。",
+      "example": "志愿者试点成功，不代表所有部门立刻适用。",
       "en": {
         "title": "From quick wins to scale",
         "body": "Verify an initial result, then test whether data, workflows and support transfer to additional teams.",
         "example": "Volunteer pilot success does not establish suitability for every department.",
         "quote": "Learning objective 4.4.2 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "实施扩展方法，从短期成果开始，再逐步扩大到全企业部署。",
       "source": "用户提供的学习大纲 · 技能 4.4.2",
@@ -1501,14 +2999,15 @@
       "task": "4.4",
       "skill": "4.4.3",
       "term": "卓越中心 COE",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "卓越中心可提供共享能力、标准、实践与协作支持。它不应让业务责任在集中支持中消失。",
+      "example": "把多个团队反复解决的问题整理成可复用的方法和支持机制。",
       "en": {
         "title": "Center of excellence (CoE)",
         "body": "A shared capability that supports standards, reusable practices and cross-functional collaboration without removing business accountability.",
         "example": "Reuse validated evaluation methods across several teams.",
         "quote": "Learning objective 4.4.3 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "建立 AI 卓越中心 (COE) 和跨职能协作机制来支持扩展。",
       "source": "用户提供的学习大纲 · 技能 4.4.3",
@@ -1521,14 +3020,15 @@
       "task": "4.4",
       "skill": "4.4.4",
       "term": "持续反馈与价值跟踪",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "同时跟踪使用、质量、风险、成本和长期业务价值，用反馈修正下一轮计划。",
+      "example": "账号开通数可以是活动指标，但不能单独证明业务价值。",
       "en": {
         "title": "Continuous feedback and value tracking",
         "body": "Monitor use, quality, risks, costs and longer-term outcomes to adapt the transformation plan.",
         "example": "Account creation alone does not demonstrate business value.",
         "quote": "Learning objective 4.4.4 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "建立持续的反馈机制和成功指标，用于跟踪 AI 计划的进展和长期价值。",
       "source": "用户提供的学习大纲 · 技能 4.4.4",
@@ -1541,14 +3041,15 @@
       "task": "4.4",
       "skill": "4.4.5",
       "term": "试点转生产",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "从实验到生产需要明确责任、运维、治理、支持和异常处置，而不是仅把演示页面公开。",
+      "example": "上线前确认谁值守、怎样监控、出错如何回退。",
       "en": {
         "title": "Pilot-to-production transition",
         "body": "Establish ownership, operations, governance, support and incident procedures before operating beyond an experiment.",
         "example": "Confirm monitoring, on-call responsibility and rollback before launch.",
         "quote": "Learning objective 4.4.5 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "处理 AI 计划从实验阶段转向生产阶段的过渡，包括监管和运营要求。",
       "source": "用户提供的学习大纲 · 技能 4.4.5",
@@ -1561,18 +3062,169 @@
       "task": "4.4",
       "skill": "4.4.6",
       "term": "全企业推广",
-      "category": "将 AI 从试点项目扩展到全企业部署",
+      "category": "全节概览",
       "definition": "评估跨团队数据差异、性能、连续性、培训和支持能力，以可控节奏推广并保留纠正空间。",
+      "example": "扩展过程中发现新部门资料不足时，可暂停该用途并补齐条件。",
       "en": {
         "title": "Enterprise rollout",
         "body": "Assess differences in data, performance, continuity, training and support as adoption expands in controlled stages.",
         "example": "Pause an unsuitable departmental rollout until missing conditions are addressed.",
         "quote": "Learning objective 4.4.6 · From pilots to enterprise scale",
-        "category": "From pilots to enterprise scale"
+        "category": "Section overview"
       },
       "objective": "评估整个 AI 扩展计划在全企业推广中的多方面因素，确保业务连续性和性能。",
       "source": "用户提供的学习大纲 · 技能 4.4.6",
       "references": [],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.1-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.1",
+      "term": "构想、实验、启动与扩展",
+      "category": "阶段转型",
+      "definition": "构想明确问题与假设；实验验证可行性和价值；启动落实生产与治理；扩展验证更多团队和规模条件。反馈可使团队返回前一阶段。",
+      "example": "实验发现资料不可用时，返回补齐基础而不是强行上线。",
+      "boundary": "阶段不是不可回头的固定流水线。",
+      "en": {
+        "title": "Envision, experiment, launch and scale",
+        "body": "Define assumptions, validate feasibility and value, establish production readiness and then test expansion conditions.",
+        "example": "Return to foundations when a pilot reveals unusable data.",
+        "boundary": "Stages do not prohibit iteration or returning to earlier work.",
+        "category": "Transformation stages",
+        "quote": "Learning objective 4.4.1 · From pilots to enterprise scale"
+      },
+      "objective": "采用分阶段进行的迭代式转型方法（例如，构想、实验、启动、扩展）。",
+      "source": "用户大纲 4.4.1；教学补充：AWS generative AI adoption stages",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.2-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.2",
+      "term": "试点代表性与迁移条件",
+      "category": "推广策略",
+      "definition": "试点结果受参与者、数据和支持条件影响。扩展前检查新部门任务差异、资源、成本与用户能力，分批验证并保留暂停点。",
+      "example": "志愿者团队表现好，新部门资料缺失时先暂停该部门推广。",
+      "boundary": "把试点配置复制过去不等于验证了可迁移性。",
+      "en": {
+        "title": "Pilot representativeness and transfer conditions",
+        "body": "Check how pilot users, data and support differ from new teams and validate expansion in batches.",
+        "example": "Pause a new department with missing data despite a successful volunteer pilot.",
+        "boundary": "Copying a pilot configuration does not validate transferability.",
+        "category": "Rollout strategy",
+        "quote": "Learning objective 4.4.2 · From pilots to enterprise scale"
+      },
+      "objective": "实施扩展方法，从短期成果开始，再逐步扩大到全企业部署。",
+      "source": "用户大纲 4.4.2；教学补充：AWS generative AI adoption stages",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.3-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.3",
+      "term": "COE与业务责任",
+      "category": "共享能力",
+      "definition": "卓越中心提供共享评估、标准、平台和经验复用，支持业务团队而不是代替它们定义价值或承担全部用例责任。",
+      "example": "多个团队共享检索评估方法，各自负责本部门知识有效性。",
+      "boundary": "集中所有业务决策可能形成瓶颈。",
+      "en": {
+        "title": "CoE and business accountability",
+        "body": "A CoE shares evaluation, standards, platforms and reusable practices while business teams retain use-case ownership.",
+        "example": "Teams reuse retrieval evaluation while owning their own source validity.",
+        "boundary": "Centralizing every business decision can create bottlenecks.",
+        "category": "Shared capabilities",
+        "quote": "Learning objective 4.4.3 · From pilots to enterprise scale"
+      },
+      "objective": "建立 AI 卓越中心 (COE) 和跨职能协作机制来支持扩展。",
+      "source": "用户大纲 4.4.3；教学补充：AWS enterprise-ready generative AI platform",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.4-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.4",
+      "term": "采用、质量、风险、成本与结果",
+      "category": "持续价值",
+      "definition": "推广后的反馈同时观察使用、结果、风险与成本，区分短期热度和持续价值，用问题报告推动下一轮改进。",
+      "example": "使用率提高而复核成本激增时，重新评估流程和净收益。",
+      "boundary": "成功案例集合不能替代完整运行数据。",
+      "en": {
+        "title": "Adoption, quality, risk, cost and outcomes",
+        "body": "Track adoption, outcomes, risks and costs after rollout and use feedback to adapt the next iteration.",
+        "example": "Reassess a workflow when adoption rises but review costs surge.",
+        "boundary": "Success stories are not a substitute for operational evidence.",
+        "category": "Sustained value",
+        "quote": "Learning objective 4.4.4 · From pilots to enterprise scale"
+      },
+      "objective": "建立持续的反馈机制和成功指标，用于跟踪 AI 计划的进展和长期价值。",
+      "source": "用户大纲 4.4.4；教学补充：AWS GenAI lifecycle operational excellence",
+      "references": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.5-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.5",
+      "term": "值守、告警、回退与变更",
+      "category": "生产交接",
+      "definition": "生产交接要明确负责人、运行手册、监测、故障接手、回退、版本变更与持续资料维护。模型文件交付只是其中一部分。",
+      "example": "上线前演练失效检索、错误告警与人工接手。",
+      "boundary": "演示页面能打开不代表系统具备生产条件。",
+      "en": {
+        "title": "Operations, alerts, rollback and change",
+        "body": "Handover owners, runbooks, monitoring, incident support, rollback, version changes and source maintenance.",
+        "example": "Exercise retrieval failures, alerts and human takeover before launch.",
+        "boundary": "A working demo does not establish production readiness.",
+        "category": "Production handover",
+        "quote": "Learning objective 4.4.5 · From pilots to enterprise scale"
+      },
+      "objective": "处理 AI 计划从实验阶段转向生产阶段的过渡，包括监管和运营要求。",
+      "source": "用户大纲 4.4.5；教学补充：AWS enterprise-ready generative AI platform",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
+      "interaction": "read"
+    },
+    {
+      "id": "4.4.6-unit-1",
+      "chapter": "4",
+      "task": "4.4",
+      "skill": "4.4.6",
+      "term": "性能、连续性、培训与支持",
+      "category": "企业扩展",
+      "definition": "扩大业务量和团队范围时，重新验证峰值容量、延迟、资料权限、培训覆盖、支持成本与业务连续性，按证据调整节奏。",
+      "example": "新增地区前先确认本地资料、权限和支持接手。",
+      "boundary": "规模扩大时原有质量与成本假设可能失效。",
+      "en": {
+        "title": "Performance, continuity, training and support",
+        "body": "Revalidate capacity, latency, permissions, training, support costs and continuity as teams and workload expand.",
+        "example": "Confirm regional data, permissions and support before adding locations.",
+        "boundary": "Quality and cost assumptions may change at scale.",
+        "category": "Enterprise scaling",
+        "quote": "Learning objective 4.4.6 · From pilots to enterprise scale"
+      },
+      "objective": "评估整个 AI 扩展计划在全企业推广中的多方面因素，确保业务连续性和性能。",
+      "source": "用户大纲 4.4.6；教学补充：AWS enterprise-ready generative AI platform",
+      "references": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
       "interaction": "read"
     }
   ],
@@ -1611,8 +3263,80 @@
         "1.1-lesson-14",
         "1.1-lesson-15"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "match",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "1.1.2",
+          "units": [
+            "1.1-lesson-6",
+            "1.1-lesson-7",
+            "1.1-lesson-16",
+            "1.1-lesson-17",
+            "1.1-lesson-18",
+            "1.1-lesson-19",
+            "1.1-lesson-8",
+            "1.1-lesson-20",
+            "1.1-lesson-21",
+            "1.1-lesson-22"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        },
+        {
+          "skill": "1.1.1",
+          "units": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4",
+            "1.1-lesson-5"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        },
+        {
+          "skill": "1.1.3",
+          "units": [
+            "1.1-lesson-9",
+            "1.1-lesson-10"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        },
+        {
+          "skill": "1.1.4",
+          "units": [
+            "1.1-lesson-11"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        },
+        {
+          "skill": "1.1.5",
+          "units": [
+            "1.1-lesson-12",
+            "1.1-lesson-13"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        },
+        {
+          "skill": "1.1.6",
+          "units": [
+            "1.1-lesson-14",
+            "1.1-lesson-15"
+          ],
+          "rounds": [
+            "concept-matching"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1628,10 +3352,66 @@
         "1.2-lesson-2",
         "1.2-lesson-3",
         "1.2-lesson-4",
-        "1.2-lesson-5"
+        "1.2-lesson-5",
+        "1.2.1-unit-1",
+        "1.2.1-unit-2",
+        "1.2.2-unit-1",
+        "1.2.2-unit-2",
+        "1.2.2-unit-3",
+        "1.2.3-unit-1",
+        "1.2.3-unit-2",
+        "1.2.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "switchboard",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "1.2.1",
+          "units": [
+            "1.2-lesson-1",
+            "1.2.1-unit-1",
+            "1.2.1-unit-2"
+          ],
+          "rounds": [
+            "route"
+          ]
+        },
+        {
+          "skill": "1.2.2",
+          "units": [
+            "1.2-lesson-2",
+            "1.2-lesson-3",
+            "1.2.2-unit-1",
+            "1.2.2-unit-2",
+            "1.2.2-unit-3"
+          ],
+          "rounds": [
+            "route",
+            "authority"
+          ]
+        },
+        {
+          "skill": "1.2.3",
+          "units": [
+            "1.2-lesson-4",
+            "1.2.3-unit-1",
+            "1.2.3-unit-2"
+          ],
+          "rounds": [
+            "monitor"
+          ]
+        },
+        {
+          "skill": "1.2.4",
+          "units": [
+            "1.2-lesson-5",
+            "1.2.4-unit-1"
+          ],
+          "rounds": [
+            "policy"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1645,10 +3425,54 @@
         "1.3-lesson-1",
         "1.3-lesson-2",
         "1.3-lesson-3",
-        "1.3-lesson-4"
+        "1.3-lesson-4",
+        "1.3.1-unit-1",
+        "1.3.1-unit-2",
+        "1.3.2-unit-1",
+        "1.3.2-unit-2",
+        "1.3.3-unit-1",
+        "1.3.3-unit-2"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "prompt-lab",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "1.3.1",
+          "units": [
+            "1.3-lesson-1",
+            "1.3.1-unit-1",
+            "1.3.1-unit-2"
+          ],
+          "rounds": [
+            "prompt",
+            "behavior"
+          ]
+        },
+        {
+          "skill": "1.3.2",
+          "units": [
+            "1.3-lesson-2",
+            "1.3.2-unit-1",
+            "1.3.2-unit-2"
+          ],
+          "rounds": [
+            "tokens"
+          ]
+        },
+        {
+          "skill": "1.3.3",
+          "units": [
+            "1.3-lesson-3",
+            "1.3-lesson-4",
+            "1.3.3-unit-1",
+            "1.3.3-unit-2"
+          ],
+          "rounds": [
+            "adapt",
+            "behavior"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1665,10 +3489,67 @@
         "2.1-lesson-2",
         "2.1-lesson-3",
         "2.1-lesson-4",
-        "2.1-lesson-5"
+        "2.1-lesson-5",
+        "2.1.1-unit-1",
+        "2.1.2-unit-1",
+        "2.1.3-unit-1",
+        "2.1.4-unit-1",
+        "2.1.5-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "portfolio",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "2.1.1",
+          "units": [
+            "2.1-lesson-1",
+            "2.1.1-unit-1"
+          ],
+          "rounds": [
+            "fund"
+          ]
+        },
+        {
+          "skill": "2.1.2",
+          "units": [
+            "2.1-lesson-2",
+            "2.1.2-unit-1"
+          ],
+          "rounds": [
+            "delivery"
+          ]
+        },
+        {
+          "skill": "2.1.3",
+          "units": [
+            "2.1-lesson-3",
+            "2.1.3-unit-1"
+          ],
+          "rounds": [
+            "fund"
+          ]
+        },
+        {
+          "skill": "2.1.4",
+          "units": [
+            "2.1-lesson-4",
+            "2.1.4-unit-1"
+          ],
+          "rounds": [
+            "alternative"
+          ]
+        },
+        {
+          "skill": "2.1.5",
+          "units": [
+            "2.1-lesson-5",
+            "2.1.5-unit-1"
+          ],
+          "rounds": [
+            "migration"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1685,10 +3566,74 @@
         "2.2-lesson-2",
         "2.2-lesson-3",
         "2.2-lesson-4",
-        "2.2-lesson-5"
+        "2.2-lesson-5",
+        "2.2.1-unit-1",
+        "2.2.1-unit-2",
+        "2.2.2-unit-1",
+        "2.2.3-unit-1",
+        "2.2.3-unit-2",
+        "2.2.4-unit-1",
+        "2.2.5-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "ledger",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "2.2.1",
+          "units": [
+            "2.2-lesson-1",
+            "2.2.1-unit-1",
+            "2.2.1-unit-2"
+          ],
+          "rounds": [
+            "receipts",
+            "metrics"
+          ]
+        },
+        {
+          "skill": "2.2.2",
+          "units": [
+            "2.2-lesson-2",
+            "2.2.2-unit-1"
+          ],
+          "rounds": [
+            "metrics"
+          ]
+        },
+        {
+          "skill": "2.2.3",
+          "units": [
+            "2.2-lesson-3",
+            "2.2.3-unit-1",
+            "2.2.3-unit-2"
+          ],
+          "rounds": [
+            "receipts",
+            "roi"
+          ]
+        },
+        {
+          "skill": "2.2.4",
+          "units": [
+            "2.2-lesson-4",
+            "2.2.4-unit-1"
+          ],
+          "rounds": [
+            "metrics"
+          ]
+        },
+        {
+          "skill": "2.2.5",
+          "units": [
+            "2.2-lesson-5",
+            "2.2.5-unit-1"
+          ],
+          "rounds": [
+            "receipts",
+            "roi"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1703,10 +3648,56 @@
         "2.3-lesson-1",
         "2.3-lesson-2",
         "2.3-lesson-3",
-        "2.3-lesson-4"
+        "2.3-lesson-4",
+        "2.3.1-unit-1",
+        "2.3.2-unit-1",
+        "2.3.3-unit-1",
+        "2.3.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "canvas",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "2.3.1",
+          "units": [
+            "2.3-lesson-1",
+            "2.3.1-unit-1"
+          ],
+          "rounds": [
+            "canvas"
+          ]
+        },
+        {
+          "skill": "2.3.2",
+          "units": [
+            "2.3-lesson-2",
+            "2.3.2-unit-1"
+          ],
+          "rounds": [
+            "model"
+          ]
+        },
+        {
+          "skill": "2.3.3",
+          "units": [
+            "2.3-lesson-3",
+            "2.3.3-unit-1"
+          ],
+          "rounds": [
+            "canvas"
+          ]
+        },
+        {
+          "skill": "2.3.4",
+          "units": [
+            "2.3-lesson-4",
+            "2.3.4-unit-1"
+          ],
+          "rounds": [
+            "invest"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1721,10 +3712,61 @@
         "3.1-lesson-1",
         "3.1-lesson-2",
         "3.1-lesson-3",
-        "3.1-lesson-4"
+        "3.1-lesson-4",
+        "3.1.1-unit-1",
+        "3.1.1-unit-2",
+        "3.1.1-unit-3",
+        "3.1.2-unit-1",
+        "3.1.3-unit-1",
+        "3.1.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "balance",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "3.1.1",
+          "units": [
+            "3.1-lesson-1",
+            "3.1.1-unit-1",
+            "3.1.1-unit-2",
+            "3.1.1-unit-3"
+          ],
+          "rounds": [
+            "safeguards",
+            "design"
+          ]
+        },
+        {
+          "skill": "3.1.2",
+          "units": [
+            "3.1-lesson-2",
+            "3.1.2-unit-1"
+          ],
+          "rounds": [
+            "tradeoff"
+          ]
+        },
+        {
+          "skill": "3.1.3",
+          "units": [
+            "3.1-lesson-3",
+            "3.1.3-unit-1"
+          ],
+          "rounds": [
+            "design"
+          ]
+        },
+        {
+          "skill": "3.1.4",
+          "units": [
+            "3.1-lesson-4",
+            "3.1.4-unit-1"
+          ],
+          "rounds": [
+            "tradeoff"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1739,10 +3781,56 @@
         "3.2-lesson-1",
         "3.2-lesson-2",
         "3.2-lesson-3",
-        "3.2-lesson-4"
+        "3.2-lesson-4",
+        "3.2.1-unit-1",
+        "3.2.2-unit-1",
+        "3.2.3-unit-1",
+        "3.2.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "permissions",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "3.2.1",
+          "units": [
+            "3.2-lesson-1",
+            "3.2.1-unit-1"
+          ],
+          "rounds": [
+            "keys"
+          ]
+        },
+        {
+          "skill": "3.2.2",
+          "units": [
+            "3.2-lesson-2",
+            "3.2.2-unit-1"
+          ],
+          "rounds": [
+            "use-change"
+          ]
+        },
+        {
+          "skill": "3.2.3",
+          "units": [
+            "3.2-lesson-3",
+            "3.2.3-unit-1"
+          ],
+          "rounds": [
+            "keys"
+          ]
+        },
+        {
+          "skill": "3.2.4",
+          "units": [
+            "3.2-lesson-4",
+            "3.2.4-unit-1"
+          ],
+          "rounds": [
+            "queue"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1757,10 +3845,59 @@
         "3.3-lesson-1",
         "3.3-lesson-2",
         "3.3-lesson-3",
-        "3.3-lesson-4"
+        "3.3-lesson-4",
+        "3.3.1-unit-1",
+        "3.3.2-unit-1",
+        "3.3.3-unit-1",
+        "3.3.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "incident",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "3.3.1",
+          "units": [
+            "3.3-lesson-1",
+            "3.3.1-unit-1"
+          ],
+          "rounds": [
+            "contain",
+            "diagnose",
+            "publish"
+          ]
+        },
+        {
+          "skill": "3.3.2",
+          "units": [
+            "3.3-lesson-2",
+            "3.3.2-unit-1"
+          ],
+          "rounds": [
+            "diagnose"
+          ]
+        },
+        {
+          "skill": "3.3.3",
+          "units": [
+            "3.3-lesson-3",
+            "3.3.3-unit-1"
+          ],
+          "rounds": [
+            "publish"
+          ]
+        },
+        {
+          "skill": "3.3.4",
+          "units": [
+            "3.3-lesson-4",
+            "3.3.4-unit-1"
+          ],
+          "rounds": [
+            "verify",
+            "publish"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1775,10 +3912,57 @@
         "4.1-lesson-1",
         "4.1-lesson-2",
         "4.1-lesson-3",
-        "4.1-lesson-4"
+        "4.1-lesson-4",
+        "4.1.1-unit-1",
+        "4.1.2-unit-1",
+        "4.1.3-unit-1",
+        "4.1.4-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "readiness",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "4.1.1",
+          "units": [
+            "4.1-lesson-1",
+            "4.1.1-unit-1"
+          ],
+          "rounds": [
+            "evidence"
+          ]
+        },
+        {
+          "skill": "4.1.2",
+          "units": [
+            "4.1-lesson-2",
+            "4.1.2-unit-1"
+          ],
+          "rounds": [
+            "maturity"
+          ]
+        },
+        {
+          "skill": "4.1.3",
+          "units": [
+            "4.1-lesson-3",
+            "4.1.3-unit-1"
+          ],
+          "rounds": [
+            "evidence",
+            "priority"
+          ]
+        },
+        {
+          "skill": "4.1.4",
+          "units": [
+            "4.1-lesson-4",
+            "4.1.4-unit-1"
+          ],
+          "rounds": [
+            "priority"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1791,10 +3975,47 @@
       "units": [
         "4.2-lesson-1",
         "4.2-lesson-2",
-        "4.2-lesson-3"
+        "4.2-lesson-3",
+        "4.2.1-unit-1",
+        "4.2.2-unit-1",
+        "4.2.3-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "data-pipeline",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "4.2.1",
+          "units": [
+            "4.2-lesson-1",
+            "4.2.1-unit-1"
+          ],
+          "rounds": [
+            "clean",
+            "pipeline"
+          ]
+        },
+        {
+          "skill": "4.2.2",
+          "units": [
+            "4.2-lesson-2",
+            "4.2.2-unit-1"
+          ],
+          "rounds": [
+            "sharing",
+            "pipeline"
+          ]
+        },
+        {
+          "skill": "4.2.3",
+          "units": [
+            "4.2-lesson-3",
+            "4.2.3-unit-1"
+          ],
+          "rounds": [
+            "pipeline"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1813,10 +4034,79 @@
         "4.3-lesson-3",
         "4.3-lesson-4",
         "4.3-lesson-5",
-        "4.3-lesson-6"
+        "4.3-lesson-6",
+        "4.3.1-unit-1",
+        "4.3.2-unit-1",
+        "4.3.3-unit-1",
+        "4.3.4-unit-1",
+        "4.3.5-unit-1",
+        "4.3.6-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "dialogue",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "4.3.1",
+          "units": [
+            "4.3-lesson-1",
+            "4.3.1-unit-1"
+          ],
+          "rounds": [
+            "sponsor"
+          ]
+        },
+        {
+          "skill": "4.3.2",
+          "units": [
+            "4.3-lesson-2",
+            "4.3.2-unit-1"
+          ],
+          "rounds": [
+            "sponsor",
+            "roles"
+          ]
+        },
+        {
+          "skill": "4.3.3",
+          "units": [
+            "4.3-lesson-3",
+            "4.3.3-unit-1"
+          ],
+          "rounds": [
+            "concern"
+          ]
+        },
+        {
+          "skill": "4.3.4",
+          "units": [
+            "4.3-lesson-4",
+            "4.3.4-unit-1"
+          ],
+          "rounds": [
+            "concern"
+          ]
+        },
+        {
+          "skill": "4.3.5",
+          "units": [
+            "4.3-lesson-5",
+            "4.3.5-unit-1"
+          ],
+          "rounds": [
+            "training"
+          ]
+        },
+        {
+          "skill": "4.3.6",
+          "units": [
+            "4.3-lesson-6",
+            "4.3.6-unit-1"
+          ],
+          "rounds": [
+            "roles"
+          ]
+        }
+      ],
       "gaps": []
     },
     {
@@ -1835,10 +4125,79 @@
         "4.4-lesson-3",
         "4.4-lesson-4",
         "4.4-lesson-5",
-        "4.4-lesson-6"
+        "4.4-lesson-6",
+        "4.4.1-unit-1",
+        "4.4.2-unit-1",
+        "4.4.3-unit-1",
+        "4.4.4-unit-1",
+        "4.4.5-unit-1",
+        "4.4.6-unit-1"
       ],
-      "activity": "collect-then-match",
-      "status": "authored-teaching-notes",
+      "activity": "stagegate",
+      "status": "objective-mapped-authored-teaching",
+      "skillMap": [
+        {
+          "skill": "4.4.1",
+          "units": [
+            "4.4-lesson-1",
+            "4.4.1-unit-1"
+          ],
+          "rounds": [
+            "stages",
+            "release"
+          ]
+        },
+        {
+          "skill": "4.4.2",
+          "units": [
+            "4.4-lesson-2",
+            "4.4.2-unit-1"
+          ],
+          "rounds": [
+            "new-team"
+          ]
+        },
+        {
+          "skill": "4.4.3",
+          "units": [
+            "4.4-lesson-3",
+            "4.4.3-unit-1"
+          ],
+          "rounds": [
+            "sustain"
+          ]
+        },
+        {
+          "skill": "4.4.4",
+          "units": [
+            "4.4-lesson-4",
+            "4.4.4-unit-1"
+          ],
+          "rounds": [
+            "sustain"
+          ]
+        },
+        {
+          "skill": "4.4.5",
+          "units": [
+            "4.4-lesson-5",
+            "4.4.5-unit-1"
+          ],
+          "rounds": [
+            "release"
+          ]
+        },
+        {
+          "skill": "4.4.6",
+          "units": [
+            "4.4-lesson-6",
+            "4.4.6-unit-1"
+          ],
+          "rounds": [
+            "new-team"
+          ]
+        }
+      ],
       "gaps": []
     }
   ]
