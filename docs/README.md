@@ -10,3 +10,5 @@
 - [知识模块](../packages/knowledge/AGENTS.md)、[教学模块](../packages/learning-design/AGENTS.md)、[游戏模块](../apps/game/AGENTS.md)、[服务模块](../apps/server/AGENTS.md)、[共享契约](../packages/contracts/AGENTS.md)、[编译桥](../packages/course-compiler/AGENTS.md)
 
 总体目标与交接在根flow，不在各模块复制。
+
+- [A/B/C 集成与范围](INTEGRATION.md)

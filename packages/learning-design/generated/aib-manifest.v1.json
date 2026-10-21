@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "input": {
+    "id": "aib-knowledge",
+    "revision": 1,
+    "hash": "e62f4fa1413371f05d4f06b607a6020b3609cf044b6401304c65778c48a10c31",
+    "materialBundleId": "aib-knowledge-materials",
+    "materialRevision": 1
+  },
+  "output": {
+    "id": "aib-learning-plan",
+    "revision": 1,
+    "hash": "0c52d202fd6bf93f13b6033455f152cd3af49e7d62e339a030de46e0ee022ffa"
+  },
+  "uniqueUnits": 139,
+  "objectives": 58,
+  "chapters": [
+    {
+      "id": "b-chapter-1",
+      "sections": 12,
+      "learningCards": 45,
+      "questions": 45
+    },
+    {
+      "id": "b-chapter-2",
+      "sections": 8,
+      "learningCards": 30,
+      "questions": 30
+    },
+    {
+      "id": "b-chapter-3",
+      "sections": 7,
+      "learningCards": 26,
+      "questions": 26
+    },
+    {
+      "id": "b-chapter-4",
+      "sections": 11,
+      "learningCards": 41,
+      "questions": 41
+    }
+  ],
+  "roundCounts": {
+    "choose": 90,
+    "sort": 20,
+    "edit": 4,
+    "order": 15,
+    "number": 6,
+    "allocate": 2,
+    "matrix": 5
+  },
+  "knowledgeWarnings": 139,
+  "learningErrors": 0,
+  "compiledCards": 142,
+  "notes": [
+    "All source needs-review flags retained; no publication or model calls.",
+    "Repeated chapter-local prerequisites are included in counts.",
+    "Stage gates and review scheduling belong to D/C; no shared contract fields added."
+  ]
+}

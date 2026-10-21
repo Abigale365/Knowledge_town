@@ -1,0 +1,584 @@
+{
+  "units": [
+    {
+      "unitId": "1.1-lesson-5",
+      "explanation": {
+        "zh": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。",
+        "en": "Prediction uses inputs and learned patterns to estimate an unknown outcome. Business evaluation must consider both error and the consequences of mistakes."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：需求高估可能造成库存积压；低估则可能造成缺货。",
+          "en": "Teaching example: Overestimating demand may create excess inventory; underestimating it may cause stockouts."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM AI inference 支持从训练模型对新输入作预测。Anthropic 评测指南的 Define success criteria 示例区分不同错误的严重性，而非仅计算是否错误；NIST MANAGE 1.1–1.3 要求结合实际用途、影响严重程度、发生可能性及风险容忍度评估与响应。因此保留误差与后果两个评价维度；库存例子为原创教学例示，不是来源案例，也不预设高估或低估一定更严重。",
+      "prerequisiteIds": [
+        "1.1-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握模型 Model，才能理解本单元中的预测 Prediction机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-inference",
+          "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+        },
+        {
+          "sourceId": "r3-d1-eval",
+          "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+        },
+        {
+          "sourceId": "r3-d1-manage",
+          "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "预测 Prediction",
+        "en": "Prediction"
+      },
+      "previousMissing": [
+        "已读IBM推理定义支持预测未知结果；业务错误代价的系统评价方法尚未取得专门资料，保留课程建议待领域审查。"
+      ],
+      "searchNotes": [
+        "复核评测指南的成功标准与错误严重性示例，以及 NIST MANAGE 1.1–1.3 的风险排序和响应；已补足错误后果评价依据。"
+      ]
+    },
+    {
+      "unitId": "1.2-lesson-1",
+      "explanation": {
+        "zh": "条件明确且稳定时，优先考虑确定性规则。模式复杂、规则难穷举时再评估学习型AI；比较价值、错误后果和维护成本。这是选型起点，规则系统也可能属于AI，规则多起来后未必更易维护。",
+        "en": "When conditions are clear and stable, consider deterministic rules first. When patterns are complex and rules are difficult to enumerate, evaluate learning-based AI; compare value, consequences of error and maintenance costs. This is a starting point for selection: rule-based systems can also be AI, and growing collections of rules are not necessarily easier to maintain."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：报销超过明确金额需审批，可以先采用固定规则。",
+          "en": "Teaching example: If expenses above a clearly specified amount require approval, a fixed rule can be used first."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Google Rules of ML 的 Rule 1 建议无必要时不引入机器学习，Rule 4 从简单方案建立基线；同文也指出规则积累后维护可能变难，因此规则优先仅是条件明确稳定时的候选方案，不是普遍成本定律。AWS MLCOST06-BP02 将业务价值与持续运行成本比较；NIST MANAGE 1.1、1.2、2.1 要求评估错误影响及非自动化替代方案。结合旧 IBM 机器学习资料支持比较学习型模型与显式规则；标题收窄为学习型 AI，避免暗示所有规则系统都不属于 AI。",
+      "prerequisiteIds": [
+        "1.1-lesson-7"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML，才能理解本单元中的规则还是AI机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        },
+        {
+          "sourceId": "r3-d1-simple",
+          "quote": "Don’t be afraid to launch a product without machine learning."
+        },
+        {
+          "sourceId": "r3-d1-roi",
+          "quote": "Focusing only on technical metrics like accuracy without linking to business outcomes."
+        },
+        {
+          "sourceId": "r3-d1-manage",
+          "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "规则还是学习型AI",
+        "en": "Rules or learning-based AI"
+      },
+      "previousMissing": [
+        "IBM已读正文区分显式规则与复杂模式学习；规则优先的选择策略和价值/维护成本权衡尚缺决策指南。"
+      ],
+      "searchNotes": [
+        "检索 Google 规则/机器学习选型指南，阅读 Rule 1、2、4；交叉读取 AWS ROI 的期望结果、常见反模式与实施指导，以及 NIST MANAGE 1.1、1.2、2.1。"
+      ]
+    },
+    {
+      "unitId": "1.2-lesson-3",
+      "explanation": {
+        "zh": "多个代理的角色分工、信息交换和执行顺序属于编排问题。角色越多不自动代表效果越好，要检查任务完成与交接质量。",
+        "en": "Dividing roles, exchanging information and ordering execution among multiple agents are orchestration problems. More roles do not automatically improve results; check task completion and handoff quality."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：检索代理交给起草代理的资料应保留来源和允许使用范围；接收方仍需按用户授权执行访问控制，不能把资料中的权限说明当作授权本身。",
+          "en": "Teaching example: material passed from a retrieval agent to a drafting agent should retain its sources and permitted scope of use. The receiving system must still enforce the user's access permissions; a permission statement in the material is not authorization itself."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "旧 IBM 编排定义支持多代理协调。Anthropic Building effective agents 的 When (and when not) 与工作流章节要求按任务需要选择复杂度、检查中间结果，并说明额外步骤带来成本/延迟及累积错误风险。AWS trace 文档的 Observation 与 RetrievedReference 保留检索内容和位置，记录协作者、步骤及失败原因；agents-permissions 的服务角色、知识库和协作者权限章节说明访问必须由相应资源策略约束。将来源与授权范围纳入交接契约是据这些机制形成的教学控制建议，不声称 AWS 自动把用户授权随文本传播；接收方必须重新执行访问控制。",
+      "prerequisiteIds": [
+        "1.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握AI代理与工具，才能理解本单元中的代理协作与编排机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-orchestration",
+          "quote": "the process of coordinating multiple specialized AI agents within a unified system to efficiently achieve shared objectives."
+        },
+        {
+          "sourceId": "r3-d1-workflows",
+          "quote": "Sectioning: Breaking a task into independent subtasks run in parallel."
+        },
+        {
+          "sourceId": "r3-d1-trace",
+          "quote": "If a step in the trace fails, the trace returns a reason for the failure."
+        },
+        {
+          "sourceId": "d34-aws-agents-permissions",
+          "quote": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "代理协作与编排",
+        "en": "Agent collaboration and orchestration"
+      },
+      "previousMissing": [
+        "IBM编排正文支持多角色协调及执行次序，AI agents的风险章节说明共享失败风险；资料交接来源和访问范围的具体约定尚缺专项指南。"
+      ],
+      "searchNotes": [
+        "阅读 Anthropic 工作流模式和复杂度权衡；阅读 Bedrock trace 的 Observation、RetrievedReference、FailureTrace，以及服务角色中的知识库/协作者权限。"
+      ]
+    },
+    {
+      "unitId": "1.2-lesson-4",
+      "explanation": {
+        "zh": "输入分布或业务关系变化可能使模型表现变差。部署后持续观察质量、成本和反馈，发现变化后调查原因并纠正。",
+        "en": "Changes in input distributions or business relationships may degrade model performance. After deployment, continually observe quality, cost and feedback, investigate changes and take corrective action."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：客户群变化后投诉分类变差，应调查新文本与原有训练样本的差别。",
+          "en": "Teaching example: If complaint classification deteriorates after the customer population changes, investigate differences between new text and the original training examples."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "旧 IBM 漂移定义支持输入分布或输入输出关系变化造成退化。AWS model-monitor 的流程要求捕获数据、建立基线、定期比较并调查偏离，纠正措施包括重训和审计上游；MLCOST06-BP01/02 分别支持运行成本与业务收益持续监测。NIST MANAGE 2.2、4.2、4.3 要求用户/受影响群体反馈、持续测试与改进。质量、成本、反馈是本课综合监测维度，具体指标、周期和阈值由用途确定。AWS 页面提示该旧监控服务不再向新客户开放，此处仅引用监测方法，不作服务采购建议。",
+      "prerequisiteIds": [
+        "1.1-lesson-12"
+      ],
+      "prerequisiteRationale": "先掌握历史数据与泛化，才能理解本单元中的模型漂移与持续监测机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        },
+        {
+          "sourceId": "r3-d1-monitor",
+          "quote": "Inspect the reports, which compare the latest data with the baseline."
+        },
+        {
+          "sourceId": "r3-d1-cost",
+          "quote": "You can track expenses across different phases of the ML lifecycle including development, training, and deployment."
+        },
+        {
+          "sourceId": "r3-d1-roi",
+          "quote": "Focusing only on technical metrics like accuracy without linking to business outcomes."
+        },
+        {
+          "sourceId": "r3-d1-manage",
+          "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "模型漂移与持续监测",
+        "en": "Model drift and continuous monitoring"
+      },
+      "previousMissing": [
+        "IBM漂移正文支持变化检测、监测与重新测试；本单元把质量、成本、反馈整合为闭环的具体指标方案尚缺运行指南。"
+      ],
+      "searchNotes": [
+        "补查 AWS 模型监控步骤、ML 成本与 ROI 指南及 NIST MANAGE 的监测/反馈/持续改进章节；客户群变化例子仍是教学假设，不能据性能下降直接断定漂移原因。"
+      ]
+    },
+    {
+      "unitId": "1.2.2-unit-3",
+      "explanation": {
+        "zh": "多代理编排规定谁做什么、传什么证据以及何时交接。串行流程适合依赖关系，受控并行可处理独立任务；交接应保留来源、状态，并可追溯失败的执行步骤及指定的人类处置负责人。",
+        "en": "Multi-agent orchestration specifies who does what, which evidence is passed and when handoffs occur. Sequential workflows suit dependent tasks, while controlled parallelism can handle independent tasks. Handoffs should retain sources and status and make it possible to trace failures to execution steps and designated human response owners."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：检索角色交付带出处的资料，审核角色核对后交给起草者。",
+          "en": "Teaching example: A retrieval role delivers sourced material; a review role checks it before passing it to the drafter."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "增加角色数量本身不是质量证据。",
+          "en": "Increasing the number of roles is not itself evidence of quality."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Anthropic 的 Prompt chaining 描述依赖前一步输出及程序化关卡，Parallelization 的 Sectioning 明确独立子任务可并行。AWS trace 的检索引用、协作者标识、步骤观察与 FailureTrace 支持来源、状态、失败位置的可追踪交接。NIST GOVERN 2.1 要求职责及沟通链明确，故把失败责任明确为可追溯执行步骤与组织指定的人类处置负责人，避免把代理拟人化为最终责任主体。这是综合流程建议；文档并未规定课程示例中的三角色流程必须采用。",
+      "prerequisiteIds": [
+        "1.2-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握代理协作与编排，才能理解本单元中的交接与编排机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-orchestration",
+          "quote": "the process of coordinating multiple specialized AI agents within a unified system to efficiently achieve shared objectives."
+        },
+        {
+          "sourceId": "r3-d1-workflows",
+          "quote": "Sectioning: Breaking a task into independent subtasks run in parallel."
+        },
+        {
+          "sourceId": "r3-d1-trace",
+          "quote": "If a step in the trace fails, the trace returns a reason for the failure."
+        },
+        {
+          "sourceId": "r3-d1-govern",
+          "quote": "Lack of clear information about responsibilities and chains of command will limit the effectiveness of risk management."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "交接与编排",
+        "en": "Handoffs and orchestration"
+      },
+      "previousMissing": [
+        "已读编排正文支持角色与同步协调；串并行任务依赖、交接证据及失败责任的明确流程仍需专项编排资料。"
+      ],
+      "searchNotes": [
+        "逐项核对串行依赖/独立并行、检索来源与失败追踪字段，以及 NIST GOVERN 2.1 人员职责和沟通链；保留质量不能由角色数量证明的边界。"
+      ]
+    },
+    {
+      "unitId": "1.2.3-unit-2",
+      "explanation": {
+        "zh": "上线前记录可比较的质量、延迟、成本和失败率基线。运行时监测变化、调查原因，再选择重训、回退或调整用途等措施；变更经过验证后再扩大部署。按组织预设的响应条件，紧急回退可先按预案执行，再继续调查和验证修复。",
+        "en": "Before deployment, record comparable baselines for quality, latency, cost and failure rate. During operation, monitor changes, investigate causes and select measures such as retraining, rollback or changes to the use case; validate changes before expanding deployment. Under the organization's predefined response conditions, an urgent rollback may follow the response plan first, with further investigation and validation of fixes afterward."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：投诉分类准确率下降时，抽查新样本并比较旧版模型。",
+          "en": "Teaching example: When complaint classification accuracy falls, inspect new examples and compare with the previous model version."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "一次上线验收不能替代持续监测。",
+          "en": "A one-time deployment acceptance test cannot replace continuous monitoring."
+        }
+      ],
+      "status": "supported",
+      "rationale": "AWS model-monitor 支持基线与运行数据比较，Anthropic 成功标准涉及任务质量、错误严重性、延迟和价格，AWS 成本/ROI 指南要求生命周期费用和业务基准。AWS deployment-guardrails 以小流量验证、观察期和预设告警检查新版本延迟/错误并可自动回退；NIST MANAGE 2.2、2.4 支持调查、持续测试、回退/停用以及重新部署条件。将旧文的“先验证修复再决定重训”调整为调查后选择措施、验证变更后扩大部署；预先授权的紧急回退可以按预案先执行。阈值与响应计划须由组织按用途制定，不是本课给出通用数值。",
+      "prerequisiteIds": [
+        "1.2-lesson-4"
+      ],
+      "prerequisiteRationale": "先掌握模型漂移与持续监测，才能理解本单元中的监测基线与反馈闭环机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        },
+        {
+          "sourceId": "r3-d1-monitor",
+          "quote": "Inspect the reports, which compare the latest data with the baseline."
+        },
+        {
+          "sourceId": "r3-d1-eval",
+          "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+        },
+        {
+          "sourceId": "r3-d1-cost",
+          "quote": "You can track expenses across different phases of the ML lifecycle including development, training, and deployment."
+        },
+        {
+          "sourceId": "r3-d1-roi",
+          "quote": "Focusing only on technical metrics like accuracy without linking to business outcomes."
+        },
+        {
+          "sourceId": "r3-d1-rollback",
+          "quote": "There are also built-in safeguards such as auto-rollbacks that help you catch issues early"
+        },
+        {
+          "sourceId": "r3-d1-manage",
+          "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "监测基线与反馈闭环",
+        "en": "Monitoring baselines and feedback loops"
+      },
+      "previousMissing": [
+        "已读漂移正文支持测试和监测；延迟/成本/失败率基线以及重训、回退、用途调整的决策条件尚缺运行手册。"
+      ],
+      "searchNotes": [
+        "核对 AWS 基线比较、成本与 ROI、蓝绿/金丝雀部署和自动回退，以及 NIST MANAGE 2.4 旁路/停用/再部署条件；修正修复与决策的先后歧义而保留全部学习要求。"
+      ]
+    },
+    {
+      "unitId": "1.3-lesson-1",
+      "explanation": {
+        "zh": "提示应说明目标、必要背景、约束和期望输出。用代表性任务测试提示，避免只看一条漂亮回答。",
+        "en": "Prompts should state the objective, necessary context, constraints and expected output. Test prompts on representative tasks instead of judging them from one attractive response."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：要求依据提供的访谈生成三点摘要，并为每点标出对应原文。",
+          "en": "Teaching example: Ask for a three-point summary based on a supplied interview, identifying the corresponding original passage for each point."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "旧 AWS Prompt engineering guidelines 与 Anthropic best practices 的 Be clear and direct、Add context 支持任务、背景、约束、格式；Anthropic eval 指南的 Define success criteria、Eval design principles 要求按真实任务分布建立评测并覆盖边界，不以单次回答评估。引用访谈原文的三点摘要是原创教学任务，非资料原例；其成功标准可检查覆盖、忠实性和引用对应，而无需引入来源示例中的固定百分比。",
+      "prerequisiteIds": [
+        "1.1-lesson-8"
+      ],
+      "prerequisiteRationale": "先掌握生成式人工智能 GenAI，才能理解本单元中的提示工程机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        },
+        {
+          "sourceId": "r3-d1-eval",
+          "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+        },
+        {
+          "sourceId": "r3-d1-xml",
+          "quote": "XML tags help Claude parse complex prompts unambiguously"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "提示工程",
+        "en": "Prompt engineering"
+      },
+      "previousMissing": [
+        "AWS Prompt engineering concepts 已支持任务、上下文、样例及输出约束；代表性任务测试的选样与验收办法尚需评测资料。"
+      ],
+      "searchNotes": [
+        "阅读 Anthropic 成功标准和评测设计原则，以及提示最佳实践的清晰指令、背景和格式要求；补齐代表性选样及验收依据。"
+      ]
+    },
+    {
+      "unitId": "1.3.1-unit-1",
+      "explanation": {
+        "zh": "提示应交代要做的工作、相关资料、不可越过的边界及期望输出。把原始资料与操作指令清楚分隔，有助于减少模型把文档文字误当指令的机会；效果须针对实际模型测试，分隔格式本身不能保证安全或替代系统权限控制。",
+        "en": "A prompt should state the work to do, relevant material, boundaries that must not be crossed and the expected output. Clearly separating source material from operational instructions can help reduce the chance that document text is mistaken for an instruction. Test the effect with the actual model: formatting alone cannot guarantee safety or replace system access controls."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：依据访谈提取三项需求，逐项引用，未出现的内容写未知。",
+          "en": "Teaching example: Extract three requirements from an interview, cite each one, and write unknown for information that is absent."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "更长的提示不必然更好，必须验证输出是否满足任务。",
+          "en": "A longer prompt is not necessarily better; verify that the output satisfies the task."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Anthropic best practices 的 Structure prompts with XML 解释分隔指令、上下文、例子及变量输入可减少解析混淆，Long context prompting 描述资料来源元数据与引用；这支持格式分隔作为理解辅助，不构成已证明的注入防御保证。AWS agents-permissions 则提供真正的资源权限控制依据。保留原学习要求并明确其适用边界：用分隔帮助解释，仍要测试实际模型并在系统层执行权限。更长不自动更好以任务评测结果判断，不声称 XML 对所有模型都有同样效果。",
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握提示工程，才能理解本单元中的任务、上下文、约束与格式机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        },
+        {
+          "sourceId": "r3-d1-xml",
+          "quote": "XML tags help Claude parse complex prompts unambiguously"
+        },
+        {
+          "sourceId": "r3-d1-eval",
+          "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+        },
+        {
+          "sourceId": "d34-aws-agents-permissions",
+          "quote": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "任务、上下文、约束与格式",
+        "en": "Task, context, constraints and format"
+      },
+      "previousMissing": [
+        "AWS正文支持提示组件及分隔示例；分隔文档与操作指令能降低指令混淆的安全性声明仍需专项资料，不能把格式分隔当作权限边界。"
+      ],
+      "searchNotes": [
+        "检索 XML 提示分隔官方指南，已读到减少解释混淆的说明；未将其扩大为安全隔离。补读资源权限文档明确格式边界与授权机制的区别。"
+      ]
+    },
+    {
+      "unitId": "1.3.1-unit-2",
+      "explanation": {
+        "zh": "用典型、边界和失败案例测试提示，记录版本和成功标准。少样本示例应展示期望任务模式，而不是把测试题答案泄漏给模型。",
+        "en": "Test prompts with typical, boundary and failure cases, recording versions and success criteria. Few-shot examples should demonstrate the intended task pattern rather than leak test answers to the model."
+      },
+      "examples": [
+        {
+          "zh": "教学例示：同时测试普通工单、缺失资料工单与无权访问工单。",
+          "en": "Teaching example: Test ordinary tickets, tickets with missing information and tickets involving unauthorized access."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单次漂亮回答不能证明提示可稳定复用。",
+          "en": "One impressive answer does not demonstrate reliable reuse of a prompt."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Anthropic eval 指南的成功标准与评测设计要求真实任务分布、缺失/无关/歧义/有害等边界和足够用例；best practices 的 Use examples effectively 要求与用途相关且覆盖多样情形。AWS Deploy a prompt using versions 支持迭代草稿及不可变版本快照。旧 IBM leakage 支持评测独立于开发材料；由此将 few-shot 开发示例与保留测试集隔离作为课程评测控制，避免将测试答案放进提示后宣称泛化。普通、缺资料、越权工单是原创选样示例；越权用例应结合系统访问控制验证，不能仅凭模型口头拒绝确认安全。",
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握提示工程，才能理解本单元中的代表性样例与提示版本机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        },
+        {
+          "sourceId": "r3-d1-eval",
+          "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+        },
+        {
+          "sourceId": "r3-d1-versions",
+          "quote": "Versions allow you to easily switch between different configurations for your prompt"
+        },
+        {
+          "sourceId": "r3-d1-xml",
+          "quote": "XML tags help Claude parse complex prompts unambiguously"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "代表性样例与提示版本",
+        "en": "Representative examples and prompt versions"
+      },
+      "previousMissing": [
+        "已读IBM和AWS正文支持少样本展示任务模式；版本、成功标准及典型/边界/失败用例的测试管理仍需专项评测资料。"
+      ],
+      "searchNotes": [
+        "已读 Anthropic 成功标准、边界用例、自动化与足量评测；AWS 草稿/不可变版本；结合既有数据泄漏来源核查测试集隔离，保留全部测试管理要求。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "r3-d1-eval",
+      "title": "Define success criteria and build evaluations — Anthropic",
+      "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "excerpt": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-simple",
+      "title": "Rules of Machine Learning — Google",
+      "url": "https://developers.google.com/machine-learning/guides/rules-of-ml",
+      "excerpt": "Don’t be afraid to launch a product without machine learning.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-workflows",
+      "title": "Building effective agents — Anthropic",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "excerpt": "Sectioning: Breaking a task into independent subtasks run in parallel.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-xml",
+      "title": "Prompting best practices — Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "excerpt": "XML tags help Claude parse complex prompts unambiguously",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-monitor",
+      "title": "Data and model quality monitoring — AWS",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html",
+      "excerpt": "Inspect the reports, which compare the latest data with the baseline.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-trace",
+      "title": "Track agent orchestration using trace — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/trace-events.html",
+      "excerpt": "If a step in the trace fails, the trace returns a reason for the failure.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-rollback",
+      "title": "Deployment guardrails for updating models in production — AWS",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/deployment-guardrails.html",
+      "excerpt": "There are also built-in safeguards such as auto-rollbacks that help you catch issues early",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-cost",
+      "title": "Monitor usage and cost by ML activity — AWS",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/mlcost06-bp01.html",
+      "excerpt": "You can track expenses across different phases of the ML lifecycle including development, training, and deployment.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-roi",
+      "title": "Monitor return on investment for ML models — AWS",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/mlcost06-bp02.html",
+      "excerpt": "Focusing only on technical metrics like accuracy without linking to business outcomes.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-manage",
+      "title": "AI RMF Playbook: Manage — NIST",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/manage/",
+      "excerpt": "Prepare and document plans for continuous monitoring and feedback mechanisms.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-govern",
+      "title": "AI RMF Playbook: Govern — NIST",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/govern/",
+      "excerpt": "Lack of clear information about responsibilities and chains of command will limit the effectiveness of risk management.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-versions",
+      "title": "Deploy a prompt using versions — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-deploy.html",
+      "excerpt": "Versions allow you to easily switch between different configurations for your prompt",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

@@ -2,8 +2,9 @@
 @media(max-width:650px){.workshop-bins,.workshop-investments{grid-template-columns:1fr!important}.workshop-heading{gap:10px}.workshop-emblem{font-size:28px;width:50px;height:50px}.workshop-heading h2{font-size:22px}.workshop-field{grid-template-columns:1fr;padding:13px}.workshop-radar .workshop-field{grid-template-columns:1fr 1.5fr 25px}.workshop-budget{font-size:12px;padding:15px}.workshop-budget b{font-size:18px}.workshop-track-stop{gap:4px}.workshop-track-stop button{font-size:12px;padding:9px}.task-workshop .actions{flex-wrap:wrap}.workshop-case{padding:15px}.workshop-card{max-width:100%}}
 
 /* Small scene art with a larger transparent hit target. */
-.study-fruit{width:60px;height:64px;display:grid;place-items:center;filter:drop-shadow(1px 2px 2px #435c3433)}
+.study-fruit{width:84px;height:84px;display:grid;place-items:center;filter:drop-shadow(1px 2px 2px #435c3433)}
 .study-fruit>.knowledge-seed{font-size:29px;width:40px;height:40px;filter:drop-shadow(0 2px 2px #304f3b33)}
+.study-fruit>.knowledge-seed .prop-art{width:40px;height:40px}
 .study-fruit .study-material-art{width:42px;height:42px}.study-fruit .study-material-art .prop-art{width:42px;height:42px}
 .study-fruit>.learning-artifact{width:43px!important;height:43px!important;border-radius:11px!important;background:transparent!important;border:0!important;box-shadow:none!important}
 .learning-artifact .prop-art{width:40px;height:40px}.study-fruit.unit-part .prop-art{width:36px;height:36px;position:static;background-color:transparent;border:0;border-radius:0}
@@ -12,5 +13,29 @@ header nav .knowledge-import-entry{background:#e4ebd2;border:1px solid #a8b88e;b
 .course-paste{margin:18px 0;padding:18px;background:#eef1e4;border:1px solid #cbd6b8;border-radius:14px}.course-paste textarea{width:100%;min-height:150px;padding:12px;box-sizing:border-box;border:1px solid #acba98;border-radius:10px;font:inherit;resize:vertical}.course-file-row{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #d4dcc6}.course-file-row span{overflow-wrap:anywhere}.course-file-row small{display:block;color:#68745b}.course-import-steps{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}.course-import-steps span{background:#e6ecd6;padding:8px 12px;border-radius:20px;font-size:12px}
 
 .part-search-notice{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:#e6ecd8;border-radius:12px;font-size:12px;color:#496047}.part-search-notice button{white-space:nowrap}
+/* Let the actual header height determine the remaining scene and tray space. */
+body.chapter-course{display:flex;flex-direction:column;height:100dvh}
+.chapter-course>header{flex-shrink:0}
+.chapter-course>main{flex:1;min-height:0;height:auto}
+.chapter-course #adventureTray{max-height:45dvh;overflow-y:auto;flex-shrink:0}
+.task-workshop,.workshop-heading>div,.workshop-track-stop>button{min-width:0;overflow-wrap:anywhere}
+.away-scene .scenery-device{pointer-events:none;z-index:1}
+.away-scene .away-item,.away-scene .away-target,.away-scene .painted-dial,.away-scene .painted-switch,.away-scene .melody-find{z-index:3}
+/* Captions must not enlarge a spot into its neighbour's hit area in bilingual mode. */
+.away-scene .away-spot{width:64px;height:64px;padding:4px;align-content:center}
+.away-scene .away-spot>span{position:absolute;top:100%;left:50%;transform:translateX(-50%);max-width:145px;width:max-content;white-space:normal;text-align:center;pointer-events:none}
+.away-scene .away-spot:hover,.away-scene .away-spot:focus-visible{z-index:6}
+@media(max-width:900px){
+ .chapter-course header nav{min-width:0;max-width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+ .chapter-course header nav button{flex-shrink:0;min-height:38px}
+ .chapter-course .resources{display:none}
+ .chapter-course .part-search-notice{flex-wrap:wrap}
+ .chapter-course #chapterDock button{min-height:38px}
+ .chapter-course .camera-controls button{overflow:hidden;text-overflow:ellipsis}
+}
+@media(max-width:650px){
+ .chapter-course .districts{flex-wrap:nowrap;justify-content:flex-start;max-width:calc(100% - 42px);overflow-x:auto;padding-bottom:4px;pointer-events:auto}
+ .chapter-course .districts button{flex-shrink:0}
+}
 .town-language-pair{display:inline-flex;flex-direction:column;align-items:inherit;vertical-align:middle;max-width:100%;gap:3px;white-space:normal;overflow-wrap:anywhere}.town-language-secondary{font-size:.86em;line-height:1.45;color:#62715c;font-weight:400}.town-language-picker{position:fixed;z-index:2000;right:22px;top:70px;width:min(310px,calc(100vw - 44px));padding:15px;background:#fffbee;border:1px solid #b6c4a5;border-radius:15px;box-shadow:0 12px 35px #2c493e44;display:grid;gap:9px}.town-language-picker strong{font-size:13px;color:#4a624c}.town-language-picker button{padding:12px;text-align:left}.town-language-picker [aria-pressed=true]{background:#dce9cf;border-color:#7f9d70}dialog .town-language-picker{position:absolute;right:45px;top:58px;max-width:calc(100% - 60px)}.dialog-language-toggle{position:absolute;right:60px;top:14px;z-index:4;font-size:11px;padding:6px 10px;background:#eff3e4;border:1px solid #cad5b9;border-radius:8px}html[data-locale-mode=bi] header{min-height:68px;height:auto}html[data-locale-mode=bi] header nav{gap:3px}html[data-locale-mode=bi] header nav button{font-size:10px;padding:7px;max-width:135px}html[data-locale-mode=bi] .brand small{display:none}html[data-locale-mode=bi] .bank-pill{max-width:210px}html[data-locale-mode=bi] .quest-tag{max-width:360px}html[data-locale-mode=bi] .quest-tag .town-language-secondary{font-size:11px}html[data-locale-mode=bi] .districts{max-width:650px}html[data-locale-mode=bi] .districts button{font-size:11px}html[data-locale-mode=bi] .study-fruit>small{font-size:12px;max-width:230px}html[data-locale-mode=bi] .world-station .town-language-secondary{color:inherit}html[data-locale-mode=bi] .workshop-matrix th{font-size:11px}html[data-locale-mode=bi] .town-language-picker .town-language-secondary{display:none}html[data-locale-mode=bi] .workshop-case .town-language-secondary{margin-top:7px}html[data-locale-mode=bi] .knowledge-matching button .town-language-secondary{padding-top:5px;border-top:1px solid #cbd4bb}
 html[data-locale-mode=bi] .npc-label{min-width:115px;max-width:180px;white-space:normal;padding:7px 10px;font-size:12px;line-height:1.4}html[data-locale-mode=bi] .npc-label small{white-space:normal}html[data-locale-mode=bi] .npc-label .town-language-pair{display:inline-flex;min-width:0}html[data-locale-mode=bi] .npc-label .town-language-secondary{white-space:normal;overflow-wrap:normal}

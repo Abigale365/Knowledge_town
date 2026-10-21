@@ -1,6 +1,6 @@
 # 拾知小镇 · Knowledge Town
 
-把学习资料变成一场可以探索、收集、整理和复习的游戏。当前版本：**v0.16**。
+把学习资料变成一场可以探索、收集、整理和复习的游戏。当前版本：**v0.17**。
 
 ## 开始运行
 
@@ -65,6 +65,8 @@ node scripts/test-current.cjs
 
 ## 多对话开发
 
-拆分已落地；请从 [任务入口](flow/tasks/README.md) 分别开启 A 知识库、B 教学设计、C 游戏体验对话。当前对话 D 负责最后集成。共享接口见 [pipeline v1](docs/contracts/pipeline-v1.md)，目录说明见 [模块边界](docs/MODULE_BOUNDARIES.md)。知识和教学适配器已能用固定样例贯通，但通用内容生成算法仍是 A/B 的后续任务。
+拆分已落地；请从 [任务入口](flow/tasks/README.md) 分别开启 A 知识库、B 教学设计、C 游戏体验对话。当前对话 D 负责最后集成。共享接口见 [pipeline v1](docs/contracts/pipeline-v1.md)，目录说明见 [模块边界](docs/MODULE_BOUNDARIES.md)。已集成 A3 来源补证、重新审阅的 B3 教学及 C 体验修复：四章38节、144轮互动、七类操作。点击“导入知识库”→“预览完整课程（修订3）”，确认后独立保存。139单元已完成AI领域/双语审校；新增来源补证独立追溯，不代表官方认证或穷尽考点。任意教材仍依赖配置的模型服务与内容审核。
 
 `npm run build` 将模块源码发布到原 dist 路径，不清空素材；`node scripts/test-current.cjs` 验收模块、原入口、存档和经典游戏。C 使用 `node scripts/build-game.cjs --out artifacts/previews/game-C` 与 `node scripts/preview-game.cjs --dir artifacts/previews/game-C --port 8773` 独立预览。
+
+本轮验收与版本边界见 [集成说明](docs/INTEGRATION.md)。保留原四个 HTML 入口、旧存档及三个经典游戏；切换语言保留当前操作，海边与圣诞机关按阶段出现。

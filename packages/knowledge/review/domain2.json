@@ -1,0 +1,1276 @@
+{
+  "units": [
+    {
+      "unitId": "2.1-lesson-1",
+      "explanation": {
+        "zh": "先明确谁在什么流程中遇到什么问题，再把AI能力映射到可观察的业务结果。技术选择要服务目标。",
+        "en": "First identify who faces what problem in which workflow, then map AI capabilities to observable business outcomes. Technology choices must serve the objective."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：将“做一个AI助手”改为“减少客服查找获授权制度的时间，同时保持答复质量”。",
+          "en": "Teaching illustration (not a source case): Replace 'build an AI assistant' with 'reduce the time customer support spends finding authorized policies while maintaining response quality'."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "官方四决策明确受益者、工作流、结果和指标；例子是原作者教学例示，非官方案例。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "Measurability: You can establish a baseline and set a clear target for improvement."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "从业务问题到用例",
+        "en": "From business problems to use cases"
+      }
+    },
+    {
+      "unitId": "2.1-lesson-2",
+      "explanation": {
+        "zh": "比较预算、交付时间、内部能力、供应商条件和合规需求。也要考虑集成、维护、迁移与持续运营成本。",
+        "en": "Compare budget, delivery time, internal capabilities, supplier conditions, and compliance needs. Also consider integration, maintenance, migration, and ongoing operating costs."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：现有团队缺少运维能力时，不能只比较模型购买价格。",
+          "en": "Teaching illustration (not a source case): When the current team lacks operational capability, comparing model purchase prices alone is insufficient."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "微软列出购买/自建成本和组织能力，尚未完整覆盖合作与合同。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-buy",
+          "quote": "This choice affects cost, timetovalue, risk, scalability, and the long-term sustainability of the solution."
+        }
+      ],
+      "missing": [
+        "合作关系及供应商合同条款尚缺直接证据。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：合作关系及供应商合同条款尚缺直接证据。"
+      ],
+      "title": {
+        "zh": "自建、购买或合作",
+        "en": "Build, buy, or partner"
+      }
+    },
+    {
+      "unitId": "2.1-lesson-3",
+      "explanation": {
+        "zh": "综合商业价值、可行性、可持续性及战略契合度，决定扩展、暂停还是终止。先定义检验假设和停止条件。",
+        "en": "Consider business value, feasibility, sustainability, and strategic fit together when deciding whether to scale, pause, or terminate a project. Define the hypotheses to test and the stopping conditions first."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：高潜在收益但数据不可用的项目，应先验证准备条件。",
+          "en": "Teaching illustration (not a source case): For a project with high potential returns but unavailable data, first verify that readiness conditions can be met."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "官方支持影响、准备度与预设停止决策；可持续性未明确。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "Measurability: You can establish a baseline and set a clear target for improvement."
+        }
+      ],
+      "missing": [
+        "可持续性维度缺少直接定义与判据。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：可持续性维度缺少直接定义与判据。"
+      ],
+      "title": {
+        "zh": "项目优先级",
+        "en": "Project prioritization"
+      }
+    },
+    {
+      "unitId": "2.1-lesson-4",
+      "explanation": {
+        "zh": "当明确规则或流程改进已能解决问题，或错误风险与收益不相称时，AI可能不是合适选择。先比较可行替代方案。",
+        "en": "AI may be unsuitable when explicit rules or process improvements already solve the problem, or when the risk of errors is disproportionate to the benefits. Compare feasible alternatives first."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：资料命名混乱导致找不到文件，可以先改进归档与检索。",
+          "en": "Teaching illustration (not a source case): If inconsistent document names make files hard to find, first improve filing and search."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "NIST MAP 1.1及1.3明确比较非AI替代方案并在风险高于收益时不部署。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-nist",
+          "quote": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "什么时候不该用AI",
+        "en": "When not to use AI"
+      }
+    },
+    {
+      "unitId": "2.1-lesson-5",
+      "explanation": {
+        "zh": "切换流程或平台要检查数据准备、性能、权限、成本以及回退路径，避免演示成功后直接替换关键流程。",
+        "en": "When switching workflows or platforms, check data readiness, performance, permissions, costs, and rollback routes. Do not replace a critical workflow immediately after a successful demonstration."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：先小范围试用新客服系统，保留可用的人工处理方式。",
+          "en": "Teaching illustration (not a source case): Try the new customer support system on a small scale first, while retaining a workable manual handling process."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "AWS支持分阶段上线、功能及性能测试、回退；权限成本需补证。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-cutover",
+          "quote": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met"
+        },
+        {
+          "sourceId": "d2-precutover",
+          "quote": "Be sure to document a rollback procedure as part of the cutover plan."
+        }
+      ],
+      "missing": [
+        "迁移权限与成本检查尚缺本条引用的直接支持。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：迁移权限与成本检查尚缺本条引用的直接支持。"
+      ],
+      "title": {
+        "zh": "迁移与业务连续性",
+        "en": "Migration and business continuity"
+      }
+    },
+    {
+      "unitId": "2.1.1-unit-1",
+      "explanation": {
+        "zh": "用例要说明谁在什么流程遇到什么问题、现有基线是什么、预期改变如何测量，再选择合适能力。跨职能用例的成功标准会不同。",
+        "en": "A use case should state who faces what problem in which workflow, the current baseline, and how the expected change will be measured, before choosing the appropriate capability. Success criteria differ across functions."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：客服看处理质量，销售看合格线索，研发看验证周期，开发看评审后交付质量。",
+          "en": "Teaching illustration (not a source case): Customer support assesses handling quality; sales assesses qualified leads; research assesses validation cycles; development assesses delivery quality after review."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "工具名称不是业务问题。",
+          "en": "A tool name is not a business problem."
+        }
+      ],
+      "status": "supported",
+      "rationale": "四决策逐项覆盖受益者、流程、基线、测量与业务结果。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "Measurability: You can establish a baseline and set a clear target for improvement."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "问题、受益者与可观测结果",
+        "en": "Problem, beneficiaries, and observable outcomes"
+      }
+    },
+    {
+      "unitId": "2.1.2-unit-1",
+      "explanation": {
+        "zh": "比较时间、预算、差异化需求、内部能力、集成、持续运营、供应商条款和退出成本。已有产品适配且交付期紧时，购买可能比自建更可行。",
+        "en": "Compare time, budget, differentiation needs, internal capabilities, integration, ongoing operations, supplier terms, and exit costs. Buying may be more feasible than building when an existing product fits and delivery time is short."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：缺少运维团队且三个月要上线，先核对现成服务的能力与约束。",
+          "en": "Teaching illustration (not a source case): With no operations team and a three-month launch deadline, first check the capabilities and constraints of available services."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "购买服务不免除本企业的数据和用途责任。",
+          "en": "Buying a service does not remove your company's responsibility for its data and intended uses."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "微软支持时间、定制、内部能力和锁定风险，不能以此推定全部采购责任。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-buy",
+          "quote": "This choice affects cost, timetovalue, risk, scalability, and the long-term sustainability of the solution."
+        }
+      ],
+      "missing": [
+        "采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+      ],
+      "title": {
+        "zh": "自建、购买与合作的比较维度",
+        "en": "Criteria for comparing build, buy, and partner options"
+      }
+    },
+    {
+      "unitId": "2.1.3-unit-1",
+      "explanation": {
+        "zh": "先识别必须满足的数据授权、安全和业务连续性条件，再比较价值、实施能力与战略契合度。高预期收益不能抵消尚未满足的硬约束。",
+        "en": "First identify mandatory requirements for data authorization, security, and business continuity, then compare value, implementation capability, and strategic fit. High expected returns cannot offset unmet mandatory requirements."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：收益最高的项目没有合法可用资料，应先暂停补齐条件。",
+          "en": "Teaching illustration (not a source case): Pause the highest-return project if legally usable material is unavailable, and satisfy the conditions first."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "评分模型用于辅助讨论，权重与门槛应明确。",
+          "en": "Scoring models support discussion; weights and thresholds should be explicit."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "NIST支持风险门槛及不得部署的界限，但尚未覆盖本单元全部硬性条件。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "d2-nist",
+          "quote": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes."
+        }
+      ],
+      "missing": [
+        "数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+      ],
+      "title": {
+        "zh": "价值、可行性与硬性约束",
+        "en": "Value, feasibility, and hard constraints"
+      }
+    },
+    {
+      "unitId": "2.1.4-unit-1",
+      "explanation": {
+        "zh": "若明确规则、检索或流程改进已解决问题，应把它们纳入比较。也应停止不具备可验证收益、可用数据或可接受风险边界的AI方案。",
+        "en": "Include explicit rules, search, and process improvements in the comparison if they already solve the problem. Also stop AI proposals that lack verifiable benefits, usable data, or acceptable risk boundaries."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：文件命名混乱先完善归档，而不是默认训练模型。",
+          "en": "Teaching illustration (not a source case): Improve document filing when names are inconsistent, instead of assuming that a model must be trained."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "暂停或终止是有效的项目决策。",
+          "en": "Pausing or terminating a project is a valid project decision."
+        }
+      ],
+      "status": "supported",
+      "rationale": "NIST支持替代方案与不实施高风险低价值方案；可用数据条件结合微软数据基础说明。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-nist",
+          "quote": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes."
+        },
+        {
+          "sourceId": "d2-adoption",
+          "quote": "Greater customization generally requires more specialized skills and greater operational ownership."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "不使用AI也是方案",
+        "en": "Not using AI is also an option"
+      }
+    },
+    {
+      "unitId": "2.1.5-unit-1",
+      "explanation": {
+        "zh": "迁移前验证新旧系统表现、接口、数据准备和成本，明确切换窗口、责任人、回退触发及恢复方式；迁移成功不能只看系统已启动。",
+        "en": "Before migration, validate the performance of the old and new systems, interfaces, data readiness, and costs. Specify the cutover window, responsible owners, rollback triggers, and recovery method; a running system alone does not establish migration success."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：先在部分请求上验证新平台，异常时可回到原处理流程。",
+          "en": "Teaching illustration (not a source case): Validate the new platform on a subset of requests first, with a route back to the original process if anomalies occur."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "回退方案也需要演练与可用资源。",
+          "en": "Rollback plans also require rehearsals and available resources."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "AWS详细支持切换窗口、联系人、触发、数据恢复与演练，成本核验未覆盖。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-cutover",
+          "quote": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met"
+        },
+        {
+          "sourceId": "d2-precutover",
+          "quote": "Be sure to document a rollback procedure as part of the cutover plan."
+        }
+      ],
+      "missing": [
+        "成本验证未由本条迁移来源直接覆盖。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：成本验证未由本条迁移来源直接覆盖。"
+      ],
+      "title": {
+        "zh": "切换、回退与业务连续性",
+        "en": "Cutover, rollback, and business continuity"
+      }
+    },
+    {
+      "unitId": "2.2-lesson-1",
+      "explanation": {
+        "zh": "KPI应对应业务目标。有形收益如实际节支或收入，无形收益如满意度；两者需要清楚的测量方式，不能随意互相折算。",
+        "en": "KPIs should match business objectives. Tangible benefits include actual cost reductions or revenue; intangible benefits include satisfaction. Both need clear measurement methods and cannot be arbitrarily converted into each other."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：同时记录客服处理时间与答复质量，避免只优化生成速度。",
+          "en": "Teaching illustration (not a source case): Track customer support handling time together with response quality, rather than optimizing generation speed alone."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "微软提供定量定性收益及质量指标，货币换算限定需要独立支持。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        }
+      ],
+      "missing": [
+        "无形收益不得任意货币化的限定需补专门计量依据。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：无形收益不得任意货币化的限定需补专门计量依据。"
+      ],
+      "title": {
+        "zh": "有形与无形收益",
+        "en": "Tangible and intangible benefits"
+      }
+    },
+    {
+      "unitId": "2.2-lesson-2",
+      "explanation": {
+        "zh": "实施前记录可比较的原流程表现，包括时间、成本和质量。上线后保持口径一致，才能合理讨论改善。",
+        "en": "Before implementation, record comparable performance of the original process, including time, cost, and quality. Keep measurement definitions consistent after launch to discuss improvements meaningfully."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：原流程60分钟，AI生成10分钟且复核15分钟，净节省是35分钟。",
+          "en": "Teaching illustration (not a source case): If the original process takes 60 minutes and AI generation takes 10 minutes plus 15 minutes of review, the net saving is 35 minutes."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软Create ROI analysis第1节Frame the ROI scope的Baseline period、Baseline metrics及noAI baseline提示覆盖比较期间、任务量、时间与返工质量；第2节Map AI value列出时间、质量、产能三类测量。60-10-15=35为原创教学算式，包含人工复核，未宣称为外部实测。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Baseline metrics: task volume, average handle time (AHT), rework/error rate"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "业务基线",
+        "en": "Business baseline"
+      }
+    },
+    {
+      "unitId": "2.2-lesson-3",
+      "explanation": {
+        "zh": "简单ROI为（同期间收益减成本）除以成本。完整成本应覆盖部署、调用、培训、维护和复核，避免重复计算同一份收益。",
+        "en": "Simple ROI equals benefits minus costs for the same period, divided by costs. Full costs should include deployment, calls, training, maintenance, and review; avoid counting the same benefit twice."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：释放工时不自动等于现金节支，也不能同时无依据地再记作新增收入。",
+          "en": "Teaching illustration (not a source case): Released working time does not automatically become cash savings, nor can it also be counted as additional revenue without justification."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软ROI分析给出净收益/同期总成本；英国政府框架补充现金支出与重复计量边界。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.2.3-unit-2",
+        "2.2.5-unit-1"
+      ],
+      "prerequisiteRationale": "2.2.3-unit-2（释放产能与现金节省）提供本单元实际使用的收益核算边界。2.2.5-unit-1（全生命周期成本）提供本单元实际使用的完整成本范围。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "ROI % = Net_Benefit / Annual_TCO × 100"
+        },
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        },
+        {
+          "sourceId": "d2-efficiency",
+          "quote": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "收益与ROI",
+        "en": "Benefits and ROI"
+      }
+    },
+    {
+      "unitId": "2.2-lesson-4",
+      "explanation": {
+        "zh": "先导指标用于较早观察成功条件，结果指标用于观察已实现的成果。先导信号有价值，但不构成最终成功保证。",
+        "en": "Leading indicators provide early observations of conditions for success; outcome indicators measure results already achieved. Leading signals are useful but do not guarantee eventual success."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：合适的活跃使用与流程采用可作为信号，仍需观察实际质量和业务价值。",
+          "en": "Teaching illustration (not a source case): Appropriate active use and workflow adoption can be signals, but actual quality and business value still need to be observed."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "采用不等于业务结果已核验，但预测性先导指标定义未完整取证。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "whether that adoption is improving business outcomes."
+        }
+      ],
+      "missing": [
+        "来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+      ],
+      "title": {
+        "zh": "先导性指标",
+        "en": "Leading indicators"
+      }
+    },
+    {
+      "unitId": "2.2-lesson-5",
+      "explanation": {
+        "zh": "明确初期和持续成本、用量假设与预算边界；观察实际调用和复核开销，在质量约束下优化方案。",
+        "en": "Specify initial and ongoing costs, usage assumptions, and budget limits. Monitor actual call and review expenses, and optimize the solution subject to quality constraints."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：比较方案时把培训、集成、监测和人工复核一起计入。",
+          "en": "Teaching illustration (not a source case): Include training, integration, monitoring, and human review when comparing solutions."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软Evaluate ROI criteria的Total Cost of Ownership节逐项列出开发、部署、运营、培训和退役迁移；Create ROI analysis第5节Model TCO覆盖数据质量、人力与持续运营，第6节Sensitivity bands包含采用用量及质量/返工效果。人工复核作为人力与返工成本计入，单价下降不必然降低总成本是加总关系。例子为教学例示。",
+      "prerequisiteIds": [
+        "2.2.5-unit-1"
+      ],
+      "prerequisiteRationale": "2.2.5-unit-1（全生命周期成本）提供本单元实际使用的完整成本范围。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        },
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Model TCO"
+        },
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Quality/rework effects"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "成本规划与优化",
+        "en": "Cost planning and optimization"
+      }
+    },
+    {
+      "unitId": "2.2.1-unit-1",
+      "explanation": {
+        "zh": "活动指标记录做了多少，如开通账号；结果指标记录业务改变，如差错率、处理周期、转化率。效率必须与质量和复核代价一起看。",
+        "en": "Activity measures record how much was done, such as accounts enabled; outcome measures record business changes, such as error rates, processing cycles, or conversion rates. Assess efficiency together with quality and review costs."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：账号增长但处理错误增加，不能仅凭采用率宣布成功。",
+          "en": "Teaching illustration (not a source case): If account numbers rise but processing errors increase, adoption alone cannot justify declaring success."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单一速度指标容易掩盖质量损失。",
+          "en": "A single speed metric can hide quality losses."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软四决策区分采用与业务结果，ROI分析补充质量/返工和成本测量。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "whether that adoption is improving business outcomes."
+        },
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Quality/rework effects"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "结果指标与活动指标",
+        "en": "Outcome and activity measures"
+      }
+    },
+    {
+      "unitId": "2.2.1-unit-2",
+      "explanation": {
+        "zh": "有形收益可以形成可核验的金额或运营变化；满意度、信任等无形收益应设计独立测量，不能任意折算成已经实现的现金。",
+        "en": "Tangible benefits can produce verifiable monetary or operational changes. Intangible benefits such as satisfaction and trust need separate measurement and cannot be arbitrarily converted into cash already realized."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：分别报告已兑现成本减少与客户满意度变化。",
+          "en": "Teaching illustration (not a source case): Report realized cost reductions separately from changes in customer satisfaction."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "无形收益不是无需证据的收益。",
+          "en": "Intangible benefits still require evidence."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "微软支持定量/定性指标，独立测量及任意折现限制需专门依据。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        }
+      ],
+      "missing": [
+        "满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+      ],
+      "title": {
+        "zh": "有形收益与无形收益",
+        "en": "Tangible and intangible benefits"
+      }
+    },
+    {
+      "unitId": "2.2.2-unit-1",
+      "explanation": {
+        "zh": "记录实施前同口径指标，并尽量控制任务难度、业务量和时间因素。对照组，或设有适当对照并处理时间趋势的分阶段试验，有助于区分AI效果与同期其他改变。",
+        "en": "Record pre-implementation metrics using consistent definitions, and control task difficulty, business volume, and timing factors as far as possible. Control groups, or phased trials with appropriate controls and adjustment for time trends, help distinguish AI effects from other concurrent changes."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：相同类型工单比较总处理时间，包括人工复核。",
+          "en": "Teaching illustration (not a source case): Compare total handling time, including human review, for the same types of support tickets."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "上线前后数字不同，不自动证明因果关系。",
+          "en": "Different numbers before and after launch do not automatically prove causation."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软ROI分析第1节要求基线期间、任务量、时间和返工质量口径；微软研究组Learning causal effects from data明确相关不能替代因果推理；Hofmann等第2.1节（印刷第8页/PDF第11页）说明对照实验区分算法变化和外部事件；NIST 5.3.3.2说明控制时段等干扰因素。已将中英正文修订为分阶段试验须设适当对照并处理时间趋势；此处是上述实验设计原则的条件性应用，并未声称单纯分批上线可以归因，亦未承诺消除所有混杂。例子是同类工单的教学例示。",
+      "prerequisiteIds": [
+        "2.2-lesson-2"
+      ],
+      "prerequisiteRationale": "2.2-lesson-2（业务基线）提供本单元实际使用的基线概念。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Baseline metrics: task volume, average handle time (AHT), rework/error rate"
+        },
+        {
+          "sourceId": "d2-causal",
+          "quote": "Without randomized experiments and causal reasoning, correlation-based methods can lead us astray."
+        },
+        {
+          "sourceId": "d2-controlled",
+          "quote": "an online controlled experiment is able to distinguish the effects of the algorithm from external causes"
+        },
+        {
+          "sourceId": "d2-blocking",
+          "quote": "Nuisance factors are those that may affect the measured result, but are not of primary interest."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "可比较基线与归因",
+        "en": "Comparable baselines and attribution"
+      }
+    },
+    {
+      "unitId": "2.2.3-unit-1",
+      "explanation": {
+        "zh": "简单ROI等于同期收益减同期完整成本，再除以同期完整成本。明确期间、单位、收益实现条件和成本范围，才能比较不同方案。",
+        "en": "Simple ROI equals benefits for a period minus full costs for that period, divided by those full costs. Specify the period, units, conditions for realizing benefits, and cost scope before comparing solutions."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：收益150万元、完整成本100万元，ROI为50%。",
+          "en": "Teaching illustration (not a source case): Benefits of RMB 1.5 million and full costs of RMB 1 million yield an ROI of 50%."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能用净收益除以收益冒充ROI。",
+          "en": "Net benefit divided by benefits is not ROI."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软直接给出同期净收益/总成本公式；原例单位和150万/100万均保留，50%算术正确。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.2.5-unit-1"
+      ],
+      "prerequisiteRationale": "2.2.5-unit-1（全生命周期成本）提供本单元实际使用的完整成本范围。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "ROI % = Net_Benefit / Annual_TCO × 100"
+        },
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "ROI公式与核算边界",
+        "en": "ROI formula and accounting boundaries"
+      }
+    },
+    {
+      "unitId": "2.2.3-unit-2",
+      "explanation": {
+        "zh": "节省工时可释放产能，但只有支出实际减少才构成现金成本节省。若把产能用于新增产出，还需证明需求、人员安排和新增收入能够实现。",
+        "en": "Time savings can release capacity, but cash cost savings occur only when spending actually falls. If that capacity is used for additional output, demonstrate that demand, staffing arrangements, and additional revenue can materialize."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：每周省十小时但工资未减少，先记为可用产能。",
+          "en": "Teaching illustration (not a source case): If ten hours are saved each week but salaries do not fall, initially record this as available capacity."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "同一批省时不能无依据地重复计入减员与新增收益。",
+          "en": "Do not count the same saved time as both staff reductions and additional benefits without justification."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "政府框架明确区分现金节省与产能提升，并要求证据和避免重复计量；属于政府核算指导，商业收入实现条件仍需专门材料。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-efficiency",
+          "quote": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy"
+        }
+      ],
+      "missing": [
+        "政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+      ],
+      "title": {
+        "zh": "释放产能与现金节省",
+        "en": "Released capacity and cash savings"
+      }
+    },
+    {
+      "unitId": "2.2.4-unit-1",
+      "explanation": {
+        "zh": "培训完成、使用频率等可作为早期信号；留存、服务质量、净收益等结果需要后续观察。应说明预期联系，并检验先导指标能否预测结果。",
+        "en": "Training completion and usage frequency can be early signals; outcomes such as retention, service quality, and net benefits need later observation. State the expected relationship and test whether the leading indicators predict the outcomes."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：培训后继续追踪独立核验正确率，而不只统计出勤。",
+          "en": "Teaching illustration (not a source case): After training, continue tracking independent verification accuracy instead of counting attendance alone."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "先导指标向好不等于收益已兑现。",
+          "en": "Improving leading indicators do not mean benefits have been realized."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "官方说明采用不能代表价值；预测效度验证与先导指标分类仍需证据。 英文按中文定义、例子与边界完整修订；摘录仅作来源定位，判断以浏览正文相应段落为准。",
+      "prerequisiteIds": [
+        "2.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.2.1-unit-1（结果指标与活动指标）提供本单元实际使用的活动与结果区分。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "whether that adoption is improving business outcomes."
+        }
+      ],
+      "missing": [
+        "先导指标对结果预测效度的验证方法尚缺直接来源。"
+      ],
+      "requiredMaterial": [
+        "补充可逐字核验的一手资料及适用范围，具体覆盖：先导指标对结果预测效度的验证方法尚缺直接来源。"
+      ],
+      "title": {
+        "zh": "先导信号与滞后结果",
+        "en": "Leading signals and lagging outcomes"
+      }
+    },
+    {
+      "unitId": "2.2.5-unit-1",
+      "explanation": {
+        "zh": "预算包括数据整理、集成、部署、调用或计算、培训、人工复核、监测、维护和退出迁移。按业务量变化分析单位成本和总成本。",
+        "en": "Include data preparation, integration, deployment, calls or compute, training, human review, monitoring, maintenance, and exit migration in the budget. Analyze unit and total costs as business volume changes."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：减少模型调用费却增加大量人工复核，可能没有降低完整成本。",
+          "en": "Teaching illustration (not a source case): Lower model-call fees accompanied by much more human review may not reduce full costs."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单次调用价格不能代表系统总成本。",
+          "en": "The price of a single call does not represent total system cost."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软Evaluate ROI criteria的Total Cost of Ownership节逐项列出开发、部署、运营、培训和退役迁移；Create ROI analysis第5节Model TCO覆盖数据质量、人力与持续运营，第6节Sensitivity bands包含采用用量及质量/返工效果。人工复核作为人力与返工成本计入，单价下降不必然降低总成本是加总关系。例子为教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        },
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Model TCO"
+        },
+        {
+          "sourceId": "d2-roiAnalysis",
+          "quote": "Quality/rework effects"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "全生命周期成本",
+        "en": "Lifecycle cost"
+      }
+    },
+    {
+      "unitId": "2.3-lesson-1",
+      "explanation": {
+        "zh": "比较客户需求、竞争者能力和自己的独特条件，找到AI可改善的业务环节，而不是仅追随流行工具。",
+        "en": "Compare customer needs, competitors' capabilities, and your own distinctive circumstances to find business activities AI could improve, rather than simply following popular tools."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：同样购买一个模型，并不意味着获得与竞争者不同的能力。",
+          "en": "Teaching illustration (not a source case): Buying the same model does not mean gaining capabilities that differ from competitors'."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "AWS文章开篇第2—6段将竞品、人员能力、独特条件和客户学习纳入创新；Sustainable Competitive Advantages节明确外购基础模型同样可被竞争者获得。Teece论文Business model design节从未满足需求出发；这些是战略建议，并非任一技术必然产生竞争收益的实证结论。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "Without the right balance between the creation, delivery, and capture of value"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "竞争格局",
+        "en": "Competitive landscape"
+      }
+    },
+    {
+      "unitId": "2.3-lesson-2",
+      "explanation": {
+        "zh": "AI可能改变产品、服务、交付或价值获取方式。评估客户价值与运营要求，而不是只给原流程加一个聊天窗口。",
+        "en": "AI may change products, services, delivery, or how value is captured. Evaluate customer value and operational requirements rather than merely adding a chat window to an existing workflow."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：将一次性报告服务改成持续辅助决策，需要新的数据维护和服务流程。",
+          "en": "Teaching illustration (not a source case): Turning a one-off reporting service into continuous decision support requires new data-maintenance and service processes."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Teece论文Business models/Definition节定义价值创造、交付和收益成本结构，Business model implementation节要求补齐组织能力；AWS开篇指出不可混淆技术与商业模式，Operationalizing Generative AI节列出维护和运营要求。由此支持原单元的可能性表述及聊天窗口不足以完成模式转型的限定。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "Without the right balance between the creation, delivery, and capture of value"
+        },
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "业务模式转型",
+        "en": "Business model transformation"
+      }
+    },
+    {
+      "unitId": "2.3-lesson-3",
+      "explanation": {
+        "zh": "可持续优势往往来自相关数据、流程、组织能力和反馈的组合。单一工具上线不保证长期优势。",
+        "en": "Sustainable advantage often comes from a combination of relevant data, workflows, organizational capability, and feedback. Launching one tool does not guarantee a lasting advantage."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：把客户反馈持续转成流程改进，比只记录软件安装数更有意义。",
+          "en": "Teaching illustration (not a source case): Continuously turning customer feedback into process improvements is more meaningful than only counting software installations."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "AWS的Sustainable Competitive Advantages节列出独有数据与业务流程，开篇强调人员能力；Teece结论倒数第4段明确学习闭环与持续调整维持竞争优势。共同支持数据、流程、组织和反馈组合；原文中的“往往”“不保证”保留，不作必然成功承诺。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "processes involving learning loops"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "可持续优势",
+        "en": "Sustainable advantage"
+      }
+    },
+    {
+      "unitId": "2.3-lesson-4",
+      "explanation": {
+        "zh": "投资规模应结合行业变化、竞争压力、组织准备度及风险承受能力。需要验证条件与分阶段投入。",
+        "en": "Investment size should reflect industry changes, competitive pressures, organizational readiness, and risk tolerance. Validate the necessary conditions and invest in stages."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：在数据基础不稳时，先投入治理与小范围验证，而非立即全企业扩展。",
+          "en": "Teaching illustration (not a source case): When the data foundation is unstable, first invest in governance and small-scale validation instead of immediately expanding across the enterprise."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软四决策第2—4节要求准备度、少数流程试点与测量后扩展；AWS Responsive Agility节涉及客户及竞争变化，Management of Innovation节支持低成本验证；Teece Business model design节要求在大规模承诺前测试；NIST MAP 1.5要求风险容忍门槛。组合支持按条件分阶段投资，并不推导固定投资金额。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [
+        "2.1.3-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.3-unit-1（价值、可行性与硬性约束）提供本单元实际使用的价值与硬约束判断。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "Measurability: You can establish a baseline and set a clear target for improvement."
+        },
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "processes involving learning loops"
+        },
+        {
+          "sourceId": "d2-nist",
+          "quote": "Organizational risk tolerances are determined and documented."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "投资与成熟度",
+        "en": "Investment and maturity"
+      }
+    },
+    {
+      "unitId": "2.3.1-unit-1",
+      "explanation": {
+        "zh": "分析竞争变化如何影响客户期待、交付效率和价值链，再决定投资方向。相同工具在不同业务条件下可能产生不同价值。",
+        "en": "Analyze how competitive changes affect customer expectations, delivery efficiency, and the value chain before choosing investment priorities. The same tool may create different value under different business conditions."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：同行推出智能客服，本企业先核对客户最常见的服务障碍。",
+          "en": "Teaching illustration (not a source case): When competitors launch intelligent customer support, first check your own customers' most common service obstacles."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "竞争对手的投入金额不是本企业的投资依据。",
+          "en": "A competitor's investment amount is not the basis for your company's investment."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "AWS Responsive Agility节支持客户需求和竞争能力变化；Teece Business model design节同时讨论竞争环境、客户需求与价值链选择，支持不同条件导致不同价值。仍未找到直接讨论以竞争对手投资金额作为本企业预算依据的材料；该边界合理但不将推论冒充来源原断言。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "Without the right balance between the creation, delivery, and capture of value"
+        }
+      ],
+      "missing": [
+        "“竞争对手投入金额不是本企业投资依据”的预算边界缺少直接一手论证。"
+      ],
+      "requiredMaterial": [
+        "补充投资决策原始材料，直接区分竞品支出信号与本企业收益、能力和预算依据。"
+      ],
+      "title": {
+        "zh": "客户问题与竞争位置",
+        "en": "Customer problems and competitive position"
+      }
+    },
+    {
+      "unitId": "2.3.2-unit-1",
+      "explanation": {
+        "zh": "业务模式变化涉及提供何种客户价值、如何交付以及如何获得收益。给现有产品贴AI标签不等于重构业务模式。",
+        "en": "Business-model change concerns what customer value is offered, how it is delivered, and how revenue is earned. Adding an AI label to an existing product does not amount to redesigning its business model."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：按项目交付咨询转为持续监测服务，需要重新评估定价和运营责任。",
+          "en": "Teaching illustration (not a source case): Moving from project-based consulting to continuous monitoring requires reassessing pricing and operational responsibilities."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "新的技术能力必须连接具体付费或价值实现方式。",
+          "en": "New technical capabilities must connect to a specific payment or value-realization mechanism."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Teece论文Business models/Definition节及Business model design节覆盖价值主张、定价收入与成本能力；Implementation节要求重配资源，结论要求业务模式各要素联动。AWS开篇直接警示将技术与商业模式混淆。按项目咨询改持续监测为原创示例，推演的是定价与运营责任需重新评估。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "Without the right balance between the creation, delivery, and capture of value"
+        },
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "价值主张、交付与收益逻辑",
+        "en": "Value proposition, delivery, and revenue logic"
+      }
+    },
+    {
+      "unitId": "2.3.3-unit-1",
+      "explanation": {
+        "zh": "可持续优势常来自获授权的数据、嵌入流程、领域经验、客户关系和持续反馈的组合，而不是人人都能购买的同一基础模型。",
+        "en": "Sustainable advantage often comes from a combination of authorized data, embedded workflows, domain expertise, customer relationships, and continuous feedback, rather than the same foundation model available for anyone to buy."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：积累经核验的维修反馈，并把它用于改进服务流程。",
+          "en": "Teaching illustration (not a source case): Accumulate verified maintenance feedback and use it to improve service processes."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "数据多不等于数据独有、可用或有权使用。",
+          "en": "Having more data does not mean it is exclusive, usable, or authorized for use."
+        }
+      ],
+      "status": "supported",
+      "rationale": "AWS战略文Sustainable Competitive Advantages节覆盖独有数据与独特流程，开篇覆盖人员技能；Teece论文Next-generation competition、Business model design及结论覆盖组织知识、客户需求/互动与学习闭环。AWS数据安全文Data privacy and compliance及Data security across the pipeline节分别要求用途分类与访问授权；因此数据数量本身不能证明独占、质量或使用权。该结论是这些条件的逻辑区分，不是声称来源证明数据越多必然更好。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "processes involving learning loops"
+        },
+        {
+          "sourceId": "d2-dataSecurity",
+          "quote": "Make sure that models and applications can retrieve only the information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "互补能力与学习闭环",
+        "en": "Complementary capabilities and learning loops"
+      }
+    },
+    {
+      "unitId": "2.3.4-unit-1",
+      "explanation": {
+        "zh": "结合行业条件和自身准备度，先验证关键假设，再逐步扩大投入。预先定义价值、质量、风险和成本不达标时的暂停或退出条件。",
+        "en": "Consider industry conditions and your own readiness, test key assumptions first, then expand investment gradually. Define pause or exit conditions in advance for failures to meet value, quality, risk, or cost requirements."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：先验证获客质量，再决定是否扩展生成内容预算。",
+          "en": "Teaching illustration (not a source case): Validate customer-acquisition quality before deciding whether to expand the budget for generated content."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "试点投入已发生不是继续投入的充分理由。",
+          "en": "Pilot costs already incurred are not sufficient reason to continue investing."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软四决策Set the metrics节要求预先决定未达标时调整或停止；NIST MAP 1.5与3.2分别覆盖风险上限和全生命周期失败成本；Teece Business model design节支持先测试后扩大承诺。Green Book第6章Sunk costs明确已发生且不可改变成本不影响下一步选择，此处只采用一般沉没成本原则，不将英国公共部门核算规则当成企业法定义务。 例子为教学例示，未冒充来源原例；中英全部限定保留。",
+      "prerequisiteIds": [
+        "2.1.3-unit-1",
+        "2.2.3-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.3-unit-1（价值、可行性与硬性约束）提供本单元实际使用的价值与硬约束判断。2.2.3-unit-1（ROI公式与核算边界）提供本单元实际使用的收益核算边界。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "refine the approach"
+        },
+        {
+          "sourceId": "d2-nist",
+          "quote": "Organizational risk tolerances are determined and documented."
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "processes involving learning loops"
+        },
+        {
+          "sourceId": "d2-greenbook",
+          "quote": "Sunk costs are costs that have already been incurred and cannot be changed."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "分阶段承诺与停止条件",
+        "en": "Staged commitments and stop conditions"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "d2-strategy",
+      "title": "Build your AI strategy in four decisions",
+      "url": "https://adoption.microsoft.com/en-us/copilot/build-your-ai-strategy/",
+      "excerpt": "Measurability: You can establish a baseline and set a clear target for improvement.\nwhether that adoption is improving business outcomes.\nrefine the approach",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-adoption",
+      "title": "AI adoption",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy",
+      "excerpt": "Greater customization generally requires more specialized skills and greater operational ownership.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-buy",
+      "title": "Analyze whether to build, buy, or extend AI components",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-costs-benefits-ai-powered-business-solution/4-analyze-whether-build-buy-extend-ai-components-business-solutions",
+      "excerpt": "This choice affects cost, timetovalue, risk, scalability, and the long-term sustainability of the solution.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-nist",
+      "title": "NIST AI RMF Playbook: Map",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/map/",
+      "excerpt": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes.\nOrganizational risk tolerances are determined and documented.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-cutover",
+      "title": "Cutover stage",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-migration-cutover/cutover-stage.html",
+      "excerpt": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-precutover",
+      "title": "Pre-cutover stage",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-migration-cutover/pre-cutover-stage.html",
+      "excerpt": "Be sure to document a rollback procedure as part of the cutover plan.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-roiCriteria",
+      "title": "Evaluate ROI criteria for AI-powered solutions",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-costs-benefits-ai-powered-business-solution/2-roi-criteria-ai-powered-business-solution-including-total-cost-ownership",
+      "excerpt": "TCO includes all costs across the AI lifecycle.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-roiAnalysis",
+      "title": "Create ROI analysis for a proposed AI solution",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-costs-benefits-ai-powered-business-solution/3-create-roi-analysis-proposed-ai-solution-business-process",
+      "excerpt": "ROI % = Net_Benefit / Annual_TCO × 100\nBaseline metrics: task volume, average handle time (AHT), rework/error rate\nModel TCO\nQuality/rework effects",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-efficiency",
+      "title": "The Government Efficiency Framework",
+      "url": "https://www.gov.uk/government/publications/the-government-efficiency-framework/the-government-efficiency-framework--2",
+      "excerpt": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-awsAdvantage",
+      "title": "Mark Schwartz: What Will Generative AI Mean for Your Business?",
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/what-will-generative-ai-mean-for-your-business/",
+      "excerpt": "Sustainable competitive advantage can’t come just from using generative AI\nunderstanding customers’ needs, and building business capabilities.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-teece2017",
+      "title": "Teece and Linden (2017): Business models, value capture, and the digital enterprise",
+      "url": "https://link.springer.com/article/10.1186/s41469-017-0018-x",
+      "excerpt": "Without the right balance between the creation, delivery, and capture of value\nprocesses involving learning loops",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-causal",
+      "title": "Microsoft Research: Causality and Machine Learning",
+      "url": "https://www.microsoft.com/en-us/research/group/causal-inference/",
+      "excerpt": "Without randomized experiments and causal reasoning, correlation-based methods can lead us astray.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-controlled",
+      "title": "Hofmann, Li and Radlinski (2016): Online Evaluation for Information Retrieval",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ftir-online-evaluation-final-journal.pdf",
+      "excerpt": "an online controlled experiment is able to distinguish the effects of the algorithm from external causes",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-blocking",
+      "title": "NIST/SEMATECH e-Handbook 5.3.3.2: Randomized block designs",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm",
+      "excerpt": "Nuisance factors are those that may affect the measured result, but are not of primary interest.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-greenbook",
+      "title": "HM Treasury: The Green Book (2026)",
+      "url": "https://www.gov.uk/government/publications/the-green-book--2/the-green-book-2026",
+      "excerpt": "Sunk costs are costs that have already been incurred and cannot be changed.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-dataSecurity",
+      "title": "AWS: Security considerations for data in generative AI",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/security.html",
+      "excerpt": "Make sure that models and applications can retrieve only the information that the user is authorized to access.",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

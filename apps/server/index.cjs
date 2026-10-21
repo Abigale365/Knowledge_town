@@ -40,6 +40,13 @@ function createApp(config=configuration()){
  if(url.pathname.startsWith('/api/')){
   if(req.headers.origin&&req.headers.origin!=='http://'+req.headers.host){json(res,403,{error:'不允许跨站请求。'});return;}
   if(req.method==='GET'&&url.pathname==='/api/config'){json(res,200,{configured:config.configured,model:config.model,service:config.endpoint?new URL(config.endpoint).origin:'',chunkChars:config.chunkChars,maxChunks:config.maxChunks});return;}
+  if(req.method==='GET'&&url.pathname==='/api/aib-course'){
+   const result=await require('./pipeline.cjs').compilePreparedCourse({...require('../../packages/course-compiler/enrich-aib.cjs').enrichedAib(),learningPlan:require('../../packages/learning-design/generated/aib-learning-plan.v3.json')});json(res,200,result);return;
+  }
+  if(req.method==='POST'&&url.pathname==='/api/compile-course'){
+   if(!req.headers['content-type']?.startsWith('application/json')){json(res,415,{error:'需要JSON格式的资料包、知识包和学习方案。'});return;}
+   try{const body=await readBody(req),result=await require('./pipeline.cjs').compilePreparedCourse(body);json(res,200,result);}catch(error){json(res,400,{error:error.message,diagnostics:error.diagnostics||[]});}return;
+  }
   if(req.method==='POST'&&url.pathname==='/api/course-jobs'){
    if(!config.configured){json(res,503,{error:'尚未配置API。请在本机.env中填写API_BASE_URL、API_MODEL和API_KEY，再重启服务。'});return;}
    if(!req.headers['content-type']?.startsWith('application/json')){json(res,415,{error:'请使用JSON上传文字材料。'});return;}

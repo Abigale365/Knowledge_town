@@ -1,0 +1,2356 @@
+{
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[0]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[1]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[2]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[3]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[4]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[5]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[6]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[7]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[8]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[9]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[10]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[11]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[12]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[13]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[14]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[15]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[16]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[17]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[18]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[19]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[20]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[21]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[22]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[23]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[24]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[25]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[26]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[27]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[28]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[29]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[30]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[31]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[32]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[33]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[34]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[35]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[36]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[37]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[38]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[39]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[40]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[41]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[42]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[43]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[44]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[45]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[46]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[47]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[48]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[49]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[50]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[51]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[52]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[53]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[54]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[55]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[56]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[57]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[58]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[59]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[60]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[61]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[62]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[63]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[64]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[65]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[66]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[67]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[68]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[69]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[70]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[71]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[72]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[73]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[74]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[75]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[76]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[77]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[78]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[79]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[80]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[81]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[82]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[83]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[84]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[85]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[86]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[87]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[88]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[89]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[90]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[91]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[92]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[93]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[94]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[95]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[96]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[97]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[98]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[99]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[100]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[101]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[102]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[103]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[104]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[105]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[106]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[107]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[108]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[109]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[110]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[111]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[112]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[113]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[114]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[115]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[116]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[117]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[118]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[119]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[120]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[121]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[122]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[123]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[124]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[125]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[126]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[127]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[128]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[129]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[130]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[131]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[132]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[133]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[134]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[135]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[136]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[137]",
+      "message": "教学内容仍需人工审阅"
+    },
+    {
+      "severity": "warning",
+      "code": "knowledge.review",
+      "path": "knowledge.units[138]",
+      "message": "教学内容仍需人工审阅"
+    }
+  ],
+  "coverage": [
+    {
+      "objectiveId": "skill-1.1.1",
+      "unitIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2",
+        "1.1-lesson-3",
+        "1.1-lesson-4",
+        "1.1-lesson-5"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.1.2",
+      "unitIds": [
+        "1.1-lesson-6",
+        "1.1-lesson-7",
+        "1.1-lesson-16",
+        "1.1-lesson-17",
+        "1.1-lesson-18",
+        "1.1-lesson-19",
+        "1.1-lesson-8",
+        "1.1-lesson-20",
+        "1.1-lesson-21",
+        "1.1-lesson-22"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.1.3",
+      "unitIds": [
+        "1.1-lesson-9",
+        "1.1-lesson-10"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.1.4",
+      "unitIds": [
+        "1.1-lesson-11"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.1.5",
+      "unitIds": [
+        "1.1-lesson-12",
+        "1.1-lesson-13"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.1.6",
+      "unitIds": [
+        "1.1-lesson-14",
+        "1.1-lesson-15"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.2.1",
+      "unitIds": [
+        "1.2-lesson-1",
+        "1.2.1-unit-1",
+        "1.2.1-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.2.2",
+      "unitIds": [
+        "1.2-lesson-2",
+        "1.2-lesson-3",
+        "1.2.2-unit-1",
+        "1.2.2-unit-2",
+        "1.2.2-unit-3"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.2.3",
+      "unitIds": [
+        "1.2-lesson-4",
+        "1.2.3-unit-1",
+        "1.2.3-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.2.4",
+      "unitIds": [
+        "1.2-lesson-5",
+        "1.2.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.3.1",
+      "unitIds": [
+        "1.3-lesson-1",
+        "1.3.1-unit-1",
+        "1.3.1-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.3.2",
+      "unitIds": [
+        "1.3-lesson-2",
+        "1.3.2-unit-1",
+        "1.3.2-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-1.3.3",
+      "unitIds": [
+        "1.3-lesson-3",
+        "1.3-lesson-4",
+        "1.3.3-unit-1",
+        "1.3.3-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.1.1",
+      "unitIds": [
+        "2.1-lesson-1",
+        "2.1.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.1.2",
+      "unitIds": [
+        "2.1-lesson-2",
+        "2.1.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.1.3",
+      "unitIds": [
+        "2.1-lesson-3",
+        "2.1.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.1.4",
+      "unitIds": [
+        "2.1-lesson-4",
+        "2.1.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.1.5",
+      "unitIds": [
+        "2.1-lesson-5",
+        "2.1.5-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.2.1",
+      "unitIds": [
+        "2.2-lesson-1",
+        "2.2.1-unit-1",
+        "2.2.1-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.2.2",
+      "unitIds": [
+        "2.2-lesson-2",
+        "2.2.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.2.3",
+      "unitIds": [
+        "2.2-lesson-3",
+        "2.2.3-unit-1",
+        "2.2.3-unit-2"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.2.4",
+      "unitIds": [
+        "2.2-lesson-4",
+        "2.2.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.2.5",
+      "unitIds": [
+        "2.2-lesson-5",
+        "2.2.5-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.3.1",
+      "unitIds": [
+        "2.3-lesson-1",
+        "2.3.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.3.2",
+      "unitIds": [
+        "2.3-lesson-2",
+        "2.3.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.3.3",
+      "unitIds": [
+        "2.3-lesson-3",
+        "2.3.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-2.3.4",
+      "unitIds": [
+        "2.3-lesson-4",
+        "2.3.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.1.1",
+      "unitIds": [
+        "3.1-lesson-1",
+        "3.1.1-unit-1",
+        "3.1.1-unit-2",
+        "3.1.1-unit-3"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.1.2",
+      "unitIds": [
+        "3.1-lesson-2",
+        "3.1.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.1.3",
+      "unitIds": [
+        "3.1-lesson-3",
+        "3.1.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.1.4",
+      "unitIds": [
+        "3.1-lesson-4",
+        "3.1.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.2.1",
+      "unitIds": [
+        "3.2-lesson-1",
+        "3.2.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.2.2",
+      "unitIds": [
+        "3.2-lesson-2",
+        "3.2.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.2.3",
+      "unitIds": [
+        "3.2-lesson-3",
+        "3.2.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.2.4",
+      "unitIds": [
+        "3.2-lesson-4",
+        "3.2.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.3.1",
+      "unitIds": [
+        "3.3-lesson-1",
+        "3.3.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.3.2",
+      "unitIds": [
+        "3.3-lesson-2",
+        "3.3.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.3.3",
+      "unitIds": [
+        "3.3-lesson-3",
+        "3.3.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-3.3.4",
+      "unitIds": [
+        "3.3-lesson-4",
+        "3.3.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.1.1",
+      "unitIds": [
+        "4.1-lesson-1",
+        "4.1.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.1.2",
+      "unitIds": [
+        "4.1-lesson-2",
+        "4.1.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.1.3",
+      "unitIds": [
+        "4.1-lesson-3",
+        "4.1.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.1.4",
+      "unitIds": [
+        "4.1-lesson-4",
+        "4.1.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.2.1",
+      "unitIds": [
+        "4.2-lesson-1",
+        "4.2.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.2.2",
+      "unitIds": [
+        "4.2-lesson-2",
+        "4.2.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.2.3",
+      "unitIds": [
+        "4.2-lesson-3",
+        "4.2.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.1",
+      "unitIds": [
+        "4.3-lesson-1",
+        "4.3.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.2",
+      "unitIds": [
+        "4.3-lesson-2",
+        "4.3.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.3",
+      "unitIds": [
+        "4.3-lesson-3",
+        "4.3.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.4",
+      "unitIds": [
+        "4.3-lesson-4",
+        "4.3.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.5",
+      "unitIds": [
+        "4.3-lesson-5",
+        "4.3.5-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.3.6",
+      "unitIds": [
+        "4.3-lesson-6",
+        "4.3.6-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.1",
+      "unitIds": [
+        "4.4-lesson-1",
+        "4.4.1-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.2",
+      "unitIds": [
+        "4.4-lesson-2",
+        "4.4.2-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.3",
+      "unitIds": [
+        "4.4-lesson-3",
+        "4.4.3-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.4",
+      "unitIds": [
+        "4.4-lesson-4",
+        "4.4.4-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.5",
+      "unitIds": [
+        "4.4-lesson-5",
+        "4.4.5-unit-1"
+      ],
+      "status": "mapped"
+    },
+    {
+      "objectiveId": "skill-4.4.6",
+      "unitIds": [
+        "4.4-lesson-6",
+        "4.4.6-unit-1"
+      ],
+      "status": "mapped"
+    }
+  ],
+  "scope": "All supplied 58 skills; supplementary explanations, not a complete mirror of official course bodies.",
+  "inputInventoryHash": "4e79e33540b63f01939addff812b56d04e74b27d32c33cc2061104d9b070c8de",
+  "accessGaps": [
+    "Private lesson bodies, videos and official question explanations are absent.",
+    "Linked official reading has not been retrieved or freshly verified by this generator."
+  ],
+  "prerequisitePolicy": "Conservative authored skill-level suggestions; review before use. Cross-chapter review scheduling belongs to B.",
+  "provenance": [
+    {
+      "unitId": "1.1-lesson-6",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-7",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-16",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-17",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-18",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-19",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-8",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.1"
+    },
+    {
+      "unitId": "1.1-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.1"
+    },
+    {
+      "unitId": "1.1-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.1"
+    },
+    {
+      "unitId": "1.1-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.1"
+    },
+    {
+      "unitId": "1.1-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.1"
+    },
+    {
+      "unitId": "1.1-lesson-20",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-21",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-22",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "IBM Think · AI / Machine learning；对应大纲 1.1.2"
+    },
+    {
+      "unitId": "1.1-lesson-9",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.3"
+    },
+    {
+      "unitId": "1.1-lesson-10",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.3"
+    },
+    {
+      "unitId": "1.1-lesson-11",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.4"
+    },
+    {
+      "unitId": "1.1-lesson-12",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.5"
+    },
+    {
+      "unitId": "1.1-lesson-13",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.ibm.com/think/topics/artificial-intelligence",
+        "https://www.ibm.com/think/topics/machine-learning"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.5"
+    },
+    {
+      "unitId": "1.1-lesson-14",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.6"
+    },
+    {
+      "unitId": "1.1-lesson-15",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://www.iso.org/standard/42001",
+        "https://webstore.iec.ch/en/publication/77056"
+      ],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.1.6"
+    },
+    {
+      "unitId": "1.2-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.2.1"
+    },
+    {
+      "unitId": "1.2-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.2.2"
+    },
+    {
+      "unitId": "1.2-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.2.2"
+    },
+    {
+      "unitId": "1.2-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.2.3"
+    },
+    {
+      "unitId": "1.2-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.2.4"
+    },
+    {
+      "unitId": "1.2.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.1；教学补充：AWS Machine Learning Lens"
+    },
+    {
+      "unitId": "1.2.1-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.1；教学补充：AWS Machine Learning Lens"
+    },
+    {
+      "unitId": "1.2.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups"
+    },
+    {
+      "unitId": "1.2.2-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups"
+    },
+    {
+      "unitId": "1.2.2-unit-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.2；教学补充：Amazon Bedrock agent action groups"
+    },
+    {
+      "unitId": "1.2.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/best-practices-by-ml-lifecycle-phase.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.3；教学补充：AWS ML lifecycle best practices"
+    },
+    {
+      "unitId": "1.2.3-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/best-practices-by-ml-lifecycle-phase.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.3；教学补充：AWS ML lifecycle best practices"
+    },
+    {
+      "unitId": "1.2.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
+      "originalSourceLabel": "用户大纲 1.2.4；教学补充：NIST AI RMF Core — GOVERN"
+    },
+    {
+      "unitId": "1.3-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.3.1"
+    },
+    {
+      "unitId": "1.3-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.3.2"
+    },
+    {
+      "unitId": "1.3-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.3.3"
+    },
+    {
+      "unitId": "1.3-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 1.3.3"
+    },
+    {
+      "unitId": "1.3.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-prompt-engineering.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.1；教学补充：Amazon Bedrock prompt engineering"
+    },
+    {
+      "unitId": "1.3.1-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-prompt-engineering.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.1；教学补充：Amazon Bedrock prompt engineering"
+    },
+    {
+      "unitId": "1.3.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-burndown.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.2；教学补充：Amazon Bedrock token accounting"
+    },
+    {
+      "unitId": "1.3.2-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-burndown.html"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.2；教学补充：Amazon Bedrock token accounting"
+    },
+    {
+      "unitId": "1.3.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.3；教学补充：AWS RAG writing practices"
+    },
+    {
+      "unitId": "1.3.3-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 1.3.3；教学补充：AWS RAG writing practices"
+    },
+    {
+      "unitId": "2.1-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.1.1"
+    },
+    {
+      "unitId": "2.1-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.1.2"
+    },
+    {
+      "unitId": "2.1-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.1.3"
+    },
+    {
+      "unitId": "2.1-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.1.4"
+    },
+    {
+      "unitId": "2.1-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.1.5"
+    },
+    {
+      "unitId": "2.1.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.1.1；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.1.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.1.2；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.1.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.1.3；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.1.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.1.4；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.1.5-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "originalSourceLabel": "用户大纲 2.1.5；教学补充：AWS GenAI lifecycle operational excellence"
+    },
+    {
+      "unitId": "2.2-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.2.1"
+    },
+    {
+      "unitId": "2.2-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.2.2"
+    },
+    {
+      "unitId": "2.2-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.2.3"
+    },
+    {
+      "unitId": "2.2-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.2.4"
+    },
+    {
+      "unitId": "2.2-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.2.5"
+    },
+    {
+      "unitId": "2.2.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.1；教学补充：AWS Path-to-Value framework"
+    },
+    {
+      "unitId": "2.2.1-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.1；教学补充：AWS Path-to-Value framework"
+    },
+    {
+      "unitId": "2.2.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.2；教学补充：AWS Path-to-Value framework"
+    },
+    {
+      "unitId": "2.2.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.3；教学补充：用户提供的学习伴读资料 §7.4 财务推理"
+    },
+    {
+      "unitId": "2.2.3-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.3；教学补充：用户提供的学习伴读资料 §7.4 财务推理"
+    },
+    {
+      "unitId": "2.2.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.4；教学补充：AWS Path-to-Value framework"
+    },
+    {
+      "unitId": "2.2.5-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"
+      ],
+      "originalSourceLabel": "用户大纲 2.2.5；教学补充：用户提供的学习伴读资料 §7.4 财务推理"
+    },
+    {
+      "unitId": "2.3-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.3.1"
+    },
+    {
+      "unitId": "2.3-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.3.2"
+    },
+    {
+      "unitId": "2.3-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.3.3"
+    },
+    {
+      "unitId": "2.3-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 2.3.4"
+    },
+    {
+      "unitId": "2.3.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.3.1；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.3.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.3.2；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.3.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy"
+      ],
+      "originalSourceLabel": "用户大纲 2.3.3；教学补充：Microsoft Cloud Adoption Framework — AI strategy"
+    },
+    {
+      "unitId": "2.3.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://aws.amazon.com/blogs/machine-learning/navigating-the-generative-ai-journey-the-path-to-value-framework-from-aws/"
+      ],
+      "originalSourceLabel": "用户大纲 2.3.4；教学补充：AWS Path-to-Value framework"
+    },
+    {
+      "unitId": "3.1-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.1.1"
+    },
+    {
+      "unitId": "3.1-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.1.2"
+    },
+    {
+      "unitId": "3.1-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.1.3"
+    },
+    {
+      "unitId": "3.1-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.1.4"
+    },
+    {
+      "unitId": "3.1.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions"
+    },
+    {
+      "unitId": "3.1.1-unit-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions"
+    },
+    {
+      "unitId": "3.1.1-unit-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.1；教学补充：AWS Responsible AI Lens — dimensions"
+    },
+    {
+      "unitId": "3.1.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.2；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE"
+    },
+    {
+      "unitId": "3.1.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/design-principles.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.3；教学补充：AWS Responsible AI design principles"
+    },
+    {
+      "unitId": "3.1.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "originalSourceLabel": "用户大纲 3.1.4；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE"
+    },
+    {
+      "unitId": "3.2-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.2.1"
+    },
+    {
+      "unitId": "3.2-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.2.2"
+    },
+    {
+      "unitId": "3.2-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.2.3"
+    },
+    {
+      "unitId": "3.2-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.2.4"
+    },
+    {
+      "unitId": "3.2.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
+      "originalSourceLabel": "用户大纲 3.2.1；教学补充：NIST AI RMF Core — GOVERN"
+    },
+    {
+      "unitId": "3.2.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/#51-govern"
+      ],
+      "originalSourceLabel": "用户大纲 3.2.2；教学补充：NIST AI RMF Core — GOVERN"
+    },
+    {
+      "unitId": "3.2.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.2.3；教学补充：AWS data strategy and permissions"
+    },
+    {
+      "unitId": "3.2.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "originalSourceLabel": "用户大纲 3.2.4；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE"
+    },
+    {
+      "unitId": "3.3-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.3.1"
+    },
+    {
+      "unitId": "3.3-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.3.2"
+    },
+    {
+      "unitId": "3.3-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.3.3"
+    },
+    {
+      "unitId": "3.3-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 3.3.4"
+    },
+    {
+      "unitId": "3.3.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.3.1；教学补充：AWS GenAI lifecycle operational excellence"
+    },
+    {
+      "unitId": "3.3.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html"
+      ],
+      "originalSourceLabel": "用户大纲 3.3.2；教学补充：AWS Responsible AI Lens — dimensions"
+    },
+    {
+      "unitId": "3.3.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      ],
+      "originalSourceLabel": "用户大纲 3.3.3；教学补充：NIST AI RMF — MAP, MEASURE, MANAGE"
+    },
+    {
+      "unitId": "3.3.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/writing-best-practices-rag/writing-best-practices-rag.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 3.3.4；教学补充：AWS RAG writing practices"
+    },
+    {
+      "unitId": "4.1-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.1.1"
+    },
+    {
+      "unitId": "4.1-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.1.2"
+    },
+    {
+      "unitId": "4.1-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.1.3"
+    },
+    {
+      "unitId": "4.1-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.1.4"
+    },
+    {
+      "unitId": "4.1.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.1.1；教学补充：AWS generative AI maturity model"
+    },
+    {
+      "unitId": "4.1.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.1.2；教学补充：AWS generative AI maturity model"
+    },
+    {
+      "unitId": "4.1.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.1.3；教学补充：AWS generative AI maturity model"
+    },
+    {
+      "unitId": "4.1.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/overview-aspects.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.1.4；教学补充：AWS generative AI maturity model"
+    },
+    {
+      "unitId": "4.2-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.2.1"
+    },
+    {
+      "unitId": "4.2-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.2.2"
+    },
+    {
+      "unitId": "4.2-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.2.3"
+    },
+    {
+      "unitId": "4.2.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.2.1；教学补充：AWS data strategy and permissions"
+    },
+    {
+      "unitId": "4.2.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.2.2；教学补充：AWS data strategy and permissions"
+    },
+    {
+      "unitId": "4.2.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.2.3；教学补充：AWS GenAI lifecycle operational excellence"
+    },
+    {
+      "unitId": "4.3-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.1"
+    },
+    {
+      "unitId": "4.3-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.2"
+    },
+    {
+      "unitId": "4.3-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.3"
+    },
+    {
+      "unitId": "4.3-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.4"
+    },
+    {
+      "unitId": "4.3-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.5"
+    },
+    {
+      "unitId": "4.3-lesson-6",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.3.6"
+    },
+    {
+      "unitId": "4.3.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.1；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.3.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.2；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.3.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.3；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.3.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.4；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.3.5-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.5；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.3.6-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/organization-people-readiness-plan.md"
+      ],
+      "originalSourceLabel": "用户大纲 4.3.6；教学补充：Microsoft organizational and people readiness"
+    },
+    {
+      "unitId": "4.4-lesson-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.1"
+    },
+    {
+      "unitId": "4.4-lesson-2",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.2"
+    },
+    {
+      "unitId": "4.4-lesson-3",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.3"
+    },
+    {
+      "unitId": "4.4-lesson-4",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.4"
+    },
+    {
+      "unitId": "4.4-lesson-5",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.5"
+    },
+    {
+      "unitId": "4.4-lesson-6",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [],
+      "originalSourceLabel": "用户提供的学习大纲 · 技能 4.4.6"
+    },
+    {
+      "unitId": "4.4.1-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.1；教学补充：AWS generative AI adoption stages"
+    },
+    {
+      "unitId": "4.4.2-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.2；教学补充：AWS generative AI adoption stages"
+    },
+    {
+      "unitId": "4.4.3-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.3；教学补充：AWS enterprise-ready generative AI platform"
+    },
+    {
+      "unitId": "4.4.4-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.4；教学补充：AWS GenAI lifecycle operational excellence"
+    },
+    {
+      "unitId": "4.4.5-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.5；教学补充：AWS enterprise-ready generative AI platform"
+    },
+    {
+      "unitId": "4.4.6-unit-1",
+      "kind": "existing-teaching-supplement",
+      "readingPointers": [
+        "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-enterprise-ready-gen-ai-platform/strategy-enterprise-ready-gen-ai-platform.pdf"
+      ],
+      "originalSourceLabel": "用户大纲 4.4.6；教学补充：AWS enterprise-ready generative AI platform"
+    }
+  ],
+  "summary": {
+    "domains": 4,
+    "tasks": 13,
+    "skills": 58,
+    "units": 139
+  }
+}

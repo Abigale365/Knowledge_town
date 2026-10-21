@@ -16,3 +16,5 @@
 手工游戏源码位于 apps/game/src；四个共享兼容脚本位于 packages/contracts/runtime。dist 是发布副本，只有 D 更新。dist/assets 仍为共享美术真源，不得删除。现有生成数据仍由 D 用原构建脚本产生。content/task-activities.cjs 为兼容代理。
 
 用户开启三个独立对话，推荐独立工作树；共用目录时严格分文件且不切分支、不清理、不提交其他对话改动。C 用 artifacts 下的独立预览；原入口仍可玩已发布版本。D 验收后构建到 dist，原入口获得集成结果。
+
+本轮A3/B3/C正式集成已经完成，完整参考课程38节/144轮；来源增强、语义复核与旧存档验收见 [集成说明](INTEGRATION.md)。

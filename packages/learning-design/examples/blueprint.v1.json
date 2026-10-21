@@ -1,0 +1,450 @@
+{
+  "id": "b-learning-plan",
+  "revision": 1,
+  "title": {
+    "zh": "从依据到应用：四章演练",
+    "en": "From evidence to application: four chapters"
+  },
+  "chapters": [
+    {
+      "title": {
+        "zh": "规则与学习",
+        "en": "Rules and learning"
+      },
+      "unitIds": [
+        "unit-1"
+      ]
+    },
+    {
+      "title": {
+        "zh": "完整成本与ROI",
+        "en": "Full cost and ROI"
+      },
+      "unitIds": [
+        "unit-2"
+      ]
+    },
+    {
+      "title": {
+        "zh": "最小权限",
+        "en": "Least privilege"
+      },
+      "unitIds": [
+        "unit-3"
+      ]
+    },
+    {
+      "title": {
+        "zh": "受控上线",
+        "en": "Controlled release"
+      },
+      "unitIds": [
+        "unit-4"
+      ]
+    }
+  ],
+  "units": {
+    "unit-1": {
+      "activity": {
+        "version": 1,
+        "kind": "switchboard",
+        "title": {
+          "zh": "演练装置1",
+          "en": "Exercise device 1"
+        },
+        "brief": {
+          "zh": "先阅读本节知识卡并说明依据，再完成应用检查。整章学习交付后再进入正式练习；以下条件仅限本演练。",
+          "en": "Read the knowledge card and explain the evidence before applying it. Enter formal practice after completing the chapter. Conditions below apply only to this exercise."
+        },
+        "rounds": [
+          {
+            "id": "route",
+            "type": "sort",
+            "prompt": {
+              "zh": "把本演练的两项工作送到合适的方案窗口。",
+              "en": "Route the two exercise tasks to their appropriate solution."
+            },
+            "reason": {
+              "zh": "若按是否用了AI来分会误判。请回看“规则与学习”：固定条件决定动作，数据学习用于预测；再检查两个任务的依据。",
+              "en": "Classifying by whether AI is used is misleading. Revisit Rules and learning: fixed conditions determine actions, while prediction learns from data. Check the basis for each task."
+            },
+            "bins": [
+              {
+                "id": "rules",
+                "text": {
+                  "zh": "规则",
+                  "en": "Rules"
+                }
+              },
+              {
+                "id": "ml",
+                "text": {
+                  "zh": "机器学习",
+                  "en": "Machine learning"
+                }
+              }
+            ],
+            "items": [
+              {
+                "id": "expense",
+                "text": {
+                  "zh": "固定报销审批",
+                  "en": "Fixed expense approval"
+                },
+                "target": "rules"
+              },
+              {
+                "id": "demand",
+                "text": {
+                  "zh": "需求预测",
+                  "en": "Demand forecasting"
+                },
+                "target": "ml"
+              }
+            ],
+            "unitIds": [
+              "unit-1"
+            ]
+          },
+          {
+            "id": "basis",
+            "type": "choose",
+            "prompt": {
+              "zh": "同事说需求预测也该照抄固定报销规则。根据本演练，选择反驳依据。",
+              "en": "A colleague would copy fixed expense rules for demand forecasting. Select the evidence against this in the exercise."
+            },
+            "reason": {
+              "zh": "需求预测在本例中从数据学习模式；固定审批依照明确条件。若选反了，回看知识卡的两种决策依据。",
+              "en": "Demand forecasting learns patterns from data in this case; fixed approval follows explicit conditions. If reversed, revisit the two decision bases in the card."
+            },
+            "options": [
+              {
+                "id": "patterns",
+                "text": {
+                  "zh": "预测需要从数据学习模式",
+                  "en": "Prediction learns patterns from data"
+                }
+              },
+              {
+                "id": "fixed",
+                "text": {
+                  "zh": "预测只需照搬固定审批条件",
+                  "en": "Prediction only copies fixed approval conditions"
+                }
+              }
+            ],
+            "expected": [
+              "patterns"
+            ]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "question-1",
+          "unitIds": [
+            "unit-1"
+          ],
+          "q": "同事把本演练的固定审批和需求预测都交给固定规则，哪项应重新分流？",
+          "a": "需求预测：从数据学习模式",
+          "wrong": [
+            "两项都不用重新分流"
+          ],
+          "en": {
+            "q": "Both exercise tasks were routed to fixed rules. Which needs rerouting?",
+            "a": "Demand forecasting: learn patterns from data",
+            "wrong": [
+              "Neither needs rerouting"
+            ]
+          },
+          "quote": "规则把明确条件映射为动作；机器学习从数据学习模式。本演练中，固定报销审批使用规则，需求预测使用机器学习。",
+          "mode": "scenario"
+        }
+      ],
+      "knowledgeBasis": "f8f2d92239e5d6be1437d9e4202d9e1492be745d6e317855be721221444633fb"
+    },
+    "unit-2": {
+      "activity": {
+        "version": 1,
+        "kind": "ledger",
+        "title": {
+          "zh": "演练装置2",
+          "en": "Exercise device 2"
+        },
+        "brief": {
+          "zh": "先阅读本节知识卡并说明依据，再完成应用检查。整章学习交付后再进入正式练习；以下条件仅限本演练。",
+          "en": "Read the knowledge card and explain the evidence before applying it. Enter formal practice after completing the chapter. Conditions below apply only to this exercise."
+        },
+        "rounds": [
+          {
+            "id": "roi",
+            "type": "number",
+            "prompt": {
+              "zh": "仅按本演练同一期间数据：部署40、运行60、已兑现收益150。填写完整成本、净收益与简单ROI百分数（填50代表50%）。",
+              "en": "Use only this exercise, same period: deployment 40, operations 60, realized benefits 150. Enter full cost, net benefit and simple ROI percentage (50 means 50%)."
+            },
+            "reason": {
+              "zh": "若只填部署40，漏了运行60。完整成本40+60=100；净收益150−100=50；ROI=50/100×100%=50%。150%把总收益当成净收益。回看“完整成本与ROI”。",
+              "en": "Entering deployment cost 40 omits operations 60. Full cost=40+60=100; net benefit=150−100=50; ROI=50/100×100%=50%. 150% confuses gross benefits with net benefits. Revisit Full cost and ROI."
+            },
+            "fields": [
+              {
+                "id": "cost",
+                "label": {
+                  "zh": "完整成本",
+                  "en": "Total cost"
+                },
+                "expected": 100
+              },
+              {
+                "id": "net",
+                "label": {
+                  "zh": "净收益",
+                  "en": "Net benefit"
+                },
+                "expected": 50
+              },
+              {
+                "id": "roi",
+                "label": {
+                  "zh": "ROI百分数",
+                  "en": "ROI percentage"
+                },
+                "expected": 50
+              }
+            ],
+            "unitIds": [
+              "unit-2"
+            ]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "question-2",
+          "unitIds": [
+            "unit-2"
+          ],
+          "q": "同事算出本演练ROI为150%，应如何纠正？",
+          "a": "先扣除完整成本100，再用净收益50除以100",
+          "wrong": [
+            "直接把收益150除以成本100"
+          ],
+          "en": {
+            "q": "A colleague reports exercise ROI as 150%. What corrects it?",
+            "a": "Subtract full cost 100, then divide net benefit 50 by 100",
+            "wrong": [
+              "Divide gross benefits 150 by cost 100"
+            ]
+          },
+          "quote": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。",
+          "mode": "scenario"
+        }
+      ],
+      "knowledgeBasis": "a17dfd0eb51f86a35d2a577db346e17ac358f32ed16583f9fe627c07a0e8b026"
+    },
+    "unit-3": {
+      "activity": {
+        "version": 1,
+        "kind": "permissions",
+        "title": {
+          "zh": "演练装置3",
+          "en": "Exercise device 3"
+        },
+        "brief": {
+          "zh": "先阅读本节知识卡并说明依据，再完成应用检查。整章学习交付后再进入正式练习；以下条件仅限本演练。",
+          "en": "Read the knowledge card and explain the evidence before applying it. Enter formal practice after completing the chapter. Conditions below apply only to this exercise."
+        },
+        "rounds": [
+          {
+            "id": "access",
+            "type": "matrix",
+            "prompt": {
+              "zh": "本演练：客服需读取政策，运维需读取日志。只勾选完成工作所必需的读取权限，未勾选表示不授予。",
+              "en": "Exercise: support needs policies and operations needs logs. Select only required read permissions; unchecked means not granted."
+            },
+            "reason": {
+              "zh": "漏选会阻碍工作，多选会越权。应且仅应选客服:政策、运维:日志；使用AI不增加访问需求。回看“最小权限”并逐格核对角色任务。",
+              "en": "Missing cells prevent work; extra cells overgrant access. Select exactly support:policies and operations:logs. AI adds no access need. Revisit Least privilege and compare each cell with the role task."
+            },
+            "rows": [
+              {
+                "id": "support",
+                "text": {
+                  "zh": "客服",
+                  "en": "Support"
+                }
+              },
+              {
+                "id": "ops",
+                "text": {
+                  "zh": "运维",
+                  "en": "Operations"
+                }
+              }
+            ],
+            "columns": [
+              {
+                "id": "policy",
+                "text": {
+                  "zh": "政策",
+                  "en": "Policies"
+                }
+              },
+              {
+                "id": "logs",
+                "text": {
+                  "zh": "日志",
+                  "en": "Logs"
+                }
+              }
+            ],
+            "expected": [
+              "support:policy",
+              "ops:logs"
+            ],
+            "unitIds": [
+              "unit-3"
+            ]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "question-3",
+          "unitIds": [
+            "unit-3"
+          ],
+          "q": "本演练给客服开放了政策和日志读取，如何修复？",
+          "a": "保留政策读取，撤销日志读取",
+          "wrong": [
+            "为方便使用AI而保留全部权限"
+          ],
+          "en": {
+            "q": "Support can read policies and logs in this exercise. How should access be repaired?",
+            "a": "Keep policy read access and revoke log read access",
+            "wrong": [
+              "Keep all access for AI convenience"
+            ]
+          },
+          "quote": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。",
+          "mode": "scenario"
+        }
+      ],
+      "knowledgeBasis": "86c7ceffd9575902d8e516c927a0548ce7a511d957ea806596d8c583774207da"
+    },
+    "unit-4": {
+      "activity": {
+        "version": 1,
+        "kind": "stagegate",
+        "title": {
+          "zh": "演练装置4",
+          "en": "Exercise device 4"
+        },
+        "brief": {
+          "zh": "先阅读本节知识卡并说明依据，再完成应用检查。整章学习交付后再进入正式练习；以下条件仅限本演练。",
+          "en": "Read the knowledge card and explain the evidence before applying it. Enter formal practice after completing the chapter. Conditions below apply only to this exercise."
+        },
+        "rounds": [
+          {
+            "id": "release",
+            "type": "order",
+            "prompt": {
+              "zh": "按本案例给定流程重排操作卡；这是本演练条件，不是所有项目的通用生命周期。",
+              "en": "Reorder the operation cards using this case sequence. This is an exercise condition, not a universal project lifecycle."
+            },
+            "reason": {
+              "zh": "先记录基线，再比较测试结果，最后受控上线；提前上线跳过比较依据。回看“受控上线”的原文顺序后重排。",
+              "en": "Record a baseline, compare test results, then release under controls. Releasing early skips comparison evidence. Revisit the source sequence in Controlled release before retrying."
+            },
+            "items": [
+              {
+                "id": "release",
+                "text": {
+                  "zh": "受控上线",
+                  "en": "Controlled release"
+                }
+              },
+              {
+                "id": "baseline",
+                "text": {
+                  "zh": "记录基线",
+                  "en": "Record baseline"
+                }
+              },
+              {
+                "id": "compare",
+                "text": {
+                  "zh": "比较测试",
+                  "en": "Compare tests"
+                }
+              }
+            ],
+            "expected": [
+              "baseline",
+              "compare",
+              "release"
+            ],
+            "unitIds": [
+              "unit-4"
+            ]
+          },
+          {
+            "id": "next-step",
+            "type": "choose",
+            "prompt": {
+              "zh": "本案例已经记录基线，但还没比较测试结果。下一步选什么？",
+              "en": "In this case a baseline is recorded but test results are not compared. What comes next?"
+            },
+            "reason": {
+              "zh": "先记录基线，再比较测试结果，最后受控上线；提前上线跳过比较依据。回看“受控上线”的原文顺序后重排。",
+              "en": "Record a baseline, compare test results, then release under controls. Releasing early skips comparison evidence. Revisit the source sequence in Controlled release before retrying."
+            },
+            "options": [
+              {
+                "id": "compare",
+                "text": {
+                  "zh": "比较测试结果",
+                  "en": "Compare test results"
+                }
+              },
+              {
+                "id": "release",
+                "text": {
+                  "zh": "立即受控上线",
+                  "en": "Release under controls immediately"
+                }
+              }
+            ],
+            "expected": [
+              "compare"
+            ]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "question-4",
+          "unitIds": [
+            "unit-4"
+          ],
+          "q": "本案例已有基线，尚未比较测试结果，同事准备上线，应该先做什么？",
+          "a": "比较测试结果",
+          "wrong": [
+            "直接上线"
+          ],
+          "en": {
+            "q": "A baseline exists, but tests have not been compared and a colleague plans release. What comes first?",
+            "a": "Compare test results",
+            "wrong": [
+              "Release immediately"
+            ]
+          },
+          "quote": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。",
+          "mode": "scenario"
+        }
+      ],
+      "knowledgeBasis": "5d6c656f636b2dc4473174e463c40981e47bc85aa65219b16d5880e9e42d0f9b"
+    }
+  }
+}

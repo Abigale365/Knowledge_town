@@ -1,0 +1,5805 @@
+{
+  "schemaVersion": 1,
+  "id": "aib-knowledge",
+  "revision": 1,
+  "materialBundleId": "aib-knowledge-materials",
+  "materialRevision": 1,
+  "objectives": [
+    {
+      "id": "skill-1.1.1",
+      "title": {
+        "zh": "认识和解释业务环境中的基础 AI 概念（例如，算法、模型、训练、推理、预测）。",
+        "en": "Recognize and explain foundational AI concepts in business, including algorithms, models, training, inference and prediction."
+      },
+      "unitIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2",
+        "1.1-lesson-3",
+        "1.1-lesson-4",
+        "1.1-lesson-5"
+      ]
+    },
+    {
+      "id": "skill-1.1.2",
+      "title": {
+        "zh": "区分 AI、机器学习 (ML) 和生成式人工智能 (GenAI)。",
+        "en": "Distinguish AI, machine learning (ML), and generative AI (GenAI)."
+      },
+      "unitIds": [
+        "1.1-lesson-6",
+        "1.1-lesson-7",
+        "1.1-lesson-16",
+        "1.1-lesson-17",
+        "1.1-lesson-18",
+        "1.1-lesson-19",
+        "1.1-lesson-8",
+        "1.1-lesson-20",
+        "1.1-lesson-21",
+        "1.1-lesson-22"
+      ]
+    },
+    {
+      "id": "skill-1.1.3",
+      "title": {
+        "zh": "区分结构化数据和非结构化数据，并解释 AI 的数据类型相关性。",
+        "en": "Distinguish structured and unstructured data and explain the relevance of data types to AI."
+      },
+      "unitIds": [
+        "1.1-lesson-9",
+        "1.1-lesson-10"
+      ]
+    },
+    {
+      "id": "skill-1.1.4",
+      "title": {
+        "zh": "描述为什么数据质量对 AI 的输出结果有很大的影响。",
+        "en": "Describe why data quality strongly affects AI outcomes."
+      },
+      "unitIds": [
+        "1.1-lesson-11"
+      ]
+    },
+    {
+      "id": "skill-1.1.5",
+      "title": {
+        "zh": "解释与使用历史数据训练 AI 模型相关的概念。",
+        "en": "Explain concepts associated with training AI models on historical data."
+      },
+      "unitIds": [
+        "1.1-lesson-12",
+        "1.1-lesson-13"
+      ]
+    },
+    {
+      "id": "skill-1.1.6",
+      "title": {
+        "zh": "确保了解全球框架和统一的 AI 词汇表（例如，ISO/IEC 23053、ISO/IEC 42001）。",
+        "en": "Demonstrate awareness of global frameworks and a shared AI vocabulary, including ISO/IEC 23053 and ISO/IEC 42001."
+      },
+      "unitIds": [
+        "1.1-lesson-14",
+        "1.1-lesson-15"
+      ]
+    },
+    {
+      "id": "skill-1.2.1",
+      "title": {
+        "zh": "确定何时使用基于规则的自动化以及何时使用 AI 解决方案。",
+        "en": "Determine when to use rule-based automation and when to use AI solutions."
+      },
+      "unitIds": [
+        "1.2-lesson-1",
+        "1.2.1-unit-1",
+        "1.2.1-unit-2"
+      ]
+    },
+    {
+      "id": "skill-1.2.2",
+      "title": {
+        "zh": "将 AI 代理与其他 AI 解决方案区分开来，确定 AI 代理的核心功能（例如，自主性、工具使用、代理间通信和编排策略）。",
+        "en": "Distinguish AI agents from other AI solutions and identify autonomy, tool use, inter-agent communication and orchestration strategies."
+      },
+      "unitIds": [
+        "1.2-lesson-2",
+        "1.2-lesson-3",
+        "1.2.2-unit-1",
+        "1.2.2-unit-2",
+        "1.2.2-unit-3"
+      ]
+    },
+    {
+      "id": "skill-1.2.3",
+      "title": {
+        "zh": "描述为什么需要持续监控和更新 AI 解决方案，以便检测和修复模型漂移和性能变化。",
+        "en": "Describe why AI solutions require ongoing monitoring and updates to detect and correct drift and performance changes."
+      },
+      "unitIds": [
+        "1.2-lesson-4",
+        "1.2.3-unit-1",
+        "1.2.3-unit-2"
+      ]
+    },
+    {
+      "id": "skill-1.2.4",
+      "title": {
+        "zh": "建立透明的 AI 工具分类体系（例如，已批准、已阻止、正在评估），减少影子 AI 风险。",
+        "en": "Establish a transparent AI tool classification, such as approved, blocked and under evaluation, to reduce shadow AI risk."
+      },
+      "unitIds": [
+        "1.2-lesson-5",
+        "1.2.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-1.3.1",
+      "title": {
+        "zh": "应用基本的提示工程原理来实现所需的 AI 输出。",
+        "en": "Apply basic prompt engineering principles to achieve desired AI outputs."
+      },
+      "unitIds": [
+        "1.3-lesson-1",
+        "1.3.1-unit-1",
+        "1.3.1-unit-2"
+      ]
+    },
+    {
+      "id": "skill-1.3.2",
+      "title": {
+        "zh": "确定词元限制或上下文窗口限制何时影响生成式人工智能系统性能。",
+        "en": "Determine when token limits or context-window limits affect generative AI performance."
+      },
+      "unitIds": [
+        "1.3-lesson-2",
+        "1.3.2-unit-1",
+        "1.3.2-unit-2"
+      ]
+    },
+    {
+      "id": "skill-1.3.3",
+      "title": {
+        "zh": "认识模型自适应技术（例如，检索增强生成 [RAG]、微调）如何改善 AI 对特定业务需求的响应。",
+        "en": "Recognize how adaptation methods, including RAG and fine-tuning, can improve responses to specific business needs."
+      },
+      "unitIds": [
+        "1.3-lesson-3",
+        "1.3-lesson-4",
+        "1.3.3-unit-1",
+        "1.3.3-unit-2"
+      ]
+    },
+    {
+      "id": "skill-2.1.1",
+      "title": {
+        "zh": "确定跨业务职能（例如，客户运营、销售和营销、研发、软件开发）的高影响力 AI 使用案例，并将 AI 功能与特定业务成果对应起来。",
+        "en": "Identify high-impact AI use cases across business functions and map capabilities to specific business outcomes."
+      },
+      "unitIds": [
+        "2.1-lesson-1",
+        "2.1.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.1.2",
+      "title": {
+        "zh": "评估 AI 实施的自建、购买或合作开发决策（考虑的因素包括预算、时间表、能力、供应商提议和监管合规要求）。",
+        "en": "Assess build, buy or partner decisions considering budget, timelines, capability, vendor proposals and regulatory requirements."
+      },
+      "unitIds": [
+        "2.1-lesson-2",
+        "2.1.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.1.3",
+      "title": {
+        "zh": "根据商业价值、可行性、可持续性和战略契合度，来确定 AI 计划的优先级（决定是扩展、暂停还是终止计划）。",
+        "en": "Prioritize AI initiatives by business value, feasibility, sustainability and strategic fit; decide whether to scale, pause or terminate."
+      },
+      "unitIds": [
+        "2.1-lesson-3",
+        "2.1.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.1.4",
+      "title": {
+        "zh": "确定在什么情况下 AI 并非解决业务问题的合适解决方案。",
+        "en": "Identify situations where AI is not an appropriate solution to a business problem."
+      },
+      "unitIds": [
+        "2.1-lesson-4",
+        "2.1.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.1.5",
+      "title": {
+        "zh": "针对准备将业务流程转向基于 AI 的解决方案或在不同 AI 平台之间进行迁移的情况，评估关键注意事项（例如，业务连续性、成本影响、数据准备情况、性能影响）。",
+        "en": "Assess business continuity, costs, data readiness and performance when moving business processes to AI or between AI platforms."
+      },
+      "unitIds": [
+        "2.1-lesson-5",
+        "2.1.5-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.2.1",
+      "title": {
+        "zh": "为 AI 计划定义关键绩效指标 (KPI)，包括有形收益（例如，降低成本、增加收入）和无形收益（例如，客户满意度、员工生产力）。",
+        "en": "Define KPIs for AI initiatives covering tangible benefits such as cost reduction and revenue, and intangible benefits such as satisfaction and productivity."
+      },
+      "unitIds": [
+        "2.2-lesson-1",
+        "2.2.1-unit-1",
+        "2.2.1-unit-2"
+      ]
+    },
+    {
+      "id": "skill-2.2.2",
+      "title": {
+        "zh": "在实施 AI 解决方案之前先建立基准指标，以便准确衡量采用 AI 带来的成果。",
+        "en": "Establish baseline metrics before AI implementation to measure adoption outcomes accurately."
+      },
+      "unitIds": [
+        "2.2-lesson-2",
+        "2.2.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.2.3",
+      "title": {
+        "zh": "通过使用全面的框架来计算 AI 的投资回报 (ROI)（例如节省时间、降低成本、增加收入、提升生产力）。",
+        "en": "Calculate AI ROI using a comprehensive framework covering time savings, cost reduction, revenue and productivity."
+      },
+      "unitIds": [
+        "2.2-lesson-3",
+        "2.2.3-unit-1",
+        "2.2.3-unit-2"
+      ]
+    },
+    {
+      "id": "skill-2.2.4",
+      "title": {
+        "zh": "确定用于预测 AI 项目成功与否的先导性指标。",
+        "en": "Identify leading indicators that may predict AI project success."
+      },
+      "unitIds": [
+        "2.2-lesson-4",
+        "2.2.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.2.5",
+      "title": {
+        "zh": "为 AI 实施建立基本的成本因素控制措施，包括成本规划和优化策略。",
+        "en": "Establish basic AI cost controls, including cost planning and optimization strategies."
+      },
+      "unitIds": [
+        "2.2-lesson-5",
+        "2.2.5-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.3.1",
+      "title": {
+        "zh": "评估竞争格局并确定采用 AI 的优势。",
+        "en": "Assess the competitive landscape and identify advantages of adopting AI."
+      },
+      "unitIds": [
+        "2.3-lesson-1",
+        "2.3.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.3.2",
+      "title": {
+        "zh": "确定使用 AI 解决方案实现业务模式转型的机会。",
+        "en": "Identify opportunities for business-model transformation using AI."
+      },
+      "unitIds": [
+        "2.3-lesson-2",
+        "2.3.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.3.3",
+      "title": {
+        "zh": "描述 AI 如何推动实现可持续的竞争优势和运营改进。",
+        "en": "Describe how AI can drive sustainable competitive advantage and operational improvement."
+      },
+      "unitIds": [
+        "2.3-lesson-3",
+        "2.3.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-2.3.4",
+      "title": {
+        "zh": "根据行业成熟度和竞争动态，确定合适的 AI 投资水平。",
+        "en": "Determine appropriate AI investment levels based on industry maturity and competitive dynamics."
+      },
+      "unitIds": [
+        "2.3-lesson-4",
+        "2.3.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.1.1",
+      "title": {
+        "zh": "在业务场景中应用负责任的 AI 原则和维度（例如，公平性、可说明性、隐私、安全、透明度、稳健性）。",
+        "en": "Apply responsible AI principles in business, including fairness, explainability, privacy, security, transparency and robustness."
+      },
+      "unitIds": [
+        "3.1-lesson-1",
+        "3.1.1-unit-1",
+        "3.1.1-unit-2",
+        "3.1.1-unit-3"
+      ]
+    },
+    {
+      "id": "skill-3.1.2",
+      "title": {
+        "zh": "当业务目标与负责任的 AI 原则冲突时，进行权衡取舍。",
+        "en": "Evaluate trade-offs when business objectives conflict with responsible AI principles."
+      },
+      "unitIds": [
+        "3.1-lesson-2",
+        "3.1.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.1.3",
+      "title": {
+        "zh": "确定在 AI 项目规划中应何时融入负责任的 AI 实践，确保在设计时便纳入了监管措施。",
+        "en": "Identify when to integrate responsible AI practices into planning so governance controls are included by design."
+      },
+      "unitIds": [
+        "3.1-lesson-3",
+        "3.1.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.1.4",
+      "title": {
+        "zh": "识别 AI 系统需要人工监督的情况，并确定适当的保障措施（例如，幻觉检测、防护机制、进行上报的标准）。",
+        "en": "Identify situations requiring human oversight and appropriate safeguards, including hallucination detection, guardrails and escalation criteria."
+      },
+      "unitIds": [
+        "3.1-lesson-4",
+        "3.1.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.2.1",
+      "title": {
+        "zh": "建立具有合理跨职能部门代表性和明确问责机制的 AI 监管结构。",
+        "en": "Establish AI governance with suitable cross-functional representation and clear accountability."
+      },
+      "unitIds": [
+        "3.2-lesson-1",
+        "3.2.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.2.2",
+      "title": {
+        "zh": "确定并解决使用 AI 的业务流程的监管合规风险。",
+        "en": "Identify and address regulatory compliance risks in AI-enabled business processes."
+      },
+      "unitIds": [
+        "3.2-lesson-2",
+        "3.2.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.2.3",
+      "title": {
+        "zh": "针对 AI 系统，确定合适的访问控制和数据安全措施。",
+        "en": "Identify appropriate access controls and data security measures for AI systems."
+      },
+      "unitIds": [
+        "3.2-lesson-3",
+        "3.2.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.2.4",
+      "title": {
+        "zh": "应用 AI 风险分类框架，确立 AI 生命周期中监管和合规性决策的优先顺序。",
+        "en": "Apply AI risk classification frameworks to prioritize lifecycle governance and compliance decisions."
+      },
+      "unitIds": [
+        "3.2-lesson-4",
+        "3.2.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.3.1",
+      "title": {
+        "zh": "确定生产环境中 AI 系统的风险控制和监控机制需求。",
+        "en": "Identify production AI risk-control and monitoring requirements."
+      },
+      "unitIds": [
+        "3.3-lesson-1",
+        "3.3.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.3.2",
+      "title": {
+        "zh": "了解在 AI 生命周期的多个阶段中可能会出现偏差，并说明持续监控偏差偏移的重要性。",
+        "en": "Recognize that bias can arise at multiple AI lifecycle stages and explain the importance of ongoing bias monitoring."
+      },
+      "unitIds": [
+        "3.3-lesson-2",
+        "3.3.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.3.3",
+      "title": {
+        "zh": "管理 AI 系统的有害内容风险和知识产权 (IP) 问题。",
+        "en": "Manage harmful-content risks and intellectual-property issues in AI systems."
+      },
+      "unitIds": [
+        "3.3-lesson-3",
+        "3.3.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-3.3.4",
+      "title": {
+        "zh": "确定并减轻与 AI 系统可靠性相关的风险（例如，幻觉、数据质量下降、模型漂移）。",
+        "en": "Identify and mitigate reliability risks, including hallucinations, declining data quality and model drift."
+      },
+      "unitIds": [
+        "3.3-lesson-4",
+        "3.3.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.1.1",
+      "title": {
+        "zh": "根据各关键维度（例如，领导层共识、数据质量、文化适应性、技术基础设施、监管框架），评估企业在采用 AI 方面的准备情况。",
+        "en": "Assess organizational AI readiness across leadership alignment, data quality, cultural adaptability, infrastructure and governance."
+      },
+      "unitIds": [
+        "4.1-lesson-1",
+        "4.1.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.1.2",
+      "title": {
+        "zh": "运用 AI 成熟度模型，评估企业在 AI 旅程中所处的阶段（例如实验阶段、企业规模部署阶段）。",
+        "en": "Apply AI maturity models to assess stages such as experimentation and enterprise deployment."
+      },
+      "unitIds": [
+        "4.1-lesson-2",
+        "4.1.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.1.3",
+      "title": {
+        "zh": "确定在人员、流程、技术和监管等方面阻碍 AI 成功转型的具体能力差距。",
+        "en": "Identify specific capability gaps in people, processes, technology and governance that obstruct AI transformation."
+      },
+      "unitIds": [
+        "4.1-lesson-3",
+        "4.1.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.1.4",
+      "title": {
+        "zh": "确定开发投资的优先顺序，并根据战略目标和当前业务成熟度水平制定发展路线。",
+        "en": "Prioritize development investments and create a roadmap based on strategic goals and current maturity."
+      },
+      "unitIds": [
+        "4.1-lesson-4",
+        "4.1.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.2.1",
+      "title": {
+        "zh": "评估数据准备情况（包括数据质量、可访问性），以及数据孤岛对 AI 计划的影响。",
+        "en": "Assess data readiness, including quality, accessibility and the impact of data silos."
+      },
+      "unitIds": [
+        "4.2-lesson-1",
+        "4.2.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.2.2",
+      "title": {
+        "zh": "描述为 AI 奠定基础的数据策略、数据所有权和数据共享框架的重要性。",
+        "en": "Describe the importance of data strategy, ownership and sharing frameworks for AI foundations."
+      },
+      "unitIds": [
+        "4.2-lesson-2",
+        "4.2.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.2.3",
+      "title": {
+        "zh": "评估支持 AI 计划的基础技术和基础设施要求。",
+        "en": "Assess foundational technology and infrastructure requirements for AI initiatives."
+      },
+      "unitIds": [
+        "4.2-lesson-3",
+        "4.2.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.1",
+      "title": {
+        "zh": "建立高管层支持和领导层共识，识别并赋能 AI 倡导者，在整个企业中保持发展动力。",
+        "en": "Build executive sponsorship and leadership alignment, and identify and empower AI champions to sustain momentum."
+      },
+      "unitIds": [
+        "4.3-lesson-1",
+        "4.3.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.2",
+      "title": {
+        "zh": "组建涵盖不同专业领域（例如业务负责人、技术专家、法律、合规性等）的跨职能团队，并为 AI 计划制定明确的责任标准。",
+        "en": "Form cross-functional teams including business, technical, legal and compliance expertise, with clear responsibility standards."
+      },
+      "unitIds": [
+        "4.3-lesson-2",
+        "4.3.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.3",
+      "title": {
+        "zh": "制定透明的沟通策略，解决员工对 AI 的担忧（例如，实施时间表、预期结果、对员工角色的影响）。",
+        "en": "Develop transparent communication addressing employee concerns about timelines, expected outcomes and role impacts."
+      },
+      "unitIds": [
+        "4.3-lesson-3",
+        "4.3.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.4",
+      "title": {
+        "zh": "认识 AI 采用中的文化障碍（例如，规避风险、抗拒改变、害怕失败），并确定领导层用来应对这些问题的干预措施。",
+        "en": "Recognize cultural barriers such as risk aversion, resistance and fear of failure, and identify leadership interventions."
+      },
+      "unitIds": [
+        "4.3-lesson-4",
+        "4.3.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.5",
+      "title": {
+        "zh": "确定合适的员工培养方法，来加速提升整个企业的 AI 素养（例如，概念验证 [POC] 计划、黑客马拉松、培训计划、负责任的 AI 培训）。",
+        "en": "Identify workforce development methods to accelerate AI literacy, including proofs of concept, hackathons and responsible AI training."
+      },
+      "unitIds": [
+        "4.3-lesson-5",
+        "4.3.5-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.3.6",
+      "title": {
+        "zh": "发现各种机会来转变人员的角色，从人工操作转向人工监督并与 AI 系统进行协作，以及制定战略决策，在人工优势（例如批判性思维、同理心、创造力）与 AI 功能之间取得平衡。",
+        "en": "Identify opportunities to move roles from manual operations toward human oversight, AI collaboration and strategic decisions, balancing human strengths and AI capabilities."
+      },
+      "unitIds": [
+        "4.3-lesson-6",
+        "4.3.6-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.1",
+      "title": {
+        "zh": "采用分阶段进行的迭代式转型方法（例如，构想、实验、启动、扩展）。",
+        "en": "Adopt a phased iterative transformation approach, such as envision, experiment, launch and scale."
+      },
+      "unitIds": [
+        "4.4-lesson-1",
+        "4.4.1-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.2",
+      "title": {
+        "zh": "实施扩展方法，从短期成果开始，再逐步扩大到全企业部署。",
+        "en": "Implement scaling methods that begin with short-term results and expand to enterprise deployment."
+      },
+      "unitIds": [
+        "4.4-lesson-2",
+        "4.4.2-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.3",
+      "title": {
+        "zh": "建立 AI 卓越中心 (COE) 和跨职能协作机制来支持扩展。",
+        "en": "Establish an AI center of excellence and cross-functional collaboration mechanisms to support scaling."
+      },
+      "unitIds": [
+        "4.4-lesson-3",
+        "4.4.3-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.4",
+      "title": {
+        "zh": "建立持续的反馈机制和成功指标，用于跟踪 AI 计划的进展和长期价值。",
+        "en": "Establish ongoing feedback and success metrics to track AI initiatives and long-term value."
+      },
+      "unitIds": [
+        "4.4-lesson-4",
+        "4.4.4-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.5",
+      "title": {
+        "zh": "处理 AI 计划从实验阶段转向生产阶段的过渡，包括监管和运营要求。",
+        "en": "Manage the transition from AI experiments to production, including governance and operational requirements."
+      },
+      "unitIds": [
+        "4.4-lesson-5",
+        "4.4.5-unit-1"
+      ]
+    },
+    {
+      "id": "skill-4.4.6",
+      "title": {
+        "zh": "评估整个 AI 扩展计划在全企业推广中的多方面因素，确保业务连续性和性能。",
+        "en": "Assess the multiple factors involved in enterprise-wide AI scaling to ensure business continuity and performance."
+      },
+      "unitIds": [
+        "4.4-lesson-6",
+        "4.4.6-unit-1"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "1.1-lesson-6",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "人工智能 AI",
+        "en": "Artificial intelligence (AI)"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "人工智能是较广的领域，关注让系统执行与智能有关的任务。机器学习是其中一类方法，并非所有自动化都需要机器学习。",
+        "en": "A field concerned with systems performing tasks such as perception, reasoning and decision making. Machine learning is one approach within AI."
+      },
+      "examples": [
+        {
+          "zh": "清晰、固定的审批条件可直接编写规则，无需为了使用AI而换成模型。",
+          "en": "Compare an intelligent assistant with a simple fixed approval rule."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:489-543",
+          "quote": "人工智能是较广的领域，关注让系统执行与智能有关的任务。机器学习是其中一类方法，并非所有自动化都需要机器学习。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-7",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "机器学习 ML",
+        "en": "Machine learning (ML)"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "机器学习利用数据学习模式，而不是为所有情况逐一编写规则。数据、目标和验证方式共同影响模型是否适用。",
+        "en": "Learning patterns from data rather than explicitly coding a rule for every case; evaluate against a defined task on unseen data."
+      },
+      "examples": [
+        {
+          "zh": "通过历史交易学习异常模式，与人工写定额阈值规则不同。",
+          "en": "Learn unusual transaction patterns from historical transactions."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:1524-1573",
+          "quote": "机器学习利用数据学习模式，而不是为所有情况逐一编写规则。数据、目标和验证方式共同影响模型是否适用。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-16",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "深度学习 DL",
+        "en": "Deep learning"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "使用多层神经网络学习数据表示的机器学习方法；它属于机器学习，而不是与AI并列的领域。",
+        "en": "Machine learning using multilayer neural networks to learn representations."
+      },
+      "examples": [
+        {
+          "zh": "识别商品照片中的缺陷。",
+          "en": "Recognize defects in product photos."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:2529-2571",
+          "quote": "使用多层神经网络学习数据表示的机器学习方法；它属于机器学习，而不是与AI并列的领域。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-17",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "神经网络",
+        "en": "Neural network"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "由相连的计算节点和可学习权重组成的模型，通过层间计算处理输入。",
+        "en": "A model of connected computational nodes with learnable weights."
+      },
+      "examples": [
+        {
+          "zh": "学习交易特征与欺诈风险的关系。",
+          "en": "Learn relationships between transaction features and fraud risk."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:3450-3481",
+          "quote": "由相连的计算节点和可学习权重组成的模型，通过层间计算处理输入。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-18",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "自然语言处理 NLP",
+        "en": "Natural language processing (NLP)"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。",
+        "en": "AI methods for processing human language, including classification, extraction and translation."
+      },
+      "examples": [
+        {
+          "zh": "从工单文字中识别客户诉求。",
+          "en": "Identify customer requests in support tickets."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:4388-4420",
+          "quote": "使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-19",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "计算机视觉 CV",
+        "en": "Computer vision"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "从图像或视频中提取和解释信息的AI领域。",
+        "en": "AI methods for extracting and interpreting information from images or video."
+      },
+      "examples": [
+        {
+          "zh": "从产线照片中定位瑕疵。",
+          "en": "Locate defects in production-line images."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:5355-5375",
+          "quote": "从图像或视频中提取和解释信息的AI领域。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-8",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "生成式人工智能 GenAI",
+        "en": "Generative AI (GenAI)"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "生成式AI能产生文本、图像等内容。语言流畅并不等于事实正确，业务使用需要核对事实、适用性与复核成本。",
+        "en": "AI that generates content such as text or images. Fluent output may still contain unsupported claims."
+      },
+      "examples": [
+        {
+          "zh": "起草访谈摘要之后，由负责人对照原文检查遗漏和误解。",
+          "en": "Check an interview summary against the original recording."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:6270-6320",
+          "quote": "生成式AI能产生文本、图像等内容。语言流畅并不等于事实正确，业务使用需要核对事实、适用性与复核成本。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-1",
+      "objectiveIds": [
+        "skill-1.1.1"
+      ],
+      "title": {
+        "zh": "算法 Algorithm",
+        "en": "Algorithm"
+      },
+      "category": {
+        "zh": "模型与运行机制",
+        "en": "Models and operations"
+      },
+      "explanation": {
+        "zh": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+        "en": "An executable sequence of steps for solving a task; a training algorithm produces a model rather than being that model."
+      },
+      "examples": [
+        {
+          "zh": "按订单金额排序是一种算法；从订单记录学习需求规律则会得到预测模型。",
+          "en": "Sorting orders by amount follows an algorithm."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:7240-7283",
+          "quote": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-2",
+      "objectiveIds": [
+        "skill-1.1.1"
+      ],
+      "title": {
+        "zh": "模型 Model",
+        "en": "Model"
+      },
+      "category": {
+        "zh": "模型与运行机制",
+        "en": "Models and operations"
+      },
+      "explanation": {
+        "zh": "模型是用于将输入映射为输出的表示。在机器学习中，模型的参数通过训练从数据中学习。它的输出需要根据任务目标验证。",
+        "en": "A representation that maps inputs to outputs. In machine learning, training adjusts its parameters using data."
+      },
+      "examples": [
+        {
+          "zh": "将历史销量与日期输入需求模型，得到下一周销量估计。",
+          "en": "A demand model estimates next week's sales."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:8198-8253",
+          "quote": "模型是用于将输入映射为输出的表示。在机器学习中，模型的参数通过训练从数据中学习。它的输出需要根据任务目标验证。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-3",
+      "objectiveIds": [
+        "skill-1.1.1"
+      ],
+      "title": {
+        "zh": "训练 Training",
+        "en": "Training"
+      },
+      "category": {
+        "zh": "模型与运行机制",
+        "en": "Models and operations"
+      },
+      "explanation": {
+        "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+        "en": "The process of adjusting model parameters using examples to learn patterns. Training performance alone does not establish generalization."
+      },
+      "examples": [
+        {
+          "zh": "用过去的订单记录学习需求规律，之后用未参与训练的时段检验。",
+          "en": "Learn demand patterns from past orders, then evaluate on a separate period."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:9147-9199",
+          "quote": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-4",
+      "objectiveIds": [
+        "skill-1.1.1"
+      ],
+      "title": {
+        "zh": "推理 Inference",
+        "en": "Inference"
+      },
+      "category": {
+        "zh": "模型与运行机制",
+        "en": "Models and operations"
+      },
+      "explanation": {
+        "zh": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+        "en": "Using an already trained model on an input to produce an output, normally without updating its parameters."
+      },
+      "examples": [
+        {
+          "zh": "上线的客服模型为一张新工单起草回复，属于推理。",
+          "en": "Drafting a reply to a new support ticket is inference."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:10164-10208",
+          "quote": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-5",
+      "objectiveIds": [
+        "skill-1.1.1"
+      ],
+      "title": {
+        "zh": "预测 Prediction",
+        "en": "Prediction"
+      },
+      "category": {
+        "zh": "模型与运行机制",
+        "en": "Models and operations"
+      },
+      "explanation": {
+        "zh": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。",
+        "en": "An estimate of an unknown outcome from input information and learned patterns; assess both error and its business consequences."
+      },
+      "examples": [
+        {
+          "zh": "需求高估可能造成库存积压；低估则可能造成缺货。",
+          "en": "Overestimating demand can increase excess inventory."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:11113-11156",
+          "quote": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-20",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "监督学习",
+        "en": "Supervised learning"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。",
+        "en": "Learning an input-to-target mapping from labeled examples, for classification or regression."
+      },
+      "examples": [
+        {
+          "zh": "利用已标记是否欺诈的交易训练分类器。",
+          "en": "Train a classifier on transactions labeled as fraudulent or legitimate."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:12075-12106",
+          "quote": "使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-21",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "无监督学习",
+        "en": "Unsupervised learning"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。",
+        "en": "Finding structure or patterns in data without target labels, such as clustering similar cases."
+      },
+      "examples": [
+        {
+          "zh": "按购买特征形成客户分群。",
+          "en": "Group customers by purchasing patterns."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:13051-13080",
+          "quote": "从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-22",
+      "objectiveIds": [
+        "skill-1.1.2"
+      ],
+      "title": {
+        "zh": "强化学习",
+        "en": "Reinforcement learning"
+      },
+      "category": {
+        "zh": "AI领域与学习方法",
+        "en": "AI fields and learning methods"
+      },
+      "explanation": {
+        "zh": "智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。",
+        "en": "Learning an action policy through interaction and reward feedback to improve cumulative return."
+      },
+      "examples": [
+        {
+          "zh": "在模拟环境中学习库存补货策略。",
+          "en": "Learn a replenishment policy in a simulated environment."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:13990-14021",
+          "quote": "智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-9",
+      "objectiveIds": [
+        "skill-1.1.3"
+      ],
+      "title": {
+        "zh": "结构化数据",
+        "en": "Structured data"
+      },
+      "category": {
+        "zh": "数据形态",
+        "en": "Data formats"
+      },
+      "explanation": {
+        "zh": "结构化数据有相对明确的字段或模式，便于按统一口径查询、统计和校验。结构清晰不等于内容必然准确。",
+        "en": "Data organized with a defined schema or fields. A clear structure does not guarantee accurate values."
+      },
+      "examples": [
+        {
+          "zh": "订单表中的日期、商品编号、数量，是明确的字段。",
+          "en": "An order table has date, product and quantity fields."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:14948-14995",
+          "quote": "结构化数据有相对明确的字段或模式，便于按统一口径查询、统计和校验。结构清晰不等于内容必然准确。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-10",
+      "objectiveIds": [
+        "skill-1.1.3"
+      ],
+      "title": {
+        "zh": "非结构化数据",
+        "en": "Unstructured data"
+      },
+      "category": {
+        "zh": "数据形态",
+        "en": "Data formats"
+      },
+      "explanation": {
+        "zh": "非结构化数据通常不像关系表那样具有固定字段结构，常见形式有正文、图片和录音。使用前可能需要提取与组织信息。",
+        "en": "Information without the fixed field structure of a conventional table, such as prose, images and audio."
+      },
+      "examples": [
+        {
+          "zh": "客户录音可先转写，再提取诉求；不能把转写过程当成事实核验。",
+          "en": "Transcribe a customer call before extracting the request."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:15739-15792",
+          "quote": "非结构化数据通常不像关系表那样具有固定字段结构，常见形式有正文、图片和录音。使用前可能需要提取与组织信息。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-11",
+      "objectiveIds": [
+        "skill-1.1.4"
+      ],
+      "title": {
+        "zh": "数据质量",
+        "en": "Data quality"
+      },
+      "category": {
+        "zh": "数据质量",
+        "en": "Data quality"
+      },
+      "explanation": {
+        "zh": "数据质量要结合用途检查准确性、完整性、一致性、时效性及相关性。更大的模型无法自动补救所有数据缺陷。",
+        "en": "The fitness of data for its intended use, including accuracy, completeness, consistency, timeliness and relevance."
+      },
+      "examples": [
+        {
+          "zh": "销售数据存在重复订单，先调查重复来源再比较模型方案。",
+          "en": "Investigate duplicate orders before comparing demand models."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:16548-16597",
+          "quote": "数据质量要结合用途检查准确性、完整性、一致性、时效性及相关性。更大的模型无法自动补救所有数据缺陷。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-12",
+      "objectiveIds": [
+        "skill-1.1.5"
+      ],
+      "title": {
+        "zh": "历史数据与泛化",
+        "en": "Generalization and historical data"
+      },
+      "category": {
+        "zh": "验证与泛化",
+        "en": "Evaluation and generalization"
+      },
+      "explanation": {
+        "zh": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。",
+        "en": "Generalization is useful performance on unseen cases; historical conditions may differ from deployment conditions."
+      },
+      "examples": [
+        {
+          "zh": "用过去节日销量训练的模型，遇到新的促销方式时仍需监测。",
+          "en": "Monitor a sales model after a new promotion changes demand."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-11"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:17362-17410",
+          "quote": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-13",
+      "objectiveIds": [
+        "skill-1.1.5"
+      ],
+      "title": {
+        "zh": "训练集与验证",
+        "en": "Training, validation and test sets"
+      },
+      "category": {
+        "zh": "验证与泛化",
+        "en": "Evaluation and generalization"
+      },
+      "explanation": {
+        "zh": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。",
+        "en": "Training fits parameters, validation supports development choices, and a held-out test estimates final performance. Leakage makes evaluation misleading."
+      },
+      "examples": [
+        {
+          "zh": "不要将上线测试工单的标准答案直接放进待评估模型的输入。",
+          "en": "Keep test-ticket answers out of training and evaluation inputs."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-11"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:18341-18389",
+          "quote": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-14",
+      "objectiveIds": [
+        "skill-1.1.6"
+      ],
+      "title": {
+        "zh": "AI框架与统一词汇",
+        "en": "Shared AI vocabulary"
+      },
+      "category": {
+        "zh": "词汇与标准",
+        "en": "Vocabulary and standards"
+      },
+      "explanation": {
+        "zh": "团队应先统一算法、模型、训练和推理等词的含义，再讨论方案。标准或框架可以帮助组织概念，但不能当作准确率保证。",
+        "en": "Consistent definitions help teams distinguish models, algorithms, training and inference when making decisions."
+      },
+      "examples": [
+        {
+          "zh": "业务说的“模型上线”与技术说的“模型训练完成”不是同一件事。",
+          "en": "Training completed does not mean deployment is operationally ready."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:19365-19419",
+          "quote": "团队应先统一算法、模型、训练和推理等词的含义，再讨论方案。标准或框架可以帮助组织概念，但不能当作准确率保证。"
+        }
+      ]
+    },
+    {
+      "id": "1.1-lesson-15",
+      "objectiveIds": [
+        "skill-1.1.6"
+      ],
+      "title": {
+        "zh": "ISO框架意识",
+        "en": "AI standards and management frameworks"
+      },
+      "category": {
+        "zh": "词汇与标准",
+        "en": "Vocabulary and standards"
+      },
+      "explanation": {
+        "zh": "按本课程大纲，需了解ISO/IEC 23053与ISO/IEC 42001等框架。前者关注使用机器学习的AI系统框架，后者关注组织AI管理体系；具体要求应查正式标准。",
+        "en": "ISO/IEC 23053 addresses frameworks for AI systems using ML; ISO/IEC 42001 addresses an organizational AI management system. Neither guarantees zero model errors."
+      },
+      "examples": [
+        {
+          "zh": "讨论组织责任和管理流程时，不把管理体系标准解释为模型零错误认证。",
+          "en": "Separate technical system design from management responsibilities."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:20234-20317",
+          "quote": "按本课程大纲，需了解ISO/IEC 23053与ISO/IEC 42001等框架。前者关注使用机器学习的AI系统框架，后者关注组织AI管理体系；具体要求应查正式标准。"
+        }
+      ]
+    },
+    {
+      "id": "1.2-lesson-1",
+      "objectiveIds": [
+        "skill-1.2.1"
+      ],
+      "title": {
+        "zh": "规则还是AI",
+        "en": "Rules or AI"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "条件明确且稳定时，优先考虑确定性规则。模式复杂、规则难穷举时再评估AI；比较价值、错误后果和维护成本。",
+        "en": "Prefer explicit rules for stable, well-defined conditions; assess AI for complex patterns, accounting for value, errors and maintenance."
+      },
+      "examples": [
+        {
+          "zh": "报销超过明确金额需审批，可以先采用固定规则。",
+          "en": "A fixed expense threshold can use a deterministic rule."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:21310-21361",
+          "quote": "条件明确且稳定时，优先考虑确定性规则。模式复杂、规则难穷举时再评估AI；比较价值、错误后果和维护成本。"
+        }
+      ]
+    },
+    {
+      "id": "1.2-lesson-2",
+      "objectiveIds": [
+        "skill-1.2.2"
+      ],
+      "title": {
+        "zh": "AI代理与工具",
+        "en": "AI agents and tools"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "代理围绕目标协调步骤和工具，可能具有一定自主性。代理的行动权限、失败处理和监督方式需要单独设计。",
+        "en": "An agent coordinates actions and tools toward a goal with some autonomy; permissions, supervision and failure handling require explicit design."
+      },
+      "examples": [
+        {
+          "zh": "能调用退款工具的助手，需要退款额度、日志和人工升级边界。",
+          "en": "A refund agent needs an amount limit and escalation path."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:22142-22190",
+          "quote": "代理围绕目标协调步骤和工具，可能具有一定自主性。代理的行动权限、失败处理和监督方式需要单独设计。"
+        }
+      ]
+    },
+    {
+      "id": "1.2-lesson-3",
+      "objectiveIds": [
+        "skill-1.2.2"
+      ],
+      "title": {
+        "zh": "代理协作与编排",
+        "en": "Multi-agent orchestration"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "多个代理的角色分工、信息交换和执行顺序属于编排问题。角色越多不自动代表效果越好，要检查任务完成与交接质量。",
+        "en": "Coordinating roles, information exchange and execution among agents. More agents do not automatically improve outcomes."
+      },
+      "examples": [
+        {
+          "zh": "检索代理交给起草代理的资料仍需保留来源和访问范围。",
+          "en": "Preserve sources and permissions when handing retrieved evidence to a drafting agent."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:23026-23079",
+          "quote": "多个代理的角色分工、信息交换和执行顺序属于编排问题。角色越多不自动代表效果越好，要检查任务完成与交接质量。"
+        }
+      ]
+    },
+    {
+      "id": "1.2-lesson-4",
+      "objectiveIds": [
+        "skill-1.2.3"
+      ],
+      "title": {
+        "zh": "模型漂移与持续监测",
+        "en": "Drift and ongoing monitoring"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "输入分布或业务关系变化可能使模型表现变差。部署后持续观察质量、成本和反馈，发现变化后调查原因并纠正。",
+        "en": "Changes in inputs or relationships can reduce model performance; monitor quality, costs and feedback after deployment."
+      },
+      "examples": [
+        {
+          "zh": "客户群变化后投诉分类变差，应调查新文本与原有训练样本的差别。",
+          "en": "Investigate new customer language when complaint classification degrades."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.1-lesson-12"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:23928-23978",
+          "quote": "输入分布或业务关系变化可能使模型表现变差。部署后持续观察质量、成本和反馈，发现变化后调查原因并纠正。"
+        }
+      ]
+    },
+    {
+      "id": "1.2-lesson-5",
+      "objectiveIds": [
+        "skill-1.2.4"
+      ],
+      "title": {
+        "zh": "工具分类与影子AI",
+        "en": "Tool policies and shadow AI"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "明确哪些工具已批准、受限、被阻止或仍在评估，说明数据使用边界并提供合适替代方案，有助于减少未经批准的使用。",
+        "en": "Define approved, restricted, blocked and evaluated tools, their data boundaries and supported alternatives."
+      },
+      "examples": [
+        {
+          "zh": "员工需要处理敏感文档时，应知道可用工具和求助渠道。",
+          "en": "Tell employees which approved service can handle sensitive documents."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:24797-24850",
+          "quote": "明确哪些工具已批准、受限、被阻止或仍在评估，说明数据使用边界并提供合适替代方案，有助于减少未经批准的使用。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.1-unit-1",
+      "objectiveIds": [
+        "skill-1.2.1"
+      ],
+      "title": {
+        "zh": "确定性与可重复执行",
+        "en": "Deterministic execution"
+      },
+      "category": {
+        "zh": "能力选择",
+        "en": "Capability selection"
+      },
+      "explanation": {
+        "zh": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+        "en": "Rules map explicit conditions to actions and should give repeatable results for the same input and rule version."
+      },
+      "examples": [
+        {
+          "zh": "报销超过5000元必须审批，用金额规则执行。",
+          "en": "Apply an explicit approval rule above 5,000."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不是所有自动化都需要学习模型。",
+          "en": "Not every automation requires a learned model."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:25652-25703",
+          "quote": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.1-unit-2",
+      "objectiveIds": [
+        "skill-1.2.1"
+      ],
+      "title": {
+        "zh": "预测、生成与行动的边界",
+        "en": "Prediction, generation and action"
+      },
+      "category": {
+        "zh": "能力选择",
+        "en": "Capability selection"
+      },
+      "explanation": {
+        "zh": "预测估计未知结果；生成产生新内容；代理协调工具和步骤执行目标。一个业务系统可以组合三者，应分别验收预测误差、内容质量和行动权限。",
+        "en": "Prediction estimates outcomes, generation produces content, and an agent coordinates actions. Evaluate their errors, content and authority separately."
+      },
+      "examples": [
+        {
+          "zh": "预测缺货后起草补货建议，实际下单仍需授权。",
+          "en": "Forecast shortages, draft a recommendation, then authorize any order."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "能写出行动建议，不等于已被允许执行。",
+          "en": "A recommendation is not authorization to act."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:26714-26778",
+          "quote": "预测估计未知结果；生成产生新内容；代理协调工具和步骤执行目标。一个业务系统可以组合三者，应分别验收预测误差、内容质量和行动权限。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.2-unit-1",
+      "objectiveIds": [
+        "skill-1.2.2"
+      ],
+      "title": {
+        "zh": "自主性与停止条件",
+        "en": "Autonomy and stop conditions"
+      },
+      "category": {
+        "zh": "代理控制",
+        "en": "Agent controls"
+      },
+      "explanation": {
+        "zh": "代理的自主性是无需逐步人工指令即可选择行动的程度。应明确目标、可用工具、次数或金额限制、停止条件和异常升级，而不是把自主性理解为无限权限。",
+        "en": "Autonomy is the scope of independent action; constrain goals, tools, budgets, stopping conditions and escalation."
+      },
+      "examples": [
+        {
+          "zh": "连续两次检索失败后停止，转给人工核对。",
+          "en": "Stop after two failed retrieval attempts and escalate."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "自主性越高，监督和边界越不能省略。",
+          "en": "Greater autonomy increases the need for boundaries."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:27860-27929",
+          "quote": "代理的自主性是无需逐步人工指令即可选择行动的程度。应明确目标、可用工具、次数或金额限制、停止条件和异常升级，而不是把自主性理解为无限权限。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.2-unit-2",
+      "objectiveIds": [
+        "skill-1.2.2"
+      ],
+      "title": {
+        "zh": "工具契约与最小行动权限",
+        "en": "Tool contracts and action permissions"
+      },
+      "category": {
+        "zh": "代理控制",
+        "en": "Agent controls"
+      },
+      "explanation": {
+        "zh": "工具调用需要约定输入、输出、错误、授权和副作用。退款、发邮件等改变外部状态的工具，应在服务端检查权限并保存审计记录。",
+        "en": "Tool contracts define inputs, outputs, errors, authorization and side effects; enforce permissions outside the model."
+      },
+      "examples": [
+        {
+          "zh": "退款工具拒绝超过额度的请求，并记录调用者。",
+          "en": "A refund service rejects requests above its limit and logs callers."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "提示词中的提醒不能替代服务端权限检查。",
+          "en": "A prompt cannot replace service-side authorization."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:28974-29032",
+          "quote": "工具调用需要约定输入、输出、错误、授权和副作用。退款、发邮件等改变外部状态的工具，应在服务端检查权限并保存审计记录。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.2-unit-3",
+      "objectiveIds": [
+        "skill-1.2.2"
+      ],
+      "title": {
+        "zh": "交接与编排",
+        "en": "Handoffs and orchestration"
+      },
+      "category": {
+        "zh": "代理协作",
+        "en": "Agent coordination"
+      },
+      "explanation": {
+        "zh": "多代理编排规定谁做什么、传什么证据以及何时交接。串行流程适合依赖关系，受控并行可处理独立任务；交接应保留来源、状态和失败责任。",
+        "en": "Orchestration assigns roles, dependencies and evidence-preserving handoffs; parallelize only independent work."
+      },
+      "examples": [
+        {
+          "zh": "检索角色交付带出处的资料，审核角色核对后交给起草者。",
+          "en": "Retrieval hands sourced evidence to a reviewer before drafting."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "增加角色数量本身不是质量证据。",
+          "en": "More roles alone do not establish quality."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:30101-30164",
+          "quote": "多代理编排规定谁做什么、传什么证据以及何时交接。串行流程适合依赖关系，受控并行可处理独立任务；交接应保留来源、状态和失败责任。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.3-unit-1",
+      "objectiveIds": [
+        "skill-1.2.3"
+      ],
+      "title": {
+        "zh": "数据漂移与概念漂移",
+        "en": "Data drift and concept drift"
+      },
+      "category": {
+        "zh": "运行监测",
+        "en": "Operational monitoring"
+      },
+      "explanation": {
+        "zh": "数据漂移是输入分布变化；概念漂移是输入与目标关系变化。发现分布变化不等于已经证明业务损害，需要结合真实结果和任务指标调查。",
+        "en": "Data drift changes input distributions; concept drift changes input-to-target relationships. Investigate performance and business impact."
+      },
+      "examples": [
+        {
+          "zh": "新客户用词变了是输入变化，促销使同一价格对应的需求改变是关系变化。",
+          "en": "New customer language changes inputs; a promotion can change price-demand relationships."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能看到漂移告警就不加验证地自动重训上线。",
+          "en": "A drift alert is not sufficient grounds for automatic release."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.1-lesson-12"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:31211-31272",
+          "quote": "数据漂移是输入分布变化；概念漂移是输入与目标关系变化。发现分布变化不等于已经证明业务损害，需要结合真实结果和任务指标调查。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.3-unit-2",
+      "objectiveIds": [
+        "skill-1.2.3"
+      ],
+      "title": {
+        "zh": "监测基线与反馈闭环",
+        "en": "Monitoring baselines and feedback"
+      },
+      "category": {
+        "zh": "运行监测",
+        "en": "Operational monitoring"
+      },
+      "explanation": {
+        "zh": "上线前记录可比较的质量、延迟、成本和失败率。运行时监测变化，调查原因，验证修复，再决定重训、回退或调整用途。",
+        "en": "Record quality, latency, cost and failure baselines, then monitor, investigate, validate fixes and decide deployment action."
+      },
+      "examples": [
+        {
+          "zh": "投诉分类准确率下降时，抽查新样本并比较旧版模型。",
+          "en": "Inspect new examples and compare model versions after classification degrades."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "一次上线验收不能替代持续监测。",
+          "en": "Acceptance testing does not replace ongoing monitoring."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.1-lesson-12"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:32422-32476",
+          "quote": "上线前记录可比较的质量、延迟、成本和失败率。运行时监测变化，调查原因，验证修复，再决定重训、回退或调整用途。"
+        }
+      ]
+    },
+    {
+      "id": "1.2.4-unit-1",
+      "objectiveIds": [
+        "skill-1.2.4"
+      ],
+      "title": {
+        "zh": "工具分级与影子AI",
+        "en": "Tool classification and shadow AI"
+      },
+      "category": {
+        "zh": "工具治理",
+        "en": "Tool governance"
+      },
+      "explanation": {
+        "zh": "把工具标为已批准、受限、评估中或禁止，同时说明适用数据和用途。影子AI是未经组织批准或管理的使用，应提供可用替代、培训和反馈渠道。",
+        "en": "Classify tools and permitted data uses; reduce unmanaged AI use with workable approved alternatives and guidance."
+      },
+      "examples": [
+        {
+          "zh": "公开可用工具清单，并提供敏感文档的合规处理渠道。",
+          "en": "Publish allowed tools and a supported route for sensitive documents."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "只列禁用名单而不解决工作需求，难以形成可执行治理。",
+          "en": "A ban list alone does not resolve employees' needs."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:33586-33651",
+          "quote": "把工具标为已批准、受限、评估中或禁止，同时说明适用数据和用途。影子AI是未经组织批准或管理的使用，应提供可用替代、培训和反馈渠道。"
+        }
+      ]
+    },
+    {
+      "id": "1.3-lesson-1",
+      "objectiveIds": [
+        "skill-1.3.1"
+      ],
+      "title": {
+        "zh": "提示工程",
+        "en": "Prompt engineering"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "提示应说明目标、必要背景、约束和期望输出。用代表性任务测试提示，避免只看一条漂亮回答。",
+        "en": "Design instructions with a goal, relevant context, constraints and output expectations; evaluate on representative tasks."
+      },
+      "examples": [
+        {
+          "zh": "要求依据提供的访谈生成三点摘要，并为每点标出对应原文。",
+          "en": "Ask for three summary points with supporting passages."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:34683-34726",
+          "quote": "提示应说明目标、必要背景、约束和期望输出。用代表性任务测试提示，避免只看一条漂亮回答。"
+        }
+      ]
+    },
+    {
+      "id": "1.3-lesson-2",
+      "objectiveIds": [
+        "skill-1.3.2"
+      ],
+      "title": {
+        "zh": "词元与上下文窗口",
+        "en": "Tokens and context windows"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "模型一次请求可处理的上下文有上限，输入与输出预算需要规划。资料过多时应筛选相关片段，而不是假设全部文件都会被有效使用。",
+        "en": "Tokens are units processed by a model; the context window limits information available in a request, including input and output budgets."
+      },
+      "examples": [
+        {
+          "zh": "先按章节切分教材，再提供与当前问题直接相关的段落。",
+          "en": "Select relevant textbook passages instead of assuming every file fits."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:35488-35547",
+          "quote": "模型一次请求可处理的上下文有上限，输入与输出预算需要规划。资料过多时应筛选相关片段，而不是假设全部文件都会被有效使用。"
+        }
+      ]
+    },
+    {
+      "id": "1.3-lesson-3",
+      "objectiveIds": [
+        "skill-1.3.3"
+      ],
+      "title": {
+        "zh": "检索增强生成 RAG",
+        "en": "Retrieval-augmented generation (RAG)"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "RAG先检索相关且获授权的资料，再把资料提供给生成过程。它改善可用信息条件，但不保证检索和回答一定正确。",
+        "en": "Retrieve relevant authorized information and provide it as context for generation. Retrieval and answers still require verification."
+      },
+      "examples": [
+        {
+          "zh": "制度频繁更新时，核对检索资料的版本、权限和回答引用。",
+          "en": "Check a policy assistant's source version and access permissions."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:36354-36406",
+          "quote": "RAG先检索相关且获授权的资料，再把资料提供给生成过程。它改善可用信息条件，但不保证检索和回答一定正确。"
+        }
+      ]
+    },
+    {
+      "id": "1.3-lesson-4",
+      "objectiveIds": [
+        "skill-1.3.3"
+      ],
+      "title": {
+        "zh": "微调 Fine-tuning",
+        "en": "Fine-tuning"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "微调利用训练样本调整模型行为或任务适应性。它与在请求中加入新资料不同，也不能替代对不断变化事实的维护。",
+        "en": "Further training that adjusts model parameters for a task or behavior, distinct from adding information to a prompt."
+      },
+      "examples": [
+        {
+          "zh": "统一输出风格与补充最新制度属于不同需求，先辨别问题再选技术。",
+          "en": "Separate a style adaptation need from a need for current policy facts."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:37241-37292",
+          "quote": "微调利用训练样本调整模型行为或任务适应性。它与在请求中加入新资料不同，也不能替代对不断变化事实的维护。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.1-unit-1",
+      "objectiveIds": [
+        "skill-1.3.1"
+      ],
+      "title": {
+        "zh": "任务、上下文、约束与格式",
+        "en": "Task, context, constraints and format"
+      },
+      "category": {
+        "zh": "提示设计",
+        "en": "Prompt design"
+      },
+      "explanation": {
+        "zh": "提示应交代要做的工作、相关资料、不可越过的边界及期望输出。把原始资料与操作指令分隔，能减少模型把文档文字误当指令的机会。",
+        "en": "Specify the task, relevant context, boundaries and output format; separate source content from instructions."
+      },
+      "examples": [
+        {
+          "zh": "依据访谈提取三项需求，逐项引用，未出现的内容写未知。",
+          "en": "Extract three needs with citations and mark unsupported details unknown."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "更长的提示不必然更好，必须验证输出是否满足任务。",
+          "en": "Length alone does not establish prompt quality."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:38089-38149",
+          "quote": "提示应交代要做的工作、相关资料、不可越过的边界及期望输出。把原始资料与操作指令分隔，能减少模型把文档文字误当指令的机会。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.1-unit-2",
+      "objectiveIds": [
+        "skill-1.3.1"
+      ],
+      "title": {
+        "zh": "代表性样例与提示版本",
+        "en": "Representative tests and prompt versions"
+      },
+      "category": {
+        "zh": "提示验证",
+        "en": "Prompt evaluation"
+      },
+      "explanation": {
+        "zh": "用典型、边界和失败案例测试提示，记录版本和成功标准。少样本示例应展示期望任务模式，而不是把测试题答案泄漏给模型。",
+        "en": "Test typical, edge and failure cases and version prompts against explicit success criteria."
+      },
+      "examples": [
+        {
+          "zh": "同时测试普通工单、缺失资料工单与无权访问工单。",
+          "en": "Test normal tickets, missing evidence and unauthorized requests."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单次漂亮回答不能证明提示可稳定复用。",
+          "en": "One impressive answer does not show reliability."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:39181-39237",
+          "quote": "用典型、边界和失败案例测试提示，记录版本和成功标准。少样本示例应展示期望任务模式，而不是把测试题答案泄漏给模型。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.2-unit-1",
+      "objectiveIds": [
+        "skill-1.3.2"
+      ],
+      "title": {
+        "zh": "输入与输出共享预算",
+        "en": "Shared input and output budget"
+      },
+      "category": {
+        "zh": "上下文规划",
+        "en": "Context planning"
+      },
+      "explanation": {
+        "zh": "上下文窗口有限。规划时需计入指令、检索片段、历史对话、工具消息和预留输出，超过限制时应筛选、压缩或拆分。",
+        "en": "Budget instructions, retrieved material, conversation, tool messages and reserved output within the context limit."
+      },
+      "examples": [
+        {
+          "zh": "窗口8000，指令1000、资料5000、历史1000，输出1500会超过500。",
+          "en": "An 8,000-token window cannot fit 7,000 input tokens plus 1,500 output tokens."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "词元不等于中文字数，实际计数依模型分词器。",
+          "en": "Tokens are not identical to characters; use the model tokenizer."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:40243-40295",
+          "quote": "上下文窗口有限。规划时需计入指令、检索片段、历史对话、工具消息和预留输出，超过限制时应筛选、压缩或拆分。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.2-unit-2",
+      "objectiveIds": [
+        "skill-1.3.2"
+      ],
+      "title": {
+        "zh": "相关性与信息位置",
+        "en": "Relevance and information selection"
+      },
+      "category": {
+        "zh": "上下文规划",
+        "en": "Context planning"
+      },
+      "explanation": {
+        "zh": "资料能放入窗口不代表所有内容都会被正确使用。优先提供当前问题相关、获授权且版本明确的片段，并验证回答是否真正引用了支持结论的内容。",
+        "en": "Fitting within the window does not ensure correct use; select relevant authorized evidence and verify support."
+      },
+      "examples": [
+        {
+          "zh": "只取当前退款政策相关段落，而不是拼进所有部门手册。",
+          "en": "Retrieve the refund policy instead of every department manual."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "上下文容量不是事实准确率的保证。",
+          "en": "Context capacity does not guarantee factual accuracy."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:41361-41426",
+          "quote": "资料能放入窗口不代表所有内容都会被正确使用。优先提供当前问题相关、获授权且版本明确的片段，并验证回答是否真正引用了支持结论的内容。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.3-unit-1",
+      "objectiveIds": [
+        "skill-1.3.3"
+      ],
+      "title": {
+        "zh": "RAG的检索与生成两道关",
+        "en": "Retrieval and generation checks"
+      },
+      "category": {
+        "zh": "适配技术",
+        "en": "Adaptation techniques"
+      },
+      "explanation": {
+        "zh": "RAG先检索资料，再把相关片段提供给模型生成。分别评估是否找对资料，以及回答是否被资料支持；同时维护版本、权限和缺失证据时的处理。",
+        "en": "Evaluate retrieval relevance separately from answer grounding, with source versions and permissions enforced."
+      },
+      "examples": [
+        {
+          "zh": "政策更新后重建索引，并测试旧版本是否仍被错误引用。",
+          "en": "Refresh policy indexes and test whether obsolete versions are still cited."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "有引用不等于引用支持结论。",
+          "en": "A citation may fail to support a claim."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:42449-42514",
+          "quote": "RAG先检索资料，再把相关片段提供给模型生成。分别评估是否找对资料，以及回答是否被资料支持；同时维护版本、权限和缺失证据时的处理。"
+        }
+      ]
+    },
+    {
+      "id": "1.3.3-unit-2",
+      "objectiveIds": [
+        "skill-1.3.3"
+      ],
+      "title": {
+        "zh": "微调与外部知识更新",
+        "en": "Fine-tuning versus external updates"
+      },
+      "category": {
+        "zh": "适配技术",
+        "en": "Adaptation techniques"
+      },
+      "explanation": {
+        "zh": "微调通过训练调整参数，适合评估任务行为、格式或风格适配；外部资料频繁更新时，通常先评估检索和资料维护需求。两者可组合，但不能相互冒充。",
+        "en": "Fine-tuning adjusts parameters for behavior or task adaptation; frequently changing facts also need source maintenance and retrieval."
+      },
+      "examples": [
+        {
+          "zh": "统一客服回复风格可评估微调，今天更新的退货政策需要及时资料。",
+          "en": "Style adaptation and today's policy update are different requirements."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不要把微调当成随时更新的事实数据库。",
+          "en": "Fine-tuning is not a live factual database."
+        }
+      ],
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:43581-43648",
+          "quote": "微调通过训练调整参数，适合评估任务行为、格式或风格适配；外部资料频繁更新时，通常先评估检索和资料维护需求。两者可组合，但不能相互冒充。"
+        }
+      ]
+    },
+    {
+      "id": "2.1-lesson-1",
+      "objectiveIds": [
+        "skill-2.1.1"
+      ],
+      "title": {
+        "zh": "从业务问题到用例",
+        "en": "From business problems to use cases"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "先明确谁在什么流程中遇到什么问题，再把AI能力映射到可观察的业务结果。技术选择要服务目标。",
+        "en": "Specify the affected people, workflow and observable problem before mapping AI capabilities to desired outcomes."
+      },
+      "examples": [
+        {
+          "zh": "将“做一个AI助手”改为“减少客服查找获授权制度的时间，同时保持答复质量”。",
+          "en": "Reduce time spent finding authorized policies while preserving response quality."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:44752-44797",
+          "quote": "先明确谁在什么流程中遇到什么问题，再把AI能力映射到可观察的业务结果。技术选择要服务目标。"
+        }
+      ]
+    },
+    {
+      "id": "2.1-lesson-2",
+      "objectiveIds": [
+        "skill-2.1.2"
+      ],
+      "title": {
+        "zh": "自建、购买或合作",
+        "en": "Build, buy or partner"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "比较预算、交付时间、内部能力、供应商条件和合规需求。也要考虑集成、维护、迁移与持续运营成本。",
+        "en": "Compare internal capabilities, delivery time, budget, supplier constraints, integration, maintenance and exit costs."
+      },
+      "examples": [
+        {
+          "zh": "现有团队缺少运维能力时，不能只比较模型购买价格。",
+          "en": "A team without operations capability must consider support requirements."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:45651-45697",
+          "quote": "比较预算、交付时间、内部能力、供应商条件和合规需求。也要考虑集成、维护、迁移与持续运营成本。"
+        }
+      ]
+    },
+    {
+      "id": "2.1-lesson-3",
+      "objectiveIds": [
+        "skill-2.1.3"
+      ],
+      "title": {
+        "zh": "项目优先级",
+        "en": "Project prioritization"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "综合商业价值、可行性、可持续性及战略契合度，决定扩展、暂停还是终止。先定义检验假设和停止条件。",
+        "en": "Rank initiatives by value, feasibility, sustainability and strategic fit; define evidence and conditions for stopping or scaling."
+      },
+      "examples": [
+        {
+          "zh": "高潜在收益但数据不可用的项目，应先验证准备条件。",
+          "en": "Validate data availability before committing to a high-return proposal."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "2.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:46505-46552",
+          "quote": "综合商业价值、可行性、可持续性及战略契合度，决定扩展、暂停还是终止。先定义检验假设和停止条件。"
+        }
+      ]
+    },
+    {
+      "id": "2.1-lesson-4",
+      "objectiveIds": [
+        "skill-2.1.4"
+      ],
+      "title": {
+        "zh": "什么时候不该用AI",
+        "en": "When not to use AI"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "当明确规则或流程改进已能解决问题，或错误风险与收益不相称时，AI可能不是合适选择。先比较可行替代方案。",
+        "en": "Choose alternatives when rules or process improvements solve the problem more reliably or errors outweigh benefits."
+      },
+      "examples": [
+        {
+          "zh": "资料命名混乱导致找不到文件，可以先改进归档与检索。",
+          "en": "Improve document organization before commissioning a new AI system."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:47380-47431",
+          "quote": "当明确规则或流程改进已能解决问题，或错误风险与收益不相称时，AI可能不是合适选择。先比较可行替代方案。"
+        }
+      ]
+    },
+    {
+      "id": "2.1-lesson-5",
+      "objectiveIds": [
+        "skill-2.1.5"
+      ],
+      "title": {
+        "zh": "迁移与业务连续性",
+        "en": "Migration and business continuity"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "切换流程或平台要检查数据准备、性能、权限、成本以及回退路径，避免演示成功后直接替换关键流程。",
+        "en": "Plan dependencies, staged migration, fallback procedures and ownership to maintain essential operations."
+      },
+      "examples": [
+        {
+          "zh": "先小范围试用新客服系统，保留可用的人工处理方式。",
+          "en": "Keep an approved fallback route during a system transition."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:48209-48255",
+          "quote": "切换流程或平台要检查数据准备、性能、权限、成本以及回退路径，避免演示成功后直接替换关键流程。"
+        }
+      ]
+    },
+    {
+      "id": "2.1.1-unit-1",
+      "objectiveIds": [
+        "skill-2.1.1"
+      ],
+      "title": {
+        "zh": "问题、受益者与可观测结果",
+        "en": "Problem, beneficiary and outcome"
+      },
+      "category": {
+        "zh": "用例设计",
+        "en": "Use-case design"
+      },
+      "explanation": {
+        "zh": "用例要说明谁在什么流程遇到什么问题、现有基线是什么、预期改变如何测量，再选择合适能力。跨职能用例的成功标准会不同。",
+        "en": "State the affected workflow, beneficiaries, baseline and measurable outcome before selecting AI capabilities."
+      },
+      "examples": [
+        {
+          "zh": "客服看处理质量，销售看合格线索，研发看验证周期，开发看评审后交付质量。",
+          "en": "Support, sales, research and software teams require different outcome measures."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "工具名称不是业务问题。",
+          "en": "A tool name is not a business problem."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:49086-49143",
+          "quote": "用例要说明谁在什么流程遇到什么问题、现有基线是什么、预期改变如何测量，再选择合适能力。跨职能用例的成功标准会不同。"
+        }
+      ]
+    },
+    {
+      "id": "2.1.2-unit-1",
+      "objectiveIds": [
+        "skill-2.1.2"
+      ],
+      "title": {
+        "zh": "自建、购买与合作的比较维度",
+        "en": "Build, buy and partner criteria"
+      },
+      "category": {
+        "zh": "实施路径",
+        "en": "Delivery choices"
+      },
+      "explanation": {
+        "zh": "比较时间、预算、差异化需求、内部能力、集成、持续运营、供应商条款和退出成本。已有产品适配且交付期紧时，购买可能比自建更可行。",
+        "en": "Compare delivery time, capability, differentiation, integration, operating support, supplier terms and exit costs."
+      },
+      "examples": [
+        {
+          "zh": "缺少运维团队且三个月要上线，先核对现成服务的能力与约束。",
+          "en": "With no operations team and a short deadline, evaluate a managed service's fit."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "购买服务不免除本企业的数据和用途责任。",
+          "en": "Buying a service does not transfer all use-case responsibilities."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:50224-50286",
+          "quote": "比较时间、预算、差异化需求、内部能力、集成、持续运营、供应商条款和退出成本。已有产品适配且交付期紧时，购买可能比自建更可行。"
+        }
+      ]
+    },
+    {
+      "id": "2.1.3-unit-1",
+      "objectiveIds": [
+        "skill-2.1.3"
+      ],
+      "title": {
+        "zh": "价值、可行性与硬性约束",
+        "en": "Value, feasibility and hard constraints"
+      },
+      "category": {
+        "zh": "项目组合",
+        "en": "Project portfolio"
+      },
+      "explanation": {
+        "zh": "先识别必须满足的数据授权、安全和业务连续性条件，再比较价值、实施能力与战略契合度。高预期收益不能抵消尚未满足的硬约束。",
+        "en": "Check mandatory permissions and operational constraints before ranking value, feasibility and strategic fit."
+      },
+      "examples": [
+        {
+          "zh": "收益最高的项目没有合法可用资料，应先暂停补齐条件。",
+          "en": "Pause a high-return project when usable authorized data is unavailable."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "评分模型用于辅助讨论，权重与门槛应明确。",
+          "en": "Make scoring assumptions and mandatory gates explicit."
+        }
+      ],
+      "prerequisiteIds": [
+        "2.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:51387-51446",
+          "quote": "先识别必须满足的数据授权、安全和业务连续性条件，再比较价值、实施能力与战略契合度。高预期收益不能抵消尚未满足的硬约束。"
+        }
+      ]
+    },
+    {
+      "id": "2.1.4-unit-1",
+      "objectiveIds": [
+        "skill-2.1.4"
+      ],
+      "title": {
+        "zh": "不使用AI也是方案",
+        "en": "Non-AI alternatives"
+      },
+      "category": {
+        "zh": "替代方案",
+        "en": "Alternatives"
+      },
+      "explanation": {
+        "zh": "若明确规则、检索或流程改进已解决问题，应把它们纳入比较。也应停止不具备可验证收益、可用数据或可接受风险边界的AI方案。",
+        "en": "Compare rules, search and process redesign with AI; stop initiatives lacking feasible evidence or acceptable controls."
+      },
+      "examples": [
+        {
+          "zh": "文件命名混乱先完善归档，而不是默认训练模型。",
+          "en": "Fix document organization before assuming model training is needed."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "暂停或终止是有效的项目决策。",
+          "en": "Pausing or ending a project can be appropriate."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:52526-52585",
+          "quote": "若明确规则、检索或流程改进已解决问题，应把它们纳入比较。也应停止不具备可验证收益、可用数据或可接受风险边界的AI方案。"
+        }
+      ]
+    },
+    {
+      "id": "2.1.5-unit-1",
+      "objectiveIds": [
+        "skill-2.1.5"
+      ],
+      "title": {
+        "zh": "切换、回退与业务连续性",
+        "en": "Cutover, rollback and continuity"
+      },
+      "category": {
+        "zh": "迁移方案",
+        "en": "Migration"
+      },
+      "explanation": {
+        "zh": "迁移前验证新旧系统表现、接口、数据准备和成本，明确切换窗口、责任人、回退触发及恢复方式；迁移成功不能只看系统已启动。",
+        "en": "Validate performance, interfaces, data and costs and define cutover owners, rollback triggers and recovery."
+      },
+      "examples": [
+        {
+          "zh": "先在部分请求上验证新平台，异常时可回到原处理流程。",
+          "en": "Validate on a limited traffic share with a functioning fallback."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "回退方案也需要演练与可用资源。",
+          "en": "A fallback must be tested and resourced."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:53608-53666",
+          "quote": "迁移前验证新旧系统表现、接口、数据准备和成本，明确切换窗口、责任人、回退触发及恢复方式；迁移成功不能只看系统已启动。"
+        }
+      ]
+    },
+    {
+      "id": "2.2-lesson-1",
+      "objectiveIds": [
+        "skill-2.2.1"
+      ],
+      "title": {
+        "zh": "有形与无形收益",
+        "en": "Tangible and intangible benefits"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "KPI应对应业务目标。有形收益如实际节支或收入，无形收益如满意度；两者需要清楚的测量方式，不能随意互相折算。",
+        "en": "Distinguish measurable financial or operational benefits from less direct effects such as trust or experience; state measurement assumptions."
+      },
+      "examples": [
+        {
+          "zh": "同时记录客服处理时间与答复质量，避免只优化生成速度。",
+          "en": "Measure time saved and assess customer experience separately."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:54760-54814",
+          "quote": "KPI应对应业务目标。有形收益如实际节支或收入，无形收益如满意度；两者需要清楚的测量方式，不能随意互相折算。"
+        }
+      ]
+    },
+    {
+      "id": "2.2-lesson-2",
+      "objectiveIds": [
+        "skill-2.2.2"
+      ],
+      "title": {
+        "zh": "业务基线",
+        "en": "Business baseline"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "实施前记录可比较的原流程表现，包括时间、成本和质量。上线后保持口径一致，才能合理讨论改善。",
+        "en": "A measured reference for the existing process, needed for a meaningful before-and-after comparison."
+      },
+      "examples": [
+        {
+          "zh": "原流程60分钟，AI生成10分钟且复核15分钟，净节省是35分钟。",
+          "en": "Record current handling time and error rates before a pilot."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:55652-55697",
+          "quote": "实施前记录可比较的原流程表现，包括时间、成本和质量。上线后保持口径一致，才能合理讨论改善。"
+        }
+      ]
+    },
+    {
+      "id": "2.2-lesson-3",
+      "objectiveIds": [
+        "skill-2.2.3"
+      ],
+      "title": {
+        "zh": "收益与ROI",
+        "en": "Benefits and ROI"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "简单ROI为（同期间收益减成本）除以成本。完整成本应覆盖部署、调用、培训、维护和复核，避免重复计算同一份收益。",
+        "en": "ROI compares net benefit with investment over a defined period; include ongoing costs and explicit assumptions."
+      },
+      "examples": [
+        {
+          "zh": "释放工时不自动等于现金节支，也不能同时无依据地再记作新增收入。",
+          "en": "If benefits are 150 and costs are 100, ROI is (150-100)/100 = 50%."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "2.2-lesson-1",
+        "2.2-lesson-2"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:56461-56516",
+          "quote": "简单ROI为（同期间收益减成本）除以成本。完整成本应覆盖部署、调用、培训、维护和复核，避免重复计算同一份收益。"
+        }
+      ]
+    },
+    {
+      "id": "2.2-lesson-4",
+      "objectiveIds": [
+        "skill-2.2.4"
+      ],
+      "title": {
+        "zh": "先导性指标",
+        "en": "Leading indicators"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "先导指标用于较早观察成功条件，结果指标用于观察已实现的成果。先导信号有价值，但不构成最终成功保证。",
+        "en": "Early measures signal likely progress but are not proof of realized business value."
+      },
+      "examples": [
+        {
+          "zh": "合适的活跃使用与流程采用可作为信号，仍需观察实际质量和业务价值。",
+          "en": "Usage can inform adoption monitoring without proving improved profit."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:57311-57360",
+          "quote": "先导指标用于较早观察成功条件，结果指标用于观察已实现的成果。先导信号有价值，但不构成最终成功保证。"
+        }
+      ]
+    },
+    {
+      "id": "2.2-lesson-5",
+      "objectiveIds": [
+        "skill-2.2.5"
+      ],
+      "title": {
+        "zh": "成本规划与优化",
+        "en": "Cost planning and optimization"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "明确初期和持续成本、用量假设与预算边界；观察实际调用和复核开销，在质量约束下优化方案。",
+        "en": "Account for development, data, integration, inference, monitoring, support and maintenance over the lifecycle."
+      },
+      "examples": [
+        {
+          "zh": "比较方案时把培训、集成、监测和人工复核一起计入。",
+          "en": "Include review effort and ongoing operating costs in the budget."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:58102-58145",
+          "quote": "明确初期和持续成本、用量假设与预算边界；观察实际调用和复核开销，在质量约束下优化方案。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.1-unit-1",
+      "objectiveIds": [
+        "skill-2.2.1"
+      ],
+      "title": {
+        "zh": "结果指标与活动指标",
+        "en": "Outcome and activity measures"
+      },
+      "category": {
+        "zh": "价值度量",
+        "en": "Value measurement"
+      },
+      "explanation": {
+        "zh": "活动指标记录做了多少，如开通账号；结果指标记录业务改变，如差错率、处理周期、转化率。效率必须与质量和复核代价一起看。",
+        "en": "Activity measures track use; outcome measures track changed results. Evaluate speed alongside quality and review effort."
+      },
+      "examples": [
+        {
+          "zh": "账号增长但处理错误增加，不能仅凭采用率宣布成功。",
+          "en": "Higher adoption with more errors is insufficient evidence of success."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单一速度指标容易掩盖质量损失。",
+          "en": "Speed alone can hide quality losses."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:58925-58983",
+          "quote": "活动指标记录做了多少，如开通账号；结果指标记录业务改变，如差错率、处理周期、转化率。效率必须与质量和复核代价一起看。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.1-unit-2",
+      "objectiveIds": [
+        "skill-2.2.1"
+      ],
+      "title": {
+        "zh": "有形收益与无形收益",
+        "en": "Tangible and intangible benefits"
+      },
+      "category": {
+        "zh": "价值度量",
+        "en": "Value measurement"
+      },
+      "explanation": {
+        "zh": "有形收益可以形成可核验的金额或运营变化；满意度、信任等无形收益应设计独立测量，不能任意折算成已经实现的现金。",
+        "en": "Measure financial and operational effects separately from experience or trust; justify any monetary conversion."
+      },
+      "examples": [
+        {
+          "zh": "分别报告已兑现成本减少与客户满意度变化。",
+          "en": "Report realized cost reductions and satisfaction changes separately."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "无形收益不是无需证据的收益。",
+          "en": "Intangible benefits still require evidence."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:60067-60121",
+          "quote": "有形收益可以形成可核验的金额或运营变化；满意度、信任等无形收益应设计独立测量，不能任意折算成已经实现的现金。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.2-unit-1",
+      "objectiveIds": [
+        "skill-2.2.2"
+      ],
+      "title": {
+        "zh": "可比较基线与归因",
+        "en": "Comparable baselines and attribution"
+      },
+      "category": {
+        "zh": "对照设计",
+        "en": "Comparison design"
+      },
+      "explanation": {
+        "zh": "记录实施前同口径指标，并尽量控制任务难度、业务量和时间因素。对照组或分阶段试验有助于区分AI效果与同期其他改变。",
+        "en": "Use consistent definitions and comparable workloads; controls or staged tests help distinguish AI effects from other changes."
+      },
+      "examples": [
+        {
+          "zh": "相同类型工单比较总处理时间，包括人工复核。",
+          "en": "Compare similar tickets using total handling time including review."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "上线前后数字不同，不自动证明因果关系。",
+          "en": "A before-and-after difference alone does not prove causation."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:61199-61255",
+          "quote": "记录实施前同口径指标，并尽量控制任务难度、业务量和时间因素。对照组或分阶段试验有助于区分AI效果与同期其他改变。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.3-unit-1",
+      "objectiveIds": [
+        "skill-2.2.3"
+      ],
+      "title": {
+        "zh": "ROI公式与核算边界",
+        "en": "ROI and accounting boundaries"
+      },
+      "category": {
+        "zh": "财务核算",
+        "en": "Financial accounting"
+      },
+      "explanation": {
+        "zh": "简单ROI等于同期收益减同期完整成本，再除以同期完整成本。明确期间、单位、收益实现条件和成本范围，才能比较不同方案。",
+        "en": "Simple ROI is net benefit divided by total cost over a consistent period; define units, scope and realization assumptions."
+      },
+      "examples": [
+        {
+          "zh": "收益150万元、完整成本100万元，ROI为50%。",
+          "en": "Benefits of 150 and total costs of 100 yield a 50% ROI."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能用净收益除以收益冒充ROI。",
+          "en": "Net benefit divided by benefits is not this ROI definition."
+        }
+      ],
+      "prerequisiteIds": [
+        "2.2-lesson-1",
+        "2.2-lesson-2"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:62351-62409",
+          "quote": "简单ROI等于同期收益减同期完整成本，再除以同期完整成本。明确期间、单位、收益实现条件和成本范围，才能比较不同方案。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.3-unit-2",
+      "objectiveIds": [
+        "skill-2.2.3"
+      ],
+      "title": {
+        "zh": "释放产能与现金节省",
+        "en": "Released capacity and cash savings"
+      },
+      "category": {
+        "zh": "财务核算",
+        "en": "Financial accounting"
+      },
+      "explanation": {
+        "zh": "节省工时可释放产能，但只有支出实际减少才构成现金成本节省。若把产能用于新增产出，还需证明需求、人员安排和新增收入能够实现。",
+        "en": "Freed time is capacity; cash savings require actual expenditure reduction. Additional output needs realization evidence."
+      },
+      "examples": [
+        {
+          "zh": "每周省十小时但工资未减少，先记为可用产能。",
+          "en": "Ten freed hours with unchanged payroll are released capacity."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "同一批省时不能无依据地重复计入减员与新增收益。",
+          "en": "Do not double-count the same time saving."
+        }
+      ],
+      "prerequisiteIds": [
+        "2.2-lesson-1",
+        "2.2-lesson-2"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:63455-63516",
+          "quote": "节省工时可释放产能，但只有支出实际减少才构成现金成本节省。若把产能用于新增产出，还需证明需求、人员安排和新增收入能够实现。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.4-unit-1",
+      "objectiveIds": [
+        "skill-2.2.4"
+      ],
+      "title": {
+        "zh": "先导信号与滞后结果",
+        "en": "Leading and lagging indicators"
+      },
+      "category": {
+        "zh": "收益跟踪",
+        "en": "Benefits tracking"
+      },
+      "explanation": {
+        "zh": "培训完成、使用频率等可作为早期信号；留存、服务质量、净收益等结果需要后续观察。应说明预期联系，并检验先导指标能否预测结果。",
+        "en": "Training and usage can signal progress, but later quality and value outcomes must validate their usefulness."
+      },
+      "examples": [
+        {
+          "zh": "培训后继续追踪独立核验正确率，而不只统计出勤。",
+          "en": "Track verification performance after training, not attendance alone."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "先导指标向好不等于收益已兑现。",
+          "en": "Positive leading indicators are not realized benefits."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:64555-64616",
+          "quote": "培训完成、使用频率等可作为早期信号；留存、服务质量、净收益等结果需要后续观察。应说明预期联系，并检验先导指标能否预测结果。"
+        }
+      ]
+    },
+    {
+      "id": "2.2.5-unit-1",
+      "objectiveIds": [
+        "skill-2.2.5"
+      ],
+      "title": {
+        "zh": "全生命周期成本",
+        "en": "Lifecycle cost"
+      },
+      "category": {
+        "zh": "成本控制",
+        "en": "Cost controls"
+      },
+      "explanation": {
+        "zh": "预算包括数据整理、集成、部署、调用或计算、培训、人工复核、监测、维护和退出迁移。按业务量变化分析单位成本和总成本。",
+        "en": "Include data, integration, deployment, usage, training, review, monitoring, maintenance and exit costs."
+      },
+      "examples": [
+        {
+          "zh": "减少模型调用费却增加大量人工复核，可能没有降低完整成本。",
+          "en": "Cheaper inference may not lower total cost if review effort rises."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单次调用价格不能代表系统总成本。",
+          "en": "Per-call price is not total system cost."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:65662-65719",
+          "quote": "预算包括数据整理、集成、部署、调用或计算、培训、人工复核、监测、维护和退出迁移。按业务量变化分析单位成本和总成本。"
+        }
+      ]
+    },
+    {
+      "id": "2.3-lesson-1",
+      "objectiveIds": [
+        "skill-2.3.1"
+      ],
+      "title": {
+        "zh": "竞争格局",
+        "en": "Competitive landscape"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "比较客户需求、竞争者能力和自己的独特条件，找到AI可改善的业务环节，而不是仅追随流行工具。",
+        "en": "Assess industry conditions, competitors and customer expectations before choosing an AI investment."
+      },
+      "examples": [
+        {
+          "zh": "同样购买一个模型，并不意味着获得与竞争者不同的能力。",
+          "en": "Identify a customer need rather than copying a competitor's demo."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:66694-66739",
+          "quote": "比较客户需求、竞争者能力和自己的独特条件，找到AI可改善的业务环节，而不是仅追随流行工具。"
+        }
+      ]
+    },
+    {
+      "id": "2.3-lesson-2",
+      "objectiveIds": [
+        "skill-2.3.2"
+      ],
+      "title": {
+        "zh": "业务模式转型",
+        "en": "Business model transformation"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "AI可能改变产品、服务、交付或价值获取方式。评估客户价值与运营要求，而不是只给原流程加一个聊天窗口。",
+        "en": "AI can change how value is created, delivered and captured, beyond automating an existing task."
+      },
+      "examples": [
+        {
+          "zh": "将一次性报告服务改成持续辅助决策，需要新的数据维护和服务流程。",
+          "en": "Consider whether a personalized service changes the revenue model."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:67492-67542",
+          "quote": "AI可能改变产品、服务、交付或价值获取方式。评估客户价值与运营要求，而不是只给原流程加一个聊天窗口。"
+        }
+      ]
+    },
+    {
+      "id": "2.3-lesson-3",
+      "objectiveIds": [
+        "skill-2.3.3"
+      ],
+      "title": {
+        "zh": "可持续优势",
+        "en": "Sustainable advantage"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "可持续优势往往来自相关数据、流程、组织能力和反馈的组合。单一工具上线不保证长期优势。",
+        "en": "Durable advantage depends on capabilities, workflows, data and learning that competitors cannot easily reproduce."
+      },
+      "examples": [
+        {
+          "zh": "把客户反馈持续转成流程改进，比只记录软件安装数更有意义。",
+          "en": "A widely available model alone is unlikely to be a lasting differentiator."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:68309-68351",
+          "quote": "可持续优势往往来自相关数据、流程、组织能力和反馈的组合。单一工具上线不保证长期优势。"
+        }
+      ]
+    },
+    {
+      "id": "2.3-lesson-4",
+      "objectiveIds": [
+        "skill-2.3.4"
+      ],
+      "title": {
+        "zh": "投资与成熟度",
+        "en": "Investment and maturity"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "投资规模应结合行业变化、竞争压力、组织准备度及风险承受能力。需要验证条件与分阶段投入。",
+        "en": "Match investment to organizational readiness, competitive conditions and risk tolerance; stage commitments around evidence."
+      },
+      "examples": [
+        {
+          "zh": "在数据基础不稳时，先投入治理与小范围验证，而非立即全企业扩展。",
+          "en": "Improve data governance before expanding an unproven enterprise rollout."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:69140-69183",
+          "quote": "投资规模应结合行业变化、竞争压力、组织准备度及风险承受能力。需要验证条件与分阶段投入。"
+        }
+      ]
+    },
+    {
+      "id": "2.3.1-unit-1",
+      "objectiveIds": [
+        "skill-2.3.1"
+      ],
+      "title": {
+        "zh": "客户问题与竞争位置",
+        "en": "Customer need and competitive position"
+      },
+      "category": {
+        "zh": "竞争判断",
+        "en": "Competitive analysis"
+      },
+      "explanation": {
+        "zh": "分析竞争变化如何影响客户期待、交付效率和价值链，再决定投资方向。相同工具在不同业务条件下可能产生不同价值。",
+        "en": "Examine customer expectations, delivery and value-chain effects rather than copying a competitor's tool choice."
+      },
+      "examples": [
+        {
+          "zh": "同行推出智能客服，本企业先核对客户最常见的服务障碍。",
+          "en": "Investigate service barriers before copying a competitor's chatbot."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "竞争对手的投入金额不是本企业的投资依据。",
+          "en": "A competitor's budget is not your business case."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:69985-70038",
+          "quote": "分析竞争变化如何影响客户期待、交付效率和价值链，再决定投资方向。相同工具在不同业务条件下可能产生不同价值。"
+        }
+      ]
+    },
+    {
+      "id": "2.3.2-unit-1",
+      "objectiveIds": [
+        "skill-2.3.2"
+      ],
+      "title": {
+        "zh": "价值主张、交付与收益逻辑",
+        "en": "Value proposition, delivery and revenue"
+      },
+      "category": {
+        "zh": "价值创造",
+        "en": "Value creation"
+      },
+      "explanation": {
+        "zh": "业务模式变化涉及提供何种客户价值、如何交付以及如何获得收益。给现有产品贴AI标签不等于重构业务模式。",
+        "en": "A business model links customer value, delivery and revenue; an AI label alone changes none of these."
+      },
+      "examples": [
+        {
+          "zh": "按项目交付咨询转为持续监测服务，需要重新评估定价和运营责任。",
+          "en": "Moving from projects to ongoing monitoring changes pricing and operations."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "新的技术能力必须连接具体付费或价值实现方式。",
+          "en": "Connect capabilities to a concrete value-realization mechanism."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:71084-71134",
+          "quote": "业务模式变化涉及提供何种客户价值、如何交付以及如何获得收益。给现有产品贴AI标签不等于重构业务模式。"
+        }
+      ]
+    },
+    {
+      "id": "2.3.3-unit-1",
+      "objectiveIds": [
+        "skill-2.3.3"
+      ],
+      "title": {
+        "zh": "互补能力与学习闭环",
+        "en": "Complementary capabilities and learning"
+      },
+      "category": {
+        "zh": "持续优势",
+        "en": "Durable advantage"
+      },
+      "explanation": {
+        "zh": "可持续优势常来自获授权的数据、嵌入流程、领域经验、客户关系和持续反馈的组合，而不是人人都能购买的同一基础模型。",
+        "en": "Differentiation can come from authorized data, workflows, expertise and feedback rather than a commodity model alone."
+      },
+      "examples": [
+        {
+          "zh": "积累经核验的维修反馈，并把它用于改进服务流程。",
+          "en": "Use verified maintenance feedback to improve service workflows."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "数据多不等于数据独有、可用或有权使用。",
+          "en": "More data does not establish exclusivity or permission."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:72195-72250",
+          "quote": "可持续优势常来自获授权的数据、嵌入流程、领域经验、客户关系和持续反馈的组合，而不是人人都能购买的同一基础模型。"
+        }
+      ]
+    },
+    {
+      "id": "2.3.4-unit-1",
+      "objectiveIds": [
+        "skill-2.3.4"
+      ],
+      "title": {
+        "zh": "分阶段承诺与停止条件",
+        "en": "Staged commitments and stop conditions"
+      },
+      "category": {
+        "zh": "投资节奏",
+        "en": "Investment pacing"
+      },
+      "explanation": {
+        "zh": "结合行业条件和自身准备度，先验证关键假设，再逐步扩大投入。预先定义价值、质量、风险和成本不达标时的暂停或退出条件。",
+        "en": "Stage investment around tested assumptions and define value, quality, risk and cost stop conditions."
+      },
+      "examples": [
+        {
+          "zh": "先验证获客质量，再决定是否扩展生成内容预算。",
+          "en": "Validate lead quality before expanding a content-generation budget."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "试点投入已发生不是继续投入的充分理由。",
+          "en": "Sunk pilot costs alone do not justify more investment."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:73304-73361",
+          "quote": "结合行业条件和自身准备度，先验证关键假设，再逐步扩大投入。预先定义价值、质量、风险和成本不达标时的暂停或退出条件。"
+        }
+      ]
+    },
+    {
+      "id": "3.1-lesson-1",
+      "objectiveIds": [
+        "skill-3.1.1"
+      ],
+      "title": {
+        "zh": "负责任的AI原则",
+        "en": "Responsible AI principles"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "公平性、可说明性、隐私、安全、透明度和稳健性需要进入实际决策与控制，而不仅是口号。不同任务需要相应评估。",
+        "en": "Fairness, explainability, privacy, security, transparency and robustness should become concrete evaluation and control practices."
+      },
+      "examples": [
+        {
+          "zh": "除平均准确率外，也检查不同群体的错误和影响。",
+          "en": "Examine errors across relevant groups as well as overall accuracy."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:74421-74473",
+          "quote": "公平性、可说明性、隐私、安全、透明度和稳健性需要进入实际决策与控制，而不仅是口号。不同任务需要相应评估。"
+        }
+      ]
+    },
+    {
+      "id": "3.1-lesson-2",
+      "objectiveIds": [
+        "skill-3.1.2"
+      ],
+      "title": {
+        "zh": "目标冲突与取舍",
+        "en": "Competing objectives and trade-offs"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "效率、成本与责任要求可能冲突。把影响、约束和决策责任公开，选择与风险相称的措施并记录理由。",
+        "en": "Document conflicts between business objectives and responsibility requirements, affected parties, decision owners and proportionate controls."
+      },
+      "examples": [
+        {
+          "zh": "更快地自动发送高影响决定，不一定比保留人工复核更合适。",
+          "en": "Consider human review before automating a high-impact decision."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "3.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:75281-75326",
+          "quote": "效率、成本与责任要求可能冲突。把影响、约束和决策责任公开，选择与风险相称的措施并记录理由。"
+        }
+      ]
+    },
+    {
+      "id": "3.1-lesson-3",
+      "objectiveIds": [
+        "skill-3.1.3"
+      ],
+      "title": {
+        "zh": "从设计时纳入治理",
+        "en": "Governance by design"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "在项目规划和设计阶段确定数据用途、责任、验证与监督，避免上线后才补救关键问题。",
+        "en": "Define intended use, data responsibilities, evaluation and oversight during planning and design, before deployment."
+      },
+      "examples": [
+        {
+          "zh": "选数据之前就讨论访问权限和允许用途。",
+          "en": "Review permitted data use before selecting a dataset."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:76137-76176",
+          "quote": "在项目规划和设计阶段确定数据用途、责任、验证与监督，避免上线后才补救关键问题。"
+        }
+      ]
+    },
+    {
+      "id": "3.1-lesson-4",
+      "objectiveIds": [
+        "skill-3.1.4"
+      ],
+      "title": {
+        "zh": "人工监督与升级",
+        "en": "Human oversight and escalation"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "明确何时人工检查、何时停止自动行动、何时上报，以及由谁接手。模型的自信措辞不能替代正式授权。",
+        "en": "Specify when people review, stop or take over an AI process and who has decision authority."
+      },
+      "examples": [
+        {
+          "zh": "出现缺乏来源的重要结论时，交给有责任的人员核验。",
+          "en": "Escalate an important unsupported claim for authorized verification."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "3.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:76946-76992",
+          "quote": "明确何时人工检查、何时停止自动行动、何时上报，以及由谁接手。模型的自信措辞不能替代正式授权。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.1-unit-1",
+      "objectiveIds": [
+        "skill-3.1.1"
+      ],
+      "title": {
+        "zh": "公平性与分组表现",
+        "en": "Fairness and subgroup outcomes"
+      },
+      "category": {
+        "zh": "责任原则",
+        "en": "Responsible AI principles"
+      },
+      "explanation": {
+        "zh": "公平性评估要结合具体用途和受影响群体，检查差错、机会和影响的差异。总体平均指标不能替代相关群体评估，目标之间也可能存在取舍。",
+        "en": "Assess relevant groups and impacts for the use case; overall averages cannot substitute for subgroup evaluation."
+      },
+      "examples": [
+        {
+          "zh": "总体错误率低，但某地区用户频繁受损，需要单独调查。",
+          "en": "Investigate a region with disproportionately harmful errors."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不存在脱离用途、适用于一切情境的单一公平指标。",
+          "en": "No single fairness metric fits every context."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:77774-77836",
+          "quote": "公平性评估要结合具体用途和受影响群体，检查差错、机会和影响的差异。总体平均指标不能替代相关群体评估，目标之间也可能存在取舍。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.1-unit-2",
+      "objectiveIds": [
+        "skill-3.1.1"
+      ],
+      "title": {
+        "zh": "可说明性与透明度",
+        "en": "Explainability and transparency"
+      },
+      "category": {
+        "zh": "责任原则",
+        "en": "Responsible AI principles"
+      },
+      "explanation": {
+        "zh": "可说明性帮助理解系统行为或判断依据；透明度使相关人员了解AI参与、适用边界和重要限制，以便作出知情选择。",
+        "en": "Explainability supports understanding behavior; transparency supports informed choices about AI use and its limits."
+      },
+      "examples": [
+        {
+          "zh": "告知客户使用AI，并提供可理解的判断依据和申诉渠道。",
+          "en": "Disclose AI use and provide understandable grounds and recourse."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "展示技术术语不等于给出可用解释。",
+          "en": "Technical jargon is not necessarily a useful explanation."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:78898-78950",
+          "quote": "可说明性帮助理解系统行为或判断依据；透明度使相关人员了解AI参与、适用边界和重要限制，以便作出知情选择。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.1-unit-3",
+      "objectiveIds": [
+        "skill-3.1.1"
+      ],
+      "title": {
+        "zh": "隐私、安全与稳健性",
+        "en": "Privacy, security and robustness"
+      },
+      "category": {
+        "zh": "责任原则",
+        "en": "Responsible AI principles"
+      },
+      "explanation": {
+        "zh": "隐私关注个人资料的适当使用与保护；安全关注防止未授权访问或破坏；稳健性关注系统在合理变化和异常条件下仍能适当运行。",
+        "en": "Privacy concerns appropriate personal-data use; security concerns unauthorized access or harm; robustness concerns behavior under changing conditions."
+      },
+      "examples": [
+        {
+          "zh": "检查访问权限，限制敏感数据，并测试异常输入。",
+          "en": "Enforce access, limit sensitive data and test abnormal inputs."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "这些维度相关但不能互相替代。",
+          "en": "These dimensions overlap but do not replace one another."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:80027-80084",
+          "quote": "隐私关注个人资料的适当使用与保护；安全关注防止未授权访问或破坏；稳健性关注系统在合理变化和异常条件下仍能适当运行。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.2-unit-1",
+      "objectiveIds": [
+        "skill-3.1.2"
+      ],
+      "title": {
+        "zh": "收益、影响与比例原则",
+        "en": "Benefits, impacts and proportionate controls"
+      },
+      "category": {
+        "zh": "责任取舍",
+        "en": "Responsible trade-offs"
+      },
+      "explanation": {
+        "zh": "讨论效率收益时同时说明受影响对象、损害可能性、严重程度和可逆性。选择与影响相称的控制，并记录取舍和决定责任。",
+        "en": "Assess affected parties, likelihood, severity and reversibility when balancing benefits and controls."
+      },
+      "examples": [
+        {
+          "zh": "高影响决定保留有效人工复核，而非只追求自动处理率。",
+          "en": "Retain meaningful human review for high-impact decisions."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "业务指标提高不能自动抵消对个人的严重损害。",
+          "en": "Business improvement does not automatically offset serious harm."
+        }
+      ],
+      "prerequisiteIds": [
+        "3.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:81189-81243",
+          "quote": "讨论效率收益时同时说明受影响对象、损害可能性、严重程度和可逆性。选择与影响相称的控制，并记录取舍和决定责任。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.3-unit-1",
+      "objectiveIds": [
+        "skill-3.1.3"
+      ],
+      "title": {
+        "zh": "从用途定义开始设置保障",
+        "en": "Safeguards from use-case definition"
+      },
+      "category": {
+        "zh": "设计时治理",
+        "en": "Governance by design"
+      },
+      "explanation": {
+        "zh": "在选择数据、设计功能和定义验收标准时纳入责任要求，识别不允许的用途和需要人工介入的情形，再迭代验证。",
+        "en": "Define permitted uses, safeguards and review conditions during data and feature design, then test them."
+      },
+      "examples": [
+        {
+          "zh": "设计客服检索时就实施权限，而不是上线后只加免责声明。",
+          "en": "Implement retrieval permissions during design, not just a later notice."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "设计时治理不意味着不允许小范围迭代。",
+          "en": "Governance by design can coexist with controlled iteration."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:82259-82309",
+          "quote": "在选择数据、设计功能和定义验收标准时纳入责任要求，识别不允许的用途和需要人工介入的情形，再迭代验证。"
+        }
+      ]
+    },
+    {
+      "id": "3.1.4-unit-1",
+      "objectiveIds": [
+        "skill-3.1.4"
+      ],
+      "title": {
+        "zh": "复核能力与升级阈值",
+        "en": "Review capability and escalation triggers"
+      },
+      "category": {
+        "zh": "人工监督",
+        "en": "Human oversight"
+      },
+      "explanation": {
+        "zh": "监督者需要证据、时间、训练和停止或修改行动的权限。为无来源结论、异常指标和高影响操作定义升级条件与接手者。",
+        "en": "Reviewers need evidence, time, training and authority; define escalation triggers and owners."
+      },
+      "examples": [
+        {
+          "zh": "不能核验的重要结论转给负责人，不能只要求点击确认。",
+          "en": "Escalate an important unsupported result rather than requesting ceremonial approval."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "有人工按钮不代表已经形成有效监督。",
+          "en": "A human button alone is not meaningful oversight."
+        }
+      ],
+      "prerequisiteIds": [
+        "3.1-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:83376-83429",
+          "quote": "监督者需要证据、时间、训练和停止或修改行动的权限。为无来源结论、异常指标和高影响操作定义升级条件与接手者。"
+        }
+      ]
+    },
+    {
+      "id": "3.2-lesson-1",
+      "objectiveIds": [
+        "skill-3.2.1"
+      ],
+      "title": {
+        "zh": "跨职能治理与问责",
+        "en": "Cross-functional governance and accountability"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "业务、技术、数据、法务及合规等角色共同参与，并明确谁负责哪些决策。多人参与不代表责任可以模糊。",
+        "en": "Include business, technical, data and relevant oversight roles with explicit decision responsibilities."
+      },
+      "examples": [
+        {
+          "zh": "明确谁批准用途、谁维护资料、谁处理异常。",
+          "en": "Assign owners for use approval, source maintenance and incident handling."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:84455-84502",
+          "quote": "业务、技术、数据、法务及合规等角色共同参与，并明确谁负责哪些决策。多人参与不代表责任可以模糊。"
+        }
+      ]
+    },
+    {
+      "id": "3.2-lesson-2",
+      "objectiveIds": [
+        "skill-3.2.2"
+      ],
+      "title": {
+        "zh": "合规风险识别",
+        "en": "Compliance risk identification"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "先确定业务用途、数据类型、适用地区与组织要求，再由相关责任人评估合规风险。通用清单不能代替具体判断。",
+        "en": "Determine intended use, data types, jurisdictions and applicable organizational requirements before evaluating compliance risks."
+      },
+      "examples": [
+        {
+          "zh": "新用途涉及个人资料时，应先进行适用要求与授权核对。",
+          "en": "Consult the responsible specialists before reusing personal information."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:85296-85346",
+          "quote": "先确定业务用途、数据类型、适用地区与组织要求，再由相关责任人评估合规风险。通用清单不能代替具体判断。"
+        }
+      ]
+    },
+    {
+      "id": "3.2-lesson-3",
+      "objectiveIds": [
+        "skill-3.2.3"
+      ],
+      "title": {
+        "zh": "访问控制与数据安全",
+        "en": "Access control and data security"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "只授予完成工作所需的访问与操作权限，并在资料和工具层执行控制。仅靠提示词不能可靠替代权限系统。",
+        "en": "Grant only necessary permissions and enforce them in data and tool systems; prompts alone cannot implement reliable access control."
+      },
+      "examples": [
+        {
+          "zh": "无权读取人事档案的员工，不应通过检索助手得到档案内容。",
+          "en": "A retrieval assistant must not expose personnel files to unauthorized users."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:86149-86196",
+          "quote": "只授予完成工作所需的访问与操作权限，并在资料和工具层执行控制。仅靠提示词不能可靠替代权限系统。"
+        }
+      ]
+    },
+    {
+      "id": "3.2-lesson-4",
+      "objectiveIds": [
+        "skill-3.2.4"
+      ],
+      "title": {
+        "zh": "AI风险分类",
+        "en": "AI risk classification"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "结合用途、受影响对象、潜在损害和控制条件分类风险，再安排评估与治理优先级；不要仅按模型大小分类。",
+        "en": "Classify a use case by potential impact, affected parties and controls to prioritize oversight."
+      },
+      "examples": [
+        {
+          "zh": "内部草稿辅助与影响个人重要权益的自动决定，需要不同控制。",
+          "en": "An internal drafting aid and a consequential automated decision need different controls."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "3.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:87013-87061",
+          "quote": "结合用途、受影响对象、潜在损害和控制条件分类风险，再安排评估与治理优先级；不要仅按模型大小分类。"
+        }
+      ]
+    },
+    {
+      "id": "3.2.1-unit-1",
+      "objectiveIds": [
+        "skill-3.2.1"
+      ],
+      "title": {
+        "zh": "负责执行与最终问责",
+        "en": "Responsible versus accountable"
+      },
+      "category": {
+        "zh": "治理角色",
+        "en": "Governance roles"
+      },
+      "explanation": {
+        "zh": "执行者完成工作，最终问责者对决定和结果负责。业务、技术、数据和监督职能需要明确协作与授权边界，避免多人参与却无人作决定。",
+        "en": "Distinguish doing the work from owning a decision; define cross-functional authority and handoffs."
+      },
+      "examples": [
+        {
+          "zh": "业务负责人批准用途，数据负责人维护资料，运维负责告警。",
+          "en": "Business approves use, data owners maintain sources, and operations handle alerts."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "供应商负责模型服务，不等于替客户承担全部业务决定。",
+          "en": "A supplier does not own all customer use decisions."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:87856-87916",
+          "quote": "执行者完成工作，最终问责者对决定和结果负责。业务、技术、数据和监督职能需要明确协作与授权边界，避免多人参与却无人作决定。"
+        }
+      ]
+    },
+    {
+      "id": "3.2.2-unit-1",
+      "objectiveIds": [
+        "skill-3.2.2"
+      ],
+      "title": {
+        "zh": "用途、资料与适用要求",
+        "en": "Use, data and applicable requirements"
+      },
+      "category": {
+        "zh": "合规识别",
+        "en": "Compliance assessment"
+      },
+      "explanation": {
+        "zh": "合规识别需要知道系统用途、受影响人群、数据类别、使用地区及组织要求，再由有责任的专业人员核对适用条件。",
+        "en": "Assess intended use, people, data, location and organizational requirements with responsible specialists."
+      },
+      "examples": [
+        {
+          "zh": "内部文稿辅助改为影响客户权益的自动决定，需要重新评估。",
+          "en": "Reassess when a drafting aid becomes a consequential decision system."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "通用清单不能替代针对具体用途的判断。",
+          "en": "A generic checklist is not a use-specific determination."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:88935-88986",
+          "quote": "合规识别需要知道系统用途、受影响人群、数据类别、使用地区及组织要求，再由有责任的专业人员核对适用条件。"
+        }
+      ]
+    },
+    {
+      "id": "3.2.3-unit-1",
+      "objectiveIds": [
+        "skill-3.2.3"
+      ],
+      "title": {
+        "zh": "最小权限与检索前过滤",
+        "en": "Least privilege and pre-retrieval filtering"
+      },
+      "category": {
+        "zh": "权限实施",
+        "en": "Access implementation"
+      },
+      "explanation": {
+        "zh": "只授予工作所需的数据与工具权限，在检索或执行前验证身份和授权。输出后再遮盖，不能代替阻止越权检索。",
+        "en": "Authorize identities and data or tools before retrieval and execution; grant only needed access."
+      },
+      "examples": [
+        {
+          "zh": "客服可读获准政策，不能读人事档案，也不能自行批准高额退款。",
+          "en": "Support may read policy but not personnel records or approve large refunds."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "提示层拒绝不构成可靠权限边界。",
+          "en": "A model refusal is not a reliable access boundary."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:90002-90051",
+          "quote": "只授予工作所需的数据与工具权限，在检索或执行前验证身份和授权。输出后再遮盖，不能代替阻止越权检索。"
+        }
+      ]
+    },
+    {
+      "id": "3.2.4-unit-1",
+      "objectiveIds": [
+        "skill-3.2.4"
+      ],
+      "title": {
+        "zh": "按影响分配治理力度",
+        "en": "Risk-proportionate governance"
+      },
+      "category": {
+        "zh": "风险分级",
+        "en": "Risk prioritization"
+      },
+      "explanation": {
+        "zh": "以用途、受影响对象、潜在损害和控制情况确定评估优先级，生命周期中用途或环境改变时重新分级。模型规模不是唯一风险标准。",
+        "en": "Prioritize by use, affected people, harm and controls, and reassess when conditions change."
+      },
+      "examples": [
+        {
+          "zh": "内部摘要与自动影响个人权益的决策需要不同审查力度。",
+          "en": "Internal summaries and consequential decisions need different scrutiny."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "风险分级不是一次立项表格。",
+          "en": "Risk classification is not a one-time form."
+        }
+      ],
+      "prerequisiteIds": [
+        "3.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:91112-91170",
+          "quote": "以用途、受影响对象、潜在损害和控制情况确定评估优先级，生命周期中用途或环境改变时重新分级。模型规模不是唯一风险标准。"
+        }
+      ]
+    },
+    {
+      "id": "3.3-lesson-1",
+      "objectiveIds": [
+        "skill-3.3.1"
+      ],
+      "title": {
+        "zh": "生产监控与事件处理",
+        "en": "Production monitoring and incidents"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "为运行质量、日志、异常处理、人工升级和回退设定机制。控制要在上线后持续发挥作用。",
+        "en": "Operate logging, quality checks, escalation, fallback and incident response throughout deployment."
+      },
+      "examples": [
+        {
+          "zh": "错误率突然升高时限制受影响用途，再调查原因。",
+          "en": "Restrict an affected use when error rates rise, then investigate."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:92156-92196",
+          "quote": "为运行质量、日志、异常处理、人工升级和回退设定机制。控制要在上线后持续发挥作用。"
+        }
+      ]
+    },
+    {
+      "id": "3.3-lesson-2",
+      "objectiveIds": [
+        "skill-3.3.2"
+      ],
+      "title": {
+        "zh": "生命周期中的偏差",
+        "en": "Bias across the lifecycle"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "偏差可能来自采样、标注、训练目标和部署环境等阶段。持续观察分组表现及环境变化，不把一次检查当作永久结论。",
+        "en": "Sampling, labeling, objectives and deployment context can introduce bias; evaluate relevant subgroup outcomes over time."
+      },
+      "examples": [
+        {
+          "zh": "整体分数稳定时，某一群体的错误仍可能增加。",
+          "en": "A stable average score may hide worsening performance for one group."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:92951-93003",
+          "quote": "偏差可能来自采样、标注、训练目标和部署环境等阶段。持续观察分组表现及环境变化，不把一次检查当作永久结论。"
+        }
+      ]
+    },
+    {
+      "id": "3.3-lesson-3",
+      "objectiveIds": [
+        "skill-3.3.3"
+      ],
+      "title": {
+        "zh": "有害内容与知识产权",
+        "en": "Harmful content and intellectual property"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "检查内容风险、资料使用授权和输出用途，设置适当审核与处置流程。不假定模型生成就天然无害或无权利限制。",
+        "en": "Review content risks, input permissions and intended output uses; define review and remediation processes."
+      },
+      "examples": [
+        {
+          "zh": "公开发布生成内容前，根据用途检查来源与使用条件。",
+          "en": "Check publication rights and content suitability before releasing generated material."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:93788-93838",
+          "quote": "检查内容风险、资料使用授权和输出用途，设置适当审核与处置流程。不假定模型生成就天然无害或无权利限制。"
+        }
+      ]
+    },
+    {
+      "id": "3.3-lesson-4",
+      "objectiveIds": [
+        "skill-3.3.4"
+      ],
+      "title": {
+        "zh": "幻觉与可靠性",
+        "en": "Hallucination and reliability"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "幻觉可能表现为看似可信但无依据的内容。结合来源核验、数据质量检查、监测和必要人工复核来管理风险。",
+        "en": "A hallucination is plausible but unsupported or incorrect generated content; manage reliability through evidence, evaluation and appropriate review."
+      },
+      "examples": [
+        {
+          "zh": "带引用的回答仍需核对引用是否真正支持结论。",
+          "en": "Check whether a citation actually supports the claim."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:94634-94682",
+          "quote": "幻觉可能表现为看似可信但无依据的内容。结合来源核验、数据质量检查、监测和必要人工复核来管理风险。"
+        }
+      ]
+    },
+    {
+      "id": "3.3.1-unit-1",
+      "objectiveIds": [
+        "skill-3.3.1"
+      ],
+      "title": {
+        "zh": "检测、限制、调查与恢复",
+        "en": "Detection, containment, investigation and recovery"
+      },
+      "category": {
+        "zh": "事件处置",
+        "en": "Incident response"
+      },
+      "explanation": {
+        "zh": "记录模型版本、输入、输出和告警以便追踪；出现异常时先控制影响，再调查、修复和验证，满足恢复条件后再扩大使用。",
+        "en": "Log relevant versions and events, contain impact, investigate and validate remediation before restoring use."
+      },
+      "examples": [
+        {
+          "zh": "投诉激增时暂停自动发送，保留辅助起草并安排人工审核。",
+          "en": "Pause automatic sending while investigating an error spike."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "事故演练顺序服务于具体条件，不是所有组织的唯一流程。",
+          "en": "An exercise sequence is not a universal incident procedure."
+        }
+      ],
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:95485-95539",
+          "quote": "记录模型版本、输入、输出和告警以便追踪；出现异常时先控制影响，再调查、修复和验证，满足恢复条件后再扩大使用。"
+        }
+      ]
+    },
+    {
+      "id": "3.3.2-unit-1",
+      "objectiveIds": [
+        "skill-3.3.2"
+      ],
+      "title": {
+        "zh": "采样、标注、目标与部署",
+        "en": "Sampling, labels, objectives and deployment"
+      },
+      "category": {
+        "zh": "偏差管理",
+        "en": "Bias management"
+      },
+      "explanation": {
+        "zh": "偏差可能源自缺乏代表性的样本、不一致标注、优化目标和部署人群差异。对相关群体持续监测，并调查差异的原因。",
+        "en": "Bias can originate in sampling, labeling, objectives and deployment populations; investigate subgroup differences over time."
+      },
+      "examples": [
+        {
+          "zh": "新地区加入后，检查当地表达方式是否被原数据覆盖。",
+          "en": "Check whether new regional language is represented in the data."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "仅扩大样本量不保证消除偏差。",
+          "en": "Larger datasets do not automatically remove bias."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:96622-96674",
+          "quote": "偏差可能源自缺乏代表性的样本、不一致标注、优化目标和部署人群差异。对相关群体持续监测，并调查差异的原因。"
+        }
+      ]
+    },
+    {
+      "id": "3.3.3-unit-1",
+      "objectiveIds": [
+        "skill-3.3.3"
+      ],
+      "title": {
+        "zh": "来源授权、输出用途与有害内容",
+        "en": "Source rights, output uses and harmful content"
+      },
+      "category": {
+        "zh": "内容与权利",
+        "en": "Content and rights"
+      },
+      "explanation": {
+        "zh": "核对输入资料允许的使用方式，并根据输出用途设置内容审核、投诉和处置流程。来源有授权不等于输出一定安全，过滤有害内容也不能证明已获版权许可。",
+        "en": "Review source permissions and output use and operate content review and remediation; rights and harmful-content controls are distinct."
+      },
+      "examples": [
+        {
+          "zh": "公开发布前同时检查素材使用条件和输出风险。",
+          "en": "Review both use rights and harmful content before publication."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "模型生成不自动意味着无权利限制。",
+          "en": "Generated material is not automatically unrestricted."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:97738-97807",
+          "quote": "核对输入资料允许的使用方式，并根据输出用途设置内容审核、投诉和处置流程。来源有授权不等于输出一定安全，过滤有害内容也不能证明已获版权许可。"
+        }
+      ]
+    },
+    {
+      "id": "3.3.4-unit-1",
+      "objectiveIds": [
+        "skill-3.3.4"
+      ],
+      "title": {
+        "zh": "证据支持与不确定性",
+        "en": "Evidence support and uncertainty"
+      },
+      "category": {
+        "zh": "可靠性",
+        "en": "Reliability"
+      },
+      "explanation": {
+        "zh": "幻觉是看似可信却错误或无依据的内容。核对资料相关性、引用支持和版本，对重要未知保留不确定性并升级复核。",
+        "en": "Check relevance, support and source versions; communicate uncertainty and escalate important unknowns."
+      },
+      "examples": [
+        {
+          "zh": "回答引用存在，但引用没有包含声称的退款期限。",
+          "en": "A citation exists but does not support the claimed refund deadline."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "检索、引用或人工复核都不是零错误保证。",
+          "en": "Retrieval, citations and review are not zero-error guarantees."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:98828-98879",
+          "quote": "幻觉是看似可信却错误或无依据的内容。核对资料相关性、引用支持和版本，对重要未知保留不确定性并升级复核。"
+        }
+      ]
+    },
+    {
+      "id": "4.1-lesson-1",
+      "objectiveIds": [
+        "skill-4.1.1"
+      ],
+      "title": {
+        "zh": "组织准备度",
+        "en": "Organizational readiness"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "评估领导共识、数据、文化、基础设施与治理等维度；不能只检查是否买到了模型。",
+        "en": "Assess leadership alignment, data, culture, infrastructure and governance required to adopt and sustain AI."
+      },
+      "examples": [
+        {
+          "zh": "演示效果好，但没有数据负责人和运营人员，仍不足以规模部署。",
+          "en": "A successful demo is insufficient without data owners and operating support."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:99928-99965",
+          "quote": "评估领导共识、数据、文化、基础设施与治理等维度；不能只检查是否买到了模型。"
+        }
+      ]
+    },
+    {
+      "id": "4.1-lesson-2",
+      "objectiveIds": [
+        "skill-4.1.2"
+      ],
+      "title": {
+        "zh": "AI成熟度",
+        "en": "AI maturity"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "成熟度描述从探索、实验到可持续运营等能力状态。它用于识别下一步发展方向，不只是给组织打一个漂亮分数。",
+        "en": "The stage of organizational capability, from exploration through experiments to repeatable operation at scale."
+      },
+      "examples": [
+        {
+          "zh": "能运行一次试点与能持续监测和维护多个应用，是不同能力。",
+          "en": "Running one pilot differs from maintaining several monitored services."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:100776-100826",
+          "quote": "成熟度描述从探索、实验到可持续运营等能力状态。它用于识别下一步发展方向，不只是给组织打一个漂亮分数。"
+        }
+      ]
+    },
+    {
+      "id": "4.1-lesson-3",
+      "objectiveIds": [
+        "skill-4.1.3"
+      ],
+      "title": {
+        "zh": "能力差距",
+        "en": "Capability gaps"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "从人员、流程、技术和治理找出具体缺口，区分缺少技能、缺少权限和缺少合适流程等问题。",
+        "en": "Identify specific shortfalls in people, processes, technology and governance that prevent intended outcomes."
+      },
+      "examples": [
+        {
+          "zh": "员工不会核验答案，不能只通过更换模型来解决。",
+          "en": "Replacing a model does not teach employees how to verify its answers."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:101605-101646",
+          "quote": "从人员、流程、技术和治理找出具体缺口，区分缺少技能、缺少权限和缺少合适流程等问题。"
+        }
+      ]
+    },
+    {
+      "id": "4.1-lesson-4",
+      "objectiveIds": [
+        "skill-4.1.4"
+      ],
+      "title": {
+        "zh": "发展路线与投入顺序",
+        "en": "Roadmaps and investment sequencing"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "把能力建设与战略目标连接，依据当前准备程度安排可验证的阶段目标和投入。",
+        "en": "Connect capability building to strategic goals and current readiness through evidence-based milestones."
+      },
+      "examples": [
+        {
+          "zh": "先建立数据责任和验证机制，再扩大相关业务用途。",
+          "en": "Establish data ownership and evaluation before expanding the use case."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "4.1-lesson-1",
+        "4.1-lesson-3"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:102418-102453",
+          "quote": "把能力建设与战略目标连接，依据当前准备程度安排可验证的阶段目标和投入。"
+        }
+      ]
+    },
+    {
+      "id": "4.1.1-unit-1",
+      "objectiveIds": [
+        "skill-4.1.1"
+      ],
+      "title": {
+        "zh": "领导、数据、文化、技术与治理",
+        "en": "Leadership, data, culture, technology and governance"
+      },
+      "category": {
+        "zh": "准备度维度",
+        "en": "Readiness dimensions"
+      },
+      "explanation": {
+        "zh": "准备度是能否开展并维持特定用途的条件。分别检查领导共识、数据可用性、文化与技能、基础设施和治理，记录证据而非只填写自评分。",
+        "en": "Assess use-specific readiness across leadership, data, culture, skills, infrastructure and governance using evidence."
+      },
+      "examples": [
+        {
+          "zh": "有预算和演示，但没有资料负责人，数据准备仍有缺口。",
+          "en": "A funded demo without data owners still has a readiness gap."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "准备度会随用途改变，不能只给全企业一个分数。",
+          "en": "Readiness varies by use case, not just by company."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:103248-103309",
+          "quote": "准备度是能否开展并维持特定用途的条件。分别检查领导共识、数据可用性、文化与技能、基础设施和治理，记录证据而非只填写自评分。"
+        }
+      ]
+    },
+    {
+      "id": "4.1.2-unit-1",
+      "objectiveIds": [
+        "skill-4.1.2"
+      ],
+      "title": {
+        "zh": "探索、实验与可持续运营",
+        "en": "Exploration, experiments and sustainable operations"
+      },
+      "category": {
+        "zh": "成熟度评估",
+        "en": "Maturity assessment"
+      },
+      "explanation": {
+        "zh": "成熟度关注能力是否可重复、可治理并能持续运营。一次试点成功与多团队稳定使用不同；具体阶段模型应说明定义和证据要求。",
+        "en": "Maturity concerns repeatable, governed operations; a successful pilot differs from sustained multi-team capability."
+      },
+      "examples": [
+        {
+          "zh": "多个演示都依靠同一人手动修复，不代表已具备规模化能力。",
+          "en": "Many demos depending on one expert do not establish scalable operations."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "成熟度模型是诊断工具，不是准确率认证。",
+          "en": "A maturity model is a diagnostic tool, not an accuracy certificate."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:104422-104479",
+          "quote": "成熟度关注能力是否可重复、可治理并能持续运营。一次试点成功与多团队稳定使用不同；具体阶段模型应说明定义和证据要求。"
+        }
+      ]
+    },
+    {
+      "id": "4.1.3-unit-1",
+      "objectiveIds": [
+        "skill-4.1.3"
+      ],
+      "title": {
+        "zh": "区分技能、流程、技术与权限缺口",
+        "en": "Distinguishing capability gaps"
+      },
+      "category": {
+        "zh": "能力诊断",
+        "en": "Capability diagnosis"
+      },
+      "explanation": {
+        "zh": "推广受阻可能因为不会操作、流程未改、系统不可用或没有授权。先确定具体阻碍，再安排对应干预，避免所有问题都用采购或培训解决。",
+        "en": "Diagnose whether a gap concerns skills, workflow, technology or authority before selecting an intervention."
+      },
+      "examples": [
+        {
+          "zh": "员工知道如何核验，但无权查看原文，应解决访问与流程问题。",
+          "en": "A trained reviewer lacking source access needs permissions, not just more training."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "相同的低采用率可能有不同原因。",
+          "en": "The same low adoption measure can have different causes."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:105606-105667",
+          "quote": "推广受阻可能因为不会操作、流程未改、系统不可用或没有授权。先确定具体阻碍，再安排对应干预，避免所有问题都用采购或培训解决。"
+        }
+      ]
+    },
+    {
+      "id": "4.1.4-unit-1",
+      "objectiveIds": [
+        "skill-4.1.4"
+      ],
+      "title": {
+        "zh": "依赖关系与阶段成果",
+        "en": "Dependencies and staged outcomes"
+      },
+      "category": {
+        "zh": "投资路线",
+        "en": "Investment roadmap"
+      },
+      "explanation": {
+        "zh": "把战略目标拆成可核验的阶段成果，识别前置依赖和责任人，优先补齐阻碍价值实现的关键条件，再验证下一步投入。",
+        "en": "Build evidence-based milestones with dependencies and owners and address bottlenecks before expanding investment."
+      },
+      "examples": [
+        {
+          "zh": "先统一资料责任和质量标准，再扩大使用团队。",
+          "en": "Establish data ownership and quality standards before expansion."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能按“容易展示”替代战略与依赖分析。",
+          "en": "Demo appeal is not a substitute for dependency analysis."
+        }
+      ],
+      "prerequisiteIds": [
+        "4.1-lesson-1",
+        "4.1-lesson-3"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:106745-106797",
+          "quote": "把战略目标拆成可核验的阶段成果，识别前置依赖和责任人，优先补齐阻碍价值实现的关键条件，再验证下一步投入。"
+        }
+      ]
+    },
+    {
+      "id": "4.2-lesson-1",
+      "objectiveIds": [
+        "skill-4.2.1"
+      ],
+      "title": {
+        "zh": "数据准备与孤岛",
+        "en": "Data readiness and silos"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "检查资料质量、可访问性和共享障碍。分散资料是否能适当地用于当前用途，比单纯的数据总量更重要。",
+        "en": "Assess quality, accessibility and appropriate sharing; disconnected data sources can obstruct consistent use."
+      },
+      "examples": [
+        {
+          "zh": "多个部门各有不同版本的客户字段，需要先统一口径与权限。",
+          "en": "Reconcile different customer-field definitions across departments."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:107858-107904",
+          "quote": "检查资料质量、可访问性和共享障碍。分散资料是否能适当地用于当前用途，比单纯的数据总量更重要。"
+        }
+      ]
+    },
+    {
+      "id": "4.2-lesson-2",
+      "objectiveIds": [
+        "skill-4.2.2"
+      ],
+      "title": {
+        "zh": "数据策略与所有权",
+        "en": "Data strategy and ownership"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "明确数据用途、责任人、质量维护和共享规则。数据能够共享不等于应对所有人开放。",
+        "en": "Assign intended uses, accountable owners, quality maintenance and sharing rules."
+      },
+      "examples": [
+        {
+          "zh": "为制度资料指定更新责任人，并保留版本和使用范围。",
+          "en": "Name an owner for policy updates and retain versions and access limits."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "4.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:108686-108724",
+          "quote": "明确数据用途、责任人、质量维护和共享规则。数据能够共享不等于应对所有人开放。"
+        }
+      ]
+    },
+    {
+      "id": "4.2-lesson-3",
+      "objectiveIds": [
+        "skill-4.2.3"
+      ],
+      "title": {
+        "zh": "基础设施要求",
+        "en": "Infrastructure requirements"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "按工作负载评估计算、存储、网络、集成、监测和安全需求，并考虑运维与成本；不只比较硬件性能。",
+        "en": "Assess compute, storage, networks, integration, monitoring, security and operations against workload needs and cost."
+      },
+      "examples": [
+        {
+          "zh": "交互式客服系统还要考虑延迟、可用性和失败时的处理方式。",
+          "en": "An interactive service also needs acceptable latency and fallback behavior."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:109475-109520",
+          "quote": "按工作负载评估计算、存储、网络、集成、监测和安全需求，并考虑运维与成本；不只比较硬件性能。"
+        }
+      ]
+    },
+    {
+      "id": "4.2.1-unit-1",
+      "objectiveIds": [
+        "skill-4.2.1"
+      ],
+      "title": {
+        "zh": "质量维度与数据契约",
+        "en": "Quality dimensions and data contracts"
+      },
+      "category": {
+        "zh": "数据准备",
+        "en": "Data preparation"
+      },
+      "explanation": {
+        "zh": "针对用途检查准确、完整、一致、及时和相关性，约定字段意义、主键、格式及缺失值处理。数据孤岛还会带来重复和不同口径。",
+        "en": "Assess fitness for use and define field meanings, keys, formats and missing-value handling across sources."
+      },
+      "examples": [
+        {
+          "zh": "同一客户有两条订单副本，先查主键与来源而不是直接相加。",
+          "en": "Investigate duplicate order keys before summing totals."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "格式统一不等于数值真实，清洗需要保留依据。",
+          "en": "Consistent formatting does not establish factual correctness."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:110310-110367",
+          "quote": "针对用途检查准确、完整、一致、及时和相关性，约定字段意义、主键、格式及缺失值处理。数据孤岛还会带来重复和不同口径。"
+        }
+      ]
+    },
+    {
+      "id": "4.2.2-unit-1",
+      "objectiveIds": [
+        "skill-4.2.2"
+      ],
+      "title": {
+        "zh": "所有者、血缘与版本",
+        "en": "Owners, lineage and versions"
+      },
+      "category": {
+        "zh": "数据治理",
+        "en": "Data governance"
+      },
+      "explanation": {
+        "zh": "资料需要明确维护责任、来源去向、版本和共享边界，以便核验答案、修复错误并追踪变化。共享应保留权限而不是复制后全面公开。",
+        "en": "Track accountable owners, lineage, versions and sharing boundaries for maintainable and verifiable information."
+      },
+      "examples": [
+        {
+          "zh": "制度更新后能查到负责部门、有效日期与旧版去向。",
+          "en": "Track policy ownership, effective dates and superseded versions."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "能访问数据不等于可以任意再利用。",
+          "en": "Access does not imply unrestricted reuse."
+        }
+      ],
+      "prerequisiteIds": [
+        "4.2-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:111429-111488",
+          "quote": "资料需要明确维护责任、来源去向、版本和共享边界，以便核验答案、修复错误并追踪变化。共享应保留权限而不是复制后全面公开。"
+        }
+      ]
+    },
+    {
+      "id": "4.2.3-unit-1",
+      "objectiveIds": [
+        "skill-4.2.3"
+      ],
+      "title": {
+        "zh": "延迟、容量、可用性与运营",
+        "en": "Latency, capacity, availability and operations"
+      },
+      "category": {
+        "zh": "基础设施",
+        "en": "Infrastructure"
+      },
+      "explanation": {
+        "zh": "基础设施需服务实际工作负载，包括并发、数据存储、网络、模型调用、监测和故障恢复；评估成本、可扩展性与支持责任。",
+        "en": "Assess workload concurrency, storage, networks, inference, monitoring and recovery together with cost and ownership."
+      },
+      "examples": [
+        {
+          "zh": "客服系统除了生成质量，还要验证高峰响应和服务故障时的接手方式。",
+          "en": "Test peak support traffic and fallback behavior as well as response quality."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "购买更大算力不能替代数据与运营准备。",
+          "en": "More compute does not replace data or operating readiness."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:112523-112578",
+          "quote": "基础设施需服务实际工作负载，包括并发、数据存储、网络、模型调用、监测和故障恢复；评估成本、可扩展性与支持责任。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-1",
+      "objectiveIds": [
+        "skill-4.3.1"
+      ],
+      "title": {
+        "zh": "高管支持与AI倡导者",
+        "en": "Executive support and AI champions"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "领导层统一目标、提供资源并明确责任；倡导者推动沟通与实践，而不是替代正式治理。",
+        "en": "Leaders align goals, resources and accountability; champions support communication and practice within governance."
+      },
+      "examples": [
+        {
+          "zh": "由业务负责人解释试点目标，并支持员工反馈问题。",
+          "en": "A business sponsor explains pilot goals and invites employee feedback."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:113679-113718",
+          "quote": "领导层统一目标、提供资源并明确责任；倡导者推动沟通与实践，而不是替代正式治理。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-2",
+      "objectiveIds": [
+        "skill-4.3.2"
+      ],
+      "title": {
+        "zh": "跨职能团队",
+        "en": "Cross-functional teams"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "把业务、技术、法律与合规等能力放进协作机制，明确交付、评估和异常处理的责任。",
+        "en": "Combine business, technical and oversight capabilities with clear delivery and incident responsibilities."
+      },
+      "examples": [
+        {
+          "zh": "试点负责人应知道谁可以决定暂停高风险功能。",
+          "en": "Know who can pause a risky feature during a pilot."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:114507-114545",
+          "quote": "把业务、技术、法律与合规等能力放进协作机制，明确交付、评估和异常处理的责任。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-3",
+      "objectiveIds": [
+        "skill-4.3.3"
+      ],
+      "title": {
+        "zh": "透明沟通",
+        "en": "Transparent communication"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "说明实施时间、预期结果、岗位影响和支持安排；承认不确定性，提供双向反馈渠道。",
+        "en": "Explain timing, expected outcomes, role impacts, support and uncertainties; enable two-way feedback."
+      },
+      "examples": [
+        {
+          "zh": "员工担心岗位变化时，不能只发布“必须使用”的通知。",
+          "en": "Address employees' job concerns rather than only mandating tool use."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:115307-115345",
+          "quote": "说明实施时间、预期结果、岗位影响和支持安排；承认不确定性，提供双向反馈渠道。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-4",
+      "objectiveIds": [
+        "skill-4.3.4"
+      ],
+      "title": {
+        "zh": "文化障碍",
+        "en": "Cultural barriers"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "区分风险规避、抵触改变和害怕失败等原因，用反馈、安全试验和合适支持来回应。",
+        "en": "Distinguish risk aversion, resistance to change and fear of failure; respond with feedback, safe experimentation and support."
+      },
+      "examples": [
+        {
+          "zh": "低使用率可能是信任与任务适配问题，而不只是安装不足。",
+          "en": "Low adoption may reflect poor task fit or trust problems."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:116121-116158",
+          "quote": "区分风险规避、抵触改变和害怕失败等原因，用反馈、安全试验和合适支持来回应。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-5",
+      "objectiveIds": [
+        "skill-4.3.5"
+      ],
+      "title": {
+        "zh": "员工培养",
+        "en": "Workforce development"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "围绕岗位任务、实际风险和人机协作设计练习，可结合POC、培训或黑客马拉松；签到不代表形成能力。",
+        "en": "Build role-specific AI literacy through practical tasks, training, proofs of concept and responsible use exercises."
+      },
+      "examples": [
+        {
+          "zh": "让客服练习核对引用、纠正草稿并识别需要上报的情况。",
+          "en": "Practice verifying citations and escalating uncertain answers."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:116944-116991",
+          "quote": "围绕岗位任务、实际风险和人机协作设计练习，可结合POC、培训或黑客马拉松；签到不代表形成能力。"
+        }
+      ]
+    },
+    {
+      "id": "4.3-lesson-6",
+      "objectiveIds": [
+        "skill-4.3.6"
+      ],
+      "title": {
+        "zh": "角色转变与人的优势",
+        "en": "Changing roles and human strengths"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "重新设计人工操作、人工监督和AI协作的分工，保留批判性思考、同理心与创造力的作用。",
+        "en": "Redesign manual work, oversight and AI collaboration while preserving human judgment, empathy and creativity."
+      },
+      "examples": [
+        {
+          "zh": "AI起草沟通内容，人类判断对方处境并承担发送责任。",
+          "en": "AI drafts a message; a person assesses its context and authorizes sending."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:117795-117836",
+          "quote": "重新设计人工操作、人工监督和AI协作的分工，保留批判性思考、同理心与创造力的作用。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.1-unit-1",
+      "objectiveIds": [
+        "skill-4.3.1"
+      ],
+      "title": {
+        "zh": "赞助者与业务倡导者",
+        "en": "Sponsors and business champions"
+      },
+      "category": {
+        "zh": "变革支持",
+        "en": "Change support"
+      },
+      "explanation": {
+        "zh": "高层赞助者提供方向、资源和跨部门协调；业务倡导者帮助发现实际需求、示范使用和反馈。两者都需要明确权责，不能只有口号。",
+        "en": "Sponsors provide direction and resources; champions connect practical needs, demonstrations and feedback within clear authority."
+      },
+      "examples": [
+        {
+          "zh": "业务赞助者解决部门间资源冲突，倡导者组织岗位试用。",
+          "en": "A sponsor resolves resource conflicts while champions organize role-specific trials."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "热情志愿者不能替代正式的资源与责任安排。",
+          "en": "Enthusiastic volunteers cannot replace formal ownership."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:118674-118732",
+          "quote": "高层赞助者提供方向、资源和跨部门协调；业务倡导者帮助发现实际需求、示范使用和反馈。两者都需要明确权责，不能只有口号。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.2-unit-1",
+      "objectiveIds": [
+        "skill-4.3.2"
+      ],
+      "title": {
+        "zh": "业务、技术与监督角色",
+        "en": "Business, technical and oversight roles"
+      },
+      "category": {
+        "zh": "跨职能协作",
+        "en": "Cross-functional work"
+      },
+      "explanation": {
+        "zh": "团队需具备需求判断、数据维护、技术实现、风险审查和运营能力，明确交付标准、接手关系和谁能暂停不适当用途。",
+        "en": "Combine requirements, data, implementation, oversight and operations with explicit deliverables and stop authority."
+      },
+      "examples": [
+        {
+          "zh": "上线审批中明确业务目标验收者和运行支持接手者。",
+          "en": "Name business acceptance and operational handover owners."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "团队名单齐全不代表决策机制清晰。",
+          "en": "A complete roster does not guarantee clear decisions."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:119853-119905",
+          "quote": "团队需具备需求判断、数据维护、技术实现、风险审查和运营能力，明确交付标准、接手关系和谁能暂停不适当用途。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.3-unit-1",
+      "objectiveIds": [
+        "skill-4.3.3"
+      ],
+      "title": {
+        "zh": "事实、未知、岗位影响与反馈",
+        "en": "Facts, uncertainty, role impacts and feedback"
+      },
+      "category": {
+        "zh": "沟通设计",
+        "en": "Communication design"
+      },
+      "explanation": {
+        "zh": "沟通实施时间、已验证与尚未验证的结果、工作变化和支持措施，并建立双向反馈。不应为推动采用而许诺未经证实的岗位或收益结果。",
+        "en": "Explain timing, verified results, uncertainty, role changes and support with two-way feedback."
+      },
+      "examples": [
+        {
+          "zh": "说明哪些任务会被辅助，哪些决定仍由人承担。",
+          "en": "Explain which tasks are assisted and which decisions remain human-owned."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "只宣传收益而回避员工担忧会损害信任。",
+          "en": "Ignoring employee concerns can undermine trust."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:121011-121071",
+          "quote": "沟通实施时间、已验证与尚未验证的结果、工作变化和支持措施，并建立双向反馈。不应为推动采用而许诺未经证实的岗位或收益结果。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.4-unit-1",
+      "objectiveIds": [
+        "skill-4.3.4"
+      ],
+      "title": {
+        "zh": "安全试验与问题反馈",
+        "en": "Safe experimentation and issue reporting"
+      },
+      "category": {
+        "zh": "文化与激励",
+        "en": "Culture and incentives"
+      },
+      "explanation": {
+        "zh": "当员工担心犯错受罚时，建立限定范围的安全练习、报告渠道和改进机制。区分抵触改变、合理风险担忧和工具不适配。",
+        "en": "Use bounded practice and issue reporting and distinguish resistance from justified risk concerns or poor fit."
+      },
+      "examples": [
+        {
+          "zh": "让员工在测试材料上练习核验，报告失败不扣采用率。",
+          "en": "Practice verification on test material without penalizing issue reporting."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "强制使用或更换工具不一定解决文化障碍。",
+          "en": "Mandates or replacement tools may not resolve cultural barriers."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:122157-122210",
+          "quote": "当员工担心犯错受罚时，建立限定范围的安全练习、报告渠道和改进机制。区分抵触改变、合理风险担忧和工具不适配。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.5-unit-1",
+      "objectiveIds": [
+        "skill-4.3.5"
+      ],
+      "title": {
+        "zh": "从会操作到能判断",
+        "en": "From tool operation to judgment"
+      },
+      "category": {
+        "zh": "岗位培养",
+        "en": "Role-based development"
+      },
+      "explanation": {
+        "zh": "按岗位设计真实任务，练习核验、边界识别、升级与人机交接，并以实际表现评估。POC和黑客马拉松也需要责任与验证目标。",
+        "en": "Train role-specific verification, boundaries, escalation and handoffs and assess demonstrated performance."
+      },
+      "examples": [
+        {
+          "zh": "客服训练核对政策和升级投诉，开发者训练代码评审与测试。",
+          "en": "Support verifies policies; developers practice review and testing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "签到或通过工具介绍不能证明岗位胜任。",
+          "en": "Attendance does not establish role competence."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:123336-123393",
+          "quote": "按岗位设计真实任务，练习核验、边界识别、升级与人机交接，并以实际表现评估。POC和黑客马拉松也需要责任与验证目标。"
+        }
+      ]
+    },
+    {
+      "id": "4.3.6-unit-1",
+      "objectiveIds": [
+        "skill-4.3.6"
+      ],
+      "title": {
+        "zh": "判断、同理心与责任",
+        "en": "Judgment, empathy and responsibility"
+      },
+      "category": {
+        "zh": "人机分工",
+        "en": "Human-AI responsibilities"
+      },
+      "explanation": {
+        "zh": "把可重复的辅助工作与需要语境、价值取舍和授权的判断分开，重新设计人的监督、沟通和创造性职责，明确最终责任。",
+        "en": "Separate repeatable assistance from contextual judgment and authority and redesign oversight, communication and creative work."
+      },
+      "examples": [
+        {
+          "zh": "AI起草投诉回复，人类理解处境、核验事实并决定发送。",
+          "en": "AI drafts a complaint reply; a person verifies and authorizes it."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "自动化一个任务不等于可以移交整个岗位责任。",
+          "en": "Automating a task does not transfer all role accountability."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:124499-124552",
+          "quote": "把可重复的辅助工作与需要语境、价值取舍和授权的判断分开，重新设计人的监督、沟通和创造性职责，明确最终责任。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-1",
+      "objectiveIds": [
+        "skill-4.4.1"
+      ],
+      "title": {
+        "zh": "迭代式转型",
+        "en": "Iterative transformation"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "按构想、实验、启动和扩展等阶段逐步验证。阶段之间应有反馈与决策依据，而非一次性替换全部流程。",
+        "en": "Progress through ideation, experimentation, launch and scaling with feedback and decision gates."
+      },
+      "examples": [
+        {
+          "zh": "从小范围验证开始，观察结果后决定是否继续。",
+          "en": "Start with a small test and use its results to decide the next step."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:125712-125758",
+          "quote": "按构想、实验、启动和扩展等阶段逐步验证。阶段之间应有反馈与决策依据，而非一次性替换全部流程。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-2",
+      "objectiveIds": [
+        "skill-4.4.2"
+      ],
+      "title": {
+        "zh": "从短期成果到扩展",
+        "en": "From quick wins to scale"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "先获得可核验的小范围成果，再确认数据、流程和支持条件能否迁移到其他团队。",
+        "en": "Verify an initial result, then test whether data, workflows and support transfer to additional teams."
+      },
+      "examples": [
+        {
+          "zh": "志愿者试点成功，不代表所有部门立刻适用。",
+          "en": "Volunteer pilot success does not establish suitability for every department."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:126524-126560",
+          "quote": "先获得可核验的小范围成果，再确认数据、流程和支持条件能否迁移到其他团队。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-3",
+      "objectiveIds": [
+        "skill-4.4.3"
+      ],
+      "title": {
+        "zh": "卓越中心 COE",
+        "en": "Center of excellence (CoE)"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "卓越中心可提供共享能力、标准、实践与协作支持。它不应让业务责任在集中支持中消失。",
+        "en": "A shared capability that supports standards, reusable practices and cross-functional collaboration without removing business accountability."
+      },
+      "examples": [
+        {
+          "zh": "把多个团队反复解决的问题整理成可复用的方法和支持机制。",
+          "en": "Reuse validated evaluation methods across several teams."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:127333-127373",
+          "quote": "卓越中心可提供共享能力、标准、实践与协作支持。它不应让业务责任在集中支持中消失。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-4",
+      "objectiveIds": [
+        "skill-4.4.4"
+      ],
+      "title": {
+        "zh": "持续反馈与价值跟踪",
+        "en": "Continuous feedback and value tracking"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "同时跟踪使用、质量、风险、成本和长期业务价值，用反馈修正下一轮计划。",
+        "en": "Monitor use, quality, risks, costs and longer-term outcomes to adapt the transformation plan."
+      },
+      "examples": [
+        {
+          "zh": "账号开通数可以是活动指标，但不能单独证明业务价值。",
+          "en": "Account creation alone does not demonstrate business value."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:128183-128217",
+          "quote": "同时跟踪使用、质量、风险、成本和长期业务价值，用反馈修正下一轮计划。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-5",
+      "objectiveIds": [
+        "skill-4.4.5"
+      ],
+      "title": {
+        "zh": "试点转生产",
+        "en": "Pilot-to-production transition"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "从实验到生产需要明确责任、运维、治理、支持和异常处置，而不是仅把演示页面公开。",
+        "en": "Establish ownership, operations, governance, support and incident procedures before operating beyond an experiment."
+      },
+      "examples": [
+        {
+          "zh": "上线前确认谁值守、怎样监控、出错如何回退。",
+          "en": "Confirm monitoring, on-call responsibility and rollback before launch."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "4.4-lesson-1",
+        "3.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:128988-129027",
+          "quote": "从实验到生产需要明确责任、运维、治理、支持和异常处置，而不是仅把演示页面公开。"
+        }
+      ]
+    },
+    {
+      "id": "4.4-lesson-6",
+      "objectiveIds": [
+        "skill-4.4.6"
+      ],
+      "title": {
+        "zh": "全企业推广",
+        "en": "Enterprise rollout"
+      },
+      "category": {
+        "zh": "全节概览",
+        "en": "Section overview"
+      },
+      "explanation": {
+        "zh": "评估跨团队数据差异、性能、连续性、培训和支持能力，以可控节奏推广并保留纠正空间。",
+        "en": "Assess differences in data, performance, continuity, training and support as adoption expands in controlled stages."
+      },
+      "examples": [
+        {
+          "zh": "扩展过程中发现新部门资料不足时，可暂停该用途并补齐条件。",
+          "en": "Pause an unsuitable departmental rollout until missing conditions are addressed."
+        }
+      ],
+      "misconceptions": [],
+      "prerequisiteIds": [
+        "4.4-lesson-5"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:129818-129858",
+          "quote": "评估跨团队数据差异、性能、连续性、培训和支持能力，以可控节奏推广并保留纠正空间。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.1-unit-1",
+      "objectiveIds": [
+        "skill-4.4.1"
+      ],
+      "title": {
+        "zh": "构想、实验、启动与扩展",
+        "en": "Envision, experiment, launch and scale"
+      },
+      "category": {
+        "zh": "阶段转型",
+        "en": "Transformation stages"
+      },
+      "explanation": {
+        "zh": "构想明确问题与假设；实验验证可行性和价值；启动落实生产与治理；扩展验证更多团队和规模条件。反馈可使团队返回前一阶段。",
+        "en": "Define assumptions, validate feasibility and value, establish production readiness and then test expansion conditions."
+      },
+      "examples": [
+        {
+          "zh": "实验发现资料不可用时，返回补齐基础而不是强行上线。",
+          "en": "Return to foundations when a pilot reveals unusable data."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "阶段不是不可回头的固定流水线。",
+          "en": "Stages do not prohibit iteration or returning to earlier work."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:130664-130722",
+          "quote": "构想明确问题与假设；实验验证可行性和价值；启动落实生产与治理；扩展验证更多团队和规模条件。反馈可使团队返回前一阶段。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.2-unit-1",
+      "objectiveIds": [
+        "skill-4.4.2"
+      ],
+      "title": {
+        "zh": "试点代表性与迁移条件",
+        "en": "Pilot representativeness and transfer conditions"
+      },
+      "category": {
+        "zh": "推广策略",
+        "en": "Rollout strategy"
+      },
+      "explanation": {
+        "zh": "试点结果受参与者、数据和支持条件影响。扩展前检查新部门任务差异、资源、成本与用户能力，分批验证并保留暂停点。",
+        "en": "Check how pilot users, data and support differ from new teams and validate expansion in batches."
+      },
+      "examples": [
+        {
+          "zh": "志愿者团队表现好，新部门资料缺失时先暂停该部门推广。",
+          "en": "Pause a new department with missing data despite a successful volunteer pilot."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "把试点配置复制过去不等于验证了可迁移性。",
+          "en": "Copying a pilot configuration does not validate transferability."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:131799-131853",
+          "quote": "试点结果受参与者、数据和支持条件影响。扩展前检查新部门任务差异、资源、成本与用户能力，分批验证并保留暂停点。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.3-unit-1",
+      "objectiveIds": [
+        "skill-4.4.3"
+      ],
+      "title": {
+        "zh": "COE与业务责任",
+        "en": "CoE and business accountability"
+      },
+      "category": {
+        "zh": "共享能力",
+        "en": "Shared capabilities"
+      },
+      "explanation": {
+        "zh": "卓越中心提供共享评估、标准、平台和经验复用，支持业务团队而不是代替它们定义价值或承担全部用例责任。",
+        "en": "A CoE shares evaluation, standards, platforms and reusable practices while business teams retain use-case ownership."
+      },
+      "examples": [
+        {
+          "zh": "多个团队共享检索评估方法，各自负责本部门知识有效性。",
+          "en": "Teams reuse retrieval evaluation while owning their own source validity."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "集中所有业务决策可能形成瓶颈。",
+          "en": "Centralizing every business decision can create bottlenecks."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:132935-132984",
+          "quote": "卓越中心提供共享评估、标准、平台和经验复用，支持业务团队而不是代替它们定义价值或承担全部用例责任。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.4-unit-1",
+      "objectiveIds": [
+        "skill-4.4.4"
+      ],
+      "title": {
+        "zh": "采用、质量、风险、成本与结果",
+        "en": "Adoption, quality, risk, cost and outcomes"
+      },
+      "category": {
+        "zh": "持续价值",
+        "en": "Sustained value"
+      },
+      "explanation": {
+        "zh": "推广后的反馈同时观察使用、结果、风险与成本，区分短期热度和持续价值，用问题报告推动下一轮改进。",
+        "en": "Track adoption, outcomes, risks and costs after rollout and use feedback to adapt the next iteration."
+      },
+      "examples": [
+        {
+          "zh": "使用率提高而复核成本激增时，重新评估流程和净收益。",
+          "en": "Reassess a workflow when adoption rises but review costs surge."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "成功案例集合不能替代完整运行数据。",
+          "en": "Success stories are not a substitute for operational evidence."
+        }
+      ],
+      "prerequisiteIds": [],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:134121-134168",
+          "quote": "推广后的反馈同时观察使用、结果、风险与成本，区分短期热度和持续价值，用问题报告推动下一轮改进。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.5-unit-1",
+      "objectiveIds": [
+        "skill-4.4.5"
+      ],
+      "title": {
+        "zh": "值守、告警、回退与变更",
+        "en": "Operations, alerts, rollback and change"
+      },
+      "category": {
+        "zh": "生产交接",
+        "en": "Production handover"
+      },
+      "explanation": {
+        "zh": "生产交接要明确负责人、运行手册、监测、故障接手、回退、版本变更与持续资料维护。模型文件交付只是其中一部分。",
+        "en": "Handover owners, runbooks, monitoring, incident support, rollback, version changes and source maintenance."
+      },
+      "examples": [
+        {
+          "zh": "上线前演练失效检索、错误告警与人工接手。",
+          "en": "Exercise retrieval failures, alerts and human takeover before launch."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "演示页面能打开不代表系统具备生产条件。",
+          "en": "A working demo does not establish production readiness."
+        }
+      ],
+      "prerequisiteIds": [
+        "4.4-lesson-1",
+        "3.3-lesson-1"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:135255-135308",
+          "quote": "生产交接要明确负责人、运行手册、监测、故障接手、回退、版本变更与持续资料维护。模型文件交付只是其中一部分。"
+        }
+      ]
+    },
+    {
+      "id": "4.4.6-unit-1",
+      "objectiveIds": [
+        "skill-4.4.6"
+      ],
+      "title": {
+        "zh": "性能、连续性、培训与支持",
+        "en": "Performance, continuity, training and support"
+      },
+      "category": {
+        "zh": "企业扩展",
+        "en": "Enterprise scaling"
+      },
+      "explanation": {
+        "zh": "扩大业务量和团队范围时，重新验证峰值容量、延迟、资料权限、培训覆盖、支持成本与业务连续性，按证据调整节奏。",
+        "en": "Revalidate capacity, latency, permissions, training, support costs and continuity as teams and workload expand."
+      },
+      "examples": [
+        {
+          "zh": "新增地区前先确认本地资料、权限和支持接手。",
+          "en": "Confirm regional data, permissions and support before adding locations."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "规模扩大时原有质量与成本假设可能失效。",
+          "en": "Quality and cost assumptions may change at scale."
+        }
+      ],
+      "prerequisiteIds": [
+        "4.4-lesson-5"
+      ],
+      "status": "needs-review",
+      "evidence": [
+        {
+          "materialId": "teaching-supplement",
+          "locator": "UTF16:136433-136486",
+          "quote": "扩大业务量和团队范围时，重新验证峰值容量、延迟、资料权限、培训覆盖、支持成本与业务连续性，按证据调整节奏。"
+        }
+      ]
+    }
+  ],
+  "gaps": []
+}

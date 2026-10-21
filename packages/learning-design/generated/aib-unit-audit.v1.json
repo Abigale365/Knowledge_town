@@ -1,0 +1,4831 @@
+[
+  {
+    "id": "1.1-lesson-6",
+    "title": {
+      "zh": "人工智能 AI",
+      "en": "Artificial intelligence (AI)"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0399dfb2e91b64cba6e10eebb49b262bfd905788652012b554f350798aaea389",
+    "rationale": {
+      "zh": "固定条件不需要从样本学习；用任务依据选择方法，而不是把自动化等同机器学习。",
+      "en": "A fixed condition needs no pattern learning; choose by task requirements rather than equating automation with ML."
+    },
+    "misconception": {
+      "zh": "常见误判：所有自动化都必须训练模型",
+      "en": "Common error: All automation requires model training"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-7",
+    "title": {
+      "zh": "机器学习 ML",
+      "en": "Machine learning (ML)"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0c7ba07829065cac1d8e3f9983393e7adf3bada04ccd4c753f925c9864c35926",
+    "rationale": {
+      "zh": "机器学习依赖数据、目标和验证；方法名称不能证明适用性。",
+      "en": "ML depends on data, goals and evaluation; a method name does not establish suitability."
+    },
+    "misconception": {
+      "zh": "常见误判：只写要用机器学习",
+      "en": "Common error: Only state that ML will be used"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-16",
+    "title": {
+      "zh": "深度学习 DL",
+      "en": "Deep learning"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "6610a06c13d8ac46932f76ae9074b5a207d4e8633202c1c1b1b5e66a22475d86",
+    "rationale": {
+      "zh": "用模型结构推断方法归属，避免把AI、ML、DL误当互斥选项。",
+      "en": "Infer method membership from structure rather than treating AI, ML and DL as mutually exclusive."
+    },
+    "misconception": {
+      "zh": "常见误判：深度学习与机器学习完全无关",
+      "en": "Common error: Deep learning is unrelated to machine learning"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-17",
+    "title": {
+      "zh": "神经网络",
+      "en": "Neural network"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "93068f058f490d9b2eefe621cc5820a4fce5b09a8e9f69956a5a4f3e56e6b480",
+    "rationale": {
+      "zh": "结构图必须对应可学习权重和计算，不应借神经网络名称掩盖固定规则。",
+      "en": "A network diagram must correspond to learnable weights and computation, not merely rename fixed rules."
+    },
+    "misconception": {
+      "zh": "常见误判：节点是人工逐条书写的业务审批条款",
+      "en": "Common error: Nodes are manually written approval clauses"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-18",
+    "title": {
+      "zh": "自然语言处理 NLP",
+      "en": "Natural language processing (NLP)"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "348e3e97205dadf326187aaf2250f7103ba8e31e26b7448c392a389e770dd7ec",
+    "rationale": {
+      "zh": "依据输入语言和抽取目标选择方向，而不是按部门名称猜技术。",
+      "en": "Choose from the language input and extraction goal rather than guessing by department."
+    },
+    "misconception": {
+      "zh": "常见误判：从视频定位零件",
+      "en": "Common error: Locate parts in video"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-19",
+    "title": {
+      "zh": "计算机视觉 CV",
+      "en": "Computer vision"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "6f496d7e726106f6ae72049566883800d5eb4fc9341c2dcdeb22c72ccfb8326a",
+    "rationale": {
+      "zh": "照片与空间位置是视觉任务的依据，不能把所有AI任务都理解为文本生成。",
+      "en": "Photos and spatial locations motivate vision; AI tasks are not all text generation."
+    },
+    "misconception": {
+      "zh": "常见误判：翻译客服工单正文",
+      "en": "Common error: Translate ticket text"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-8",
+    "title": {
+      "zh": "生成式人工智能 GenAI",
+      "en": "Generative AI (GenAI)"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3276cfa996ef1f4989ba58104b09c25d76d694cbe6a55d526d3838bd3158bead",
+    "rationale": {
+      "zh": "流畅性不能证明事实正确，复核源文才能发现遗漏与误解。",
+      "en": "Fluency does not establish truth; source comparison exposes omissions and misunderstandings."
+    },
+    "misconception": {
+      "zh": "常见误判：因语言流畅直接发布",
+      "en": "Common error: Publish because it is fluent"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-1",
+    "title": {
+      "zh": "算法 Algorithm",
+      "en": "Algorithm"
+    },
+    "objectiveIds": [
+      "skill-1.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "1ca3631d7057c435cef1e732457ef4ecb42cdc097d548f2cefd0bea863add894",
+    "rationale": {
+      "zh": "执行方法与训练产物是不同角色；以实际产物区分而非只认术语。",
+      "en": "Executable method and training output play different roles; distinguish the artifacts."
+    },
+    "misconception": {
+      "zh": "常见误判：训练后参数就是排序步骤的定义",
+      "en": "Common error: Trained parameters define the sorting steps"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-2",
+    "title": {
+      "zh": "模型 Model",
+      "en": "Model"
+    },
+    "objectiveIds": [
+      "skill-1.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "97047ed79304915d54e0b1bbf434c3db9890bda49c18e343836fd0269bbb14c5",
+    "rationale": {
+      "zh": "模型是映射表示，其存在不证明输出满足业务目标。",
+      "en": "A model is an input-output representation; its existence does not establish task performance."
+    },
+    "misconception": {
+      "zh": "常见误判：只确认有输出就通过",
+      "en": "Common error: Pass whenever any output exists"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-3",
+    "title": {
+      "zh": "训练 Training",
+      "en": "Training"
+    },
+    "objectiveIds": [
+      "skill-1.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "a63a3bca3babfc7abb08e5978a76aa84249d1cd1a0ed9108df29a6fde55867c3",
+    "rationale": {
+      "zh": "训练调整参数，未见数据检验才可提供泛化证据。",
+      "en": "Training adjusts parameters; unseen-data evaluation supplies generalization evidence."
+    },
+    "misconception": {
+      "zh": "常见误判：重复展示训练分数即可",
+      "en": "Common error: Repeat the training score"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-4",
+    "title": {
+      "zh": "推理 Inference",
+      "en": "Inference"
+    },
+    "objectiveIds": [
+      "skill-1.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "ce60d095141603978ec40e4d7d92ffea922f3aa413c9923bb5e6cc7b28653ab0",
+    "rationale": {
+      "zh": "看参数是否被调整，不能因生成了新文字就认定发生训练。",
+      "en": "Check whether parameters change; new text alone does not imply training."
+    },
+    "misconception": {
+      "zh": "常见误判：正在调整参数的训练",
+      "en": "Common error: Parameter-updating training"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-5",
+    "title": {
+      "zh": "预测 Prediction",
+      "en": "Prediction"
+    },
+    "objectiveIds": [
+      "skill-1.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "dc5deb052b13d6fe716ad352f9286d3f5dae953e9318b02f78a8d884bee1532a",
+    "rationale": {
+      "zh": "同样的数值误差可带来不同损失，应把预测误差连接实际业务后果。",
+      "en": "Similar numerical errors can have different consequences; connect error to business impact."
+    },
+    "misconception": {
+      "zh": "常见误判：误差相近就无需看后果",
+      "en": "Common error: Ignore consequences because errors are similar"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-20",
+    "title": {
+      "zh": "监督学习",
+      "en": "Supervised learning"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "a7fef7a12fc8667aa90b57fd6ed4e3c5af9cb9c7b0865cdbbe3158586421abfe",
+    "rationale": {
+      "zh": "明确目标标签是本任务关键，不能按数据规模猜学习方式。",
+      "en": "Target labels are decisive here; dataset size does not determine the learning approach."
+    },
+    "misconception": {
+      "zh": "常见误判：有标签所以只能做无监督聚类",
+      "en": "Common error: Labels mean only unsupervised clustering is possible"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-21",
+    "title": {
+      "zh": "无监督学习",
+      "en": "Unsupervised learning"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "9864975db9f148b9720ebbefc0e7f21857e9d9165c7c15fb7ee780bad71f8475",
+    "rationale": {
+      "zh": "无标签可以探索结构，但找到分群不等于自动证明业务含义。",
+      "en": "Unlabeled data supports structure exploration; clusters do not automatically establish business meaning."
+    },
+    "misconception": {
+      "zh": "常见误判：先把不存在的类别答案当真值",
+      "en": "Common error: Treat nonexistent category answers as ground truth"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-22",
+    "title": {
+      "zh": "强化学习",
+      "en": "Reinforcement learning"
+    },
+    "objectiveIds": [
+      "skill-1.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "542fde914154b8010a42c660cbd36258aa4cd030ed7c1311662cc44d9c91e5ca",
+    "rationale": {
+      "zh": "强化学习的交互和累计回报要同时出现，不能只记住奖励这个词。",
+      "en": "Interaction and cumulative return both matter; recognizing the word reward is insufficient."
+    },
+    "misconception": {
+      "zh": "常见误判：把奖励当作固定目标类别标签",
+      "en": "Common error: Treat rewards as fixed category labels"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-9",
+    "title": {
+      "zh": "结构化数据",
+      "en": "Structured data"
+    },
+    "objectiveIds": [
+      "skill-1.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3858fb249010b431aa00dcd0f9ac94efc61e01a8a44f2832e7f494f4b8a059e6",
+    "rationale": {
+      "zh": "结构与准确性是两个维度；统一字段不能修正录入错误。",
+      "en": "Structure and accuracy are separate; consistent fields do not correct entry errors."
+    },
+    "misconception": {
+      "zh": "常见误判：字段固定就保证内容正确",
+      "en": "Common error: Fixed fields guarantee accurate values"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-10",
+    "title": {
+      "zh": "非结构化数据",
+      "en": "Unstructured data"
+    },
+    "objectiveIds": [
+      "skill-1.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "2090fba8b6ac28400a89a496ac160a1d6c8d42685cb94dfc087c10a1b88ed6ba",
+    "rationale": {
+      "zh": "非结构化不是无信息，需要与任务相关的提取与组织。",
+      "en": "Unstructured does not mean uninformative; task-specific extraction and organization are needed."
+    },
+    "misconception": {
+      "zh": "常见误判：假设录音已有固定关系表字段",
+      "en": "Common error: Assume audio already has fixed table fields"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-11",
+    "title": {
+      "zh": "数据质量",
+      "en": "Data quality"
+    },
+    "objectiveIds": [
+      "skill-1.1.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "7ca1b5e5330cf7a441c7514e6ac043d457531a96193547dfd3d5d44423464c39",
+    "rationale": {
+      "zh": "不同缺陷对应不同质量维度；模型规模不能自动补救原料。",
+      "en": "Different defects affect different quality dimensions; model size cannot automatically repair inputs."
+    },
+    "misconception": {
+      "zh": "常见误判：只换更大模型，跳过数据检查",
+      "en": "Common error: Use a bigger model and skip data checks"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-12",
+    "title": {
+      "zh": "历史数据与泛化",
+      "en": "Generalization and historical data"
+    },
+    "objectiveIds": [
+      "skill-1.1.5"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-1",
+      "1.1-lesson-11"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "26f77e90a5e4a05ffb9f7fad595409694c2589d0f5520866858051e06ce52e96",
+    "rationale": {
+      "zh": "历史条件并不固定延续，独立样本和环境比较共同支持泛化判断。",
+      "en": "Historical conditions may not persist; independent examples and environment comparison support generalization assessment."
+    },
+    "misconception": {
+      "zh": "常见误判：只重复历史训练分数",
+      "en": "Common error: Only repeat the historical training score"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-13",
+    "title": {
+      "zh": "训练集与验证",
+      "en": "Training, validation and test sets"
+    },
+    "objectiveIds": [
+      "skill-1.1.5"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-1",
+      "1.1-lesson-11"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "1f95bb5d36ab743ff14e931850f9d0d4fc529f9e3c23de47b5193b47a0dd5995",
+    "rationale": {
+      "zh": "答案泄漏使评估过于乐观，独立性比漂亮分数更关键。",
+      "en": "Answer leakage inflates evaluation; independence matters more than a polished score."
+    },
+    "misconception": {
+      "zh": "常见误判：把测试高分直接当上线证据",
+      "en": "Common error: Treat the leaked test score as launch evidence"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-14",
+    "title": {
+      "zh": "AI框架与统一词汇",
+      "en": "Shared AI vocabulary"
+    },
+    "objectiveIds": [
+      "skill-1.1.6"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "a024aa8c4aeaa69608a4c3a995dcd516a393ed32c3ecf3fe96a7a6947e45f4a8",
+    "rationale": {
+      "zh": "术语冲突会让职责和验收错位；框架组织概念而非替代验证。",
+      "en": "Conflicting terms misalign responsibilities and acceptance; frameworks organize concepts rather than replace testing."
+    },
+    "misconception": {
+      "zh": "常见误判：只购买框架就默认性能合格",
+      "en": "Common error: Buy a framework and assume performance passes"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.1-lesson-15",
+    "title": {
+      "zh": "ISO框架意识",
+      "en": "AI standards and management frameworks"
+    },
+    "objectiveIds": [
+      "skill-1.1.6"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "63aa2d20c0919bb11466d8be653c8b67e32835a537d64a590cf02321ca6a39dc",
+    "rationale": {
+      "zh": "材料只支持框架关注点与查标准方向，不支持推演认证条款。",
+      "en": "The material supports framework scope and consulting standards, not invented certification requirements."
+    },
+    "misconception": {
+      "zh": "常见误判：两个编号都保证任意模型准确",
+      "en": "Common error: Both numbers guarantee any model is accurate"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2-lesson-1",
+    "title": {
+      "zh": "规则还是AI",
+      "en": "Rules or AI"
+    },
+    "objectiveIds": [
+      "skill-1.2.1"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-6"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "a59d93606afa5d9affc51ce1fccb6d8b193add26ef2bd0bd86fc5eaea98cd7c9",
+    "rationale": {
+      "zh": "根据条件可表达性选方法，再比较价值和风险，避免技术驱动套用。",
+      "en": "Choose by expressibility of conditions, then compare value and risk rather than applying technology indiscriminately."
+    },
+    "misconception": {
+      "zh": "常见误判：两个场景都必须上最复杂代理",
+      "en": "Common error: Both require the most complex agent"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2-lesson-2",
+    "title": {
+      "zh": "AI代理与工具",
+      "en": "AI agents and tools"
+    },
+    "objectiveIds": [
+      "skill-1.2.2"
+    ],
+    "prerequisiteIds": [
+      "1.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "2b9961bba2b0fc38ef1a23de74cc08c268ee930452e5079b349a1e086b8b38f1",
+    "rationale": {
+      "zh": "目标协调与外部行动权限不同，工具能力不能自动等于授权。",
+      "en": "Goal coordination differs from external action authority; capability does not imply permission."
+    },
+    "misconception": {
+      "zh": "常见误判：只要能聊天就默认可退款",
+      "en": "Common error: Chat ability implies refund authority"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2-lesson-3",
+    "title": {
+      "zh": "代理协作与编排",
+      "en": "Multi-agent orchestration"
+    },
+    "objectiveIds": [
+      "skill-1.2.2"
+    ],
+    "prerequisiteIds": [
+      "1.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "d4bbb6a2acb47dfb633d96a9f845e6f5f7072af5ca2b405a68361c0fe4db6162",
+    "rationale": {
+      "zh": "编排质量来自任务与交接，不来自数量。",
+      "en": "Orchestration quality comes from task execution and handoffs, not agent count."
+    },
+    "misconception": {
+      "zh": "常见误判：只数代理数量",
+      "en": "Common error: Only count agents"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2-lesson-4",
+    "title": {
+      "zh": "模型漂移与持续监测",
+      "en": "Drift and ongoing monitoring"
+    },
+    "objectiveIds": [
+      "skill-1.2.3"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-12"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "f5235bb32545c2ccb4c940f78fa2e960601b72c548490c5f4a9d4686525d33ab",
+    "rationale": {
+      "zh": "变化需要调查与纠正闭环，不能把告警直接等同修复决策。",
+      "en": "Changes need investigation and correction; an alert is not itself a repair decision."
+    },
+    "misconception": {
+      "zh": "常见误判：上线验收通过即可停止监测",
+      "en": "Common error: Stop monitoring because acceptance passed"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2-lesson-5",
+    "title": {
+      "zh": "工具分类与影子AI",
+      "en": "Tool policies and shadow AI"
+    },
+    "objectiveIds": [
+      "skill-1.2.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3f2532a5dc6eaceef517ca398aee20b417d45233d5ea8413e338fdf1ffdc6737",
+    "rationale": {
+      "zh": "可执行治理同时说明能用什么和怎么完成工作，不能只要求停用。",
+      "en": "Actionable governance explains allowed tools and workable routes, rather than only demanding prohibition."
+    },
+    "misconception": {
+      "zh": "常见误判：只把禁止名单加长",
+      "en": "Common error: Only lengthen the ban list"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.1-unit-1",
+    "title": {
+      "zh": "确定性与可重复执行",
+      "en": "Deterministic execution"
+    },
+    "objectiveIds": [
+      "skill-1.2.1"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-6"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "deedc4c4bb5a793f257a3c34c061d3cffd202721e5fd72ccf181fa6be3bab1c4",
+    "rationale": {
+      "zh": "固定输入与规则版本要求结果可重复；金额仅是演练政策。",
+      "en": "Fixed input and rule version require repeatability; the amount is an exercise policy only."
+    },
+    "misconception": {
+      "zh": "常见误判：一次通过一次拒绝也符合确定性",
+      "en": "Common error: Pass once and reject once still satisfies determinism"
+    },
+    "types": [
+      "edit"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.1-unit-2",
+    "title": {
+      "zh": "预测、生成与行动的边界",
+      "en": "Prediction, generation and action"
+    },
+    "objectiveIds": [
+      "skill-1.2.1"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-6"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "1a571a2f708e37f889197ec6309b25c2407cd935645ccbab89a406a486106c87",
+    "rationale": {
+      "zh": "输出估计、生成内容、外部行动各有不同失败方式，需分别验收。",
+      "en": "Estimates, generated content and external actions have different failure modes and need separate acceptance."
+    },
+    "misconception": {
+      "zh": "常见误判：文字流畅就证明下单权限正确",
+      "en": "Common error: Fluent text proves ordering authority"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.2-unit-1",
+    "title": {
+      "zh": "自主性与停止条件",
+      "en": "Autonomy and stop conditions"
+    },
+    "objectiveIds": [
+      "skill-1.2.2"
+    ],
+    "prerequisiteIds": [
+      "1.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "f8cbbde81ee3f0da787d916c46e2c2e2abf3d5c72cfcdccb1ea00ea4779897be",
+    "rationale": {
+      "zh": "异常停止条件优先于一般重试额度，自主性不代表无限权限。",
+      "en": "The exceptional stop condition overrides the general retry allowance; autonomy does not mean unlimited authority."
+    },
+    "misconception": {
+      "zh": "常见误判：继续重试到两次用完",
+      "en": "Common error: Keep retrying until both attempts are used"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.2-unit-2",
+    "title": {
+      "zh": "工具契约与最小行动权限",
+      "en": "Tool contracts and action permissions"
+    },
+    "objectiveIds": [
+      "skill-1.2.2"
+    ],
+    "prerequisiteIds": [
+      "1.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "0542a202ee9837400f7e167ec6fe1335873b1f789b71e880fc7a1ffc52968589",
+    "rationale": {
+      "zh": "外部状态改变必须靠工具契约与服务端授权，文字提醒不能替代执行边界。",
+      "en": "State-changing calls need tool contracts and server-side authorization; prose reminders do not enforce boundaries."
+    },
+    "misconception": {
+      "zh": "常见误判：只在提示里写请谨慎退款",
+      "en": "Common error: Only tell the model to refund carefully"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.2-unit-3",
+    "title": {
+      "zh": "交接与编排",
+      "en": "Handoffs and orchestration"
+    },
+    "objectiveIds": [
+      "skill-1.2.2"
+    ],
+    "prerequisiteIds": [
+      "1.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "441372674c109bd155ada816c8dafea3b90ddea251644ee38ce0714a1ce79850",
+    "rationale": {
+      "zh": "有前后依赖的任务需要串行交接，未拿到证据就写作会破坏依据链。",
+      "en": "Dependent tasks require serial handoffs; writing before evidence breaks the support chain."
+    },
+    "misconception": {
+      "zh": "常见误判：交接证据、状态与失败责任",
+      "en": "Common error: Hand over evidence, status and failure ownership"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.3-unit-1",
+    "title": {
+      "zh": "数据漂移与概念漂移",
+      "en": "Data drift and concept drift"
+    },
+    "objectiveIds": [
+      "skill-1.2.3"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-12"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "d2b232b43efa077deec50c71c3be953abe04633b5492db5f6c624938fe6c75d4",
+    "rationale": {
+      "zh": "输入变化不是业务损害的充分证据，区分观察和推断避免错误发布。",
+      "en": "Input change alone does not establish business harm; separate observation from inference."
+    },
+    "misconception": {
+      "zh": "常见误判：已证明输入与目标关系改变并造成损害",
+      "en": "Common error: Concept drift and harm are already proved"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.3-unit-2",
+    "title": {
+      "zh": "监测基线与反馈闭环",
+      "en": "Monitoring baselines and feedback"
+    },
+    "objectiveIds": [
+      "skill-1.2.3"
+    ],
+    "prerequisiteIds": [
+      "1.1-lesson-12"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "3f185cf9872a9c5a985f732d45807e5a2f6135278ab52731ea3a103e8442e970",
+    "rationale": {
+      "zh": "没有基线难以比较，未调查就修复可能治错原因；先验证后决定运行行动。",
+      "en": "Without baselines comparison is weak; uninformed fixes may target the wrong cause; validate before deployment decisions."
+    },
+    "misconception": {
+      "zh": "常见误判：运行监测变化并调查原因",
+      "en": "Common error: Monitor changes and investigate causes"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.2.4-unit-1",
+    "title": {
+      "zh": "工具分级与影子AI",
+      "en": "Tool classification and shadow AI"
+    },
+    "objectiveIds": [
+      "skill-1.2.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "6d8a20ba77d9874a2042c40b649d3e0799c94c9bf0c68674ac45280baf42fae7",
+    "rationale": {
+      "zh": "批准状态必须结合具体数据和用途，替代渠道才能让治理可执行。",
+      "en": "Approval must be combined with data and purpose limits; alternatives make governance actionable."
+    },
+    "misconception": {
+      "zh": "常见误判：工具已批准就可以处理任何资料",
+      "en": "Common error: Approval allows any data"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3-lesson-1",
+    "title": {
+      "zh": "提示工程",
+      "en": "Prompt engineering"
+    },
+    "objectiveIds": [
+      "skill-1.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "bb3593d83771b1224f13178873663ab6512fd807e93c066a327626b310d36104",
+    "rationale": {
+      "zh": "提示质量来自任务明确与代表性验证，不是修辞或单次观感。",
+      "en": "Prompt quality comes from clear tasks and representative evaluation, not rhetoric or a single impression."
+    },
+    "misconception": {
+      "zh": "常见误判：只加入更多赞美模型的文字",
+      "en": "Common error: Only add praise for the model"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3-lesson-2",
+    "title": {
+      "zh": "词元与上下文窗口",
+      "en": "Tokens and context windows"
+    },
+    "objectiveIds": [
+      "skill-1.3.2"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "1ee90235165f72cd1c037212d35fa008546d9f95627730e92b08b6ba0a6dd2d5",
+    "rationale": {
+      "zh": "输入和输出共享窗口，预算超出不能只看输入；词元数须按实际分词。",
+      "en": "Input and output share the window; checking input alone misses overflow, and tokens require actual tokenization."
+    },
+    "misconception": {
+      "zh": "常见误判：输入没超过1000所以无需处理",
+      "en": "Common error: Input is below 1,000 so no change is needed"
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3-lesson-3",
+    "title": {
+      "zh": "检索增强生成 RAG",
+      "en": "Retrieval-augmented generation (RAG)"
+    },
+    "objectiveIds": [
+      "skill-1.3.3"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "5351f9cc019e25d218435ae798e7d7d1e23c38e9b6983f847882194682fc975f",
+    "rationale": {
+      "zh": "RAG提供信息条件而非正确性保证；检索在生成前，验证在输出后。",
+      "en": "RAG improves information availability rather than guarantees correctness; retrieve before generating and verify afterward."
+    },
+    "misconception": {
+      "zh": "常见误判：把资料提供给生成过程",
+      "en": "Common error: Provide the sources to generation"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3-lesson-4",
+    "title": {
+      "zh": "微调 Fine-tuning",
+      "en": "Fine-tuning"
+    },
+    "objectiveIds": [
+      "skill-1.3.3"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "b5051d4ae58c121afef41184cbef14910fb8cfecc5112ae7f42ba3b91e23ccc6",
+    "rationale": {
+      "zh": "参数调整与请求补充信息不同，风格与动态事实需求要分开处理。",
+      "en": "Parameter updates differ from request context; style and changing facts need separate handling."
+    },
+    "misconception": {
+      "zh": "常见误判：一次微调会永久同步所有政策",
+      "en": "Common error: One fine-tune permanently synchronizes every policy"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.1-unit-1",
+    "title": {
+      "zh": "任务、上下文、约束与格式",
+      "en": "Task, context, constraints and format"
+    },
+    "objectiveIds": [
+      "skill-1.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "86f15a00babfc9d54246183f38e7a9bf9bac96c1e55d97292a41df0442b75662",
+    "rationale": {
+      "zh": "区分资料与指令并给明确验收条件，可减少误执行文档内文字。",
+      "en": "Separating sources from instructions and defining acceptance reduces accidental obedience to source text."
+    },
+    "misconception": {
+      "zh": "常见误判：把正文中所有命令也当成操作指令",
+      "en": "Common error: Treat every command in the source as an instruction"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.1-unit-2",
+    "title": {
+      "zh": "代表性样例与提示版本",
+      "en": "Representative tests and prompt versions"
+    },
+    "objectiveIds": [
+      "skill-1.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "92044bbd8ee8c10ed7f4598e7b5a88ead8d6e51cc2d632dbb40ef065c18e4c09",
+    "rationale": {
+      "zh": "代表性测试和版本比较才能发现回归；泄漏答案会污染证据。",
+      "en": "Representative tests and version comparisons expose regressions; answer leakage contaminates evaluation."
+    },
+    "misconception": {
+      "zh": "常见误判：只保存最漂亮的回答",
+      "en": "Common error: Only keep the prettiest answer"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s11"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.2-unit-1",
+    "title": {
+      "zh": "输入与输出共享预算",
+      "en": "Shared input and output budget"
+    },
+    "objectiveIds": [
+      "skill-1.3.2"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "fcb932488decdc7c7d3678b9567ae1c02ad0ad9eed57e50ad823d0aa20c60df9",
+    "rationale": {
+      "zh": "总预算8500超过窗口500，应计算全部输入与预留输出，数字只用于本演练。",
+      "en": "The total is 8,500, exceeding the window by 500; include all input and output reserve. Numbers are exercise assumptions."
+    },
+    "misconception": {
+      "zh": "常见误判：0词元，只计输入",
+      "en": "Common error: 0 tokens; count input only"
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s11"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.2-unit-2",
+    "title": {
+      "zh": "相关性与信息位置",
+      "en": "Relevance and information selection"
+    },
+    "objectiveIds": [
+      "skill-1.3.2"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "e71610210d3248ce30e57b16f29c99e1e3b54e3a6672deaab80f8d7b42fa6a5b",
+    "rationale": {
+      "zh": "容量不等于信息利用质量；选择相关证据并验证支撑才能减少无关干扰。",
+      "en": "Capacity does not ensure effective use; select relevant evidence and verify support."
+    },
+    "misconception": {
+      "zh": "常见误判：放得下就证明一定正确利用",
+      "en": "Common error: Fitting guarantees correct use"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s11"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.3-unit-1",
+    "title": {
+      "zh": "RAG的检索与生成两道关",
+      "en": "Retrieval and generation checks"
+    },
+    "objectiveIds": [
+      "skill-1.3.3"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "c66d49d3daafb0dd86cb7bf70e63d0bb1fa8d703146295378af3aa5d6e71e70d",
+    "rationale": {
+      "zh": "检索相关性和回答支持性是两道独立关口，有引用仍需核对结论。",
+      "en": "Retrieval relevance and answer support are separate gates; citations still need claim verification."
+    },
+    "misconception": {
+      "zh": "常见误判：有引用就代表回答正确",
+      "en": "Common error: Any citation makes the answer correct"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s11"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "1.3.3-unit-2",
+    "title": {
+      "zh": "微调与外部知识更新",
+      "en": "Fine-tuning versus external updates"
+    },
+    "objectiveIds": [
+      "skill-1.3.3"
+    ],
+    "prerequisiteIds": [
+      "1.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "687d7933d8343cbf2032e9d2b5ef775e0ffa0f856a67bcdf367c5e6c0b887c84",
+    "rationale": {
+      "zh": "频繁事实更新与行为适配不同，可组合但不可互相冒充。",
+      "en": "Frequent fact updates and behavioral adaptation differ; approaches may combine but cannot impersonate each other."
+    },
+    "misconception": {
+      "zh": "常见误判：用微调代替全部动态事实维护",
+      "en": "Common error: Replace all changing-fact maintenance with fine-tuning"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-1",
+        "sectionId": "b-c1-s12"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1-lesson-1",
+    "title": {
+      "zh": "从业务问题到用例",
+      "en": "From business problems to use cases"
+    },
+    "objectiveIds": [
+      "skill-2.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "97275915fc2a77fc60dd63ffe16cc93474a4743c7cc1ceb004fde6e0e99bd719",
+    "rationale": {
+      "zh": "用任务书修订检验问题先于工具。",
+      "en": "Revise a brief to put the problem before the tool."
+    },
+    "misconception": {
+      "zh": "把采购工具当成目标。",
+      "en": "Treating tool procurement as the goal."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1-lesson-2",
+    "title": {
+      "zh": "自建、购买或合作",
+      "en": "Build, buy or partner"
+    },
+    "objectiveIds": [
+      "skill-2.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "39b18ffe271d05c8662fd9077d644ffdc3834ca2c38cbaf943538763707a943d",
+    "rationale": {
+      "zh": "用漏项审查比较交付路径。",
+      "en": "Audit omissions when comparing delivery paths."
+    },
+    "misconception": {
+      "zh": "只比较报价。",
+      "en": "Comparing sticker prices alone."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1-lesson-3",
+    "title": {
+      "zh": "项目优先级",
+      "en": "Project prioritization"
+    },
+    "objectiveIds": [
+      "skill-2.1.3"
+    ],
+    "prerequisiteIds": [
+      "2.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "0b9966df8bec4150124232d73391a199be4915bb4296d435361d3060d8c340b7",
+    "rationale": {
+      "zh": "依据预设门槛作暂停判断。",
+      "en": "Apply a predeclared pause gate."
+    },
+    "misconception": {
+      "zh": "潜在价值大就扩展。",
+      "en": "Scaling on potential value alone."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1-lesson-4",
+    "title": {
+      "zh": "什么时候不该用AI",
+      "en": "When not to use AI"
+    },
+    "objectiveIds": [
+      "skill-2.1.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "58cfa1ed53e8d44864f3d3e543c549841a836ae70d44f9b71f7dcb82585ec767",
+    "rationale": {
+      "zh": "比较规则方案与AI的适用性。",
+      "en": "Compare a rules solution with AI."
+    },
+    "misconception": {
+      "zh": "默认问题都要AI。",
+      "en": "Assuming every problem needs AI."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1-lesson-5",
+    "title": {
+      "zh": "迁移与业务连续性",
+      "en": "Migration and business continuity"
+    },
+    "objectiveIds": [
+      "skill-2.1.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "d8cda88d12c126a6b5c46127d3569f774560618fe2efae28f544a06a5185531a",
+    "rationale": {
+      "zh": "用部署闸门防止演示直接替代生产。",
+      "en": "Use release gates to separate demos from production."
+    },
+    "misconception": {
+      "zh": "演示成功等于可迁移。",
+      "en": "Equating demo success with migration readiness."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1.1-unit-1",
+    "title": {
+      "zh": "问题、受益者与可观测结果",
+      "en": "Problem, beneficiary and outcome"
+    },
+    "objectiveIds": [
+      "skill-2.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "5cfdb5450a46e59c963226e8793115a94e85836ad130198654f77c189406ec1a",
+    "rationale": {
+      "zh": "让学习者补全可观测用例。",
+      "en": "Complete an observable use case."
+    },
+    "misconception": {
+      "zh": "把不同部门成功指标混用。",
+      "en": "Using the same success measure for every department."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1.2-unit-1",
+    "title": {
+      "zh": "自建、购买与合作的比较维度",
+      "en": "Build, buy and partner criteria"
+    },
+    "objectiveIds": [
+      "skill-2.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "43a89705a72cfc2e2260b4e9c61383698e8540d195fb012d0ff563e3f3228431",
+    "rationale": {
+      "zh": "用约束化方案比选体现购买并非免责。",
+      "en": "Compare constrained options without treating purchase as exemption."
+    },
+    "misconception": {
+      "zh": "购买即可转移全部责任。",
+      "en": "Assuming buying transfers all responsibility."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1.3-unit-1",
+    "title": {
+      "zh": "价值、可行性与硬性约束",
+      "en": "Value, feasibility and hard constraints"
+    },
+    "objectiveIds": [
+      "skill-2.1.3"
+    ],
+    "prerequisiteIds": [
+      "2.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "f44dd7ad28f6131bb43a21cb231c39fe5f1ae3fb8cb3ae3ea211ddbc2646a7d8",
+    "rationale": {
+      "zh": "用预算控件使硬约束不能被高分抵消。",
+      "en": "Use a budget gate so high value cannot override hard constraints."
+    },
+    "misconception": {
+      "zh": "价值加分可抵消未授权。",
+      "en": "Letting value offset missing permission."
+    },
+    "types": [
+      "allocate"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1.4-unit-1",
+    "title": {
+      "zh": "不使用AI也是方案",
+      "en": "Non-AI alternatives"
+    },
+    "objectiveIds": [
+      "skill-2.1.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "7c4e2ef760ab6e041ef278558fd54e5ddbc42994a4abd355c47988b28dcc74fd",
+    "rationale": {
+      "zh": "用项目退出情景练习替代方案。",
+      "en": "Practice stopping in favor of a viable alternative."
+    },
+    "misconception": {
+      "zh": "终止等于项目管理失败。",
+      "en": "Treating termination as failure."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.1.5-unit-1",
+    "title": {
+      "zh": "切换、回退与业务连续性",
+      "en": "Cutover, rollback and continuity"
+    },
+    "objectiveIds": [
+      "skill-2.1.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "ad984f3638a630c10ab56c1487ed48092ba658313169c33de4f9bf2523919bbe",
+    "rationale": {
+      "zh": "修复切换清单的责任与触发漏项。",
+      "en": "Repair missing ownership and trigger entries."
+    },
+    "misconception": {
+      "zh": "系统启动即可宣布迁移成功。",
+      "en": "Declaring migration success at startup."
+    },
+    "types": [
+      "edit"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2-lesson-1",
+    "title": {
+      "zh": "有形与无形收益",
+      "en": "Tangible and intangible benefits"
+    },
+    "objectiveIds": [
+      "skill-2.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "20c4daa3848d4252ed349bfc3350959c00c5a63f27056f4b6b90e4d877cb31c9",
+    "rationale": {
+      "zh": "分类收益避免无依据现金换算。",
+      "en": "Separate benefits to prevent unsupported cash conversion."
+    },
+    "misconception": {
+      "zh": "满意度变化自动等于现金。",
+      "en": "Automatically treating satisfaction as cash."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2-lesson-2",
+    "title": {
+      "zh": "业务基线",
+      "en": "Business baseline"
+    },
+    "objectiveIds": [
+      "skill-2.2.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "60517d471f17f3ff669ee98ad7f19309d291013b445170a6372d3e91aee06c40",
+    "rationale": {
+      "zh": "计算全流程省时而非生成速度。",
+      "en": "Calculate end-to-end time saved rather than generation speed."
+    },
+    "misconception": {
+      "zh": "忽略复核时间。",
+      "en": "Ignoring review time."
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2-lesson-3",
+    "title": {
+      "zh": "收益与ROI",
+      "en": "Benefits and ROI"
+    },
+    "objectiveIds": [
+      "skill-2.2.3"
+    ],
+    "prerequisiteIds": [
+      "2.2-lesson-1",
+      "2.2-lesson-2"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "acc8f25933d66061ed450d7863fabf9474148d772ef8723a130a60843074b8ea",
+    "rationale": {
+      "zh": "在完整成本上计算ROI。",
+      "en": "Compute ROI over full costs."
+    },
+    "misconception": {
+      "zh": "收益除成本即ROI。",
+      "en": "Calling benefits divided by cost ROI."
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2-lesson-4",
+    "title": {
+      "zh": "先导性指标",
+      "en": "Leading indicators"
+    },
+    "objectiveIds": [
+      "skill-2.2.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "dd94ecd9bf6b41fce9a66f35a017704a128e1731bc2139130c7aa2a5b82666c7",
+    "rationale": {
+      "zh": "分辨信号与实现成果。",
+      "en": "Distinguish signals from realized outcomes."
+    },
+    "misconception": {
+      "zh": "使用增长保证收益。",
+      "en": "Assuming usage growth guarantees value."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2-lesson-5",
+    "title": {
+      "zh": "成本规划与优化",
+      "en": "Cost planning and optimization"
+    },
+    "objectiveIds": [
+      "skill-2.2.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3cd6adc5a03fdfd287d622f6c3355e25b33efadcf035fc05e677f1af33e7816d",
+    "rationale": {
+      "zh": "在质量门槛内选择成本方案。",
+      "en": "Choose costs within a quality gate."
+    },
+    "misconception": {
+      "zh": "只优化调用单价。",
+      "en": "Optimizing call prices alone."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.1-unit-1",
+    "title": {
+      "zh": "结果指标与活动指标",
+      "en": "Outcome and activity measures"
+    },
+    "objectiveIds": [
+      "skill-2.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "af8532ad0e39395778cde7217b238b7cd1da601c21dac6d4dd08dd827fdc4cb6",
+    "rationale": {
+      "zh": "区分完成活动与业务改变。",
+      "en": "Separate completed activity from business change."
+    },
+    "misconception": {
+      "zh": "开户数量当作效果。",
+      "en": "Treating account count as effectiveness."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.1-unit-2",
+    "title": {
+      "zh": "有形收益与无形收益",
+      "en": "Tangible and intangible benefits"
+    },
+    "objectiveIds": [
+      "skill-2.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "1fa85b6c6885f501a9edf36bdb3f3de23347f272f563770a65da36b89bcdeef1",
+    "rationale": {
+      "zh": "通过报告选择保护收益核算边界。",
+      "en": "Choose reporting that preserves benefit boundaries."
+    },
+    "misconception": {
+      "zh": "无形收益不需要证据。",
+      "en": "Assuming intangible benefits need no evidence."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.2-unit-1",
+    "title": {
+      "zh": "可比较基线与归因",
+      "en": "Comparable baselines and attribution"
+    },
+    "objectiveIds": [
+      "skill-2.2.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "2ca95503f0dd85cfd654989dba97e158abe4cd4ce332b6138f64334121f63f54",
+    "rationale": {
+      "zh": "选择可比较试验而非前后数字推因果。",
+      "en": "Choose comparable evaluation rather than inferring causality from two numbers."
+    },
+    "misconception": {
+      "zh": "前后变化全归AI。",
+      "en": "Attributing all before/after changes to AI."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.3-unit-1",
+    "title": {
+      "zh": "ROI公式与核算边界",
+      "en": "ROI and accounting boundaries"
+    },
+    "objectiveIds": [
+      "skill-2.2.3"
+    ],
+    "prerequisiteIds": [
+      "2.2-lesson-1",
+      "2.2-lesson-2"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "dafeb3ff2e0ceabc23243d19572379dfd3190055c636bd29ec73156ead4e98ce",
+    "rationale": {
+      "zh": "用同期间完整核算消除分母错误。",
+      "en": "Use consistent-period accounting to expose denominator errors."
+    },
+    "misconception": {
+      "zh": "净收益除收益冒充ROI。",
+      "en": "Using benefits as the ROI denominator."
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.3-unit-2",
+    "title": {
+      "zh": "释放产能与现金节省",
+      "en": "Released capacity and cash savings"
+    },
+    "objectiveIds": [
+      "skill-2.2.3"
+    ],
+    "prerequisiteIds": [
+      "2.2-lesson-1",
+      "2.2-lesson-2"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "ffb7d3c0bc380501f58c1c7ee43ad5ef0cf74b9a9d8522bb3c6d8225b15ed1dd",
+    "rationale": {
+      "zh": "通过现金与产能分类防止重复计益。",
+      "en": "Classify cash and capacity to prevent double counting."
+    },
+    "misconception": {
+      "zh": "省时即减薪支出。",
+      "en": "Equating freed time with reduced payroll."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.4-unit-1",
+    "title": {
+      "zh": "先导信号与滞后结果",
+      "en": "Leading and lagging indicators"
+    },
+    "objectiveIds": [
+      "skill-2.2.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "068a408b80d84f47fa22fe4a5f6dd13dd2704a5b38915aa4dfd554a528254c04",
+    "rationale": {
+      "zh": "将信号连接到后续验证。",
+      "en": "Connect a signal to later validation."
+    },
+    "misconception": {
+      "zh": "培训出勤等于独立胜任。",
+      "en": "Equating attendance with independent competence."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.2.5-unit-1",
+    "title": {
+      "zh": "全生命周期成本",
+      "en": "Lifecycle cost"
+    },
+    "objectiveIds": [
+      "skill-2.2.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "6c4ec7461f8a0dc4180aedddd984201b7028e377e187fcb289588f8f8d6834ba",
+    "rationale": {
+      "zh": "汇总生命周期成本而非只算模型。",
+      "en": "Sum lifecycle costs instead of model fees alone."
+    },
+    "misconception": {
+      "zh": "退出迁移不进预算。",
+      "en": "Excluding exit costs."
+    },
+    "types": [
+      "number"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3-lesson-1",
+    "title": {
+      "zh": "竞争格局",
+      "en": "Competitive landscape"
+    },
+    "objectiveIds": [
+      "skill-2.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "19539cfc87e1cd330f371e1829a624a50df194f613aa5821ea36699def16a0f5",
+    "rationale": {
+      "zh": "竞争判断回到客户需求。",
+      "en": "Return competitive analysis to customer needs."
+    },
+    "misconception": {
+      "zh": "复制同行工具等于战略。",
+      "en": "Mistaking tool imitation for strategy."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3-lesson-2",
+    "title": {
+      "zh": "业务模式转型",
+      "en": "Business model transformation"
+    },
+    "objectiveIds": [
+      "skill-2.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "39695fe430f57633f5f58536259b89249094bac2772f3b4dd1b015825dfa4c95",
+    "rationale": {
+      "zh": "检查转型是否带来运营要求。",
+      "en": "Test whether transformation includes operating requirements."
+    },
+    "misconception": {
+      "zh": "加聊天窗口就完成转型。",
+      "en": "Calling a chat window a transformed business model."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3-lesson-3",
+    "title": {
+      "zh": "可持续优势",
+      "en": "Sustainable advantage"
+    },
+    "objectiveIds": [
+      "skill-2.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0b6da5ac0948f26479d370fd81c7b1be3e1847582b5484582e9dca6554be78e5",
+    "rationale": {
+      "zh": "筛选构成持续能力的投入。",
+      "en": "Select investments in sustained capabilities."
+    },
+    "misconception": {
+      "zh": "安装量就是长期优势。",
+      "en": "Treating installation count as durable advantage."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3-lesson-4",
+    "title": {
+      "zh": "投资与成熟度",
+      "en": "Investment and maturity"
+    },
+    "objectiveIds": [
+      "skill-2.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "9d39e35390e9da740c5b36639e4118cb3ed663bd79540f1e227d62ca3d8e7a48",
+    "rationale": {
+      "zh": "将准备度映射到分阶段投资。",
+      "en": "Map readiness to staged investment."
+    },
+    "misconception": {
+      "zh": "竞争压力要求无条件扩张。",
+      "en": "Treating competition as a reason for unconditional expansion."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3.1-unit-1",
+    "title": {
+      "zh": "客户问题与竞争位置",
+      "en": "Customer need and competitive position"
+    },
+    "objectiveIds": [
+      "skill-2.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "fb1313ec21fa55d7bf1f93695eb14872a9d49cb88d7ed1c4aff779b424df1755",
+    "rationale": {
+      "zh": "比较客户证据而非预算竞赛。",
+      "en": "Compare customer evidence rather than budgets."
+    },
+    "misconception": {
+      "zh": "同行预算决定本企业投入。",
+      "en": "Using competitor budgets as your business case."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3.2-unit-1",
+    "title": {
+      "zh": "价值主张、交付与收益逻辑",
+      "en": "Value proposition, delivery and revenue"
+    },
+    "objectiveIds": [
+      "skill-2.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "c2b322296fbe19427de45de5dccf9d356b9603cbbc6efd99b6de9e464a473b05",
+    "rationale": {
+      "zh": "用结构分类检查业务模式完整性。",
+      "en": "Classify a model’s components to inspect completeness."
+    },
+    "misconception": {
+      "zh": "技术标签代替收益逻辑。",
+      "en": "Replacing revenue logic with a technology label."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3.3-unit-1",
+    "title": {
+      "zh": "互补能力与学习闭环",
+      "en": "Complementary capabilities and learning"
+    },
+    "objectiveIds": [
+      "skill-2.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "55c1397c8ea55f11a728f0ec07c226b1339239aeff76c2b09748fc2b5b2f1b61",
+    "rationale": {
+      "zh": "辨别互补能力与数据权利。",
+      "en": "Distinguish complementary capabilities and data rights."
+    },
+    "misconception": {
+      "zh": "数据量大等于有权使用。",
+      "en": "Equating data volume with permission."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "2.3.4-unit-1",
+    "title": {
+      "zh": "分阶段承诺与停止条件",
+      "en": "Staged commitments and stop conditions"
+    },
+    "objectiveIds": [
+      "skill-2.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "27e53e73a138cc6a09e03c23bd3ecab11323c94432015d6396310689216c9283",
+    "rationale": {
+      "zh": "将停止门槛落实到扩展决定。",
+      "en": "Apply stop gates to a scaling decision."
+    },
+    "misconception": {
+      "zh": "已花费就必须继续。",
+      "en": "Treating sunk cost as a reason to continue."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-2",
+        "sectionId": "b-c2-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1-lesson-1",
+    "title": {
+      "zh": "负责任的AI原则",
+      "en": "Responsible AI principles"
+    },
+    "objectiveIds": [
+      "skill-3.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "b40b95f144fd89047ce8dd8f13f49a9da0fded06bd64988a862817bda4bf845a",
+    "rationale": {
+      "zh": "把责任原则转成可检查的控制，检验能否从宣言迁移到行动。",
+      "en": "Translate principles into observable controls to test transfer from slogans to action."
+    },
+    "misconception": {
+      "zh": "有原则海报就等于已治理。",
+      "en": "A principles poster is treated as implemented governance."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s1"
+      },
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1-lesson-2",
+    "title": {
+      "zh": "目标冲突与取舍",
+      "en": "Competing objectives and trade-offs"
+    },
+    "objectiveIds": [
+      "skill-3.1.2"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "57fbd2b3b1c1c30354da815b0566880c7f1db4f9485786512b941fcabd9ecc84",
+    "rationale": {
+      "zh": "在硬约束下配置资源，体验收益不能自动压倒责任要求。",
+      "en": "Allocate resources under explicit constraints to experience why benefits do not override responsibility requirements."
+    },
+    "misconception": {
+      "zh": "以最高效率替代对影响和责任的说明。",
+      "en": "Maximum efficiency replaces explanation of impact and ownership."
+    },
+    "types": [
+      "allocate"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1-lesson-3",
+    "title": {
+      "zh": "从设计时纳入治理",
+      "en": "Governance by design"
+    },
+    "objectiveIds": [
+      "skill-3.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "4d7d78ab58262e2006d1a0c7e0f502a84cd01098a4faab51ac8e98aa06396b61",
+    "rationale": {
+      "zh": "通过项目门序把治理放到设计前段。",
+      "en": "Use project gates to place governance early in design."
+    },
+    "misconception": {
+      "zh": "上线后补监督与验证即可。",
+      "en": "Oversight and validation can simply be added after launch."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1-lesson-4",
+    "title": {
+      "zh": "人工监督与升级",
+      "en": "Human oversight and escalation"
+    },
+    "objectiveIds": [
+      "skill-3.1.4"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "2dc8b4d4d74648d6f6a7ee86156ab663828b52333e426912f346b6eff4c6b830",
+    "rationale": {
+      "zh": "给定授权边界，让学习者操作停止与接手权限。",
+      "en": "Operate stop and takeover permissions under explicit authority boundaries."
+    },
+    "misconception": {
+      "zh": "模型自信表达等于正式授权。",
+      "en": "Confident model language counts as formal authorization."
+    },
+    "types": [
+      "matrix"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s1"
+      },
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.1-unit-1",
+    "title": {
+      "zh": "公平性与分组表现",
+      "en": "Fairness and subgroup outcomes"
+    },
+    "objectiveIds": [
+      "skill-3.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0935007f502bff3cdacba912774fcfa3bd950d19d5263744cf4c602f7a4a36f4",
+    "rationale": {
+      "zh": "从总体指标中找出缺失的群体证据。",
+      "en": "Detect missing group evidence behind an aggregate metric."
+    },
+    "misconception": {
+      "zh": "总体平均优秀足以证明公平。",
+      "en": "A strong overall average proves fairness."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.1-unit-2",
+    "title": {
+      "zh": "可说明性与透明度",
+      "en": "Explainability and transparency"
+    },
+    "objectiveIds": [
+      "skill-3.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "d93c9a9327803a0282a3a6052b4260f4d914019798c87af550cab95bf94f1fac",
+    "rationale": {
+      "zh": "将用户可知情选择与理解判断依据区分开。",
+      "en": "Distinguish informed choice from understanding a decision basis."
+    },
+    "misconception": {
+      "zh": "披露AI参与等同于解释每次判断。",
+      "en": "Disclosing AI involvement explains each decision."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.1-unit-3",
+    "title": {
+      "zh": "隐私、安全与稳健性",
+      "en": "Privacy, security and robustness"
+    },
+    "objectiveIds": [
+      "skill-3.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "8a4bf74cdb450ec721b62046cd3afa47c7ab37389ec83b76d7e11487dacf0808",
+    "rationale": {
+      "zh": "依据控制目的而不是技术名称定位责任缺口。",
+      "en": "Locate control gaps by purpose rather than technology names."
+    },
+    "misconception": {
+      "zh": "有访问密码就解决所有隐私和稳健性问题。",
+      "en": "A password resolves privacy and robustness too."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.2-unit-1",
+    "title": {
+      "zh": "收益、影响与比例原则",
+      "en": "Benefits, impacts and proportionate controls"
+    },
+    "objectiveIds": [
+      "skill-3.1.2"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "c2e68a4d47c3083d1edc4efcb48bcc9ed21d4b816420b17f27f7bd16920d0ae7",
+    "rationale": {
+      "zh": "补全评审记录中的影响维度，使比例判断可审计。",
+      "en": "Complete impact dimensions so proportionality reasoning can be reviewed."
+    },
+    "misconception": {
+      "zh": "只记录收益，不记录损害严重性和可逆性。",
+      "en": "Benefits are recorded while severity and reversibility are omitted."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.3-unit-1",
+    "title": {
+      "zh": "从用途定义开始设置保障",
+      "en": "Safeguards from use-case definition"
+    },
+    "objectiveIds": [
+      "skill-3.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "7225c2ee035c3fedef2e59e1d7d13ad8e34d55fa5d294cb089bb2702c901f0a3",
+    "rationale": {
+      "zh": "把不允许用途与人工介入落实到验收门。",
+      "en": "Make prohibited uses and human review concrete acceptance gates."
+    },
+    "misconception": {
+      "zh": "先做功能，验收时只测速度。",
+      "en": "Build features first and test only speed at acceptance."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.1.4-unit-1",
+    "title": {
+      "zh": "复核能力与升级阈值",
+      "en": "Review capability and escalation triggers"
+    },
+    "objectiveIds": [
+      "skill-3.1.4"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "fd2c15a3b7dae19c10901947242293714330f02ff3ad94e065b7d7ec7897f929",
+    "rationale": {
+      "zh": "检查监督是否具有实际介入能力。",
+      "en": "Check whether oversight has practical intervention capacity."
+    },
+    "misconception": {
+      "zh": "安排一个签字人即可构成有效监督。",
+      "en": "Assigning a signer creates effective oversight."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2-lesson-1",
+    "title": {
+      "zh": "跨职能治理与问责",
+      "en": "Cross-functional governance and accountability"
+    },
+    "objectiveIds": [
+      "skill-3.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "855c68efbc21250d8e2aabdce8d6b603ad71b37ac5c2536560f7f1cf85d28e52",
+    "rationale": {
+      "zh": "将跨职能参与转成明确的决策分工。",
+      "en": "Turn cross-functional participation into explicit decision responsibilities."
+    },
+    "misconception": {
+      "zh": "所有部门参会就无需指定责任人。",
+      "en": "Attendance by every department removes the need for owners."
+    },
+    "types": [
+      "matrix"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2-lesson-2",
+    "title": {
+      "zh": "合规风险识别",
+      "en": "Compliance risk identification"
+    },
+    "objectiveIds": [
+      "skill-3.2.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "2ce51a8b44c870310660141b03dfc8a499b77ef135f34cde8e8aa5cf0a683b8a",
+    "rationale": {
+      "zh": "先形成可供责任人判断的合规上下文。",
+      "en": "Build compliance context before responsible specialists assess it."
+    },
+    "misconception": {
+      "zh": "通用清单可以直接给出所有用途的合规结论。",
+      "en": "A generic checklist determines compliance for every use."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2-lesson-3",
+    "title": {
+      "zh": "访问控制与数据安全",
+      "en": "Access control and data security"
+    },
+    "objectiveIds": [
+      "skill-3.2.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3b5d6fea64597d7aca4ddcdc95f33fc5d15288b2e3b543e67f4bd9e0989b7034",
+    "rationale": {
+      "zh": "用最小可用权限矩阵替代提示词愿望。",
+      "en": "Replace prompt-based wishes with a minimally sufficient permission matrix."
+    },
+    "misconception": {
+      "zh": "提示词写“不要越权”就能替代工具权限。",
+      "en": "A prompt saying not to exceed authority replaces tool permissions."
+    },
+    "types": [
+      "matrix"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2-lesson-4",
+    "title": {
+      "zh": "AI风险分类",
+      "en": "AI risk classification"
+    },
+    "objectiveIds": [
+      "skill-3.2.4"
+    ],
+    "prerequisiteIds": [
+      "3.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "0742e7ad87d38fafad2bd5a2cb5396dfc87a4bc32cbfacd245828281622c469c",
+    "rationale": {
+      "zh": "依据影响证据选择风险分级输入。",
+      "en": "Select impact evidence for risk classification."
+    },
+    "misconception": {
+      "zh": "模型越大风险一定越高。",
+      "en": "Larger models are always higher risk."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2.1-unit-1",
+    "title": {
+      "zh": "负责执行与最终问责",
+      "en": "Responsible versus accountable"
+    },
+    "objectiveIds": [
+      "skill-3.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e0d2fe9a069e397a885d1a4ceca3469a11cd60e665511dc445ac1c84eedb19d6",
+    "rationale": {
+      "zh": "分开执行与最终问责，避免多人协作的责任真空。",
+      "en": "Separate execution from accountability to prevent ownership gaps."
+    },
+    "misconception": {
+      "zh": "负责执行的人必然拥有最终决策权。",
+      "en": "The person doing the work necessarily owns the decision."
+    },
+    "types": [
+      "matrix"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2.2-unit-1",
+    "title": {
+      "zh": "用途、资料与适用要求",
+      "en": "Use, data and applicable requirements"
+    },
+    "objectiveIds": [
+      "skill-3.2.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "4cb8915f70a70c8e7f245d325feba76179829cc17011c5638691a5145392683e",
+    "rationale": {
+      "zh": "按给定交接顺序组织具体合规资料，避免越权下法律结论。",
+      "en": "Organize concrete assessment context in the stated handoff sequence without inventing legal conclusions."
+    },
+    "misconception": {
+      "zh": "把使用地区或受影响人群省略也不影响具体核查。",
+      "en": "Omitting locations or affected people does not affect assessment."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2.3-unit-1",
+    "title": {
+      "zh": "最小权限与检索前过滤",
+      "en": "Least privilege and pre-retrieval filtering"
+    },
+    "objectiveIds": [
+      "skill-3.2.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "54fd8040ccc1f9c87412456245e7dc2642c90db145c3c274a2b4953f6f90074a",
+    "rationale": {
+      "zh": "在数据进入检索前放置授权门，操作体现控制时点。",
+      "en": "Place an authorization gate before retrieval so timing becomes operational."
+    },
+    "misconception": {
+      "zh": "先越权检索再遮盖输出就等于阻止访问。",
+      "en": "Masking output after unauthorized retrieval prevents access."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.2.4-unit-1",
+    "title": {
+      "zh": "按影响分配治理力度",
+      "en": "Risk-proportionate governance"
+    },
+    "objectiveIds": [
+      "skill-3.2.4"
+    ],
+    "prerequisiteIds": [
+      "3.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "5c2e1f110b8fc57d0dc0488f8bbda1429028512002f86ae5609edeb456384848",
+    "rationale": {
+      "zh": "在用途变化时重新开风险门，而非复用旧结论。",
+      "en": "Reopen risk assessment when use changes instead of reusing an old conclusion."
+    },
+    "misconception": {
+      "zh": "同一模型不变就不必重新分级。",
+      "en": "An unchanged model never needs risk reclassification."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3-lesson-1",
+    "title": {
+      "zh": "生产监控与事件处理",
+      "en": "Production monitoring and incidents"
+    },
+    "objectiveIds": [
+      "skill-3.3.1"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-4"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "aedcca9a5792dd9866e7c464138ae702b94fb837e23961b7f3ffeccbc1c3a39c",
+    "rationale": {
+      "zh": "配置上线后持续控制，而不把发布当终点。",
+      "en": "Configure continuous operational controls rather than treating launch as completion."
+    },
+    "misconception": {
+      "zh": "通过上线验收就无需运行监控。",
+      "en": "Passing release acceptance removes the need for monitoring."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s5"
+      },
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3-lesson-2",
+    "title": {
+      "zh": "生命周期中的偏差",
+      "en": "Bias across the lifecycle"
+    },
+    "objectiveIds": [
+      "skill-3.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "d1dc42b68af2a3dcd95952c007bd18f2818793b01b45c12d19bd5750559248fe",
+    "rationale": {
+      "zh": "沿生命周期定位偏差线索，要求持续观察。",
+      "en": "Locate bias clues across the lifecycle and require ongoing observation."
+    },
+    "misconception": {
+      "zh": "训练前检查一次就能排除部署后的偏差。",
+      "en": "One pretraining check excludes deployment bias forever."
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3-lesson-3",
+    "title": {
+      "zh": "有害内容与知识产权",
+      "en": "Harmful content and intellectual property"
+    },
+    "objectiveIds": [
+      "skill-3.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "10c15c6c02161a753216ff3e713f1853c9db4666ef2aa8cdbe3eae56363d98d3",
+    "rationale": {
+      "zh": "并列检查内容安全、来源授权和输出用途。",
+      "en": "Check content safety, source permissions and output use separately."
+    },
+    "misconception": {
+      "zh": "模型生成天然无害且没有权利限制。",
+      "en": "Model-generated content is inherently harmless and unrestricted."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3-lesson-4",
+    "title": {
+      "zh": "幻觉与可靠性",
+      "en": "Hallucination and reliability"
+    },
+    "objectiveIds": [
+      "skill-3.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e01df2968754d9d620ea9e6a917b24a4294b1a0dc6538eb5a15dd701a0d5863b",
+    "rationale": {
+      "zh": "把流畅表达与证据支持分离并选择复核动作。",
+      "en": "Separate fluent wording from evidence and choose verification actions."
+    },
+    "misconception": {
+      "zh": "内容听起来可信就说明可靠。",
+      "en": "Plausible language establishes reliability."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3.1-unit-1",
+    "title": {
+      "zh": "检测、限制、调查与恢复",
+      "en": "Detection, containment, investigation and recovery"
+    },
+    "objectiveIds": [
+      "skill-3.3.1"
+    ],
+    "prerequisiteIds": [
+      "3.1-lesson-4"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "53a249f16277601ec9fe5174b2e8e6f73fbfdd824e71bf335541237b5b2a56de",
+    "rationale": {
+      "zh": "让事件响应先限制影响，再调查验证恢复。",
+      "en": "Practice containing impact before investigation and verified restoration."
+    },
+    "misconception": {
+      "zh": "发现异常后先扩大上线才能获得更多样本。",
+      "en": "Expand deployment first to gather more incident samples."
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3.2-unit-1",
+    "title": {
+      "zh": "采样、标注、目标与部署",
+      "en": "Sampling, labels, objectives and deployment"
+    },
+    "objectiveIds": [
+      "skill-3.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "45df644ad5889e517515bbd542c3b11efe6776fe6da6d47e4a28c153897d0ba4",
+    "rationale": {
+      "zh": "为差异准备多阶段调查假设，避免一因解释。",
+      "en": "Prepare multi-stage hypotheses for disparities instead of assuming a single cause."
+    },
+    "misconception": {
+      "zh": "分组差异一定只来自训练样本。",
+      "en": "Subgroup disparities can only come from training samples."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3.3-unit-1",
+    "title": {
+      "zh": "来源授权、输出用途与有害内容",
+      "en": "Source rights, output uses and harmful content"
+    },
+    "objectiveIds": [
+      "skill-3.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "5786e59f610b4fd1ff061ec442466f0fdd93a2987bae1153ee00b8c98879fdfe",
+    "rationale": {
+      "zh": "让来源许可和输出安全分别占一个检查门。",
+      "en": "Give source permission and output safety independent review gates."
+    },
+    "misconception": {
+      "zh": "资料有授权就证明生成内容安全。",
+      "en": "Licensed inputs prove generated outputs are safe."
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "3.3.4-unit-1",
+    "title": {
+      "zh": "证据支持与不确定性",
+      "en": "Evidence support and uncertainty"
+    },
+    "objectiveIds": [
+      "skill-3.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "ee856f8e7c47d5a202a669aed31dacc1f7c9aeb5d18ad6d757c5d2465e5309f3",
+    "rationale": {
+      "zh": "按显式演练状态编码修复证据卡，保留未知。",
+      "en": "Repair an evidence card using explicit case status codes while retaining unknowns."
+    },
+    "misconception": {
+      "zh": "看到相关引用就默认支持结论且版本正确。",
+      "en": "A related citation automatically supports the claim and has the right version."
+    },
+    "types": [
+      "edit"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-3",
+        "sectionId": "b-c3-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1-lesson-1",
+    "title": {
+      "zh": "组织准备度",
+      "en": "Organizational readiness"
+    },
+    "objectiveIds": [
+      "skill-4.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "d85e860887f4ddb2fffddcc1761d841bdba7a78139c820d96acd58b77b550b72",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "只核对模型采购发票",
+      "en": "Check only the model invoice"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1-lesson-2",
+    "title": {
+      "zh": "AI成熟度",
+      "en": "AI maturity"
+    },
+    "objectiveIds": [
+      "skill-4.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "577653d120b52ad9135720ac91f044afa29241f42aaf48d0b99304d2a5da2ecb",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "把一次试点成功记为可持续规模运营",
+      "en": "Count one successful pilot as sustainable scaled operation"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1-lesson-3",
+    "title": {
+      "zh": "能力差距",
+      "en": "Capability gaps"
+    },
+    "objectiveIds": [
+      "skill-4.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e69a045859e5695feaa0a62bf5f8cde81c7fc1da405045c19f184ab67cf2f9dc",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "只需再买一套模型",
+      "en": "Only another model purchase is needed"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1-lesson-4",
+    "title": {
+      "zh": "发展路线与投入顺序",
+      "en": "Roadmaps and investment sequencing"
+    },
+    "objectiveIds": [
+      "skill-4.1.4"
+    ],
+    "prerequisiteIds": [
+      "4.1-lesson-1",
+      "4.1-lesson-3"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "f0982de75afc45bfb7ce6348c5d65d4cc426241867f130c7259326fade734ea5",
+    "rationale": {
+      "zh": "重建给定依赖链，证明知道为何不能跳步。",
+      "en": "Reconstruct a dependency chain and explain why steps cannot be skipped."
+    },
+    "misconception": {
+      "zh": "先采购再寻找适用目标",
+      "en": "Purchase first and find goals later"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s1"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1.1-unit-1",
+    "title": {
+      "zh": "领导、数据、文化、技术与治理",
+      "en": "Leadership, data, culture, technology and governance"
+    },
+    "objectiveIds": [
+      "skill-4.1.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "561d4ab52cd2c0b11138b458a16fc32d4a5f902e6b3401979e2b05b0f7e57c47",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "把自评分改高作为完成证明",
+      "en": "Raise the self-score as completion evidence"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1.2-unit-1",
+    "title": {
+      "zh": "探索、实验与可持续运营",
+      "en": "Exploration, experiments and sustainable operations"
+    },
+    "objectiveIds": [
+      "skill-4.1.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0227e1809d9ebd9039b305f3815cffd847458d6d2f077a8b976e4b15cd330816",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "把演示次数当成唯一成熟度依据",
+      "en": "Use demonstration counts as the sole maturity evidence"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1.3-unit-1",
+    "title": {
+      "zh": "区分技能、流程、技术与权限缺口",
+      "en": "Distinguishing capability gaps"
+    },
+    "objectiveIds": [
+      "skill-4.1.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0c0d12e2d06d67cc157d2b3c8237c04a1f14f26fcdd926ad36861e4ba760d024",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "反复讲同一工具操作课",
+      "en": "Repeat the same tool operation class"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.1.4-unit-1",
+    "title": {
+      "zh": "依赖关系与阶段成果",
+      "en": "Dependencies and staged outcomes"
+    },
+    "objectiveIds": [
+      "skill-4.1.4"
+    ],
+    "prerequisiteIds": [
+      "4.1-lesson-1",
+      "4.1-lesson-3"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "d983019dd6957c3719763edf6ce9f3be376a875e987b58459122cf5af58d4bdc",
+    "rationale": {
+      "zh": "重建给定依赖链，证明知道为何不能跳步。",
+      "en": "Reconstruct a dependency chain and explain why steps cannot be skipped."
+    },
+    "misconception": {
+      "zh": "忽略依赖直接扩大投入",
+      "en": "Ignore dependencies and expand investment"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s2"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2-lesson-1",
+    "title": {
+      "zh": "数据准备与孤岛",
+      "en": "Data readiness and silos"
+    },
+    "objectiveIds": [
+      "skill-4.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "b0b63f824b338a53dedd647323226b4f9f1d3dbd4debaf800f404827e7e96231",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "只统计总字节数",
+      "en": "Count only total bytes"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2-lesson-2",
+    "title": {
+      "zh": "数据策略与所有权",
+      "en": "Data strategy and ownership"
+    },
+    "objectiveIds": [
+      "skill-4.2.2"
+    ],
+    "prerequisiteIds": [
+      "4.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "49f90d7632e804e658eb1a5ef8c0a7e09bb9e3dd20b86ba10d22a21c2737ab81",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "向所有人开放来代替维护责任",
+      "en": "Open access to everyone instead of assigning ownership"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2-lesson-3",
+    "title": {
+      "zh": "基础设施要求",
+      "en": "Infrastructure requirements"
+    },
+    "objectiveIds": [
+      "skill-4.2.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "92bd7ab308fc5c15c347b5ccd6ff7ecd75f759a0d50aa8570b4b3a10a4479916",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "按硬件峰值排名直接购买",
+      "en": "Purchase directly from peak hardware rankings"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2.1-unit-1",
+    "title": {
+      "zh": "质量维度与数据契约",
+      "en": "Quality dimensions and data contracts"
+    },
+    "objectiveIds": [
+      "skill-4.2.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "a335d60993a69611bc7107eed7f800c63009e18e6132de7651d2b493f566e5fe",
+    "rationale": {
+      "zh": "用给定数据契约做实际修复，区分格式一致与事实准确。",
+      "en": "Repair records against an explicit contract and distinguish consistent formatting from factual accuracy."
+    },
+    "misconception": {
+      "zh": "只把记录拼接，假设相同字段名含义相同",
+      "en": "Concatenate records and assume identical names mean identical semantics"
+    },
+    "types": [
+      "edit"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s3"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2.2-unit-1",
+    "title": {
+      "zh": "所有者、血缘与版本",
+      "en": "Owners, lineage and versions"
+    },
+    "objectiveIds": [
+      "skill-4.2.2"
+    ],
+    "prerequisiteIds": [
+      "4.2-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "def77227598a4e8003a1a66c1b8d754a130bdf174bc75f91805147b089d06e01",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "仅重命名文件，不处理边界与来源",
+      "en": "Only rename files without addressing boundaries or provenance"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.2.3-unit-1",
+    "title": {
+      "zh": "延迟、容量、可用性与运营",
+      "en": "Latency, capacity, availability and operations"
+    },
+    "objectiveIds": [
+      "skill-4.2.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "aba9a1a7832967bc0db4c94a8a8807b6ce61a08395b3d0bec2b15c716010635a",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "假定演示成功就能承受所有并发",
+      "en": "Assume demo success covers any concurrency"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-1",
+    "title": {
+      "zh": "高管支持与AI倡导者",
+      "en": "Executive support and AI champions"
+    },
+    "objectiveIds": [
+      "skill-4.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "86b80cafa84b71b7f16d2817bd0155595af3c3bc26d7efed1cb30d4ae827de60",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "让倡导者绕过治理独自承担全部责任",
+      "en": "Champions should bypass governance and own everything"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-2",
+    "title": {
+      "zh": "跨职能团队",
+      "en": "Cross-functional teams"
+    },
+    "objectiveIds": [
+      "skill-4.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "30d61558b93ba3b1b3a4f341e8b551793e8b25d994e187fc5298bf543c3fc278",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "技术团队自行替所有角色作决定",
+      "en": "Let the technical team decide for every role"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s4"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-3",
+    "title": {
+      "zh": "透明沟通",
+      "en": "Transparent communication"
+    },
+    "objectiveIds": [
+      "skill-4.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "237df357e11e0d7adcb969773b4cd1474f3d798114aebb73226a5aef510ccacc",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "保留未经验证承诺，只删除反馈入口",
+      "en": "Keep unverified promises and remove feedback"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-4",
+    "title": {
+      "zh": "文化障碍",
+      "en": "Cultural barriers"
+    },
+    "objectiveIds": [
+      "skill-4.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "85d6ee80f842e19bad0c7a35c34b19eb9f7086227f62887233e0ba846dcb7ddf",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "将合理担忧与害怕失败一律视为不服从",
+      "en": "Treat justified concerns and fear alike as disobedience"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-5",
+    "title": {
+      "zh": "员工培养",
+      "en": "Workforce development"
+    },
+    "objectiveIds": [
+      "skill-4.3.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e8ce93c21ac967abd48b9cc590190378b0b375750c3b0dc7934d4f94aebece3b",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "把签到次数当成胜任证明",
+      "en": "Treat attendance counts as competence"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3-lesson-6",
+    "title": {
+      "zh": "角色转变与人的优势",
+      "en": "Changing roles and human strengths"
+    },
+    "objectiveIds": [
+      "skill-4.3.6"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "6979f40a2f311e263b60afc0c9f7e56cc66d1c2dbde4b46bd6f1e94ba5b01411",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "把整个岗位最终责任交给生成器",
+      "en": "Transfer all role accountability to the generator"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s5"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.1-unit-1",
+    "title": {
+      "zh": "赞助者与业务倡导者",
+      "en": "Sponsors and business champions"
+    },
+    "objectiveIds": [
+      "skill-4.3.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "936984328bac62ec4478e9f994645d436296d15c3c7af97ed8252667b29773d1",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "只增加倡导口号",
+      "en": "More advocacy slogans only"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.2-unit-1",
+    "title": {
+      "zh": "业务、技术与监督角色",
+      "en": "Business, technical and oversight roles"
+    },
+    "objectiveIds": [
+      "skill-4.3.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "92d5aad738ddade16cf16b68b03062c96dd84d756404a892b4be2193b57d6410",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "默认模型自动承担暂停责任",
+      "en": "Assume the model owns stop decisions automatically"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.3-unit-1",
+    "title": {
+      "zh": "事实、未知、岗位影响与反馈",
+      "en": "Facts, uncertainty, role impacts and feedback"
+    },
+    "objectiveIds": [
+      "skill-4.3.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "ea614d32055bcd02bf71f547f7addd6e66658bdeb0684596e4ac6f1ef0f4fbc0",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "为提高采用率保留无依据收益承诺",
+      "en": "Keep unsupported benefit promises to increase adoption"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.4-unit-1",
+    "title": {
+      "zh": "安全试验与问题反馈",
+      "en": "Safe experimentation and issue reporting"
+    },
+    "objectiveIds": [
+      "skill-4.3.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "b2a2d61206377ef63661a564ad20a07e7fad7e97d6a0237fb9ea0d88b370fc36",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "禁止报告问题，只统计积极反馈",
+      "en": "Ban issue reports and count only positive feedback"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s6"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.5-unit-1",
+    "title": {
+      "zh": "从会操作到能判断",
+      "en": "From tool operation to judgment"
+    },
+    "objectiveIds": [
+      "skill-4.3.5"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "a30498e6e820a1290d33b70f12a6379732cbd627fa7b11034d3cff23163d43d1",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "只考按钮位置记忆",
+      "en": "Test button-position recall only"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.3.6-unit-1",
+    "title": {
+      "zh": "判断、同理心与责任",
+      "en": "Judgment, empathy and responsibility"
+    },
+    "objectiveIds": [
+      "skill-4.3.6"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e0e940231e0ece85e861848d13f1451beacf765e2c1c880fb028f3896b9f4ce6",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "因为已起草就自动取消人工责任",
+      "en": "Remove human accountability because a draft exists"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-1",
+    "title": {
+      "zh": "迭代式转型",
+      "en": "Iterative transformation"
+    },
+    "objectiveIds": [
+      "skill-4.4.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "c06700480d00d9a363476aa8f12a754a50cd458b0312fb4a9242e12e03cfe40f",
+    "rationale": {
+      "zh": "重建给定依赖链，证明知道为何不能跳步。",
+      "en": "Reconstruct a dependency chain and explain why steps cannot be skipped."
+    },
+    "misconception": {
+      "zh": "无视反馈一次替换全部流程",
+      "en": "Ignore feedback and replace all workflows"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-2",
+    "title": {
+      "zh": "从短期成果到扩展",
+      "en": "From quick wins to scale"
+    },
+    "objectiveIds": [
+      "skill-4.4.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "861cd7cb57afc54640ad61287b392f3d4d44883e5ae15fba9ccd1675f2cfa74f",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "直接复制试点并宣布所有团队适用",
+      "en": "Copy the pilot and declare it suitable everywhere"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s7"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-3",
+    "title": {
+      "zh": "卓越中心 COE",
+      "en": "Center of excellence (CoE)"
+    },
+    "objectiveIds": [
+      "skill-4.4.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "e62001341885c12a369c521c734497fa320b383c8a929b5a06cd483560d5eac4",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "将所有业务责任移交COE",
+      "en": "Transfer all business accountability to the CoE"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-4",
+    "title": {
+      "zh": "持续反馈与价值跟踪",
+      "en": "Continuous feedback and value tracking"
+    },
+    "objectiveIds": [
+      "skill-4.4.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "cc0f7d591e3d2c7a9756da4bf61df166ba34bf77ec660e74d19e8c6017b4f088",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "只按账号开通数宣布长期价值",
+      "en": "Declare long-term value from account counts alone"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s8"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-5",
+    "title": {
+      "zh": "试点转生产",
+      "en": "Pilot-to-production transition"
+    },
+    "objectiveIds": [
+      "skill-4.4.5"
+    ],
+    "prerequisiteIds": [
+      "4.4-lesson-1",
+      "3.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "3377f6db8b8267b8b47c1f63417674f55d447dcacd018740900fa00b0a2586f9",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "直接公开演示页面即算生产交付",
+      "en": "Publish the demo and call it production handover"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4-lesson-6",
+    "title": {
+      "zh": "全企业推广",
+      "en": "Enterprise rollout"
+    },
+    "objectiveIds": [
+      "skill-4.4.6"
+    ],
+    "prerequisiteIds": [
+      "4.4-lesson-5"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "d3fa3d81508a21e71419cdd1912ec42a1aa6bb4748f164e43ee97ed044233484",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "为赶进度忽略资料和支持差异",
+      "en": "Ignore data and support differences to meet the schedule"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.1-unit-1",
+    "title": {
+      "zh": "构想、实验、启动与扩展",
+      "en": "Envision, experiment, launch and scale"
+    },
+    "objectiveIds": [
+      "skill-4.4.1"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "3db4e898b49f1a2ec2fe1f0431e1161e6d7cef4fa976cf2b06615fb26e4f14df",
+    "rationale": {
+      "zh": "重建给定依赖链，证明知道为何不能跳步。",
+      "en": "Reconstruct a dependency chain and explain why steps cannot be skipped."
+    },
+    "misconception": {
+      "zh": "阶段不可回头所以强行上线",
+      "en": "Force launch because stages cannot be revisited"
+    },
+    "types": [
+      "order"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s9"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.2-unit-1",
+    "title": {
+      "zh": "试点代表性与迁移条件",
+      "en": "Pilot representativeness and transfer conditions"
+    },
+    "objectiveIds": [
+      "skill-4.4.2"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "0ddb687c3a52d57f0fc42eab8b777ef274995205043f6a0bd821d51c85d15169",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "仅复制试点配置作为迁移证明",
+      "en": "Use a copied pilot configuration as proof of transferability"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.3-unit-1",
+    "title": {
+      "zh": "COE与业务责任",
+      "en": "CoE and business accountability"
+    },
+    "objectiveIds": [
+      "skill-4.4.3"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "11a0ff80c6a971e7fa80e087cb94546247b0fc5c663a105d1ebb366a90a47dd7",
+    "rationale": {
+      "zh": "诊断不同职责或条件，避免一个措施解决所有问题。",
+      "en": "Diagnose distinct responsibilities or conditions rather than apply one remedy to everything."
+    },
+    "misconception": {
+      "zh": "COE自动承担全部业务决策",
+      "en": "The CoE automatically owns every business decision"
+    },
+    "types": [
+      "sort"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.4-unit-1",
+    "title": {
+      "zh": "采用、质量、风险、成本与结果",
+      "en": "Adoption, quality, risk, cost and outcomes"
+    },
+    "objectiveIds": [
+      "skill-4.4.4"
+    ],
+    "prerequisiteIds": [],
+    "status": "needs-review",
+    "knowledgeBasis": "cbd92cbf31b835fff2a8885b4f0c23264fbe77886dd05f9556e15d7e4d6171e9",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "只保留成功案例并宣布持续价值",
+      "en": "Keep only success stories and declare sustained value"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.5-unit-1",
+    "title": {
+      "zh": "值守、告警、回退与变更",
+      "en": "Operations, alerts, rollback and change"
+    },
+    "objectiveIds": [
+      "skill-4.4.5"
+    ],
+    "prerequisiteIds": [
+      "4.4-lesson-1",
+      "3.3-lesson-1"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "5e036337c8176d2111beff20abf71fec2c4d13615e0cc627e482c4b3e38cfa19",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "再次复制模型文件作为完整交接",
+      "en": "Copy the model file again as a complete handover"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s10"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  },
+  {
+    "id": "4.4.6-unit-1",
+    "title": {
+      "zh": "性能、连续性、培训与支持",
+      "en": "Performance, continuity, training and support"
+    },
+    "objectiveIds": [
+      "skill-4.4.6"
+    ],
+    "prerequisiteIds": [
+      "4.4-lesson-5"
+    ],
+    "status": "needs-review",
+    "knowledgeBasis": "e08b1adbf0cd265301c3d6275403f981563fcb8e256c2762afafd4bca0ea2a46",
+    "rationale": {
+      "zh": "在业务情境中判断下一步，而非复述定义。",
+      "en": "Judge the next action in context rather than recite a definition."
+    },
+    "misconception": {
+      "zh": "假设原试点质量与成本在所有规模都不变",
+      "en": "Assume pilot quality and cost stay unchanged at any scale"
+    },
+    "types": [
+      "choose"
+    ],
+    "locations": [
+      {
+        "chapterId": "b-chapter-4",
+        "sectionId": "b-c4-s11"
+      }
+    ],
+    "review": {
+      "zh": "章交付后无提示作答；错题按unitIds回看再重试；下次学习时混合检索。改变条件需重审答案。",
+      "en": "Retrieve without hints after chapter delivery; revisit linked units on errors and retry; mix retrieval next session. Changed conditions require answer review."
+    }
+  }
+]

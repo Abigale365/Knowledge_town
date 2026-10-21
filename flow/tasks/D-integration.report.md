@@ -1,22 +1,37 @@
-# D 集成报告
+# D 最终集成报告
 
-状态：本轮拆分完成，等待 A/B/C 后续交付。
+## 2026-10-21 · A revision 3 / B revision 3 / C
 
-## 产物
-- apps/game/src：手工前端；apps/server：服务实现；根 server.cjs 兼容启动。
-- packages/contracts：v1 类型、校验、固定四章样例和旧格式运行脚本。
-- packages/knowledge、packages/learning-design：显式适配器与现有提示词/模板，通用算法待 A/B。
-- packages/course-compiler：引用核验、知识/活动映射、旧格式编译与来源关联。
-- flow/tasks：三个独占任务卡、报告模板；docs/contracts/pipeline-v1.md：冻结接口。
-- 原发布路径与共享素材保留；build 不清空 dist，C 有独立预览。
+已接收A3成对材料与知识包，保留v1/v2历史；B1作者场景逐项对照A3重审后生成B3，没有仅改版本号。139独立单元、58目标、38节，按新先修补学后144张卡、144轮互动、144道正式题、七类控件。原四领域名称保留。
+
+## 来源、语义与版本
+
+- A3原包不改，139supported且gaps空。D复核发现部分短引偏离主题，从7个一手页面增加11项定位摘录覆盖16单元；scope明确厂商方法、数据成熟度类比和题设组织条件。
+- packages/course-compiler/enrich-aib.cjs产生独立ID、revision3的增强材料/知识对，只增加evidence；原正文/例子/先修不改，manifest.provenance记录原A3哈希。
+- B3修正紧急回退需等修复验证的旧前置、交接/RAG正确步骤误标为误区、日志必要性/最小化/脱敏/访问/留存边界，补风险、标注分歧和组织考核边界。
+- 两组gpt-6-astra独立语义审核分别75/64条，整改复核通过。authored/review-v3.json逐单元绑定来源和教案哈希；最终蓝图哈希6fe72a8dc0945a5ea09786506a239b21101f4aca41c34fbbc83cf1a81b6c815a。修改输入需重审，不自动接受旧答案。
+- supported不表示官方认证、取得私有课程全文或穷尽考点；不同组织的阈值/角色仍按明确题设。
+
+## 接入与兼容
+
+- apps/server/pipeline.cjs串联A/B/编译桥；POST /api/compile-course与GET /api/aib-course已接入。旧/api/course-jobs和可配置模型服务保留。
+- 原index顶部“导入知识库”→“预览完整课程（修订3）”，核对后确认建立独立课程。可直接选择generated/aib-course.v3.json，不调用模型。
+- 原内置课程、旧银行及其存档不自动替换。根server.cjs启动兼容；原四个HTML入口、29份共享美术、三个经典游戏保留。
+- C修复物件分布/图标、阶段机关遮挡、双语标签点击冲突、窄窗口和原位语言切换，已发布到原dist路径。原位翻译保留选择和草稿。
 
 ## 验收
-node scripts/test-current.cjs：模块 6 项、108 项原单元及管线测试、13 套 UI 模拟流程通过。
-node --test tests/pipeline-contracts.test.cjs：9 项通过，覆盖缺口、来源、版本、畸形输入、错误选项与重复标准化。
-跨模型只读评审发现四项问题，已补修复与回归。
-限制：真实模型未配置，API 使用模拟服务验收；hook 因缺 jq 安全放行，未宣称完整 hook 测试通过。UI 模拟不替代实际浏览器渲染。
 
-## 后续集成
-用户提供 A/B/C 报告路径和分支/提交后，D 阅读实际产物、审核契约差异、合并、构建 dist 并发布。A/B/C 不得自行更改共享契约或覆盖 dist。
+- 最新完整测试：知识21、教学18、游戏6、根112，共157项通过，0失败；16套UI流程通过；独立发布快照重复验收，见artifacts/runtime/release-snapshot-v3-tests.log。
+- 最新全量38节/144轮实际控件事件完成；基础先于活动、章交付后练习、四章完整测验、低于90%拒绝、错题修复、中途测验刷新及完整保存恢复通过。阅读前置由学习引擎布置，模拟DOM，不冒充144次真人阅读。
+- 真实9f7f67b非空示例旧存档含收集、错误答题和旧会话；升级后继续收集、再保存恢复、新课加入后旧banks/progress/session保留。
+- 两个旧测试已适配：双语模拟测试检查映射/控件身份，实际文字由浏览器核对；未来机关按阶段出现，保留后续阶段操作和支线恢复。
+- 静态入口/资源/可访问名称审计通过。真实HTTP验证来源篡改、版本混用和跨站拒绝；模型调用用本机模拟服务，真实凭证尚未配置。
+- 实际浏览器：旧发布页收集1/22，构建后刷新仍1/22；经文件选择器导入新课；中文→英文→双语真实解释、收集/归档/分箱/判定反馈和新版完整课程预览通过。C另完整走通海边/圣诞、独立重玩、窄视口及经典入口，详见C报告。
+- 浏览器工具仅允许HTTP(S)，直接file协议被拒绝，未绕过。原index相对资源由静态审计覆盖，真实浏览器走同一index的本机HTTP。
+- 截图及日志在artifacts/runtime，忽略上传；不宣称完成全部原生触摸设备或完整无障碍认证。
 
-浏览器实测：重新加载 localhost:8766，三语偏好和第3章3.2的8/8收集及权限矩阵草稿恢复，重新打开装置可继续互动。截图 artifacts/runtime/split-browser-proof.png（本机忽略上传）。静态美术与入口审计通过（python -X utf8 tests/static-audit.py）。
+## 产物与交接
+
+[集成说明](../../docs/INTEGRATION.md)；[A报告](A-knowledge.report.md)；[B原交付](B-learning-design.report.md)；[C报告](C-game.report.md)。B后续集成修订见packages/learning-design/generated/*.v3.json与authored/review-v3.json。
+
+后续：用户填写API地址/模型/密钥后验证真实资料生成；任何新知识或教案修订继续通过来源、语义、可解性、旧存档与原入口门禁。密钥不进入网页或GitHub。

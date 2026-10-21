@@ -1,0 +1,2318 @@
+{
+  "units": [
+    {
+      "unitId": "3.1-lesson-1",
+      "explanation": {
+        "zh": "公平性、可说明性、隐私、安全、透明度和稳健性需要进入实际决策与控制，而不仅是口号。不同任务需要相应评估。",
+        "en": "Fairness, explainability, privacy, security, transparency, and robustness must inform actual decisions and controls rather than remain slogans. Each task needs an appropriate assessment."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：除平均准确率外，也检查不同群体的错误和影响。",
+          "en": "Teaching example: Alongside average accuracy, examine errors and impacts across different groups."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "§3列出可信维度并要求按使用情境权衡；各维度进入控制而非口号是教学归纳。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元定义责任原则，无须先修具体模型算法。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1-lesson-2",
+      "explanation": {
+        "zh": "效率、成本与责任要求可能冲突。把影响、约束和决策责任公开，选择与风险相称的措施并记录理由。",
+        "en": "Efficiency, cost, and responsibility requirements may conflict. Make impacts, constraints, and decision accountability transparent, choose measures proportionate to risk, and document the reasons."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：更快地自动发送高影响决定，不一定比保留人工复核更合适。",
+          "en": "Teaching example: Automatically sending high-impact decisions faster is not necessarily preferable to retaining human review."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "§3的tradeoffs段要求情境、透明与可论证理由，支持取舍而非单一效率优先。",
+      "prerequisiteIds": [
+        "3.1.1-unit-1",
+        "3.1.1-unit-3"
+      ],
+      "prerequisiteRationale": "先理解公平及隐私等不同责任维度，才能说明目标冲突。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1-lesson-3",
+      "explanation": {
+        "zh": "在项目规划和设计阶段确定数据用途、责任、验证与监督，避免上线后才补救关键问题。",
+        "en": "Determine data uses, responsibilities, validation, and oversight during project planning and design to avoid addressing critical problems only after deployment."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：选数据之前就讨论访问权限和允许用途。",
+          "en": "Teaching example: Discuss access permissions and permitted uses before choosing data."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Responsible by design段明确在设计阶段解决问题，并覆盖运行期；支持前置治理。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "规划阶段的责任分配可独立理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-design",
+          "quote": "This does not preclude the use of rapid prototype-and-release development processes, but it does encourage open, transparent iteration."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1-lesson-4",
+      "explanation": {
+        "zh": "明确何时人工检查、何时停止自动行动、何时上报，以及由谁接手。模型的自信措辞不能替代正式授权。",
+        "en": "Specify when people review, when automated actions stop, when escalation occurs, and who takes over. Confident wording from a model cannot replace formal authorization."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：出现缺乏来源的重要结论时，交给有责任的人员核验。",
+          "en": "Teaching example: When an important conclusion lacks sources, refer it to an accountable person for verification."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Human in the loop段及MANAGE 2.4支持高风险人工接手与停用；自信不等于授权是该边界的教学应用。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "人工决策权限与模型输出的区别可直接介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-feedback",
+          "quote": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1.1-unit-1",
+      "explanation": {
+        "zh": "公平性评估要结合具体用途和受影响群体，检查差错、机会和影响的差异。总体平均指标不能替代相关群体评估，目标之间也可能存在取舍。",
+        "en": "Assess fairness in relation to the specific use and affected groups, examining differences in errors, opportunities, and impacts. Overall averages cannot replace assessments of relevant groups, and objectives may involve trade-offs."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：总体错误率低，但某地区用户频繁受损，需要单独调查。",
+          "en": "Teaching example: Even with a low overall error rate, frequent harm to users in one region requires a separate investigation."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不存在脱离用途、适用于一切情境的单一公平指标。",
+          "en": "There is no single fairness metric that applies to every context independently of its intended use."
+        }
+      ],
+      "status": "supported",
+      "rationale": "§3.7指出公平随文化与应用变化，§3.1讨论分组指标；总体平均不可替代分组是合理推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "直接介绍评估维度，不要求技能首条作硬先修。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1.1-unit-2",
+      "explanation": {
+        "zh": "可说明性帮助理解系统行为或判断依据；透明度使相关人员了解AI参与、适用边界和重要限制，以便作出知情选择。",
+        "en": "Explainability helps people understand system behavior or the basis for a judgment; transparency informs relevant people about AI involvement, the scope of appropriate use, and important limitations so they can make informed choices."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：告知客户使用AI，并提供可理解的判断依据和申诉渠道。",
+          "en": "Teaching example: Tell customers that AI is being used and provide understandable reasons and a channel for appeal."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "展示技术术语不等于给出可用解释。",
+          "en": "Presenting technical terminology does not amount to a useful explanation."
+        }
+      ],
+      "status": "supported",
+      "rationale": "§3.4–3.5区分透明与解释并要求按用户知识调整说明；申诉场景为原创教学例。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "两概念在本单元内定义完整。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1.1-unit-3",
+      "explanation": {
+        "zh": "隐私关注个人资料的适当使用与保护；安全关注防止未授权访问或破坏；稳健性关注系统在合理变化和异常条件下仍能适当运行。",
+        "en": "Privacy concerns the appropriate use and protection of personal information; security concerns preventing unauthorized access or damage; robustness concerns appropriate system operation under reasonable changes and abnormal conditions."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：检查访问权限，限制敏感数据，并测试异常输入。",
+          "en": "Teaching example: Check access permissions, restrict sensitive data, and test abnormal inputs."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "这些维度相关但不能互相替代。",
+          "en": "These dimensions are related but cannot substitute for one another."
+        }
+      ],
+      "status": "supported",
+      "rationale": "§3.1、3.3、3.6分别支持稳健、安全和隐私；隐私定义在此为个人资料场景的简化。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "三个维度在本单元并列定义，无强制前置依赖。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1.2-unit-1",
+      "explanation": {
+        "zh": "讨论效率收益时同时说明受影响对象、损害可能性、严重程度和可逆性。选择与影响相称的控制，并记录取舍和决定责任。",
+        "en": "When discussing efficiency gains, also identify affected parties and the likelihood, severity, and reversibility of harm. Choose controls proportionate to the impact, and record the trade-offs and responsibility for the decision."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：高影响决定保留有效人工复核，而非只追求自动处理率。",
+          "en": "Teaching example: Retain effective human review for high-impact decisions rather than pursuing only the rate of automated processing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "业务指标提高不能自动抵消对个人的严重损害。",
+          "en": "Improved business metrics do not automatically offset serious harm to individuals."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "MANAGE 1.2支持影响与可能性优先；MAP 5.1涉及严重度。可逆性与严重损害不得被收益抵消的规范性界限尚需更明确依据。",
+      "prerequisiteIds": [
+        "3.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "需要先区分群体影响与整体收益。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [
+        "缺少可逆性评估及不可接受严重损害的明确适用标准。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：缺少可逆性评估及不可接受严重损害的明确适用标准。"
+      ]
+    },
+    {
+      "unitId": "3.1.3-unit-1",
+      "explanation": {
+        "zh": "在选择数据、设计功能和定义验收标准时纳入责任要求，识别不允许的用途和需要人工介入的情形，再迭代验证。",
+        "en": "Include responsibility requirements when selecting data, designing features, and defining acceptance criteria. Identify prohibited uses and situations requiring human intervention, then validate iteratively."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：设计客服检索时就实施权限，而不是上线后只加免责声明。",
+          "en": "Teaching example: Implement permissions while designing customer-support retrieval rather than adding only a disclaimer after launch."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "设计时治理不意味着不允许小范围迭代。",
+          "en": "Governance by design does not prohibit limited-scope iteration."
+        }
+      ],
+      "status": "supported",
+      "rationale": "设计原则同时支持用例限定和迭代；journey的Envision Security明确检索权限，支持客服权限例的原则。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "用途、限制和验收均由本单元直接说明。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-design",
+          "quote": "This does not preclude the use of rapid prototype-and-release development processes, but it does encourage open, transparent iteration."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.1.4-unit-1",
+      "explanation": {
+        "zh": "监督者需要证据、时间、训练和停止或修改行动的权限。为无来源结论、异常指标和高影响操作定义升级条件与接手者。",
+        "en": "Reviewers need evidence, time, training, and authority to stop or change actions. Define escalation conditions and handover owners for unsupported conclusions, anomalous metrics, and high-impact operations."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：不能核验的重要结论转给负责人，不能只要求点击确认。",
+          "en": "Teaching example: Refer an important conclusion that cannot be verified to the responsible person; do not merely request a confirmation click."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "有人工按钮不代表已经形成有效监督。",
+          "en": "The presence of a human approval button does not establish effective oversight."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "GOVERN 2.2、3.2与MANAGE 2.4支持训练、监督职责、停用权限；已查来源未充分具体化时间、证据可用性和每类升级阈值。",
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "先理解人工介入、升级和接手的基本机制，再设计有效复核条件。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-feedback",
+          "quote": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it."
+        }
+      ],
+      "missing": [
+        "需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+      ]
+    },
+    {
+      "unitId": "3.2-lesson-1",
+      "explanation": {
+        "zh": "业务、技术、数据、法务及合规等角色共同参与，并明确谁负责哪些决策。多人参与不代表责任可以模糊。",
+        "en": "Business, technology, data, legal, and compliance roles participate together, with explicit responsibility for each decision. Involving many people does not justify ambiguous accountability."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：明确谁批准用途、谁维护资料、谁处理异常。",
+          "en": "Teaching example: Specify who approves uses, maintains source material, and handles anomalies."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "GOVERN 2.1、2.3、3.1明确职责、领导问责与多学科决策，支持共同参与但责任清晰。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元直接介绍参与者和责任，不要求前置风险技术。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2-lesson-2",
+      "explanation": {
+        "zh": "先确定业务用途、数据类型、适用地区与组织要求，再由相关责任人评估合规风险。通用清单不能代替具体判断。",
+        "en": "First establish the business use, data types, applicable jurisdictions, and organizational requirements; then have the responsible people assess compliance risks. A generic checklist cannot replace a specific judgment."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：新用途涉及个人资料时，应先进行适用要求与授权核对。",
+          "en": "Teaching example: Before a new use involving personal information, check applicable requirements and authorization."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "GOVERN 1.1与MAP 1.1支持情境化识别法律要求；本单元不对任何地区给出具体法律结论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "这是风险识别流程而非具体法规判断，可直接理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2-lesson-3",
+      "explanation": {
+        "zh": "只授予完成工作所需的访问与操作权限，并在资料和工具层执行控制。仅靠提示词不能可靠替代权限系统。",
+        "en": "Grant only the access and action permissions needed for the work, and enforce controls at the data and tool layers. Prompts alone cannot reliably replace a permission system."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：无权读取人事档案的员工，不应通过检索助手得到档案内容。",
+          "en": "Teaching example: An employee without permission to read personnel files must not obtain their contents through a retrieval assistant."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Envision/Launch Security支持最小权限及检索前授权；提示词不是权限控制是由服务端授权要求得出的安全设计推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "直接介绍必要权限和执行层控制。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2-lesson-4",
+      "explanation": {
+        "zh": "结合用途、受影响对象、潜在损害和控制条件分类风险，再安排评估与治理优先级；不要仅按模型大小分类。",
+        "en": "Classify risks using the intended use, affected parties, potential harm, and controls, then prioritize assessment and governance; do not classify solely by model size."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：内部草稿辅助与影响个人重要权益的自动决定，需要不同控制。",
+          "en": "Teaching example: An internal drafting aid and an automated decision affecting important individual rights require different controls."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "MAP 1.1、5.1与MANAGE 1.2按情境、影响和可能性分配风险资源；模型大小不是充分分类依据。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元给出分类输入，不需先修模型结构。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2.1-unit-1",
+      "explanation": {
+        "zh": "执行者完成工作，最终问责者对决定和结果负责。业务、技术、数据和监督职能需要明确协作与授权边界，避免多人参与却无人作决定。",
+        "en": "Those responsible for execution perform the work; those ultimately accountable own the decisions and outcomes. Business, technology, data, and oversight functions need clear collaboration and authority boundaries so that broad participation does not leave decisions unowned."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：业务负责人批准用途，数据负责人维护资料，运维负责告警。",
+          "en": "Teaching example: Business owners approve uses, data owners maintain source material, and operations staff handle alerts."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "供应商负责模型服务，不等于替客户承担全部业务决定。",
+          "en": "A supplier's responsibility for a model service does not mean it assumes all of the customer's business decisions."
+        }
+      ],
+      "status": "supported",
+      "rationale": "GOVERN 2.1–2.3支持执行和问责分工；AWS政策保留用户决策责任，供应商边界须按合同具体化。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "职责区别自身可作为治理基础。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-policy",
+          "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2.2-unit-1",
+      "explanation": {
+        "zh": "合规识别需要知道系统用途、受影响人群、数据类别、使用地区及组织要求，再由有责任的专业人员核对适用条件。",
+        "en": "Identifying compliance risks requires knowing the system's use, affected populations, data categories, jurisdictions of use, and organizational requirements. Accountable specialists then check the applicable conditions."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：内部文稿辅助改为影响客户权益的自动决定，需要重新评估。",
+          "en": "Teaching example: Changing an internal drafting aid into automated decision-making affecting customer rights requires reassessment."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "通用清单不能替代针对具体用途的判断。",
+          "en": "A generic checklist cannot replace a judgment about the specific use."
+        }
+      ],
+      "status": "supported",
+      "rationale": "MAP 1.1情境法律、用户和用途，及持续MAP支持用途改变时重新评估；不据此宣称满足某项法规。",
+      "prerequisiteIds": [
+        "3.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先理解合规风险识别，再展开适用条件。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2.3-unit-1",
+      "explanation": {
+        "zh": "只授予工作所需的数据与工具权限，在检索或执行前验证身份和授权。输出后再遮盖，不能代替阻止越权检索。",
+        "en": "Grant only the data and tool permissions needed for the work, and verify identity and authorization before retrieval or execution. Masking an output afterward cannot replace preventing unauthorized retrieval."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：客服可读获准政策，不能读人事档案，也不能自行批准高额退款。",
+          "en": "Teaching example: Customer-support staff may read approved policies but may not read personnel files or independently approve large refunds."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "提示层拒绝不构成可靠权限边界。",
+          "en": "A refusal at the prompt layer does not constitute a reliable permission boundary."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Bedrock Agents文档明确服务身份、知识库权限与action group Lambda资源策略须分别授权；安全文Model testing要求验证身份和授权。结合原数据旅程的检索权限，支持资料及工具执行前控制，而非仅依靠提示拒绝；退款额度是原创业务授权示例。",
+      "prerequisiteIds": [
+        "3.2-lesson-3"
+      ],
+      "prerequisiteRationale": "先理解最小权限，再判断检索及操作两个权限边界。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-aws-agents-permissions",
+          "quote": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function"
+        },
+        {
+          "sourceId": "d34-aws-bedrock-least-privilege",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.2.4-unit-1",
+      "explanation": {
+        "zh": "以用途、受影响对象、潜在损害和控制情况确定评估优先级，生命周期中用途或环境改变时重新分级。模型规模不是唯一风险标准。",
+        "en": "Prioritize assessments using intended use, affected parties, potential harm, and existing controls. Reclassify when uses or environments change during the lifecycle. Model size is not the only criterion for risk."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：内部摘要与自动影响个人权益的决策需要不同审查力度。",
+          "en": "Teaching example: Internal summarization and automated decisions affecting individual rights require different levels of scrutiny."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "风险分级不是一次立项表格。",
+          "en": "Risk classification is not a one-time project initiation form."
+        }
+      ],
+      "status": "supported",
+      "rationale": "MAP持续更新及MANAGE 1.2支持动态分级与按影响分配资源；不是把NIST当作法律风险等级表。",
+      "prerequisiteIds": [
+        "3.2-lesson-4"
+      ],
+      "prerequisiteRationale": "先理解分类所依据的用途和影响，再学习生命周期重评。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "en": "Allocating governance effort according to impact",
+        "zh": "按影响分配治理力度"
+      }
+    },
+    {
+      "unitId": "3.3-lesson-1",
+      "explanation": {
+        "zh": "为运行质量、日志、异常处理、人工升级和回退设定机制。控制要在上线后持续发挥作用。",
+        "en": "Establish mechanisms for operational quality, logging, anomaly handling, human escalation, and rollback. Controls must remain effective after deployment."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：错误率突然升高时限制受影响用途，再调查原因。",
+          "en": "Teaching example: When the error rate suddenly rises, restrict the affected use and then investigate the cause."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "MEASURE 2.4与MANAGE 4.1–4.3明确生产监控、事件响应、恢复及变更；限制用途为教学策略。",
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "异常处置使用已定义的停用和人工接手机制。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "en": "Production monitoring and incident handling",
+        "zh": "生产监控与事件处理"
+      }
+    },
+    {
+      "unitId": "3.3-lesson-2",
+      "explanation": {
+        "zh": "偏差可能来自采样、标注、训练目标和部署环境等阶段。持续观察分组表现及环境变化，不把一次检查当作永久结论。",
+        "en": "Bias may arise during sampling, labeling, selection of training objectives, deployment, and other stages. Continuously observe subgroup performance and environmental changes rather than treating one check as a permanent conclusion."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：整体分数稳定时，某一群体的错误仍可能增加。",
+          "en": "Teaching example: Errors for a particular group may increase even when the overall score remains stable."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "§3.7说明数据、算法、人类及系统性偏差；MEASURE 2.11、3.1支持持续评估，具体标注和目标机制未展开。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "先介绍偏差来源，未要求掌握统计公式。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [
+        "需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+      ]
+    },
+    {
+      "unitId": "3.3-lesson-3",
+      "explanation": {
+        "zh": "检查内容风险、资料使用授权和输出用途，设置适当审核与处置流程。不假定模型生成就天然无害或无权利限制。",
+        "en": "Check content risks, authorization to use source material, and intended output uses, and establish appropriate review and response processes. Do not assume model-generated content is inherently harmless or free of rights restrictions."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：公开发布生成内容前，根据用途检查来源与使用条件。",
+          "en": "Teaching example: Before publicly releasing generated content, check sources and usage conditions for the intended use."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "GOVERN 6.1区分第三方权利风险；AWS政策明确有害用途与输出评估，支持两类风险都需检查。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元讲检查范围，不作具体版权法律判断。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-policy",
+          "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.3-lesson-4",
+      "explanation": {
+        "zh": "幻觉可能表现为看似可信但无依据的内容。结合来源核验、数据质量检查、监测和必要人工复核来管理风险。",
+        "en": "Hallucinations may appear as plausible but unsupported content. Manage the risk through source verification, data-quality checks, monitoring, and human review where needed."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：带引用的回答仍需核对引用是否真正支持结论。",
+          "en": "Teaching example: Even an answer with citations requires checking whether the cited material actually supports its conclusions."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Groundedness定义及best practices支持核对来源和版本，AWS输出概率性说明支持仍需复核。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "幻觉和来源核验在本单元内直接定义。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-ms-ground",
+          "quote": "A grounded response adheres closely to the given information, avoiding speculation or fabrication."
+        },
+        {
+          "sourceId": "d34-review-aws-policy",
+          "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.3.1-unit-1",
+      "explanation": {
+        "zh": "为追踪问题，按必要性记录模型版本、告警和事件标识；确需记录输入输出时先最小化并脱敏，限制访问并按用途设置留存期限，避免把敏感原文写入日志。出现异常时先控制影响，再调查、修复和验证，满足恢复条件后再扩大使用。",
+        "en": "For traceability, record model versions, alerts, and event identifiers as needed. When recording inputs or outputs is necessary, minimize and redact them first, restrict access, and set retention periods according to purpose; avoid writing sensitive source content into logs. When an anomaly occurs, first contain its impact, then investigate, repair, and validate; expand use again only after recovery conditions are met."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：投诉激增时暂停自动发送，保留辅助起草并安排人工审核。",
+          "en": "Teaching example: When complaints surge, pause automated sending, retain drafting assistance, and arrange human review."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "事故演练顺序服务于具体条件，不是所有组织的唯一流程。",
+          "en": "The sequence of an incident exercise serves its specific conditions and is not the only process for every organization."
+        },
+        {
+          "zh": "可追踪不等于无条件保存原始输入输出；日志本身也需要隐私与访问控制。",
+          "en": "Traceability does not mean unconditionally storing raw inputs and outputs; logs themselves require privacy and access controls."
+        }
+      ],
+      "status": "supported",
+      "rationale": "已修正无条件记录输入输出的隐私缺陷。AWS Model testing与Logging sensitive information明确敏感资料保护、脱敏及最小访问；AGENTOPS05-BP03要求写入前脱敏和按目的留存；NIST MANAGE 4及AWS恢复测试支持控制影响、验证后恢复。具体顺序依组织情境，例子为教学应用。",
+      "prerequisiteIds": [
+        "3.3-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握运行监控与事件处理，再细化恢复程序。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-feedback",
+          "quote": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-aws-bedrock-least-privilege",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        },
+        {
+          "sourceId": "d34-aws-log-policy",
+          "quote": "PII redaction should happen before logs reach storage."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.3.2-unit-1",
+      "explanation": {
+        "zh": "偏差可能源自缺乏代表性的样本、不一致标注、优化目标和部署人群差异。对相关群体持续监测，并调查差异的原因。",
+        "en": "Bias may arise from unrepresentative samples, inconsistent labels, optimization objectives, and differences in deployed populations. Continuously monitor relevant groups and investigate the causes of disparities."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：新地区加入后，检查当地表达方式是否被原数据覆盖。",
+          "en": "Teaching example: After adding a new region, check whether the original data covers local ways of expressing things."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "仅扩大样本量不保证消除偏差。",
+          "en": "Simply increasing sample size does not guarantee that bias is eliminated."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "§3.7支持样本、算法和系统性偏差，以及样本量并非充分条件；不一致标签、目标和新地区的细节需直接证据。",
+      "prerequisiteIds": [
+        "3.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "判断偏差前需理解按相关群体检查影响。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        }
+      ],
+      "missing": [
+        "需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+      ]
+    },
+    {
+      "unitId": "3.3.3-unit-1",
+      "explanation": {
+        "zh": "核对输入资料允许的使用方式，并根据输出用途设置内容审核、投诉和处置流程。来源有授权不等于输出一定安全，过滤有害内容也不能证明已获版权许可。",
+        "en": "Check which uses of input material are permitted, and set up content review, complaint, and response processes appropriate to the output's intended use. Authorization to use a source does not guarantee safe output, and filtering harmful content does not establish copyright permission."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：公开发布前同时检查素材使用条件和输出风险。",
+          "en": "Teaching example: Before public release, check both the conditions for using source material and the risks of the output."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "模型生成不自动意味着无权利限制。",
+          "en": "Model generation does not automatically make content free of rights restrictions."
+        }
+      ],
+      "status": "supported",
+      "rationale": "GOVERN 6.1支持权利检查，政策支持内容风险评估；两类控制不能互相证明是独立要求的教学推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "输入许可与输出审核可在本单元并列理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-policy",
+          "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "3.3.4-unit-1",
+      "explanation": {
+        "zh": "幻觉是看似可信却错误或无依据的内容。核对资料相关性、引用支持和版本，对重要未知保留不确定性并升级复核。",
+        "en": "Hallucinations are plausible but incorrect or unsupported content. Check the relevance, citation support, and version of source material; preserve uncertainty about important unknowns and escalate for review."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：回答引用存在，但引用没有包含声称的退款期限。",
+          "en": "Teaching example: A cited source exists, but it does not state the refund deadline claimed in the answer."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "检索、引用或人工复核都不是零错误保证。",
+          "en": "Retrieval, citations, and human review do not guarantee zero errors."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Groundedness和best practices支持逐项核对来源与版本；政策说明输出可能不准确，未把检索或复核当无错保证。",
+      "prerequisiteIds": [
+        "3.3-lesson-4"
+      ],
+      "prerequisiteRationale": "先理解幻觉，再分析引用存在但不支持结论的情况。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-ms-ground",
+          "quote": "A grounded response adheres closely to the given information, avoiding speculation or fabrication."
+        },
+        {
+          "sourceId": "d34-review-aws-policy",
+          "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1-lesson-1",
+      "explanation": {
+        "zh": "评估领导共识、数据、文化、基础设施与治理等维度；不能只检查是否买到了模型。",
+        "en": "Assess leadership alignment, data, culture, infrastructure, governance, and other relevant dimensions; do not check only whether a model has been purchased."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：演示效果好，但没有数据负责人和运营人员，仍不足以规模部署。",
+          "en": "Teaching example: A good demonstration still does not establish readiness for scaled deployment if no one owns the data or operations."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "journey六支柱及Envision阶段包含业务、人员、治理、平台、安全和运营，支持多维准备评估。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "准备度作为组织概念可独立介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1-lesson-2",
+      "explanation": {
+        "zh": "成熟度描述从探索、实验到可持续运营等能力状态。它用于识别下一步发展方向，不只是给组织打一个漂亮分数。",
+        "en": "Maturity describes capability states ranging from exploration and experimentation to sustainable operations. It identifies the next direction for development rather than merely giving the organization an attractive score."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：能运行一次试点与能持续监测和维护多个应用，是不同能力。",
+          "en": "Teaching example: Running one pilot and continuously monitoring and maintaining multiple applications require different capabilities."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "journey明确四阶段成熟模型及各阶段能力；用阶段定位下一步是教学归纳，不把得分当认证。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "成熟度在本单元内直接定义。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1-lesson-3",
+      "explanation": {
+        "zh": "从人员、流程、技术和治理找出具体缺口，区分缺少技能、缺少权限和缺少合适流程等问题。",
+        "en": "Identify specific gaps in people, processes, technology, and governance, distinguishing missing skills, permissions, and suitable processes."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：员工不会核验答案，不能只通过更换模型来解决。",
+          "en": "Teaching example: Employees' inability to verify answers cannot be solved merely by replacing the model."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "CAF Workforce transformation识别角色技能缺口；journey跨支柱要求支持不把所有缺口归因模型。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "人员、流程、技术、治理是诊断分类，可直接学习。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1-lesson-4",
+      "explanation": {
+        "zh": "把能力建设与战略目标连接，依据当前准备程度安排可验证的阶段目标和投入。",
+        "en": "Connect capability development to strategic goals, and sequence verifiable milestones and investment according to current readiness."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：先建立数据责任和验证机制，再扩大相关业务用途。",
+          "en": "Teaching example: Establish data accountability and validation mechanisms before expanding the related business uses."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Envision Business对齐战略；CAF Change acceleration要求准备度、依赖和路线图，支持按能力建设安排投入。",
+      "prerequisiteIds": [
+        "4.1-lesson-1"
+      ],
+      "prerequisiteRationale": "投入顺序依赖准备度诊断，故先了解准备度维度。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1.1-unit-1",
+      "explanation": {
+        "zh": "准备度是能否开展并维持特定用途的条件。分别检查领导共识、数据可用性、文化与技能、基础设施和治理，记录证据而非只填写自评分。",
+        "en": "Readiness consists of the conditions needed to begin and sustain a particular use. Separately examine leadership alignment, data availability, culture and skills, infrastructure, and governance; record evidence rather than just self-assessment scores."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：有预算和演示，但没有资料负责人，数据准备仍有缺口。",
+          "en": "Teaching example: A budget and a demonstration do not close a data-readiness gap when nobody owns the source material."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "准备度会随用途改变，不能只给全企业一个分数。",
+          "en": "Readiness varies by use case and cannot be represented only by one enterprise-wide score."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Envision与Experiment按具体用例检查数据、资源和治理；记录证据、不以企业总分替代是教学推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "直接介绍准备条件，不强制先修内容相近的概览。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1.2-unit-1",
+      "explanation": {
+        "zh": "成熟度关注能力是否可重复、可治理并能持续运营。一次试点成功与多团队稳定使用不同；具体阶段模型应说明定义和证据要求。",
+        "en": "Maturity concerns whether capabilities are repeatable, governable, and sustainably operational. One successful pilot differs from stable use across teams; a particular stage model should state its definitions and evidence requirements."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：多个演示都依靠同一人手动修复，不代表已具备规模化能力。",
+          "en": "Teaching example: Several demonstrations relying on one person's manual repairs do not establish the capability to scale."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "成熟度模型是诊断工具，不是准确率认证。",
+          "en": "A maturity model is a diagnostic tool, not a certification of accuracy."
+        }
+      ],
+      "status": "supported",
+      "rationale": "阶段模型区分Experiment、Launch、Scale的不同运营能力；可持续能力不是准确率认证。",
+      "prerequisiteIds": [
+        "4.1-lesson-2"
+      ],
+      "prerequisiteRationale": "先认识成熟度用途，再评估阶段与证据定义。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.1.3-unit-1",
+      "explanation": {
+        "zh": "推广受阻可能因为不会操作、流程未改、系统不可用或没有授权。先确定具体阻碍，再安排对应干预，避免所有问题都用采购或培训解决。",
+        "en": "Adoption may be blocked by a lack of operating skills, unchanged processes, unavailable systems, or missing authorization. Identify the specific obstacle before choosing an intervention, rather than treating every problem with procurement or training."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：员工知道如何核验，但无权查看原文，应解决访问与流程问题。",
+          "en": "Teaching example: Employees know how to verify answers but lack access to the originals; address access and process issues."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "相同的低采用率可能有不同原因。",
+          "en": "The same low adoption rate may have different causes."
+        }
+      ],
+      "status": "supported",
+      "rationale": "CAF组织设计与Change acceleration要求识别障碍，journey单独规定权限与培训；低采用率的多原因诊断为应用推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "诊断分类由本单元提供，无必要硬先修。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "en": "Distinguishing gaps in skills, processes, technology, and permissions",
+        "zh": "区分技能、流程、技术与权限缺口"
+      }
+    },
+    {
+      "unitId": "4.1.4-unit-1",
+      "explanation": {
+        "zh": "把战略目标拆成可核验的阶段成果，识别前置依赖和责任人，优先补齐阻碍价值实现的关键条件，再验证下一步投入。",
+        "en": "Break strategic goals into verifiable milestones, identify prerequisite dependencies and owners, prioritize the critical conditions blocking value, and then validate the next investment."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：先统一资料责任和质量标准，再扩大使用团队。",
+          "en": "Teaching example: Establish consistent ownership of source material and quality standards before expanding to more teams."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能按“容易展示”替代战略与依赖分析。",
+          "en": "Ease of demonstration cannot replace analysis of strategy and dependencies."
+        }
+      ],
+      "status": "supported",
+      "rationale": "CAF要求战略、依赖、路线图；journey以用例和数据验证支持阶段投入，容易展示不等于战略价值。",
+      "prerequisiteIds": [
+        "4.1.1-unit-1",
+        "4.1.3-unit-1"
+      ],
+      "prerequisiteRationale": "路线安排需先知道当前条件及具体缺口，再判定依赖和优先级。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.2-lesson-1",
+      "explanation": {
+        "zh": "检查资料质量、可访问性和共享障碍。分散资料是否能适当地用于当前用途，比单纯的数据总量更重要。",
+        "en": "Examine data quality, accessibility, and barriers to sharing. Whether distributed material can appropriately serve the current use matters more than total data volume alone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：多个部门各有不同版本的客户字段，需要先统一口径与权限。",
+          "en": "Teaching example: Departments use different versions of customer fields; first align their meanings and permissions."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Envision数据盘点、Experiment数据可用与集成支持用途相关的数据准备；字段统一场景为原创示例。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "质量与共享障碍是入门概念。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.2-lesson-2",
+      "explanation": {
+        "zh": "明确数据用途、责任人、质量维护和共享规则。数据能够共享不等于应对所有人开放。",
+        "en": "Specify data uses, owners, quality maintenance, and sharing rules. The ability to share data does not mean it should be open to everyone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：为制度资料指定更新责任人，并保留版本和使用范围。",
+          "en": "Teaching example: Assign an owner to update policy material and retain versions and the permitted scope of use."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Launch包含血缘与来源、权限及持续数据治理，支持共享保留权限；指定维护人是教学治理设计。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "先介绍数据责任与共享边界，无其他硬先修。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.2-lesson-3",
+      "explanation": {
+        "zh": "按工作负载评估计算、存储、网络、集成、监测和安全需求，并考虑运维与成本；不只比较硬件性能。",
+        "en": "Assess compute, storage, networking, integration, monitoring, and security needs for the workload, including operations and cost; do not compare hardware performance alone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：交互式客服系统还要考虑延迟、可用性和失败时的处理方式。",
+          "en": "Teaching example: An interactive customer-support system also needs consideration of latency, availability, and failure handling."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Selection明确按工作负载与成本选择计算、存储、数据库和网络；PERF05-BP04以响应时间、吞吐、整体验证和监测评估集成效果；Reliability覆盖可用性及恢复。结合原GenAI治理资料支持跨性能、安全与运营的要求，客服例为教学应用。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "基础设施评估概览可直接理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-aws-architecture-selection",
+          "quote": "In the following sections we discuss the four main resource types to consider (compute, storage, database, and network)."
+        },
+        {
+          "sourceId": "d34-aws-load-test",
+          "quote": "Load test your workload to verify it can handle production load and identify any performance bottleneck."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.2.1-unit-1",
+      "explanation": {
+        "zh": "针对用途检查准确、完整、一致、及时和相关性，约定字段意义、主键、格式及缺失值处理。数据孤岛还会带来重复和不同口径。",
+        "en": "Check accuracy, completeness, consistency, timeliness, and relevance for the use case, and agree on field meanings, primary keys, formats, and handling of missing values. Data silos can also create duplication and inconsistent definitions."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：同一客户有两条订单副本，先查主键与来源而不是直接相加。",
+          "en": "Teaching example: If the same customer has two copies of an order, inspect the primary keys and sources before adding the amounts together."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "格式统一不等于数值真实，清洗需要保留依据。",
+          "en": "Consistent formatting does not establish that values are true; preserve the basis for data-cleaning decisions."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "数据指南支持数据质量和集成，但不足以证实此处五维质量定义和主键、缺失值及清洗审计细节。",
+      "prerequisiteIds": [
+        "4.2-lesson-1"
+      ],
+      "prerequisiteRationale": "先理解数据质量与孤岛问题，再进入字段契约。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [
+        "需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+      ]
+    },
+    {
+      "unitId": "4.2.2-unit-1",
+      "explanation": {
+        "zh": "资料需要明确维护责任、来源去向、版本和共享边界，以便核验答案、修复错误并追踪变化。共享应保留权限而不是复制后全面公开。",
+        "en": "Source material needs clear maintenance ownership, lineage, versions, and sharing boundaries so that answers can be checked, errors fixed, and changes traced. Sharing should preserve permissions rather than make copied material public to everyone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：制度更新后能查到负责部门、有效日期与旧版去向。",
+          "en": "Teaching example: After a policy update, the responsible department, effective date, and disposition of the old version remain traceable."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "能访问数据不等于可以任意再利用。",
+          "en": "Being able to access data does not grant unrestricted permission to reuse it."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "Launch Operations明确血缘、来源与质量，Security保留权限；版本处置、维护责任与再利用许可细节尚需材料。",
+      "prerequisiteIds": [
+        "4.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先理解用途、所有权和共享规则，再学习版本与血缘。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [
+        "需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+      ]
+    },
+    {
+      "unitId": "4.2.3-unit-1",
+      "explanation": {
+        "zh": "基础设施需服务实际工作负载，包括并发、数据存储、网络、模型调用、监测和故障恢复；评估成本、可扩展性与支持责任。",
+        "en": "Infrastructure must serve the actual workload, including concurrency, data storage, networking, model calls, monitoring, and failure recovery. Assess cost, scalability, and support responsibilities."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：客服系统除了生成质量，还要验证高峰响应和服务故障时的接手方式。",
+          "en": "Teaching example: Beyond generation quality, a customer-support system needs validation of peak-time responses and handover when the service fails."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "购买更大算力不能替代数据与运营准备。",
+          "en": "Buying more compute cannot replace data and operational readiness."
+        }
+      ],
+      "status": "supported",
+      "rationale": "架构选择支持计算、存储、网络和成本；负载测试要求生产相似环境、用户规模和指标；Failure management要求恢复目标与演练；runbook定义负责人、工具、权限和升级。结合journey数据准备，支持算力不能替代数据及运营条件的边界。",
+      "prerequisiteIds": [
+        "4.2-lesson-3"
+      ],
+      "prerequisiteRationale": "先理解基础设施评估范围，再展开容量和恢复。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-aws-architecture-selection",
+          "quote": "In the following sections we discuss the four main resource types to consider (compute, storage, database, and network)."
+        },
+        {
+          "sourceId": "d34-aws-load-test",
+          "quote": "Load test your workload to verify it can handle production load and identify any performance bottleneck."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        },
+        {
+          "sourceId": "d34-aws-runbooks",
+          "quote": "List the runbook owner and publish it in a central location."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.3-lesson-1",
+      "explanation": {
+        "zh": "领导层统一目标、提供资源并明确责任；倡导者推动沟通与实践，而不是替代正式治理。",
+        "en": "Leaders align goals, provide resources, and clarify accountability; champions promote communication and practical use without replacing formal governance."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：由业务负责人解释试点目标，并支持员工反馈问题。",
+          "en": "Teaching example: A business owner explains the pilot's goals and supports employees in reporting problems."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Transformational leadership强调赞助、资源和问责；Change acceleration含联盟与沟通，支持倡导不替代治理。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "领导与倡导职责可直接介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.3-lesson-2",
+      "explanation": {
+        "zh": "把业务、技术、法律与合规等能力放进协作机制，明确交付、评估和异常处理的责任。",
+        "en": "Bring business, technical, legal, compliance, and other relevant capabilities into a collaboration mechanism with clear responsibility for delivery, evaluation, and anomaly handling."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：试点负责人应知道谁可以决定暂停高风险功能。",
+          "en": "Teaching example: The pilot owner should know who can decide to pause a high-risk feature."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "GOVERN 2与3支持清晰职责及多学科团队；暂停示例对应MANAGE 2.4。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "无需以另一个概览强制先修团队协作。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.3-lesson-3",
+      "explanation": {
+        "zh": "说明实施时间、预期结果、岗位影响和支持安排；承认不确定性，提供双向反馈渠道。",
+        "en": "Explain implementation timing, expected outcomes, effects on roles, and support arrangements; acknowledge uncertainty and provide two-way feedback channels."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：员工担心岗位变化时，不能只发布“必须使用”的通知。",
+          "en": "Teaching example: When employees worry about role changes, simply issuing a mandatory-use notice is inadequate."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "Change acceleration覆盖人员影响、沟通、培训和反馈；对尚未验证结果的诚实表述合理，但本页未明确其边界。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "沟通安排独立可理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-4",
+      "explanation": {
+        "zh": "区分风险规避、抵触改变和害怕失败等原因，用反馈、安全试验和合适支持来回应。",
+        "en": "Distinguish risk aversion, resistance to change, fear of failure, and other causes, and respond with feedback, safe experimentation, and suitable support."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：低使用率可能是信任与任务适配问题，而不只是安装不足。",
+          "en": "Teaching example: Low usage may reflect trust or task-fit problems rather than merely too few installations."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "CAF支持识别阻碍、试验与反馈，但未直接给出风险规避/抵触/害怕失败的原因分类。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "行为原因在本单元内介绍，不添加虚假依赖。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-5",
+      "explanation": {
+        "zh": "围绕岗位任务、实际风险和人机协作设计练习，可结合POC、培训或黑客马拉松；签到不代表形成能力。",
+        "en": "Design practice around job tasks, actual risks, and human-AI collaboration, potentially using proofs of concept, training, or hackathons; attendance does not establish capability."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：让客服练习核对引用、纠正草稿并识别需要上报的情况。",
+          "en": "Teaching example: Have customer-support staff practice checking citations, correcting drafts, and identifying situations requiring escalation."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "Cloud fluency支持针对性、体验式学习及能力验证；AI核验、POC和黑客马拉松的具体练习目标未被直接覆盖。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "岗位培养方法可先独立介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补AI岗位任务训练与基于表现的能力考核资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补AI岗位任务训练与基于表现的能力考核资料。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-6",
+      "explanation": {
+        "zh": "重新设计人工操作、人工监督和AI协作的分工，保留批判性思考、同理心与创造力的作用。",
+        "en": "Redesign the division of manual work, human oversight, and AI collaboration while retaining the roles of critical thinking, empathy, and creativity."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：AI起草沟通内容，人类判断对方处境并承担发送责任。",
+          "en": "Teaching example: AI drafts a message; a person judges the recipient's situation and takes responsibility for sending it."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "GOVERN 3.2支持人机分工，CAF支持角色现代化；同理心和创造力的具体分工论断尚缺直接材料。",
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "岗位变化中的人工监督必须先明确人如何接手和授权。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+      ]
+    },
+    {
+      "unitId": "4.3.1-unit-1",
+      "explanation": {
+        "zh": "高层赞助者提供方向、资源和跨部门协调；业务倡导者帮助发现实际需求、示范使用和反馈。两者都需要明确权责，不能只有口号。",
+        "en": "Executive sponsors provide direction, resources, and cross-department coordination; business champions help identify practical needs, demonstrate use, and gather feedback. Both need clear authority and responsibilities rather than slogans alone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：业务赞助者解决部门间资源冲突，倡导者组织岗位试用。",
+          "en": "Teaching example: A business sponsor resolves resource conflicts between departments while a champion organizes role-specific trials."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "热情志愿者不能替代正式的资源与责任安排。",
+          "en": "Enthusiastic volunteers cannot replace formal resource and accountability arrangements."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Transformational leadership明确高层战略、范围、资源与问责；联盟与社区实践支持业务倡导功能，但志愿者不能代替正式责任是教学推论。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "此单元直接说明两类角色，无需重复概览作硬先修。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.3.2-unit-1",
+      "explanation": {
+        "zh": "团队需具备需求判断、数据维护、技术实现、风险审查和运营能力，明确交付标准、接手关系和谁能暂停不适当用途。",
+        "en": "The team needs capability in assessing needs, maintaining data, technical implementation, risk review, and operations, with clear delivery standards, handovers, and authority to pause inappropriate uses."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：上线审批中明确业务目标验收者和运行支持接手者。",
+          "en": "Teaching example: Launch approval identifies who accepts the business outcomes and who takes over operational support."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "团队名单齐全不代表决策机制清晰。",
+          "en": "A complete team roster does not establish a clear decision-making mechanism."
+        }
+      ],
+      "status": "supported",
+      "rationale": "GOVERN 2.1与3.1、MANAGE 2.4及Experiment People支持跨职能能力、职责、暂停与接手；团队名单不是决策机制。",
+      "prerequisiteIds": [
+        "3.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "先区分负责执行与最终问责，再设计团队交付和接手。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.3.3-unit-1",
+      "explanation": {
+        "zh": "沟通实施时间、已验证与尚未验证的结果、工作变化和支持措施，并建立双向反馈。不应为推动采用而许诺未经证实的岗位或收益结果。",
+        "en": "Communicate implementation timing, verified and unverified outcomes, changes to work, and support measures, and establish two-way feedback. Do not promote adoption through unsubstantiated promises about roles or benefits."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：说明哪些任务会被辅助，哪些决定仍由人承担。",
+          "en": "Teaching example: Explain which tasks will receive assistance and which decisions remain people's responsibility."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "只宣传收益而回避员工担忧会损害信任。",
+          "en": "Promoting only benefits while avoiding employees' concerns can damage trust."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "CAF支持沟通与组织影响管理，但未直接支持对未验证岗位承诺、信任后果的具体论断。",
+      "prerequisiteIds": [
+        "4.3-lesson-3"
+      ],
+      "prerequisiteRationale": "先理解沟通范围，再区分事实、未知和不当承诺。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+      ]
+    },
+    {
+      "unitId": "4.3.4-unit-1",
+      "explanation": {
+        "zh": "当员工担心犯错受罚时，建立限定范围的安全练习、报告渠道和改进机制。区分抵触改变、合理风险担忧和工具不适配。",
+        "en": "When employees fear punishment for mistakes, provide bounded safe practice, reporting channels, and improvement mechanisms. Distinguish resistance to change, reasonable risk concerns, and poor tool fit."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：让员工在测试材料上练习核验，报告失败不扣采用率。",
+          "en": "Teaching example: Let employees practice verification on test material without penalizing their adoption metric for reporting failures."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "强制使用或更换工具不一定解决文化障碍。",
+          "en": "Mandatory use or a replacement tool does not necessarily resolve cultural barriers."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "CAF鼓励试验和反馈，但未具体证明不扣采用率的机制或列举的心理安全干预。",
+      "prerequisiteIds": [
+        "4.1.3-unit-1"
+      ],
+      "prerequisiteRationale": "先区分低采用率的不同障碍，避免把权限问题误当文化问题。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+      ]
+    },
+    {
+      "unitId": "4.3.5-unit-1",
+      "explanation": {
+        "zh": "按岗位设计真实任务，练习核验、边界识别、升级与人机交接，并以实际表现评估。POC和黑客马拉松也需要责任与验证目标。",
+        "en": "Design realistic tasks for each role, practicing verification, recognition of limits, escalation, and human-AI handovers, and assess actual performance. Proofs of concept and hackathons also need accountability and validation goals."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：客服训练核对政策和升级投诉，开发者训练代码评审与测试。",
+          "en": "Teaching example: Customer-support staff practice checking policies and escalating complaints; developers practice code review and testing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "签到或通过工具介绍不能证明岗位胜任。",
+          "en": "Attendance or completion of a tool introduction does not prove competence for a role."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "Cloud fluency支持目标化训练和技能验证；岗位级核验、升级、交接及活动验收细则需直接资料。",
+      "prerequisiteIds": [
+        "3.3.4-unit-1",
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "练习核验与升级前需理解证据支持及人工接手边界。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+      ]
+    },
+    {
+      "unitId": "4.3.6-unit-1",
+      "explanation": {
+        "zh": "把可重复的辅助工作与需要语境、价值取舍和授权的判断分开，重新设计人的监督、沟通和创造性职责，明确最终责任。",
+        "en": "Separate repeatable assistance tasks from judgments requiring context, value trade-offs, and authorization. Redesign people's oversight, communication, and creative responsibilities, and clarify final accountability."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：AI起草投诉回复，人类理解处境、核验事实并决定发送。",
+          "en": "Teaching example: AI drafts a complaint response; a person understands the situation, verifies facts, and decides whether to send it."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "自动化一个任务不等于可以移交整个岗位责任。",
+          "en": "Automating one task does not mean responsibility for an entire role can be handed over."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "GOVERN 3.2支持人机职责，CAF支持角色调整；重复性与语境判断如何划分尚缺实证或正式方法。",
+      "prerequisiteIds": [
+        "3.2.1-unit-1",
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "任务自动化仍需明确最终问责与人工干预。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        }
+      ],
+      "missing": [
+        "需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+      ],
+      "requiredMaterial": [
+        "补充可公开引用的一手材料及对应章节或原句：需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+      ]
+    },
+    {
+      "unitId": "4.4-lesson-1",
+      "explanation": {
+        "zh": "按构想、实验、启动和扩展等阶段逐步验证。阶段之间应有反馈与决策依据，而非一次性替换全部流程。",
+        "en": "Validate progressively through stages such as envisioning, experimentation, launch, and scaling. Use feedback and evidence for decisions between stages rather than replacing all processes at once."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：从小范围验证开始，观察结果后决定是否继续。",
+          "en": "Teaching example: Begin with a limited test, then use the observed results to decide whether to continue."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "journey四阶段配合设计原则允许迭代，支持逐步验证而非一次替换。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "阶段框架在本单元完整介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-design",
+          "quote": "This does not preclude the use of rapid prototype-and-release development processes, but it does encourage open, transparent iteration."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4-lesson-2",
+      "explanation": {
+        "zh": "先获得可核验的小范围成果，再确认数据、流程和支持条件能否迁移到其他团队。",
+        "en": "First achieve verifiable results within a limited scope, then check whether the data, processes, and support conditions can transfer to other teams."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：志愿者试点成功，不代表所有部门立刻适用。",
+          "en": "Teaching example: Success in a volunteer pilot does not establish immediate suitability for every department."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Experiment强调用例成功标准，Launch要求扩展前识别缺口，Scale强调标准化条件；不可直接外推志愿者试点是应用推论。",
+      "prerequisiteIds": [
+        "4.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "扩展到新团队需重新检查具体用途的准备条件。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4-lesson-3",
+      "explanation": {
+        "zh": "卓越中心可提供共享能力、标准、实践与协作支持。它不应让业务责任在集中支持中消失。",
+        "en": "A center of excellence can provide shared capabilities, standards, practices, and collaboration support. Centralized support should not make business accountability disappear."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：把多个团队反复解决的问题整理成可复用的方法和支持机制。",
+          "en": "Teaching example: Turn problems repeatedly addressed by multiple teams into reusable methods and support mechanisms."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "CAF领导能力介绍CCoE的可复用模式，journey Scale People明确AI CoE；业务责任并未因此转移。",
+      "prerequisiteIds": [
+        "3.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "共享支持与最终业务问责的区别是理解COE边界的前提。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4-lesson-4",
+      "explanation": {
+        "zh": "同时跟踪使用、质量、风险、成本和长期业务价值，用反馈修正下一轮计划。",
+        "en": "Track use, quality, risk, cost, and long-term business value together, and use feedback to revise the next round of plans."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：账号开通数可以是活动指标，但不能单独证明业务价值。",
+          "en": "Teaching example: The number of activated accounts may be an activity metric, but it cannot alone demonstrate business value."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Launch Business评估效率、价值与成本，Operations及Monitoring评估运行风险和反馈；账号量不是价值充分证据。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "指标类别由本单元说明，无需模型技术先修。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-monitor",
+          "quote": "best practices for understanding actual benefits and risks in operation"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4-lesson-5",
+      "explanation": {
+        "zh": "从实验到生产需要明确责任、运维、治理、支持和异常处置，而不是仅把演示页面公开。",
+        "en": "Moving from experiment to production requires clear accountability, operations, governance, support, and anomaly handling, rather than simply making a demonstration page public."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：上线前确认谁值守、怎样监控、出错如何回退。",
+          "en": "Teaching example: Before launch, confirm who is on duty, how monitoring works, and how to roll back when something goes wrong."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "GLOE明确PoC与生产差异；GOVERN 2和MANAGE 4.1支持责任、监控、恢复和变更，演示不可替代。",
+      "prerequisiteIds": [
+        "3.3-lesson-1"
+      ],
+      "prerequisiteRationale": "生产交接需要先认识运行监控与事件机制。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4-lesson-6",
+      "explanation": {
+        "zh": "评估跨团队数据差异、性能、连续性、培训和支持能力，以可控节奏推广并保留纠正空间。",
+        "en": "Assess differences in data across teams, performance, continuity, training, and support capacity. Roll out at a controlled pace while preserving room for correction."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：扩展过程中发现新部门资料不足时，可暂停该用途并补齐条件。",
+          "en": "Teaching example: If a new department lacks source material during expansion, pause that use and supply the missing prerequisites."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "新增负载与恢复指南支持性能及连续性，运行手册支持团队接手；原journey要求数据、权限、培训和运营准备。按部门条件分批推广、资料不足则暂停是这些要求的教学应用，不是固定组织政策。",
+      "prerequisiteIds": [
+        "4.4-lesson-2"
+      ],
+      "prerequisiteRationale": "先理解试点迁移条件，再评估全企业推广。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-aws-load-test",
+          "quote": "Load test your workload to verify it can handle production load and identify any performance bottleneck."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        },
+        {
+          "sourceId": "d34-aws-runbooks",
+          "quote": "List the runbook owner and publish it in a central location."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4.1-unit-1",
+      "explanation": {
+        "zh": "构想明确问题与假设；实验验证可行性和价值；启动落实生产与治理；扩展验证更多团队和规模条件。反馈可使团队返回前一阶段。",
+        "en": "Envisioning clarifies problems and assumptions; experimentation validates feasibility and value; launch establishes production and governance; scaling validates additional teams and conditions at scale. Feedback may take the team back to an earlier stage."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：实验发现资料不可用时，返回补齐基础而不是强行上线。",
+          "en": "Teaching example: When an experiment reveals unusable source material, return to filling foundational gaps rather than forcing a launch."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "阶段不是不可回头的固定流水线。",
+          "en": "Stages do not form a fixed, irreversible pipeline."
+        }
+      ],
+      "status": "supported",
+      "rationale": "四阶段内容与journey一致；设计原则明确透明迭代，允许回到基础问题是流程应用，不声称固定强制顺序。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "阶段及反馈在本单元完整定义，无须重复概览。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-design",
+          "quote": "This does not preclude the use of rapid prototype-and-release development processes, but it does encourage open, transparent iteration."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4.2-unit-1",
+      "explanation": {
+        "zh": "试点结果受参与者、数据和支持条件影响。扩展前检查新部门任务差异、资源、成本与用户能力，分批验证并保留暂停点。",
+        "en": "Pilot results depend on participants, data, and support conditions. Before expansion, examine differences in new departments' tasks, resources, costs, and user capabilities; validate in batches and retain pause points."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：志愿者团队表现好，新部门资料缺失时先暂停该部门推广。",
+          "en": "Teaching example: A volunteer team performs well, but rollout to a new department is paused because it lacks source material."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "把试点配置复制过去不等于验证了可迁移性。",
+          "en": "Copying the pilot configuration does not validate transferability."
+        }
+      ],
+      "status": "supported",
+      "rationale": "journey提供阶段条件，MEASURE 2.3–2.5强调部署条件与泛化限制；分批验证和暂停是受控应用推论。",
+      "prerequisiteIds": [
+        "4.1.1-unit-1",
+        "4.4-lesson-2"
+      ],
+      "prerequisiteRationale": "扩展验证依赖具体准备条件及试点与其他团队的迁移区别。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4.3-unit-1",
+      "explanation": {
+        "zh": "卓越中心提供共享评估、标准、平台和经验复用，支持业务团队而不是代替它们定义价值或承担全部用例责任。",
+        "en": "A center of excellence provides shared evaluation, standards, platforms, and reusable experience. It supports business teams rather than replacing them in defining value or assuming all use-case responsibility."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：多个团队共享检索评估方法，各自负责本部门知识有效性。",
+          "en": "Teaching example: Teams share retrieval evaluation methods while each owns the validity of its department's knowledge."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "集中所有业务决策可能形成瓶颈。",
+          "en": "Centralizing all business decisions can create bottlenecks."
+        }
+      ],
+      "status": "supported",
+      "rationale": "CAF支持共享模式及权衡集中/分散结构，journey支持AI CoE；集中全部决策造成瓶颈为组织设计推论。",
+      "prerequisiteIds": [
+        "3.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "先理解问责归属，避免把共享能力误作业务责任转移。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4.4-unit-1",
+      "explanation": {
+        "zh": "推广后的反馈同时观察使用、结果、风险与成本，区分短期热度和持续价值，用问题报告推动下一轮改进。",
+        "en": "Post-rollout feedback examines use, outcomes, risks, and costs together, distinguishes short-term enthusiasm from sustained value, and uses problem reports to drive the next improvement cycle."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：使用率提高而复核成本激增时，重新评估流程和净收益。",
+          "en": "Teaching example: When usage rises but review costs surge, reassess the workflow and net benefits."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "成功案例集合不能替代完整运行数据。",
+          "en": "A collection of success stories cannot replace complete operational data."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Monitoring关注实际收益风险，feedback要求可追踪数据，Launch Business衡量成本价值；支持完整运行证据而非成功故事。",
+      "prerequisiteIds": [
+        "4.4-lesson-4"
+      ],
+      "prerequisiteRationale": "先理解各类指标，才能判断采用热度与净价值背离。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-monitor",
+          "quote": "best practices for understanding actual benefits and risks in operation"
+        },
+        {
+          "sourceId": "d34-review-aws-feedback",
+          "quote": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it."
+        },
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    },
+    {
+      "unitId": "4.4.5-unit-1",
+      "explanation": {
+        "zh": "生产交接要明确负责人、运行手册、监测、故障接手、回退、版本变更与持续资料维护。模型文件交付只是其中一部分。",
+        "en": "Production handover must specify owners, runbooks, monitoring, incident handover, rollback, version changes, and ongoing maintenance of source material. Delivery of model files is only one part."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：上线前演练失效检索、错误告警与人工接手。",
+          "en": "Teaching example: Before launch, rehearse retrieval failures, error alerts, and human takeover."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "演示页面能打开不代表系统具备生产条件。",
+          "en": "An accessible demonstration page does not establish production readiness."
+        }
+      ],
+      "status": "supported",
+      "rationale": "OPS07-BP03明确负责人、运行步骤、权限、异常升级及版本化更新；OPS06-BP01要求部署前测试回退或前进修复计划；Reliability要求经常恢复演练。结合journey持续资料治理，生产交接清单及演示不等于生产准备均有支持。",
+      "prerequisiteIds": [
+        "3.3-lesson-1",
+        "3.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "交接依赖事件处理及明确负责/问责，而非仅依赖转型阶段名称。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-aws-runbooks",
+          "quote": "List the runbook owner and publish it in a central location."
+        },
+        {
+          "sourceId": "d34-aws-rollback",
+          "quote": "Require a documented rollback plan to be accessible by all involved."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "en": "On-call coverage, alerts, rollback, and change",
+        "zh": "值守、告警、回退与变更"
+      }
+    },
+    {
+      "unitId": "4.4.6-unit-1",
+      "explanation": {
+        "zh": "扩大业务量和团队范围时，重新验证峰值容量、延迟、资料权限、培训覆盖、支持成本与业务连续性，按证据调整节奏。",
+        "en": "As workload and team coverage grow, revalidate peak capacity, latency, data permissions, training coverage, support costs, and business continuity, and adjust the pace based on evidence."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：新增地区前先确认本地资料、权限和支持接手。",
+          "en": "Teaching example: Before adding a region, confirm local source material, permissions, and support handover."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "规模扩大时原有质量与成本假设可能失效。",
+          "en": "Existing quality and cost assumptions may fail at a larger scale."
+        }
+      ],
+      "status": "supported",
+      "rationale": "PERF05-BP04要求按用户数、吞吐和响应时间定期负载测试，检查非线性扩展；Reliability按业务需要和恢复成本设RTO/RPO并在重大变化后复验；runbook支持团队接手。结合journey的权限、运营培训、成本与CAF人员能力，支持扩展时重新验证。",
+      "prerequisiteIds": [
+        "4.2.3-unit-1",
+        "4.4.2-unit-1"
+      ],
+      "prerequisiteRationale": "扩大前需了解工作负载及跨团队迁移条件，才能分别验证容量、连续性和部门准备程度。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d34-review-aws-gloe",
+          "quote": "Monitor and maintain generative AI applications in production."
+        },
+        {
+          "sourceId": "d34-aws-load-test",
+          "quote": "Load test your workload to verify it can handle production load and identify any performance bottleneck."
+        },
+        {
+          "sourceId": "d34-aws-failure-management",
+          "quote": "Your recovery processes should be as well exercised as your normal production processes."
+        },
+        {
+          "sourceId": "d34-aws-runbooks",
+          "quote": "List the runbook owner and publish it in a central location."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "d34-review-nist-rmf-core",
+      "title": "NIST AI RMF 1.0 — Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "excerpt": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-nist-trust",
+      "title": "NIST AI RMF 1.0 — AI Risks and Trustworthiness",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+      "excerpt": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-design",
+      "title": "AWS Responsible AI Lens — Design principles",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/design-principles.html",
+      "excerpt": "This does not preclude the use of rapid prototype-and-release development processes, but it does encourage open, transparent iteration.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-journey",
+      "title": "AWS Prescriptive Guidance — Generative AI adoption journey",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html",
+      "excerpt": "Make sure that generative AI models can only retrieve information that the user is authorized to access.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-people",
+      "title": "AWS Cloud Adoption Framework — People perspective: culture and change",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/people-perspective.html",
+      "excerpt": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-gloe",
+      "title": "AWS — Generative AI Lifecycle Operational Excellence framework",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html",
+      "excerpt": "Monitor and maintain generative AI applications in production.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-ms-ground",
+      "title": "Microsoft Learn — Groundedness detection",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness",
+      "excerpt": "A grounded response adheres closely to the given information, avoiding speculation or fabrication.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-monitor",
+      "title": "AWS Responsible AI Lens — Monitoring",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/monitoring.html",
+      "excerpt": "best practices for understanding actual benefits and risks in operation",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-feedback",
+      "title": "AWS — Architecting the production feedback loops",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/prod-monitoring-feedback.html",
+      "excerpt": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-policy",
+      "title": "AWS Responsible AI Policy (updated January 13, 2025)",
+      "url": "https://aws.amazon.com/ai/responsible-ai/policy/",
+      "excerpt": "Outputs should be evaluated for accuracy and appropriateness for your use case.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-bedrock-least-privilege",
+      "title": "AWS Security Blog — Implementing least privilege access for Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/",
+      "excerpt": "Use multiple, dedicated, least privileged roles for each task.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-agents-permissions",
+      "title": "AWS — Create a service role for Amazon Bedrock Agents",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-permissions.html",
+      "excerpt": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-runbooks",
+      "title": "AWS OPS07-BP03 — Use runbooks to perform procedures",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_ready_to_support_use_runbooks.html",
+      "excerpt": "List the runbook owner and publish it in a central location.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-load-test",
+      "title": "AWS PERF05-BP04 — Load test your workload",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/perf_process_culture_load_test.html",
+      "excerpt": "Load test your workload to verify it can handle production load and identify any performance bottleneck.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-failure-management",
+      "title": "AWS Reliability — Failure management",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-failmgmt.html",
+      "excerpt": "Your recovery processes should be as well exercised as your normal production processes.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-rollback",
+      "title": "AWS OPS06-BP01 — Plan for unsuccessful changes",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/ops_mit_deploy_risks_plan_for_unsucessful_changes.html",
+      "excerpt": "Require a documented rollback plan to be accessible by all involved.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-log-policy",
+      "title": "AWS AGENTOPS05-BP03 — Implement structured logging and comprehensive audit trails",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops05-bp03.html",
+      "excerpt": "PII redaction should happen before logs reach storage.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-architecture-selection",
+      "title": "AWS Well-Architected Framework (2023-04-10) — Selection",
+      "url": "https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/perf-sel.html",
+      "excerpt": "In the following sections we discuss the four main resource types to consider (compute, storage, database, and network).",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

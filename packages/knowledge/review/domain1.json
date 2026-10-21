@@ -1,0 +1,1898 @@
+{
+  "units": [
+    {
+      "unitId": "1.1-lesson-6",
+      "explanation": {
+        "zh": "人工智能是较广的领域，关注让系统执行与智能有关的任务。机器学习是其中一类方法，并非所有自动化都需要机器学习。",
+        "en": "Artificial intelligence is a broad field concerned with enabling systems to perform tasks associated with intelligence. Machine learning is one family of approaches within it; not all automation requires machine learning."
+      },
+      "examples": [
+        {
+          "zh": "清晰、固定的审批条件可直接编写规则，无需为了使用AI而换成模型。",
+          "en": "Clear, fixed approval conditions can be implemented directly as rules; there is no need to replace them with a model just to use AI."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "AI范围与ML从属关系有直接依据；固定规则示例为原创教学例示。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-ai",
+          "quote": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy."
+        },
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "人工智能 AI",
+        "en": "Artificial intelligence (AI)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-7",
+      "explanation": {
+        "zh": "机器学习利用数据学习模式，而不是为所有情况逐一编写规则。数据、目标和验证方式共同影响模型是否适用。",
+        "en": "Machine learning learns patterns from data instead of requiring an explicit rule for every case. The data, objective and validation method jointly affect whether a model is suitable."
+      },
+      "examples": [
+        {
+          "zh": "通过历史交易学习异常模式，与人工写定额阈值规则不同。",
+          "en": "Learning unusual patterns from historical transactions differs from manually setting a fixed threshold rule."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM Machine learning 开头说明从训练数据模式推断新数据，Machine learning vs. artificial intelligence 对照显式规则与学习；Model training 第1、3、5段说明样本适用性、参数与验证流程。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "prerequisiteRationale": "先掌握人工智能 AI，才能理解本单元中的机器学习 ML机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        },
+        {
+          "sourceId": "d1-training",
+          "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "机器学习 ML",
+        "en": "Machine learning (ML)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-16",
+      "explanation": {
+        "zh": "使用多层神经网络学习数据表示的机器学习方法；它属于机器学习，而不是与AI并列的领域。",
+        "en": "Deep learning is a machine learning approach that uses multilayer neural networks to learn data representations. It belongs within machine learning, rather than being a field at the same level as AI."
+      },
+      "examples": [
+        {
+          "zh": "识别商品照片中的缺陷。",
+          "en": "Identify defects in product photographs."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "多层神经网络与ML从属关系均获直接支持；缺陷识别为原创教学例示。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-7",
+        "1.1-lesson-17"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML、神经网络，才能理解本单元中的深度学习 DL机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-dl",
+          "quote": "Deep learning is a subset of machine learning driven by multilayered neural networks"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "深度学习 DL",
+        "en": "Deep learning (DL)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-17",
+      "explanation": {
+        "zh": "由相连的计算节点和可学习权重组成的模型，通过层间计算处理输入。",
+        "en": "A neural network is a model composed of connected computational nodes and learnable weights that processes inputs through computations across layers."
+      },
+      "examples": [
+        {
+          "zh": "学习交易特征与欺诈风险的关系。",
+          "en": "Learn the relationship between transaction features and fraud risk."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "分层节点、可学习权重、输入输出映射直接获支持。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握模型 Model，才能理解本单元中的神经网络机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-nn",
+          "quote": "stacks simple \"neurons\" in layers and learns pattern-recognizing weights and biases from data to map inputs to outputs."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "神经网络",
+        "en": "Neural networks"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-18",
+      "explanation": {
+        "zh": "使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。",
+        "en": "Natural language processing is an AI field that enables computers to process and analyze human language, including classification, extraction and translation tasks."
+      },
+      "examples": [
+        {
+          "zh": "从工单文字中识别客户诉求。",
+          "en": "Identify a customer's request from the text of a support ticket."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM What is NLP 段定义处理人类语言；Automation of repetitive tasks 明确分类、信息抽取和翻译，支持全部核心范围。工单为原创例示。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "prerequisiteRationale": "先掌握人工智能 AI，才能理解本单元中的自然语言处理 NLP机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-nlp",
+          "quote": "NLP tools can automatically classify, extract key information and summarize content"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "自然语言处理 NLP",
+        "en": "Natural language processing (NLP)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-19",
+      "explanation": {
+        "zh": "从图像或视频中提取和解释信息的AI领域。",
+        "en": "Computer vision is an AI field that extracts and interprets information from images or video."
+      },
+      "examples": [
+        {
+          "zh": "从产线照片中定位瑕疵。",
+          "en": "Locate defects in photographs from a production line."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "引文明确支持图像和视频的处理分析解释；领域定位在已读取正文中，生产线示例为教学例示。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "prerequisiteRationale": "先掌握人工智能 AI，才能理解本单元中的计算机视觉 CV机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-cv",
+          "quote": "process, analyze and interpret visual inputs such as images and videos."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "计算机视觉 CV",
+        "en": "Computer vision (CV)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-8",
+      "explanation": {
+        "zh": "生成式AI能产生文本、图像等内容。语言流畅并不等于事实正确，业务使用需要核对事实、适用性与复核成本。",
+        "en": "Generative AI can produce content such as text and images. Fluent language does not imply factual correctness; business use requires checking facts, suitability and the cost of review."
+      },
+      "examples": [
+        {
+          "zh": "起草访谈摘要之后，由负责人对照原文检查遗漏和误解。",
+          "en": "After drafting an interview summary, the responsible person checks it against the original for omissions and misunderstandings."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM AI 的 Generative AI 段明确文本图像等内容生成；AI hallucinations 开头说明可信外观与错误事实可并存。事实/适用性/复核成本是课程实施检查建议，未声称为官方固定指标。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-6"
+      ],
+      "prerequisiteRationale": "先掌握人工智能 AI，才能理解本单元中的生成式人工智能 GenAI机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-ai",
+          "quote": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy."
+        },
+        {
+          "sourceId": "d1-hallucinations",
+          "quote": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "生成式人工智能 GenAI",
+        "en": "Generative artificial intelligence (GenAI)"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-1",
+      "explanation": {
+        "zh": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+        "en": "An algorithm is an executable method or sequence of steps. Model training follows algorithms, but an algorithm is not itself the resulting trained model."
+      },
+      "examples": [
+        {
+          "zh": "按订单金额排序是一种算法；从订单记录学习需求规律则会得到预测模型。",
+          "en": "Sorting orders by value is an algorithm; learning demand patterns from order records produces a predictive model."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "NIST Definitions 段定义可执行计算规则；IBM Model training 开头及第三段把训练过程、调整参数和训练得到的参数值分开，支持算法与训练产物的区别。排序与需求预测为原创例示。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-algorithm",
+          "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+        },
+        {
+          "sourceId": "d1-training",
+          "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "算法 Algorithm",
+        "en": "Algorithm"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-2",
+      "explanation": {
+        "zh": "模型是用于将输入映射为输出的表示。在机器学习中，模型的参数通过训练从数据中学习。它的输出需要根据任务目标验证。",
+        "en": "A model is a representation used to map inputs to outputs. In machine learning, model parameters are learned from data through training. Its outputs must be validated against the task objective."
+      },
+      "examples": [
+        {
+          "zh": "将历史销量与日期输入需求模型，得到下一周销量估计。",
+          "en": "Feed historical sales and dates into a demand model to estimate next week's sales."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM Machine learning 的 How machine learning works 说明输入至目标输出映射；Model training 前五段说明参数学习、使用目标、训练与验证。库存例子为课程自拟。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握算法 Algorithm，才能理解本单元中的模型 Model机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        },
+        {
+          "sourceId": "d1-training",
+          "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "模型 Model",
+        "en": "Model"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-3",
+      "explanation": {
+        "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+        "en": "Training uses existing examples to adjust model parameters so the model learns patterns in data. Good training performance does not guarantee good performance on new data; independent validation is needed."
+      },
+      "examples": [
+        {
+          "zh": "用过去的订单记录学习需求规律，之后用未参与训练的时段检验。",
+          "en": "Learn demand patterns from past order records, then evaluate on a period not used in training."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM Model training 第3段直接说明学习是参数调整，第5段包括验证；Data leakage 开头明确不可在同一训练数据上评估及未见数据检验，支持泛化限定。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握模型 Model，才能理解本单元中的训练 Training机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-training",
+          "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+        },
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "训练 Training",
+        "en": "Training"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-4",
+      "explanation": {
+        "zh": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+        "en": "Inference uses a trained model to process new inputs. Training changes parameters; inference usually uses existing parameters to produce predictions or generated content."
+      },
+      "examples": [
+        {
+          "zh": "上线的客服模型为一张新工单起草回复，属于推理。",
+          "en": "A deployed customer service model drafts a reply to a new ticket: this is inference."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM AI inference 开头定义使用已训练模型产生新数据输出，紧接段落对比训练阶段的参数调整；Model training 说明调整得到知识参数。保留通常限定，未把在线学习与推理混为一谈。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握训练 Training，才能理解本单元中的推理 Inference机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-inference",
+          "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+        },
+        {
+          "sourceId": "d1-training",
+          "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "推理 Inference",
+        "en": "Inference"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-5",
+      "explanation": {
+        "zh": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。",
+        "en": "Prediction uses inputs and learned patterns to estimate an unknown outcome. Business evaluation must consider both error and the consequences of mistakes."
+      },
+      "examples": [
+        {
+          "zh": "需求高估可能造成库存积压；低估则可能造成缺货。",
+          "en": "Overestimating demand may create excess inventory; underestimating it may cause stockouts."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "已读IBM推理定义支持预测未知结果；业务错误代价的系统评价方法尚未取得专门资料，保留课程建议待领域审查。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握模型 Model，才能理解本单元中的预测 Prediction机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-inference",
+          "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+        }
+      ],
+      "missing": [
+        "已读IBM推理定义支持预测未知结果；业务错误代价的系统评价方法尚未取得专门资料，保留课程建议待领域审查。"
+      ],
+      "requiredMaterial": [
+        "预测定义及错误成本评估的官方资料。"
+      ],
+      "title": {
+        "zh": "预测 Prediction",
+        "en": "Prediction"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-20",
+      "explanation": {
+        "zh": "使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。",
+        "en": "Supervised learning uses examples with target labels to learn a mapping from inputs to targets. It can be used for classification and regression."
+      },
+      "examples": [
+        {
+          "zh": "利用已标记是否欺诈的交易训练分类器。",
+          "en": "Train a classifier using transactions labeled as fraudulent or not fraudulent."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM How supervised learning works 说明输入标签映射；Types of supervised learning 的 Classification、Regression 两小节分别列出离散类别与连续目标。欺诈例子为原创教学例示。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-7"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML，才能理解本单元中的监督学习机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-supervised",
+          "quote": "Supervised learning is a machine learning technique that uses labeled data sets to train artificial intelligence"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "监督学习",
+        "en": "Supervised learning"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-21",
+      "explanation": {
+        "zh": "从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。",
+        "en": "Unsupervised learning looks for structure or patterns in data without target labels, for example by clustering similar objects."
+      },
+      "examples": [
+        {
+          "zh": "按购买特征形成客户分群。",
+          "en": "Segment customers by their purchasing characteristics."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "引文直接支持无标签、模式和聚类；购买分群为原创教学例示。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-7"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML，才能理解本单元中的无监督学习机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-unsupervised",
+          "quote": "analyze and cluster unlabeled data sets. These algorithms discover hidden patterns or data groupings"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "无监督学习",
+        "en": "Unsupervised learning"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-22",
+      "explanation": {
+        "zh": "智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。",
+        "en": "In reinforcement learning, an agent learns an action policy through interactions with its environment and reward feedback, with a focus on long-term cumulative return."
+      },
+      "examples": [
+        {
+          "zh": "在模拟环境中学习库存补货策略。",
+          "en": "Learn an inventory replenishment policy in a simulated environment."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM Reinforcement learning process 说明智能体与环境、行动和奖励反馈；Components of reinforcement learning 逐项定义policy、reward、value，覆盖长期累计回报。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-7"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML，才能理解本单元中的强化学习机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-rl",
+          "quote": "The agent’s only objective is to maximize its cumulative rewards from the environment."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "强化学习",
+        "en": "Reinforcement learning"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-9",
+      "explanation": {
+        "zh": "结构化数据有相对明确的字段或模式，便于按统一口径查询、统计和校验。结构清晰不等于内容必然准确。",
+        "en": "Structured data has relatively well-defined fields or a schema, making it easier to query, summarize and validate consistently. A clear structure does not guarantee accurate contents."
+      },
+      "examples": [
+        {
+          "zh": "订单表中的日期、商品编号、数量，是明确的字段。",
+          "en": "Dates, product identifiers and quantities in an order table are explicit fields."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "结构化字段模式有直接依据；内容准确性不由结构推出是逻辑边界，订单字段为教学例示。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-structure",
+          "quote": "Structured data has a strict, predefined data model. Unstructured data does not have a predefined format."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "结构化数据",
+        "en": "Structured data"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-10",
+      "explanation": {
+        "zh": "非结构化数据通常不像关系表那样具有固定字段结构，常见形式有正文、图片和录音。使用前可能需要提取与组织信息。",
+        "en": "Unstructured data typically lacks the fixed field structure of a relational table; common forms include prose, images and audio recordings. Information may need to be extracted and organized before use."
+      },
+      "examples": [
+        {
+          "zh": "客户录音可先转写，再提取诉求；不能把转写过程当成事实核验。",
+          "en": "A customer recording can first be transcribed and then analyzed for requests; transcription must not be mistaken for fact-checking."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "无固定预定义格式获支持；正文图片录音和转写例示是概念应用，不将转写视为核验。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-structure",
+          "quote": "Structured data has a strict, predefined data model. Unstructured data does not have a predefined format."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "非结构化数据",
+        "en": "Unstructured data"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-11",
+      "explanation": {
+        "zh": "数据质量要结合用途检查准确性、完整性、一致性、时效性及相关性。更大的模型无法自动补救所有数据缺陷。",
+        "en": "Data quality must be assessed for the intended use, including accuracy, completeness, consistency, timeliness and relevance. A larger model cannot automatically repair every data defect."
+      },
+      "examples": [
+        {
+          "zh": "销售数据存在重复订单，先调查重复来源再比较模型方案。",
+          "en": "If sales data contains duplicate orders, investigate the source of duplication before comparing model options."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "引文直接列出质量维度和用途适合性；大模型不能保证补救属于质量要求的谨慎边界。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-quality",
+          "quote": "accuracy, completeness, validity, consistency, uniqueness, timeliness and fitness for purpose"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "数据质量",
+        "en": "Data quality"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-12",
+      "explanation": {
+        "zh": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。",
+        "en": "Historical data reflects past conditions. Use independent data to test whether a model can handle unseen cases, and watch for differences between future conditions and historical data."
+      },
+      "examples": [
+        {
+          "zh": "用过去节日销量训练的模型，遇到新的促销方式时仍需监测。",
+          "en": "A model trained on past holiday sales still needs monitoring when new promotion methods are introduced."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "独立评估与数据/关系变化证据共同支持泛化与历史局限。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握训练 Training，才能理解本单元中的历史数据与泛化机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        },
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "历史数据与泛化",
+        "en": "Historical data and generalization"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-13",
+      "explanation": {
+        "zh": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。",
+        "en": "Training data is used for learning; independent validation or testing assesses performance on unseen examples. Bringing test answers into training makes results look overly optimistic."
+      },
+      "examples": [
+        {
+          "zh": "不要将上线测试工单的标准答案直接放进待评估模型的输入。",
+          "en": "Do not directly include the reference answers for deployment test tickets in the input to the model being evaluated."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM 定义及 Examples and types of data leakage 说明独立验证、目标泄漏、训练测试污染和虚高表现。测试工单标准答案例子是将未来不可得目标泄漏原则用于课程场景。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握训练 Training，才能理解本单元中的训练集与验证机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "训练集与验证",
+        "en": "Training data and validation"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-14",
+      "explanation": {
+        "zh": "团队应先统一算法、模型、训练和推理等词的含义，再讨论方案。标准或框架可以帮助组织概念，但不能当作准确率保证。",
+        "en": "Teams should first agree on the meanings of terms such as algorithm, model, training and inference before discussing solutions. Standards or frameworks can organize concepts, but do not guarantee accuracy."
+      },
+      "examples": [
+        {
+          "zh": "业务说的“模型上线”与技术说的“模型训练完成”不是同一件事。",
+          "en": "What business staff call model deployment is not the same as what technical staff call completion of model training."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "统一术语框架直接获支持；不等同准确率保证是框架范围的边界说明。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2",
+        "1.1-lesson-3",
+        "1.1-lesson-4"
+      ],
+      "prerequisiteRationale": "先掌握算法 Algorithm、模型 Model、训练 Training、推理 Inference，才能理解本单元中的AI框架与统一词汇机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-iso23053",
+          "quote": "provides a conceptual framework and shared terminology for describing artificial intelligence (AI) systems that use machine learning (ML)."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "AI框架与统一词汇",
+        "en": "AI frameworks and shared terminology"
+      }
+    },
+    {
+      "unitId": "1.1-lesson-15",
+      "explanation": {
+        "zh": "按本课程大纲，需了解ISO/IEC 23053与ISO/IEC 42001等框架。前者关注使用机器学习的AI系统框架，后者关注组织AI管理体系；具体要求应查正式标准。",
+        "en": "This course outline calls for awareness of frameworks such as ISO/IEC 23053 and ISO/IEC 42001. The former concerns a framework for AI systems using machine learning; the latter concerns organizational AI management systems. Consult the formal standards for specific requirements."
+      },
+      "examples": [
+        {
+          "zh": "讨论组织责任和管理流程时，不把管理体系标准解释为模型零错误认证。",
+          "en": "When discussing organizational responsibilities and management processes, do not interpret a management system standard as certifying an error-free model."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "已读取ISO官方概览，支持两标准对象区别；未宣称读取收费标准全文，也未推导具体合规条款。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-14"
+      ],
+      "prerequisiteRationale": "先掌握AI框架与统一词汇，才能理解本单元中的ISO框架意识机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-iso23053",
+          "quote": "provides a conceptual framework and shared terminology for describing artificial intelligence (AI) systems that use machine learning (ML)."
+        },
+        {
+          "sourceId": "d1-iso42001",
+          "quote": "establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS) within organizations."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "ISO框架意识",
+        "en": "Awareness of ISO frameworks"
+      }
+    },
+    {
+      "unitId": "1.2-lesson-1",
+      "explanation": {
+        "zh": "条件明确且稳定时，优先考虑确定性规则。模式复杂、规则难穷举时再评估AI；比较价值、错误后果和维护成本。",
+        "en": "When conditions are clear and stable, consider deterministic rules first. When patterns are complex and rules are difficult to enumerate, evaluate AI; compare value, consequences of error and maintenance costs."
+      },
+      "examples": [
+        {
+          "zh": "报销超过明确金额需审批，可以先采用固定规则。",
+          "en": "If expenses above a clearly specified amount require approval, a fixed rule can be used first."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "IBM已读正文区分显式规则与复杂模式学习；规则优先的选择策略和价值/维护成本权衡尚缺决策指南。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-7"
+      ],
+      "prerequisiteRationale": "先掌握机器学习 ML，才能理解本单元中的规则还是AI机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        }
+      ],
+      "missing": [
+        "IBM已读正文区分显式规则与复杂模式学习；规则优先的选择策略和价值/维护成本权衡尚缺决策指南。"
+      ],
+      "requiredMaterial": [
+        "规则与模型选择、错误成本和维护成本的官方决策指南。"
+      ],
+      "title": {
+        "zh": "规则还是AI",
+        "en": "Rules or AI"
+      }
+    },
+    {
+      "unitId": "1.2-lesson-2",
+      "explanation": {
+        "zh": "代理围绕目标协调步骤和工具，可能具有一定自主性。代理的行动权限、失败处理和监督方式需要单独设计。",
+        "en": "An agent coordinates steps and tools around a goal and may have some autonomy. Its action permissions, failure handling and supervision must be designed separately."
+      },
+      "examples": [
+        {
+          "zh": "能调用退款工具的助手，需要退款额度、日志和人工升级边界。",
+          "en": "An assistant that can call a refund tool needs refund limits, logs and boundaries for escalation to a human."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM AI agents defined、Goal initialization and planning、Best practices 的 Activity logs / Interruption / Human supervision 支持工具目标协调、权限监督、失败处理；AWS action group参数与IAM政策为实施依据。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-4"
+      ],
+      "prerequisiteRationale": "先掌握推理 Inference，才能理解本单元中的AI代理与工具机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-agents",
+          "quote": "Although AI agents are autonomous in their decision-making processes, they require goals and predefined rules defined by humans."
+        },
+        {
+          "sourceId": "d1-actions",
+          "quote": "define the APIs that can be called, how to handle the action, and how to return the response."
+        },
+        {
+          "sourceId": "d1-iam",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "AI代理与工具",
+        "en": "AI agents and tools"
+      }
+    },
+    {
+      "unitId": "1.2-lesson-3",
+      "explanation": {
+        "zh": "多个代理的角色分工、信息交换和执行顺序属于编排问题。角色越多不自动代表效果越好，要检查任务完成与交接质量。",
+        "en": "Dividing roles, exchanging information and ordering execution among multiple agents are orchestration problems. More roles do not automatically improve results; check task completion and handoff quality."
+      },
+      "examples": [
+        {
+          "zh": "检索代理交给起草代理的资料仍需保留来源和访问范围。",
+          "en": "Materials passed from a retrieval agent to a drafting agent must retain their sources and access scope."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "IBM编排正文支持多角色协调及执行次序，AI agents的风险章节说明共享失败风险；资料交接来源和访问范围的具体约定尚缺专项指南。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握AI代理与工具，才能理解本单元中的代理协作与编排机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-orchestration",
+          "quote": "the process of coordinating multiple specialized AI agents within a unified system to efficiently achieve shared objectives."
+        }
+      ],
+      "missing": [
+        "IBM编排正文支持多角色协调及执行次序，AI agents的风险章节说明共享失败风险；资料交接来源和访问范围的具体约定尚缺专项指南。"
+      ],
+      "requiredMaterial": [
+        "多代理交接证据、访问控制和质量评估官方指南。"
+      ],
+      "title": {
+        "zh": "代理协作与编排",
+        "en": "Agent collaboration and orchestration"
+      }
+    },
+    {
+      "unitId": "1.2-lesson-4",
+      "explanation": {
+        "zh": "输入分布或业务关系变化可能使模型表现变差。部署后持续观察质量、成本和反馈，发现变化后调查原因并纠正。",
+        "en": "Changes in input distributions or business relationships may degrade model performance. After deployment, continually observe quality, cost and feedback, investigate changes and take corrective action."
+      },
+      "examples": [
+        {
+          "zh": "客户群变化后投诉分类变差，应调查新文本与原有训练样本的差别。",
+          "en": "If complaint classification deteriorates after the customer population changes, investigate differences between new text and the original training examples."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "IBM漂移正文支持变化检测、监测与重新测试；本单元把质量、成本、反馈整合为闭环的具体指标方案尚缺运行指南。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-12"
+      ],
+      "prerequisiteRationale": "先掌握历史数据与泛化，才能理解本单元中的模型漂移与持续监测机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        }
+      ],
+      "missing": [
+        "IBM漂移正文支持变化检测、监测与重新测试；本单元把质量、成本、反馈整合为闭环的具体指标方案尚缺运行指南。"
+      ],
+      "requiredMaterial": [
+        "部署后监测指标与纠正流程的官方资料。"
+      ],
+      "title": {
+        "zh": "模型漂移与持续监测",
+        "en": "Model drift and continuous monitoring"
+      }
+    },
+    {
+      "unitId": "1.2-lesson-5",
+      "explanation": {
+        "zh": "明确哪些工具已批准、受限、被阻止或仍在评估，说明数据使用边界并提供合适替代方案，有助于减少未经批准的使用。",
+        "en": "Clearly identify tools as approved, restricted, blocked or under evaluation. Explain data-use boundaries and provide suitable alternatives to help reduce unapproved use."
+      },
+      "examples": [
+        {
+          "zh": "员工需要处理敏感文档时，应知道可用工具和求助渠道。",
+          "en": "Employees handling sensitive documents should know which tools and support channels are available."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "IBM How to manage the risks of shadow AI 的治理框架、护栏、协作和风险沟通小节支持工具使用范围、敏感信息、测试环境及批准替代。四级标签是课程提出的实施分类，不是IBM规定的唯一标准。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-shadow",
+          "quote": "without the formal approval or oversight of the information technology (IT) department."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "工具分类与影子AI",
+        "en": "Tool classification and shadow AI"
+      }
+    },
+    {
+      "unitId": "1.2.1-unit-1",
+      "explanation": {
+        "zh": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+        "en": "A rule-based system maps explicit conditions to actions. The same input and rule version should yield the same result, making it suitable for fixed thresholds, required-field checks and explicit approval policies."
+      },
+      "examples": [
+        {
+          "zh": "报销超过5000元必须审批，用金额规则执行。",
+          "en": "Enforce approval for expenses above 5,000 yuan using an amount-based rule."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不是所有自动化都需要学习模型。",
+          "en": "Not all automation needs a learning model."
+        }
+      ],
+      "status": "supported",
+      "rationale": "NIST算法定义说明明确规则产生规定结果；IBM Machine learning vs. artificial intelligence 给出if-then规则并对比学习模型。此处仅针对确定性规则系统，同一输入包括规则读取的完整状态；金额审批为课程示例。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握算法 Algorithm，才能理解本单元中的确定性与可重复执行机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-algorithm",
+          "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+        },
+        {
+          "sourceId": "d1-ml",
+          "quote": "all machine learning is AI, but not all AI is machine learning."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "确定性与可重复执行",
+        "en": "Determinism and reproducible execution"
+      }
+    },
+    {
+      "unitId": "1.2.1-unit-2",
+      "explanation": {
+        "zh": "预测估计未知结果；生成产生新内容；代理协调工具和步骤执行目标。一个业务系统可以组合三者，应分别验收预测误差、内容质量和行动权限。",
+        "en": "Prediction estimates unknown outcomes; generation creates new content; an agent coordinates tools and steps to pursue a goal. A business system can combine all three, but should separately assess prediction error, content quality and action permissions."
+      },
+      "examples": [
+        {
+          "zh": "预测缺货后起草补货建议，实际下单仍需授权。",
+          "en": "After predicting a stockout, draft a replenishment suggestion; placing the actual order still requires authorization."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "能写出行动建议，不等于已被允许执行。",
+          "en": "Being able to write an action recommendation does not mean permission to execute it has been granted."
+        }
+      ],
+      "status": "supported",
+      "rationale": "IBM分别定义预测推理、生成新内容和自主工具行动；AI agents 的 Human supervision 要求高影响行动审批，AWS独立IAM授权机制支持能力不等于权限。分别验收是课程从能力区别提出的设计建议。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-5",
+        "1.1-lesson-8",
+        "1.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握预测 Prediction、生成式人工智能 GenAI、AI代理与工具，才能理解本单元中的预测、生成与行动的边界机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-inference",
+          "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+        },
+        {
+          "sourceId": "d1-ai",
+          "quote": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy."
+        },
+        {
+          "sourceId": "d1-agents",
+          "quote": "Although AI agents are autonomous in their decision-making processes, they require goals and predefined rules defined by humans."
+        },
+        {
+          "sourceId": "d1-iam",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "预测、生成与行动的边界",
+        "en": "Boundaries between prediction, generation and action"
+      }
+    },
+    {
+      "unitId": "1.2.2-unit-1",
+      "explanation": {
+        "zh": "代理的自主性是无需逐步人工指令即可选择行动的程度。应明确目标、可用工具、次数或金额限制、停止条件和异常升级，而不是把自主性理解为无限权限。",
+        "en": "Agent autonomy is the degree to which an agent can choose actions without step-by-step human instructions. Define goals, available tools, limits on attempts or amounts, stopping conditions and escalation for exceptions; autonomy does not mean unlimited permission."
+      },
+      "examples": [
+        {
+          "zh": "连续两次检索失败后停止，转给人工核对。",
+          "en": "Stop after two consecutive failed retrieval attempts and transfer the task to a human for checking."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "自主性越高，监督和边界越不能省略。",
+          "en": "Greater autonomy makes supervision and boundaries more necessary, not optional."
+        }
+      ],
+      "status": "supported",
+      "rationale": "IBM 定义、Goal initialization、Infinite feedback loops、Interruption 与 Human supervision 涵盖自主行动、目标工具、停止与人工介入；AWS最小权限支持行动范围。两次失败和金额限制是原创控制方案例示。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握AI代理与工具，才能理解本单元中的自主性与停止条件机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-agents",
+          "quote": "Although AI agents are autonomous in their decision-making processes, they require goals and predefined rules defined by humans."
+        },
+        {
+          "sourceId": "d1-iam",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "自主性与停止条件",
+        "en": "Autonomy and stopping conditions"
+      }
+    },
+    {
+      "unitId": "1.2.2-unit-2",
+      "explanation": {
+        "zh": "工具调用需要约定输入、输出、错误、授权和副作用。退款、发邮件等改变外部状态的工具，应在服务端检查权限并保存审计记录。",
+        "en": "Tool calls require agreements on inputs, outputs, errors, authorization and side effects. Tools that change external state, such as refunding or sending email, should check permissions on the server and retain audit records."
+      },
+      "examples": [
+        {
+          "zh": "退款工具拒绝超过额度的请求，并记录调用者。",
+          "en": "A refund tool rejects requests above the limit and logs the caller."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "提示词中的提醒不能替代服务端权限检查。",
+          "en": "Reminders in a prompt cannot replace server-side authorization checks."
+        }
+      ],
+      "status": "supported",
+      "rationale": "AWS agents-prereq 的 Action group 段定义参数/API/处理/响应；agents-lambda 的 Input event、Response 与 responseState 规定输入、输出和失败处理，开头要求资源权限政策。AWS安全文的 Model adaptation/Model testing 要求IAM执行授权、验证限制及CloudTrail记录，明确避免日志泄露敏感提示。退款额度由服务端业务逻辑执行是教学应用；提示不等于授权由独立IAM控制机制推出。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握AI代理与工具，才能理解本单元中的工具契约与最小行动权限机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-actions",
+          "quote": "define the APIs that can be called, how to handle the action, and how to return the response."
+        },
+        {
+          "sourceId": "d1-lambda",
+          "quote": "you must attach a resource-based policy to the function to provide permissions for the agent."
+        },
+        {
+          "sourceId": "d1-iam",
+          "quote": "Use multiple, dedicated, least privileged roles for each task."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "工具契约与最小行动权限",
+        "en": "Tool contracts and least action privileges"
+      }
+    },
+    {
+      "unitId": "1.2.2-unit-3",
+      "explanation": {
+        "zh": "多代理编排规定谁做什么、传什么证据以及何时交接。串行流程适合依赖关系，受控并行可处理独立任务；交接应保留来源、状态和失败责任。",
+        "en": "Multi-agent orchestration specifies who does what, which evidence is passed and when handoffs occur. Sequential workflows suit dependent tasks, while controlled parallelism can handle independent tasks. Handoffs should retain sources, status and responsibility for failures."
+      },
+      "examples": [
+        {
+          "zh": "检索角色交付带出处的资料，审核角色核对后交给起草者。",
+          "en": "A retrieval role delivers sourced material; a review role checks it before passing it to the drafter."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "增加角色数量本身不是质量证据。",
+          "en": "Increasing the number of roles is not itself evidence of quality."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "已读编排正文支持角色与同步协调；串并行任务依赖、交接证据及失败责任的明确流程仍需专项编排资料。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握代理协作与编排，才能理解本单元中的交接与编排机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-orchestration",
+          "quote": "the process of coordinating multiple specialized AI agents within a unified system to efficiently achieve shared objectives."
+        }
+      ],
+      "missing": [
+        "已读编排正文支持角色与同步协调；串并行任务依赖、交接证据及失败责任的明确流程仍需专项编排资料。"
+      ],
+      "requiredMaterial": [
+        "代理串并行编排、来源传递、状态与失败责任官方文档。"
+      ],
+      "title": {
+        "zh": "交接与编排",
+        "en": "Handoffs and orchestration"
+      }
+    },
+    {
+      "unitId": "1.2.3-unit-1",
+      "explanation": {
+        "zh": "数据漂移是输入分布变化；概念漂移是输入与目标关系变化。发现分布变化不等于已经证明业务损害，需要结合真实结果和任务指标调查。",
+        "en": "Data drift is a change in the input distribution; concept drift is a change in the relationship between inputs and targets. Detecting a distribution change does not prove business harm; investigate using actual outcomes and task metrics."
+      },
+      "examples": [
+        {
+          "zh": "新客户用词变了是输入变化，促销使同一价格对应的需求改变是关系变化。",
+          "en": "Different wording from new customers is an input change; a promotion changing demand at the same price is a relationship change."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能看到漂移告警就不加验证地自动重训上线。",
+          "en": "Do not automatically retrain and deploy without validation merely because a drift alert fires."
+        }
+      ],
+      "status": "supported",
+      "rationale": "IBM Model drift 的 Concept drift 和 Data drift 小节区分输入目标关系与输入分布；Best practices 的 Automate model testing 要求预生产验证并持续测试。告警后调查再上线是本课程的谨慎实施原则，未宣称漂移必然损害业务。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-4"
+      ],
+      "prerequisiteRationale": "先掌握模型漂移与持续监测，才能理解本单元中的数据漂移与概念漂移机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        },
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "数据漂移与概念漂移",
+        "en": "Data drift and concept drift"
+      }
+    },
+    {
+      "unitId": "1.2.3-unit-2",
+      "explanation": {
+        "zh": "上线前记录可比较的质量、延迟、成本和失败率。运行时监测变化，调查原因，验证修复，再决定重训、回退或调整用途。",
+        "en": "Before deployment, record comparable baselines for quality, latency, cost and failure rate. During operation, monitor changes, investigate causes and validate fixes before deciding to retrain, roll back or adjust the use case."
+      },
+      "examples": [
+        {
+          "zh": "投诉分类准确率下降时，抽查新样本并比较旧版模型。",
+          "en": "When complaint classification accuracy falls, inspect new examples and compare with the previous model version."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "一次上线验收不能替代持续监测。",
+          "en": "A one-time deployment acceptance test cannot replace continuous monitoring."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "已读漂移正文支持测试和监测；延迟/成本/失败率基线以及重训、回退、用途调整的决策条件尚缺运行手册。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.2-lesson-4"
+      ],
+      "prerequisiteRationale": "先掌握模型漂移与持续监测，才能理解本单元中的监测基线与反馈闭环机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-drift",
+          "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+        }
+      ],
+      "missing": [
+        "已读漂移正文支持测试和监测；延迟/成本/失败率基线以及重训、回退、用途调整的决策条件尚缺运行手册。"
+      ],
+      "requiredMaterial": [
+        "生产监测指标基线、修复验证与回退流程官方资料。"
+      ],
+      "title": {
+        "zh": "监测基线与反馈闭环",
+        "en": "Monitoring baselines and feedback loops"
+      }
+    },
+    {
+      "unitId": "1.2.4-unit-1",
+      "explanation": {
+        "zh": "把工具标为已批准、受限、评估中或禁止，同时说明适用数据和用途。影子AI是未经组织批准或管理的使用，应提供可用替代、培训和反馈渠道。",
+        "en": "Classify tools as approved, restricted, under evaluation or prohibited, and specify applicable data and uses. Shadow AI means use without organizational approval or management; provide usable alternatives, training and feedback channels."
+      },
+      "examples": [
+        {
+          "zh": "公开可用工具清单，并提供敏感文档的合规处理渠道。",
+          "en": "Publish a list of available tools and provide a compliant channel for processing sensitive documents."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "只列禁用名单而不解决工作需求，难以形成可执行治理。",
+          "en": "A blocklist alone, without addressing work needs, makes governance difficult to carry out."
+        }
+      ],
+      "status": "supported",
+      "rationale": "IBM How to manage the risks of shadow AI 涵盖协作、适用工具和敏感数据规则、培训、试验环境、阻止未授权平台及批准替代。四级清单与反馈渠道是把上述机制组织成课程实践，不是标准强制分类。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可用自身定义和日常例子独立入门，无必要硬先修；不把同技能首条机械设为依赖。",
+      "evidence": [
+        {
+          "sourceId": "d1-shadow",
+          "quote": "without the formal approval or oversight of the information technology (IT) department."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "工具分级与影子AI",
+        "en": "Tool classification and shadow AI"
+      }
+    },
+    {
+      "unitId": "1.3-lesson-1",
+      "explanation": {
+        "zh": "提示应说明目标、必要背景、约束和期望输出。用代表性任务测试提示，避免只看一条漂亮回答。",
+        "en": "Prompts should state the objective, necessary context, constraints and expected output. Test prompts on representative tasks instead of judging them from one attractive response."
+      },
+      "examples": [
+        {
+          "zh": "要求依据提供的访谈生成三点摘要，并为每点标出对应原文。",
+          "en": "Ask for a three-point summary based on a supplied interview, identifying the corresponding original passage for each point."
+        }
+      ],
+      "misconceptions": [],
+      "status": "needs-review",
+      "rationale": "AWS Prompt engineering concepts 已支持任务、上下文、样例及输出约束；代表性任务测试的选样与验收办法尚需评测资料。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-8"
+      ],
+      "prerequisiteRationale": "先掌握生成式人工智能 GenAI，才能理解本单元中的提示工程机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        }
+      ],
+      "missing": [
+        "AWS Prompt engineering concepts 已支持任务、上下文、样例及输出约束；代表性任务测试的选样与验收办法尚需评测资料。"
+      ],
+      "requiredMaterial": [
+        "提示组成及代表性评测的官方技术指南。"
+      ],
+      "title": {
+        "zh": "提示工程",
+        "en": "Prompt engineering"
+      }
+    },
+    {
+      "unitId": "1.3-lesson-2",
+      "explanation": {
+        "zh": "模型一次请求可处理的上下文有上限，输入与输出预算需要规划。资料过多时应筛选相关片段，而不是假设全部文件都会被有效使用。",
+        "en": "There is a limit to the context a model can process in one request, so plan input and output budgets. When there is too much material, select relevant passages rather than assuming every file will be used effectively."
+      },
+      "examples": [
+        {
+          "zh": "先按章节切分教材，再提供与当前问题直接相关的段落。",
+          "en": "Split a textbook by chapter first, then provide passages directly relevant to the current question."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Anthropic How the context window works 明确历史与输出共享窗口、系统提示和工具消息计入；IBM长上下文挑战说明容量不能保证利用。筛选相关片段是课程实施建议。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-8"
+      ],
+      "prerequisiteRationale": "先掌握生成式人工智能 GenAI，才能理解本单元中的词元与上下文窗口机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-context-api",
+          "quote": "all the text a language model can reference when generating a response, including the response itself."
+        },
+        {
+          "sourceId": "d1-context",
+          "quote": "The size of the context window determines the maximum number of tokens that the model can “pay attention to” at any one time."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "词元与上下文窗口",
+        "en": "Tokens and context windows"
+      }
+    },
+    {
+      "unitId": "1.3-lesson-3",
+      "explanation": {
+        "zh": "RAG先检索相关且获授权的资料，再把资料提供给生成过程。它改善可用信息条件，但不保证检索和回答一定正确。",
+        "en": "RAG first retrieves relevant, authorized material and then supplies it to generation. It improves the information available, but does not guarantee correct retrieval or answers."
+      },
+      "examples": [
+        {
+          "zh": "制度频繁更新时，核对检索资料的版本、权限和回答引用。",
+          "en": "For frequently changing policies, check the retrieved material's version, permissions and the answer's citations."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "AWS How does Retrieval-Augmented Generation work 说明先检索后生成；More developer control 明确分级授权和错误资料来源；Update external data 说明资料及嵌入更新。IBM幻觉定义说明回答不保证正确。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-8"
+      ],
+      "prerequisiteRationale": "先掌握生成式人工智能 GenAI，才能理解本单元中的检索增强生成 RAG机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-rag",
+          "quote": "references an authoritative knowledge base outside of its training data sources before generating a response."
+        },
+        {
+          "sourceId": "d1-hallucinations",
+          "quote": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "检索增强生成 RAG",
+        "en": "Retrieval-augmented generation (RAG)"
+      }
+    },
+    {
+      "unitId": "1.3-lesson-4",
+      "explanation": {
+        "zh": "微调利用训练样本调整模型行为或任务适应性。它与在请求中加入新资料不同，也不能替代对不断变化事实的维护。",
+        "en": "Fine-tuning uses training examples to adjust model behavior or adapt it to a task. It differs from adding new material to a request and cannot replace maintenance of continually changing facts."
+      },
+      "examples": [
+        {
+          "zh": "统一输出风格与补充最新制度属于不同需求，先辨别问题再选技术。",
+          "en": "Standardizing output style and supplying the latest policy are different needs; identify the problem before choosing a technique."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "继续训练既有权重与请求前读取外部知识有直接区别；不断变化事实需维护是两种机制的合理教学边界。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.1-lesson-3",
+        "1.1-lesson-8"
+      ],
+      "prerequisiteRationale": "先掌握训练 Training、生成式人工智能 GenAI，才能理解本单元中的微调 Fine-tuning机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-finetune",
+          "quote": "fine-tuning entails techniques to further train a model whose weights have already been updated through prior training."
+        },
+        {
+          "sourceId": "d1-rag",
+          "quote": "references an authoritative knowledge base outside of its training data sources before generating a response."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "微调 Fine-tuning",
+        "en": "Fine-tuning"
+      }
+    },
+    {
+      "unitId": "1.3.1-unit-1",
+      "explanation": {
+        "zh": "提示应交代要做的工作、相关资料、不可越过的边界及期望输出。把原始资料与操作指令分隔，能减少模型把文档文字误当指令的机会。",
+        "en": "A prompt should state the work to do, relevant material, boundaries that must not be crossed and the expected output. Separating source material from operational instructions can reduce the chance that document text is mistaken for an instruction."
+      },
+      "examples": [
+        {
+          "zh": "依据访谈提取三项需求，逐项引用，未出现的内容写未知。",
+          "en": "Extract three requirements from an interview, cite each one, and write unknown for information that is absent."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "更长的提示不必然更好，必须验证输出是否满足任务。",
+          "en": "A longer prompt is not necessarily better; verify that the output satisfies the task."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "AWS正文支持提示组件及分隔示例；分隔文档与操作指令能降低指令混淆的安全性声明仍需专项资料，不能把格式分隔当作权限边界。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握提示工程，才能理解本单元中的任务、上下文、约束与格式机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        }
+      ],
+      "missing": [
+        "AWS正文支持提示组件及分隔示例；分隔文档与操作指令能降低指令混淆的安全性声明仍需专项资料，不能把格式分隔当作权限边界。"
+      ],
+      "requiredMaterial": [
+        "提示分隔、注入防御及任务上下文约束格式官方指导。"
+      ],
+      "title": {
+        "zh": "任务、上下文、约束与格式",
+        "en": "Task, context, constraints and format"
+      }
+    },
+    {
+      "unitId": "1.3.1-unit-2",
+      "explanation": {
+        "zh": "用典型、边界和失败案例测试提示，记录版本和成功标准。少样本示例应展示期望任务模式，而不是把测试题答案泄漏给模型。",
+        "en": "Test prompts with typical, boundary and failure cases, recording versions and success criteria. Few-shot examples should demonstrate the intended task pattern rather than leak test answers to the model."
+      },
+      "examples": [
+        {
+          "zh": "同时测试普通工单、缺失资料工单与无权访问工单。",
+          "en": "Test ordinary tickets, tickets with missing information and tickets involving unauthorized access."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "单次漂亮回答不能证明提示可稳定复用。",
+          "en": "One impressive answer does not demonstrate reliable reuse of a prompt."
+        }
+      ],
+      "status": "needs-review",
+      "rationale": "已读IBM和AWS正文支持少样本展示任务模式；版本、成功标准及典型/边界/失败用例的测试管理仍需专项评测资料。 双语保留全部限定；例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-1"
+      ],
+      "prerequisiteRationale": "先掌握提示工程，才能理解本单元中的代表性样例与提示版本机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-prompt",
+          "quote": "few-shot prompting, which provides the model with sample outputs to clarify expectations."
+        },
+        {
+          "sourceId": "d1-leakage",
+          "quote": "models should not be evaluated on the same data they're trained on."
+        },
+        {
+          "sourceId": "d1-prompt-components",
+          "quote": "the task or instruction you want the LLMs to perform, the context of the task"
+        }
+      ],
+      "missing": [
+        "已读IBM和AWS正文支持少样本展示任务模式；版本、成功标准及典型/边界/失败用例的测试管理仍需专项评测资料。"
+      ],
+      "requiredMaterial": [
+        "提示版本管理、代表性测试集和答案泄漏防范资料。"
+      ],
+      "title": {
+        "zh": "代表性样例与提示版本",
+        "en": "Representative examples and prompt versions"
+      }
+    },
+    {
+      "unitId": "1.3.2-unit-1",
+      "explanation": {
+        "zh": "上下文窗口有限。规划时需计入指令、检索片段、历史对话、工具消息和预留输出，超过限制时应筛选、压缩或拆分。",
+        "en": "Context windows are limited. Budget for instructions, retrieved passages, conversation history, tool messages and reserved output; select, compress or split material when limits would be exceeded."
+      },
+      "examples": [
+        {
+          "zh": "窗口8000，指令1000、资料5000、历史1000，输出1500会超过500。",
+          "en": "With a window of 8,000 tokens, instructions of 1,000, material of 5,000, history of 1,000 and output of 1,500 exceed the limit by 500."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "词元不等于中文字数，实际计数依模型分词器。",
+          "en": "Tokens are not the same as Chinese character counts; actual counts depend on the model's tokenizer."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Anthropic How the context window works 与 Context window overflow behavior 说明请求各部分、工具结果和输出的预算；IBM Context windows and tokenization 解释分词与字符不等价。8000算例是假设共享窗口的教学算术，不代表任何具体型号。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握词元与上下文窗口，才能理解本单元中的输入与输出共享预算机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-context-api",
+          "quote": "all the text a language model can reference when generating a response, including the response itself."
+        },
+        {
+          "sourceId": "d1-context",
+          "quote": "The size of the context window determines the maximum number of tokens that the model can “pay attention to” at any one time."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "输入与输出共享预算",
+        "en": "Shared input and output budget"
+      }
+    },
+    {
+      "unitId": "1.3.2-unit-2",
+      "explanation": {
+        "zh": "资料能放入窗口不代表所有内容都会被正确使用。优先提供当前问题相关、获授权且版本明确的片段，并验证回答是否真正引用了支持结论的内容。",
+        "en": "Material fitting in the window does not mean all of it will be used correctly. Prioritize passages relevant to the current question, authorized for use and clearly versioned; verify that the answer actually cites content supporting its conclusions."
+      },
+      "examples": [
+        {
+          "zh": "只取当前退款政策相关段落，而不是拼进所有部门手册。",
+          "en": "Retrieve only the passages relevant to the current refund policy instead of concatenating every department's handbook."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "上下文容量不是事实准确率的保证。",
+          "en": "Context capacity does not guarantee factual accuracy."
+        }
+      ],
+      "status": "supported",
+      "rationale": "IBM context window 的长上下文挑战段说明信息进入窗口仍可能未被正确使用，位置影响利用；AWS RAG 的授权、来源核对及外部更新小节支持相关性、权限和版本维护。核对引用支持结论是课程检查建议。 依据已浏览正文判定，短引文仅作定位锚点；例子均为原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-2"
+      ],
+      "prerequisiteRationale": "先掌握词元与上下文窗口，才能理解本单元中的相关性与信息位置机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-context",
+          "quote": "The size of the context window determines the maximum number of tokens that the model can “pay attention to” at any one time."
+        },
+        {
+          "sourceId": "d1-rag",
+          "quote": "references an authoritative knowledge base outside of its training data sources before generating a response."
+        },
+        {
+          "sourceId": "d1-hallucinations",
+          "quote": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "相关性与信息位置",
+        "en": "Relevance and information placement"
+      }
+    },
+    {
+      "unitId": "1.3.3-unit-1",
+      "explanation": {
+        "zh": "RAG先检索资料，再把相关片段提供给模型生成。分别评估是否找对资料，以及回答是否被资料支持；同时维护版本、权限和缺失证据时的处理。",
+        "en": "RAG retrieves material first and supplies relevant passages to a model for generation. Separately evaluate whether the right material was found and whether it supports the answer; also maintain versions, permissions and a procedure for missing evidence."
+      },
+      "examples": [
+        {
+          "zh": "政策更新后重建索引，并测试旧版本是否仍被错误引用。",
+          "en": "After a policy update, rebuild the index and test whether the old version is still cited incorrectly."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "有引用不等于引用支持结论。",
+          "en": "Having a citation does not mean the cited material supports the conclusion."
+        }
+      ],
+      "status": "supported",
+      "rationale": "AWS评测文档分检索与检索生成，列Context relevance、Faithfulness和Citation coverage；RAG概览的More developer control及Update external data支持权限和版本更新。缺证时应制定处理是课程实施建议，未声称某固定回退政策是官方要求。 短引文是正文定位锚点，所有业务例子为原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握检索增强生成 RAG，才能理解本单元中的RAG的检索与生成两道关机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-rag",
+          "quote": "references an authoritative knowledge base outside of its training data sources before generating a response."
+        },
+        {
+          "sourceId": "d1-rag-eval",
+          "quote": "Amazon Bedrock RAG evaluations offers two types of evaluation job, retrieve only and retrieve and generate."
+        },
+        {
+          "sourceId": "d1-hallucinations",
+          "quote": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "RAG的检索与生成两道关",
+        "en": "The retrieval and generation checks in RAG"
+      }
+    },
+    {
+      "unitId": "1.3.3-unit-2",
+      "explanation": {
+        "zh": "微调通过训练调整参数，适合评估任务行为、格式或风格适配；外部资料频繁更新时，通常先评估检索和资料维护需求。两者可组合，但不能相互冒充。",
+        "en": "Fine-tuning adjusts parameters through training and can be evaluated for adapting task behavior, format or style. When external material changes frequently, usually evaluate retrieval and material maintenance needs first. The two approaches can be combined, but must not be confused."
+      },
+      "examples": [
+        {
+          "zh": "统一客服回复风格可评估微调，今天更新的退货政策需要及时资料。",
+          "en": "Fine-tuning can be evaluated for consistent customer service style; a return policy updated today requires up-to-date material."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不要把微调当成随时更新的事实数据库。",
+          "en": "Do not treat fine-tuning as a continuously updated factual database."
+        }
+      ],
+      "status": "supported",
+      "rationale": "两机制区别获支持；优先评估资料维护属于明确的教学建议，未声称微调不能学到事实。 原例子均为课程原创教学例示。",
+      "prerequisiteIds": [
+        "1.3-lesson-4",
+        "1.3-lesson-3"
+      ],
+      "prerequisiteRationale": "先掌握微调 Fine-tuning、检索增强生成 RAG，才能理解本单元中的微调与外部知识更新机制或比较边界；这是教学顺序判断，并非外站指定顺序。",
+      "evidence": [
+        {
+          "sourceId": "d1-finetune",
+          "quote": "fine-tuning entails techniques to further train a model whose weights have already been updated through prior training."
+        },
+        {
+          "sourceId": "d1-rag",
+          "quote": "references an authoritative knowledge base outside of its training data sources before generating a response."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "微调与外部知识更新",
+        "en": "Fine-tuning and external knowledge updates"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "d1-ai",
+      "title": "Artificial intelligence — IBM",
+      "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+      "excerpt": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-ml",
+      "title": "Machine learning — IBM",
+      "url": "https://www.ibm.com/think/topics/machine-learning",
+      "excerpt": "all machine learning is AI, but not all AI is machine learning.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-dl",
+      "title": "Deep learning — IBM",
+      "url": "https://www.ibm.com/think/topics/deep-learning",
+      "excerpt": "Deep learning is a subset of machine learning driven by multilayered neural networks",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-nn",
+      "title": "Neural networks — IBM",
+      "url": "https://www.ibm.com/think/topics/neural-networks",
+      "excerpt": "stacks simple \"neurons\" in layers and learns pattern-recognizing weights and biases from data to map inputs to outputs.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-nlp",
+      "title": "Natural language processing — IBM",
+      "url": "https://www.ibm.com/think/topics/natural-language-processing",
+      "excerpt": "NLP tools can automatically classify, extract key information and summarize content",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-cv",
+      "title": "Computer vision — IBM",
+      "url": "https://www.ibm.com/think/topics/computer-vision",
+      "excerpt": "process, analyze and interpret visual inputs such as images and videos.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-supervised",
+      "title": "Supervised learning — IBM",
+      "url": "https://www.ibm.com/think/topics/supervised-learning",
+      "excerpt": "Supervised learning is a machine learning technique that uses labeled data sets to train artificial intelligence",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-unsupervised",
+      "title": "Unsupervised learning — IBM",
+      "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+      "excerpt": "analyze and cluster unlabeled data sets. These algorithms discover hidden patterns or data groupings",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-rl",
+      "title": "Reinforcement learning — IBM",
+      "url": "https://www.ibm.com/think/topics/reinforcement-learning",
+      "excerpt": "The agent’s only objective is to maximize its cumulative rewards from the environment.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-quality",
+      "title": "Data quality — IBM",
+      "url": "https://www.ibm.com/think/topics/data-quality",
+      "excerpt": "accuracy, completeness, validity, consistency, uniqueness, timeliness and fitness for purpose",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-structure",
+      "title": "Structured versus unstructured data — IBM",
+      "url": "https://www.ibm.com/think/topics/structured-vs-unstructured-data",
+      "excerpt": "Structured data has a strict, predefined data model. Unstructured data does not have a predefined format.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-inference",
+      "title": "AI inference — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-inference",
+      "excerpt": "AI inference is the act of using a trained AI model to make predictions on new data.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-leakage",
+      "title": "Data leakage — IBM",
+      "url": "https://www.ibm.com/think/topics/data-leakage-machine-learning",
+      "excerpt": "models should not be evaluated on the same data they're trained on.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-hallucinations",
+      "title": "AI hallucinations — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-hallucinations",
+      "excerpt": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-iso23053",
+      "title": "ISO/IEC 23053 official overview",
+      "url": "https://www.iso.org/standard/74438.html",
+      "excerpt": "provides a conceptual framework and shared terminology for describing artificial intelligence (AI) systems that use machine learning (ML).",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-iso42001",
+      "title": "ISO/IEC 42001 official overview",
+      "url": "https://www.iso.org/standard/42001",
+      "excerpt": "establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS) within organizations.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-agents",
+      "title": "AI agents — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-agents",
+      "excerpt": "Although AI agents are autonomous in their decision-making processes, they require goals and predefined rules defined by humans.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-orchestration",
+      "title": "AI agent orchestration — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-agent-orchestration",
+      "excerpt": "the process of coordinating multiple specialized AI agents within a unified system to efficiently achieve shared objectives.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-drift",
+      "title": "Model drift — IBM",
+      "url": "https://www.ibm.com/think/topics/model-drift",
+      "excerpt": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-shadow",
+      "title": "Shadow AI — IBM",
+      "url": "https://www.ibm.com/think/topics/shadow-ai",
+      "excerpt": "without the formal approval or oversight of the information technology (IT) department.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-prompt",
+      "title": "Prompt engineering — IBM",
+      "url": "https://www.ibm.com/think/topics/prompt-engineering",
+      "excerpt": "few-shot prompting, which provides the model with sample outputs to clarify expectations.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-context",
+      "title": "Context window — IBM",
+      "url": "https://www.ibm.com/think/topics/context-window",
+      "excerpt": "The size of the context window determines the maximum number of tokens that the model can “pay attention to” at any one time.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-rag",
+      "title": "Retrieval-Augmented Generation — AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "excerpt": "references an authoritative knowledge base outside of its training data sources before generating a response.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-finetune",
+      "title": "Fine-tuning — IBM",
+      "url": "https://www.ibm.com/think/topics/fine-tuning",
+      "excerpt": "fine-tuning entails techniques to further train a model whose weights have already been updated through prior training.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-algorithm",
+      "title": "Algorithm — NIST CSRC",
+      "url": "https://csrc.nist.gov/glossary/term/Algorithm",
+      "excerpt": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-training",
+      "title": "Model training — IBM",
+      "url": "https://www.ibm.com/think/topics/model-training",
+      "excerpt": "In machine learning, learning involves adjusting the parameters of an ML model.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-actions",
+      "title": "Prerequisites for creating Amazon Bedrock Agents — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-prereq.html",
+      "excerpt": "define the APIs that can be called, how to handle the action, and how to return the response.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-lambda",
+      "title": "Configure action group Lambda functions — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-lambda.html",
+      "excerpt": "you must attach a resource-based policy to the function to provide permissions for the agent.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-iam",
+      "title": "Implementing least privilege access for Amazon Bedrock — AWS",
+      "url": "https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/",
+      "excerpt": "Use multiple, dedicated, least privileged roles for each task.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-context-api",
+      "title": "Context windows — Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "excerpt": "all the text a language model can reference when generating a response, including the response itself.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-rag-eval",
+      "title": "Use metrics to understand RAG system performance — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-evaluation-metrics.html",
+      "excerpt": "Amazon Bedrock RAG evaluations offers two types of evaluation job, retrieve only and retrieve and generate.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-prompt-components",
+      "title": "Prompt engineering concepts — AWS",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
+      "excerpt": "the task or instruction you want the LLMs to perform, the context of the task",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

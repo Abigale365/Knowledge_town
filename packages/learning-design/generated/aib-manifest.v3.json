@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "sourceMaterialHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+    "sourceKnowledgeHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+    "sourceRevision": 3,
+    "evidenceAdditions": [
+      {
+        "id": "readiness",
+        "url": "https://learn.microsoft.com/en-in/assessments/94f1c697-9ba7-4d47-ad83-7c6bd94b1505/",
+        "unitIds": [
+          "4.1-lesson-1",
+          "4.1-lesson-2",
+          "4.1.1-unit-1",
+          "4.1.2-unit-1"
+        ],
+        "scope": "Microsoft assessment dimensions illustrate multidimensional readiness, not a universal maturity score or organizational approval."
+      },
+      {
+        "id": "data-quality",
+        "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+        "unitIds": [
+          "4.2-lesson-2"
+        ],
+        "scope": "UK public-sector guidance used as an explicitly attributed data management reference; does not prescribe all organizational policies."
+      },
+      {
+        "id": "workloads",
+        "url": "https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/the-pillars-of-the-framework.html",
+        "unitIds": [
+          "4.2-lesson-3"
+        ],
+        "scope": "AWS architecture reference supports evaluating multiple operating requirements, rather than hardware rankings alone; case details remain exercise assumptions."
+      },
+      {
+        "id": "pilot-context",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        "unitIds": [
+          "4.4-lesson-2",
+          "4.4.2-unit-1"
+        ],
+        "scope": "Deployment-context evaluation; transfer outside tested conditions still requires evidence."
+      },
+      {
+        "id": "governance-authority",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        "unitIds": [
+          "3.1-lesson-4",
+          "3.1.4-unit-1"
+        ],
+        "scope": "Defines governance mechanisms and assigned responsibilities; exact stopping powers in activities are explicitly set by the exercise."
+      },
+      {
+        "id": "raci",
+        "url": "https://learn.microsoft.com/en-us/power-platform/guidance/adoption/roles",
+        "unitIds": [
+          "3.2.1-unit-1"
+        ],
+        "scope": "RACI distinction is methodological; named exercise roles are not universally mandated job titles."
+      },
+      {
+        "id": "ip",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+        "unitIds": [
+          "3.3-lesson-3",
+          "3.3.3-unit-1"
+        ],
+        "scope": "Intellectual property review is a separate risk task from harmful-content review; no jurisdiction-specific permission determination is made by the game."
+      },
+      {
+        "id": "coe",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+        "unitIds": [
+          "4.4-lesson-3",
+          "4.4.3-unit-1"
+        ],
+        "scope": "This is the Microsoft advisory CoE operating model: frontline delivery and implementation remain separate from policy and oversight; it is illustrative rather than a universal mandatory org chart."
+      },
+      {
+        "id": "pilot-generalization",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        "unitIds": [
+          "4.4-lesson-2",
+          "4.4.2-unit-1"
+        ],
+        "scope": "Explicitly bound generalization to the tested conditions rather than treating pilot success as transfer proof."
+      },
+      {
+        "id": "quality-use",
+        "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+        "unitIds": [
+          "4.2-lesson-1"
+        ],
+        "scope": "Section Communicating data quality to users connects quality and context to appropriate use; the quoted fragment locates that passage rather than defining a universal quality score."
+      },
+      {
+        "id": "maturity-method",
+        "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+        "unitIds": [
+          "4.1-lesson-2",
+          "4.1.2-unit-1"
+        ],
+        "scope": "The source concerns data capability maturity and continuous improvement. The teaching transfers the assessment method to AI capability planning as an explicit analogy, not a universal AI certification or mandated level system."
+      }
+    ]
+  },
+  "input": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+    "materialBundleId": "aib-materials-integration",
+    "materialRevision": 3
+  },
+  "output": {
+    "id": "aib-learning-plan",
+    "revision": 3,
+    "hash": "3112b87fecfbd7d7915a3ef5cf0a88849ccfa56ec47d5562295c48f3ebd580a8"
+  },
+  "uniqueUnits": 139,
+  "objectives": 58,
+  "chapters": [
+    {
+      "id": "b-chapter-1",
+      "sections": 12,
+      "learningCards": 45
+    },
+    {
+      "id": "b-chapter-2",
+      "sections": 8,
+      "learningCards": 30
+    },
+    {
+      "id": "b-chapter-3",
+      "sections": 7,
+      "learningCards": 26
+    },
+    {
+      "id": "b-chapter-4",
+      "sections": 11,
+      "learningCards": 43
+    }
+  ],
+  "roundCounts": {
+    "choose": 90,
+    "sort": 20,
+    "edit": 5,
+    "order": 15,
+    "number": 6,
+    "allocate": 2,
+    "matrix": 6
+  },
+  "knowledgeWarnings": 0
+}

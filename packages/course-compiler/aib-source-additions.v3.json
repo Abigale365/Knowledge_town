@@ -1,0 +1,132 @@
+[
+  {
+    "id": "readiness",
+    "url": "https://learn.microsoft.com/en-in/assessments/94f1c697-9ba7-4d47-ad83-7c6bd94b1505/",
+    "title": "Microsoft AI Readiness Assessment",
+    "quote": "Business Strategy, AI Governance & Security, Data Foundations, AI Strategy & Experience, Organization & Culture, Infrastructure for AI, and Model Management.",
+    "scope": "Microsoft assessment dimensions illustrate multidimensional readiness, not a universal maturity score or organizational approval.",
+    "units": [
+      "4.1-lesson-1",
+      "4.1-lesson-2",
+      "4.1.1-unit-1",
+      "4.1.2-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "data-quality",
+    "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "title": "UK Government Data Quality Framework guidance",
+    "quote": "responsibility for maintaining metadata records for data sets.",
+    "scope": "UK public-sector guidance used as an explicitly attributed data management reference; does not prescribe all organizational policies.",
+    "units": [
+      "4.2-lesson-2"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "workloads",
+    "url": "https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/the-pillars-of-the-framework.html",
+    "title": "AWS Well-Architected pillars",
+    "quote": "operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability",
+    "scope": "AWS architecture reference supports evaluating multiple operating requirements, rather than hardware rankings alone; case details remain exercise assumptions.",
+    "units": [
+      "4.2-lesson-3"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "pilot-context",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+    "title": "NIST AI RMF MEASURE 2.3 / 2.5",
+    "quote": "AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for conditions similar to deployment setting(s).",
+    "scope": "Deployment-context evaluation; transfer outside tested conditions still requires evidence.",
+    "units": [
+      "4.4-lesson-2",
+      "4.4.2-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "governance-authority",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+    "title": "NIST AI RMF MANAGE 2.4",
+    "quote": "Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+    "scope": "Defines governance mechanisms and assigned responsibilities; exact stopping powers in activities are explicitly set by the exercise.",
+    "units": [
+      "3.1-lesson-4",
+      "3.1.4-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "raci",
+    "url": "https://learn.microsoft.com/en-us/power-platform/guidance/adoption/roles",
+    "title": "Microsoft RACI role definitions",
+    "quote": "Responsible (R): The person who performs the task. b. Accountable (A): The person ultimately answerable for the task's completion.",
+    "scope": "RACI distinction is methodological; named exercise roles are not universally mandated job titles.",
+    "units": [
+      "3.2.1-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "ip",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "title": "NIST AI 600-1 MAP 4.1 intellectual property controls",
+    "quote": "Implement processes for responding to potential intellectual property infringement claims or other rights.",
+    "scope": "Intellectual property review is a separate risk task from harmful-content review; no jurisdiction-specific permission determination is made by the game.",
+    "units": [
+      "3.3-lesson-3",
+      "3.3.3-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "coe",
+    "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+    "title": "Microsoft AI Center of Excellence responsibilities",
+    "quote": "Let frontline teams own delivery and implementation while forums provide policy and oversight.",
+    "scope": "This is the Microsoft advisory CoE operating model: frontline delivery and implementation remain separate from policy and oversight; it is illustrative rather than a universal mandatory org chart.",
+    "units": [
+      "4.4-lesson-3",
+      "4.4.3-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "pilot-generalization",
+    "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+    "title": "NIST AI RMF MEASURE 2.5",
+    "quote": "Limitations of the generalizability beyond the conditions under which the technology was developed are documented.",
+    "scope": "Explicitly bound generalization to the tested conditions rather than treating pilot success as transfer proof.",
+    "units": [
+      "4.4-lesson-2",
+      "4.4.2-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "quality-use",
+    "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "title": "UK data quality: communicating fitness for user needs",
+    "quote": "whether the data meets their needs.",
+    "scope": "Section Communicating data quality to users connects quality and context to appropriate use; the quoted fragment locates that passage rather than defining a universal quality score.",
+    "units": [
+      "4.2-lesson-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  },
+  {
+    "id": "maturity-method",
+    "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+    "title": "UK data maturity models and quality: continuous capability assessment",
+    "quote": "regular maturity assessments can be made",
+    "scope": "The source concerns data capability maturity and continuous improvement. The teaching transfers the assessment method to AI capability planning as an explicit analogy, not a universal AI certification or mandated level system.",
+    "units": [
+      "4.1-lesson-2",
+      "4.1.2-unit-1"
+    ],
+    "verifiedAt": "2026-10-21"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "inputInventoryHash": "4e79e33540b63f01939addff812b56d04e74b27d32c33cc2061104d9b070c8de",
+  "baselineMaterialRevision": 1,
+  "baselineKnowledgeRevision": 1,
+  "reviewDate": "2026-10-20",
+  "reviewModel": "gpt-6-astra"
+}

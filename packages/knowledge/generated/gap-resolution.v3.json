@@ -1,0 +1,626 @@
+[
+  {
+    "unitId": "1.1-lesson-5",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "已读IBM推理定义支持预测未知结果；业务错误代价的系统评价方法尚未取得专门资料，保留课程建议待领域审查。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "复核评测指南的成功标准与错误严重性示例，以及 NIST MANAGE 1.1–1.3 的风险排序和响应；已补足错误后果评价依据。"
+    ],
+    "newSourceIds": [
+      "r3-d1-eval",
+      "r3-d1-manage"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "IBM已读正文区分显式规则与复杂模式学习；规则优先的选择策略和价值/维护成本权衡尚缺决策指南。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "检索 Google 规则/机器学习选型指南，阅读 Rule 1、2、4；交叉读取 AWS ROI 的期望结果、常见反模式与实施指导，以及 NIST MANAGE 1.1、1.2、2.1。"
+    ],
+    "newSourceIds": [
+      "r3-d1-simple",
+      "r3-d1-roi",
+      "r3-d1-manage"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-3",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "IBM编排正文支持多角色协调及执行次序，AI agents的风险章节说明共享失败风险；资料交接来源和访问范围的具体约定尚缺专项指南。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "阅读 Anthropic 工作流模式和复杂度权衡；阅读 Bedrock trace 的 Observation、RetrievedReference、FailureTrace，以及服务角色中的知识库/协作者权限。"
+    ],
+    "newSourceIds": [
+      "r3-d1-workflows",
+      "r3-d1-trace",
+      "d34-aws-agents-permissions"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-4",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "IBM漂移正文支持变化检测、监测与重新测试；本单元把质量、成本、反馈整合为闭环的具体指标方案尚缺运行指南。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "补查 AWS 模型监控步骤、ML 成本与 ROI 指南及 NIST MANAGE 的监测/反馈/持续改进章节；客户群变化例子仍是教学假设，不能据性能下降直接断定漂移原因。"
+    ],
+    "newSourceIds": [
+      "r3-d1-monitor",
+      "r3-d1-cost",
+      "r3-d1-roi",
+      "r3-d1-manage"
+    ]
+  },
+  {
+    "unitId": "1.2.2-unit-3",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "已读编排正文支持角色与同步协调；串并行任务依赖、交接证据及失败责任的明确流程仍需专项编排资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "逐项核对串行依赖/独立并行、检索来源与失败追踪字段，以及 NIST GOVERN 2.1 人员职责和沟通链；保留质量不能由角色数量证明的边界。"
+    ],
+    "newSourceIds": [
+      "r3-d1-workflows",
+      "r3-d1-trace",
+      "r3-d1-govern"
+    ]
+  },
+  {
+    "unitId": "1.2.3-unit-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "已读漂移正文支持测试和监测；延迟/成本/失败率基线以及重训、回退、用途调整的决策条件尚缺运行手册。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "核对 AWS 基线比较、成本与 ROI、蓝绿/金丝雀部署和自动回退，以及 NIST MANAGE 2.4 旁路/停用/再部署条件；修正修复与决策的先后歧义而保留全部学习要求。"
+    ],
+    "newSourceIds": [
+      "r3-d1-monitor",
+      "r3-d1-eval",
+      "r3-d1-cost",
+      "r3-d1-roi",
+      "r3-d1-rollback",
+      "r3-d1-manage"
+    ]
+  },
+  {
+    "unitId": "1.3-lesson-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "AWS Prompt engineering concepts 已支持任务、上下文、样例及输出约束；代表性任务测试的选样与验收办法尚需评测资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "阅读 Anthropic 成功标准和评测设计原则，以及提示最佳实践的清晰指令、背景和格式要求；补齐代表性选样及验收依据。"
+    ],
+    "newSourceIds": [
+      "r3-d1-eval",
+      "r3-d1-xml"
+    ]
+  },
+  {
+    "unitId": "1.3.1-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "AWS正文支持提示组件及分隔示例；分隔文档与操作指令能降低指令混淆的安全性声明仍需专项资料，不能把格式分隔当作权限边界。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "检索 XML 提示分隔官方指南，已读到减少解释混淆的说明；未将其扩大为安全隔离。补读资源权限文档明确格式边界与授权机制的区别。"
+    ],
+    "newSourceIds": [
+      "r3-d1-xml",
+      "r3-d1-eval",
+      "d34-aws-agents-permissions"
+    ]
+  },
+  {
+    "unitId": "1.3.1-unit-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "已读IBM和AWS正文支持少样本展示任务模式；版本、成功标准及典型/边界/失败用例的测试管理仍需专项评测资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读 Anthropic 成功标准、边界用例、自动化与足量评测；AWS 草稿/不可变版本；结合既有数据泄漏来源核查测试集隔离，保留全部测试管理要求。"
+    ],
+    "newSourceIds": [
+      "r3-d1-eval",
+      "r3-d1-versions",
+      "r3-d1-xml"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "合作关系及供应商合同条款尚缺直接证据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-procurement"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-3",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "可持续性维度缺少直接定义与判据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-sustainability",
+      "r3-d2-envisioning"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-5",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "迁移权限与成本检查尚缺本条引用的直接支持。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-migration"
+    ]
+  },
+  {
+    "unitId": "2.1.2-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-procurement",
+      "d2-roiCriteria"
+    ]
+  },
+  {
+    "unitId": "2.1.3-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-prioritization",
+      "r3-d2-procurement",
+      "d2-dataSecurity",
+      "d2-cutover",
+      "r3-d2-envisioning"
+    ]
+  },
+  {
+    "unitId": "2.1.5-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "成本验证未由本条迁移来源直接覆盖。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-migration"
+    ]
+  },
+  {
+    "unitId": "2.2-lesson-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "无形收益不得任意货币化的限定需补专门计量依据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-impact",
+      "d2-efficiency"
+    ]
+  },
+  {
+    "unitId": "2.2-lesson-4",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-impact",
+      "r3-d2-hse"
+    ]
+  },
+  {
+    "unitId": "2.2.1-unit-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-impact",
+      "d2-efficiency"
+    ]
+  },
+  {
+    "unitId": "2.2.3-unit-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-impact",
+      "r3-d2-envisioning",
+      "r3-d2-benefits"
+    ]
+  },
+  {
+    "unitId": "2.2.4-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "先导指标对结果预测效度的验证方法尚缺直接来源。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-impact",
+      "r3-d2-hse"
+    ]
+  },
+  {
+    "unitId": "2.3.1-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "“竞争对手投入金额不是本企业投资依据”的预算边界缺少直接一手论证。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+      "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+    ],
+    "newSourceIds": [
+      "r3-d2-envisioning",
+      "d2-nist"
+    ]
+  },
+  {
+    "unitId": "3.1.2-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "缺少可逆性评估及不可接受严重损害的明确适用标准。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读OECD Annex A及结论，未将讨论性分类冒充统一法律阈值。EUR-Lex访问受限后改读欧委会官方Service Desk条文。"
+    ],
+    "newSourceIds": [
+      "r3-d34-harm",
+      "r3-d34-oversight"
+    ]
+  },
+  {
+    "unitId": "3.1.4-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "先查NIST与EU监督条件，再以ICO审计框架补复核时间及证据可用性。"
+    ],
+    "newSourceIds": [
+      "r3-d34-ico-review",
+      "r3-d34-ico-evidence",
+      "r3-d34-oversight"
+    ]
+  },
+  {
+    "unitId": "3.3-lesson-2",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读NIST采样、模型目标与部署情境章节；Wiley原文403后改查作者arXiv原稿，补充标注差异的用途依赖边界。"
+    ],
+    "newSourceIds": [
+      "r3-d34-nist-bias",
+      "r3-d34-annotation"
+    ]
+  },
+  {
+    "unitId": "3.3.2-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读NIST采样、模型目标与部署情境章节；Wiley原文403后改查作者arXiv原稿，补充标注差异的用途依赖边界。"
+    ],
+    "newSourceIds": [
+      "r3-d34-nist-bias",
+      "r3-d34-annotation"
+    ]
+  },
+  {
+    "unitId": "4.2.1-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "逐项查质量维度、metadata生命周期和质量沟通表；修正固定五维暗示，保留去重、缺失值与清洗依据要求。"
+    ],
+    "newSourceIds": [
+      "r3-d34-quality",
+      "r3-d34-quality-guidance"
+    ]
+  },
+  {
+    "unitId": "4.2.2-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读ownership责任与第三方数据章节，并以TIGER档案/版本实践补细节；实际保留期限与许可按适用政策确定。"
+    ],
+    "newSourceIds": [
+      "r3-d34-ownership",
+      "r3-d34-versions",
+      "r3-d34-quality-guidance"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-3",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "阅读OECD关于岗位保证局限及双向咨询的相邻段落，不只取成功案例。"
+    ],
+    "newSourceIds": [
+      "r3-d34-consultation",
+      "r3-d34-hai"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-4",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "结合AI技能框架、具体保险案例和心理安全原始研究，未将合理风险担忧标签化为抵触。"
+    ],
+    "newSourceIds": [
+      "r3-d34-skills",
+      "r3-d34-consultation",
+      "r3-d34-psychological"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-5",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补AI岗位任务训练与基于表现的能力考核资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "查AI专属岗位能力与实践框架，替代仅以通用cloud fluency作依据，保留核验与人机协作任务。"
+    ],
+    "newSourceIds": [
+      "r3-d34-training",
+      "r3-d34-skills"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-6",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "读OECD任务变化/技能章节及Microsoft交互指南全文，未把人类技能优势写成所有任务不可自动化的绝对规律。"
+    ],
+    "newSourceIds": [
+      "r3-d34-jobs",
+      "r3-d34-hai"
+    ]
+  },
+  {
+    "unitId": "4.3.3-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "对照OECD员工疑虑、雇主保证可能失效的段落与Microsoft原研究团队指南说明。"
+    ],
+    "newSourceIds": [
+      "r3-d34-consultation",
+      "r3-d34-hai"
+    ]
+  },
+  {
+    "unitId": "4.3.4-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "已读原论文研究设计、测量及量表；公开来源支持机制，不提供本组织奖惩授权。保留报告激励要求并标明建议性质。"
+    ],
+    "newSourceIds": [
+      "r3-d34-psychological",
+      "r3-d34-skills",
+      "r3-d34-training"
+    ]
+  },
+  {
+    "unitId": "4.3.5-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "公开框架补足通用考核设计，不能提供本组织评分阈值。已明示实际实施需量表与责任人，但不将尚未实施当成概念知识缺口。"
+    ],
+    "newSourceIds": [
+      "r3-d34-training",
+      "r3-d34-skills",
+      "r3-d34-ico-review"
+    ]
+  },
+  {
+    "unitId": "4.3.6-unit-1",
+    "previousStatus": "needs-review",
+    "previousMissing": [
+      "需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+    ],
+    "status": "supported",
+    "remainingMissing": [],
+    "requiredMaterial": [],
+    "searchNotes": [
+      "读OECD任务变化/技能章节及Microsoft交互指南全文，未把人类技能优势写成所有任务不可自动化的绝对规律。"
+    ],
+    "newSourceIds": [
+      "r3-d34-jobs",
+      "r3-d34-hai"
+    ]
+  }
+]

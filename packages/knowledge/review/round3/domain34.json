@@ -1,0 +1,837 @@
+{
+  "units": [
+    {
+      "unitId": "3.1.2-unit-1",
+      "explanation": {
+        "zh": "讨论效率收益时同时说明受影响对象、损害可能性、严重程度和可逆性。选择与影响相称的控制，并记录取舍和决定责任；不可接受风险应依据适用法律、权利保障及场景标准判断，不能只用业务收益抵扣。",
+        "en": "When discussing efficiency gains, also identify affected parties and the likelihood, severity, and reversibility of harm. Choose controls proportionate to the impact, and record the trade-offs and responsibility for the decision. Judge unacceptable risks against applicable law, protection of rights, and context-specific criteria; business gains alone cannot offset them."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：高影响决定保留有效人工复核，而非只追求自动处理率。",
+          "en": "Teaching example: Retain effective human review for high-impact decisions rather than pursuing only the rate of automated processing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "业务指标提高不能自动抵消对个人的严重损害。",
+          "en": "Improved business metrics do not automatically offset serious harm to individuals."
+        }
+      ],
+      "status": "supported",
+      "rationale": "OECD Annex A列出可逆性、严重度与受影响范围，§5–6明确严重性依情境判断。EU Article 14(2)–(4)要求高风险系统监督兼顾健康、安全和基本权利，并按风险、自治程度和用途配置干预。与原NIST MAP 5.1、MANAGE 1.2相合；课程是评估原则，不宣称全球统一严重损害阈值。",
+      "prerequisiteIds": [
+        "3.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "需要先区分群体影响与整体收益。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "r3-d34-harm",
+          "quote": "Other dimensions of harm include its possible recurrence and reversibility."
+        },
+        {
+          "sourceId": "r3-d34-oversight",
+          "quote": "the risks, level of autonomy and context of use"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "收益、影响与比例原则",
+        "en": "Benefits, impacts and proportionate controls"
+      },
+      "previousMissing": [
+        "缺少可逆性评估及不可接受严重损害的明确适用标准。"
+      ],
+      "searchNotes": [
+        "已读OECD Annex A及结论，未将讨论性分类冒充统一法律阈值。EUR-Lex访问受限后改读欧委会官方Service Desk条文。"
+      ]
+    },
+    {
+      "unitId": "3.1.4-unit-1",
+      "explanation": {
+        "zh": "复核者需要可核验的证据、足够时间、训练及停止或改变动作的权限。为无依据结论、异常指标和高影响操作定义升级条件与接手者；具体阈值和响应时限由组织按场景确定并验证。",
+        "en": "Reviewers need verifiable evidence, sufficient time, training, and authority to stop or change actions. Define escalation conditions and handover owners for unsupported conclusions, anomalous metrics, and high-impact operations. The organisation must set and validate specific thresholds and response times for the context."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：不能核验的重要结论转给负责人，不能只要求点击确认。",
+          "en": "Teaching example: Refer an important conclusion that cannot be verified to the responsible person; do not merely request a confirmation click."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "有人工按钮不代表已经形成有效监督。",
+          "en": "The presence of a human approval button does not establish effective oversight."
+        }
+      ],
+      "status": "supported",
+      "rationale": "ICO Human review具体要求合理工作量、时间资源、训练、独立性、记录阈值和回退；Individual rights的human oversight章节要求主动衡量建议及全部可用输入。EU Article 14(4)覆盖异常、解释、拒绝/覆盖输出与停止。三类升级是据此设计的教学清单，非官方穷尽分类或已批准本组织阈值。ICO页面注明修订中，本条仅使用操作原则，不据此作当前法律适用结论。",
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "先理解人工介入、升级和接手的基本机制，再设计有效复核条件。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-feedback",
+          "quote": "Collecting feedback is only useful if it is structured and linked to the interaction that generated it."
+        },
+        {
+          "sourceId": "r3-d34-ico-review",
+          "quote": "Assign human reviewers a manageable caseload"
+        },
+        {
+          "sourceId": "r3-d34-ico-evidence",
+          "quote": "consider all available input data, and also take into account other additional factors."
+        },
+        {
+          "sourceId": "r3-d34-oversight",
+          "quote": "the risks, level of autonomy and context of use"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "复核能力与升级阈值",
+        "en": "Review capability and escalation triggers"
+      },
+      "previousMissing": [
+        "需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+      ],
+      "searchNotes": [
+        "先查NIST与EU监督条件，再以ICO审计框架补复核时间及证据可用性。"
+      ]
+    },
+    {
+      "unitId": "3.3-lesson-2",
+      "explanation": {
+        "zh": "偏差可能来自采样、标注、训练目标和部署环境等阶段。持续观察分组表现及环境变化，不把一次检查当作永久结论。",
+        "en": "Bias may arise during sampling, labeling, selection of training objectives, deployment, and other stages. Continuously observe subgroup performance and environmental changes rather than treating one check as a permanent conclusion."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：整体分数稳定时，某一群体的错误仍可能增加。",
+          "en": "Teaching example: Errors for a particular group may increase even when the overall score remains stable."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "NIST SP1270 §2部署阶段、§3.1数据集及§3.2 Processes覆盖代表性不足、目标函数与语境遗漏、部署变化及持续复评。Röttger等原始论文摘要及范式说明未管理标注主观性会使数据不适合下游用途；分歧不自动等于错误，需结合任务规则。扩大同样有偏来源不能修复目标与情境问题。示例为原创教学推演。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "先介绍偏差来源，未要求掌握统计公式。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        },
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "r3-d34-nist-bias",
+          "quote": "Not taking context into consideration during model selection can lead to biased results for sub-populations"
+        },
+        {
+          "sourceId": "r3-d34-annotation",
+          "quote": "there often are diverse valid beliefs about what the correct data labels should be."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "生命周期中的偏差",
+        "en": "Bias across the lifecycle"
+      },
+      "previousMissing": [
+        "需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+      ],
+      "searchNotes": [
+        "已读NIST采样、模型目标与部署情境章节；Wiley原文403后改查作者arXiv原稿，补充标注差异的用途依赖边界。"
+      ]
+    },
+    {
+      "unitId": "3.3.2-unit-1",
+      "explanation": {
+        "zh": "偏差可能源自缺乏代表性的样本、未妥善处理的标注分歧、优化目标和部署人群差异。标注分歧也可能反映合理的不同观点，应先明确任务与标注规则；对相关群体持续监测，并调查差异的原因。",
+        "en": "Bias may arise from unrepresentative samples, inadequately handled annotation disagreements, optimization objectives, and differences in deployed populations. Annotation disagreements can also reflect legitimate differences in perspective, so first clarify the task and annotation rules. Continuously monitor relevant groups and investigate the causes of disparities."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：新地区加入后，检查当地表达方式是否被原数据覆盖。",
+          "en": "Teaching example: After adding a new region, check whether the original data covers local ways of expressing things."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "仅扩大样本量不保证消除偏差。",
+          "en": "Simply increasing sample size does not guarantee that bias is eliminated."
+        }
+      ],
+      "status": "supported",
+      "rationale": "NIST SP1270 §2部署阶段、§3.1数据集及§3.2 Processes覆盖代表性不足、目标函数与语境遗漏、部署变化及持续复评。Röttger等原始论文摘要及范式说明未管理标注主观性会使数据不适合下游用途；分歧不自动等于错误，需结合任务规则。扩大同样有偏来源不能修复目标与情境问题。示例为原创教学推演。",
+      "prerequisiteIds": [
+        "3.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "判断偏差前需理解按相关群体检查影响。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-trust",
+          "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+        },
+        {
+          "sourceId": "r3-d34-nist-bias",
+          "quote": "Not taking context into consideration during model selection can lead to biased results for sub-populations"
+        },
+        {
+          "sourceId": "r3-d34-annotation",
+          "quote": "there often are diverse valid beliefs about what the correct data labels should be."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "采样、标注、目标与部署",
+        "en": "Sampling, labels, objectives and deployment"
+      },
+      "previousMissing": [
+        "需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+      ],
+      "searchNotes": [
+        "已读NIST采样、模型目标与部署情境章节；Wiley原文403后改查作者arXiv原稿，补充标注差异的用途依赖边界。"
+      ]
+    },
+    {
+      "unitId": "4.2.1-unit-1",
+      "explanation": {
+        "zh": "针对用途检查准确、完整、一致、及时和相关性，并检查唯一性与格式有效性；这些是检查重点，不是唯一固定的五维标准。约定字段意义、主键、格式及缺失值处理。数据孤岛还会带来重复和不同口径。",
+        "en": "For the intended use, check accuracy, completeness, consistency, timeliness, and relevance, as well as uniqueness and format validity. These are checks to consider, not a single fixed five-dimension standard. Agree on field meanings, primary keys, formats, and handling of missing values. Data silos can also create duplication and inconsistent definitions."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：同一客户有两条订单副本，先查主键与来源而不是直接相加。",
+          "en": "Teaching example: If the same customer has two copies of an order, inspect the primary keys and sources before adding the amounts together."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "格式统一不等于数值真实，清洗需要保留依据。",
+          "en": "Consistent formatting does not establish that values are true; preserve the basis for data-cleaning decisions."
+        }
+      ],
+      "status": "supported",
+      "rationale": "政府质量框架六维定义区分准确与格式有效性，以用户用途决定取舍；相关性在此作为适用性要求，不误称框架第五维。配套guidance生命周期metadata表要求唯一标识、统一定义、调整依据与维护者；质量沟通表覆盖缺失和去重过程。主键检查是唯一标识原则的教学实现，订单示例不主张凭姓名合并。",
+      "prerequisiteIds": [
+        "4.2-lesson-1"
+      ],
+      "prerequisiteRationale": "先理解数据质量与孤岛问题，再进入字段契约。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "r3-d34-quality",
+          "quote": "Accuracy describes the degree to which data matches reality."
+        },
+        {
+          "sourceId": "r3-d34-quality-guidance",
+          "quote": "Metadata records must be comprehensive throughout a data set’s lifecycle."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "质量维度与数据契约",
+        "en": "Quality dimensions and data contracts"
+      },
+      "previousMissing": [
+        "需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+      ],
+      "searchNotes": [
+        "逐项查质量维度、metadata生命周期和质量沟通表；修正固定五维暗示，保留去重、缺失值与清洗依据要求。"
+      ]
+    },
+    {
+      "unitId": "4.2.2-unit-1",
+      "explanation": {
+        "zh": "资料需要明确维护责任、来源去向、版本和共享边界，以便核验答案、修复错误并追踪变化。共享应保留权限而不是复制后全面公开。",
+        "en": "Source material needs clear maintenance ownership, lineage, versions, and sharing boundaries so that answers can be checked, errors fixed, and changes traced. Sharing should preserve permissions rather than make copied material public to everyone."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：制度更新后能查到负责部门、有效日期与旧版去向。",
+          "en": "Teaching example: After a policy update, the responsible department, effective date, and disposition of the old version remain traceable."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "能访问数据不等于可以任意再利用。",
+          "en": "Being able to access data does not grant unrestricted permission to reuse it."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Data ownership model责任表明确维护者、来源流向、定义、授权、许可、保留与处置；第三方复制段落说明接收方管理副本，原提供方仍治理原版本。TIGER Recommendation 6要求版本化且不覆盖原评估数据。制度有效日期/旧版去向是据此提出的可追溯设计，不把评估保存规则泛化为所有资料永久留存。",
+      "prerequisiteIds": [
+        "4.2-lesson-2"
+      ],
+      "prerequisiteRationale": "先理解用途、所有权和共享规则，再学习版本与血缘。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-journey",
+          "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+        },
+        {
+          "sourceId": "r3-d34-ownership",
+          "quote": "the original sender retains ownership of their version of the data"
+        },
+        {
+          "sourceId": "r3-d34-versions",
+          "quote": "updates or corrections do not overwrite the original evaluation dataset."
+        },
+        {
+          "sourceId": "r3-d34-quality-guidance",
+          "quote": "Metadata records must be comprehensive throughout a data set’s lifecycle."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "所有者、血缘与版本",
+        "en": "Owners, lineage and versions"
+      },
+      "previousMissing": [
+        "需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+      ],
+      "searchNotes": [
+        "已读ownership责任与第三方数据章节，并以TIGER档案/版本实践补细节；实际保留期限与许可按适用政策确定。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-3",
+      "explanation": {
+        "zh": "说明实施时间、预期结果、岗位影响和支持安排；承认不确定性，提供双向反馈渠道。",
+        "en": "Explain implementation timing, expected outcomes, effects on roles, and support arrangements; acknowledge uncertainty and provide two-way feedback channels."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：员工担心岗位变化时，不能只发布“必须使用”的通知。",
+          "en": "Teaching example: When employees worry about role changes, simply issuing a mandatory-use notice is inadequate."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "OECD工作场所原始案例§8 pp86–87讨论推出过程、岗位预期、直接咨询及经济条件改变后承诺可能失效；Microsoft指南1–2、15、18要求说明能力、误差、反馈与变化。结合CAF人员变更资料，支持沟通时间、支持安排和未知结果；不把案例归纳声称为所有组织的因果保证。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "沟通安排独立可理解。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-consultation",
+          "quote": "Direct worker consultation can range from simple exchanges of information to the involvement of workers"
+        },
+        {
+          "sourceId": "r3-d34-hai",
+          "quote": "Over-promising can hurt perceptions of the AI service."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "透明沟通",
+        "en": "Transparent communication"
+      },
+      "previousMissing": [
+        "需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+      ],
+      "searchNotes": [
+        "阅读OECD关于岗位保证局限及双向咨询的相邻段落，不只取成功案例。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-4",
+      "explanation": {
+        "zh": "区分风险规避、抵触改变和害怕失败等原因，用反馈、安全试验和合适支持来回应。",
+        "en": "Distinguish risk aversion, resistance to change, fear of failure, and other causes, and respond with feedback, safe experimentation, and suitable support."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：低使用率可能是信任与任务适配问题，而不只是安装不足。",
+          "en": "Teaching example: Low usage may reflect trust or task-fit problems rather than merely too few installations."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "UK skills tools试用/整合阶段分别检查员工反应、伦理顾虑、技术限制和文化障碍；OECD §8 Box2的调查区分估价准确性与实际生产率问题，并改善工具。Edmondson对犯错/负面评价顾虑与学习行为的研究支持另查恐惧因素；这是诊断视角，非把所有低采用率归咎文化。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "行为原因在本单元内介绍，不添加虚假依赖。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-skills",
+          "quote": "Intervene or escalate when AI (artificial intelligence) outputs are ambiguous, incorrect, or risk causing harm"
+        },
+        {
+          "sourceId": "r3-d34-consultation",
+          "quote": "Direct worker consultation can range from simple exchanges of information to the involvement of workers"
+        },
+        {
+          "sourceId": "r3-d34-psychological",
+          "quote": "Members of this team are able to bring up problems and tough issues."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "文化障碍",
+        "en": "Cultural barriers"
+      },
+      "previousMissing": [
+        "需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+      ],
+      "searchNotes": [
+        "结合AI技能框架、具体保险案例和心理安全原始研究，未将合理风险担忧标签化为抵触。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-5",
+      "explanation": {
+        "zh": "围绕岗位任务、实际风险和人机协作设计练习，可结合POC、培训或黑客马拉松；签到不代表形成能力。",
+        "en": "Design practice around job tasks, actual risks, and human-AI collaboration, potentially using proofs of concept, training, or hackathons; attendance does not establish capability."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：让客服练习核对引用、纠正草稿并识别需要上报的情况。",
+          "en": "Teaching example: Have customer-support staff practice checking citations, correcting drafts, and identifying situations requiring escalation."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "PRIMES §3.1要求真实任务、场景活动、小项目反馈、输出解释与判断；§3.6检查质量和决策变化，支持不能仅看签到。UK skills tools按岗位层次列出准确性评估及风险升级。POC/黑客马拉松是可选练习载体，并非资料证明某种活动天然形成胜任力。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "岗位培养方法可先独立介绍。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-training",
+          "quote": "It links learning to real tasks and real decisions."
+        },
+        {
+          "sourceId": "r3-d34-skills",
+          "quote": "Intervene or escalate when AI (artificial intelligence) outputs are ambiguous, incorrect, or risk causing harm"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "员工培养",
+        "en": "Workforce development"
+      },
+      "previousMissing": [
+        "需补AI岗位任务训练与基于表现的能力考核资料。"
+      ],
+      "searchNotes": [
+        "查AI专属岗位能力与实践框架，替代仅以通用cloud fluency作依据，保留核验与人机协作任务。"
+      ]
+    },
+    {
+      "unitId": "4.3-lesson-6",
+      "explanation": {
+        "zh": "重新设计人工操作、人工监督和AI协作的分工，保留批判性思考、同理心与创造力的作用。",
+        "en": "Redesign the division of manual work, human oversight, and AI collaboration while retaining the roles of critical thinking, empathy, and creativity."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：AI起草沟通内容，人类判断对方处境并承担发送责任。",
+          "en": "Teaching example: AI drafts a message; a person judges the recipient's situation and takes responsibility for sending it."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "OECD Artificial Intelligence in Society的Preparing for job transformation章节区分任务替代/补充及新任务，明确批判思考、创造、同理心；Microsoft指南3–5、8–11和17支持语境、价值、拒绝/纠正及用户控制。结合NIST GOVERN 3.2，人机分工按任务和风险设计；重复性仅是候选特征，不能自动移交岗位问责。",
+      "prerequisiteIds": [
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "岗位变化中的人工监督必须先明确人如何接手和授权。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-jobs",
+          "quote": "These could include leveraging human skills such as critical thinking; creativity, innovation and entrepreneurship; and empathy"
+        },
+        {
+          "sourceId": "r3-d34-hai",
+          "quote": "Over-promising can hurt perceptions of the AI service."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "角色转变与人的优势",
+        "en": "Changing roles and human strengths"
+      },
+      "previousMissing": [
+        "需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+      ],
+      "searchNotes": [
+        "读OECD任务变化/技能章节及Microsoft交互指南全文，未把人类技能优势写成所有任务不可自动化的绝对规律。"
+      ]
+    },
+    {
+      "unitId": "4.3.3-unit-1",
+      "explanation": {
+        "zh": "沟通实施时间、已验证与尚未验证的结果、工作变化和支持措施，并建立双向反馈。不应为推动采用而许诺未经证实的岗位或收益结果。",
+        "en": "Communicate implementation timing, verified and unverified outcomes, changes to work, and support measures, and establish two-way feedback. Do not promote adoption through unsubstantiated promises about roles or benefits."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：说明哪些任务会被辅助，哪些决定仍由人承担。",
+          "en": "Teaching example: Explain which tasks will receive assistance and which decisions remain people's responsibility."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "只宣传收益而回避员工担忧可能损害信任。",
+          "en": "Promoting only benefits while avoiding employees' concerns can damage trust."
+        }
+      ],
+      "status": "supported",
+      "rationale": "OECD §8 pp86–87的咨询案例及承诺受经济条件限制的讨论说明岗位沟通需承认不确定性；Microsoft指南1–2明确过度承诺损害用户感知，15/18覆盖反馈与变化告知。不虚假承诺是教学建议，信任边界保留为可能后果，未假定普遍必然因果。",
+      "prerequisiteIds": [
+        "4.3-lesson-3"
+      ],
+      "prerequisiteRationale": "先理解沟通范围，再区分事实、未知和不当承诺。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-consultation",
+          "quote": "Direct worker consultation can range from simple exchanges of information to the involvement of workers"
+        },
+        {
+          "sourceId": "r3-d34-hai",
+          "quote": "Over-promising can hurt perceptions of the AI service."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "事实、未知、岗位影响与反馈",
+        "en": "Facts, uncertainty, role impacts and feedback"
+      },
+      "previousMissing": [
+        "需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+      ],
+      "searchNotes": [
+        "对照OECD员工疑虑、雇主保证可能失效的段落与Microsoft原研究团队指南说明。"
+      ]
+    },
+    {
+      "unitId": "4.3.4-unit-1",
+      "explanation": {
+        "zh": "当员工担心犯错受罚时，建立限定范围的安全练习、报告渠道和改进机制。区分抵触改变、合理风险担忧和工具不适配。",
+        "en": "When employees fear punishment for mistakes, provide bounded safe practice, reporting channels, and improvement mechanisms. Distinguish resistance to change, reasonable risk concerns, and poor tool fit."
+      },
+      "examples": [
+        {
+          "zh": "原创教学设计示例：让员工在测试材料上练习核验，建议在批准的试验规则中规定不因如实报告失败扣减采用率评价；这不是本组织已生效的绩效政策。",
+          "en": "Original teaching design example: Let staff practice verification on test material, and propose that approved trial rules prevent truthful failure reporting from lowering adoption assessments. This is not an existing performance policy of this organisation."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "强制使用或更换工具不一定解决文化障碍。",
+          "en": "Mandatory use or a replacement tool does not necessarily resolve cultural barriers."
+        }
+      ],
+      "status": "supported",
+      "rationale": "Edmondson研究及量表覆盖报告问题、犯错受罚顾虑和学习行为；单组织51团队观察研究不能证明特定AI采用奖励制度必然有效。UK skills tools要求低风险试验、区分伦理/技术/文化因素，PRIMES §3.2支持安全提问试验。概念与推荐设计有依据；不扣采用率明确为原创建议，须组织制定/批准，非外源验证或已生效政策。",
+      "prerequisiteIds": [
+        "4.1.3-unit-1"
+      ],
+      "prerequisiteRationale": "先区分低采用率的不同障碍，避免把权限问题误当文化问题。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-psychological",
+          "quote": "Members of this team are able to bring up problems and tough issues."
+        },
+        {
+          "sourceId": "r3-d34-skills",
+          "quote": "Intervene or escalate when AI (artificial intelligence) outputs are ambiguous, incorrect, or risk causing harm"
+        },
+        {
+          "sourceId": "r3-d34-training",
+          "quote": "It links learning to real tasks and real decisions."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "安全试验与问题反馈",
+        "en": "Safe experimentation and issue reporting"
+      },
+      "previousMissing": [
+        "需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+      ],
+      "searchNotes": [
+        "已读原论文研究设计、测量及量表；公开来源支持机制，不提供本组织奖惩授权。保留报告激励要求并标明建议性质。"
+      ]
+    },
+    {
+      "unitId": "4.3.5-unit-1",
+      "explanation": {
+        "zh": "按岗位设计真实任务，练习核验、边界识别、升级与人机交接，并以实际表现评估。POC和黑客马拉松也需要责任与验证目标；组织应明确评估者、任务证据、通过标准和接手责任，不能把通用框架当成本组织已批准量表。",
+        "en": "Design realistic tasks for each role, practicing verification, recognition of limits, escalation, and human-AI handovers, and assess actual performance. Proofs of concept and hackathons also need accountability and validation goals. The organisation should specify assessors, task evidence, passing criteria, and handover responsibilities; a general framework is not an approved local assessment rubric."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：客服训练核对政策和升级投诉，开发者训练代码评审与测试。",
+          "en": "Teaching example: Customer-support staff practice checking policies and escalating complaints; developers practice code review and testing."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "签到或通过工具介绍不能证明岗位胜任。",
+          "en": "Attendance or completion of a tool introduction does not prove competence for a role."
+        }
+      ],
+      "status": "supported",
+      "rationale": "UK skills tools分层描述岗位核验与升级，PRIMES §3.1/3.3/3.6支持真实任务、专业责任、质量检查和结果评估。映射到核验/边界/交接任务是课程推荐设计；具体通过分数、岗位政策与活动负责人须组织制定。单元教设计原则，不声称交付可直接用于人事决策的已验证量表，因此概念证据充分。",
+      "prerequisiteIds": [
+        "3.3.4-unit-1",
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "练习核验与升级前需理解证据支持及人工接手边界。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-training",
+          "quote": "It links learning to real tasks and real decisions."
+        },
+        {
+          "sourceId": "r3-d34-skills",
+          "quote": "Intervene or escalate when AI (artificial intelligence) outputs are ambiguous, incorrect, or risk causing harm"
+        },
+        {
+          "sourceId": "r3-d34-ico-review",
+          "quote": "Assign human reviewers a manageable caseload"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "从会操作到能判断",
+        "en": "From tool operation to judgment"
+      },
+      "previousMissing": [
+        "需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+      ],
+      "searchNotes": [
+        "公开框架补足通用考核设计，不能提供本组织评分阈值。已明示实际实施需量表与责任人，但不将尚未实施当成概念知识缺口。"
+      ]
+    },
+    {
+      "unitId": "4.3.6-unit-1",
+      "explanation": {
+        "zh": "把可重复的辅助工作与需要语境、价值取舍和授权的判断分开，结合风险与验证结果重新设计人的监督、沟通和创造性职责，明确最终责任。重复性只是候选特征，不是自动化授权。",
+        "en": "Separate repeatable assistance tasks from judgments requiring context, value trade-offs, and authorization. Use risk and validation results to redesign people's oversight, communication, and creative responsibilities, and clarify final accountability. Repetition is only a candidate characteristic, not authorization to automate."
+      },
+      "examples": [
+        {
+          "zh": "教学示例：AI起草投诉回复，人类理解处境、核验事实并决定发送。",
+          "en": "Teaching example: AI drafts a complaint response; a person understands the situation, verifies facts, and decides whether to send it."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "自动化一个任务不等于可以移交整个岗位责任。",
+          "en": "Automating one task does not mean responsibility for an entire role can be handed over."
+        }
+      ],
+      "status": "supported",
+      "rationale": "OECD Artificial Intelligence in Society的Preparing for job transformation章节区分任务替代/补充及新任务，明确批判思考、创造、同理心；Microsoft指南3–5、8–11和17支持语境、价值、拒绝/纠正及用户控制。结合NIST GOVERN 3.2，人机分工按任务和风险设计；重复性仅是候选特征，不能自动移交岗位问责。",
+      "prerequisiteIds": [
+        "3.2.1-unit-1",
+        "3.1-lesson-4"
+      ],
+      "prerequisiteRationale": "任务自动化仍需明确最终问责与人工干预。",
+      "evidence": [
+        {
+          "sourceId": "d34-review-nist-rmf-core",
+          "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+        },
+        {
+          "sourceId": "d34-review-aws-people",
+          "quote": "Identify key stakeholders, cross-organizational dependencies, key risks, and barriers to transformation."
+        },
+        {
+          "sourceId": "r3-d34-jobs",
+          "quote": "These could include leveraging human skills such as critical thinking; creativity, innovation and entrepreneurship; and empathy"
+        },
+        {
+          "sourceId": "r3-d34-hai",
+          "quote": "Over-promising can hurt perceptions of the AI service."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "判断、同理心与责任",
+        "en": "Judgment, empathy and responsibility"
+      },
+      "previousMissing": [
+        "需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+      ],
+      "searchNotes": [
+        "读OECD任务变化/技能章节及Microsoft交互指南全文，未把人类技能优势写成所有任务不可自动化的绝对规律。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "r3-d34-nist-bias",
+      "title": "NIST SP1270: Towards a Standard for Identifying and Managing Bias in AI",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf",
+      "excerpt": "Not taking context into consideration during model selection can lead to biased results for sub-populations",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-annotation",
+      "title": "Röttger et al.: Two Contrasting Data Annotation Paradigms for Subjective NLP Tasks",
+      "url": "https://arxiv.org/abs/2112.07475",
+      "excerpt": "there often are diverse valid beliefs about what the correct data labels should be.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-harm",
+      "title": "OECD: Defining AI incidents and related terms",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/defining-ai-incidents-and-related-terms_88d089ec/d1a8d965-en.pdf",
+      "excerpt": "Other dimensions of harm include its possible recurrence and reversibility.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-oversight",
+      "title": "European Commission: Article 14 Human oversight",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-14",
+      "excerpt": "the risks, level of autonomy and context of use",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-ico-review",
+      "title": "ICO: Human review",
+      "url": "https://ico.org.uk/for-organisations/advice-and-services/audits/data-protection-audit-framework/toolkits/artificial-intelligence/human-review/",
+      "excerpt": "Assign human reviewers a manageable caseload",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-ico-evidence",
+      "title": "ICO: How do we ensure individual rights in our AI systems?",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-individual-rights-in-our-ai-systems/",
+      "excerpt": "consider all available input data, and also take into account other additional factors.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-quality",
+      "title": "UK Government: The Government Data Quality Framework",
+      "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework",
+      "excerpt": "Accuracy describes the degree to which data matches reality.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-quality-guidance",
+      "title": "UK Government: The Government Data Quality Framework: guidance",
+      "url": "https://www.gov.uk/government/publications/the-government-data-quality-framework/the-government-data-quality-framework-guidance",
+      "excerpt": "Metadata records must be comprehensive throughout a data set’s lifecycle.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-ownership",
+      "title": "UK Government: Data ownership model",
+      "url": "https://www.gov.uk/government/publications/data-ownership-in-government/data-ownership-model",
+      "excerpt": "the original sender retains ownership of their version of the data",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-versions",
+      "title": "UK Government: Transparency in Government Evaluation Research",
+      "url": "https://www.gov.uk/government/publications/the-magenta-book/transparency-in-government-evaluation-research-t-i-g-e-r-html",
+      "excerpt": "updates or corrections do not overwrite the original evaluation dataset.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-consultation",
+      "title": "Milanez: The impact of AI on the workplace: Evidence from OECD case studies of AI implementation",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/03/the-impact-of-ai-on-the-workplace-evidence-from-oecd-case-studies-of-ai-implementation_b4c2c6ee/2247ce58-en.pdf",
+      "excerpt": "Direct worker consultation can range from simple exchanges of information to the involvement of workers",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-hai",
+      "title": "Microsoft Research: Guidelines for Human-AI Interaction",
+      "url": "https://www.microsoft.com/en-us/research/articles/guidelines-for-human-ai-interaction-eighteen-best-practices-for-human-centered-ai-design/",
+      "excerpt": "Over-promising can hurt perceptions of the AI service.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-psychological",
+      "title": "Edmondson (1999): Psychological Safety and Learning Behavior in Work Teams",
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Organizational_Learning_and_Change/Edmondson_1999_Psychological_safety.pdf",
+      "excerpt": "Members of this team are able to bring up problems and tough issues.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-skills",
+      "title": "UK Government: AI skills tools package",
+      "url": "https://www.gov.uk/government/publications/ai-skills-for-the-uk-workforce/ai-skills-tools-package",
+      "excerpt": "Intervene or escalate when AI (artificial intelligence) outputs are ambiguous, incorrect, or risk causing harm",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-training",
+      "title": "UK Government: Employer guide: What works for AI upskilling in the UK",
+      "url": "https://www.gov.uk/government/publications/skills-for-ai-what-works-for-ai-upskilling-in-the-uk/employer-guide-what-works-for-ai-upskilling-in-the-uk--2",
+      "excerpt": "It links learning to real tasks and real decisions.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-jobs",
+      "title": "OECD: Artificial Intelligence in Society — Public policy considerations",
+      "url": "https://www.oecd.org/en/publications/artificial-intelligence-in-society_eedfee77-en/full-report/component-9.html",
+      "excerpt": "These could include leveraging human skills such as critical thinking; creativity, innovation and entrepreneurship; and empathy",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

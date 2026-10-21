@@ -1,0 +1,653 @@
+{
+  "units": [
+    {
+      "unitId": "2.1-lesson-2",
+      "explanation": {
+        "zh": "比较预算、交付时间、内部能力、供应商条件和合规需求。也要考虑集成、维护、迁移与持续运营成本。",
+        "en": "Compare budget, delivery time, internal capabilities, supplier conditions, and compliance needs. Also consider integration, maintenance, migration, and ongoing operating costs."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：现有团队缺少运维能力时，不能只比较模型购买价格。",
+          "en": "Teaching illustration (not a source case): When the current team lacks operational capability, comparing model purchase prices alone is insufficient."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "原微软采购比较覆盖成本、时间和能力。新增英国采购指引 Procurement approach and vehicle 包含创新合作；Drafting your requirement 覆盖集成、维护、知识转移、IP与风险分配；End-of-life 覆盖合同结束角色。只提取比较维度，不把英国程序列为全球法定义务。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-buy",
+          "quote": "This choice affects cost, timetovalue, risk, scalability, and the long-term sustainability of the solution."
+        },
+        {
+          "sourceId": "r3-d2-procurement",
+          "quote": "Allocate risk to the parties best able to manage it."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "自建、购买或合作",
+        "en": "Build, buy, or partner"
+      },
+      "previousMissing": [
+        "合作关系及供应商合同条款尚缺直接证据。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.1-lesson-3",
+      "explanation": {
+        "zh": "综合商业价值、可行性、可持续性及战略契合度，决定扩展、暂停还是终止。先定义检验假设和停止条件。",
+        "en": "Consider business value, feasibility, sustainability, and strategic fit together when deciding whether to scale, pause, or terminate a project. Define the hypotheses to test and the stopping conditions first."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：高潜在收益但数据不可用的项目，应先验证准备条件。",
+          "en": "Teaching illustration (not a source case): For a project with high potential returns but unavailable data, first verify that readiness conditions can be met."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软BXT分别评估业务价值、需求、技术可行性和战略契合，原四决策支持测量与停止判断。AWS Sustainability design principles 补充资源和环境足迹、人员知识持续维护、成本上限及终止条件、运营不再值得时退役。可持续性包含运营和资源持续承担；具体阈值由项目确定。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "Measurability: You can establish a baseline and set a clear target for improvement."
+        },
+        {
+          "sourceId": "r3-d2-sustainability",
+          "quote": "Track energy, carbon, and water impact alongside cost and latency"
+        },
+        {
+          "sourceId": "r3-d2-envisioning",
+          "quote": "Once you've identified a use case's business value, you need to ensure there is demand for the solution."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "项目优先级",
+        "en": "Project prioritization"
+      },
+      "previousMissing": [
+        "可持续性维度缺少直接定义与判据。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.1-lesson-5",
+      "explanation": {
+        "zh": "切换流程或平台要检查数据准备、性能、权限、成本以及回退路径，避免演示成功后直接替换关键流程。",
+        "en": "When switching workflows or platforms, check data readiness, performance, permissions, costs, and rollback routes. Do not replace a critical workflow immediately after a successful demonstration."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：先小范围试用新客服系统，保留可用的人工处理方式。",
+          "en": "Teaching illustration (not a source case): Try the new customer support system on a small scale first, while retaining a workable manual handling process."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "Azure Migrate 的 Get compute costs 与 Visualize data 明确估算资源成本及月度成本分布；Finalize the migration plan 明确权限、停机、数据、安全/性能/集成测试；Migrate 要求先试迁移。结合已有AWS回退资料覆盖各项；人工后备为原创教学例示。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-cutover",
+          "quote": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met"
+        },
+        {
+          "sourceId": "d2-precutover",
+          "quote": "Be sure to document a rollback procedure as part of the cutover plan."
+        },
+        {
+          "sourceId": "r3-d2-migration",
+          "quote": "Permissions: Review recommended Azure permissions, and server/database access roles and permissions needed for migration."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "迁移与业务连续性",
+        "en": "Migration and business continuity"
+      },
+      "previousMissing": [
+        "迁移权限与成本检查尚缺本条引用的直接支持。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.1.2-unit-1",
+      "explanation": {
+        "zh": "比较时间、预算、差异化需求、内部能力、集成、持续运营、供应商条款和退出成本。已有产品适配且交付期紧时，购买可能比自建更可行。",
+        "en": "Compare time, budget, differentiation needs, internal capabilities, integration, ongoing operations, supplier terms, and exit costs. Buying may be more feasible than building when an existing product fits and delivery time is short."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：缺少运维团队且三个月要上线，先核对现成服务的能力与约束。",
+          "en": "Teaching illustration (not a source case): With no operations team and a three-month launch deadline, first check the capabilities and constraints of available services."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "购买服务不免除本企业的数据和用途责任。",
+          "en": "Buying a service does not remove your company's responsibility for its data and intended uses."
+        }
+      ],
+      "status": "supported",
+      "rationale": "原微软build/buy资料支持适配、时限、定制与锁定风险。英国采购指引风险分配段指出买方仍承担用途、数据访问/转移责任；合作采购、知识转移、长期支持、IP及End-of-life补充合作治理和退出工作。退出工作需资源且纳入TCO是组合推论，不声称固定退出费。责任指管理职责，法律分配依地区与合同，未将英国部门规定照搬全球企业法条。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-buy",
+          "quote": "This choice affects cost, timetovalue, risk, scalability, and the long-term sustainability of the solution."
+        },
+        {
+          "sourceId": "r3-d2-procurement",
+          "quote": "Allocate risk to the parties best able to manage it."
+        },
+        {
+          "sourceId": "d2-roiCriteria",
+          "quote": "TCO includes all costs across the AI lifecycle."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "自建、购买与合作的比较维度",
+        "en": "Criteria for comparing build, buy, and partner options"
+      },
+      "previousMissing": [
+        "采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.1.3-unit-1",
+      "explanation": {
+        "zh": "先识别必须满足的数据授权、安全和业务连续性条件，再比较价值、实施能力与战略契合度。高预期收益不能抵消尚未满足的硬约束。",
+        "en": "First identify mandatory requirements for data authorization, security, and business continuity, then compare value, implementation capability, and strategic fit. High expected returns cannot offset unmet mandatory requirements."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：收益最高的项目没有合法可用资料，应先暂停补齐条件。",
+          "en": "Teaching illustration (not a source case): Pause the highest-return project if legally usable material is unavailable, and satisfy the conditions first."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "评分模型用于辅助讨论，权重与门槛应明确。",
+          "en": "Scoring models support discussion; weights and thresholds should be explicit."
+        }
+      ],
+      "status": "supported",
+      "rationale": "采购指引数据评估要求先确认数据、访问及同意；AWS数据安全要求按授权取用。AWS切换资料明确回退触发，NIST MAP 1.5提供组织风险容忍门槛。AWS Prioritizing applications 要求明确权重并复查排序，微软BXT补齐价值/能力/战略比较。本条规则是先满足本项目确认为必须的条件再评分，不宣称所有项目适用同一门槛。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "d2-nist",
+          "quote": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes."
+        },
+        {
+          "sourceId": "r3-d2-prioritization",
+          "quote": "Next, define a score, or weight, for each possible value of each data point."
+        },
+        {
+          "sourceId": "r3-d2-procurement",
+          "quote": "Allocate risk to the parties best able to manage it."
+        },
+        {
+          "sourceId": "d2-dataSecurity",
+          "quote": "Make sure that models and applications can retrieve only the information that the user is authorized to access."
+        },
+        {
+          "sourceId": "d2-cutover",
+          "quote": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met"
+        },
+        {
+          "sourceId": "r3-d2-envisioning",
+          "quote": "Once you've identified a use case's business value, you need to ensure there is demand for the solution."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "价值、可行性与硬性约束",
+        "en": "Value, feasibility, and hard constraints"
+      },
+      "previousMissing": [
+        "数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.1.5-unit-1",
+      "explanation": {
+        "zh": "迁移前验证新旧系统表现、接口、数据准备和成本，明确切换窗口、责任人、回退触发及恢复方式；迁移成功不能只看系统已启动。",
+        "en": "Before migration, validate the performance of the old and new systems, interfaces, data readiness, and costs. Specify the cutover window, responsible owners, rollback triggers, and recovery method; a running system alone does not establish migration success."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：先在部分请求上验证新平台，异常时可回到原处理流程。",
+          "en": "Teaching illustration (not a source case): Validate the new platform on a subset of requests first, with a route back to the original process if anomalies occur."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "回退方案也需要演练与可用资源。",
+          "en": "Rollback plans also require rehearsals and available resources."
+        }
+      ],
+      "status": "supported",
+      "rationale": "已有AWS pre-cutover/cutover 支持责任、窗口、回退触发、恢复及演练。Azure Migrate 的 Get compute costs 与 Visualize data 直接补足迁移前成本估算审查；Finalize the migration plan 也支持测试缓冲、集成、安全、性能和数据完整性。成本检查不保证预测必然实现。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-cutover",
+          "quote": "Defined checkpoints that set off a rollback during the cutover if certain predefined criteria are met"
+        },
+        {
+          "sourceId": "d2-precutover",
+          "quote": "Be sure to document a rollback procedure as part of the cutover plan."
+        },
+        {
+          "sourceId": "r3-d2-migration",
+          "quote": "Permissions: Review recommended Azure permissions, and server/database access roles and permissions needed for migration."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "切换、回退与业务连续性",
+        "en": "Cutover, rollback, and business continuity"
+      },
+      "previousMissing": [
+        "成本验证未由本条迁移来源直接覆盖。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.2-lesson-1",
+      "explanation": {
+        "zh": "KPI应对应业务目标。有形收益如实际节支或收入，无形收益如满意度；两者需要清楚的测量方式，不能随意互相折算。",
+        "en": "KPIs should match business objectives. Tangible benefits include actual cost reductions or revenue; intangible benefits include satisfaction. Both need clear measurement methods and cannot be arbitrarily converted into each other."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：同时记录客服处理时间与答复质量，避免只优化生成速度。",
+          "en": "Teaching illustration (not a source case): Track customer support handling time together with response quality, rather than optimizing generation speed alone."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软 impact 的 quantitative metrics 与 qualitative signals 分别提供财务/运营记录、用户信心、客户体验和信任的观测方法，并要求KPI关联业务价值。英国效率框架将可释放现金限定为支出减少。满意度独立测量并不构成已实现现金，因此不能任意换算；不否定可靠方法下的非现金估值。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [
+        "2.1.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.1.1-unit-1（问题、受益者与可观测结果）提供本单元实际使用的问题及结果定义。",
+      "evidence": [
+        {
+          "sourceId": "r3-d2-impact",
+          "quote": "User confidence in agent output"
+        },
+        {
+          "sourceId": "d2-efficiency",
+          "quote": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "有形与无形收益",
+        "en": "Tangible and intangible benefits"
+      },
+      "previousMissing": [
+        "无形收益不得任意货币化的限定需补专门计量依据。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.2-lesson-4",
+      "explanation": {
+        "zh": "先导指标用于较早观察成功条件，结果指标用于观察已实现的成果。先导信号有价值，但不构成最终成功保证。",
+        "en": "Leading indicators provide early observations of conditions for success; outcome indicators measure results already achieved. Leading signals are useful but do not guarantee eventual success."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：合适的活跃使用与流程采用可作为信号，仍需观察实际质量和业务价值。",
+          "en": "Teaching illustration (not a source case): Appropriate active use and workflow adoption can be signals, but actual quality and business value still need to be observed."
+        }
+      ],
+      "misconceptions": [],
+      "status": "supported",
+      "rationale": "微软 impact 的 leading and lagging indicators 表区分早期采用/测试与后续ROI、错误率、留存；测量陷阱段明确使用次数不等于价值。HSE HSG254第67—69段要求复核指标与结果不一致，支持信号不能保证结果。只借用过程安全领域的关系验证方法，不将其阈值作为AI收益证据。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "whether that adoption is improving business outcomes."
+        },
+        {
+          "sourceId": "r3-d2-impact",
+          "quote": "Lagging indicators confirm outcomes after they happen."
+        },
+        {
+          "sourceId": "r3-d2-hse",
+          "quote": "Variation in performance between leading and lagging indicators"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "先导性指标",
+        "en": "Leading indicators"
+      },
+      "previousMissing": [
+        "来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.2.1-unit-2",
+      "explanation": {
+        "zh": "有形收益可以形成可核验的金额或运营变化；满意度、信任等无形收益应设计独立测量，不能任意折算成已经实现的现金。",
+        "en": "Tangible benefits can produce verifiable monetary or operational changes. Intangible benefits such as satisfaction and trust need separate measurement and cannot be arbitrarily converted into cash already realized."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：分别报告已兑现成本减少与客户满意度变化。",
+          "en": "Teaching illustration (not a source case): Report realized cost reductions separately from changes in customer satisfaction."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "无形收益不是无需证据的收益。",
+          "en": "Intangible benefits still require evidence."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软 impact 的 qualitative signals 给用户信心、客户体验和信任各自采集渠道，并将量化指标对照业务记录，支持无形收益也需证据。英国效率框架的现金释放定义说明满意度分数或信任叙述不能直接当成已实现现金。可靠估值与已经产生现金是不同命题。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "r3-d2-impact",
+          "quote": "User confidence in agent output"
+        },
+        {
+          "sourceId": "d2-efficiency",
+          "quote": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "有形收益与无形收益",
+        "en": "Tangible and intangible benefits"
+      },
+      "previousMissing": [
+        "满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.2.3-unit-2",
+      "explanation": {
+        "zh": "节省工时可释放产能，但只有支出实际减少才构成现金成本节省。若把产能用于新增产出，还需证明需求、人员安排和新增收入能够实现。",
+        "en": "Time savings can release capacity, but cash cost savings occur only when spending actually falls. If that capacity is used for additional output, demonstrate that demand, staffing arrangements, and additional revenue can materialize."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：每周省十小时但工资未减少，先记为可用产能。",
+          "en": "Teaching illustration (not a source case): If ten hours are saved each week but salaries do not fall, initially record this as available capacity."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "同一批省时不能无依据地重复计入减员与新增收益。",
+          "en": "Do not count the same saved time as both staff reductions and additional benefits without justification."
+        }
+      ],
+      "status": "supported",
+      "rationale": "英国效率框架支持现金与产能区分。微软 impact 的效率定义、manager stories 与 worked example 要说明工时重新投入何处，收入项关联转化、业务量及归因；BXT Experience/Business Value要求需求与变现安排。组合支持核对新增产出的需求、人员用途与收入兑现。GDS框架1.2明确防止跨主题及下游重复计算，不能将同一工时同时假定用于减员和新增产出。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-efficiency",
+          "quote": "Cash releasing means it could lead to a direct reduction in spending on an activity, project, programme, or policy"
+        },
+        {
+          "sourceId": "r3-d2-impact",
+          "quote": "Claiming value based on theoretical time savings alone undermines credibility."
+        },
+        {
+          "sourceId": "r3-d2-envisioning",
+          "quote": "Once you've identified a use case's business value, you need to ensure there is demand for the solution."
+        },
+        {
+          "sourceId": "r3-d2-benefits",
+          "quote": "Teams must ensure that benefits identified in one theme are not double counted in other areas."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "释放产能与现金节省",
+        "en": "Released capacity and cash savings"
+      },
+      "previousMissing": [
+        "政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.2.4-unit-1",
+      "explanation": {
+        "zh": "培训完成、使用频率等可作为早期信号；留存、服务质量、净收益等结果需要后续观察。应说明预期联系，并检验先导指标能否预测结果。",
+        "en": "Training completion and usage frequency can be early signals; outcomes such as retention, service quality, and net benefits need later observation. State the expected relationship and test whether the leading indicators predict the outcomes."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：培训后继续追踪独立核验正确率，而不只统计出勤。",
+          "en": "Teaching illustration (not a source case): After training, continue tracking independent verification accuracy instead of counting attendance alone."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "先导指标向好不等于收益已兑现。",
+          "en": "Improving leading indicators do not mean benefits have been realized."
+        }
+      ],
+      "status": "supported",
+      "rationale": "微软 impact 指标表提供早期采用、测试与后续净收益/质量/留存联系。HSE HSG254第66—69段要求展示联系并复核先导与结果分歧，第68段以培训完成不等于关键活动胜任为反例。只迁移指标关系检验方法，不能据安全行业培训直接推断AI商业收益；保留后续检验要求。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [
+        "2.2.1-unit-1"
+      ],
+      "prerequisiteRationale": "2.2.1-unit-1（结果指标与活动指标）提供本单元实际使用的活动与结果区分。",
+      "evidence": [
+        {
+          "sourceId": "d2-strategy",
+          "quote": "whether that adoption is improving business outcomes."
+        },
+        {
+          "sourceId": "r3-d2-impact",
+          "quote": "Lagging indicators confirm outcomes after they happen."
+        },
+        {
+          "sourceId": "r3-d2-hse",
+          "quote": "Variation in performance between leading and lagging indicators"
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "先导信号与滞后结果",
+        "en": "Leading signals and lagging outcomes"
+      },
+      "previousMissing": [
+        "先导指标对结果预测效度的验证方法尚缺直接来源。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    },
+    {
+      "unitId": "2.3.1-unit-1",
+      "explanation": {
+        "zh": "分析竞争变化如何影响客户期待、交付效率和价值链，再决定投资方向。相同工具在不同业务条件下可能产生不同价值。",
+        "en": "Analyze how competitive changes affect customer expectations, delivery efficiency, and the value chain before choosing investment priorities. The same tool may create different value under different business conditions."
+      },
+      "examples": [
+        {
+          "zh": "教学例示（非来源原例）：同行推出智能客服，本企业先核对客户最常见的服务障碍。",
+          "en": "Teaching illustration (not a source case): When competitors launch intelligent customer support, first check your own customers' most common service obstacles."
+        }
+      ],
+      "misconceptions": [
+        {
+          "zh": "不能仅凭竞争对手的投入金额决定本企业投资；还需核对本企业的目标、收益、能力与约束。",
+          "en": "Do not decide your company's investment solely from how much a competitor spends; also assess your own company's objectives, benefits, capabilities, and constraints."
+        }
+      ],
+      "status": "supported",
+      "rationale": "保留AWS竞争优势及Teece客户/价值链证据。微软BXT要求以自身目标、收益、需求、资源和技术风险评估用例，结合NIST组织风险容忍。将过强的‘不是投资依据’改为‘不能仅凭’：竞品支出可作环境信息但不能替代自身投资论证。这是多项决策条件的组合推论，不冒充来源直接给出的竞品预算公式。 双语核心与限定保留，业务例子是教学例示。",
+      "prerequisiteIds": [],
+      "prerequisiteRationale": "本单元可以独立理解，不因同章顺序或技能首条而强加先修；原清单未指定硬性先修。",
+      "evidence": [
+        {
+          "sourceId": "d2-awsAdvantage",
+          "quote": "Sustainable competitive advantage can’t come just from using generative AI"
+        },
+        {
+          "sourceId": "d2-teece2017",
+          "quote": "Without the right balance between the creation, delivery, and capture of value"
+        },
+        {
+          "sourceId": "r3-d2-envisioning",
+          "quote": "Once you've identified a use case's business value, you need to ensure there is demand for the solution."
+        },
+        {
+          "sourceId": "d2-nist",
+          "quote": "Identify whether there are non-AI or non-technology alternatives that will lead to more trustworthy outcomes."
+        }
+      ],
+      "missing": [],
+      "requiredMaterial": [],
+      "title": {
+        "zh": "客户问题与竞争位置",
+        "en": "Customer problems and competitive position"
+      },
+      "previousMissing": [
+        "“竞争对手投入金额不是本企业投资依据”的预算边界缺少直接一手论证。"
+      ],
+      "searchNotes": [
+        "实际浏览新增来源正文，按rationale标注章节逐项核对previousMissing；短引文仅作定位，摘要没有伪作原文。",
+        "先修关系逐项复核：保留原具体unitId；独立概念不新增依赖。没有新增通用权重、法律义务或收益保证。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "r3-d2-procurement",
+      "title": "Office for AI: Guidelines for AI procurement",
+      "url": "https://www.gov.uk/government/publications/guidelines-for-ai-procurement/guidelines-for-ai-procurement",
+      "excerpt": "Allocate risk to the parties best able to manage it.\nDefining end-of-contract roles and processes",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-migration",
+      "title": "Microsoft: Build migration plan with Azure Migrate",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/concepts-migration-planning?view=migrate-classic",
+      "excerpt": "Permissions: Review recommended Azure permissions, and server/database access roles and permissions needed for migration.\nGet compute costs",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-sustainability",
+      "title": "AWS Agentic AI Lens: Sustainability design principles",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/sustainability-design-principles.html",
+      "excerpt": "Track energy, carbon, and water impact alongside cost and latency\nsuccess criteria, cost ceilings, and termination conditions",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-prioritization",
+      "title": "AWS: Prioritization and migration strategy",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/application-portfolio-assessment-guide/prioritization-and-migration-strategy.html",
+      "excerpt": "Next, define a score, or weight, for each possible value of each data point.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-impact",
+      "title": "Microsoft: Measure the impact of your agents",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+      "excerpt": "Lagging indicators confirm outcomes after they happen.\nClaiming value based on theoretical time savings alone undermines credibility.\nUser confidence in agent output",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-hse",
+      "title": "HSE: Developing process safety indicators (HSG254)",
+      "url": "https://www.hse.gov.uk/pubns/priced/hsg254.pdf",
+      "excerpt": "Variation in performance between leading and lagging indicators",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-benefits",
+      "title": "Government Digital Service: Digital and Data Benefits framework",
+      "url": "https://www.gov.uk/government/publications/digital-and-data-benefits-framework/digital-and-data-benefits-framework",
+      "excerpt": "Teams must ensure that benefits identified in one theme are not double counted in other areas.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d2-envisioning",
+      "title": "Microsoft: Evaluate and Prioritize an AI Use Case with Business Envisioning",
+      "url": "https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/business-envisioning",
+      "excerpt": "Once you've identified a use case's business value, you need to ensure there is demand for the solution.",
+      "verifiedAt": "2026-10-20"
+    }
+  ]
+}

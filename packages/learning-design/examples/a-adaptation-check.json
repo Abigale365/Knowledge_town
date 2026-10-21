@@ -1,0 +1,17 @@
+{
+  "input": {
+    "id": "aib-knowledge",
+    "revision": 1,
+    "hash": "e62f4fa1413371f05d4f06b607a6020b3609cf044b6401304c65778c48a10c31",
+    "materialBundleId": "aib-knowledge-materials",
+    "materialRevision": 1
+  },
+  "result": "full-authored-adaptation-passed",
+  "uniqueUnits": 139,
+  "objectives": 58,
+  "learningErrors": 0,
+  "knowledgeWarnings": 139,
+  "plan": "../generated/aib-learning-plan.v1.json",
+  "manifest": "../generated/aib-manifest.v1.json",
+  "note": "Supersedes the earlier fixture-only blocked probe. Full teaching adaptation preserves source needs-review warnings."
+}

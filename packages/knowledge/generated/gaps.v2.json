@@ -1,0 +1,352 @@
+[
+  {
+    "unitId": "1.1-lesson-5",
+    "status": "needs-review",
+    "missing": [
+      "已读IBM推理定义支持预测未知结果；业务错误代价的系统评价方法尚未取得专门资料，保留课程建议待领域审查。"
+    ],
+    "requiredMaterial": [
+      "预测定义及错误成本评估的官方资料。"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-1",
+    "status": "needs-review",
+    "missing": [
+      "IBM已读正文区分显式规则与复杂模式学习；规则优先的选择策略和价值/维护成本权衡尚缺决策指南。"
+    ],
+    "requiredMaterial": [
+      "规则与模型选择、错误成本和维护成本的官方决策指南。"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-3",
+    "status": "needs-review",
+    "missing": [
+      "IBM编排正文支持多角色协调及执行次序，AI agents的风险章节说明共享失败风险；资料交接来源和访问范围的具体约定尚缺专项指南。"
+    ],
+    "requiredMaterial": [
+      "多代理交接证据、访问控制和质量评估官方指南。"
+    ]
+  },
+  {
+    "unitId": "1.2-lesson-4",
+    "status": "needs-review",
+    "missing": [
+      "IBM漂移正文支持变化检测、监测与重新测试；本单元把质量、成本、反馈整合为闭环的具体指标方案尚缺运行指南。"
+    ],
+    "requiredMaterial": [
+      "部署后监测指标与纠正流程的官方资料。"
+    ]
+  },
+  {
+    "unitId": "1.2.2-unit-3",
+    "status": "needs-review",
+    "missing": [
+      "已读编排正文支持角色与同步协调；串并行任务依赖、交接证据及失败责任的明确流程仍需专项编排资料。"
+    ],
+    "requiredMaterial": [
+      "代理串并行编排、来源传递、状态与失败责任官方文档。"
+    ]
+  },
+  {
+    "unitId": "1.2.3-unit-2",
+    "status": "needs-review",
+    "missing": [
+      "已读漂移正文支持测试和监测；延迟/成本/失败率基线以及重训、回退、用途调整的决策条件尚缺运行手册。"
+    ],
+    "requiredMaterial": [
+      "生产监测指标基线、修复验证与回退流程官方资料。"
+    ]
+  },
+  {
+    "unitId": "1.3-lesson-1",
+    "status": "needs-review",
+    "missing": [
+      "AWS Prompt engineering concepts 已支持任务、上下文、样例及输出约束；代表性任务测试的选样与验收办法尚需评测资料。"
+    ],
+    "requiredMaterial": [
+      "提示组成及代表性评测的官方技术指南。"
+    ]
+  },
+  {
+    "unitId": "1.3.1-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "AWS正文支持提示组件及分隔示例；分隔文档与操作指令能降低指令混淆的安全性声明仍需专项资料，不能把格式分隔当作权限边界。"
+    ],
+    "requiredMaterial": [
+      "提示分隔、注入防御及任务上下文约束格式官方指导。"
+    ]
+  },
+  {
+    "unitId": "1.3.1-unit-2",
+    "status": "needs-review",
+    "missing": [
+      "已读IBM和AWS正文支持少样本展示任务模式；版本、成功标准及典型/边界/失败用例的测试管理仍需专项评测资料。"
+    ],
+    "requiredMaterial": [
+      "提示版本管理、代表性测试集和答案泄漏防范资料。"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-2",
+    "status": "needs-review",
+    "missing": [
+      "合作关系及供应商合同条款尚缺直接证据。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：合作关系及供应商合同条款尚缺直接证据。"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-3",
+    "status": "needs-review",
+    "missing": [
+      "可持续性维度缺少直接定义与判据。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：可持续性维度缺少直接定义与判据。"
+    ]
+  },
+  {
+    "unitId": "2.1-lesson-5",
+    "status": "needs-review",
+    "missing": [
+      "迁移权限与成本检查尚缺本条引用的直接支持。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：迁移权限与成本检查尚缺本条引用的直接支持。"
+    ]
+  },
+  {
+    "unitId": "2.1.2-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：采购仍负数据与用途责任、合作治理及退出成本需要额外直接来源。"
+    ]
+  },
+  {
+    "unitId": "2.1.3-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：数据授权、安全、连续性与评分权重的完整组合尚未逐项取证。"
+    ]
+  },
+  {
+    "unitId": "2.1.5-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "成本验证未由本条迁移来源直接覆盖。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：成本验证未由本条迁移来源直接覆盖。"
+    ]
+  },
+  {
+    "unitId": "2.2-lesson-1",
+    "status": "needs-review",
+    "missing": [
+      "无形收益不得任意货币化的限定需补专门计量依据。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：无形收益不得任意货币化的限定需补专门计量依据。"
+    ]
+  },
+  {
+    "unitId": "2.2-lesson-4",
+    "status": "needs-review",
+    "missing": [
+      "来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：来源区分采用与成果，但未直接定义先导/滞后指标的预测关系。"
+    ]
+  },
+  {
+    "unitId": "2.2.1-unit-2",
+    "status": "needs-review",
+    "missing": [
+      "满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：满意度、信任的独立计量与任意现金折算禁区尚缺专门依据。"
+    ]
+  },
+  {
+    "unitId": "2.2.3-unit-2",
+    "status": "needs-review",
+    "missing": [
+      "政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：政府核算来源未直接证明商业新增收入所需的需求及人员安排条件。"
+    ]
+  },
+  {
+    "unitId": "2.2.4-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "先导指标对结果预测效度的验证方法尚缺直接来源。"
+    ],
+    "requiredMaterial": [
+      "补充可逐字核验的一手资料及适用范围，具体覆盖：先导指标对结果预测效度的验证方法尚缺直接来源。"
+    ]
+  },
+  {
+    "unitId": "2.3.1-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "“竞争对手投入金额不是本企业投资依据”的预算边界缺少直接一手论证。"
+    ],
+    "requiredMaterial": [
+      "补充投资决策原始材料，直接区分竞品支出信号与本企业收益、能力和预算依据。"
+    ]
+  },
+  {
+    "unitId": "3.1.2-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "缺少可逆性评估及不可接受严重损害的明确适用标准。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：缺少可逆性评估及不可接受严重损害的明确适用标准。"
+    ]
+  },
+  {
+    "unitId": "3.1.4-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需核实复核时间、证据可访问性和三类升级条件的操作依据。"
+    ]
+  },
+  {
+    "unitId": "3.3-lesson-2",
+    "status": "needs-review",
+    "missing": [
+      "需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补标注不一致、优化目标及环境变化导致群体差异的直接机制资料。"
+    ]
+  },
+  {
+    "unitId": "3.3.2-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补标注、优化目标、部署分布差异的具体实例或方法资料。"
+    ]
+  },
+  {
+    "unitId": "4.2.1-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补五维质量定义、主键去重、缺失值处理及清洗依据保留的一手资料。"
+    ]
+  },
+  {
+    "unitId": "4.2.2-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补资料版本、维护责任、旧版处置及授权用途限制的具体治理资料。"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-3",
+    "status": "needs-review",
+    "missing": [
+      "需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补AI变更沟通中不确定结果、岗位影响及双向反馈的直接指导。"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-4",
+    "status": "needs-review",
+    "missing": [
+      "需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补区分文化阻碍、合理风险顾虑和工具适配问题的诊断材料。"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-5",
+    "status": "needs-review",
+    "missing": [
+      "需补AI岗位任务训练与基于表现的能力考核资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补AI岗位任务训练与基于表现的能力考核资料。"
+    ]
+  },
+  {
+    "unitId": "4.3-lesson-6",
+    "status": "needs-review",
+    "missing": [
+      "需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补人机任务重设计及批判性思考、同理心、创造性职责的直接资料。"
+    ]
+  },
+  {
+    "unitId": "4.3.3-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补变更沟通中证据化收益、岗位预期与信任维护的直接材料。"
+    ]
+  },
+  {
+    "unitId": "4.3.4-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补心理安全、失败报告与采用激励机制的证据或正式组织政策。"
+    ]
+  },
+  {
+    "unitId": "4.3.5-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补AI岗位考核量表、真实任务练习及POC/黑客马拉松责任安排资料。"
+    ]
+  },
+  {
+    "unitId": "4.3.6-unit-1",
+    "status": "needs-review",
+    "missing": [
+      "需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+    ],
+    "requiredMaterial": [
+      "补充可公开引用的一手材料及对应章节或原句：需补人机任务划分方法及语境、授权、创造性职责的具体依据。"
+    ]
+  }
+]
