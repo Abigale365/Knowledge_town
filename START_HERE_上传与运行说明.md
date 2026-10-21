@@ -4,9 +4,8 @@
 
 ## 本地运行
 
-这是纯 HTML/CSS/JavaScript 项目，无需安装依赖或构建。
-在解压目录运行 `python -m http.server 8000`，浏览器打开 http://localhost:8000/dist/ 。
-也可尝试直接打开 dist/index.html；推荐通过本地服务运行。
+当前版本包含本地课程生成后端，无需安装依赖或构建。安装 Node.js 22 或更新版本后，在项目根目录运行 `node server.cjs`，浏览器打开 http://127.0.0.1:8766/ 。
+前端也可静态运行，但使用资料生成课程需要此后端。API配置、六个独立章节和新手引导见 [课程使用说明](COURSE_SETUP.md)。密钥写在本机 `.env`，不要上传到GitHub。
 
 ## 手动上传 GitHub
 
