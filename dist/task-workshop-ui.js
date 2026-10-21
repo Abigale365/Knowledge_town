@@ -1,7 +1,7 @@
 /* Learning goals select the interaction. Only terminology uses definition matching. */
 'use strict';
 const WorkshopEngine=TaskWorkshop;
-function wt(text){return typeof text==='string'?text:text?.[state.language==='en'?'en':'zh']||text?.zh||'';}
+function wt(text){return typeof text==='string'?text:TownLocale.text(text?.zh,text?.en,state.language);}
 function hasWorkshop(sec=studySection()){return!!sec?.activity&&sec.activity.kind!=='match';}
 let workshopSelected=null,workshopEvidence=false;
 const workshopIcons={switchboard:'⚙', 'prompt-lab':'☁',portfolio:'⛵',ledger:'◷',canvas:'✧',balance:'⚖',permissions:'⚿',incident:'♜',readiness:'◉','data-pipeline':'⌘',dialogue:'♧',stagegate:'🚂'};

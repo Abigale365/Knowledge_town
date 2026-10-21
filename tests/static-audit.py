@@ -10,7 +10,7 @@ class P(HTMLParser):
         if t in ['script','img'] and 'src' in d:self.assets.append(d['src'])
         if 'aria-label' in d:self.labels.append(d['aria-label'])
 p=P();p.feed(Path('dist/index.html').read_text());assert len(p.ids)==len(set(p.ids))
-for f in p.assets:assert (Path('dist')/f).exists(),f
+for f in p.assets:assert (Path('dist')/f.split('?',1)[0].split('#',1)[0]).exists(),f
 for label in p.labels:assert re.search('[\u4e00-\u9fff]',label),label
 # All rooms have real independent assets at identical normalized scene coordinates.
 room_images=[]
@@ -29,7 +29,7 @@ print('PASS: unique static IDs, required assets, Chinese accessible labels, five
 print('LIMIT: static inspection is not browser rendering or device QA.')
 for page in ['index.html','adventure.html']:
     q=P();q.feed((Path('dist')/page).read_text());assert len(q.ids)==len(set(q.ids)),page
-    for f in q.assets:assert (Path('dist')/f).exists(),f
+    for f in q.assets:assert (Path('dist')/f.split('?',1)[0].split('#',1)[0]).exists(),f
 atlas=Image.open('dist/assets/objects.png')
 assert atlas.mode=='RGBA' and atlas.getchannel('A').getextrema()==(0,255)
 for row in range(3):
@@ -40,7 +40,7 @@ print('PASS: both entry pages, sprite atlas transparency, 12 populated sprite ce
 for page in ['index.html','short-hunt.html','adventure.html']:
     q=P();q.feed((Path('dist')/page).read_text())
     assert len(q.ids)==len(set(q.ids)),page
-    for f in q.assets:assert (Path('dist')/f).exists(),f
+    for f in q.assets:assert (Path('dist')/f.split('?',1)[0].split('#',1)[0]).exists(),f
 for key in ['harbor','market','tea','skyport']:
     im=Image.open(Path('dist/assets')/(key+'.webp'))
     assert im.width/im.height==1.5,(key,im.size)
@@ -49,7 +49,7 @@ assert 'objects.png' not in Path('dist/expedition.js').read_text()
 print('PASS: all three entry pages, four new 3:2 scenes, campaign uses painted objects without sprite overlays.')
 for page in ['index.html','expedition.html','short-hunt.html','adventure.html']:
     q=P();q.feed((Path('dist')/page).read_text());assert len(q.ids)==len(set(q.ids)),page
-    for f in q.assets:assert (Path('dist')/f).exists(),(page,f)
+    for f in q.assets:assert (Path('dist')/f.split('?',1)[0].split('#',1)[0]).exists(),(page,f)
 for key in ['world-town.webp','world-harbor.webp']:
     im=Image.open(Path('dist/assets')/key);assert im.width/im.height==1.5,(key,im.size)
 for key,cols,rows in [('world-people.webp',4,2),('world-plants.webp',3,2)]:

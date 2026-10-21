@@ -14,6 +14,7 @@
 | `dist/chapter*`、`study-themes.js`、`course-*`、`aib-*` | 当前章节、知识与课程导入 | 保留 |
 | `dist/away*`、`scene-*`、`exploration*`、`game-guide*`、`encounter-rules.js` | 场景冒险、探索学习、交互与引导 | 保留 |
 | `dist/knowledge-*`、`town-i18n.js`、`i18n-data.js` | 知识收集、组装、配对与双语显示 | 当前维护 |
+| `dist/language-engine.js` | 三种语言模式及显式中英文词对 | 当前维护 |
 | `dist/task-workshop*` | 情境判定、八类操作控件与十二种装置呈现 | 当前维护 |
 | `dist/assets/` | 所有正式玩法共享的图片、缩略图和图集 | 保留，检查脚本会核对静态引用 |
 | `dist/aib-practice-pack.json` | 题库JSON导出版 | 保留；与运行用的JS题库用途不同 |
@@ -34,6 +35,8 @@
 逐文件迁移位置见 [迁移清单](../archive/file-moves.json)。历史文档里的路径按原样保留作出处记录，请以本导航和当前说明为准。没有删除游戏、美术素材或旧存档数据。
 
 ## 开发入口
+
+- [模块边界与并行开发方案](MODULE_BOUNDARIES.md)
 
 - [使用与API配置](GAME_GUIDE.md)
 - [测试与验证范围](TESTING.md)

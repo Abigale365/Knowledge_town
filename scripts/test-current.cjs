@@ -5,5 +5,5 @@ function run(args){const result=cp.spawnSync(process.execPath,args,{cwd:root,std
 run(['scripts/check-repository.cjs']);
 const unit=fs.readdirSync(path.join(root,'tests')).filter(name=>name.endsWith('.test.cjs')).sort().map(name=>'tests/'+name);
 run(['--test',...unit]);
-for(const name of ['phase-import-ui.cjs','workshops-ui.cjs','knowledge-ui.cjs','chapter-ui.cjs','adventures-ui.cjs','exploration-ui.cjs','game-guide.cjs','learning-interactions.cjs','scene-learning.cjs','ui-smoke.cjs','expedition-ui.cjs','hunt-ui.cjs'])run(['tests/'+name]);
+for(const name of ['bilingual-ui.cjs','phase-import-ui.cjs','workshops-ui.cjs','knowledge-ui.cjs','chapter-ui.cjs','adventures-ui.cjs','exploration-ui.cjs','game-guide.cjs','learning-interactions.cjs','scene-learning.cjs','ui-smoke.cjs','expedition-ui.cjs','hunt-ui.cjs'])run(['tests/'+name]);
 console.log('PASS: current logic, current UI flows and all three classic-game regressions.');

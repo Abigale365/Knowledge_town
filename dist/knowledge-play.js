@@ -2,8 +2,8 @@
 'use strict';
 const knowledgePositions=new Map();
 lessonPosition=function(i){let positions=knowledgePositions.get(state.zone);if(!positions){const candidates=CAT.objects(state.zone).filter(o=>o.x>5&&o.x<95&&o.y>7&&o.y<94&&zoneInfo().stations.every(st=>Math.abs(o.x-st[2])>6||Math.abs(o.y-st[3])>6)&&[[69,67],[47,57],[40,43],[53,48],[66,53]].every(([x,y])=>Math.abs(o.x-x)>7||Math.abs(o.y-y)>7));positions=[];const d=(a,b)=>(a.x-b.x)**2*1.6+(a.y-b.y)**2;while(candidates.length){let best=0,score=-Infinity;for(let n=0;n<candidates.length;n++){const value=positions.length?Math.min(...positions.map(p=>d(p,candidates[n]))):-d({x:49,y:35},candidates[n]);if(value>score){best=n;score=value;}}positions.push(candidates.splice(best,1)[0]);}knowledgePositions.set(state.zone,positions);}return positions[i%positions.length];};
-function knowledgeText(l,key){return state.language==='en'?(l.en?.[key]||l[key]||''):(l[key]||'');}
-function learningCopy(zh,en){return state.language==='en'?en:zh;}
+function knowledgeText(l,key){return TownLocale.text(l[key],l.en?.[key],state.language);}
+function learningCopy(zh,en){return TownLocale.text(zh,en,state.language);}
 function unitParts(l){const mode=discoveryProp(l).mode,sets={map:[['指南针','Compass needle',24],['钢铁外壳','Steel housing',11],['磁石','Magnet',29]],assemble:[['主齿轮','Main gear',11],['木匣外壳','Wooden case',35],['转动摇柄','Crank handle',28]],grow:[['小种子','Seed',4],['陶土盆','Clay pot',21],['浇水壶','Watering can',2]],lens:[['透镜','Lens',3],['镜筒','Lens barrel',9],['镜柄','Lens handle',28]],letter:[['信纸','Letter paper',6],['信封','Envelope',15],['封蜡','Sealing wax',7]],stars:[['星屑','Stardust',29],['玻璃瓶','Glass bottle',12],['瓶塞','Bottle stopper',11]]};return sets[mode].map(([zh,en,art],i)=>({name:learningCopy(zh,en),key:['body','example','quote'][i],art}));}
 function unitAssembly(l){state.unitAssembly??={};const bank=state.unitAssembly[state.selected]??={};return bank[l.id]??={found:[],placed:[]};}
 let assemblyLesson=null,assemblySelected=null,matchSelected=null,matchOrder=[];
