@@ -95,4 +95,9 @@ assert set(skills)=={l['skill'] for c in chapters for s in c['sections'] for l i
 course=dict(id='ai-business-strategist-course-v1',title='AI Business Strategist · 四章学习之旅',version=1,source='AI_Business_Strategist_Outline.md',chapters=chapters)
 out='/* Authored reading cards aligned to every skill in the user-supplied outline. */\nconst StrategistCourse='+json.dumps(course,ensure_ascii=False,separators=(',',':'))+';\nif(typeof module!=="undefined")module.exports=StrategistCourse;\n'
 (ROOT/'dist/chapter-course.js').write_text(out,encoding='utf-8')
-print(json.dumps(dict(chapters=len(chapters),sections=sum(len(c['sections']) for c in chapters),skills=len(skills),lessons=sum(len(s['lessons']) for c in chapters for s in c['sections'])),ensure_ascii=False))
+print(json.dumps(dict(chapters=len(chapters),sections=sum(len(c['sections']) for c in chapters),skills=len(skills),baseLessons=sum(len(s['lessons']) for c in chapters for s in c['sections'])),ensure_ascii=False))
+
+# Keep the systematic bilingual inventory in sync with the base course.
+import subprocess
+subprocess.run(["node", str(ROOT/"scripts/enrich-knowledge.cjs")], check=True)
+subprocess.run(["node", str(ROOT/"scripts/build-i18n.cjs")], check=True)

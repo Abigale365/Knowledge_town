@@ -1,6 +1,6 @@
 {
   "name": "knowledge-town",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "private": true,
   "description": "Reading-first chapter adventures with a configurable local course-generation API",
   "scripts": {
@@ -9,7 +9,10 @@
     "start": "node server.cjs",
     "test:chapters": "node --test tests/chapter.test.cjs tests/adventures.test.cjs tests/course-api.test.cjs",
     "test:adventures": "node tests/adventures-ui.cjs",
-    "test:exploration": "node tests/exploration-ui.cjs"
+    "test:exploration": "node tests/exploration-ui.cjs",
+    "test:knowledge": "node --test tests/knowledge.test.cjs && node tests/knowledge-ui.cjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

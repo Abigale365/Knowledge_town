@@ -7,7 +7,7 @@ function studyState(){const c=currentCourse();if(!c)return null;state.chapterStu
 function studyChapter(){return currentCourse().chapters[studyState().chapter];}
 function studySection(){return studyChapter().sections[studyState().section];}
 function basicsReady(){const s=studyState();return!!s&&s.submitted.includes(s.chapter);}
-function studyLocked(event){toast('还未学完基础知识：先阅读学习素材，完成各节知识装置，再到素材箱交付整章。');const target=event?.currentTarget;if(!target?.getBoundingClientRect)return;const rect=target.getBoundingClientRect();document.getElementById('learningLockBubble')?.remove();const bubble=document.createElement('div');bubble.id='learningLockBubble';bubble.className='learning-lock-bubble';bubble.textContent='基础还没学完，先完成本章各节学习并交付。';bubble.style.left=Math.max(16,Math.min(window.innerWidth-266,rect.left-85))+'px';bubble.style.top=Math.max(80,rect.top-65)+'px';document.body.appendChild(bubble);setTimeout(()=>bubble.remove(),3600);}
+function studyLocked(){toast('基础还没学完，先完成本章各节学习并交付。');}
 const chapterRestore=L.restore;
 L.restore=function(raw){const s=chapterRestore(raw);if(!s)return null;try{
  for(const b of s.banks)if(b.syllabus)b.syllabus=CourseSchema.normalize(b.syllabus);

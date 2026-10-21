@@ -1,0 +1,31 @@
+/* Reproducible bilingual content layer. Stable lesson ids preserve existing saves. */
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),course=require('../dist/chapter-course.js');
+const rows=fs.readFileSync(path.join(root,'content/knowledge-english.tsv'),'utf8').trim().split(/\r?\n/).map(s=>s.split('|'));
+for(const ch of course.chapters)for(const sec of ch.sections){if(sec.id==='1.1')sec.lessons=sec.lessons.filter(l=>+l.id.split('-').pop()<=15);sec.lessons.sort((a,b)=>+a.id.split('-').pop()-+b.id.split('-').pop());}
+const lessons=course.chapters.flatMap(c=>c.sections.flatMap(s=>s.lessons));
+if(rows.length!==lessons.length)throw Error('English knowledge inventory does not cover every original lesson.');
+const sectionNames=['Core AI concepts and terminology','Choosing and operating AI solutions','Generative AI techniques','Strategy and use-case decisions','Measuring business value','Competition and business models','Responsible AI decisions','Governance and access control','Risk management','Organizational readiness','Data and infrastructure','People and change','From pilots to enterprise scale'];
+let n=0;
+for(const ch of course.chapters)for(const sec of ch.sections){sec.english=sectionNames[n++];sec.matchRequired=true;for(const l of sec.lessons){const [title,body,example]=rows.shift();l.en={title,body,example,quote:'Learning objective '+l.skill+' · '+sec.english};l.category=sec.title;l.en.category=sec.english;l.interaction=sec.lessons.indexOf(l)%4===2||/迁移|路线/.test(l.title)?'assemble':'read';l.references=[];}}
+const extras=[
+ ['深度学习 DL','Deep learning','使用多层神经网络学习数据表示的机器学习方法；它属于机器学习，而不是与AI并列的领域。','Machine learning using multilayer neural networks to learn representations.','识别商品照片中的缺陷。','Recognize defects in product photos.'],
+ ['神经网络','Neural network','由相连的计算节点和可学习权重组成的模型，通过层间计算处理输入。','A model of connected computational nodes with learnable weights.','学习交易特征与欺诈风险的关系。','Learn relationships between transaction features and fraud risk.'],
+ ['自然语言处理 NLP','Natural language processing (NLP)','使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。','AI methods for processing human language, including classification, extraction and translation.','从工单文字中识别客户诉求。','Identify customer requests in support tickets.'],
+ ['计算机视觉 CV','Computer vision','从图像或视频中提取和解释信息的AI领域。','AI methods for extracting and interpreting information from images or video.','从产线照片中定位瑕疵。','Locate defects in production-line images.'],
+ ['监督学习','Supervised learning','使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。','Learning an input-to-target mapping from labeled examples, for classification or regression.','利用已标记是否欺诈的交易训练分类器。','Train a classifier on transactions labeled as fraudulent or legitimate.'],
+ ['无监督学习','Unsupervised learning','从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。','Finding structure or patterns in data without target labels, such as clustering similar cases.','按购买特征形成客户分群。','Group customers by purchasing patterns.'],
+ ['强化学习','Reinforcement learning','智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。','Learning an action policy through interaction and reward feedback to improve cumulative return.','在模拟环境中学习库存补货策略。','Learn a replenishment policy in a simulated environment.']
+];
+const sec=course.chapters[0].sections[0];
+for(const [title,en,body,eb,example,ee]of extras)sec.lessons.push({id:'1.1-lesson-'+(sec.lessons.length+1),title,body,example,skill:'1.1.2',quote:sec.lessons[5].quote,source:'IBM Think · AI / Machine learning；对应大纲 1.1.2',provenance:'根据公开资料整理的教学释义，非官方试题',en:{title:en,body:eb,example:ee,quote:'Learning objective 1.1.2 · distinguish AI approaches and capabilities'},interaction:'read',references:['https://www.ibm.com/think/topics/artificial-intelligence','https://www.ibm.com/think/topics/machine-learning']});
+// Put broad concepts before mechanisms while preserving every original identifier.
+const order=[6,7,16,17,18,19,8,1,2,3,4,5,20,21,22,9,10,11,12,13,14,15];
+sec.lessons.sort((a,b)=>order.indexOf(+a.id.split('-').pop())-order.indexOf(+b.id.split('-').pop()));
+for(const l of sec.lessons)if(!l.references.length&&[1,2,3,4,5,6,7,8,12,13].includes(+l.id.split('-').pop()))l.references=['https://www.ibm.com/think/topics/artificial-intelligence','https://www.ibm.com/think/topics/machine-learning'];
+sec.lessons.find(l=>l.id==='1.1-lesson-15').references=['https://www.iso.org/standard/42001','https://webstore.iec.ch/en/publication/77056'];
+const categories={"1.1.1":["模型与运行机制","Models and operations"],"1.1.2":["AI领域与学习方法","AI fields and learning methods"],"1.1.3":["数据形态","Data formats"],"1.1.4":["数据质量","Data quality"],"1.1.5":["验证与泛化","Evaluation and generalization"],"1.1.6":["词汇与标准","Vocabulary and standards"]};for(const l of sec.lessons){const [zh,en]=categories[l.skill];l.category=zh;l.en.category=en;}
+const inventory={version:2,units:course.chapters.flatMap(ch=>ch.sections.flatMap(s=>s.lessons.map(l=>({id:l.id,chapter:ch.id,task:s.id,skill:l.skill,term:l.title,category:l.category,definition:l.body,en:l.en,objective:l.quote,source:l.source,references:l.references,interaction:l.interaction})))),coverage:course.chapters.flatMap(ch=>ch.sections.map(s=>({task:s.id,objectives:[...new Set(s.lessons.map(l=>l.skill))],units:s.lessons.map(l=>l.id),activity:'collect-then-match',status:'authored-teaching-notes',gaps:[]})))};
+fs.writeFileSync(path.join(root,'content/knowledge-inventory.json'),JSON.stringify(inventory,null,2)+'\n');
+fs.writeFileSync(path.join(root,'dist/chapter-course.js'),'/* Generated by build-chapter-course.py followed by enrich-knowledge.cjs. */\nconst StrategistCourse='+JSON.stringify(course)+';\nif(typeof module!=="undefined")module.exports=StrategistCourse;\n');
+console.log('Knowledge inventory: '+inventory.units.length+' bilingual units, '+inventory.coverage.length+' tasks.');

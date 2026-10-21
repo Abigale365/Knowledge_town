@@ -13,6 +13,7 @@
 | `dist/world*`、`town*`、`learn*`、`venture-engine.js`、`material-compiler.js` | 小镇基础引擎、物件与存档 | 共享依赖，不能按旧文件名判断为无用 |
 | `dist/chapter*`、`study-themes.js`、`course-*`、`aib-*` | 当前章节、知识与课程导入 | 保留 |
 | `dist/away*`、`scene-*`、`exploration*`、`game-guide*`、`encounter-rules.js` | 场景冒险、探索学习、交互与引导 | 保留 |
+| `dist/knowledge-*`、`town-i18n.js`、`i18n-data.js` | 知识收集、组装、配对与双语显示 | 当前维护 |
 | `dist/assets/` | 所有正式玩法共享的图片、缩略图和图集 | 保留，检查脚本会核对静态引用 |
 | `dist/aib-practice-pack.json` | 题库JSON导出版 | 保留；与运行用的JS题库用途不同 |
 | `dist/capacity-report.json` | 页面展示的容量验证摘要 | 保留；完整临时结果写入本机 artifacts |
