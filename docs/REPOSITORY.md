@@ -47,3 +47,7 @@
 `artifacts/`、`.env`、旧本机 `research/runtime/` 和本机截图不进入GitHub。当前代码不再把新的测试报告写进研究文档目录。
 
 此前已经被Git跟踪的运行摘要已迁入 `archive/reports/runtime/`；旧测试状态检查点改为本机 `artifacts/runtime/` 产物并停止跟踪。原本机文件仍然保留，没有改写仓库历史。
+
+## v0.16 模块迁移
+
+手工游戏源码改在 apps/game/src，服务实现改在 apps/server，共享兼容脚本改在 packages/contracts/runtime；dist 保留发布路径与美术。根 server.cjs、原 HTML 入口仍可运行。运行 npm run build 发布源码，node scripts/test-current.cjs 验收模块与现有流程。并行任务、允许文件和独立预览见 [任务入口](../flow/tasks/README.md)，接口见 [pipeline v1](contracts/pipeline-v1.md)。

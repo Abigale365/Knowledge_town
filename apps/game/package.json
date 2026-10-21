@@ -1,0 +1,8 @@
+{
+  "name": "@knowledge-town/game",
+  "version": "0.16.0",
+  "private": true,
+  "scripts": {
+    "build": "node ../../scripts/build-game.cjs --out artifacts/previews/game"
+  }
+}

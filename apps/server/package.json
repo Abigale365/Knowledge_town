@@ -1,0 +1,10 @@
+{
+  "name": "@knowledge-town/server",
+  "version": "0.16.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "node index.cjs"
+  }
+}

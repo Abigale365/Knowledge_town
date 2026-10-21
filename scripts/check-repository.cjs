@@ -6,6 +6,8 @@ function exists(relative){assert.ok(fs.existsSync(path.resolve(root,relative)),'
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(dir,entry.name)):[path.join(dir,entry.name)]);}
 function localLink(base,link){link=link.split('#')[0].split('?')[0];if(!link||/^(?:[a-z]+:|\/\/)/i.test(link)||link.includes('${'))return;assert.ok(fs.existsSync(path.resolve(base,decodeURIComponent(link))),'Broken reference: '+path.relative(root,base)+' -> '+link);}
 for(const file of ['README.md','docs/GAME_GUIDE.md','docs/REPOSITORY.md','docs/TESTING.md','content/README.md','content/aib-concepts.tsv','content/sources/AI_Business_Strategist_Outline.md','content/sources/AIB_C01_Collected_Study_Materials.md','scripts/build-chapter-course.py','scripts/build-aib-pack.py','server.cjs','.env.example','archive/file-moves.json'])exists(file);
+for(const file of ['AGENTS.md','CLAUDE.md','flow/plan.md','flow/进展.md','flow/tasks/README.md','docs/contracts/pipeline-v1.md','packages/contracts/types.d.ts','apps/server/index.cjs','apps/game/src/index.html'])exists(file);
+for(const dir of ['apps','packages','flow/tasks','docs/contracts'])for(const file of walk(path.join(root,dir)).filter(f=>f.endsWith('.md')))for(const match of read(file).matchAll(/\[[^\]]*\]\(([^)]+)\)/g))localLink(path.dirname(file),match[1]);
 const entries=['index.html','adventure.html','expedition.html','short-hunt.html'];
 for(const entry of entries){const file=path.join(runtime,entry);for(const match of read(file).matchAll(/(?:src|href)="([^"]+)"/g))localLink(path.dirname(file),match[1]);}
 const runtimeFiles=walk(runtime).filter(file=>/\.(?:html|js|css)$/.test(file)),combined=runtimeFiles.map(read).join('\n');

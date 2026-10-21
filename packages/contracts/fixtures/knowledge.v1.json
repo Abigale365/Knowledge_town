@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-knowledge",
+  "revision": 1,
+  "materialBundleId": "demo-materials",
+  "materialRevision": 1,
+  "objectives": [
+    {
+      "id": "goal-1",
+      "title": {
+        "zh": "规则与学习",
+        "en": "Rules and learning"
+      },
+      "unitIds": [
+        "unit-1"
+      ]
+    },
+    {
+      "id": "goal-2",
+      "title": {
+        "zh": "完整成本与ROI",
+        "en": "Full cost and ROI"
+      },
+      "unitIds": [
+        "unit-2"
+      ]
+    },
+    {
+      "id": "goal-3",
+      "title": {
+        "zh": "最小权限",
+        "en": "Least privilege"
+      },
+      "unitIds": [
+        "unit-3"
+      ]
+    },
+    {
+      "id": "goal-4",
+      "title": {
+        "zh": "受控上线",
+        "en": "Controlled release"
+      },
+      "unitIds": [
+        "unit-4"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "unit-1",
+      "objectiveIds": [
+        "goal-1"
+      ],
+      "category": {
+        "zh": "接口验收案例",
+        "en": "Contract acceptance case"
+      },
+      "title": {
+        "zh": "规则与学习",
+        "en": "Rules and learning"
+      },
+      "explanation": {
+        "zh": "规则把明确条件映射为动作；机器学习从数据学习模式。本演练中，固定报销审批使用规则，需求预测使用机器学习。",
+        "en": "Rules map explicit conditions to actions; machine learning learns patterns from data. In this exercise, fixed expense approval uses rules and demand forecasting uses machine learning."
+      },
+      "examples": [],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "evidence": [
+        {
+          "materialId": "source-1",
+          "locator": "第1段",
+          "quote": "规则把明确条件映射为动作；机器学习从数据学习模式。本演练中，固定报销审批使用规则，需求预测使用机器学习。"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "id": "unit-2",
+      "objectiveIds": [
+        "goal-2"
+      ],
+      "category": {
+        "zh": "接口验收案例",
+        "en": "Contract acceptance case"
+      },
+      "title": {
+        "zh": "完整成本与ROI",
+        "en": "Full cost and ROI"
+      },
+      "explanation": {
+        "zh": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。",
+        "en": "In this exercise, deployment costs 40, operations cost 60 and realized benefits are 150 in the same period. Total cost is 100, net benefit is 50 and simple ROI is 50%."
+      },
+      "examples": [],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "evidence": [
+        {
+          "materialId": "source-2",
+          "locator": "第1段",
+          "quote": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "id": "unit-3",
+      "objectiveIds": [
+        "goal-3"
+      ],
+      "category": {
+        "zh": "接口验收案例",
+        "en": "Contract acceptance case"
+      },
+      "title": {
+        "zh": "最小权限",
+        "en": "Least privilege"
+      },
+      "explanation": {
+        "zh": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。",
+        "en": "In this exercise, support only reads policies and operations only reads logs. Using AI does not justify giving every role access to every source."
+      },
+      "examples": [],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "evidence": [
+        {
+          "materialId": "source-3",
+          "locator": "第1段",
+          "quote": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "id": "unit-4",
+      "objectiveIds": [
+        "goal-4"
+      ],
+      "category": {
+        "zh": "接口验收案例",
+        "en": "Contract acceptance case"
+      },
+      "title": {
+        "zh": "受控上线",
+        "en": "Controlled release"
+      },
+      "explanation": {
+        "zh": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。",
+        "en": "The sequence given in this exercise is to record a baseline, compare test results, then release under controls. This is the case sequence, not a universal project lifecycle."
+      },
+      "examples": [],
+      "misconceptions": [],
+      "prerequisiteIds": [],
+      "evidence": [
+        {
+          "materialId": "source-4",
+          "locator": "第1段",
+          "quote": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。"
+        }
+      ],
+      "status": "supported"
+    }
+  ],
+  "gaps": []
+}

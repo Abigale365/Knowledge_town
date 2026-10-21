@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-learning-plan",
+  "revision": 1,
+  "knowledgePackId": "demo-knowledge",
+  "knowledgeRevision": 1,
+  "title": {
+    "zh": "模块接口验收课程",
+    "en": "Module acceptance course"
+  },
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": {
+        "zh": "规则与学习",
+        "en": "Rules and learning"
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": {
+            "zh": "规则与学习",
+            "en": "Rules and learning"
+          },
+          "prerequisiteSectionIds": [],
+          "learnUnitIds": [
+            "unit-1"
+          ],
+          "activity": {
+            "version": 1,
+            "kind": "switchboard",
+            "title": {
+              "zh": "演练装置1",
+              "en": "Exercise device 1"
+            },
+            "brief": {
+              "zh": "本案例数字与流程只用于接口演练。",
+              "en": "The numbers and sequence in this case are for acceptance testing."
+            },
+            "rounds": [
+              {
+                "id": "route",
+                "type": "sort",
+                "prompt": {
+                  "zh": "把本演练的两项工作送到合适的方案窗口。",
+                  "en": "Route the two exercise tasks to their appropriate solution."
+                },
+                "reason": {
+                  "zh": "明确的固定政策用规则；从数据学习的预测用机器学习。",
+                  "en": "Use rules for fixed policy and machine learning for a prediction learned from data."
+                },
+                "bins": [
+                  {
+                    "id": "rules",
+                    "text": {
+                      "zh": "规则",
+                      "en": "Rules"
+                    }
+                  },
+                  {
+                    "id": "ml",
+                    "text": {
+                      "zh": "机器学习",
+                      "en": "Machine learning"
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "id": "expense",
+                    "text": {
+                      "zh": "固定报销审批",
+                      "en": "Fixed expense approval"
+                    },
+                    "target": "rules"
+                  },
+                  {
+                    "id": "demand",
+                    "text": {
+                      "zh": "需求预测",
+                      "en": "Demand forecasting"
+                    },
+                    "target": "ml"
+                  }
+                ],
+                "unitIds": [
+                  "unit-1"
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "question-1",
+              "unitIds": [
+                "unit-1"
+              ],
+              "q": "本演练的固定报销审批使用什么方案？",
+              "a": "规则",
+              "wrong": [
+                "机器学习"
+              ],
+              "en": {
+                "q": "Which solution handles fixed expense approval?",
+                "a": "Rules",
+                "wrong": [
+                  "Machine learning"
+                ]
+              },
+              "quote": "规则把明确条件映射为动作；机器学习从数据学习模式。本演练中，固定报销审批使用规则，需求预测使用机器学习。",
+              "mode": "scenario"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "title": {
+        "zh": "完整成本与ROI",
+        "en": "Full cost and ROI"
+      },
+      "sections": [
+        {
+          "id": "section-2",
+          "title": {
+            "zh": "完整成本与ROI",
+            "en": "Full cost and ROI"
+          },
+          "prerequisiteSectionIds": [],
+          "learnUnitIds": [
+            "unit-2"
+          ],
+          "activity": {
+            "version": 1,
+            "kind": "ledger",
+            "title": {
+              "zh": "演练装置2",
+              "en": "Exercise device 2"
+            },
+            "brief": {
+              "zh": "本案例数字与流程只用于接口演练。",
+              "en": "The numbers and sequence in this case are for acceptance testing."
+            },
+            "rounds": [
+              {
+                "id": "roi",
+                "type": "number",
+                "prompt": {
+                  "zh": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。",
+                  "en": "In this exercise, deployment costs 40, operations cost 60 and realized benefits are 150 in the same period. Total cost is 100, net benefit is 50 and simple ROI is 50%."
+                },
+                "reason": {
+                  "zh": "完整成本40+60=100；净收益150-100=50；ROI=50%。",
+                  "en": "Total cost is 40+60=100; net benefit is 150-100=50; ROI is 50%."
+                },
+                "fields": [
+                  {
+                    "id": "cost",
+                    "label": {
+                      "zh": "完整成本",
+                      "en": "Total cost"
+                    },
+                    "expected": 100
+                  },
+                  {
+                    "id": "roi",
+                    "label": {
+                      "zh": "ROI百分数",
+                      "en": "ROI percentage"
+                    },
+                    "expected": 50
+                  }
+                ],
+                "unitIds": [
+                  "unit-2"
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "question-2",
+              "unitIds": [
+                "unit-2"
+              ],
+              "q": "本演练的简单ROI是多少？",
+              "a": "50%",
+              "wrong": [
+                "150%"
+              ],
+              "en": {
+                "q": "What is the exercise ROI?",
+                "a": "50%",
+                "wrong": [
+                  "150%"
+                ]
+              },
+              "quote": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。",
+              "mode": "scenario"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "title": {
+        "zh": "最小权限",
+        "en": "Least privilege"
+      },
+      "sections": [
+        {
+          "id": "section-3",
+          "title": {
+            "zh": "最小权限",
+            "en": "Least privilege"
+          },
+          "prerequisiteSectionIds": [],
+          "learnUnitIds": [
+            "unit-3"
+          ],
+          "activity": {
+            "version": 1,
+            "kind": "permissions",
+            "title": {
+              "zh": "演练装置3",
+              "en": "Exercise device 3"
+            },
+            "brief": {
+              "zh": "本案例数字与流程只用于接口演练。",
+              "en": "The numbers and sequence in this case are for acceptance testing."
+            },
+            "rounds": [
+              {
+                "id": "access",
+                "type": "matrix",
+                "prompt": {
+                  "zh": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。",
+                  "en": "In this exercise, support only reads policies and operations only reads logs. Using AI does not justify giving every role access to every source."
+                },
+                "reason": {
+                  "zh": "只授予角色完成工作所需的权限。",
+                  "en": "Grant only the access each role needs."
+                },
+                "rows": [
+                  {
+                    "id": "support",
+                    "text": {
+                      "zh": "客服",
+                      "en": "Support"
+                    }
+                  },
+                  {
+                    "id": "ops",
+                    "text": {
+                      "zh": "运维",
+                      "en": "Operations"
+                    }
+                  }
+                ],
+                "columns": [
+                  {
+                    "id": "policy",
+                    "text": {
+                      "zh": "政策",
+                      "en": "Policies"
+                    }
+                  },
+                  {
+                    "id": "logs",
+                    "text": {
+                      "zh": "日志",
+                      "en": "Logs"
+                    }
+                  }
+                ],
+                "expected": [
+                  "support:policy",
+                  "ops:logs"
+                ],
+                "unitIds": [
+                  "unit-3"
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "question-3",
+              "unitIds": [
+                "unit-3"
+              ],
+              "q": "本演练中客服应能做什么？",
+              "a": "读取政策",
+              "wrong": [
+                "读取日志"
+              ],
+              "en": {
+                "q": "What should support be allowed to do?",
+                "a": "Read policies",
+                "wrong": [
+                  "Read logs"
+                ]
+              },
+              "quote": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。",
+              "mode": "scenario"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-4",
+      "title": {
+        "zh": "受控上线",
+        "en": "Controlled release"
+      },
+      "sections": [
+        {
+          "id": "section-4",
+          "title": {
+            "zh": "受控上线",
+            "en": "Controlled release"
+          },
+          "prerequisiteSectionIds": [],
+          "learnUnitIds": [
+            "unit-4"
+          ],
+          "activity": {
+            "version": 1,
+            "kind": "stagegate",
+            "title": {
+              "zh": "演练装置4",
+              "en": "Exercise device 4"
+            },
+            "brief": {
+              "zh": "本案例数字与流程只用于接口演练。",
+              "en": "The numbers and sequence in this case are for acceptance testing."
+            },
+            "rounds": [
+              {
+                "id": "release",
+                "type": "order",
+                "prompt": {
+                  "zh": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。",
+                  "en": "The sequence given in this exercise is to record a baseline, compare test results, then release under controls. This is the case sequence, not a universal project lifecycle."
+                },
+                "reason": {
+                  "zh": "先建立比较依据，再验证，最后受控发布。",
+                  "en": "Establish a comparison baseline, validate, then release under controls."
+                },
+                "items": [
+                  {
+                    "id": "baseline",
+                    "text": {
+                      "zh": "记录基线",
+                      "en": "Record baseline"
+                    }
+                  },
+                  {
+                    "id": "compare",
+                    "text": {
+                      "zh": "比较测试",
+                      "en": "Compare tests"
+                    }
+                  },
+                  {
+                    "id": "release",
+                    "text": {
+                      "zh": "受控上线",
+                      "en": "Controlled release"
+                    }
+                  }
+                ],
+                "expected": [
+                  "baseline",
+                  "compare",
+                  "release"
+                ],
+                "unitIds": [
+                  "unit-4"
+                ]
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "question-4",
+              "unitIds": [
+                "unit-4"
+              ],
+              "q": "本演练第一步是什么？",
+              "a": "记录基线",
+              "wrong": [
+                "直接上线"
+              ],
+              "en": {
+                "q": "What comes first in this exercise?",
+                "a": "Record a baseline",
+                "wrong": [
+                  "Release immediately"
+                ]
+              },
+              "quote": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。",
+              "mode": "scenario"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

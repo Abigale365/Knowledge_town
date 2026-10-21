@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-materials",
+  "revision": 1,
+  "materials": [
+    {
+      "id": "source-1",
+      "name": "exercise-1.txt",
+      "text": "规则把明确条件映射为动作；机器学习从数据学习模式。本演练中，固定报销审批使用规则，需求预测使用机器学习。",
+      "contentHash": "a9715f3344871fa2d1df4a76a065e4687df44d630bee0631d33ccc62e30bfc74"
+    },
+    {
+      "id": "source-2",
+      "name": "exercise-2.txt",
+      "text": "本演练在同一期间的部署成本为40，运行成本为60，已兑现收益为150。完整成本100，净收益50，简单ROI为50%。",
+      "contentHash": "227f702fc4b21bd451633ba53a2eebd229360588876e6a5836cd37356ff7c9ae"
+    },
+    {
+      "id": "source-3",
+      "name": "exercise-3.txt",
+      "text": "本演练中，客服只需要读取政策，运维只需要读取日志。不能因为使用AI就让所有角色访问所有资料。",
+      "contentHash": "2330148ea4738f2c4e6b389ff02342bdb2e23b102e5e456837000c8cb39f8266"
+    },
+    {
+      "id": "source-4",
+      "name": "exercise-4.txt",
+      "text": "本演练给定的步骤是先记录基线，再比较测试结果，最后受控上线。这是本案例的演练顺序，不宣称所有项目只有这一种流程。",
+      "contentHash": "1051a6fd20169dfe1d267ef128c91ab747655223eaa52e912260f87e738f136c"
+    }
+  ]
+}

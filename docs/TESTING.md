@@ -39,3 +39,7 @@ node scripts/test-current.cjs
 `language.test.cjs` 检查三种模式、显式词对和缺译回退；`bilingual-ui.cjs` 检查选择菜单、当前知识页恢复、材料草稿、冒险切换和存档。双语正文的真实DOM、控件点击与布局另行浏览器验收。
 
 三模式浏览器验收包括双语知识正文、英文/双语往返、当前阅读页保留、双语权限矩阵与刷新后的语言偏好。菜单按钮使用独立的操作属性，根节点的语言布局属性为 `data-locale-mode`，避免事件冒泡把菜单立即关闭。
+
+## v0.16 模块迁移
+
+手工游戏源码改在 apps/game/src，服务实现改在 apps/server，共享兼容脚本改在 packages/contracts/runtime；dist 保留发布路径与美术。根 server.cjs、原 HTML 入口仍可运行。运行 npm run build 发布源码，node scripts/test-current.cjs 验收模块与现有流程。并行任务、允许文件和独立预览见 [任务入口](../flow/tasks/README.md)，接口见 [pipeline v1](contracts/pipeline-v1.md)。

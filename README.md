@@ -1,10 +1,10 @@
 # 拾知小镇 · Knowledge Town
 
-把学习资料变成一场可以探索、收集、整理和复习的游戏。当前版本：**v0.15**。
+把学习资料变成一场可以探索、收集、整理和复习的游戏。当前版本：**v0.16**。
 
 ## 开始运行
 
-需要 Node.js 22 或更新版本，无需安装依赖或构建。
+需要 Node.js 22 或更新版本，无需安装依赖。仓库自带已构建的游戏；修改源码后运行 `npm run build`。
 
 ```sh
 node server.cjs
@@ -30,7 +30,10 @@ node server.cjs
 
 | 目录/文件 | 放什么 |
 | --- | --- |
-| `dist/` | 当前可玩的前端、经典游戏及共享素材；这是实际维护的运行目录 |
+| `dist/` | 保持原路径的发布副本、经典游戏及共享素材；手工源码已迁至 apps/game/src |
+| `apps/game/`、`apps/server/` | 游戏源码和服务实现；根 server.cjs 保留启动兼容 |
+| `packages/` | 知识、教学设计、共享契约和课程编译桥 |
+| `flow/tasks/` | A/B/C 开发任务卡、接口边界及 D 集成交接 |
 | `server.cjs`、`.env.example` | 本地课程生成服务与配置模板 |
 | `content/` | 学习大纲、来源资料、题库原料 |
 | `scripts/` | 构建资料、仓库完整性检查、当前测试入口 |
@@ -59,3 +62,9 @@ node scripts/test-current.cjs
 测试包含逻辑、模拟DOM和经典游戏回归。模拟DOM不等同于真实浏览器或真机触摸验收；实际浏览器检查范围见测试说明。
 
 后续并行开发的模块边界、知识包/学习方案接口草案及可复制任务说明见[模块拆分方案](docs/MODULE_BOUNDARIES.md)。
+
+## 多对话开发
+
+拆分已落地；请从 [任务入口](flow/tasks/README.md) 分别开启 A 知识库、B 教学设计、C 游戏体验对话。当前对话 D 负责最后集成。共享接口见 [pipeline v1](docs/contracts/pipeline-v1.md)，目录说明见 [模块边界](docs/MODULE_BOUNDARIES.md)。知识和教学适配器已能用固定样例贯通，但通用内容生成算法仍是 A/B 的后续任务。
+
+`npm run build` 将模块源码发布到原 dist 路径，不清空素材；`node scripts/test-current.cjs` 验收模块、原入口、存档和经典游戏。C 使用 `node scripts/build-game.cjs --out artifacts/previews/game-C` 与 `node scripts/preview-game.cjs --dir artifacts/previews/game-C --port 8773` 独立预览。
