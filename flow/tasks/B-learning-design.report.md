@@ -1,3 +1,110 @@
+# B 教学与互动设计交接 · revision 4
+
+日期：2026-10-22（America/Los_Angeles）。状态：教学方案、差异化判定及C接入侧车已验收；游戏接入和发布交D/C。本轮不把教学侧车完成说成当前页面已更新。
+
+## 本轮检查与完成
+
+以D已集成的增强A3/B3为基线，检查AIB全部38节及原内置13节。发现8节仅一种操作、11节出现同操作连续3轮以上；第一章全部沿用decision-lab外观，首游戏1.1为4轮choose。另发现真正原内置1.1由scripts/enrich-knowledge.cjs硬编码match，绕过B模板并触发星芽花房/概念配对。
+
+本轮按内容修改33单元真实操作（第一章19、其他14），不是只改kind或换花盆。AIB全38节仍覆盖139单元、58目标；144张学习卡、145轮应用、144道正式题，四章12/8/7/11节。单一控件节8→0，三连同操作节11→0；保留7类操作：choose58、sort33、order23、edit11、number10、matrix7、allocate3。未强凑第8类rate或无依据量表。
+
+原内置1.1单独补8轮、五类操作，覆盖22单元主题和六个legacy skills；与AIB编译1.1（4单元）分开交付。原内置13节共50轮，都有物件职责、步骤、来源单元与解锁说明。13节原模板入口已补1.1，但根构建特例未越权修改。
+
+## 主要教学选择
+
+| 位置/内容 | 操作与物件职责 | 判定与反馈 |
+|---|---|---|
+| AIB 1.1：AI/ML/算法/模型 | 收集描述后按学习证据sort；ML立项情境choose；依给定执行依赖order算法；edit输入/输出接线 | 证据不等于AI全部边界；执行方法不等于模型；history/forecast职责不反转。失败reason说明错因并回看对应知识 |
+| 原内置1.1：22单元 | 算法装配、映射/参数事件修复、AI/ML/DL证据分类、资料分流、去重/预测后果计算、独立验证排序、能力证据、框架范围选择 | 8轮各有明确标准答案及错误反馈；不把分类关系当时间线、不把框架名称当零错认证 |
+| 数据/数值 | 从错误记录、用量、独立样本、成本与损失条件中计算或修复 | 数字/阈值/单位全明示为演练条件，答案可计算，不能编造未给的损失金额 |
+| 业务/组织 | 项目任务书流程、完整成本、按职责权限配置、交接或告警单修复 | 硬约束不能被高分抵消；实际失败率不同于政策阈值；修单不延迟已触发的预案紧急回退 |
+| 内容已适合现控件的节 | 保留原判定，拆清自由知识物件和必做应用物件 | 不为了轮数或美术强行全变分类；38个section kind只是场景职责标签，实际多样性由round.type和判定证明 |
+
+排序给定依赖是基础应用，不宣称无提示迁移；计算差额不能单独证明理解业务损失，正式题与反馈继续补足判断。
+
+## 自由浏览与必做学习明确分离
+
+- 进入任意章节即可自由看本章全部知识、例子、边界和来源；不要求先完成前节。收藏、收集可选，打开/读过/收藏不计掌握、不推进当前活动。
+- 必做基础确认表示准备应用，须满足先修且已打开对应知识；确认本身不算理解通过。本节全部基础确认后逐轮提交真实操作；错解不前进。
+- 小节完成仅由全部应用判定通过触发；整章全部必做完成后解锁正式练习。沿用90%测验门槛，失败后仍可进入错题复习，不能把复习锁在考过之后。
+- 四章独立进入；跨章先修在本章补学。不清理旧进度，旧版本记录保留，新版本不自动继承掌握。
+
+learning-flow.cjs提供可执行门控参考：browse、gate、confirmFoundation、submit、chapterReadyForPractice、validate。它完整重建并验证侧车依赖，不只相信侧车内嵌hash；删先修、清空考试门槛、错schema/revision、旧绑定、错误答案和畸形存档均拒绝。它是Node/CommonJS参考，不是已加载浏览器的UI实现。
+
+## 交付路径（最新）
+
+- B→C总交接：packages/learning-design/C-handoff.v4.md。
+- 每节物件职责、互动步骤和解锁：packages/learning-design/generated/C-section-guide.v4.md。
+- AIB38节双语侧车：packages/learning-design/generated/aib-teaching-map.v4.json。
+- 原内置13节侧车：packages/learning-design/generated/legacy-teaching-map.v4.json。
+- 完整LearningPlan：packages/learning-design/generated/aib-learning-plan.v4.json。
+- 完整编译副本：packages/learning-design/generated/aib-course.v4.json。
+- 蓝图、版本/摘要、前后浓度审计：同目录aib-blueprint.v4.json、aib-manifest.v4.json、concentration-audit.v4.json。
+- 原内置1.1模板：packages/learning-design/templates/core-foundations.cjs，经templates/strategist.cjs导出。
+- 独立评审绑定：packages/learning-design/authored/review-v4.json；运行/接入说明：README.md。
+
+candidates目录仅为评审前快照；D/C以generated及其manifest为交付入口。物件与状态必须包含课程/银行ID、版本和摘要，不能把原内置1.1与AIB编译1.1按显示数字混绑。
+
+## 输入输出版本与来源
+
+schemaVersion=1不变；知识仍是D增强后的aib-knowledge-integration revision3，配aib-materials-integration revision3；教学aib-learning-plan revision4。原A3、历史B1/B3与来源均未修改。139单元正式题及其quote本轮逐项保持v3原样；不存在重新造知识或新增外部事实。
+
+- 知识摘要：1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80。
+- 方案摘要：85c9663ab11142dbf21966691063b0ad85f14967f9688d830a65dd43eaa31d87。
+- AIB侧车摘要：770a7ed94b6b7bf5e4fabcbeb94892a3262e461d52a4b732239adb385c51d4d6。
+- 原内置侧车摘要：3f2429513ced8ae8a68374a34a2141c8287cb998c1a8d292cde20046a6ed1a5a。
+
+当前D增强A3的validateKnowledge返回0诊断；不是沿用旧A1的139条needs-review统计。未自行更改任何知识状态。createAibDesignAdapter({revision:4})校验输入和输出摘要；revision1/3调用继续隔离。
+
+## 变更文件（本轮B范围）
+
+- authored/activities.v4.chapter1.cjs、activities.v4.applied.cjs：33项活动设计。
+- authored/section-designs.v4.cjs：38节内容职责与场景主题；authored/review-v4.json：已审快照绑定。
+- templates/core-foundations.cjs、templates/strategist.cjs：内置1.1专用活动与入口。
+- teaching-map.cjs、legacy-teaching-map.cjs、learning-flow.cjs：每节接入说明与可执行门控参考。
+- generate-aib-v4.cjs：候选、已审方案、侧车与逐节说明生成；aib-adapter.cjs、index.cjs：revision4和门控导出。
+- generated下上述8个v4文件，candidates下对应评审快照。
+- tests/aib-v4.test.cjs：新增8项实质验收；README.md、C-handoff.v4.md、revision4-plan.md及本报告。
+
+未修改共享契约、知识原文、游戏、服务、根构建脚本或dist。发现C正在共享目录并行修改游戏文件，未触碰、提交或计入B成果。
+
+## 验收命令与实际结果
+
+1. node packages/learning-design/generate-aib-v4.cjs：候选生成成功。
+2. node packages/learning-design/generate-aib-v4.cjs --reviewed：审阅哈希匹配，已审产物生成成功；144学习卡/145轮/144题、38节，validateLearningPlan=[]，compileCourse成功。
+3. node scripts/test-module.cjs design：26 tests，26 pass，0 fail。包含历史v1/v3及本轮8项测试：全部节的物件/引用/先修、145轮标准解与典型错解、自由浏览不通关、后续节提交阻挡、四章独立、JSON恢复、篡改侧车门槛/依赖/版本拒绝、内置1.1八轮、revision4注入及旧版隔离。
+4. node scripts/check-contracts.cjs：PASS。
+5. node --test tests/pipeline-contracts.test.cjs：9 tests，9 pass，0 fail。
+
+未运行根build、未写发布目录、未将hook当测试、未宣称已完成C浏览器接线。
+
+## 跨模型评审与修正
+
+两路gpt-6-astra只读评审：第一章19项变更、原知识1.1全部22单元、内置1.1八轮；其他14变更、38节145轮门控及13节legacy映射。33项变更重新语义评审，106未改项精确继承v3逐项审阅，全部保留对应teachingHash。
+
+评审发现侧车仅校验内嵌hash会让删除先修/清空门槛绕过，已改为重建规范整图比对并克隆输入；四类篡改复测拒绝。内置模板曾误写“本节后正式练习”，双语已修为本章全部交付。最后三连分类改成告警记录修复，明确不延迟紧急回退。内容、标准答案、错解及最终产物hash复核PASS。评审范围不替代C/D页面或发布验收。
+
+## D/C下一步与已知限制
+
+1. D核对C-handoff与generated摘要，解除scripts/enrich-knowledge.cjs对内置1.1强制match的特例，否则模板永远不会接入；B没有越权改该根脚本。
+2. C将自由浏览与必做状态分离，按侧车每个物件control/roundId接入，不把所有内容改成花盆或定义配对。共享目录C可能已在修访问逻辑，应核对本说明而非重复覆盖。
+3. D当前/api/aib-course仍选v3；接收后才切v4，按新版本保留历史进度。来源或蓝图变化需重新审阅，不只改哈希。
+4. C/D验收真实页面的触屏/键盘、锁定反馈、三语言、逐章解锁、90%门槛、错题与非空存档恢复，再决定发布；本轮交付教学数据与门控参考，未完成这些UI动作。
+5. 部分继承正式题的quote定位较宽，本轮没有擅改已审题目；若要提高引用精度需另做语义修订及绑定。基础排序/固定编码修复不等于独立迁移能力证明。
+
+没有新增共享ActivityRound类型。侧车为B内部b-c-teaching-map格式，不擅自扩展冻结LearningPlan；将其纳入正式共享契约和浏览器构建需D决定。本轮不建议修改根AGENTS。
+
+## 分支与提交
+
+共享main；开工HEAD=f0be257f880f56765641fd65f33675f4a1bfdf46。未切分支、提交、重置清理、合并或发布；不提交C并行文件。按共享目录约定，根进展由D汇总，本轮只更新B独占报告。
+
+## 可复制交接增量
+
+B revision4已完成逐节差异化复核：AIB38节单控件8→0、三连同操作11→0；33单元重设操作，139单元/58目标仍全覆盖，144卡/145轮/144题。原内置1.1另补8轮，覆盖22单元；自由浏览与必做先修已拆清。指针：packages/learning-design/C-handoff.v4.md、generated/C-section-guide.v4.md及aib-learning-plan.v4.json。design26/26、pipeline9/9、契约PASS，跨模型复核通过。请用户把本报告交D/C；D解除内置1.1构建match特例，C按侧车接入物件/状态后做页面验收。B未联系其他开发对话、合并或发布。
+
+
+## 历史交付记录（revision1；以下不作为本轮最新入口）
+
 # B-learning-design 交付报告
 
 状态：A 的139单元完整教学适配已完成并通过B验收，供D集成；未自行合并或发布。

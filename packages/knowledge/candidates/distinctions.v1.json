@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "kind": "authored-distinction-reference",
+  "id": "a-continuous-distinctions-1",
+  "knowledgePackId": "aib-knowledge",
+  "knowledgeRevision": 3,
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "materialBundleId": "aib-knowledge-materials",
+  "materialRevision": 3,
+  "materialContentHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "intendedUse": "Worked examples and authoring reference; not an unseen independent assessment.",
+  "answersExposed": true,
+  "doNotUseAsUnseenAssessment": true,
+  "provenance": "Core distinctions reference frozen knowledge units; all scenario details and numbers are authored teaching assumptions, not external source cases.",
+  "cases": [
+    {
+      "id": "algorithm-model",
+      "unitIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2"
+      ],
+      "title": {
+        "zh": "执行方法与训练产物",
+        "en": "Procedure and trained artifact"
+      },
+      "example": {
+        "scenario": {
+          "zh": "团队执行一套学习步骤，从记录中调整一组权重，并保存权重供后续预测。",
+          "en": "A team executes learning steps, adjusts a set of weights from records, and saves the weights for later predictions."
+        },
+        "conclusion": {
+          "zh": "步骤是算法；保存的参数化表示是训练得到的模型。",
+          "en": "The steps are an algorithm; the saved parameterized representation is the trained model."
+        },
+        "reason": {
+          "zh": "执行方法与学到的表示承担不同角色。",
+          "en": "The procedure and the learned representation have different roles."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "同事把保存的权重文件直接叫作“训练算法已经在运行”，却没有说明执行了哪些步骤。",
+          "en": "A colleague calls the saved weights file \"the training algorithm already running\" without identifying any executed steps."
+        },
+        "conclusion": {
+          "zh": "仅有权重文件不能证明训练正在执行。",
+          "en": "A weights file alone does not establish that training is running."
+        },
+        "reason": {
+          "zh": "训练产物的存在与训练过程正在执行是两件事。",
+          "en": "The existence of a trained artifact and execution of training are different claims."
+        }
+      },
+      "boundary": {
+        "zh": "真实模型也可能包含结构与其他状态，例子不把所有模型简化成权重文件。",
+        "en": "Real models can include structure and other state; the illustration does not reduce every model to a weights file."
+      },
+      "references": [
+        {
+          "unitId": "1.1-lesson-1",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "unitId": "1.1-lesson-2",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "training-inference",
+      "unitIds": [
+        "1.1-lesson-3",
+        "1.1-lesson-4"
+      ],
+      "title": {
+        "zh": "参数更新与使用既有参数",
+        "en": "Updating versus using parameters"
+      },
+      "example": {
+        "scenario": {
+          "zh": "已固定版本的工单模型为新工单给出分类，记录表明本次请求未更新参数。",
+          "en": "A fixed-version ticket model classifies a new ticket, and the record shows no parameter update during this request."
+        },
+        "conclusion": {
+          "zh": "本次是使用既有模型的推理。",
+          "en": "This request is inference using an existing model."
+        },
+        "reason": {
+          "zh": "看到新输入不等于从该输入进行参数学习。",
+          "en": "Receiving a new input is not the same as learning parameters from it."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "每天收到新工单，所以团队声称模型每天自动完成重训；没有参数或训练记录。",
+          "en": "The team claims daily retraining merely because new tickets arrive daily, without parameter-update or training records."
+        },
+        "conclusion": {
+          "zh": "这个重训结论缺少证据。",
+          "en": "The retraining claim lacks evidence."
+        },
+        "reason": {
+          "zh": "请求数量不能代替训练过程的证据。",
+          "en": "Request counts are not evidence of a training process."
+        }
+      },
+      "boundary": {
+        "zh": "在线学习系统可能同时包含更新和推理，必须检查实际过程，不能把通常不更新说成绝不更新。",
+        "en": "Online-learning systems can combine updates and inference; inspect the process rather than turning \"usually no update\" into \"never updates\"."
+      },
+      "references": [
+        {
+          "unitId": "1.1-lesson-3",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "unitId": "1.1-lesson-4",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rules-learning",
+      "unitIds": [
+        "1.2-lesson-1"
+      ],
+      "title": {
+        "zh": "明确政策与学习模式",
+        "en": "Explicit policy and learned patterns"
+      },
+      "example": {
+        "scenario": {
+          "zh": "场地政策明确规定：缺少必填场地编号的申请退回补齐，政策版本稳定。",
+          "en": "A stable venue policy states that requests missing the required venue ID are returned for completion."
+        },
+        "conclusion": {
+          "zh": "先评估显式校验规则是否已满足需求。",
+          "en": "First assess whether explicit validation rules meet the need."
+        },
+        "reason": {
+          "zh": "条件已给定，不必先引入学习模型；仍要比较例外和维护。",
+          "en": "The condition is specified, so a learned model need not be the first choice; exceptions and maintenance still matter."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "团队说“规则永远比模型便宜、准确，所以任何复杂任务都只需继续加规则”。",
+          "en": "The team says rules are always cheaper and more accurate, so every complex task should be solved by adding rules."
+        },
+        "conclusion": {
+          "zh": "这不是材料支持的普遍结论。",
+          "en": "That universal conclusion is not supported."
+        },
+        "reason": {
+          "zh": "大量规则的维护及复杂模式的适配仍需验证。",
+          "en": "Maintenance of many rules and fit to complex patterns still require evaluation."
+        }
+      },
+      "boundary": {
+        "zh": "这里比较显式规则与学习型模型，不宣称规则系统一定不属于广义AI。",
+        "en": "The comparison is explicit rules versus learned models, not a claim that rule systems cannot be AI."
+      },
+      "references": [
+        {
+          "unitId": "1.2-lesson-1",
+          "evidenceIndexes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recommendation-action",
+      "unitIds": [
+        "1.2.1-unit-2",
+        "1.2.2-unit-2"
+      ],
+      "title": {
+        "zh": "建议内容与行动授权",
+        "en": "Recommendations and action authority"
+      },
+      "example": {
+        "scenario": {
+          "zh": "助手拟好设备借用通知；服务端核对发送者权限后，由有权负责人批准发送。",
+          "en": "An assistant drafts an equipment-loan notice; the service checks sender permissions and an authorized owner approves sending."
+        },
+        "conclusion": {
+          "zh": "起草与改变外部状态的发送被分别控制。",
+          "en": "Drafting and sending, which changes external state, are separately controlled."
+        },
+        "reason": {
+          "zh": "生成建议不等于自动取得工具权限。",
+          "en": "Generating a recommendation does not grant tool permissions."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "提示写着“只能给本部门发信”，但发送服务不检查收件范围或调用者权限。",
+          "en": "The prompt says \"email only this department,\" but the sending service checks neither recipient scope nor caller permissions."
+        },
+        "conclusion": {
+          "zh": "提示文字不能证明发送权限被执行。",
+          "en": "Prompt text does not establish enforced sending permissions."
+        },
+        "reason": {
+          "zh": "真正的授权边界需要系统执行，不能只依赖模型遵循。",
+          "en": "The system must enforce authorization rather than relying only on model compliance."
+        }
+      },
+      "boundary": {
+        "zh": "具体审批方式由用途决定；不是所有发送都必须采用本例的人工作业，但授权不能省略。",
+        "en": "Approval design depends on the use case; not all sending requires this manual workflow, but authorization still matters."
+      },
+      "references": [
+        {
+          "unitId": "1.2.1-unit-2",
+          "evidenceIndexes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "unitId": "1.2.2-unit-2",
+          "evidenceIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drift-harm",
+      "unitIds": [
+        "1.2.3-unit-1"
+      ],
+      "title": {
+        "zh": "变化告警与业务损害",
+        "en": "Change alerts and business harm"
+      },
+      "example": {
+        "scenario": {
+          "zh": "咨询文本的新词比例升高，独立抽样的分类质量暂未下降。",
+          "en": "New terminology becomes more frequent in enquiries, while independently sampled classification quality has not yet declined."
+        },
+        "conclusion": {
+          "zh": "已有输入变化线索，尚不能据此认定业务表现恶化。",
+          "en": "There is evidence of input change, but this alone does not establish degraded business performance."
+        },
+        "reason": {
+          "zh": "分布变化与任务后果需要分别检查。",
+          "en": "Distribution changes and task consequences require separate checks."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "收到一次输入漂移告警，就把未经比较验证的新版本直接上线。",
+          "en": "After one input-drift alert, an unvalidated replacement version is deployed immediately."
+        },
+        "conclusion": {
+          "zh": "告警不足以证明新版本适合上线。",
+          "en": "The alert does not establish that the new version is fit for deployment."
+        },
+        "reason": {
+          "zh": "还需调查原因，比较质量与风险并验证措施。",
+          "en": "Causes, comparative quality, risks, and corrective measures still need investigation and validation."
+        }
+      },
+      "boundary": {
+        "zh": "本例不表示漂移无害，也不排除按预案先隔离风险；它反对把告警直接等同损害或修复成功。",
+        "en": "The example does not imply drift is harmless or prohibit planned containment; it rejects equating an alert with harm or a successful fix."
+      },
+      "references": [
+        {
+          "unitId": "1.2.3-unit-1",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rag-finetuning",
+      "unitIds": [
+        "1.3-lesson-3",
+        "1.3-lesson-4"
+      ],
+      "title": {
+        "zh": "请求可用资料与训练参数",
+        "en": "Request-time information and trained parameters"
+      },
+      "example": {
+        "scenario": {
+          "zh": "固定参数的助手检索新批准的会议制度，把相关且获授权的片段带入回答。",
+          "en": "A fixed-parameter assistant retrieves newly approved meeting policy and supplies relevant authorized excerpts to its answer."
+        },
+        "conclusion": {
+          "zh": "这里更新的是请求可用资料，不能据此声称已微调参数。",
+          "en": "The information available to the request is updated; this is not evidence of parameter fine-tuning."
+        },
+        "reason": {
+          "zh": "检索提供外部信息，微调涉及进一步训练。",
+          "en": "Retrieval supplies external information; fine-tuning involves further training."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "团队只训练了旧制度的写作风格，却声称以后制度变化也无需维护资料来源。",
+          "en": "A team trains on the writing style of old policies and claims future policy changes need no source maintenance."
+        },
+        "conclusion": {
+          "zh": "微调不免除对变化事实的维护。",
+          "en": "Fine-tuning does not remove the need to maintain changing facts."
+        },
+        "reason": {
+          "zh": "行为适配与事实更新解决不同需求，两者可以组合。",
+          "en": "Behavioral adaptation and fact updates address different needs and can be combined."
+        }
+      },
+      "boundary": {
+        "zh": "不宣称微调不能学习事实，或RAG保证回答正确；这里辨别实际改动了什么。",
+        "en": "This does not claim fine-tuning cannot learn facts or that RAG guarantees correctness; it distinguishes what was actually changed."
+      },
+      "references": [
+        {
+          "unitId": "1.3-lesson-3",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "unitId": "1.3-lesson-4",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-cash",
+      "unitIds": [
+        "2.2.3-unit-2"
+      ],
+      "title": {
+        "zh": "可用工时与现金节支",
+        "en": "Available hours and cash savings"
+      },
+      "example": {
+        "scenario": {
+          "zh": "排班未变、工资支出未减少，但整理材料的耗时降低，空出的时间被用于处理积压。",
+          "en": "Staffing and payroll are unchanged, but preparing material takes less time and released hours are used to reduce a backlog."
+        },
+        "conclusion": {
+          "zh": "可记录释放产能和积压变化，不能直接登记为已兑现工资节支。",
+          "en": "Released capacity and backlog changes can be recorded, but not automatically realized payroll savings."
+        },
+        "reason": {
+          "zh": "时间可用与实际减少现金支出不同。",
+          "en": "Available time and an actual reduction in cash expenditure are different."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "同一批空出工时既全部登记为裁减成本，又全部登记为新增产出，没有说明人员和需求如何安排。",
+          "en": "The same released hours are fully counted as staff cost reductions and fully counted as extra output, without staffing or demand assumptions."
+        },
+        "conclusion": {
+          "zh": "这可能重复计益，不能据此成立价值结论。",
+          "en": "This may double-count benefits and does not establish the value claim."
+        },
+        "reason": {
+          "zh": "同一资源的两种用途需有可实现且不重叠的依据。",
+          "en": "Different uses of the same resource need feasible, non-overlapping justification."
+        }
+      },
+      "boundary": {
+        "zh": "实际现金节支与产能收益可以同时存在，但不能无依据把同一工时重复使用。",
+        "en": "Cash savings and capacity benefits can coexist, but the same hours cannot be reused in accounting without justification."
+      },
+      "references": [
+        {
+          "unitId": "2.2.3-unit-2",
+          "evidenceIndexes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roi-boundaries",
+      "unitIds": [
+        "2.2.3-unit-1"
+      ],
+      "title": {
+        "zh": "同期间完整成本与分母",
+        "en": "Same-period full cost and denominator"
+      },
+      "calculation": {
+        "period": "one-month",
+        "currency": "CNY",
+        "benefits": 12000,
+        "fullCosts": 9000,
+        "netBenefit": 3000,
+        "simpleRoi": 0.3333333333333333,
+        "origin": "hypothetical-teaching-values"
+      },
+      "example": {
+        "scenario": {
+          "zh": "仅在本例中，完整同月成本已给定为9000元，已兑现同月收益12000元，且未遗漏其他成本。",
+          "en": "Only in this illustration, full same-month costs are given as CNY 9,000 and realized same-month benefits as CNY 12,000, with no omitted costs."
+        },
+        "conclusion": {
+          "zh": "净收益3000元，简单ROI为3000/9000，即1/3（约33.3%）。",
+          "en": "Net benefit is CNY 3,000; simple ROI is 3,000/9,000, or 1/3 (about 33.3%)."
+        },
+        "reason": {
+          "zh": "分子是收益减成本，分母是同口径成本。",
+          "en": "The numerator is benefits minus costs; the denominator is costs on the same basis."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "只用3000/12000得到25%，把它标作本例的简单ROI。",
+          "en": "Someone computes 3,000/12,000 = 25% and labels it this example’s simple ROI."
+        },
+        "conclusion": {
+          "zh": "分母换成收益，已经不是本例定义的ROI。",
+          "en": "The denominator has become benefits, so this is not the ROI defined in the example."
+        },
+        "reason": {
+          "zh": "数值计算本身正确，不代表指标定义正确。",
+          "en": "Correct arithmetic does not establish the correct metric definition."
+        }
+      },
+      "boundary": {
+        "zh": "本例数值不是行业基准；真实项目还须核对成本范围、期间、实现条件及其他财务分析需求。",
+        "en": "These numbers are not industry benchmarks; real projects must examine cost scope, period, realization conditions, and other financial-analysis needs."
+      },
+      "references": [
+        {
+          "unitId": "2.2.3-unit-1",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leading-outcomes",
+      "unitIds": [
+        "2.2.1-unit-1",
+        "2.2.4-unit-1"
+      ],
+      "title": {
+        "zh": "采用信号与已实现结果",
+        "en": "Adoption signals and realized outcomes"
+      },
+      "example": {
+        "scenario": {
+          "zh": "练习工具使用频率增加，但尚未收集处理质量、净收益和复核时间。",
+          "en": "Practice-tool usage increases, but handling quality, net benefits, and review time have not been collected."
+        },
+        "conclusion": {
+          "zh": "已有采用信号，尚缺业务效果证据。",
+          "en": "There is an adoption signal but insufficient evidence of business outcomes."
+        },
+        "reason": {
+          "zh": "使用次数说明发生了活动，不自动证明结果。",
+          "en": "Usage counts describe activity, not automatically outcomes."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "团队仅凭培训完成率上升，就宣布净收益已兑现。",
+          "en": "The team declares realized net benefits solely because training completion increased."
+        },
+        "conclusion": {
+          "zh": "这个结果结论没有被先导信号证明。",
+          "en": "The leading signal does not establish that outcome claim."
+        },
+        "reason": {
+          "zh": "应提出信号与结果的预期联系并在后续数据中检验。",
+          "en": "State the expected link between signal and outcome and test it in later data."
+        }
+      },
+      "boundary": {
+        "zh": "不是否定早期信号，而是避免把预测线索当已经发生的成果。",
+        "en": "This does not dismiss early signals; it avoids treating predictive clues as results already achieved."
+      },
+      "references": [
+        {
+          "unitId": "2.2.1-unit-1",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "unitId": "2.2.4-unit-1",
+          "evidenceIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explain-transparency",
+      "unitIds": [
+        "3.1.1-unit-2"
+      ],
+      "title": {
+        "zh": "告知AI参与与解释判断",
+        "en": "Disclosing AI use and explaining a judgment"
+      },
+      "example": {
+        "scenario": {
+          "zh": "页面同时说明使用了AI，并用与用户任务有关的依据解释为什么建议某个资料分类。",
+          "en": "A page discloses AI use and explains a suggested document category using reasons relevant to the user’s task."
+        },
+        "conclusion": {
+          "zh": "告知参与和解释判断分别服务透明度与可说明性。",
+          "en": "Disclosing involvement and explaining a judgment serve transparency and explainability respectively."
+        },
+        "reason": {
+          "zh": "两者相关但回答不同的问题。",
+          "en": "They are related but answer different questions."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "页面只写“使用了AI”，却把这句话称为对分类理由的充分解释。",
+          "en": "A page says only \"AI was used\" and calls that a sufficient explanation of its classification reasons."
+        },
+        "conclusion": {
+          "zh": "告知参与不能单独解释这一次分类。",
+          "en": "Disclosing AI involvement alone does not explain this classification."
+        },
+        "reason": {
+          "zh": "还没有提供可理解的判断依据。",
+          "en": "Understandable grounds for the judgment have not been provided."
+        }
+      },
+      "boundary": {
+        "zh": "给出解释也不能证明事实一定正确，仍须核验任务与证据。",
+        "en": "An explanation does not guarantee factual correctness; task fit and evidence still need checking."
+      },
+      "references": [
+        {
+          "unitId": "3.1.1-unit-2",
+          "evidenceIndexes": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy-permissions",
+      "unitIds": [
+        "3.1.1-unit-3",
+        "3.2.3-unit-1"
+      ],
+      "title": {
+        "zh": "获授权访问与适当使用",
+        "en": "Authorized access and appropriate use"
+      },
+      "example": {
+        "scenario": {
+          "zh": "本假设组织仅批准用报名资料安排会议，系统在检索前核对岗位权限，未据此授权营销再利用。",
+          "en": "This hypothetical organization approves registration data only for meeting arrangements; the system checks role permissions before retrieval and this does not authorize marketing reuse."
+        },
+        "conclusion": {
+          "zh": "访问授权与用途边界都需核对。",
+          "en": "Both access authorization and purpose limits need checking."
+        },
+        "reason": {
+          "zh": "合法进入系统不自动说明任何用途都获批准。",
+          "en": "Being authorized to enter a system does not automatically approve every use."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "用户有会议管理读取权限，就把名单复制给无权角色；生成回答后才隐藏部分字段。",
+          "en": "A user with meeting-management read access copies the list to an unauthorized role and hides some fields only after generating the answer."
+        },
+        "conclusion": {
+          "zh": "事后遮盖不能代替阻止越权检索和共享。",
+          "en": "After-the-fact masking cannot replace preventing unauthorized retrieval and sharing."
+        },
+        "reason": {
+          "zh": "原数据已进入不获授权的处理路径。",
+          "en": "The original data has already entered an unauthorized processing path."
+        }
+      },
+      "boundary": {
+        "zh": "本例的用途限制是明确给定的组织规则，不是在未给定地区/合同的情况下宣称某项法律结论。",
+        "en": "The purpose limit is an explicitly given organizational rule, not a legal conclusion without a specified jurisdiction or contract."
+      },
+      "references": [
+        {
+          "unitId": "3.1.1-unit-3",
+          "evidenceIndexes": [
+            0
+          ]
+        },
+        {
+          "unitId": "3.2.3-unit-1",
+          "evidenceIndexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pilot-production",
+      "unitIds": [
+        "4.4.2-unit-1",
+        "4.4.5-unit-1"
+      ],
+      "title": {
+        "zh": "试点结果与生产准备",
+        "en": "Pilot results and production readiness"
+      },
+      "example": {
+        "scenario": {
+          "zh": "志愿者使用清理过的资料取得好结果；新部门资料不完整且没有值守和回退负责人。",
+          "en": "Volunteers obtain good results with cleaned data; a new department has incomplete data and no on-call or rollback owners."
+        },
+        "conclusion": {
+          "zh": "已有局部试点证据，尚不能推定新部门具备生产条件。",
+          "en": "There is local pilot evidence, but it does not establish production readiness in the new department."
+        },
+        "reason": {
+          "zh": "资料、人员、支持和故障条件没有被相同验证覆盖。",
+          "en": "Data, people, support, and failure conditions have not received equivalent validation."
+        }
+      },
+      "counterexample": {
+        "scenario": {
+          "zh": "把试点配置复制到新部门，演示页能打开，就宣布迁移与生产交接全部完成。",
+          "en": "A pilot configuration is copied to the new department and its demo page opens, so migration and production handover are declared complete."
+        },
+        "conclusion": {
+          "zh": "这不足以证明可迁移性或生产交接完整。",
+          "en": "This does not establish transferability or complete production handover."
+        },
+        "reason": {
+          "zh": "还缺工作负载、责任、运行手册、监测和恢复等条件的验证。",
+          "en": "Workload, ownership, runbooks, monitoring, recovery, and other conditions still need verification."
+        }
+      },
+      "boundary": {
+        "zh": "试点成功有价值，但应限定到已验证条件；不是要求任何用途都采用同一套上线流程。",
+        "en": "Pilot success is valuable within validated conditions; it does not prescribe one deployment workflow for every use case."
+      },
+      "references": [
+        {
+          "unitId": "4.4.2-unit-1",
+          "evidenceIndexes": [
+            0,
+            1
+          ]
+        },
+        {
+          "unitId": "4.4.5-unit-1",
+          "evidenceIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  ]
+}

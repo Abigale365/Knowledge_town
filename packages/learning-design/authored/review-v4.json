@@ -1,0 +1,1004 @@
+{
+  "schemaVersion": 1,
+  "teachingRevision": 4,
+  "reviewedAt": "2026-10-22",
+  "accepted": true,
+  "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+  "blueprintHash": "9b0956def401107e05c301722335deff4b84192fc6367f6ece5ec5093db4c72e",
+  "planHash": "85c9663ab11142dbf21966691063b0ad85f14967f9688d830a65dd43eaa31d87",
+  "teachingMapHash": "770a7ed94b6b7bf5e4fabcbeb94892a3262e461d52a4b732239adb385c51d4d6",
+  "legacyMapHash": "3f2429513ced8ae8a68374a34a2141c8287cb998c1a8d292cde20046a6ed1a5a",
+  "reviewers": [
+    {
+      "model": "gpt-6-astra",
+      "scope": "19 changed chapter-1 units, all 22 original 1.1 units, and new 8-round legacy 1.1; corrected chapter practice wording",
+      "result": "PASS"
+    },
+    {
+      "model": "gpt-6-astra",
+      "scope": "14 applied changes, full 38-section/145-round gating, 13-section legacy mapping; empty practice gates/deleted dependencies/schema/revision tampering rejected",
+      "result": "PASS"
+    }
+  ],
+  "fixes": [
+    "Sidecar is validated by full canonical reconstruction, not just embedded plan/knowledge hash.",
+    "Immutable flow input snapshots prevent post-initialization mutation.",
+    "Legacy template practice wording requires the whole chapter, in both languages.",
+    "Final repeated sort run replaced by evidence-based incident-record repair without delaying urgent rollback."
+  ],
+  "decisions": [
+    {
+      "unitId": "1.1-lesson-6",
+      "accepted": true,
+      "teachingHash": "2cbe6caf8ebde2dcb32b82aa7b379747605328ec5d36806d4ed6617bb30d3c56",
+      "sourceBasis": "84d62a8ce4500acb13ba62470bb085ee50bb8d4cbaab5fea367efa1d71f6a630",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-7",
+      "accepted": true,
+      "teachingHash": "cd1ae1bd2cba65459b12cd1242ca03e6c2d3da0027f0011fc40592f6a22ec63b",
+      "sourceBasis": "58830d22efff934bee37bcb398e50d33781ffe0f76c4e77e24cb222e89568c0e",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-16",
+      "accepted": true,
+      "teachingHash": "869992283790bd0add1fb5c456ea61b9dcecc4bd101ef0257295c3577c352c7f",
+      "sourceBasis": "9a2fdd4b2534f2040cf7c3cb32690ce70c0f6b53fe3dd196ffba73f02a644903",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-17",
+      "accepted": true,
+      "teachingHash": "304c64ae2ea1910d9d38e066c48c20a436f306f2e11e2ba88009dbdcf86a4e68",
+      "sourceBasis": "3c1131952cc22702c14132e8f5bc2d64dd6fe765348bb7e327a49b18eaddfdf5",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-18",
+      "accepted": true,
+      "teachingHash": "abd6149c7adbd2a704836be07b4242c882c8cf227dfd23122e6d3d5f27ee35a9",
+      "sourceBasis": "d785fa8a242329a465a6a3a96d5232c06b84277e8e440d6367357f420215511b",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-19",
+      "accepted": true,
+      "teachingHash": "af45103ebdbb61d8e0752f3144a64a3996082a0bf234845bd70f9d2d8601d8f3",
+      "sourceBasis": "7f7491f663c15f8aabb7c71b979834d8f13932ac62cec2683104519133eb8ccd",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-8",
+      "accepted": true,
+      "teachingHash": "ae8f40322e8210c2f537b460625b46cdbd977ca9ba2f48fcd42ae06bd14c3fce",
+      "sourceBasis": "ea8afa64d4e530ab62f631002982ca1c28088e2eebe1d840e55992e7afa6d0c4",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-1",
+      "accepted": true,
+      "teachingHash": "52c203ee3829452a497d441e2549bc7bf976ff8db26131c291f9991e3c6188dd",
+      "sourceBasis": "cbd3dc6fee72265dcd9242b674686fb0ed52e0042f18e00d50e9135c62b82e93",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-2",
+      "accepted": true,
+      "teachingHash": "3ea454c33608fb241d3f973c1464b2d4dffbe0bf655cbf05778c4732a7995c43",
+      "sourceBasis": "5ecab293a864ed8273ac7c7ca28739410d877eb77cab47a91ff4ae411f09e703",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-3",
+      "accepted": true,
+      "teachingHash": "5ad6c9978037aa0a2bf558fb0f7c3544a208c9b27f4d86d0bdbc141ade42b60d",
+      "sourceBasis": "ad31dc82ededbdd5d2ab8b47ae7008e80623d74ee23841e8160bcb6646f618c9",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-4",
+      "accepted": true,
+      "teachingHash": "e7911ee8cbb092c13bf75fe5100858d5078d748082f982d3116ebdcf282b60d5",
+      "sourceBasis": "2902d0da8e6f4d729a6f1cfa97dc2b65cb27f88174018acfb7e9ab3da0aa35e2",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-5",
+      "accepted": true,
+      "teachingHash": "af938bf417a326c217f04c13df870dc450fc2e72ded660b74fbb39c5a01f7dee",
+      "sourceBasis": "d5f94ed1d0a87d94c30a516eda31bbc588684a93c40e1d5a92e0239fd4008ddf",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-20",
+      "accepted": true,
+      "teachingHash": "1f45a76d89f82f70aa883dfa9347c013bfb422d4a889b123e6376cc953932d7b",
+      "sourceBasis": "b38ba2a601e593c0ef2536c3cec79f51f935e8d5260fa000817ce5bf18162c36",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-21",
+      "accepted": true,
+      "teachingHash": "5163f552e6943b3a47807163d96b65dddcd3bbd78a11ec9ae732fbda5ac6cca7",
+      "sourceBasis": "3581233f39b92ae16a7d18f870bf9969a1d667e9566eccc17b14bd550bdff0ac",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-22",
+      "accepted": true,
+      "teachingHash": "dcb9722391d65f77294ec0ae6db4a4b0ef7ca11c95312d21c919c045a84dd26f",
+      "sourceBasis": "23179b6c8eacbb8f308ace95c2930ce9190f87814611ee52acaddaad41fcea3c",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-9",
+      "accepted": true,
+      "teachingHash": "a12795132fc4216cd12cdcc5e93ddf4a8bc04f306d4377092b6dc8040815571f",
+      "sourceBasis": "64f9dfd30181e753c15c8539dd0f7096a130aa8a5a7c88da3fd1df8e79280fe0",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-10",
+      "accepted": true,
+      "teachingHash": "060deb3588704970851f469a8b891fc224c8be10309c1824fed1004787e7ddf2",
+      "sourceBasis": "f21fbafb30a361d1a4ea4247edb2b0028c6558a1b5867e9d5f5a5b32731fa147",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-11",
+      "accepted": true,
+      "teachingHash": "7ff0ab80c648d322b9a84d7f0f4605ccf6ae8a27c039521f97ecb3e7a7aac1b1",
+      "sourceBasis": "85f0b26a64908ffc66a039e150f3c585f3683b8f558809b7a66b8aad213a7ed0",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-12",
+      "accepted": true,
+      "teachingHash": "4de1a414603af7dbc335507e4ebcf57f491d866ee1f216446d05406c9575bc3c",
+      "sourceBasis": "46f1ae366d6ae0aa4fe17ccae0324d1dca09940c7ef3e91c0272678c9eefa46c",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.1-lesson-13",
+      "accepted": true,
+      "teachingHash": "93e134920840ebf17256910695f0c7eef37a47e8d221ac1497e8cf737acfebed",
+      "sourceBasis": "b69abf034c5be7963f30e9d303e0ca2e531e923afd3d76ebb746a0f05c79b173",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-14",
+      "accepted": true,
+      "teachingHash": "775e7611a3afbf2030ed1c8180b20aaaa666da227e97bf4b63b09d5d2927d9b4",
+      "sourceBasis": "5e5884dcb25c5b8bd386c4ce170a2867d639f848af19712ae8886c5a649155ea",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.1-lesson-15",
+      "accepted": true,
+      "teachingHash": "de0774c043747494510e470744c65f8e5326d26e71227079c31ba4525776d3b0",
+      "sourceBasis": "96023e77a5a07227b9761e17d8f7dfe216adaad89a36bd12d3e1b9c46878643b",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.2-lesson-1",
+      "accepted": true,
+      "teachingHash": "2d9a377f385fb83e608705860aed4ba4eb05a6363f070b0eb5550a5bf4187de8",
+      "sourceBasis": "9f4c62228ae09455811e361c26599026518b439ad841cb5205eedf3081144029",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2-lesson-2",
+      "accepted": true,
+      "teachingHash": "8228e45e7d28afd64e24bf0b1179b3415d03b5ffb9d2593efa607a4fbfcc8945",
+      "sourceBasis": "5b534bf66cf9110418106f2c0ef42bf984b2b03eb28da5ddd868869ad5db0922",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2-lesson-3",
+      "accepted": true,
+      "teachingHash": "7037cd5778a9361965d6a27f2eff9482098d1c258d880e4049a5558bead7f78e",
+      "sourceBasis": "02d8003b2c8e499570eecb9bcc6969631928326319d668b3e2956c95891c3cde",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.2-lesson-4",
+      "accepted": true,
+      "teachingHash": "0ae7bff2d9885a5fe63dec3af5094f5f30bf16c7e95019493f454d547fa10af3",
+      "sourceBasis": "b8c4d16b8855a28a8fd7692a260a1b0a03f9a82212c6e58f5a3dba110577c2ac",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.2-lesson-5",
+      "accepted": true,
+      "teachingHash": "fc82bfd34208283397f76504160c382d948fbebd27e4a4ab6bfe312dbb634d63",
+      "sourceBasis": "dbb6930001f81967e339589b436285ed87a169a168bed4b761e6dd970bc386ed",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.1-unit-1",
+      "accepted": true,
+      "teachingHash": "6e478086ec0bfc933a55f78acff0a1ef2c8377b4183a0032b7633ecc0de9ec9c",
+      "sourceBasis": "ca206e18060092844e6095b750bf5a55efa00daf6932bbf40ec4ad1214db40e1",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.1-unit-2",
+      "accepted": true,
+      "teachingHash": "96902724867add07fb513a3a95329016e7b1b767c2effa3440af19284c4cabf8",
+      "sourceBasis": "4ea46ff5852b2df0c404343434fb5850092d2bd9dd8bd3bcb2487340f7f99829",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.2-unit-1",
+      "accepted": true,
+      "teachingHash": "31d72a252996ed30b8aecf5aa8d1b2bc674c153a97855cb45c7d52bb070580bd",
+      "sourceBasis": "28b826df0feed1f6472730741f22bde581091c959e1dfd91c050fa22b6367f5e",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.2-unit-2",
+      "accepted": true,
+      "teachingHash": "66db411a194b38eed60c731f04b08fa822f09ab295c5e4e464391db4b339ee1d",
+      "sourceBasis": "145c73f6ebfa3316cea15402cdeea22a3f42b9876d9fec51305140eb54d175d4",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.2-unit-3",
+      "accepted": true,
+      "teachingHash": "93640656dba5de68da27d79066be5456f50dd23ae4eb652a49bbcea3e97f990c",
+      "sourceBasis": "e44482ff233f886a8495b677cf935c00bfe11ad39f518738ca41bf364ff8732d",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.3-unit-1",
+      "accepted": true,
+      "teachingHash": "2b6f0d0a056bd246ade291931afcef1acdaba564f82408618278f829e93cde96",
+      "sourceBasis": "2ff8538f0aefec0636f9d05821be540872a56b37b6983754777fde044beec9ed",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.3-unit-2",
+      "accepted": true,
+      "teachingHash": "4a79de2b172f2fa3aa315314d2a608bf89c0bc394a2a47a270037dd3f18babd7",
+      "sourceBasis": "460f8ed0068d63f5d869d960f701fbb1c65d5b933d9a08c69e1324baa1501aa4",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.2.4-unit-1",
+      "accepted": true,
+      "teachingHash": "0b931c2a0ecad3d4eb2bfcc2ee870026d5e65d6cde691d5e970fe464bedb86c3",
+      "sourceBasis": "648bfd2a4d4635d7e3d23abf099e45e0ff316438be3ce623a57f2ae433d39354",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3-lesson-1",
+      "accepted": true,
+      "teachingHash": "6e9ee1255b90dae4647c22c00f86780cf3e7987972b184586597a12b743dd8de",
+      "sourceBasis": "521a8abe162b9a528f7ba6a0939fab90ec7ffbea5e9145aa5aea85640c74e471",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3-lesson-2",
+      "accepted": true,
+      "teachingHash": "9c744a0fef26f6dc621cdc914eca1f10eb6e3a78c8d1cf34618fa40d8fa27964",
+      "sourceBasis": "77014399b679b362d40efd362ab26783c8cd082b76db4bf32970a09c6102e921",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3-lesson-3",
+      "accepted": true,
+      "teachingHash": "5ecd7d136f947abb98cdfe11a31db1ddc036dfb024bd6a455800f3b53a9aa74b",
+      "sourceBasis": "de5a3ddac6d2c54a7e62deb808f636ee80eb056830d2c327e42b999d8faba8e8",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3-lesson-4",
+      "accepted": true,
+      "teachingHash": "9207a8e4e7533743ef42e620f01d227af8ac7cd1b926cfa3e7bda25f23f86d49",
+      "sourceBasis": "1dbdef0b90d5c103672c0d3837ccb257b239d8d750ca99775e9e8ada6f36b56d",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3.1-unit-1",
+      "accepted": true,
+      "teachingHash": "55c248bb5d7dd3f44e44dc21e0468b34afed02a934bc22dd42598cfde6329ab9",
+      "sourceBasis": "4f14267ffeaf9d11de9ee1117185c75648453e2a5878bd51cc74c25e683fce8a",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3.1-unit-2",
+      "accepted": true,
+      "teachingHash": "654b9e0e90e9b7324f2b860fa018327b6b8f8600abf8e4acfccd81fe68a852f7",
+      "sourceBasis": "f1c4e95864af721a315b91f057961fa684a9bf792e53cf4e4592f183917ae66c",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "1.3.2-unit-1",
+      "accepted": true,
+      "teachingHash": "201e992f6ff407cea15e988fdc3a9f13576aabc4a851a46a538b880e9b434080",
+      "sourceBasis": "c5f244b6029e0ccbb39532e38456de83c7582d09bd8ffd1410f4652f5f55fb9e",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3.2-unit-2",
+      "accepted": true,
+      "teachingHash": "1f98f9404678f5be769c0a6c4d977ce9675090bd9c1aa96037db590280dde8a8",
+      "sourceBasis": "efa0d339f32a36e189ef3e36073da61c699112bc55ac785b23cd1bc3aff1674b",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3.3-unit-1",
+      "accepted": true,
+      "teachingHash": "99805b0eb4a725ea4f5939996dff4f1c2f196229d5450839ca25e20ecaa14cef",
+      "sourceBasis": "6c9d3c9f8e55ed632d7bbbbee8503be4ee33be38169ce505fa2fe3dfabf2c50c",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "1.3.3-unit-2",
+      "accepted": true,
+      "teachingHash": "70545a675c674d11533f3bf1bcf6c765de31a7a324b67184a2d3eec582c3b65b",
+      "sourceBasis": "3a6dea73c384177ec452bfe3aedca333480a97a4e042a9f7146c43e1986d78d5",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.1-lesson-1",
+      "accepted": true,
+      "teachingHash": "21a288e587a2206bc2a55eb8af3001eb6696e1c0db9c8f7bf0e27cf1bf90e233",
+      "sourceBasis": "fbe8630e8423452886fd92b5cbc46cfb4bbf8293e305413a40875c1fab4efb49",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.1-lesson-2",
+      "accepted": true,
+      "teachingHash": "6afbac1be30fb0b23e0afa99deb3c2264528f0f5b8ede63c270cfaab3391a1e9",
+      "sourceBasis": "bf6c4916d5f158c6c972851f9f32f6a83b0ba3a5446afdf764d554682de46976",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.1-lesson-3",
+      "accepted": true,
+      "teachingHash": "8c4c9033e2dbe204893d896f96fba04fb596ab639961dc854b6efbec24ab5e66",
+      "sourceBasis": "dc374c50a5f5ba00ec053e50731d3c3ea31bc4cd4fd1111883c83f945d7388ce",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1-lesson-4",
+      "accepted": true,
+      "teachingHash": "44cd7f090e119722998b8ba7649be1361eeef041c9d80b44fab059d5155ab67d",
+      "sourceBasis": "07254d9b5b3f6eae2ca4c35b7b55245f605690452de5c65d15f3634db02e42cf",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1-lesson-5",
+      "accepted": true,
+      "teachingHash": "ca00e32f9c5ccade5ba3f4c492b9f67b6ece6740597c04f163f3b903dba50f36",
+      "sourceBasis": "84b5526f30c2b50253fcd697f84b2101cf6ef1ade92d03b0ce51aa7addbec0e5",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1.1-unit-1",
+      "accepted": true,
+      "teachingHash": "174202dac2d5946bffad8c06cd8dd8d64ae723e6094bbd1cece16c2744869237",
+      "sourceBasis": "49c59d26866be4bc518655b6855b73e9758eadc6246374b1dda1af776683be49",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.1.2-unit-1",
+      "accepted": true,
+      "teachingHash": "9a12b8f10d2ba954964900583b6d709dfd5ea29c138ec919e1a329727823f971",
+      "sourceBasis": "9d8058f5a95ce4100f208a1e6faff7d55b0c7326d3eb1bc98224ee603bd153e1",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1.3-unit-1",
+      "accepted": true,
+      "teachingHash": "ccc22d1ae7ccca06440f50b6c04442fd8772c170bfbb7423331e11d3d4f862ed",
+      "sourceBasis": "d4f6836163cb5d8fde22873cb19f170069d5409f1093ecad47c7cbb8362448e6",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1.4-unit-1",
+      "accepted": true,
+      "teachingHash": "e7419a737ab3ff4843b7332421a5b72bfa039b3c8a9c5806e5287a9b0997f162",
+      "sourceBasis": "5c281e2ff632b780576d8f7b054da4ea83ff0d01e7e44d89c153619205120634",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.1.5-unit-1",
+      "accepted": true,
+      "teachingHash": "c27a594bd09ad67407c3424b03eb8ae9bebec849cd622a5da0691be4f5585139",
+      "sourceBasis": "76c2e3bcc3646c7b369c51454248b77741661a9a17b8e7c52fb660e4532f56e3",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2-lesson-1",
+      "accepted": true,
+      "teachingHash": "367250292bf58da5d93118efc23f78256cc7a2e4c4ed1523e98fece49ada95ca",
+      "sourceBasis": "bb8d471f93c8b3d88d62e72bed08ddf91330439fd36b8ba060a41e131803a387",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2-lesson-2",
+      "accepted": true,
+      "teachingHash": "71658a27f76a38132f25bbfbaa49e1e3bb822d6c38548a87f8fd7fd282e67196",
+      "sourceBasis": "ce3351fde8f74576e13ad74bea7906f744da07bc27d044a49ed7eea53bc7124f",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2-lesson-3",
+      "accepted": true,
+      "teachingHash": "3e47d6536d13ef14204d33f08e198ee3029e13e86078a49308d3b40b41084360",
+      "sourceBasis": "84a76dc0bbb0cca7fb5f147314cde78f882c91d4179736428e133343e2575dcc",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2-lesson-4",
+      "accepted": true,
+      "teachingHash": "7e4483961dd382ab6b578dbdca95f1619a8ef57803f92a2b9bb85cd01235c150",
+      "sourceBasis": "60991466f1f122c3e698fcc0d1e9f0a657caca577725658ea8ebf84fa1a001fa",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2-lesson-5",
+      "accepted": true,
+      "teachingHash": "0a309686e9848137805c7732360618391d61ddf49975cfecc4b20d7d1ea41aa0",
+      "sourceBasis": "5fd4dec5d0fa78764bffc949379b605a3081d56f7ddcc1d68e44b9cf7fdd7388",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.2.1-unit-1",
+      "accepted": true,
+      "teachingHash": "74bec2666d47188b62ddeb50599b5d0e4a94761904077d34abc04f9fe7f6da4d",
+      "sourceBasis": "3d51cb390827b119a08e1f24fa47542b25e2dd79fea118fd4adacf710c8ef17f",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.1-unit-2",
+      "accepted": true,
+      "teachingHash": "3ab23be60c11f4a372db9f7debdf188f1a141c2b8bca9a416f2a9a84c42a042d",
+      "sourceBasis": "1f86c6eb75b7d78792a34649386586c05f772cd4e70fdcf969929f85fcf5bc22",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.2-unit-1",
+      "accepted": true,
+      "teachingHash": "8ea00cab7a2a26aeb58ff8509cf23e49079a7eb2c39ced369d047e846cfcb0b0",
+      "sourceBasis": "9d516e94e7942ae78185a358751de570b54f7e5bcd5191875dd2da53ebc8cd43",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.3-unit-1",
+      "accepted": true,
+      "teachingHash": "e04ee11f731a317d01952e05dbac757df40b1d536d29f4f9ffdc4decae8b1759",
+      "sourceBasis": "b8365d57c793eed83f2b9503ec3ee8292e3fa5c3e9a1687ac400a97d656d0f10",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.3-unit-2",
+      "accepted": true,
+      "teachingHash": "567cafb2fa93a34988c84588326c0eac7aa974e6466e552af49c324194ef4d8c",
+      "sourceBasis": "43e4d09e1650688b53e63ae8407461440070ec64682ed3b39ad5e525e1045477",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.4-unit-1",
+      "accepted": true,
+      "teachingHash": "86635ff0fa9c2befc25c57c75432a427c3de54de30f6f8d586896a6ed3cc96b7",
+      "sourceBasis": "4a8a4d6d05c6980491042cc4fb5059becbcf6b916b72eb942cda00b405135e82",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.2.5-unit-1",
+      "accepted": true,
+      "teachingHash": "4fb996951aa9d4286f14b77d9a86532ea50b96dbdab3275bb8279b9d20b79a73",
+      "sourceBasis": "b527b0e98425e4aae2bc6293752f69a95aa2e77eb9612743e495a1d7f45e5827",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3-lesson-1",
+      "accepted": true,
+      "teachingHash": "c171f9bd7a03daacf1c44171da8e05a38402a1c4af589cba15c349cee885e06b",
+      "sourceBasis": "a15b5d7a2d255a559f9f597193bd9cba00597bed274ca926cbcf4eaec92d56f5",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3-lesson-2",
+      "accepted": true,
+      "teachingHash": "a573257a4b11eb95f5aac8aacb5ff9d61a920557c0fad92bdf0206db97597b0a",
+      "sourceBasis": "ec9946deb2c0ccd2df3cbf24af7df6f40b5a2ee9e145acdc88068344c38eb949",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3-lesson-3",
+      "accepted": true,
+      "teachingHash": "061de253b305cac3dc264c30db7205e74d305f90b8b8f781aba60c69e44c9eb6",
+      "sourceBasis": "8c0f9b9969825b032ae78cb42ef60a279fb072240512ce127b78d8b81ac4cc2a",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3-lesson-4",
+      "accepted": true,
+      "teachingHash": "3c135b4302b044b555429848ffa1037c1a2d6822c31836439795379917d9da88",
+      "sourceBasis": "942358a702bb57ab7648f6cc80869941066138d694473c51adfb64053d582fef",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3.1-unit-1",
+      "accepted": true,
+      "teachingHash": "1d3b47d78bebf2d0bac8fef3da045f14a0dd5c4568811ddccbe86814fbcbca2c",
+      "sourceBasis": "086ad06528bc9fc0c318dcef2337b460f99dd166db7eb31a54ba3fea59ed7af7",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3.2-unit-1",
+      "accepted": true,
+      "teachingHash": "76955e21637375b9d5612d6a5edc9327d033ce5efc2789a1f2cfb0d8cf1410cb",
+      "sourceBasis": "9bc0f10ad910ed23267288b7b4d669071794860b0033f010f405133598ae8330",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "2.3.3-unit-1",
+      "accepted": true,
+      "teachingHash": "818409ce2d705bdd6fec655521c93f51834ef298f7360f29f2ee65d89e8b074e",
+      "sourceBasis": "4879437fbc0cf22ad984bf2f5d0981ced4ec907f08b4f161e568f6c5f691f844",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "2.3.4-unit-1",
+      "accepted": true,
+      "teachingHash": "772e4c51e3f23bb7ccc67074529ffbfb9741f3dc00dfb2afca4e35d02bea2485",
+      "sourceBasis": "547eda77e24d8db38c1e95f5637d04e3396598b405866af7f5dff7f09f1d96fa",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "3.1-lesson-1",
+      "accepted": true,
+      "teachingHash": "fdb7bb1ece06de0abb5fea209ab446ad701d6ddb3705f8dc07ff5f1d155eda2a",
+      "sourceBasis": "02eb830a3cacd43f944e7610958da8dd4b7cb14408da51ffccd58c9343c650d2",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1-lesson-2",
+      "accepted": true,
+      "teachingHash": "b16658ed6d7db91b70b9a06e77ee382eb8464d5ff5981b13680ae180cf38f10f",
+      "sourceBasis": "a2e7b679eb9574dc28d7a8fa5b4b5b6fbb02dc94be6bb7f9d6e590bebe3b9ebd",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1-lesson-3",
+      "accepted": true,
+      "teachingHash": "ec26776dec57aceceebf6bcbfd721af2684c20c0298b85e4b17a932ffe95e2bd",
+      "sourceBasis": "2959ad47d627c80a62234650f12cc8cb022c7238ae33e4e343b760cb510f45f6",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1-lesson-4",
+      "accepted": true,
+      "teachingHash": "08066a8db1d99715ad3b056f8760ca2e0687c3c2c9f66e85c28bd2229b7a9ab8",
+      "sourceBasis": "b696d026d7c48bffa57c4f01c6414d6adc8d1827ed5c173f4c0eafb781fa7c53",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.1-unit-1",
+      "accepted": true,
+      "teachingHash": "26f09fd8223caee47500d515cc5f17f25791632eec01d514f4003516e28994e0",
+      "sourceBasis": "0174d6bc62cc13c7c577842a5ec3c06c1f7b5cd7e342fb2f0a684d11d00125d2",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.1-unit-2",
+      "accepted": true,
+      "teachingHash": "ffab6f058f77100138d8c816f982730569cb934564eb523e49f0cfe3aec2b9f9",
+      "sourceBasis": "a9b244c80c6700aa787c21b5f62ad0bbc2a172f10a7ae9999c29191e5b14e7c9",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.1-unit-3",
+      "accepted": true,
+      "teachingHash": "749ffeb40ace44afa9ac99185088041b6e41f0bea10d77eeee1b947c2a6c0fef",
+      "sourceBasis": "c7ba419e4e5908176b31e1c58cc0e6fc892068d584ce6db48e37dbf88a830ae5",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.2-unit-1",
+      "accepted": true,
+      "teachingHash": "0b7fefe848e859176accddf308e5ab066aad413c4188d31a587d7b8c8210008f",
+      "sourceBasis": "7441b58876c4761e33d01e69a9f1de66ab5dc59f03cae9b4e62c25c4ebb4650a",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.3-unit-1",
+      "accepted": true,
+      "teachingHash": "923e8aa01f55dbc9e8552642741e07bcdcb354bf48168076d6977da7fafa0580",
+      "sourceBasis": "6de193326746a214fd1ced5d148e85f26a78080027aaacd6f4418a75dec2217c",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.1.4-unit-1",
+      "accepted": true,
+      "teachingHash": "06bae4a48d282a7153a1e9d929c6439c60ff1f51b8a34f0caf799db84496e67e",
+      "sourceBasis": "42f7663cb4206da03676a6128a99b65bb90fbef70b77d51e8b9129fed446c8c7",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2-lesson-1",
+      "accepted": true,
+      "teachingHash": "5e0840e2e6e7910267369e408c394cff2844b6da7e7955f8f1aaae2051cafe0c",
+      "sourceBasis": "a9490a88b8a03709e22c3929d01681dfa79f714ab922a767363ab81a3064ebfd",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2-lesson-2",
+      "accepted": true,
+      "teachingHash": "39ff49b0b2658aa1b784284422946727c19a37694c337b4e22dd95331efb5320",
+      "sourceBasis": "46f0236edfea4de445464f0d7510cd53fa809c32ae06dd8bebd4285239481187",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2-lesson-3",
+      "accepted": true,
+      "teachingHash": "55d64f700712f62d4b7b1afa6fc33acd9d2d533342d52a09d050913937d65901",
+      "sourceBasis": "448f04341e0ae00e0f0473e8e0022fe1cd31491774cc960accaf3df4b5b86a94",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2-lesson-4",
+      "accepted": true,
+      "teachingHash": "d7eb826551e7ca363276a6e50cd873b3f5649822f2c058a9de321c2897fbcf64",
+      "sourceBasis": "39e982d7e743e7dbb064c6bb8852fd9a4785d932e7a964fd9b26adb64aa6997d",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2.1-unit-1",
+      "accepted": true,
+      "teachingHash": "84eb7d586088466972f842a83d484b03a3eaadfb62f05b2dfed21a45fd322ee3",
+      "sourceBasis": "7207da03c0e81d2449324edc69b3afcadb7cb8ec04fd72790b9c8653781303f3",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2.2-unit-1",
+      "accepted": true,
+      "teachingHash": "563e40cb6841c406808f8621d136ad31204165afb38dc3707e1598e806044255",
+      "sourceBasis": "1e91168e48f43d29735c8cc6288dd70eab3b71a4498ed434379e335215332df6",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2.3-unit-1",
+      "accepted": true,
+      "teachingHash": "b18a9657de0e8657e80d8f5894d2bb44b139bab031734c36dae8b9a2c13ba540",
+      "sourceBasis": "09f8f1fd4cd52339d760ed566bb52220a3186080179cf2b5275ab1ade1673deb",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.2.4-unit-1",
+      "accepted": true,
+      "teachingHash": "e8a20257e63b53e2d340f2073b15eafe042bc249bdbcc591228633165a363ac6",
+      "sourceBasis": "211e62de6c25a5a219ba2c730fd8ba5331dc246a7612b61e21dc28b86a007cc8",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "3.3-lesson-1",
+      "accepted": true,
+      "teachingHash": "ac3cd0e35f75b3375a858d12c998427e2d139aa85d8f5a5c69dd03362ff55793",
+      "sourceBasis": "15f748e8dac5cff46c584a21df1084e354574f8e3f8f28de96542a107a18e2e7",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "3.3-lesson-2",
+      "accepted": true,
+      "teachingHash": "36b1d64470722d0d02b9986ad7fa6f130f406c1feea0054dbbd3eb5b76fceb96",
+      "sourceBasis": "932f83e430431c9bea56b979de3f9561ce8f943fccb962d6ca1a9e3d19076c17",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.3-lesson-3",
+      "accepted": true,
+      "teachingHash": "fcc683ae2d8e77e810cdb63c2388f34903adab3c1a1cb0b7124791277b138230",
+      "sourceBasis": "458c2009b37fd8185536d6ad8667630d75a028444a86541c8be21202b856adca",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "3.3-lesson-4",
+      "accepted": true,
+      "teachingHash": "6a4e635f845cbfcc43c80a93d9f683495a193bdff7bb51f9c946c04ce109cd37",
+      "sourceBasis": "7afd6d167ad08a7abb6852deafc4f67048301cddf4cfc40ec3cd745d0a70a6a8",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.3.1-unit-1",
+      "accepted": true,
+      "teachingHash": "f35a633ca8b99bfb48e1d60e5605764856ad1435f16f7486a3325dbba05679f6",
+      "sourceBasis": "f552406e4e5b623d9f02c29baa798310571ff6775b211a8c122c97687b99c0d6",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.3.2-unit-1",
+      "accepted": true,
+      "teachingHash": "77a92d3a8e9b4f308f8781ba9ca9ea3c40c010c5b78ff32ab40dade5c536f4a5",
+      "sourceBasis": "1b4dfac6aa578320b1af47a36591b18d3201dd14c066f039dadc33f2082b0b3c",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.3.3-unit-1",
+      "accepted": true,
+      "teachingHash": "54a48b1daa1872d62983265d9d9e5eb71b58ea98caf369a8b07c88e738936762",
+      "sourceBasis": "460188145c2efb0756ccfd8b0335f5bbb70e1bdc67b7c9a21e80f7a4b88a8f85",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "3.3.4-unit-1",
+      "accepted": true,
+      "teachingHash": "1a215e08ca121f08ac7f72b0ec2a7cef390ac053336a49420b4750cb30b2a5ab",
+      "sourceBasis": "b3a21a270f276e60176b934662c7489cef2232aa896d3512f01ae1a75d5ed388",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1-lesson-1",
+      "accepted": true,
+      "teachingHash": "383470cf5b334197b0a61f32d3a3b60404b3b06f29c31c7396d915f73ad6f2b4",
+      "sourceBasis": "55a2943822d5dabf14ac84b3d587c45d917cdd247f02fc77f2953232beae8e00",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1-lesson-2",
+      "accepted": true,
+      "teachingHash": "29b56103bd5e9f915162e166326ef887e86309b35032ee6d831a7d56e4f03238",
+      "sourceBasis": "30ade69059acfffbc09afc61340ea4eb3eb1e648336f47c89ece110313d8632a",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1-lesson-3",
+      "accepted": true,
+      "teachingHash": "dc01c303e3238338e9f234781f5163cae000c16c44f16137ab60c478cbb33fba",
+      "sourceBasis": "8a54ec1948d54af13de1a5b2de25abe9c43add680af2b5171beccacd471c89cb",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1-lesson-4",
+      "accepted": true,
+      "teachingHash": "f160b28e78bd71f3d4fcca12d915ec89e89e7a9d6e0a0a1109796d61ab9a4a10",
+      "sourceBasis": "24b389442146c0cfcb65e62ebbda31396d52b0b7eae1d3dce101a2ca4d0a6f80",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1.1-unit-1",
+      "accepted": true,
+      "teachingHash": "0d5ee2ef25f042bde410e8c827f19d6f40d7dbbf7cb26122e5fb9c79e5576c92",
+      "sourceBasis": "9730906d5d6ce385e219cfeca40df5dcba6c739cca13c7094228116bfb023590",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "4.1.2-unit-1",
+      "accepted": true,
+      "teachingHash": "e3fc674102a377f99726b244d57e4cd4d3c9f1cb08bcd8260b1adf4be730fc5a",
+      "sourceBasis": "1496d55ed20c79f5bc31abad08566d0ef0d8d58ed345ea69374f69bdf5d6205b",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1.3-unit-1",
+      "accepted": true,
+      "teachingHash": "da28afa53ec745167a2d1e101f219428bc4d0f751f7c03c14294bc4ff3c7e2d2",
+      "sourceBasis": "a8876540d9cd7dbf56ce5749ccddec9f9972b89a5b6acea5f350ed04a02aed84",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.1.4-unit-1",
+      "accepted": true,
+      "teachingHash": "63fd2241e146202b103fd5415e15d1ceea9f1cee42ae2fb11e8ccd5ab7e80225",
+      "sourceBasis": "fed0505d16a2d16bac9b9f71dd3ea89fdc7ef8812aa78a4f84cae31e77c5b0ba",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.2-lesson-1",
+      "accepted": true,
+      "teachingHash": "21eb09f5dc3630eaf1afd1f19ffeb1fc8a74e9e0f5e149d4f91b3147c8025e16",
+      "sourceBasis": "c53dad7dcd4e5d7a4fb1f8d01674043931f959404be69426173cf50525711c59",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.2-lesson-2",
+      "accepted": true,
+      "teachingHash": "f008809ceefa95e734a77b1eb0e4d35c1a8ca81ffe9e2c6752a9c70c71abcdde",
+      "sourceBasis": "19e1ed044f4ce405e46477e647c0f7e7e106382c314fc14981173fcc3c30f006",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "4.2-lesson-3",
+      "accepted": true,
+      "teachingHash": "0fa0e3ace67f993b806bf80bf987ba1b9eb0a76e6c4ff04e320bc65fa2f47a10",
+      "sourceBasis": "024419379905f474fbe6aeefd741c91a7d0c39f51ce7d2a0089bd15548659277",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.2.1-unit-1",
+      "accepted": true,
+      "teachingHash": "28c3ae4eb0b1b40c270f47555043e28d5f11f4cb552865902a6d6589b41e1aeb",
+      "sourceBasis": "e3195f2a35b929e1b17cf6d45cd8c616cd6dcae541e13e1476e9cc3452817e25",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.2.2-unit-1",
+      "accepted": true,
+      "teachingHash": "80c80b137a1eda15dbcc32a85dd402c731211ed36bdf5732c5ded4baebf7113b",
+      "sourceBasis": "8ce64a1f76cdff55f675e0b5721ea23159a8ea147eec763096a6a55c8dba5747",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.2.3-unit-1",
+      "accepted": true,
+      "teachingHash": "a283d7ab463b4d4c26489bc6fdde4e553f494949ed79e113c2016f3ec24ea373",
+      "sourceBasis": "6fa85b500102506a3e3a21228b30d74fb3bbb7563674b8034d9b500c4be1d80d",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-1",
+      "accepted": true,
+      "teachingHash": "8db2e7a0864788ff84d84d3c2f19ebfc1c75d6ea73bfe15e19a6531d18459d9d",
+      "sourceBasis": "71ff1eafdb99e14eb59d39463133d2bddac8e8d01a137c05cc29da94d3d47a2f",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-2",
+      "accepted": true,
+      "teachingHash": "6e9cc13ab7406d7751eba5edd739aeb232cb4aa426b36be4dd45f7869b8b331e",
+      "sourceBasis": "e5d3991ab0e0890e0fc7c1b139faf2d19d1cca36e3e92ea3aaba3d31b40321ed",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-3",
+      "accepted": true,
+      "teachingHash": "5b5fc78f830e8d3962b6eed5a405bf31c4f7cfb76032450298bd7e1f5e8747f1",
+      "sourceBasis": "6ecae7bb6279ca7ac679297fec219db674e8bedf5c716d98be32be8533d028ac",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-4",
+      "accepted": true,
+      "teachingHash": "2c8983670fda878dc76180ba50c55c77d21a080f06da155dfd54ccbbabbe78d1",
+      "sourceBasis": "8d9738efcc413eb56c6124da9b58af97d235c10ac40d7764c777d4f1624ba2c1",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-5",
+      "accepted": true,
+      "teachingHash": "3d523bca8fcffdc812eca24178828a4340dc453728dde28d0f8fea23e556068c",
+      "sourceBasis": "fac4b85426145f7c29051551d6e9943c5f66401c2d5afb51e4f4733d88c99509",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3-lesson-6",
+      "accepted": true,
+      "teachingHash": "e9d9f210adb656dc38187f6bca61b2a7de3bed8d0aa7a3441bda4880216779d5",
+      "sourceBasis": "72150b8ba11e8739a4d4b716eeea336991ae3f0ff30b525478f6eae1f3ef13b0",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3.1-unit-1",
+      "accepted": true,
+      "teachingHash": "1290c8ba047b690a8f2cf12ffb4290a84c154b341083d45598ed929bf58759b6",
+      "sourceBasis": "e4aeb8983f852ac9f97fcfc089a6b996243ee0e4e8657fecd5cda9784b82e196",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3.2-unit-1",
+      "accepted": true,
+      "teachingHash": "325750a0dab0d05153405104d62084ad8013ed587bc52edb3d803cf6caca2574",
+      "sourceBasis": "218a6d93d04c6654e86a7aba58298736615c91cc074767b1e84ee9f0613e69f6",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3.3-unit-1",
+      "accepted": true,
+      "teachingHash": "b908c4fa457351bebbd91a105a85d1e69a43895ea5228fa8ab1fd0e4b346c8c7",
+      "sourceBasis": "83ae0e07f25135d3944e9eb23c24324fbd63232ec30e0ae12d7a0daf8411d86f",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3.4-unit-1",
+      "accepted": true,
+      "teachingHash": "6ab15e33eaa82644e9d7686ac7a28cd41aebaee809d665461ef00a73997e2fec",
+      "sourceBasis": "c640ac2b36a2ced7af452078b8082dce488c11fb9fdb62fce33ce8b86ee9beab",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "4.3.5-unit-1",
+      "accepted": true,
+      "teachingHash": "c0f0bb11a5d44201f6ae69896b5ef2d4ad1fdee519ee2e6c1c2ce989db450af4",
+      "sourceBasis": "d451b684b3a8d9d1c14a826f3890d578b0418dbb63de46b57e6dd53240bc63ca",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.3.6-unit-1",
+      "accepted": true,
+      "teachingHash": "ed8992df0b74f6664040a3b396c150676c331003350a797ce61b495af74b5956",
+      "sourceBasis": "7083574e8464929ba679066e60e4eb1022a68a83dea8775a30d7b9ae14c62fed",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4-lesson-1",
+      "accepted": true,
+      "teachingHash": "293571670d2cd1cdbb9d78af3f4113353754d4a8b3e6ef4da3cfbab1a97cbcdf",
+      "sourceBasis": "2071833997df156712e0daded443317695f82f8bc379b9dfb1853dc0401688b7",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4-lesson-2",
+      "accepted": true,
+      "teachingHash": "6dea2907df2c65500f0f46d133d1b25e4b72adfe70202d7f94601afb0bf084b5",
+      "sourceBasis": "e9d51e6ba327bb03a0bfbd17cca6b5ecba9c4e67c11299eec2bf31d36e0270d9",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4-lesson-3",
+      "accepted": true,
+      "teachingHash": "961a6424c38b5f145da3dfcd1f6e01ca434c576e914dab62f143c73e7b5e904a",
+      "sourceBasis": "adfdd1f0e17967a17b95e204460cb76613173362a240fadbb9a3022d1c496ac7",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4-lesson-4",
+      "accepted": true,
+      "teachingHash": "881aafaa93f16bd30d3470806845327cb2189d121e89aa643f618e5b8a63b9a7",
+      "sourceBasis": "1af24af450af9f469ceed5f9e09a99fdd2d0e8ccc96f60baeacb09d668988cf5",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4-lesson-5",
+      "accepted": true,
+      "teachingHash": "8645c6abe477f759ee438a31f6e3385521f87ce738ce419e2c3022b4ea88300f",
+      "sourceBasis": "3f0f1a08b2a41696392f4f22a81fcde3754df73811c1aed29ffa92a53ff358ba",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "4.4-lesson-6",
+      "accepted": true,
+      "teachingHash": "69ec687657bf6a83779f364326d0f7c9695ba9f6790201659086cc156ed1efc1",
+      "sourceBasis": "709f28bc5cab5b9989fb26ee6805e2e8ac379164921c2197a7729df48cbb1ec2",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4.1-unit-1",
+      "accepted": true,
+      "teachingHash": "6d279a9424843ae59ad48c7aac850908c4618ab0f3d0c3a3e7e8a635e7536a22",
+      "sourceBasis": "ca27425148d6c4e1b1a856517e713e9014868c1a93bf372b269098d247301179",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4.2-unit-1",
+      "accepted": true,
+      "teachingHash": "3a7d216e50f22ebc98392a803f7791dcb6e9d843aa8aefd8648cefb580115b81",
+      "sourceBasis": "cf208c6e250b11bf1009ccbbb4c2cc50df40ea1d230112c3eb76e187b85faa1b",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4.3-unit-1",
+      "accepted": true,
+      "teachingHash": "ec61831493de5685a97dcc41c9fe705e9206df592a8dbecb20a2aa2c28209bb5",
+      "sourceBasis": "b077d9cddfbf74b6c6c2bcec2b15bcdf4df596d1332418fd2ae99f87dcfce228",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4.4-unit-1",
+      "accepted": true,
+      "teachingHash": "d7dd56cb69c5de68ce42062bfa34bfeb27a75b8abc0a1d23151cecb914576554",
+      "sourceBasis": "73a8d1893e6386b65307e72dcb3c3b105e319372e079b75d5a4730aca6a35da9",
+      "mode": "unchanged-v3-exact-review-inherited"
+    },
+    {
+      "unitId": "4.4.5-unit-1",
+      "accepted": true,
+      "teachingHash": "54dea50f9572b8a69aea02200aa8101e4c26a9f07ea9ac1f466b68dd72305994",
+      "sourceBasis": "0e499db3a14e8d6e8de54474fea95edd9e36453a276c153f2e88019006b576cf",
+      "mode": "v4-content-reviewed"
+    },
+    {
+      "unitId": "4.4.6-unit-1",
+      "accepted": true,
+      "teachingHash": "df4f765be73cf714aaaf38bb0b1322489d77e507587ceb53abff38b10c161b2e",
+      "sourceBasis": "7b0a039f22f8de970bc49f2c19978550c367a7562cdace9982f3b95ab1e01537",
+      "mode": "unchanged-v3-exact-review-inherited"
+    }
+  ]
+}

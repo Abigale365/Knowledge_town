@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "baseTeachingRevision": 4,
+    "basePlanHash": "85c9663ab11142dbf21966691063b0ad85f14967f9688d830a65dd43eaa31d87",
+    "baseBlueprintHash": "9b0956def401107e05c301722335deff4b84192fc6367f6ece5ec5093db4c72e"
+  },
+  "input": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+    "materialBundleId": "aib-materials-integration",
+    "materialRevision": 3
+  },
+  "output": {
+    "id": "aib-learning-plan",
+    "revision": 5,
+    "hash": "43f2b577b6f3b3ff6e96a2ab27299b2d9f38e62bd8fe84c4e14b76fe7152d175"
+  },
+  "blueprintHash": "5515e41a68499edbefb1d157b6bf655f5250124fe21fbd40879d36298006197d",
+  "logicHash": "5e611cf268d9d2218bc131b7dceddec39e3cf41a6df9661ef3783d6fbcf65ecf",
+  "legacyHash": "00a16d60f4304cdd34ef21c904cd66e139d5a13066e52c8585f1714960f666bf",
+  "unitAuditHash": "766d7ae514e95fd0e0d95415a1e565c7a5acf8800029ecc5b7904a2c6895ae94",
+  "sectionAuditHash": "826e74bdbc7d2238228a0aa62a00f64e5b3effe5ef8a05882e9a236863b54236",
+  "microHash": "8c7cf5b83f789813a7782fec2f3229ccbbaeb8d56f1cc04fb60398fa4fbedce0",
+  "uniqueUnits": 139,
+  "objectives": 58,
+  "decisions": {
+    "retain": 69,
+    "modify": 24,
+    "remove-replace": 46
+  },
+  "sections": 38,
+  "learningCards": 144,
+  "independentRounds": 154,
+  "formalQuestions": 144,
+  "roundCounts": {
+    "sort": 42,
+    "choose": 74,
+    "order": 6,
+    "matrix": 6,
+    "number": 20,
+    "allocate": 5,
+    "edit": 1
+  },
+  "demonstrations": 38,
+  "guidedPractices": 38,
+  "legacySections": 13,
+  "legacyIndependentRounds": 131,
+  "knowledgeDiagnostics": []
+}

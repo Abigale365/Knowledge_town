@@ -49,3 +49,25 @@ const plan = await designLearning(pack, {design: createAibDesignAdapter(), signa
 运行 `node packages/learning-design/generate-aib-v3.cjs --reviewed` 重建已审阅产物；不带参数仅在artifacts下生成候选。修改来源或候选会因审阅哈希失配拒绝发布，需重新逐项审阅。`createAibDesignAdapter({revision:3})` 只接受增强后的知识快照；原revision1调用保持兼容，不会把A1直接混入A3教案。
 
 最新输出为 generated/aib-{blueprint,learning-plan,course,manifest}.v3.json：38节、144卡/轮/正式题、七类操作。增加的5次补学来自A3先修关系，独立知识仍139条、目标58项。旧v1输出保留用于追溯，不能跨版本拼接。使用游戏“导入知识库”→“预览完整课程（修订3）”，或选择最新aib-course.v3.json。具体整合来源与验收见根docs/INTEGRATION.md。
+
+## B revision 4：差异化活动及C交接
+
+本轮以已审阅D增强A3/B3为知识基线，教学revision=4、知识revision=3，schemaVersion仍1。历史v1/v3未覆盖。修改33单元的真实互动，保留139单元、58目标及全部已审正式题/来源。38节、144学习卡、145轮、144正式题；原单控件节8→0、三连同操作节11→0。首AIB 1.1为分类→情境→算法装配→接线修复，不能误认为原内置22单元的1.1。
+
+原内置1.1新增8轮、五类操作模板 `templates/core-foundations.cjs`，从 `templates/strategist.cjs` 导出。根构建脚本仍有强制match的特例，需D解除；B未构建dist，当前页面不会仅因模板落地就自动更新。
+
+交接入口：[C-handoff.v4.md](C-handoff.v4.md)；逐节职责/步骤/解锁：[generated/C-section-guide.v4.md](generated/C-section-guide.v4.md)。AIB38节与内置13节分别使用 `generated/aib-teaching-map.v4.json`、`generated/legacy-teaching-map.v4.json`。自由浏览/可选收集不计掌握；必做基础确认和应用提交按先修执行；整章通过必做才解锁正式练习。物件可复用美术，但操作判定按内容与control路由，不统一花盆或配对。
+
+`createAibDesignAdapter({revision:4})` 输出 `generated/aib-learning-plan.v4.json`；`createLearningFlow({knowledgePack,plan,teachingMap})` 是C可执行的门控参考，非已接入浏览器的实现。它复核整个侧车依赖图、绑定知识/方案/侧车版本、拒绝错解/跳关/旧进度混用，允许自由浏览本章后续知识。用例见交接文档和 `tests/aib-v4.test.cjs`。
+
+生成候选：`node packages/learning-design/generate-aib-v4.cjs`（只写本包candidates）。已审阅重现：`node packages/learning-design/generate-aib-v4.cjs --reviewed`；必须匹配 `authored/review-v4.json` 的来源、蓝图、方案和两份侧车摘要。33项变更由不同模型评审，106未改项精确继承v3审阅。输入改变不能通过自动更新哈希来冒充重新审阅。验收命令仍为design模块及冻结契约，浏览器接线/发布交D/C。
+
+## B revision5：教学逻辑专项
+
+revision5以同一A3快照为输入，逐139单元审查目标、思考、可观察证据及误解。38节均区分推理示范、有提示引导、新情境独立应用与整章90%测验；原内置13节另有适配。正式题和来源保持冻结，前置活动不能照抄内部代码或提前公布正式题同案例结论。旧revision1/3/4保留，默认适配器版本未改，显式使用 `createAibDesignAdapter({revision:5})`。
+
+完整方案：`generated/aib-learning-plan.v5.json`；逐节链：`generated/teaching-logic.v5.json`；原课程：`generated/legacy-teaching-logic.v5.json`；逐节审查：`generated/B-section-audit.v5.md`。老师复查补充 `generated/micro-checkpoints.v5.json`：相关知识读完后可提前做低压力引导，原1.1无需读完22份才判断；不按固定卡数出题，不增加正式测验门槛。C/D接入见 [C-handoff.v5.md](C-handoff.v5.md)，最终状态及实测结果见根 `flow/tasks/B-teaching-audit.report.md`。
+
+`teachingLogicV5`导出纯参考函数：`diagnoseRound`逐项定位错误并保留草稿，`gradeStage`区分订正完成与独立证据，`canFavorite/inventory`说明先发现再收藏、归档退出随身栏。失败后显示具体诊断也属帮助，刷新后不能恢复独立信用；知识回看仍始终允许。这些函数没有接管游戏或修改存档。
+
+生成候选：`node packages/learning-design/generate-aib-v5.cjs`；冻结重现：追加 `--reviewed`，必须与不同模型评审的 `authored/review-v5.json`摘要及139项决定全部一致。验收：`node scripts/test-module.cjs design`、`node scripts/check-contracts.cjs`、`node --test tests/pipeline-contracts.test.cjs`。不运行根发布构建。

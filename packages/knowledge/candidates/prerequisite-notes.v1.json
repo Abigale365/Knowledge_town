@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "kind": "authored-prerequisite-notes",
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "materialContentHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "coverage": "Five selected edges only; not a new review of all 96 edges.",
+  "relationMeaning": "Authored pedagogical sequence recommendation, not an external mandate or empirical learning-effect claim.",
+  "integrated": false,
+  "changesPrerequisiteGraph": false,
+  "requiresDDecisionToPromote": true,
+  "notes": [
+    {
+      "unitId": "1.1-lesson-4",
+      "prerequisiteId": "1.1-lesson-3",
+      "rationale": {
+        "zh": "先介绍训练有助于解释推理时使用的模型从何而来，并比较当前参数模型例子中的两种过程。",
+        "en": "Introducing training first helps explain where the model used in inference comes from and compare the two processes in the current parameter-model illustration."
+      },
+      "boundary": {
+        "zh": "这不要求使用模型的人亲自完成训练，也不证明所有学习方法都以数值权重更新训练。",
+        "en": "This does not require the model user to perform training personally or establish numerical weight updates as training for all learning methods."
+      },
+      "unitEvidence": "1.1-lesson-4",
+      "prerequisiteEvidence": "1.1-lesson-3"
+    },
+    {
+      "unitId": "1.3-lesson-3",
+      "prerequisiteId": "1.1-lesson-8",
+      "rationale": {
+        "zh": "先理解生成式AI及其流畅不等于正确的边界，有助于理解RAG为什么向生成过程提供检索资料。",
+        "en": "Understanding generative AI and why fluency does not imply correctness helps explain why RAG supplies retrieved material to generation."
+      },
+      "boundary": {
+        "zh": "该顺序不证明检索一定相关、已授权或答案一定正确；这些仍须分别检查。",
+        "en": "This sequence does not establish retrieval relevance, authorization, or answer correctness; each still needs checking."
+      },
+      "unitEvidence": "1.3-lesson-3",
+      "prerequisiteEvidence": "1.1-lesson-8"
+    },
+    {
+      "unitId": "2.2.3-unit-1",
+      "prerequisiteId": "2.2.5-unit-1",
+      "rationale": {
+        "zh": "先列出生命周期成本项目，有助于避免计算ROI时漏掉集成、复核和运维成本。",
+        "en": "Listing lifecycle cost categories first helps avoid omitting integration, review, and operational costs from ROI."
+      },
+      "boundary": {
+        "zh": "生命周期成本清单不是把全部未来支出直接塞入任意单期ROI；收益和成本的期间、单位及核算口径仍须一致。",
+        "en": "A lifecycle cost checklist does not mean inserting all future expenditure into an arbitrary single-period ROI; benefit and cost periods, units, and accounting scope must still align."
+      },
+      "unitEvidence": "2.2.3-unit-1",
+      "prerequisiteEvidence": "2.2.5-unit-1"
+    },
+    {
+      "unitId": "3.2.3-unit-1",
+      "prerequisiteId": "3.2-lesson-3",
+      "rationale": {
+        "zh": "先理解数据和工具层的访问控制，有助于说明为什么授权检查需要在检索或执行前落实。",
+        "en": "Understanding access control at the data and tool layers helps explain why authorization checks must be enforced before retrieval or execution."
+      },
+      "boundary": {
+        "zh": "顺序本身不授予数据用途权限，也不能把输出遮盖当作阻止越权检索的替代。",
+        "en": "The sequence itself grants no permission for a data use and does not make output masking a substitute for preventing unauthorized retrieval."
+      },
+      "unitEvidence": "3.2.3-unit-1",
+      "prerequisiteEvidence": "3.2-lesson-3"
+    },
+    {
+      "unitId": "4.4-lesson-5",
+      "prerequisiteId": "3.3-lesson-1",
+      "rationale": {
+        "zh": "先理解持续监测、升级和回退，有助于识别从可演示到可运营之间尚缺的责任与处置机制。",
+        "en": "Understanding ongoing monitoring, escalation, and rollback helps identify ownership and response mechanisms missing between a demonstrable pilot and an operable service."
+      },
+      "boundary": {
+        "zh": "监控知识不是生产就绪的充分条件；治理、支持、责任与场景验证仍需各自证据。",
+        "en": "Monitoring knowledge is not sufficient for production readiness; governance, support, accountability, and contextual validation still need their own evidence."
+      },
+      "unitEvidence": "4.4-lesson-5",
+      "prerequisiteEvidence": "3.3-lesson-1"
+    }
+  ]
+}

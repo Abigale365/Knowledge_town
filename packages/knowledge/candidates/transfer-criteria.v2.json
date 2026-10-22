@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "kind": "authoring-transfer-criteria",
+  "authoringOnly": true,
+  "doNotUseAsLearnerPrompt": true,
+  "notEvidenceOfLearnerMastery": true,
+  "distinctionContentHash": "9d51a2e441652e68bc7a3f9224f560e4fc3f5c30dbee73e587c3e66ea032c3f9",
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "materialContentHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "empiricalLearningEffect": "not-evaluated",
+  "notes": "These are authoring criteria, not game controls, automatic grading rules, learner results, or validated time estimates. A new task must not simply repeat an answer-exposed example.",
+  "criteria": [
+    {
+      "distinctionId": "algorithm-model",
+      "outcome": {
+        "zh": "按方法与产物的实际角色区分算法和模型。",
+        "en": "Distinguish an algorithm from a model by the actual roles of procedure and artifact."
+      },
+      "vary": {
+        "zh": "换成另一类学习任务，并分别给出执行步骤、学到的表示及保存文件的信息；不要仅换名词。",
+        "en": "Use another learning task and provide information about executed steps, the learned representation, and saved files; do not merely rename terms."
+      },
+      "observe": [
+        {
+          "zh": "指出什么描述执行方法，什么描述学到的表示。",
+          "en": "Identify what describes the procedure and what describes the learned representation."
+        },
+        {
+          "zh": "说明文件存在不证明过程正在执行。",
+          "en": "Explain why an existing file does not prove a process is running."
+        }
+      ],
+      "insufficient": {
+        "zh": "只背算法/模型定义，或把文件名作为执行证据。",
+        "en": "Reciting definitions or treating a filename as evidence of execution."
+      },
+      "uncertainty": {
+        "zh": "缺少执行信息时，明确还需运行记录，不猜训练是否正在进行。",
+        "en": "If execution information is missing, ask for run records rather than guess whether training is happening."
+      },
+      "unitIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2"
+      ]
+    },
+    {
+      "distinctionId": "training-inference",
+      "outcome": {
+        "zh": "先确定学习方法；在给定参数学习模型中，结合参数更新与执行记录区分训练、推理和证据不足。",
+        "en": "Identify the learning method first; for the specified parameter-learning model, use parameter-update and execution records to distinguish training, inference, and insufficient evidence."
+      },
+      "vary": {
+        "zh": "给定参数学习模型后改变业务场景与更新/请求记录；另给最近邻分类的带标签实例保存及预测流程，检验能否识别原判据的适用边界。",
+        "en": "Specify a parameter-learning model, then vary the business setting and update/request records; separately supply labeled-instance retention and prediction steps for nearest-neighbor classification to test the boundary of the original criterion."
+      },
+      "observe": [
+        {
+          "zh": "说明所给方法与学习阶段改变的状态；在参数学习模型中，不能只凭新输入判断训练。",
+          "en": "Explain the specified method and the state changed during learning; for parameter-learning models, new inputs alone do not establish training."
+        },
+        {
+          "zh": "对最近邻对照，解释为何保存带标签训练实例可属于学习流程，而仅因没有神经网络权重更新就否认机器学习不成立。",
+          "en": "For the nearest-neighbor contrast, explain why retaining labeled training instances can be part of learning and why absent neural-network weight updates do not rule out machine learning."
+        }
+      ],
+      "insufficient": {
+        "zh": "把所有新请求叫训练，把没有数值权重更新一律叫推理，或把任意保存文本都叫训练。",
+        "en": "Calling every new request training, calling all activity without numerical weight updates inference, or calling any text storage training."
+      },
+      "uncertainty": {
+        "zh": "缺少算法、学习状态或执行记录时，列出所需信息；无更新记录不证明没有更新，不替未知方法猜结论。",
+        "en": "When algorithm, learned-state, or execution records are missing, identify the needed information; absent update records do not prove no update, and do not guess for an unspecified method."
+      },
+      "unitIds": [
+        "1.1-lesson-3",
+        "1.1-lesson-4"
+      ],
+      "assumption": {
+        "zh": "以下参数更新判据适用于明确给定的参数学习模型；不能作为所有机器学习方法的唯一定义。",
+        "en": "The parameter-update criterion below applies to an explicitly specified parameter-learning model; it is not the sole definition across all machine-learning methods."
+      }
+    },
+    {
+      "distinctionId": "rules-learning",
+      "outcome": {
+        "zh": "按给定条件与代价比较规则和学习型模型。",
+        "en": "Compare rules and learned models using the given conditions and costs."
+      },
+      "vary": {
+        "zh": "同一类业务分别给稳定明确政策、复杂模式和规则维护困难的情况。",
+        "en": "For a business task, vary stable explicit policy, complex patterns, and difficult rule maintenance."
+      },
+      "observe": [
+        {
+          "zh": "指出已有明确条件是否足以执行，不为技术标签而引入模型。",
+          "en": "Identify whether explicit conditions suffice rather than introduce a model for its label."
+        },
+        {
+          "zh": "同时比较错误后果、维护和价值，不宣称某方案总更好。",
+          "en": "Compare error consequences, maintenance, and value without claiming one option is always better."
+        }
+      ],
+      "insufficient": {
+        "zh": "只说“简单用规则、复杂用AI”，不解释本情境证据。",
+        "en": "Saying only \"rules for simple tasks, AI for complex tasks\" without explaining this case."
+      },
+      "uncertainty": {
+        "zh": "关键政策或质量/成本证据缺失时，提出需要验证的条件。",
+        "en": "When policy or quality/cost evidence is missing, state what needs validation."
+      },
+      "unitIds": [
+        "1.2-lesson-1"
+      ]
+    },
+    {
+      "distinctionId": "recommendation-action",
+      "outcome": {
+        "zh": "把生成建议、行动工具与授权检查分开判断。",
+        "en": "Distinguish generated recommendations, action tools, and authorization checks."
+      },
+      "vary": {
+        "zh": "改变工具副作用、可用权限和批准状态，而不是只换通知收件人姓名。",
+        "en": "Vary tool side effects, available permissions, and approval state rather than only recipient names."
+      },
+      "observe": [
+        {
+          "zh": "指出哪一步改变外部状态，哪项权限须在系统层执行。",
+          "en": "Identify the step changing external state and the permission that must be system-enforced."
+        },
+        {
+          "zh": "说明提示承诺不能作为权限已执行的证据。",
+          "en": "Explain why a prompt promise is not evidence of enforced authorization."
+        }
+      ],
+      "insufficient": {
+        "zh": "仅要求模型“谨慎”，或因为能起草就允许发送。",
+        "en": "Only asking the model to be careful or permitting sending because it can draft."
+      },
+      "uncertainty": {
+        "zh": "缺少组织授权规则时要求确认，不自行发明批准额度。",
+        "en": "If authorization policy is missing, request it rather than invent an approval limit."
+      },
+      "unitIds": [
+        "1.2.1-unit-2",
+        "1.2.2-unit-2"
+      ]
+    },
+    {
+      "distinctionId": "drift-harm",
+      "outcome": {
+        "zh": "分别判断分布变化、任务表现和是否可采取上线动作。",
+        "en": "Judge distribution changes, task performance, and deployment action separately."
+      },
+      "vary": {
+        "zh": "提供输入变化但质量稳定、质量下降但原因未知等不同证据组合。",
+        "en": "Provide different evidence combinations, including changed inputs with stable quality and degraded quality with unknown cause."
+      },
+      "observe": [
+        {
+          "zh": "不把告警本身当作损害或新版本成功的证明。",
+          "en": "Do not treat an alert as proof of harm or a successful replacement."
+        },
+        {
+          "zh": "指出需要比较的任务指标、结果和预案条件。",
+          "en": "Identify task metrics, outcomes, and response-plan conditions to compare."
+        }
+      ],
+      "insufficient": {
+        "zh": "看到漂移就自动重训，或看到当前质量稳定就宣布永远无风险。",
+        "en": "Automatically retraining for drift or declaring permanent safety from current stable quality."
+      },
+      "uncertainty": {
+        "zh": "区分按预案先控制风险与已经查明根因。",
+        "en": "Distinguish planned containment from establishing a root cause."
+      },
+      "unitIds": [
+        "1.2.3-unit-1"
+      ]
+    },
+    {
+      "distinctionId": "rag-finetuning",
+      "outcome": {
+        "zh": "按实际改变的信息与参数选择检索、微调或组合评估。",
+        "en": "Choose retrieval, fine-tuning, or a combined evaluation based on what information and parameters change."
+      },
+      "vary": {
+        "zh": "分别改变事实新鲜度需求、行为/格式需求及参数更新记录。",
+        "en": "Vary fact-freshness needs, behavioral/format needs, and parameter-update records."
+      },
+      "observe": [
+        {
+          "zh": "指出请求中的资料变化是否来自外部检索。",
+          "en": "Identify whether request information changes through external retrieval."
+        },
+        {
+          "zh": "解释行为适配不免除变化事实维护，RAG也不保证正确。",
+          "en": "Explain why behavioral adaptation does not remove fact maintenance and RAG does not guarantee correctness."
+        }
+      ],
+      "insufficient": {
+        "zh": "把二者当完全互斥，或只靠术语就声称事实可靠。",
+        "en": "Treating the methods as mutually exclusive or claiming factual reliability from their labels."
+      },
+      "uncertainty": {
+        "zh": "没有数据、评测或维护条件时，不预先断言哪种方案一定更好。",
+        "en": "Do not declare a method superior before data, evaluation, and maintenance conditions are known."
+      },
+      "unitIds": [
+        "1.3-lesson-3",
+        "1.3-lesson-4"
+      ]
+    },
+    {
+      "distinctionId": "capacity-cash",
+      "outcome": {
+        "zh": "区分释放工时、额外产出与已兑现现金节支。",
+        "en": "Distinguish released hours, additional output, and realized cash savings."
+      },
+      "vary": {
+        "zh": "改变工资/合同支出是否下降、空出工时用途与新增需求是否存在。",
+        "en": "Vary whether payroll/contract spending falls, how released hours are used, and whether extra demand exists."
+      },
+      "observe": [
+        {
+          "zh": "用实际支出变化支持现金节支，说明其他产能用途。",
+          "en": "Support cash savings with spending changes and explain other uses of capacity."
+        },
+        {
+          "zh": "识别同一工时被重复计益的假设冲突。",
+          "en": "Identify conflicting assumptions when the same hours are counted twice."
+        }
+      ],
+      "insufficient": {
+        "zh": "只用“省时×工资”就宣布现金已经节省，或把产能收益一概否定。",
+        "en": "Declaring realized cash savings from time times wages alone, or dismissing all capacity benefits."
+      },
+      "uncertainty": {
+        "zh": "支出与人员安排未知时，保留收益类型和金额的不确定性。",
+        "en": "When spending and staffing arrangements are unknown, retain uncertainty about benefit type and amount."
+      },
+      "unitIds": [
+        "2.2.3-unit-2"
+      ]
+    },
+    {
+      "distinctionId": "roi-boundaries",
+      "outcome": {
+        "zh": "说明ROI的核算边界，并在资料足够时计算。",
+        "en": "Explain ROI accounting boundaries and calculate only when information is sufficient."
+      },
+      "vary": {
+        "zh": "除数值外，改变期间、成本完整性或收益是否兑现；给出分母为零或资料不足的条件时允许说明不可按该公式求值。",
+        "en": "Vary period, cost completeness, or realization of benefits as well as numbers; allow a reasoned inability to apply this formula when the denominator is zero or inputs are missing."
+      },
+      "observe": [
+        {
+          "zh": "明确同期间收益、完整成本与净收益，使用成本为分母。",
+          "en": "State same-period benefits, full costs, and net benefit, using costs as the denominator."
+        },
+        {
+          "zh": "发现混合期间、缺失成本或零分母时先指出边界问题。",
+          "en": "Identify mixed periods, missing costs, or a zero denominator before giving a value."
+        }
+      ],
+      "insufficient": {
+        "zh": "只把演示数字换进模板，忽略期间和成本范围。",
+        "en": "Only substituting demo numbers while ignoring period and cost scope."
+      },
+      "uncertainty": {
+        "zh": "不能用猜测的成本补出一个看似精确的百分比。",
+        "en": "Do not invent costs to produce a seemingly precise percentage."
+      },
+      "unitIds": [
+        "2.2.3-unit-1"
+      ]
+    },
+    {
+      "distinctionId": "leading-outcomes",
+      "outcome": {
+        "zh": "判断已有的是采用信号还是结果证据，并提出下一步核验。",
+        "en": "Judge whether the evidence concerns adoption signals or outcomes and propose further checks."
+      },
+      "vary": {
+        "zh": "改变培训/使用指标与质量、复核成本、净收益之间的一致或背离关系。",
+        "en": "Vary whether training/usage indicators align with or diverge from quality, review costs, and net benefits."
+      },
+      "observe": [
+        {
+          "zh": "说明早期信号为何不能直接证明收益已兑现。",
+          "en": "Explain why an early signal does not establish realized benefits."
+        },
+        {
+          "zh": "指出检验预期联系所需的后续结果数据。",
+          "en": "Identify later outcome data needed to test the expected relationship."
+        }
+      ],
+      "insufficient": {
+        "zh": "只把标签分为先导/结果，却仍据使用率判定掌握或价值。",
+        "en": "Labeling indicators as leading/outcome while still inferring mastery or value from usage."
+      },
+      "uncertainty": {
+        "zh": "结果未知时不宣布成功，也不因缺少结果就说培训无价值。",
+        "en": "When outcomes are unknown, neither declare success nor dismiss training as worthless."
+      },
+      "unitIds": [
+        "2.2.1-unit-1",
+        "2.2.4-unit-1"
+      ]
+    },
+    {
+      "distinctionId": "explain-transparency",
+      "outcome": {
+        "zh": "分别检查AI参与告知与具体判断理由。",
+        "en": "Check AI-use disclosure and reasons for a particular judgment separately."
+      },
+      "vary": {
+        "zh": "分别给出只有AI告知、只有理由、两者俱有或理由不适合受众的情况。",
+        "en": "Vary disclosure only, reasons only, both, or reasons unsuitable for the audience."
+      },
+      "observe": [
+        {
+          "zh": "指出现有信息回答了哪个问题、仍缺哪个问题。",
+          "en": "Identify which question the information answers and which remains unanswered."
+        },
+        {
+          "zh": "核验理由是否可理解且受证据支持，不只看术语数量。",
+          "en": "Check whether reasons are understandable and evidence-supported, not just jargon-rich."
+        }
+      ],
+      "insufficient": {
+        "zh": "把“使用AI”当作充分解释，或把有解释当作必然正确。",
+        "en": "Treating \"AI was used\" as sufficient explanation or an explanation as guaranteed correctness."
+      },
+      "uncertainty": {
+        "zh": "没有判断依据时承认缺少可说明信息，不自行编造模型理由。",
+        "en": "When grounds are missing, acknowledge the gap rather than invent model reasons."
+      },
+      "unitIds": [
+        "3.1.1-unit-2"
+      ]
+    },
+    {
+      "distinctionId": "privacy-permissions",
+      "outcome": {
+        "zh": "依据给定岗位、用途和共享边界判断处理方式。",
+        "en": "Choose handling based on the given role, purpose, and sharing boundaries."
+      },
+      "vary": {
+        "zh": "改变角色授权、用途许可和接收方权限，避免只更换人物姓名。",
+        "en": "Vary role authorization, permitted purpose, and recipient permissions rather than only names."
+      },
+      "observe": [
+        {
+          "zh": "分别核对能否读取、能否按此用途处理、能否共享。",
+          "en": "Separately check permission to read, process for this purpose, and share."
+        },
+        {
+          "zh": "解释输出后遮盖为什么不能替代前置访问控制。",
+          "en": "Explain why masking output cannot substitute for pre-access controls."
+        }
+      ],
+      "insufficient": {
+        "zh": "把登录成功当成任意复用许可，或未给地区就断言具体法律违法。",
+        "en": "Treating login as unlimited reuse permission, or declaring a specific legal violation without jurisdiction."
+      },
+      "uncertainty": {
+        "zh": "缺用途或共享规则时请求适用规则，不替组织批准处理。",
+        "en": "When purpose or sharing rules are missing, request them rather than approve processing on the organization’s behalf."
+      },
+      "unitIds": [
+        "3.1.1-unit-3",
+        "3.2.3-unit-1"
+      ]
+    },
+    {
+      "distinctionId": "pilot-production",
+      "outcome": {
+        "zh": "按条件迁移判断试点证据与生产准备缺口。",
+        "en": "Judge pilot evidence and production-readiness gaps by comparing conditions."
+      },
+      "vary": {
+        "zh": "改变新团队的数据、人力、流量、支持和恢复条件，不仅换部门名字。",
+        "en": "Vary a new team’s data, staffing, load, support, and recovery conditions, not just department names."
+      },
+      "observe": [
+        {
+          "zh": "指出哪些试点条件已验证，哪些不能直接外推。",
+          "en": "Identify which pilot conditions were tested and which cannot be directly extrapolated."
+        },
+        {
+          "zh": "提出须补的负责人、运行手册、监测或恢复证据。",
+          "en": "Identify needed ownership, runbook, monitoring, or recovery evidence."
+        }
+      ],
+      "insufficient": {
+        "zh": "把配置复制或演示可打开等同生产交接完成。",
+        "en": "Equating copied configuration or an accessible demo with complete production handover."
+      },
+      "uncertainty": {
+        "zh": "缺失关键条件时建议补证或限定范围，不宣布所有用途永远不能部署。",
+        "en": "When key conditions are missing, propose evidence or restricted scope rather than declare every use permanently undeployable."
+      },
+      "unitIds": [
+        "4.4.2-unit-1",
+        "4.4.5-unit-1"
+      ]
+    }
+  ],
+  "candidateRevision": 2,
+  "requiresDDecisionToPromote": true,
+  "integrated": false,
+  "previousCriteriaContentHash": "bcc4b6b9a959c4ce2bddf7830f5b96be61c0d5570bd35f804a6fb21df6bc6f80",
+  "scopeProposalContentHash": "b7e85ef970784db562e4c75480a35b609d5e7cc223da48ac282150c1fda2e1f7",
+  "scopeSourceMaterialContentHash": "d343986cc40a469e6f7166be97709e843045e1a36d0f239dc78a9b65ce836c77",
+  "scopeSource": {
+    "id": "nearest-neighbors-official",
+    "title": "scikit-learn official documentation — Nearest Neighbors",
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+    "checkedAt": "2026-10-22",
+    "locator": "1.6.2 Nearest Neighbors Classification; introductory paragraph",
+    "quote": "simply stores instances of the training data."
+  }
+}

@@ -1,0 +1,21 @@
+'use strict';
+const assert=require('node:assert/strict'),harness=require('./town-harness.cjs');
+(async()=>{
+ let h=await harness(new Map(),{entrySchedule:true});h.run('close()');const first=h.run('studySection().lessons[0].id'),future=h.run('studyChapter().sections[1].lessons[0].id');
+ h.list('[data-study-fruit]').find(e=>e.dataset.studyFruit===first).click();const before=h.run('JSON.stringify(studyState())');h.click('favoriteKnowledge');
+ assert.equal(h.run('JSON.stringify(studyState())'),before,'favoriting cannot confirm foundations');assert.ok(h.get('teachingFavoriteTray').innerHTML.includes(first));
+ const inScene=id=>[...h.list('[data-study-fruit]'),...h.list('[data-study-filed]')].some(x=>(x.dataset.studyFruit||x.dataset.studyFiled)===id);
+ assert.equal(inScene(first),false,'favorite moves out of the scene');h.click('favoriteKnowledge');assert.equal(inScene(first),true,'removing favorite restores its scene object');h.click('favoriteKnowledge');assert.equal(inScene(first),false);
+ assert.equal(h.list('[data-favorite-read]').length,0);h.run('close()');
+ const selected=h.list('[data-teaching-favorite]').find(x=>x.dataset.teachingFavorite===first);selected.click();assert.ok(h.list('[data-teaching-favorite]').includes(selected),'single click must preserve the node for double click');selected.ondblclick();assert.ok(h.get('favoriteKnowledge'));h.run('close()');
+ h.run('showKnowledgeChest()');assert.ok(h.get('teachingFavoriteShelf').innerHTML.includes(first));
+ h.run(`openStudyLesson(${JSON.stringify(future)})`);assert.equal(h.get('favoriteKnowledge').disabled,true);h.run(`teachingContext().p.found.push(${JSON.stringify(future)});teachingContext().p.favorites.push(${JSON.stringify(future)})`);h.run('close()');const saved=h.run('JSON.stringify(studyState())');
+ h.run(`applyDrag({teachingFavorite:${JSON.stringify(future)},bank:state.selected},'study-basket')`);assert.equal(h.run('JSON.stringify(studyState())'),saved);
+ h.run(`applyDrag({teachingFavorite:${JSON.stringify(first)},bank:'wrong-bank'},'study-basket')`);assert.equal(h.run('JSON.stringify(studyState())'),saved);
+ h.list('[data-teaching-favorite]').find(x=>x.dataset.teachingFavorite===first).click();h.click('worldStudyBasket');assert.ok(h.run(`studyState().deposited.includes(${JSON.stringify(first)})`));assert.equal(h.run('studyState().sealed.length'),0);
+ const second=h.run('studySection().lessons[1].id');h.list('[data-study-fruit]').find(e=>e.dataset.studyFruit===second).click();h.click('favoriteKnowledge');h.run('close()');
+ h.run(`applyDrag({teachingFavorite:${JSON.stringify(second)},bank:state.selected},'study-basket')`);assert.ok(h.run(`studyState().deposited.includes(${JSON.stringify(second)})`));assert.equal(h.run('studyState().sealed.length'),0);
+ h.run('save()');await new Promise(r=>setImmediate(r));h=await harness(h.data,{entrySchedule:true});assert.equal(h.get('teachingFavoriteTray').innerHTML.includes(first),false);h.run('showKnowledgeChest()');assert.ok(h.get('teachingFavoriteShelf').innerHTML.includes(first));assert.ok(h.get('teachingFavoriteShelf').innerHTML.includes(future));
+ assert.equal(inScene(first),false,'filed favorites must stay out of the scene after reload');assert.equal(inScene(second),false);
+ console.log('PASS: favorites appear in tray/chest, can be filed with selection, reject future/wrong-bank drops, remain optional and restore after refresh. Simulated DOM only.');
+})().catch(e=>{console.error(e);process.exitCode=1;});

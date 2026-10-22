@@ -1,0 +1,2991 @@
+{
+  "schemaVersion": 1,
+  "format": "b-c-micro-checkpoints",
+  "revision": 5,
+  "binding": {
+    "knowledgePackId": "aib-knowledge-integration",
+    "knowledgeRevision": 3,
+    "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+    "planId": "aib-learning-plan",
+    "planRevision": 5,
+    "planHash": "43f2b577b6f3b3ff6e96a2ab27299b2d9f38e62bd8fe84c4e14b76fe7152d175"
+  },
+  "policy": {
+    "basis": "topic-dependencies-not-every-N-cards",
+    "review": "knowledge-and-source-always-readable",
+    "sameExercise": "One guided exercise may be entered early or from the later guided panel; never require a duplicate attempt.",
+    "sequence": "knowledge-before-judgment; independent-application-after-section-foundations; whole-chapter-formal-90-percent",
+    "existingFinding": "Retain real discovery, optional favorites, filing and material-box review. Micro practice does not replace them."
+  },
+  "aib": [
+    {
+      "sectionId": "b-c1-s1",
+      "compiledSectionId": "1.1",
+      "checkpoints": [
+        {
+          "id": "micro-1-1",
+          "sourceSectionId": "b-c1-s1",
+          "compiledSectionId": "1.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "识别数据来源与结果用途",
+              "en": "Identify source data and result use"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s2",
+      "compiledSectionId": "1.2",
+      "checkpoints": [
+        {
+          "id": "micro-1-2",
+          "sourceSectionId": "b-c1-s2",
+          "compiledSectionId": "1.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-18",
+            "1.1-lesson-19"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-18",
+            "1.1-lesson-19"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分类别、抽取要素和跨语言表达",
+              "en": "Distinguish categories, extracted elements and translation"
+            },
+            {
+              "zh": "看输入模态和定位目标",
+              "en": "Inspect modality and localization goals"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s3",
+      "compiledSectionId": "1.3",
+      "checkpoints": [
+        {
+          "id": "micro-1-3",
+          "sourceSectionId": "b-c1-s3",
+          "compiledSectionId": "1.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-3",
+            "1.1-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分改变模型与使用模型",
+              "en": "Distinguish changing from using the model"
+            },
+            {
+              "zh": "不能只看输出变没变",
+              "en": "Do not judge from output change alone"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s4",
+      "compiledSectionId": "1.4",
+      "checkpoints": [
+        {
+          "id": "micro-1-4",
+          "sourceSectionId": "b-c1-s4",
+          "compiledSectionId": "1.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-20"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-7",
+            "1.1-lesson-20"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分特征与目标",
+              "en": "Distinguish features from targets"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s5",
+      "compiledSectionId": "1.5",
+      "checkpoints": [
+        {
+          "id": "micro-1-5",
+          "sourceSectionId": "b-c1-s5",
+          "compiledSectionId": "1.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-10"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-10"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "依据正文/图像/录音选择加工",
+              "en": "Choose preparation by source form"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s6",
+      "compiledSectionId": "1.6",
+      "checkpoints": [
+        {
+          "id": "micro-1-6",
+          "sourceSectionId": "b-c1-s6",
+          "compiledSectionId": "1.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-14"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4",
+            "1.1-lesson-14"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分同参运行、权重更新和文档维护",
+              "en": "Distinguish fixed-parameter use, weight updates and document maintenance"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s7",
+      "compiledSectionId": "1.7",
+      "checkpoints": [
+        {
+          "id": "micro-1-7",
+          "sourceSectionId": "b-c1-s7",
+          "compiledSectionId": "1.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-12",
+            "1.2-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从基线算变化但不直接断言原因",
+              "en": "Compute baseline change without inferring cause"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s8",
+      "compiledSectionId": "1.8",
+      "checkpoints": [
+        {
+          "id": "micro-1-8",
+          "sourceSectionId": "b-c1-s8",
+          "compiledSectionId": "1.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2.2-unit-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4",
+            "1.2-lesson-2",
+            "1.2-lesson-3",
+            "1.2.2-unit-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分可先准备与必须等证据",
+              "en": "Separate preparations from evidence-dependent work"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s9",
+      "compiledSectionId": "1.9",
+      "checkpoints": [
+        {
+          "id": "micro-1-9",
+          "sourceSectionId": "b-c1-s9",
+          "compiledSectionId": "1.9",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s9",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-12",
+            "1.2-lesson-4",
+            "1.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "检查完整输入与结果关系",
+              "en": "Inspect complete inputs and outcome relationships"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s10",
+      "compiledSectionId": "1.10",
+      "checkpoints": [
+        {
+          "id": "micro-1-10",
+          "sourceSectionId": "b-c1-s10",
+          "compiledSectionId": "1.10",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s10",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "算超额而非只看输入",
+              "en": "Calculate overflow, not input alone"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s11",
+      "compiledSectionId": "1.11",
+      "checkpoints": [
+        {
+          "id": "micro-1-11",
+          "sourceSectionId": "b-c1-s11",
+          "compiledSectionId": "1.11",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s11",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3.1-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-1",
+            "1.3.1-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从具体案例识别正常、边界和失败",
+              "en": "Recognize ordinary, boundary and failure behavior"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c1-s12",
+      "compiledSectionId": "1.12",
+      "checkpoints": [
+        {
+          "id": "micro-1-12",
+          "sourceSectionId": "b-c1-s12",
+          "compiledSectionId": "1.12",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s12",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3.3-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-4",
+            "1.3-lesson-3",
+            "1.3.3-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分维护、适配与验收",
+              "en": "Distinguish maintenance, adaptation and validation"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s1",
+      "compiledSectionId": "2.1",
+      "checkpoints": [
+        {
+          "id": "micro-2-1",
+          "sourceSectionId": "b-c2-s1",
+          "compiledSectionId": "2.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.1.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "哪些记录说明当前问题、哪些表达改变、哪些只是候选工具。",
+              "en": "Separate current-problem evidence, intended changes and candidate tools."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s2",
+      "compiledSectionId": "2.2",
+      "checkpoints": [
+        {
+          "id": "micro-2-2",
+          "sourceSectionId": "b-c2-s2",
+          "compiledSectionId": "2.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.1.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1",
+            "2.1.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "可行性不同于价值排名，必须先剔除禁止项。",
+              "en": "Feasibility differs from ranking value; exclusions must be respected."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s3",
+      "compiledSectionId": "2.3",
+      "checkpoints": [
+        {
+          "id": "micro-2-3",
+          "sourceSectionId": "b-c2-s3",
+          "compiledSectionId": "2.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "不能遗漏复核时间，也不能拿局部环节当全部节省。",
+              "en": "Do not omit review time or treat one step as total savings."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s4",
+      "compiledSectionId": "2.4",
+      "checkpoints": [
+        {
+          "id": "micro-2-4",
+          "sourceSectionId": "b-c2-s4",
+          "compiledSectionId": "2.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "指标记录的是活动已做，还是业务结果已发生。",
+              "en": "Identify whether the measure records activity or a realized business result."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s5",
+      "compiledSectionId": "2.5",
+      "checkpoints": [
+        {
+          "id": "micro-2-5",
+          "sourceSectionId": "b-c2-s5",
+          "compiledSectionId": "2.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-2",
+            "2.2.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "两组任务是否可比较、口径是否含复核、趋势是否受控。",
+              "en": "Check comparability, review-inclusive definitions and time trends."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s6",
+      "compiledSectionId": "2.6",
+      "checkpoints": [
+        {
+          "id": "micro-2-6",
+          "sourceSectionId": "b-c2-s6",
+          "compiledSectionId": "2.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2.5-unit-1",
+            "2.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "有数字不表示可相除；材料是否支持同口径比较。",
+              "en": "Numbers alone do not justify division; evidence must support comparable scope."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s7",
+      "compiledSectionId": "2.7",
+      "checkpoints": [
+        {
+          "id": "micro-2-7",
+          "sourceSectionId": "b-c2-s7",
+          "compiledSectionId": "2.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.3-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.3-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "相同模型是否说明相同可持续能力。",
+              "en": "Assess whether equal models imply equal sustained capabilities."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c2-s8",
+      "compiledSectionId": "2.8",
+      "checkpoints": [
+        {
+          "id": "micro-2-8",
+          "sourceSectionId": "b-c2-s8",
+          "compiledSectionId": "2.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1",
+            "2.1.3-unit-1",
+            "2.2.5-unit-1",
+            "2.2.3-unit-1",
+            "2.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "其他条件通过是否能抵消超预算，能否事后改门槛。",
+              "en": "Judge whether other passing gates offset overbudget costs or justify changing gates afterward."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s1",
+      "compiledSectionId": "3.1",
+      "checkpoints": [
+        {
+          "id": "micro-3-1",
+          "sourceSectionId": "b-c3-s1",
+          "compiledSectionId": "3.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.1.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从缺少群体明细的5%总体差错判断缺少哪些证据",
+              "en": "Identify evidence missing behind a 5% aggregate error rate"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s2",
+      "compiledSectionId": "3.2",
+      "checkpoints": [
+        {
+          "id": "micro-3-2",
+          "sourceSectionId": "b-c3-s2",
+          "compiledSectionId": "3.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.1.1-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1.1-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "判断具体界面文本解决的是知情还是理由理解",
+              "en": "Judge whether interface text supports informed choice or understanding reasons"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s3",
+      "compiledSectionId": "3.3",
+      "checkpoints": [
+        {
+          "id": "micro-3-3",
+          "sourceSectionId": "b-c3-s3",
+          "compiledSectionId": "3.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.2-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "审查交接表里谁能决定用途、部署和要求核对",
+              "en": "Inspect who owns use, deployment and requirement decisions in a handover"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s4",
+      "compiledSectionId": "3.4",
+      "checkpoints": [
+        {
+          "id": "micro-3-4",
+          "sourceSectionId": "b-c3-s4",
+          "compiledSectionId": "3.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.2-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "结合三种业务任务和资料分级修复全库开放的授权",
+              "en": "Repair repository-wide access using three business tasks and source classifications"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s5",
+      "compiledSectionId": "3.5",
+      "checkpoints": [
+        {
+          "id": "micro-3-5",
+          "sourceSectionId": "b-c3-s5",
+          "compiledSectionId": "3.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1-lesson-4",
+            "3.3-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "计算失败率并将实际超限连接到人工接手和受控证据",
+              "en": "Calculate failure rate and connect the breach to human takeover and controlled evidence"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s6",
+      "compiledSectionId": "3.6",
+      "checkpoints": [
+        {
+          "id": "micro-3-6",
+          "sourceSectionId": "b-c3-s6",
+          "compiledSectionId": "3.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3-lesson-3",
+            "3.3-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.3-lesson-3",
+            "3.3-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "将不同发布记录送入不能互相替代的检查",
+              "en": "Route publication records to checks that cannot substitute for one another"
+            },
+            {
+              "zh": "在有核验记录的两份答复中保留证据支持的事实而非更流畅的夸大",
+              "en": "Retain verified facts rather than a more fluent overstatement when checking two responses"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c3-s7",
+      "compiledSectionId": "3.7",
+      "checkpoints": [
+        {
+          "id": "micro-3-7",
+          "sourceSectionId": "b-c3-s7",
+          "compiledSectionId": "3.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.3-lesson-4",
+            "3.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "逐条比较结论与摘录并限制版本未知的使用范围",
+              "en": "Compare claims with an excerpt and limit conclusions when version currency is unknown"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s1",
+      "compiledSectionId": "4.1",
+      "checkpoints": [
+        {
+          "id": "micro-4-1",
+          "sourceSectionId": "b-c4-s1",
+          "compiledSectionId": "4.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.1-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "在用途条件已验证但没有新增采购时判断有限试用是否仍可推进",
+              "en": "Judge a bounded trial when use-specific conditions are verified without a new purchase"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s2",
+      "compiledSectionId": "4.2",
+      "checkpoints": [
+        {
+          "id": "micro-4-2",
+          "sourceSectionId": "b-c4-s2",
+          "compiledSectionId": "4.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.1.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1-lesson-2",
+            "4.1.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "检查可重复、治理和值守证据是否存在",
+              "en": "Check whether repeatability, governance and operating evidence exist"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s3",
+      "compiledSectionId": "4.3",
+      "checkpoints": [
+        {
+          "id": "micro-4-3",
+          "sourceSectionId": "b-c4-s3",
+          "compiledSectionId": "4.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.2.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.2-lesson-1",
+            "4.2.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "按主键去重并承认缺失金额不能自动补零",
+              "en": "Deduplicate by key and recognize that missing amounts are not automatically zero"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s4",
+      "compiledSectionId": "4.4",
+      "checkpoints": [
+        {
+          "id": "micro-4-4",
+          "sourceSectionId": "b-c4-s4",
+          "compiledSectionId": "4.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.2-lesson-3",
+            "4.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "不能用低并发演示推出目标容量、恢复和支持",
+              "en": "Do not infer target capacity, recovery and support from a low-load demo"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s5",
+      "compiledSectionId": "4.5",
+      "checkpoints": [
+        {
+          "id": "micro-4-5",
+          "sourceSectionId": "b-c4-s5",
+          "compiledSectionId": "4.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.3-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "识别宣传中未验证的承诺并保留反馈渠道",
+              "en": "Identify unsupported promises and preserve feedback channels"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s6",
+      "compiledSectionId": "4.6",
+      "checkpoints": [
+        {
+          "id": "micro-4-6",
+          "sourceSectionId": "b-c4-s6",
+          "compiledSectionId": "4.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2.1-unit-1",
+            "4.3.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "发现技术交付中没有人能暂停不适当用途",
+              "en": "Detect missing stop authority despite completed implementation"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s7",
+      "compiledSectionId": "4.7",
+      "checkpoints": [
+        {
+          "id": "micro-4-7",
+          "sourceSectionId": "b-c4-s7",
+          "compiledSectionId": "4.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1.3-unit-1",
+            "4.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分风险、技能和适配线索并安排验证性干预",
+              "en": "Separate risk, skill and fit clues and choose testable support"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s8",
+      "compiledSectionId": "4.8",
+      "checkpoints": [
+        {
+          "id": "micro-4-8",
+          "sourceSectionId": "b-c4-s8",
+          "compiledSectionId": "4.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.4-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从实验失败证据选择回补条件而非强行推进",
+              "en": "Choose to repair conditions from experimental failure evidence"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s9",
+      "compiledSectionId": "4.9",
+      "checkpoints": [
+        {
+          "id": "micro-4-9",
+          "sourceSectionId": "b-c4-s9",
+          "compiledSectionId": "4.9",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s9",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-5"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1-lesson-4",
+            "3.3-lesson-1",
+            "4.4-lesson-5"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "判断值守和回退证据是否足以支持转生产",
+              "en": "Judge whether operations and fallback evidence support production"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s10",
+      "compiledSectionId": "4.10",
+      "checkpoints": [
+        {
+          "id": "micro-4-10",
+          "sourceSectionId": "b-c4-s10",
+          "compiledSectionId": "4.10",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s10",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-6"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1.1-unit-1",
+            "4.4-lesson-2",
+            "4.4-lesson-6"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "遇到资料不足时保留暂停与修正空间",
+              "en": "Preserve pause and correction options when sources are missing"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "b-c4-s11",
+      "compiledSectionId": "4.11",
+      "checkpoints": [
+        {
+          "id": "micro-4-11",
+          "sourceSectionId": "b-c4-s11",
+          "compiledSectionId": "4.11",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s11",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4.4-unit-1",
+            "4.4.5-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.4-lesson-4",
+            "4.4.4-unit-1",
+            "3.1-lesson-4",
+            "3.3-lesson-1",
+            "3.2.1-unit-1",
+            "4.4.5-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "在使用上升但复核成本激增时重评流程",
+              "en": "Reassess when adoption rises but review costs surge"
+            },
+            {
+              "zh": "在接手和回退演练已通过后识别新版本不能沿用旧验证的变更缺口",
+              "en": "Identify the need to validate a changed version after ownership and rollback drills have already passed"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    }
+  ],
+  "legacy": [
+    {
+      "sectionId": "1.1",
+      "checkpoints": [
+        {
+          "id": "micro-1-1",
+          "sourceSectionId": "b-c1-s1",
+          "compiledSectionId": "1.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "识别数据来源与结果用途",
+              "en": "Identify source data and result use"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-3",
+          "sourceSectionId": "b-c1-s3",
+          "compiledSectionId": "1.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-3",
+            "1.1-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分改变模型与使用模型",
+              "en": "Distinguish changing from using the model"
+            },
+            {
+              "zh": "不能只看输出变没变",
+              "en": "Do not judge from output change alone"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-4",
+          "sourceSectionId": "b-c1-s4",
+          "compiledSectionId": "1.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-20"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-7",
+            "1.1-lesson-20"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分特征与目标",
+              "en": "Distinguish features from targets"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-5",
+          "sourceSectionId": "b-c1-s5",
+          "compiledSectionId": "1.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-10"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-10"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "依据正文/图像/录音选择加工",
+              "en": "Choose preparation by source form"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-2",
+          "sourceSectionId": "b-c1-s2",
+          "compiledSectionId": "1.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-18",
+            "1.1-lesson-19"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-18",
+            "1.1-lesson-19"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分类别、抽取要素和跨语言表达",
+              "en": "Distinguish categories, extracted elements and translation"
+            },
+            {
+              "zh": "看输入模态和定位目标",
+              "en": "Inspect modality and localization goals"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-6",
+          "sourceSectionId": "b-c1-s6",
+          "compiledSectionId": "1.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.1-lesson-14"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4",
+            "1.1-lesson-14"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分同参运行、权重更新和文档维护",
+              "en": "Distinguish fixed-parameter use, weight updates and document maintenance"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "1.2",
+      "checkpoints": [
+        {
+          "id": "micro-1-7",
+          "sourceSectionId": "b-c1-s7",
+          "compiledSectionId": "1.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-12",
+            "1.2-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从基线算变化但不直接断言原因",
+              "en": "Compute baseline change without inferring cause"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-8",
+          "sourceSectionId": "b-c1-s8",
+          "compiledSectionId": "1.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2.2-unit-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-4",
+            "1.2-lesson-2",
+            "1.2-lesson-3",
+            "1.2.2-unit-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分可先准备与必须等证据",
+              "en": "Separate preparations from evidence-dependent work"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-9",
+          "sourceSectionId": "b-c1-s9",
+          "compiledSectionId": "1.9",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s9",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-12",
+            "1.2-lesson-4",
+            "1.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "检查完整输入与结果关系",
+              "en": "Inspect complete inputs and outcome relationships"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "1.3",
+      "checkpoints": [
+        {
+          "id": "micro-1-10",
+          "sourceSectionId": "b-c1-s10",
+          "compiledSectionId": "1.10",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s10",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "算超额而非只看输入",
+              "en": "Calculate overflow, not input alone"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-11",
+          "sourceSectionId": "b-c1-s11",
+          "compiledSectionId": "1.11",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s11",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3.1-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-1",
+            "1.3.1-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从具体案例识别正常、边界和失败",
+              "en": "Recognize ordinary, boundary and failure behavior"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-1-12",
+          "sourceSectionId": "b-c1-s12",
+          "compiledSectionId": "1.12",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c1-s12",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "1.3.3-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "1.1-lesson-1",
+            "1.1-lesson-2",
+            "1.1-lesson-3",
+            "1.1-lesson-6",
+            "1.1-lesson-8",
+            "1.3-lesson-4",
+            "1.3-lesson-3",
+            "1.3.3-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分维护、适配与验收",
+              "en": "Distinguish maintenance, adaptation and validation"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "2.1",
+      "checkpoints": [
+        {
+          "id": "micro-2-1",
+          "sourceSectionId": "b-c2-s1",
+          "compiledSectionId": "2.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.1.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "哪些记录说明当前问题、哪些表达改变、哪些只是候选工具。",
+              "en": "Separate current-problem evidence, intended changes and candidate tools."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-2-2",
+          "sourceSectionId": "b-c2-s2",
+          "compiledSectionId": "2.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.1.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1",
+            "2.1.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "可行性不同于价值排名，必须先剔除禁止项。",
+              "en": "Feasibility differs from ranking value; exclusions must be respected."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "2.2",
+      "checkpoints": [
+        {
+          "id": "micro-2-3",
+          "sourceSectionId": "b-c2-s3",
+          "compiledSectionId": "2.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2-lesson-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "不能遗漏复核时间，也不能拿局部环节当全部节省。",
+              "en": "Do not omit review time or treat one step as total savings."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-2-4",
+          "sourceSectionId": "b-c2-s4",
+          "compiledSectionId": "2.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "指标记录的是活动已做，还是业务结果已发生。",
+              "en": "Identify whether the measure records activity or a realized business result."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-2-5",
+          "sourceSectionId": "b-c2-s5",
+          "compiledSectionId": "2.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2-lesson-2",
+            "2.2.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "两组任务是否可比较、口径是否含复核、趋势是否受控。",
+              "en": "Check comparability, review-inclusive definitions and time trends."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-2-6",
+          "sourceSectionId": "b-c2-s6",
+          "compiledSectionId": "2.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.2.5-unit-1",
+            "2.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "有数字不表示可相除；材料是否支持同口径比较。",
+              "en": "Numbers alone do not justify division; evidence must support comparable scope."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "2.3",
+      "checkpoints": [
+        {
+          "id": "micro-2-7",
+          "sourceSectionId": "b-c2-s7",
+          "compiledSectionId": "2.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.3-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.3-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "相同模型是否说明相同可持续能力。",
+              "en": "Assess whether equal models imply equal sustained capabilities."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-2-8",
+          "sourceSectionId": "b-c2-s8",
+          "compiledSectionId": "2.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c2-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "2.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "2.1.1-unit-1",
+            "2.1.3-unit-1",
+            "2.2.5-unit-1",
+            "2.2.3-unit-1",
+            "2.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "其他条件通过是否能抵消超预算，能否事后改门槛。",
+              "en": "Judge whether other passing gates offset overbudget costs or justify changing gates afterward."
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "3.1",
+      "checkpoints": [
+        {
+          "id": "micro-3-1",
+          "sourceSectionId": "b-c3-s1",
+          "compiledSectionId": "3.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.1.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从缺少群体明细的5%总体差错判断缺少哪些证据",
+              "en": "Identify evidence missing behind a 5% aggregate error rate"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-3-2",
+          "sourceSectionId": "b-c3-s2",
+          "compiledSectionId": "3.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.1.1-unit-2"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1.1-unit-2"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "判断具体界面文本解决的是知情还是理由理解",
+              "en": "Judge whether interface text supports informed choice or understanding reasons"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "3.2",
+      "checkpoints": [
+        {
+          "id": "micro-3-3",
+          "sourceSectionId": "b-c3-s3",
+          "compiledSectionId": "3.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.2-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "审查交接表里谁能决定用途、部署和要求核对",
+              "en": "Inspect who owns use, deployment and requirement decisions in a handover"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-3-4",
+          "sourceSectionId": "b-c3-s4",
+          "compiledSectionId": "3.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.2-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "结合三种业务任务和资料分级修复全库开放的授权",
+              "en": "Repair repository-wide access using three business tasks and source classifications"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "3.3",
+      "checkpoints": [
+        {
+          "id": "micro-3-5",
+          "sourceSectionId": "b-c3-s5",
+          "compiledSectionId": "3.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1-lesson-4",
+            "3.3-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "计算失败率并将实际超限连接到人工接手和受控证据",
+              "en": "Calculate failure rate and connect the breach to human takeover and controlled evidence"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-3-6",
+          "sourceSectionId": "b-c3-s6",
+          "compiledSectionId": "3.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3-lesson-3",
+            "3.3-lesson-4"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.3-lesson-3",
+            "3.3-lesson-4"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "将不同发布记录送入不能互相替代的检查",
+              "en": "Route publication records to checks that cannot substitute for one another"
+            },
+            {
+              "zh": "在有核验记录的两份答复中保留证据支持的事实而非更流畅的夸大",
+              "en": "Retain verified facts rather than a more fluent overstatement when checking two responses"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-3-7",
+          "sourceSectionId": "b-c3-s7",
+          "compiledSectionId": "3.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c3-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "3.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.3-lesson-4",
+            "3.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "逐条比较结论与摘录并限制版本未知的使用范围",
+              "en": "Compare claims with an excerpt and limit conclusions when version currency is unknown"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "4.1",
+      "checkpoints": [
+        {
+          "id": "micro-4-1",
+          "sourceSectionId": "b-c4-s1",
+          "compiledSectionId": "4.1",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s1",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.1-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "在用途条件已验证但没有新增采购时判断有限试用是否仍可推进",
+              "en": "Judge a bounded trial when use-specific conditions are verified without a new purchase"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-2",
+          "sourceSectionId": "b-c4-s2",
+          "compiledSectionId": "4.2",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s2",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.1.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1-lesson-2",
+            "4.1.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "检查可重复、治理和值守证据是否存在",
+              "en": "Check whether repeatability, governance and operating evidence exist"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "4.2",
+      "checkpoints": [
+        {
+          "id": "micro-4-3",
+          "sourceSectionId": "b-c4-s3",
+          "compiledSectionId": "4.3",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s3",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.2.1-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.2-lesson-1",
+            "4.2.1-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "按主键去重并承认缺失金额不能自动补零",
+              "en": "Deduplicate by key and recognize that missing amounts are not automatically zero"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-4",
+          "sourceSectionId": "b-c4-s4",
+          "compiledSectionId": "4.4",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s4",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.2.3-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.2-lesson-3",
+            "4.2.3-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "不能用低并发演示推出目标容量、恢复和支持",
+              "en": "Do not infer target capacity, recovery and support from a low-load demo"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "4.3",
+      "checkpoints": [
+        {
+          "id": "micro-4-5",
+          "sourceSectionId": "b-c4-s5",
+          "compiledSectionId": "4.5",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s5",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3-lesson-3"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.3-lesson-3"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "识别宣传中未验证的承诺并保留反馈渠道",
+              "en": "Identify unsupported promises and preserve feedback channels"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-6",
+          "sourceSectionId": "b-c4-s6",
+          "compiledSectionId": "4.6",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s6",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3.2-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.2.1-unit-1",
+            "4.3.2-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "发现技术交付中没有人能暂停不适当用途",
+              "en": "Detect missing stop authority despite completed implementation"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-7",
+          "sourceSectionId": "b-c4-s7",
+          "compiledSectionId": "4.7",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s7",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.3.4-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1.3-unit-1",
+            "4.3.4-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "区分风险、技能和适配线索并安排验证性干预",
+              "en": "Separate risk, skill and fit clues and choose testable support"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    },
+    {
+      "sectionId": "4.4",
+      "checkpoints": [
+        {
+          "id": "micro-4-8",
+          "sourceSectionId": "b-c4-s8",
+          "compiledSectionId": "4.8",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s8",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.4-lesson-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "从实验失败证据选择回补条件而非强行推进",
+              "en": "Choose to repair conditions from experimental failure evidence"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-9",
+          "sourceSectionId": "b-c4-s9",
+          "compiledSectionId": "4.9",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s9",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-5"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "3.1-lesson-4",
+            "3.3-lesson-1",
+            "4.4-lesson-5"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "判断值守和回退证据是否足以支持转生产",
+              "en": "Judge whether operations and fallback evidence support production"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-10",
+          "sourceSectionId": "b-c4-s10",
+          "compiledSectionId": "4.10",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s10",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4-lesson-6"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.1.1-unit-1",
+            "4.4-lesson-2",
+            "4.4-lesson-6"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "遇到资料不足时保留暂停与修正空间",
+              "en": "Preserve pause and correction options when sources are missing"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        },
+        {
+          "id": "micro-4-11",
+          "sourceSectionId": "b-c4-s11",
+          "compiledSectionId": "4.11",
+          "exerciseRef": {
+            "artifact": "teaching-logic.v5.json",
+            "sectionId": "b-c4-s11",
+            "field": "guidedPractice"
+          },
+          "topicKnowledgeIds": [
+            "4.4.4-unit-1",
+            "4.4.5-unit-1"
+          ],
+          "requiredReviewedKnowledgeIds": [
+            "4.4-lesson-4",
+            "4.4.4-unit-1",
+            "3.1-lesson-4",
+            "3.3-lesson-1",
+            "3.2.1-unit-1",
+            "4.4.5-unit-1"
+          ],
+          "label": {
+            "zh": "学完这一组，轻松试一试",
+            "en": "After this topic, try a short practice"
+          },
+          "learningDecision": [
+            {
+              "zh": "在使用上升但复核成本激增时重评流程",
+              "en": "Reassess when adoption rises but review costs surge"
+            },
+            {
+              "zh": "在接手和回退演练已通过后识别新版本不能沿用旧验证的变更缺口",
+              "en": "Identify the need to validate a changed version after ownership and rollback drills have already passed"
+            }
+          ],
+          "countsAsMastery": false,
+          "countsAsCollection": false,
+          "availability": "after-listed-knowledge-reviewed; before-whole-section-reading-is-finished",
+          "interaction": "reuse-guided-exercise-once; retain-draft-and-show-linked-knowledge",
+          "consequence": "no-score-penalty-no-life-loss-no-collection-gate",
+          "requiredForFormalUnlock": false,
+          "feedback": "diagnoseRound; reveal reasoning on request; assisted-correction-never-independent-credit"
+        }
+      ]
+    }
+  ]
+}

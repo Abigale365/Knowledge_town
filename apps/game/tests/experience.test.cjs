@@ -29,10 +29,10 @@ test('fixed v1 course retains four distinct workshop controls without UI-authore
   assert.equal(h.run('studySection().activity.rounds[0].type'),expected[ci]);assert.ok(h.get('workshopSubmit'));assert.equal(h.list('[data-match-term]').length,0);
  }
 });
-test('adventure devices appear at their phase and replay leaves other chapters intact',async()=>{
+test('adventure devices remain visible but locked; replay leaves other chapters intact',async()=>{
  const h=await harness(new Map(),options);h.click('guideDismiss');h.click('seasideButton');if(h.get('adventureBegin'))h.click('adventureBegin');
- assert.equal(h.list('[data-future-device]').length,0);
+ assert.equal(h.list('[data-future-device]').length,6);const before=h.run('JSON.stringify(awayProgress("seaside"))');h.list('[data-future-device]')[0].click();assert.equal(h.run('JSON.stringify(awayProgress("seaside"))'),before);assert.ok(h.get('awayNote').textContent.includes('暂未开始'));
  for(const id of ['pearl','coral','amber']){h.list('[data-away-item]').find(e=>e.dataset.awayItem===id).click();h.list('[data-away-target]')[0].click();}
- assert.equal(h.list('[data-away-dial]').length,3);assert.ok(h.list('[data-future-device]').every(e=>+e.dataset.futureDevice===0));
+ assert.equal(h.list('[data-away-dial]').length,3);assert.ok(h.list('[data-future-device]').some(e=>+e.dataset.futureDevice===2));
  const study=h.run('JSON.stringify(studyState())');h.run('awayProgress("winter").moves=7');h.click('replayAwayChapter');h.click('confirmChapterReplay');assert.equal(h.run('awayProgress("seaside").stage'),0);assert.equal(h.run('awayProgress("winter").moves'),7);assert.equal(h.run('JSON.stringify(studyState())'),study);
 });

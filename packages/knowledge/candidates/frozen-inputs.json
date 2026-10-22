@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-22T13:21:19Z",
+  "purpose": "Observe frozen inputs without rewriting them",
+  "files": [
+    {
+      "path": "packages/knowledge/generated/materials.v3.json",
+      "sha256": "22c3ce9c6218d533ff1ca11483537f62c9aa598f5000fd07d65d472aacd57480"
+    },
+    {
+      "path": "packages/knowledge/generated/knowledge.v3.json",
+      "sha256": "d9dc9c178af696312aa64c0de5744310b047bf136632a0b52018ebdf82d14287"
+    },
+    {
+      "path": "packages/knowledge/generated/analysis.v3.json",
+      "sha256": "d89698e39778ea2204f2bd9eb960de97fbdc79878a601d9abe8c26101feada93"
+    }
+  ]
+}

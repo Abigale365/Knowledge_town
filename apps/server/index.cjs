@@ -34,14 +34,17 @@ async function generate(config,materials,title,job){const parts=chunks(materials
 function json(res,status,data){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));}
 async function readBody(req){let size=0;const parts=[];for await(const part of req){size+=part.length;if(size>8*1024*1024)throw Error('单次上传最多8MB，请拆分材料。');parts.push(part);}try{return JSON.parse(Buffer.concat(parts).toString('utf8'));}catch{throw Error('请求内容格式错误。');}}
 function createApp(config=configuration()){
+ const identity=require('./identity.cjs').gameIdentity();
  const jobs=new Map();return http.createServer(async(req,res)=>{try{
  const hostname=(req.headers.host||'').split(':')[0];if(!['127.0.0.1','localhost'].includes(hostname)){json(res,403,{error:'仅接受本机访问。'});return;}
  const url=new URL(req.url,'http://'+req.headers.host);
  if(url.pathname.startsWith('/api/')){
   if(req.headers.origin&&req.headers.origin!=='http://'+req.headers.host){json(res,403,{error:'不允许跨站请求。'});return;}
+  if(req.method==='GET'&&url.pathname==='/api/game-info'){json(res,200,identity);return;}
   if(req.method==='GET'&&url.pathname==='/api/config'){json(res,200,{configured:config.configured,model:config.model,service:config.endpoint?new URL(config.endpoint).origin:'',chunkChars:config.chunkChars,maxChunks:config.maxChunks});return;}
   if(req.method==='GET'&&url.pathname==='/api/aib-course'){
-   const result=await require('./pipeline.cjs').compilePreparedCourse({...require('../../packages/course-compiler/enrich-aib.cjs').enrichedAib(),learningPlan:require('../../packages/learning-design/generated/aib-learning-plan.v3.json')});json(res,200,result);return;
+   require('../../scripts/teaching-catalog-v5.cjs').catalog();
+   const result=await require('./pipeline.cjs').compilePreparedCourse({...require('../../packages/course-compiler/enrich-aib.cjs').enrichedAib(),learningPlan:require('../../packages/learning-design/generated/aib-learning-plan.v5.json')});json(res,200,result);return;
   }
   if(req.method==='POST'&&url.pathname==='/api/compile-course'){
    if(!req.headers['content-type']?.startsWith('application/json')){json(res,415,{error:'需要JSON格式的资料包、知识包和学习方案。'});return;}

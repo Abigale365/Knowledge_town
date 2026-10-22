@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "revision": 5,
+  "format": "b-c-feedback-manifest",
+  "baseManifestHash": "c333ad6fbb06e5931af0060be6ac724691f0a5b8bee99b1a9293ea0fe98db35c",
+  "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+  "planHash": "43f2b577b6f3b3ff6e96a2ab27299b2d9f38e62bd8fe84c4e14b76fe7152d175",
+  "feedbackHash": "eace6f0bfb2abc69f4a733ad2b9144c59b537f1f3f930c05213b7b8cb06bd867",
+  "replacementHash": "b132f03f4b14f0d0014fd903827992f3d7a346c283cebd43c82a8e50deaff16b",
+  "diagnosticRuntimeHash": "83b246d0f9cf47f4225acb75bd097cc2cbad530380db4d51097b4847aaab9680",
+  "activeRounds": 323,
+  "archivedRounds": 1,
+  "replacedAibUnits": 70,
+  "replacedLegacySections": 13
+}

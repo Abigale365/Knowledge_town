@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "a-continuous-scope-sources",
+  "revision": 1,
+  "materials": [
+    {
+      "id": "nearest-neighbors-official",
+      "name": "scikit-learn official documentation — Nearest Neighbors (short excerpt, not a full page archive)",
+      "text": "# scikit-learn official documentation — Nearest Neighbors\nURL: https://scikit-learn.org/stable/modules/neighbors.html\nChecked: 2026-10-22\nLocation: 1.6.2 Nearest Neighbors Classification; introductory paragraph\n\nShort verbatim anchor:\nsimply stores instances of the training data.\n\nAuthored scope note (not a quotation): This section describes instance-based nearest-neighbor classification. Read in context; it does not say that any stored text is model training.\n",
+      "contentHash": "271877e4055cb10500428787aa74d1b5a1ba9a96775e58d3fa20430492e1079d"
+    }
+  ]
+}

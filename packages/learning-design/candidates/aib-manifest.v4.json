@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "baseTeachingRevision": 3,
+    "basePlanHash": "3112b87fecfbd7d7915a3ef5cf0a88849ccfa56ec47d5562295c48f3ebd580a8",
+    "baseBlueprintHash": "6fe72a8dc0945a5ea09786506a239b21101f4aca41c34fbbc83cf1a81b6c815a"
+  },
+  "input": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+    "materialBundleId": "aib-materials-integration",
+    "materialRevision": 3
+  },
+  "output": {
+    "id": "aib-learning-plan",
+    "revision": 4,
+    "hash": "85c9663ab11142dbf21966691063b0ad85f14967f9688d830a65dd43eaa31d87"
+  },
+  "blueprintHash": "9b0956def401107e05c301722335deff4b84192fc6367f6ece5ec5093db4c72e",
+  "teachingMap": {
+    "file": "aib-teaching-map.v4.json",
+    "hash": "770a7ed94b6b7bf5e4fabcbeb94892a3262e461d52a4b732239adb385c51d4d6",
+    "format": "b-c-teaching-map",
+    "revision": 4
+  },
+  "legacyMap": {
+    "file": "legacy-teaching-map.v4.json",
+    "hash": "3f2429513ced8ae8a68374a34a2141c8287cb998c1a8d292cde20046a6ed1a5a",
+    "sections": 13
+  },
+  "uniqueUnits": 139,
+  "objectives": 58,
+  "changedUnits": 33,
+  "chapters": [
+    {
+      "id": "b-chapter-1",
+      "sections": 12,
+      "learningCards": 45,
+      "rounds": 46
+    },
+    {
+      "id": "b-chapter-2",
+      "sections": 8,
+      "learningCards": 30,
+      "rounds": 30
+    },
+    {
+      "id": "b-chapter-3",
+      "sections": 7,
+      "learningCards": 26,
+      "rounds": 26
+    },
+    {
+      "id": "b-chapter-4",
+      "sections": 11,
+      "learningCards": 43,
+      "rounds": 43
+    }
+  ],
+  "roundCounts": {
+    "sort": 33,
+    "choose": 58,
+    "order": 23,
+    "edit": 11,
+    "number": 10,
+    "allocate": 3,
+    "matrix": 7
+  },
+  "knowledgeWarnings": 0
+}

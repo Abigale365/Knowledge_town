@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "independent-content-review",
+  "status": "PASS",
+  "reviewDate": "2026-10-22",
+  "reviewModel": "gpt-6-astra",
+  "distinctionContentHash": "9d51a2e441652e68bc7a3f9224f560e4fc3f5c30dbee73e587c3e66ea032c3f9",
+  "caseIds": [
+    "algorithm-model",
+    "training-inference",
+    "rules-learning",
+    "recommendation-action",
+    "drift-harm",
+    "rag-finetuning",
+    "capacity-cash",
+    "roi-boundaries",
+    "leading-outcomes",
+    "explain-transparency",
+    "privacy-permissions",
+    "pilot-production"
+  ],
+  "scope": "Bilingual examples, counterexamples, scope, source-unit bindings, answer exposure and hypothetical ROI arithmetic; not learner effectiveness."
+}

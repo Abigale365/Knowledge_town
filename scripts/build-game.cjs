@@ -7,6 +7,12 @@ if(out!==path.join(root,'dist')&&!out.startsWith(path.join(root,'artifacts')+pat
 const check=args.includes('--check'),sharedNames=fs.readdirSync(shared).filter(n=>n.endsWith('.js')),writes=[];
 for(const [dir,names]of [[source,fs.readdirSync(source).filter(n=>/\.(html|js|css)$/.test(n))],[shared,sharedNames]])for(const name of names){let body=fs.readFileSync(path.join(dir,name),'utf8');for(const common of sharedNames)body=body.replaceAll("require('../../../packages/contracts/runtime/"+common+"')","require('./"+common+"')");writes.push([name,body]);}
 if(new Set(writes.map(([name])=>name)).size!==writes.length)throw Error('不同模块发布了同名文件');
+const teaching=require('./teaching-catalog.cjs').catalog();
+writes.push(['teaching-catalog.js','/* Reviewed B4 data; older courses remain separate. */\nconst TeachingCatalog='+JSON.stringify(teaching)+';\n']);
+const staged=require('./teaching-catalog-v5.cjs').catalog(),B5=require('../packages/learning-design/teaching-logic.v5.cjs');
+writes.push(['teaching-catalog-v5.js','const TeachingCatalogV5='+JSON.stringify(staged)+';\n']);
+const precise=require('./teaching-feedback-v5.cjs').feedbackCatalog();
+writes.push(['teaching-diagnostics.js','const TeachingDiagnostics=(()=>{const catalog='+JSON.stringify(precise)+';const hash=r=>catalog.hashes[JSON.stringify(r)];const W=TaskWorkshop,L=(zh,en)=>({zh,en});\n'+B5.initialAnswer.toString()+'\n'+B5.gradeStage.toString()+'\n'+B5.diagnoseRound.toString()+'\nreturn {initialAnswer,gradeStage,diagnoseRound,feedbackEntries:catalog.entries};})();\n']);
 if(check){for(const[name,body]of writes)if(!fs.existsSync(path.join(out,name))||fs.readFileSync(path.join(out,name),'utf8').replace(/\r\n/g,'\n')!==body.replace(/\r\n/g,'\n'))throw Error('发布文件与源码不一致：'+name);console.log('PASS: '+writes.length+' runtime files match module sources.');process.exit(0);}
 fs.mkdirSync(out,{recursive:true});for(const[name,body]of writes)fs.writeFileSync(path.join(out,name),body);
 if(out!==path.join(root,'dist')){for(const name of generated)fs.copyFileSync(path.join(root,'dist',name),path.join(out,name));fs.cpSync(path.join(root,'dist/assets'),path.join(out,'assets'),{recursive:true});}

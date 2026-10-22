@@ -70,3 +70,7 @@ node scripts/test-current.cjs
 `npm run build` 将模块源码发布到原 dist 路径，不清空素材；`node scripts/test-current.cjs` 验收模块、原入口、存档和经典游戏。C 使用 `node scripts/build-game.cjs --out artifacts/previews/game-C` 与 `node scripts/preview-game.cjs --dir artifacts/previews/game-C --port 8773` 独立预览。
 
 本轮验收与版本边界见 [集成说明](docs/INTEGRATION.md)。保留原四个 HTML 入口、旧存档及三个经典游戏；切换语言保留当前操作，海边与圣诞机关按阶段出现。
+
+### Windows 一键启动
+
+在项目根目录双击 `开始游戏.cmd`（或 `start-game.cmd`），自动启动本机服务并在默认浏览器打开游戏。启动器会自动寻找 PATH、常用安装目录及本机 Codex 已有的 Node.js 22+，不需要安装 npm 依赖。若运行时在自定义位置，可用 KNOWLEDGE_TOWN_NODE 指向现有 node.exe。固定使用 `http://127.0.0.1:8782/` 以保持固定存档地址；重复双击会复用已启动的游戏。存档还区分浏览器：从内置浏览器换到默认浏览器不会自动带入进度，可继续刷新原内置标签，或在成长手记中导出/导入备份。启动失败时窗口保留错误，日志在 `artifacts/runtime/launcher.log`。若端口被其他应用占用，会提示处理，不会擅自切端口或结束其他程序。

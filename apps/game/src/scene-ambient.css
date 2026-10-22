@@ -1,0 +1,47 @@
+/* Keep all decorative paint behind interactive objects and out of hit testing. */
+#ambientScene{position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none}
+.scene-ambient{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.scene-ambient *{pointer-events:none}
+.scene-ambient path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.scene-visitor{animation:visitor-flight var(--ambient-duration) ease-in-out var(--ambient-delay) infinite;opacity:.9}
+.visitor-hover{animation:visitor-hover 3.7s ease-in-out var(--ambient-delay) infinite}
+.scene-ambient .visitor-wing{fill:var(--visitor-color);stroke:#74634c;stroke-width:.65;fill-opacity:.92;transform-box:view-box;transform-origin:0 0;animation:visitor-flutter .85s ease-in-out var(--ambient-delay) infinite alternate}
+.scene-dragonfly .visitor-wing{fill-opacity:.64;animation-duration:.24s}
+.scene-ambient .visitor-body{stroke:#625d48;stroke-width:1.7}
+.scene-ambient .gull-wing{stroke:#fff4da;stroke-width:2.6;transform-origin:0 0;transform-box:view-box;animation:gull-glide 3.8s ease-in-out var(--ambient-delay) infinite alternate}
+.scene-ambient .gull-wing-right{animation-direction:alternate-reverse}
+.scene-gull{animation-name:gull-flight-x}
+/* Quarter-cycle vertical phase keeps gulls gliding through horizontal turnarounds.
+   Separate nested transforms retain the source anchor and the small body tilt. */
+.gull-drift{animation:gull-flight-y var(--ambient-duration) ease-in-out var(--gull-y-delay) infinite}
+.scene-gull .visitor-hover{animation-duration:6s}
+.scene-snow{fill:#eef5ff;animation:scene-snow var(--ambient-duration) linear var(--ambient-delay) infinite}
+.scene-lamplight{fill:#ffcf73;animation:scene-lamplight var(--ambient-duration) ease-in-out var(--ambient-delay) infinite}
+/* Away SVG uses xMidYMid slice, matching the existing centered object-fit:cover. */
+.away-landscape .scene-ambient{z-index:1}
+.away-landscape .away-weather{display:none} /* replaced, never stacked */
+body.away-open #ambientScene,body.away-open #villagers{visibility:hidden}
+/* Hidden is not paused: stop every nested wing/hover animation behind an away scene.
+   Preserve animation progress so returning cannot restart a route or move a target. */
+body.away-open #ambientScene *,body.away-open #villagers .npc,body.away-open #villagers .npc-sprite,
+body.away-open #plants *,body.away-open #persistentChanges *,
+body.dialog-open #plants *,body.dialog-open #persistentChanges *,
+body.dialog-open .scene-ambient *{animation-play-state:paused!important}
+#villagers .npc:focus-within,#villagers .npc:active{animation-play-state:paused!important}
+#villagers .npc{width:120px;height:128px}
+#villagers .npc:focus-within .npc-sprite,#villagers .npc:active .npc-sprite{animation-play-state:paused}
+body.holding-item #villagers .npc-sprite,body.dragging-prop #villagers .npc-sprite{animation-play-state:paused}
+#villagers .npc-label{max-width:210px;white-space:normal;width:max-content;overflow-wrap:anywhere}
+#villagers .npc:focus-within .npc-label small{display:block}
+#villagers .npc-notice{right:-17px;top:-16px;pointer-events:none}
+@keyframes visitor-flight{0%,100%{transform:translate(0,0)}28%{transform:translate(calc(var(--flight-x)*.28),var(--flight-y))}58%{transform:translate(var(--flight-x),calc(var(--flight-y)*.45))}82%{transform:translate(calc(var(--flight-x)*.65),8px)}}
+@keyframes visitor-hover{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-5px) rotate(7deg)}}
+@keyframes visitor-flutter{from{transform:scaleX(.25)}to{transform:scaleX(1)}}
+@keyframes gull-glide{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+@keyframes gull-flight-x{0%,100%{transform:translateX(0)}50%{transform:translateX(var(--flight-x))}}
+@keyframes gull-flight-y{0%,100%{transform:translateY(calc(var(--flight-y)*-1))}50%{transform:translateY(var(--flight-y))}}
+@keyframes scene-snow{0%{transform:translate(-12px,-140px);opacity:0}15%,80%{opacity:.65}100%{transform:translate(40px,220px);opacity:0}}
+@keyframes scene-lamplight{0%,100%{opacity:.12}50%{opacity:.38}}
+/* Legacy planted sprites/gears/sparks also animate independently of their parents.
+   Keep their identifying artwork visible; stop only nonessential repeated motion. */
+@media(prefers-reduced-motion:reduce){.scene-ambient{display:none}.scene-ambient *,#villagers .npc,#villagers .npc-sprite,#plants .plant,#persistentChanges .prop-art,#world .learning-spark{animation:none!important}}

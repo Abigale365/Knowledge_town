@@ -1,0 +1,9 @@
+{
+  "kind": "reviewed-scope-baseline",
+  "reviewModel": "gpt-6-astra",
+  "reviewDate": "2026-10-22",
+  "status": "PASS",
+  "scope": "Baseline of the round-four parametric training scope finding; a changed baseline requires new semantic review.",
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "materialContentHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a"
+}

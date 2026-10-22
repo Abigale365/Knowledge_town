@@ -39,3 +39,61 @@ body.chapter-course{display:flex;flex-direction:column;height:100dvh}
 }
 .town-language-pair{display:inline-flex;flex-direction:column;align-items:inherit;vertical-align:middle;max-width:100%;gap:3px;white-space:normal;overflow-wrap:anywhere}.town-language-secondary{font-size:.86em;line-height:1.45;color:#62715c;font-weight:400}.town-language-picker{position:fixed;z-index:2000;right:22px;top:70px;width:min(310px,calc(100vw - 44px));padding:15px;background:#fffbee;border:1px solid #b6c4a5;border-radius:15px;box-shadow:0 12px 35px #2c493e44;display:grid;gap:9px}.town-language-picker strong{font-size:13px;color:#4a624c}.town-language-picker button{padding:12px;text-align:left}.town-language-picker [aria-pressed=true]{background:#dce9cf;border-color:#7f9d70}dialog .town-language-picker{position:absolute;right:45px;top:58px;max-width:calc(100% - 60px)}.dialog-language-toggle{position:absolute;right:60px;top:14px;z-index:4;font-size:11px;padding:6px 10px;background:#eff3e4;border:1px solid #cad5b9;border-radius:8px}html[data-locale-mode=bi] header{min-height:68px;height:auto}html[data-locale-mode=bi] header nav{gap:3px}html[data-locale-mode=bi] header nav button{font-size:10px;padding:7px;max-width:135px}html[data-locale-mode=bi] .brand small{display:none}html[data-locale-mode=bi] .bank-pill{max-width:210px}html[data-locale-mode=bi] .quest-tag{max-width:360px}html[data-locale-mode=bi] .quest-tag .town-language-secondary{font-size:11px}html[data-locale-mode=bi] .districts{max-width:650px}html[data-locale-mode=bi] .districts button{font-size:11px}html[data-locale-mode=bi] .study-fruit>small{font-size:12px;max-width:230px}html[data-locale-mode=bi] .world-station .town-language-secondary{color:inherit}html[data-locale-mode=bi] .workshop-matrix th{font-size:11px}html[data-locale-mode=bi] .town-language-picker .town-language-secondary{display:none}html[data-locale-mode=bi] .workshop-case .town-language-secondary{margin-top:7px}html[data-locale-mode=bi] .knowledge-matching button .town-language-secondary{padding-top:5px;border-top:1px solid #cbd4bb}
 html[data-locale-mode=bi] .npc-label{min-width:115px;max-width:180px;white-space:normal;padding:7px 10px;font-size:12px;line-height:1.4}html[data-locale-mode=bi] .npc-label small{white-space:normal}html[data-locale-mode=bi] .npc-label .town-language-pair{display:inline-flex;min-width:0}html[data-locale-mode=bi] .npc-label .town-language-secondary{white-space:normal;overflow-wrap:normal}
+/* Visible, inspectable and actionable are independent presentation states. */
+.exploration-art{display:grid;place-items:center;width:38px;height:38px;pointer-events:none;background:none;border:0;box-shadow:none;color:#365b50}
+.study-fruit>.exploration-art{position:static;width:40px;height:40px;background:transparent;border:0;border-radius:50%;box-shadow:none;outline:none}
+.painted-device .prop-art{width:36px;height:36px;pointer-events:none;filter:saturate(.74) sepia(.08) drop-shadow(1px 2px 1px #2c2c1d35)}
+.painted-scenery{display:block;width:36px;height:36px;background:none;border:0;pointer-events:none}.painted-scenery .prop-art{width:36px;height:36px;filter:saturate(.74) sepia(.08) drop-shadow(1px 2px 1px #2c2c1d35)}
+/* The global button:hover fill must never paint a tile over the scene. */
+.study-fruit:hover,.study-fruit:focus-visible,.exploration-scenery:hover,.exploration-scenery:focus-visible{background:transparent;border-radius:50%;box-shadow:none;filter:none;outline:2px solid #e3d694;outline-offset:-18px}
+.exploration-scenery:hover,.exploration-scenery:focus-visible{outline-offset:-6px}
+[data-study-fruit]>small,[data-study-filed]>small{display:none!important}
+.study-fruit.knowledge-filed .painted-device{opacity:.78}
+.study-basket-world,.knowledge-chest-world{width:64px;min-width:0;min-height:64px;padding:4px;background:none;border:0;border-radius:0;box-shadow:none}
+.study-basket-world>strong{font-size:12px;line-height:1.2;padding:2px 5px;background:#fff8e5dc;border-radius:6px;pointer-events:none}
+.study-basket-world>small{display:none}
+.study-basket-world .role-filing{width:44px;height:44px;margin:auto}
+.scene-section-device,.scene-assessment-device{position:absolute;transform:translate(-50%,-50%);width:58px;height:58px;padding:5px;display:grid;justify-items:center;align-content:center;border:0;background:none;pointer-events:auto;z-index:31}
+.scene-section-device>small,.scene-assessment-device>small{display:none;font-size:11px;line-height:1.3;background:#fff8e5e8;border-radius:6px;padding:3px 5px;pointer-events:none}
+.scene-section-device:hover>small,.scene-section-device:focus-visible>small,.scene-assessment-device:hover>small,.scene-assessment-device:focus-visible>small{display:block}
+[data-device-state=preview] .painted-device{filter:saturate(.65)}
+.exploration-devices{display:contents;pointer-events:none}
+.exploration-scenery{width:48px;height:48px;display:grid;place-items:center;z-index:19;opacity:1;background:none;border:0}
+.scene-explore-hint{position:fixed;z-index:490;max-width:270px;padding:9px 12px;border:1px solid #849779;border-radius:10px;background:#fffbeef5;color:#365642;box-shadow:0 4px 18px #253d3829;font-size:12px;line-height:1.6;pointer-events:none}
+.exploration-condition{padding:12px 15px;border-left:3px solid #9b9861;background:#f0eddc;line-height:1.7}
+.knowledge-assembly{padding:15px 0;border-top:1px solid #d3ddc6;margin-top:18px}
+#exploreSceneShortcut{align-self:flex-start;font-size:12px;margin-top:8px;order:9}
+.away-scene .scenery-device{pointer-events:auto;z-index:1}
+.away-scene .scenery-device.dormant-device{opacity:.6}
+@media(max-width:650px){.scene-explore-hint{font-size:11px;max-width:240px}.knowledge-assembly .assembly-slots{grid-template-columns:1fr}.knowledge-assembly .assembly-slots button{min-height:90px}.chapter-course #adventureTray{max-height:42dvh}#exploreSceneShortcut{min-height:38px}}
+
+/* Future scenery never rises above an active puzzle, including keyboard focus. */
+.away-scene .scenery-device:hover,.away-scene .scenery-device:focus-visible{z-index:1}
+.away-scene .away-item:hover,.away-scene .away-target:hover,.away-scene .painted-dial:hover,.away-scene .painted-switch:hover,.away-scene .away-item:focus-visible,.away-scene .away-target:focus-visible,.away-scene .painted-dial:focus-visible,.away-scene .painted-switch:focus-visible{z-index:4}
+
+/* Measure translated tooltip content; never cover the hovered object with a fixed offset. */
+.scene-explore-hint{box-sizing:border-box;max-width:min(270px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto}
+.exploration-hint-open .scene-tip{visibility:hidden}
+
+.teaching-favorites{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px;border-top:1px solid #cbd5bc}.teaching-favorites>small{max-width:300px;font-size:11px}.teaching-favorite{display:flex;align-items:center;gap:4px}.teaching-favorite>button:first-child{display:flex;align-items:center;gap:5px;max-width:230px;text-align:left;padding:5px}.teaching-favorite [aria-pressed=true]{outline:2px solid #6d8c59}.teaching-favorite .exploration-art{flex-shrink:0}.teaching-favorite>button>span:last-child{font-size:12px}
+
+/* Let the tray scroll as a whole; never squash chapter tabs or collections. */
+.chapter-course #adventureTray>*{flex-shrink:0}
+.chapter-section-tabs{min-height:62px;align-items:stretch;overflow-x:auto;overflow-y:hidden}
+.chapter-section-tabs>button{min-height:52px;height:auto;flex:0 0 280px;box-sizing:border-box}
+.chapter-section-tabs>button>span{min-width:0;white-space:normal;line-height:1.45}
+.teaching-favorite>button[aria-pressed=true]{outline:2px solid #6d8c59;background:#e3ecd3}
+
+.tray-toggle{align-self:center;flex:0 0 24px;width:64px;height:24px;min-height:24px;padding:0;border:1px solid #a8b894;border-radius:12px 12px 0 0;background:#fffdf1;color:#46664b;font-size:14px;line-height:22px;z-index:6;cursor:pointer;touch-action:manipulation}
+.tray-toggle:hover,.tray-toggle:focus-visible{background:#e3ecd3;outline:2px solid #7b9964;outline-offset:1px}
+body.tray-collapsed #adventureTray,body.tray-collapsed .legacy-tray{display:none}
+body.tray-collapsed .world-hud{display:none}
+
+#villagers .npc-label{top:calc(100% + 8px);bottom:auto;font-size:12px;padding:4px 9px;line-height:1.4;pointer-events:none}
+#villagers .npc-label small{display:none;margin:3px 0 0;font-size:11px}
+#villagers .npc:hover .npc-label small,#villagers .npc:focus-visible .npc-label small{display:block}
+html[data-locale-mode=bi] #villagers .npc-label{min-width:0;max-width:160px;font-size:12px;padding:4px 9px}
+body.tray-collapsed #villagers .npc-label{opacity:0}
+body.tray-collapsed #villagers .npc:hover .npc-label,body.tray-collapsed #villagers .npc:focus-visible .npc-label{opacity:1}
+
+.lesson-back{display:block;margin:0 0 14px;padding:7px 12px;font-size:12px;background:#edf1df}

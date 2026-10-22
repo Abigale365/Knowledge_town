@@ -17,7 +17,7 @@ test('A ports, B authored blueprint and D compiler preserve source identities an
 test('local prepared-course API works without model credentials and rejects source tampering and cross-site requests',async t=>{
  const app=require('../server.cjs').createApp(require('../server.cjs').configuration({}));app.listen(0,'127.0.0.1');await once(app,'listening');t.after(()=>new Promise(r=>app.close(r)));
  const base='http://127.0.0.1:'+app.address().port;
- const revised=await fetch(base+'/api/aib-course');assert.equal(revised.status,200);const full=await revised.json();assert.equal(full.course.pipeline.knowledgeRevision,3);assert.equal(full.course.pipeline.planRevision,3);assert.equal(full.diagnostics.length,0);
+ const revised=await fetch(base+'/api/aib-course');assert.equal(revised.status,200);const full=await revised.json();assert.equal(full.course.pipeline.knowledgeRevision,3);assert.equal(full.course.pipeline.planRevision,5);assert.equal(full.diagnostics.length,0);
  const body=await input(),post=(data,origin)=>fetch(base+'/api/compile-course',{method:'POST',headers:{'Content-Type':'application/json',...(origin?{Origin:origin}:{})},body:JSON.stringify(data)});
  const ok=await post(body);assert.equal(ok.status,200);assert.equal((await ok.json()).course.chapters.length,4);
  const bad=structuredClone(body);bad.knowledgePack.units[0].evidence[0].quote='Invented unsupported quotation';const rejected=await post(bad);assert.equal(rejected.status,400);assert.ok((await rejected.json()).diagnostics.length);

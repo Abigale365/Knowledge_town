@@ -1,0 +1,2010 @@
+{
+  "before": [
+    {
+      "sectionId": "b-c1-s1",
+      "compiledSectionId": "1.1",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 4
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 4,
+      "dominantShare": 1,
+      "unitIds": [
+        "1.1-lesson-6",
+        "1.1-lesson-7",
+        "1.1-lesson-1",
+        "1.1-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s2",
+      "compiledSectionId": "1.2",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 4
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 4,
+      "dominantShare": 1,
+      "unitIds": [
+        "1.1-lesson-17",
+        "1.1-lesson-16",
+        "1.1-lesson-18",
+        "1.1-lesson-19"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s3",
+      "compiledSectionId": "1.3",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 3,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "1.1-lesson-8",
+        "1.1-lesson-3",
+        "1.1-lesson-4",
+        "1.1-lesson-5"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s4",
+      "compiledSectionId": "1.4",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 3,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "1.1-lesson-20",
+        "1.1-lesson-21",
+        "1.1-lesson-22",
+        "1.1-lesson-9"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s5",
+      "compiledSectionId": "1.5",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 4
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 4,
+      "dominantShare": 1,
+      "unitIds": [
+        "1.1-lesson-10",
+        "1.1-lesson-11",
+        "1.1-lesson-12",
+        "1.1-lesson-13"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s6",
+      "compiledSectionId": "1.6",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 4
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 4,
+      "dominantShare": 1,
+      "unitIds": [
+        "1.1-lesson-14",
+        "1.1-lesson-15",
+        "1.2-lesson-1",
+        "1.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s7",
+      "compiledSectionId": "1.7",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 3,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "1.2-lesson-3",
+        "1.2-lesson-4",
+        "1.2-lesson-5",
+        "1.2.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s8",
+      "compiledSectionId": "1.8",
+      "kind": "decision-lab",
+      "types": {
+        "sort": 1,
+        "choose": 2,
+        "order": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "choose",
+        "order"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.2.1-unit-2",
+        "1.2.2-unit-1",
+        "1.2.2-unit-2",
+        "1.2.2-unit-3"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s9",
+      "compiledSectionId": "1.9",
+      "kind": "decision-lab",
+      "types": {
+        "sort": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "sort",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.2.3-unit-1",
+        "1.2.3-unit-2",
+        "1.2.4-unit-1",
+        "1.3-lesson-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s10",
+      "compiledSectionId": "1.10",
+      "kind": "decision-lab",
+      "types": {
+        "number": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "number",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.3-lesson-2",
+        "1.3-lesson-3",
+        "1.3-lesson-4",
+        "1.3.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s11",
+      "compiledSectionId": "1.11",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 3,
+        "number": 1
+      },
+      "sequence": [
+        "choose",
+        "number",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "1.3.1-unit-2",
+        "1.3.2-unit-1",
+        "1.3.2-unit-2",
+        "1.3.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s12",
+      "compiledSectionId": "1.12",
+      "kind": "decision-lab",
+      "types": {
+        "choose": 1
+      },
+      "sequence": [
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 1,
+      "unitIds": [
+        "1.3.3-unit-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s1",
+      "compiledSectionId": "2.1",
+      "kind": "business-lab",
+      "types": {
+        "choose": 4
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 4,
+      "dominantShare": 1,
+      "unitIds": [
+        "2.1-lesson-1",
+        "2.1-lesson-2",
+        "2.1.1-unit-1",
+        "2.1-lesson-3"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s2",
+      "compiledSectionId": "2.2",
+      "kind": "business-lab",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "allocate": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "allocate"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.1-lesson-4",
+        "2.1-lesson-5",
+        "2.1.2-unit-1",
+        "2.1.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s3",
+      "compiledSectionId": "2.3",
+      "kind": "business-lab",
+      "types": {
+        "choose": 1,
+        "edit": 1,
+        "sort": 1,
+        "number": 1
+      },
+      "sequence": [
+        "choose",
+        "edit",
+        "sort",
+        "number"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "2.1.4-unit-1",
+        "2.1.5-unit-1",
+        "2.2-lesson-1",
+        "2.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s4",
+      "compiledSectionId": "2.4",
+      "kind": "business-lab",
+      "types": {
+        "sort": 2,
+        "number": 2
+      },
+      "sequence": [
+        "sort",
+        "number",
+        "number",
+        "sort"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.2.3-unit-2",
+        "2.2.5-unit-1",
+        "2.2-lesson-3",
+        "2.2-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s5",
+      "compiledSectionId": "2.5",
+      "kind": "business-lab",
+      "types": {
+        "choose": 3,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "sort",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "2.2-lesson-5",
+        "2.2.1-unit-1",
+        "2.2.1-unit-2",
+        "2.2.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s6",
+      "compiledSectionId": "2.6",
+      "kind": "business-lab",
+      "types": {
+        "number": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "number",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.2.3-unit-1",
+        "2.2.4-unit-1",
+        "2.3-lesson-1",
+        "2.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s7",
+      "compiledSectionId": "2.7",
+      "kind": "business-lab",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.3-lesson-3",
+        "2.3-lesson-4",
+        "2.3.1-unit-1",
+        "2.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s8",
+      "compiledSectionId": "2.8",
+      "kind": "business-lab",
+      "types": {
+        "choose": 2
+      },
+      "sequence": [
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 1,
+      "unitIds": [
+        "2.3.3-unit-1",
+        "2.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s1",
+      "compiledSectionId": "3.1",
+      "kind": "governance-lab",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "allocate": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "allocate"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.1-lesson-1",
+        "3.1.1-unit-1",
+        "3.1.1-unit-3",
+        "3.1-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s2",
+      "compiledSectionId": "3.2",
+      "kind": "governance-lab",
+      "types": {
+        "order": 1,
+        "matrix": 1,
+        "sort": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "order",
+        "matrix",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "3.1-lesson-3",
+        "3.1-lesson-4",
+        "3.1.1-unit-2",
+        "3.1.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s3",
+      "compiledSectionId": "3.3",
+      "kind": "governance-lab",
+      "types": {
+        "order": 1,
+        "choose": 2,
+        "matrix": 1
+      },
+      "sequence": [
+        "order",
+        "choose",
+        "matrix",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.1.3-unit-1",
+        "3.1.4-unit-1",
+        "3.2-lesson-1",
+        "3.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s4",
+      "compiledSectionId": "3.4",
+      "kind": "governance-lab",
+      "types": {
+        "matrix": 2,
+        "choose": 1,
+        "order": 1
+      },
+      "sequence": [
+        "matrix",
+        "choose",
+        "matrix",
+        "order"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.2-lesson-3",
+        "3.2-lesson-4",
+        "3.2.1-unit-1",
+        "3.2.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s5",
+      "compiledSectionId": "3.5",
+      "kind": "governance-lab",
+      "types": {
+        "order": 1,
+        "choose": 2,
+        "sort": 1
+      },
+      "sequence": [
+        "order",
+        "choose",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.2.3-unit-1",
+        "3.2.4-unit-1",
+        "3.3-lesson-1",
+        "3.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s6",
+      "compiledSectionId": "3.6",
+      "kind": "governance-lab",
+      "types": {
+        "choose": 3,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "order",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "3.3-lesson-3",
+        "3.3-lesson-4",
+        "3.3.1-unit-1",
+        "3.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s7",
+      "compiledSectionId": "3.7",
+      "kind": "governance-lab",
+      "types": {
+        "choose": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.3.3-unit-1",
+        "3.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s1",
+      "compiledSectionId": "4.1",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "order"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.1-lesson-1",
+        "4.1-lesson-2",
+        "4.1-lesson-3",
+        "4.1-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s2",
+      "compiledSectionId": "4.2",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "order"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.1.1-unit-1",
+        "4.1.2-unit-1",
+        "4.1.3-unit-1",
+        "4.1.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s3",
+      "compiledSectionId": "4.3",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 3,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.2-lesson-1",
+        "4.2-lesson-2",
+        "4.2-lesson-3",
+        "4.2.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s4",
+      "compiledSectionId": "4.4",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 3,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.2.2-unit-1",
+        "4.2.3-unit-1",
+        "4.3-lesson-1",
+        "4.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s5",
+      "compiledSectionId": "4.5",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "matrix": 1
+      },
+      "sequence": [
+        "choose",
+        "sort",
+        "choose",
+        "matrix"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.3-lesson-3",
+        "4.3-lesson-4",
+        "4.3-lesson-5",
+        "3.1-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s6",
+      "compiledSectionId": "4.6",
+      "kind": "transformation-lab",
+      "types": {
+        "sort": 2,
+        "matrix": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "sort",
+        "sort",
+        "matrix",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.3-lesson-6",
+        "4.3.1-unit-1",
+        "3.2.1-unit-1",
+        "4.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s7",
+      "compiledSectionId": "4.7",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 3,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.3.3-unit-1",
+        "4.3.4-unit-1",
+        "3.3-lesson-4",
+        "3.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s8",
+      "compiledSectionId": "4.8",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 3,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "order",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.3.5-unit-1",
+        "4.3.6-unit-1",
+        "4.4-lesson-1",
+        "4.4-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s9",
+      "compiledSectionId": "4.9",
+      "kind": "transformation-lab",
+      "types": {
+        "sort": 1,
+        "choose": 3
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.4-lesson-3",
+        "4.4-lesson-4",
+        "3.3-lesson-1",
+        "4.4-lesson-5"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s10",
+      "compiledSectionId": "4.10",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.4-lesson-6",
+        "4.4.1-unit-1",
+        "4.4.2-unit-1",
+        "4.4.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s11",
+      "compiledSectionId": "4.11",
+      "kind": "transformation-lab",
+      "types": {
+        "choose": 3
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 3,
+      "dominantShare": 1,
+      "unitIds": [
+        "4.4.4-unit-1",
+        "4.4.5-unit-1",
+        "4.4.6-unit-1"
+      ]
+    }
+  ],
+  "after": [
+    {
+      "sectionId": "b-c1-s1",
+      "compiledSectionId": "1.1",
+      "kind": "model-workbench",
+      "types": {
+        "sort": 1,
+        "choose": 1,
+        "order": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "order",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "1.1-lesson-6",
+        "1.1-lesson-7",
+        "1.1-lesson-1",
+        "1.1-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s2",
+      "compiledSectionId": "1.2",
+      "kind": "modality-lab",
+      "types": {
+        "order": 1,
+        "choose": 2,
+        "sort": 1
+      },
+      "sequence": [
+        "order",
+        "choose",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.1-lesson-17",
+        "1.1-lesson-16",
+        "1.1-lesson-18",
+        "1.1-lesson-19"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s3",
+      "compiledSectionId": "1.3",
+      "kind": "inference-desk",
+      "types": {
+        "choose": 1,
+        "order": 1,
+        "sort": 1,
+        "number": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "sort",
+        "number"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "1.1-lesson-8",
+        "1.1-lesson-3",
+        "1.1-lesson-4",
+        "1.1-lesson-5"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s4",
+      "compiledSectionId": "1.4",
+      "kind": "learning-router",
+      "types": {
+        "sort": 2,
+        "choose": 1,
+        "order": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "order",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.1-lesson-20",
+        "1.1-lesson-21",
+        "1.1-lesson-22",
+        "1.1-lesson-9"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s5",
+      "compiledSectionId": "1.5",
+      "kind": "validation-station",
+      "types": {
+        "sort": 2,
+        "edit": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "sort",
+        "edit",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.1-lesson-10",
+        "1.1-lesson-11",
+        "1.1-lesson-12",
+        "1.1-lesson-13"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s6",
+      "compiledSectionId": "1.6",
+      "kind": "agent-workbench",
+      "types": {
+        "edit": 1,
+        "sort": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "edit",
+        "sort",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.1-lesson-14",
+        "1.1-lesson-15",
+        "1.2-lesson-1",
+        "1.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s7",
+      "compiledSectionId": "1.7",
+      "kind": "operations-router",
+      "types": {
+        "sort": 1,
+        "number": 1,
+        "choose": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "sort",
+        "number",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "1.2-lesson-3",
+        "1.2-lesson-4",
+        "1.2-lesson-5",
+        "1.2.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s8",
+      "compiledSectionId": "1.8",
+      "kind": "handoff-track",
+      "types": {
+        "sort": 1,
+        "choose": 2,
+        "order": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "choose",
+        "order"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.2.1-unit-2",
+        "1.2.2-unit-1",
+        "1.2.2-unit-2",
+        "1.2.2-unit-3"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s9",
+      "compiledSectionId": "1.9",
+      "kind": "monitoring-console",
+      "types": {
+        "sort": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "sort",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.2.3-unit-1",
+        "1.2.3-unit-2",
+        "1.2.4-unit-1",
+        "1.3-lesson-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s10",
+      "compiledSectionId": "1.10",
+      "kind": "context-calculator",
+      "types": {
+        "number": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "number",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.3-lesson-2",
+        "1.3-lesson-3",
+        "1.3-lesson-4",
+        "1.3.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s11",
+      "compiledSectionId": "1.11",
+      "kind": "evidence-checkpoint",
+      "types": {
+        "allocate": 1,
+        "number": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "allocate",
+        "number",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.3.1-unit-2",
+        "1.3.2-unit-1",
+        "1.3.2-unit-2",
+        "1.3.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c1-s12",
+      "compiledSectionId": "1.12",
+      "kind": "adaptation-router",
+      "types": {
+        "sort": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "1.3.3-unit-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s1",
+      "compiledSectionId": "2.1",
+      "kind": "use-case-board",
+      "types": {
+        "order": 1,
+        "number": 1,
+        "sort": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "order",
+        "number",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "2.1-lesson-1",
+        "2.1-lesson-2",
+        "2.1.1-unit-1",
+        "2.1-lesson-3"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s2",
+      "compiledSectionId": "2.2",
+      "kind": "feasibility-workbench",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "allocate": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "allocate"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.1-lesson-4",
+        "2.1-lesson-5",
+        "2.1.2-unit-1",
+        "2.1.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s3",
+      "compiledSectionId": "2.3",
+      "kind": "continuity-desk",
+      "types": {
+        "choose": 1,
+        "edit": 1,
+        "sort": 1,
+        "number": 1
+      },
+      "sequence": [
+        "choose",
+        "edit",
+        "sort",
+        "number"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "2.1.4-unit-1",
+        "2.1.5-unit-1",
+        "2.2-lesson-1",
+        "2.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s4",
+      "compiledSectionId": "2.4",
+      "kind": "value-ledger",
+      "types": {
+        "sort": 2,
+        "number": 2
+      },
+      "sequence": [
+        "sort",
+        "number",
+        "number",
+        "sort"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.2.3-unit-2",
+        "2.2.5-unit-1",
+        "2.2-lesson-3",
+        "2.2-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s5",
+      "compiledSectionId": "2.5",
+      "kind": "cost-evidence-board",
+      "types": {
+        "number": 1,
+        "sort": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "number",
+        "sort",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.2-lesson-5",
+        "2.2.1-unit-1",
+        "2.2.1-unit-2",
+        "2.2.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s6",
+      "compiledSectionId": "2.6",
+      "kind": "roi-track",
+      "types": {
+        "number": 1,
+        "order": 1,
+        "choose": 2
+      },
+      "sequence": [
+        "number",
+        "order",
+        "choose",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.2.3-unit-1",
+        "2.2.4-unit-1",
+        "2.3-lesson-1",
+        "2.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s7",
+      "compiledSectionId": "2.7",
+      "kind": "strategy-lab",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.3-lesson-3",
+        "2.3-lesson-4",
+        "2.3.1-unit-1",
+        "2.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c2-s8",
+      "compiledSectionId": "2.8",
+      "kind": "commitment-desk",
+      "types": {
+        "order": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "order",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "2.3.3-unit-1",
+        "2.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s1",
+      "compiledSectionId": "3.1",
+      "kind": "impact-board",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "allocate": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "allocate"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.1-lesson-1",
+        "3.1.1-unit-1",
+        "3.1.1-unit-3",
+        "3.1-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s2",
+      "compiledSectionId": "3.2",
+      "kind": "oversight-gates",
+      "types": {
+        "order": 1,
+        "matrix": 1,
+        "sort": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "order",
+        "matrix",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.25,
+      "unitIds": [
+        "3.1-lesson-3",
+        "3.1-lesson-4",
+        "3.1.1-unit-2",
+        "3.1.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s3",
+      "compiledSectionId": "3.3",
+      "kind": "risk-review-desk",
+      "types": {
+        "order": 1,
+        "choose": 2,
+        "matrix": 1
+      },
+      "sequence": [
+        "order",
+        "choose",
+        "matrix",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.1.3-unit-1",
+        "3.1.4-unit-1",
+        "3.2-lesson-1",
+        "3.2-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s4",
+      "compiledSectionId": "3.4",
+      "kind": "permissions-cabinet",
+      "types": {
+        "matrix": 2,
+        "choose": 1,
+        "order": 1
+      },
+      "sequence": [
+        "matrix",
+        "choose",
+        "matrix",
+        "order"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.2-lesson-3",
+        "3.2-lesson-4",
+        "3.2.1-unit-1",
+        "3.2.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s5",
+      "compiledSectionId": "3.5",
+      "kind": "incident-track",
+      "types": {
+        "order": 1,
+        "sort": 2,
+        "edit": 1
+      },
+      "sequence": [
+        "order",
+        "sort",
+        "edit",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.2.3-unit-1",
+        "3.2.4-unit-1",
+        "3.3-lesson-1",
+        "3.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s6",
+      "compiledSectionId": "3.6",
+      "kind": "reliability-lab",
+      "types": {
+        "sort": 1,
+        "choose": 2,
+        "order": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "order",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.3-lesson-3",
+        "3.3-lesson-4",
+        "3.3.1-unit-1",
+        "3.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c3-s7",
+      "compiledSectionId": "3.7",
+      "kind": "source-repair-desk",
+      "types": {
+        "choose": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "3.3.3-unit-1",
+        "3.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s1",
+      "compiledSectionId": "4.1",
+      "kind": "readiness-board",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "order"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.1-lesson-1",
+        "4.1-lesson-2",
+        "4.1-lesson-3",
+        "4.1-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s2",
+      "compiledSectionId": "4.2",
+      "kind": "capability-workbench",
+      "types": {
+        "sort": 2,
+        "choose": 1,
+        "order": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "sort",
+        "order"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.1.1-unit-1",
+        "4.1.2-unit-1",
+        "4.1.3-unit-1",
+        "4.1.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s3",
+      "compiledSectionId": "4.3",
+      "kind": "data-contract-desk",
+      "types": {
+        "choose": 2,
+        "matrix": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "matrix",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.2-lesson-1",
+        "4.2-lesson-2",
+        "4.2-lesson-3",
+        "4.2.1-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s4",
+      "compiledSectionId": "4.4",
+      "kind": "ownership-board",
+      "types": {
+        "choose": 3,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "sort",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.2.2-unit-1",
+        "4.2.3-unit-1",
+        "4.3-lesson-1",
+        "4.3-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s5",
+      "compiledSectionId": "4.5",
+      "kind": "communication-permissions",
+      "types": {
+        "choose": 2,
+        "sort": 1,
+        "matrix": 1
+      },
+      "sequence": [
+        "choose",
+        "sort",
+        "choose",
+        "matrix"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.3-lesson-3",
+        "4.3-lesson-4",
+        "4.3-lesson-5",
+        "3.1-lesson-4"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s6",
+      "compiledSectionId": "4.6",
+      "kind": "responsibility-router",
+      "types": {
+        "sort": 2,
+        "matrix": 1,
+        "choose": 1
+      },
+      "sequence": [
+        "sort",
+        "sort",
+        "matrix",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.3-lesson-6",
+        "4.3.1-unit-1",
+        "3.2.1-unit-1",
+        "4.3.2-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s7",
+      "compiledSectionId": "4.7",
+      "kind": "support-evidence-desk",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "edit"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.3.3-unit-1",
+        "4.3.4-unit-1",
+        "3.3-lesson-4",
+        "3.3.4-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s8",
+      "compiledSectionId": "4.8",
+      "kind": "transformation-track",
+      "types": {
+        "choose": 3,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "choose",
+        "order",
+        "choose"
+      ],
+      "longestRepeat": 2,
+      "dominantShare": 0.75,
+      "unitIds": [
+        "4.3.5-unit-1",
+        "4.3.6-unit-1",
+        "4.4-lesson-1",
+        "4.4-lesson-2"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s9",
+      "compiledSectionId": "4.9",
+      "kind": "production-gates",
+      "types": {
+        "sort": 2,
+        "choose": 1,
+        "edit": 1
+      },
+      "sequence": [
+        "sort",
+        "choose",
+        "edit",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.4-lesson-3",
+        "4.4-lesson-4",
+        "3.3-lesson-1",
+        "4.4-lesson-5"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s10",
+      "compiledSectionId": "4.10",
+      "kind": "rollout-workbench",
+      "types": {
+        "choose": 2,
+        "order": 1,
+        "sort": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose",
+        "sort"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.5,
+      "unitIds": [
+        "4.4-lesson-6",
+        "4.4.1-unit-1",
+        "4.4.2-unit-1",
+        "4.4.3-unit-1"
+      ]
+    },
+    {
+      "sectionId": "b-c4-s11",
+      "compiledSectionId": "4.11",
+      "kind": "sustainable-operations",
+      "types": {
+        "choose": 2,
+        "order": 1
+      },
+      "sequence": [
+        "choose",
+        "order",
+        "choose"
+      ],
+      "longestRepeat": 1,
+      "dominantShare": 0.6666666666666666,
+      "unitIds": [
+        "4.4.4-unit-1",
+        "4.4.5-unit-1",
+        "4.4.6-unit-1"
+      ]
+    }
+  ],
+  "summary": {
+    "beforeSingleControl": 8,
+    "afterSingleControl": 0,
+    "beforeTripleRepeat": 11,
+    "afterTripleRepeat": 0
+  },
+  "changes": [
+    {
+      "unitId": "1.1-lesson-6",
+      "why": {
+        "zh": "收集系统描述后按是否有数据学习证据分类，避免把自动化都称为机器学习。",
+        "en": "Classify collected system descriptions by evidence of data learning instead of treating all automation as ML."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-1",
+      "why": {
+        "zh": "按给定执行依赖组装算法，而不是把算法与训练产物配对。",
+        "en": "Assemble a procedure by its explicit execution dependencies rather than match definitions."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-2",
+      "why": {
+        "zh": "修复映射接线，检验能否分清输入与输出的实际职责。",
+        "en": "Repair a mapping to distinguish the operational roles of inputs and outputs."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-17",
+      "why": {
+        "zh": "按给定图的边组装计算路径，体现节点连接而不把网络当固定规则词表。",
+        "en": "Assemble a computation path from the stated graph edges to reveal connected computation."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-16",
+      "why": {
+        "zh": "从设计材料筛选支持深度学习判断的证据，而非把AI/ML/DL排成时间流程。",
+        "en": "Select architectural evidence for deep learning instead of treating AI, ML and DL as temporal stages."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-18",
+      "why": {
+        "zh": "依据要处理的语言操作分类，任务目标决定所需操作而非按部门猜方法。",
+        "en": "Route language operations by their task objective rather than department labels."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-3",
+      "why": {
+        "zh": "重建给定训练验收依赖，明确训练高分不等于未见数据表现。",
+        "en": "Reconstruct the stated training-acceptance dependencies to separate fit from unseen-data performance."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-5",
+      "why": {
+        "zh": "用给定预测与实际结果计算差额，并区分误差量与不同业务后果。",
+        "en": "Compute differences from stated forecasts and outcomes while distinguishing error magnitude from consequences."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-20",
+      "why": {
+        "zh": "检查是否有目标标签而非只识别术语。",
+        "en": "Inspect the presence of target labels instead of recognizing a term."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-22",
+      "why": {
+        "zh": "组装给定交互回路以理解奖励反馈和长期目标，不用定义配对代替行动依赖。",
+        "en": "Assemble the stated interaction loop to understand reward feedback and long-term objectives."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-10",
+      "why": {
+        "zh": "收集不同原料并判断哪些需要先提取组织，保留自由浏览与任务加工的区别。",
+        "en": "Collect different sources and decide which need extraction and organization, separating browsing from task processing."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-11",
+      "why": {
+        "zh": "把具体缺陷映射到检查方向，修复错标的诊断记录。",
+        "en": "Map concrete defects to checks and repair mislabeled diagnostic records."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-13",
+      "why": {
+        "zh": "操作样本用途隔离以识别数据泄漏，而非背诵训练集名称。",
+        "en": "Separate examples by use to recognize leakage rather than memorize dataset names."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-14",
+      "why": {
+        "zh": "用工作事件修复术语误标，减少后续方案讨论中的概念混淆。",
+        "en": "Repair mislabeled work events to reduce conceptual confusion in later planning."
+      }
+    },
+    {
+      "unitId": "1.1-lesson-15",
+      "why": {
+        "zh": "按问题找正确范围的参考入口，并保留查正式标准的边界。",
+        "en": "Route questions to references of the right scope while retaining the need for formal standards."
+      }
+    },
+    {
+      "unitId": "1.2-lesson-4",
+      "why": {
+        "zh": "量化给定监测变化，同时拒绝用差值直接证明根因或损害。",
+        "en": "Quantify stated monitoring change without using the difference to claim a cause or harm."
+      }
+    },
+    {
+      "unitId": "1.2-lesson-3",
+      "why": {
+        "zh": "先识别哪些交接是依赖关系，避免通过增加代理数量掩盖流程缺陷。",
+        "en": "Identify handoff dependencies rather than mask workflow defects by adding agents."
+      }
+    },
+    {
+      "unitId": "1.3.1-unit-2",
+      "why": {
+        "zh": "在给定预算中覆盖典型、边界和失败案例，不能用漂亮输出代替测试证据。",
+        "en": "Cover typical, boundary and failure cases under a stated budget rather than substitute attractive outputs for test evidence."
+      }
+    },
+    {
+      "unitId": "1.3.3-unit-2",
+      "why": {
+        "zh": "在情境判断之外，将不同需求分流到资料维护与行为适配，证明知道两者可以组合但不能冒充。",
+        "en": "Beyond scenario judgment, route requirements to source maintenance or behavioral adaptation to show they may combine without impersonating one another."
+      }
+    },
+    {
+      "unitId": "2.1-lesson-1",
+      "why": {
+        "zh": "把用例决策改为按依赖装配任务书，检验技术选择服务目标。",
+        "en": "Assemble a brief by dependency to test whether technology serves the objective."
+      }
+    },
+    {
+      "unitId": "2.1-lesson-2",
+      "why": {
+        "zh": "用可算台账揭示只比报价的漏项，不把低价当唯一决策。",
+        "en": "Use a calculable ledger to reveal omissions without treating price as the sole decision."
+      }
+    },
+    {
+      "unitId": "2.1.1-unit-1",
+      "why": {
+        "zh": "从收集资料到分类任务书证据，区分问题、结果和手段。",
+        "en": "Classify collected brief evidence to separate problems, outcomes and means."
+      }
+    },
+    {
+      "unitId": "2.2-lesson-5",
+      "why": {
+        "zh": "从选合格选项转为核算实际用量及复核预算，检验单位与成本边界。",
+        "en": "Replace selection with actual usage and review budgeting, testing units and cost boundaries."
+      }
+    },
+    {
+      "unitId": "2.3.3-unit-1",
+      "why": {
+        "zh": "通过组装反馈—领域判断—流程改进—观察的依赖链展示互补能力。",
+        "en": "Assemble feedback, domain judgment, workflow improvement and observation into a dependency chain."
+      }
+    },
+    {
+      "unitId": "2.3.4-unit-1",
+      "why": {
+        "zh": "把阶段决策落实为可核验闸门记录，避免重复点击下一步。",
+        "en": "Make staged decisions observable in a gate register instead of repeated next-action selection."
+      }
+    },
+    {
+      "unitId": "3.2.4-unit-1",
+      "why": {
+        "zh": "用证据归类区分真正风险变化与无关的技术不变。",
+        "en": "Classify evidence to separate actual risk changes from unchanged technical facts."
+      }
+    },
+    {
+      "unitId": "3.3-lesson-1",
+      "why": {
+        "zh": "计算运行质量并修复告警与受控日志单，区别于相邻调查恢复排序及风险分类。",
+        "en": "Calculate operating quality and repair an alert and controlled-log record, distinct from neighboring investigation/recovery ordering and risk classification."
+      }
+    },
+    {
+      "unitId": "3.3-lesson-3",
+      "why": {
+        "zh": "将授权、内容和处置独立归档，检验控制不能相互替代。",
+        "en": "File authorization, content and response separately to test non-substitutable controls."
+      }
+    },
+    {
+      "unitId": "4.1.1-unit-1",
+      "why": {
+        "zh": "收集后分类具体证据，避免只点击自评分或泛化准备度结论。",
+        "en": "Classify collected concrete evidence rather than click self-scores or generic readiness claims."
+      }
+    },
+    {
+      "unitId": "4.2-lesson-2",
+      "why": {
+        "zh": "通过矩阵操作落实共享规则，区别阅读权限与维护责任。",
+        "en": "Operate a permissions matrix to distinguish reading access from maintenance ownership."
+      }
+    },
+    {
+      "unitId": "4.3.4-unit-1",
+      "why": {
+        "zh": "从选一句正确口号改为组装倾听—安全试验—反馈的可执行循环。",
+        "en": "Replace slogan selection with an executable listen, safe-practice and feedback loop."
+      }
+    },
+    {
+      "unitId": "4.4-lesson-5",
+      "why": {
+        "zh": "将转生产判定落实为证据闸门，避免与旁边持续价值题重复选下一步。",
+        "en": "Make production readiness an evidence gate rather than repeat nearby next-step choices."
+      }
+    },
+    {
+      "unitId": "4.4.5-unit-1",
+      "why": {
+        "zh": "用交接包依赖装配替代单选补项，检验准备、演练和持续维护关系。",
+        "en": "Assemble handover dependencies instead of selecting one missing item, testing preparation, drills and ongoing maintenance."
+      }
+    }
+  ]
+}

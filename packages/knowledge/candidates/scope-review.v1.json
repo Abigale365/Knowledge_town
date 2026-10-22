@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "kind": "knowledge-scope-proposal",
+  "id": "parametric-training-scope",
+  "knowledgePackId": "aib-knowledge",
+  "knowledgeRevision": 3,
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "affectedUnits": [
+    {
+      "unitId": "1.1-lesson-2",
+      "unitContentHash": "aeb14576d4b97cfb2e6d71bce4b6d612e00e3d41eb106a99c3638ec221333b33"
+    },
+    {
+      "unitId": "1.1-lesson-3",
+      "unitContentHash": "129f983acc1dc259049e35662c9b405f093d73babff2d05d5779e89ee5449734"
+    },
+    {
+      "unitId": "1.1-lesson-4",
+      "unitContentHash": "0d281d95a9ec919f320d0d1fe3b9ce3e79e0193d5d58d8980f5c65b7a10b70b9"
+    }
+  ],
+  "newSourceBundleId": "a-continuous-scope-sources",
+  "newSourceRevision": 1,
+  "source": {
+    "id": "nearest-neighbors-official",
+    "title": "scikit-learn official documentation — Nearest Neighbors",
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+    "checkedAt": "2026-10-22",
+    "locator": "1.6.2 Nearest Neighbors Classification; introductory paragraph",
+    "quote": "simply stores instances of the training data."
+  },
+  "classification": "scope-clarification-candidate",
+  "integrated": false,
+  "requiresDDecisionToPromote": true,
+  "finding": {
+    "zh": "当前定义用参数学习解释训练，作为入门示例可理解，但若被读成全部机器学习的唯一机制，范围过窄。官方最近邻分类资料提供了保存训练实例的对照。",
+    "en": "The current definitions explain training through parameter learning, which is understandable as an introductory example but too narrow if interpreted as the only mechanism in all machine learning. Official nearest-neighbor classification documentation provides a contrasting instance-storage approach."
+  },
+  "proposedCaveat": {
+    "zh": "这里以参数学习模型说明训练与推理。其他学习方法可能保存训练实例或建立索引等状态；不能把是否更新数值权重当作所有学习方法的唯一判断标准，应结合实际算法与学习/预测流程。",
+    "en": "Training and inference are illustrated here with parameter-learning models. Other learning methods may retain training instances or build index state; numerical weight updates are not the sole criterion across all learning methods. Inspect the actual algorithm and its learning/prediction process."
+  },
+  "authoredCounterexample": {
+    "zh": "已给定这是最近邻分类方法：学习阶段保存带标签训练实例，预测时按邻居标签分类。仅因为没有拟合神经网络权重，就说它“不是机器学习”，结论不成立。",
+    "en": "The method is explicitly specified as nearest-neighbor classification: its learning stage retains labeled training instances, and prediction uses neighbor labels. The absence of fitted neural-network weights does not justify calling it \"not machine learning\"."
+  },
+  "boundaries": [
+    {
+      "zh": "非参数不等于没有配置；本来源的邻居数k可由用户设定，不应混同训练学出的权重。",
+      "en": "Non-parametric does not mean configuration-free: the source allows user-selected neighbor count k, which should not be confused with fitted weights."
+    },
+    {
+      "zh": "不能反过来把任何保存文本都叫训练；RAG新增资料与实例学习仍需根据实际方法区分。",
+      "en": "Do not infer that any stored text is training; distinguish added RAG material from instance-based learning by the actual method."
+    },
+    {
+      "zh": "不要把文档中non-generalizing的术语误解为不能对新样本预测；本例不评价任何方法必然更好。",
+      "en": "Do not interpret the documentation’s term non-generalizing as inability to predict new samples; the illustration does not claim a method is necessarily better."
+    }
+  ],
+  "existingRelatedUnitIds": [
+    "1.3-lesson-3"
+  ],
+  "recommendedUse": "Optional scope note for authors; retain the parameter-learning assumption when using the existing training/inference example. No frozen knowledge or B input is changed.",
+  "notEvidenceOfLearnerMastery": true
+}
