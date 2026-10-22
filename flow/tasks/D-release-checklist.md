@@ -13,3 +13,11 @@ A新增范围/示范/先修等旁车仅参考，未接入冻结教学输入；�
 2026-10-22 10:08 PDT文件盘点：当前修改/新增216个文件约33.54 MiB，覆盖apps/packages/scripts/tests/dist/flow/docs、README和两个启动器；最大单文件约3.43 MiB，无超过GitHub单文件限制的文件。按文件名检查未发现.env、日志、私钥或artifacts/node_modules进入待跟踪集合；这不替代最终内容审阅。候选与reviewed副本保留供生成/审阅追溯，生产构建只显式读取已审路径。diff-check通过。
 
 13:53 PDT只读远端预检：origin/main与本地HEAD均f0be257f880f56765641fd65f33675f4a1bfdf46；网络读取成功，未测试写权限，尚未发布。
+
+## 2026-10-22 14:27 PDT · D已发布GitHub，八小时协作结束
+
+增量：代码提交f13866c835e6d0dcf8f4984636fe43a7053c5e9f已成功推送origin/main，git ls-remote实际核对同SHA。Git缺少本机作者配置，沿用最近三次提交已使用的Abigale365公开noreply身份，仅单次命令设置，未改全局。A/C交互/C动画已回复Goal paused，B确认无活动Goal；四对话停止新增开发评审。automation工具已返回status=PAUSED。
+
+交付：B5基础→示范→引导→独立应用、323规范题逐项反馈、真实发现后收藏与归档/返回、三语言与引导、动画连续性、导入审查和复核提示、一键启动；原index、三个经典入口、旧银行与非空存档保留。证据与范围见flow/tasks/D-release-checklist.md和D-integration.report.md。65文件构建一致、静态/契约/仓库及必要定向测试通过；默认全回归为分段完成，未冒称一次全绿。
+
+未验：B5真实浏览器布局、触屏和原生拖放；动画连续帧与真实性能；真实外部模型生成效果。知识来源审校不等于官方认证，模拟测试不等于学习效果实证。本条交接作为后续文档提交追加，最终文档提交SHA以Git HEAD/用户回复为准。下一步无自动开发，等待用户试玩反馈。
