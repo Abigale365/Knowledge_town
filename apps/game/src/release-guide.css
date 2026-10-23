@@ -1,0 +1,19 @@
+/* A header row remains accessible when the adventure tray is collapsed. */
+/* The header's real height owns its space; fixed main-height subtraction is no longer valid. */
+body:has(>header.release-guide-header){display:flex;flex-direction:column;height:100dvh;min-height:0}
+body>header.release-guide-header{flex-shrink:0}
+body>header.release-guide-header~main{flex:1 1 0;min-height:0;height:auto}
+body>header.release-guide-header~main>#viewport{min-height:0}
+/* Existing sandbox header margin consumes its 24px in the flex column; hidden immersive header consumes none. */
+body.capacity-sandbox>header.release-guide-header{margin-top:24px}
+body.town-immersive>header.release-guide-header{display:none}
+body.town-immersive>header.release-guide-header~main{height:100dvh}
+header.release-guide-header{height:auto;min-height:68px;flex-wrap:wrap;row-gap:6px;padding-top:8px;padding-bottom:6px}
+.release-guide{flex:0 0 100%;order:10;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0;border-top:1px solid #d8dfc6;padding-top:5px;font-size:12px;line-height:1.4}
+.release-guide-actions{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:6px;min-width:0}
+.release-guide button{font-size:12px;padding:6px 10px;min-height:32px;white-space:normal}
+.release-guide #releaseGuideTry{background:#e4edda;border-color:#a7bd93}
+.release-guide small,.release-guide-details small{display:block;font-size:.85em;line-height:1.4;color:#657359}
+.release-guide-details .primary small{color:inherit}
+.release-guide-course{overflow-wrap:anywhere}
+@media(max-width:650px){header.release-guide-header{gap:6px;padding:7px 10px}.release-guide{align-items:flex-start;font-size:11px}.release-guide-actions{max-width:66%}.release-guide button{font-size:11px;padding:6px 8px}.release-guide #releaseGuideVersion{flex:1;min-width:0}}

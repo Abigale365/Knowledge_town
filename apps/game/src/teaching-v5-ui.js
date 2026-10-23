@@ -79,3 +79,7 @@ const b5Modal=modal,b5Close=close;
 function disposeB5Feedback(){b5FeedbackCleanup?.();b5FeedbackCleanup=null;b5LastFeedback=null;}
 modal=function(...args){disposeB5Feedback();return b5Modal(...args);};
 close=function(...args){disposeB5Feedback();return b5Close(...args);};
+
+// Reading can make an optional early practice available without confirming or collecting.
+const b5ReadLesson=openStudyLesson;
+openStudyLesson=function(...args){const result=b5ReadLesson(...args);if(b5Context())renderTray();return result;};
