@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "accepted": true,
+  "reviewerModel": "gpt-6-astra",
+  "result": "PASS",
+  "tests": "7/7 plus insufficient-evidence option persistence",
+  "scope": "Candidate semantic decisions, baseline binding, old draft retention and old rubric compatibility; no game/browser acceptance",
+  "hashes": {
+    "decision-task.js": "c3aa67b5e0c42a8fbf44bff767f167323974d6c7ef4eace0b3ff0997b83347b6",
+    "baseline.json": "9c494a1c8b50a5eb83e3b1a98deab283d5fb4d220298b951300cc126da4c0b9d",
+    "decision-task.test.cjs": "748aec9a3bc426fb079e7e59ee280f00ed7ecc85856e47720e025d13a11d257f"
+  },
+  "limits": [
+    "Local playtest only; no push.",
+    "Legacy completion/correction is not B5 mastery."
+  ]
+}

@@ -1,0 +1,16 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const E=require('./learning-methods.js'),defs=require('./method-definitions.cjs');
+function play(d,actions){let data=E.init(d),r;for(const a of actions){const before=JSON.stringify(data);r=E.step(d,data,a);assert.equal(JSON.stringify(data),before,'pure reducer');data=r.data;}return r;}
+const sample=[{type:'select',sampleId:'s1'},{type:'select',sampleId:'s2'},{type:'fit'}];
+const groups=[['p1','g1'],['p2','g1'],['p3','g2'],['p4','g2']].map(([pointId,groupId])=>({type:'place',pointId,groupId}));
+const routes=['quick','quick','patient','patient'].map(pathId=>({type:'advance',pathId}));
+test('sample: unlabeled input cannot enter training and keeps labeled selection',()=>{const r=play(defs[0],[sample[0],{type:'select',sampleId:'u1'}]);assert.deepEqual(r.data.selected,['s1']);assert.equal(r.feedback[0].correct,false);assert.equal(r.passed,false);});
+test('sample: fit is not pass; prediction must precede held-out check',()=>{const r=play(defs[0],[...sample,{type:'test'}]);assert.equal(r.data.k,3);assert.equal(r.passed,false);});
+test('sample: incorrect held-out prediction can be corrected without retraining',()=>{const d=defs[0];const wrong=play(d,[...sample,{type:'predict',value:12},{type:'test'}]);assert.equal(wrong.passed,false);const p=E.step(d,wrong.data,{type:'predict',value:15});assert.equal(E.step(d,p.data,{type:'test'}).passed,true);assert.deepEqual(p.data.selected,['s1','s2']);});
+test('cluster: mixed far-away points fail with specific group feedback',()=>{const r=play(defs[1],[{type:'place',pointId:'p1',groupId:'g1'},{type:'place',pointId:'p4',groupId:'g1'},{type:'check'}]);assert.equal(r.passed,false);assert.equal(r.feedback.find(f=>f.itemId==='g1').correct,false);assert.equal(r.data.placements.p1,'g1');});
+test('cluster: valid structure does not establish business identity',()=>{const r=play(defs[1],[...groups,{type:'check'},{type:'describe',decision:'wealth'}]);assert.equal(r.passed,false);assert.equal(r.data.checked,true);assert.equal(r.feedback[0].correct,false);});
+test('cluster: either group name assignment valid and supported description passes',()=>{const r=play(defs[1],[...groups.map(a=>({...a,groupId:a.groupId==='g1'?'g2':'g1'})),{type:'check'},{type:'describe',decision:'feature'}]);assert.equal(r.passed,true);});
+test('reward: cannot pass from first reward or mix routes midway',()=>{const r=play(defs[2],[routes[0],{type:'advance',pathId:'patient'},{type:'compare',totals:{quick:5,patient:0}}]);assert.equal(r.passed,false);assert.deepEqual(r.data.visits,{quick:[5]});});
+test('reward: incorrect total diagnosed by route and records retained',()=>{const r=play(defs[2],[...routes,{type:'compare',totals:{quick:5,patient:4}}]);assert.equal(r.feedback.find(f=>f.itemId==='quick').correct,false);assert.equal(r.feedback.find(f=>f.itemId==='patient').correct,true);assert.deepEqual(r.data.visits.quick,[5,-4]);assert.equal(r.passed,false);});
+test('reward: delayed cumulative advantage supports revised policy',()=>{const r=play(defs[2],[...routes,{type:'compare',totals:{quick:1,patient:4}},{type:'policy',pathId:'quick'}]);assert.equal(r.passed,false);assert.equal(E.step(defs[2],r.data,{type:'policy',pathId:'patient'}).passed,true);});

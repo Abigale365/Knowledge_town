@@ -2,6 +2,7 @@
 // Real view handlers in a simulated DOM. No layout or browser translation claims.
 const test=require('node:test'),assert=require('node:assert/strict'),harness=require('../../../tests/town-harness.cjs');
 const opts={entrySchedule:true};
+const conceptFixture=require('../../../tests/concept-game-fixture.cjs');
 // Keep the original regressions explicitly on B4 after D changes the fresh default to B5.
 async function b4Harness(data=new Map()){const h=await harness(data,opts);if(h.run('teachingEntry()?.revision')===5)h.run("openTeachingCourse('legacy')");return h;}
 const snapshot=h=>h.run('JSON.stringify({study:studyState(),teaching:teachingContext()?.p})');
@@ -25,7 +26,7 @@ test('coach finds actual objects, then routes a removed favorite to the list wit
  const h=await b4Harness();h.run('showGameGuide(true)');h.click('guideDismiss');
  h.run('pointXY=(x,y)=>{globalThis.guideTestPoint={x,y};};beginStudyWalk()');
  assert.equal(h.get('gameCoach').dataset.guideStage,'find');assert.ok(h.run('guideTestPoint'));
- const item=h.list('[data-study-fruit]')[0];item.click();h.click('favoriteKnowledge');h.click('leaveLesson');
+ const item=h.list('[data-study-fruit]')[0];item.click();conceptFixture.complete(h,item.dataset.studyFruit);h.click('favoriteKnowledge');h.click('leaveLesson');
  assert.equal(h.get('gameCoach').dataset.guideStage,'confirm');
  h.run('guideTestPoint=null;guidePoint()');assert.equal(h.run('guideTestPoint'),null);
  assert.ok(h.get('sealBasket'));assert.equal(h.get('sealBasket').disabled,true);
@@ -35,7 +36,7 @@ test('coach finds actual objects, then routes a removed favorite to the list wit
 test('optional collection never blocks the coach from the real application workshop',async()=>{
  const h=await b4Harness();h.run('showGameGuide(true)');h.click('guideDismiss');h.run('beginStudyWalk()');
  const ids=h.run('studySection().lessons.map(l=>l.id)');
- for(const id of ids){h.run(`openStudyLesson(${JSON.stringify(id)})`);h.click('confirmFoundation');}
+ for(const id of ids){h.run(`openStudyLesson(${JSON.stringify(id)},false,null,true)`);conceptFixture.complete(h,id);h.click('confirmFoundation');}
  assert.equal(h.run('teachingContext().p.favorites.length'),0);
  h.run('close();renderGameCoach()');assert.equal(h.get('gameCoach').dataset.guideStage,'apply');
  registeredText(h,h.get('gameCoach').innerHTML);h.click('gameCoachAction');assert.ok(h.get('workshopSubmit'));
@@ -54,7 +55,9 @@ test('submitted-chapter coaching takes priority over a previously completed firs
  h.run('studyState().sealed=[];studyState().submitted=[];renderGameCoach()');
  h.list('[data-study-fruit]')[0].click();h.click('leaveLesson');h.run('save()');
  const expected=snapshot(h),re=await b4Harness(h.data);assert.equal(snapshot(re),expected);
- assert.equal(re.run('guideState().walk.chapter'),0);assert.equal(re.get('gameCoach').dataset.guideStage,'confirm');
+ assert.equal(re.run('guideState().walk.chapter'),0);
+ const hasGame=re.run('!!ConceptGameHost.resolve(studySection().lessons[0].id)');
+ assert.equal(re.get('gameCoach').dataset.guideStage,hasGame?'concept-game':'confirm');
 });
 test('legacy help retains assembly and collection while adventure help describes visible locked devices',async()=>{
  const h=await harness(new Map(),{exam:true,learning:true,chapters:true,knowledge:true});h.click('guideDismiss');
@@ -91,7 +94,7 @@ test('B5 coach follows actual foundation, worked-example, guided and independent
  const B=require('../../../packages/learning-design/teaching-logic.v5.cjs'),h=await harness(new Map(),opts);
  h.run("close();openTeachingCourse('aib5');beginStudyWalk()");assert.equal(h.run('teachingStageStatus().stage'),'foundation');
  const ids=h.run('studySection().lessons.map(l=>l.id)');
- for(const id of ids){h.run(`openStudyLesson(${JSON.stringify(id)})`);h.click('confirmFoundation');}
+ for(const id of ids){h.run(`openStudyLesson(${JSON.stringify(id)},false,null,true)`);conceptFixture.complete(h,id);h.click('confirmFoundation');}
  h.run('close();beginStudyWalk()');assert.equal(h.get('gameCoach').dataset.guideStage,'demonstration');assert.ok(h.get('b5DemoDone'));
  for(const mode of ['zh','en','bi']){const before=snapshot(h);h.run(`state.language=${JSON.stringify(mode)};showGameGuide(false,'study')`);registeredText(h,h.get('dialogBody').innerHTML);assert.ok(h.get('dialogBody').innerHTML.includes('看示范'));assert.ok(h.get('dialogBody').innerHTML.includes('引导练习'));assert.equal(snapshot(h),before);}
  h.click('guideStudy');h.click('b5DemoDone');h.run('renderGameCoach()');assert.equal(h.get('gameCoach').dataset.guideStage,'guided');

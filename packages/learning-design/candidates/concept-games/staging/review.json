@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": 2,
+  "accepted": true,
+  "result": "PASS-candidate-data-and-engine",
+  "reviewerModel": "gpt-6-astra",
+  "reviewScopes": [
+    "Wrapper, exact bindings, replay, first-batch compatibility and nine evidence-board concepts",
+    "Eight new plugin kinds, ten concepts, source boundaries and bilingual content"
+  ],
+  "tests": {
+    "workshops": 19,
+    "methods": 9,
+    "integration": 7,
+    "total": 35
+  },
+  "fixes": [
+    "Judgments made before evidence inspection cannot become valid merely by later inspection; rejudgment is required."
+  ],
+  "hashes": {
+    "engine.js": "c3a655bad8d49c101486330a0c44a9ac11bc32cf17e14d64672708e94b36688a",
+    "catalog.json": "77bb0c2dba27887c31baff4705c5600afd2b28f466cf58a01a9b932d088be1a4",
+    "build.cjs": "e65b03ead1deefc865877ec94d70852428d641598ae93a41f4ba8575bb6042ac",
+    "evidence-definitions.cjs": "0e697e54114775db2a15669cce425ec668a03e2149f1688be2c32fe1952e654c",
+    "learning-methods.js": "e62a458f6009c2d52b7500f8de5245e9205713108f26b2be501f113c6156052a",
+    "method-definitions.cjs": "f51bd5440137cfe830dfb48848ab907bd0090bd736d088c7a311bb8510c4c45f",
+    "content-workshops.js": "50955e80985125e52337eb64f22adf397e9d44473343be1d4574ba037d9263a7",
+    "workshop-definitions.cjs": "6114082b30a5134711fead7b82768b4896224b756c461a8a1a6ec813a7d28a6b"
+  },
+  "coverage": {
+    "sourceConcepts": 23,
+    "kinds": 11,
+    "bindings": 92,
+    "legacyFirstSectionCovered": 22,
+    "legacyFirstSectionTotal": 22
+  },
+  "limits": [
+    "UI rendering and private-field hiding not yet verified by B.",
+    "Only 23 of 139 unique source concepts have descriptors; remaining coverage gaps remain explicit.",
+    "Not formal unseen assessments or independent mastery certification."
+  ]
+}

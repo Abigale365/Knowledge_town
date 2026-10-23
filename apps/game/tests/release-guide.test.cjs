@@ -65,7 +65,7 @@ test('three display languages keep header controls stable and never migrate cust
  h.run("changeTownLanguage('zh');L.bank(state).syllabus=structuredClone(currentCourse());L.bank(state).syllabus.chapters[0].sections[0].lessons[0].body+=' custom change';delete L.bank(state).teachingSnapshot;ReleaseGuide.refresh()");
  assert.equal(h.run('ReleaseGuide.current().target'),null,'same ID with modified course content is not an upgrade match');assert.equal(h.get('releaseGuideTry').hidden,true);
  h.run("L.bank(state).syllabus=structuredClone(currentCourse());L.bank(state).syllabus.id='custom-course';delete L.bank(state).teachingSnapshot;ReleaseGuide.refresh()");
- assert.equal(h.run('ReleaseGuide.current().target'),null);assert.equal(h.get('releaseGuideTry').hidden,true);h.click('releaseGuideUpdates');assert.ok(h.get('dialogBody').innerHTML.includes('不会替换自定义内容'));
+ assert.equal(h.run('ReleaseGuide.current().target'),null);assert.equal(h.get('releaseGuideTry').hidden,true);h.click('releaseGuideUpdates');assert.ok(h.get('dialogBody').innerHTML.includes('不会替换自定义内容'));assert.ok(h.get('dialogBody').innerHTML.includes('未绑定物件保留原流程'));
  h.run("L.bank(state).teachingSnapshot={revision:5,courseId:'custom-course',signature:'invalid'};ReleaseGuide.refresh()");assert.equal(h.run('ReleaseGuide.current().invalid'),true);assert.equal(h.get('releaseGuideTry').hidden,true);
  assert.ok(h.get('releaseGuideVersion').innerHTML.includes('未验证'));
 });

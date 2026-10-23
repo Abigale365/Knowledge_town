@@ -1,11 +1,12 @@
 'use strict';
 const assert=require('node:assert/strict'),harness=require('./town-harness.cjs'),B=require('../packages/learning-design/teaching-logic.v5.cjs');
+const conceptFixture=require('./concept-game-fixture.cjs');
 (async()=>{
  let h=await harness(new Map(),{entrySchedule:true});h.run('close()');assert.equal(h.run('teachingEntry().revision'),5);
  for(const which of ['legacy5','aib5']){
   h.run(`openTeachingCourse(${JSON.stringify(which)})`);const sec=h.run('JSON.parse(JSON.stringify(studySection()))');
   h.run('openTaskWorkshop()');assert.ok(h.get('sealBasket'));assert.ok(!h.get('b5DemoDone'));
-  for(const l of sec.lessons){h.run(`openStudyLesson(${JSON.stringify(l.id)})`);h.click('confirmFoundation');}
+  for(const l of sec.lessons){h.run(`openStudyLesson(${JSON.stringify(l.id)},false,null,true)`);conceptFixture.complete(h,l.id);h.click('confirmFoundation');}
   h.run('openTaskWorkshop()');assert.ok(h.get('b5DemoDone'));h.click('b5DemoDone');assert.ok(h.get('b5GuidedSubmit'));
   const guided=h.run('teachingContext().flow.section(studySection().id).policy.guidedPractice.round');
   h.click('b5GuidedSubmit');assert.ok(h.get('b5GuidedFeedback').innerHTML.includes('teaching-feedback'));

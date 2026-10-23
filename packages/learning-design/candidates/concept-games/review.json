@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "batch": 1,
+  "accepted": true,
+  "reviewerModel": "gpt-6-astra",
+  "result": "PASS",
+  "tests": "10/10",
+  "hashes": {
+    "engine.js": "d1cabb7c5981bc5b6e0ca217466a8bde2c43dc2fcdbd68a73711f2c574d20470",
+    "catalog.json": "7e3979e547c2a74241fe45275b136c64d930c2f5a40d425ba7f8f205651741cd",
+    "bindings.cjs": "cd6ea2b7f8a801ae24f3fb1680eb138837d250a69a0d3f5adb897dced0b32c00",
+    "build.cjs": "b336337cfffa3b538ea525fd3e034a0f86f0e3e0839a0b3ef7096b7516bbea72"
+  },
+  "scope": "Four source concepts, two kinds, sixteen exact course/lesson bindings, semantic operations, replay validation and collection gate",
+  "limits": [
+    "Found and SHA256 course context must be provided by trusted D adapter.",
+    "No DOM/real-browser or save adapter integration acceptance.",
+    "Only four source units covered."
+  ]
+}

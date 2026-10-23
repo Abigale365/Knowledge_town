@@ -1,5 +1,6 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {staticRequires}=require('./static-requires.cjs');
 const root=path.resolve(__dirname,'..'),runtime=path.join(root,'dist');
 const read=file=>fs.readFileSync(file,'utf8');
 function exists(relative){assert.ok(fs.existsSync(path.resolve(root,relative)),'Missing repository file: '+relative);}
@@ -12,7 +13,7 @@ const entries=['index.html','adventure.html','expedition.html','short-hunt.html'
 for(const entry of entries){const file=path.join(runtime,entry);for(const match of read(file).matchAll(/(?:src|href)="([^"]+)"/g))localLink(path.dirname(file),match[1]);}
 const runtimeFiles=walk(runtime).filter(file=>/\.(?:html|js|css)$/.test(file)),combined=runtimeFiles.map(read).join('\n');
 for(const file of runtimeFiles){const text=read(file);for(const match of text.matchAll(/assets\/[A-Za-z0-9_./-]+\.(?:png|webp|svg|jpg)/g))exists('dist/'+match[0]);}
-for(const file of [...runtimeFiles.filter(file=>file.endsWith('.js')),...walk(path.join(root,'tests')).filter(file=>file.endsWith('.cjs')),...walk(path.join(root,'scripts')).filter(file=>file.endsWith('.cjs'))])for(const match of read(file).matchAll(/require\(['"](\.[^'"]+)['"]\)/g))localLink(path.dirname(file),match[1]);
+for(const file of [...runtimeFiles.filter(file=>file.endsWith('.js')),...walk(path.join(root,'tests')).filter(file=>file.endsWith('.cjs')),...walk(path.join(root,'scripts')).filter(file=>file.endsWith('.cjs'))])for(const relative of staticRequires(read(file)))localLink(path.dirname(file),relative);
 for(const file of ['README.md','docs/GAME_GUIDE.md','docs/REPOSITORY.md','docs/TESTING.md','content/README.md','tests/README.md','archive/README.md'])for(const match of read(path.join(root,file)).matchAll(/\[[^\]]*\]\(([^)]+)\)/g))localLink(path.dirname(path.join(root,file)),match[1]);
 for(const file of ['dist/aib-practice-pack.json','dist/capacity-report.json'])JSON.parse(read(path.join(root,file)));
 const manifest=JSON.parse(read(path.join(root,'archive/file-moves.json')));for(const entry of manifest.moves)if(entry.mode!=='local-artifact-untracked')exists(entry.to);

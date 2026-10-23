@@ -1,22 +1,42 @@
-/* Keep all decorative paint behind interactive objects and out of hit testing. */
+/* Independent SVG decorations, always behind objects and outside hit testing. */
 #ambientScene{position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none}
 .scene-ambient{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
 .scene-ambient *{pointer-events:none}
-.scene-ambient path{fill:none;stroke-linecap:round;stroke-linejoin:round}
-.scene-visitor{animation:visitor-flight var(--ambient-duration) ease-in-out var(--ambient-delay) infinite;opacity:.9}
-.visitor-hover{animation:visitor-hover 3.7s ease-in-out var(--ambient-delay) infinite}
-.scene-ambient .visitor-wing{fill:var(--visitor-color);stroke:#74634c;stroke-width:.65;fill-opacity:.92;transform-box:view-box;transform-origin:0 0;animation:visitor-flutter .85s ease-in-out var(--ambient-delay) infinite alternate}
-.scene-dragonfly .visitor-wing{fill-opacity:.64;animation-duration:.24s}
-.scene-ambient .visitor-body{stroke:#625d48;stroke-width:1.7}
-.scene-ambient .gull-wing{stroke:#fff4da;stroke-width:2.6;transform-origin:0 0;transform-box:view-box;animation:gull-glide 3.8s ease-in-out var(--ambient-delay) infinite alternate}
-.scene-ambient .gull-wing-right{animation-direction:alternate-reverse}
-.scene-gull{animation-name:gull-flight-x}
-/* Quarter-cycle vertical phase keeps gulls gliding through horizontal turnarounds.
-   Separate nested transforms retain the source anchor and the small body tilt. */
-.gull-drift{animation:gull-flight-y var(--ambient-duration) ease-in-out var(--gull-y-delay) infinite}
-.scene-gull .visitor-hover{animation-duration:6s}
+.scene-ambient path{stroke-linecap:round;stroke-linejoin:round}
+.little-route{animation:little-route-x var(--ambient-duration) ease-in-out var(--ambient-delay) infinite;opacity:.88}
+.little-drift{animation:little-route-y var(--ambient-duration) ease-in-out var(--vertical-delay) infinite}
+.little-facing{transform:scale(var(--figure-scale,1)) scaleX(var(--heading,1));transform-origin:0 0;transform-box:view-box}
+.little-body{animation:little-tilt var(--detail-duration,4.7s) ease-in-out var(--ambient-delay) infinite;transform-origin:0 0;transform-box:view-box}
+/* Windborne objects pass through once, fading softly at the loop seam.
+   Birds keep their beak in the direction of travel instead of flying backwards. */
+.little-gull,.little-leaf,.little-petal,.little-seed{animation-name:little-pass;animation-timing-function:linear}
+.little-leaf,.little-petal{animation-name:little-wind;animation-timing-function:ease-in-out}
+.little-leaf .little-drift,.little-petal .little-drift,.little-seed .little-drift{animation-name:little-sink;animation-timing-function:linear;animation-delay:var(--ambient-delay)}
+.little-leaf .little-body{animation-duration:var(--detail-duration)}
+.little-bee{animation-name:little-forage}
+.little-bee .little-drift{animation-name:little-hover}
+.little-steam{animation:little-steam var(--ambient-duration) linear var(--ambient-delay) infinite}
+.little-steam .little-drift,.little-steam .little-body{animation:none}
+.little-crab{animation-name:little-scuttle}
+.little-crab .little-drift{animation:none}
+.little-crab .little-body{animation:none}
+.crab-legs-b{--leg-sweep:-9deg}
+.crab-legs{animation:little-legs var(--ambient-duration) linear var(--ambient-delay) infinite;transform-origin:0 4px;transform-box:view-box}
+.little-petal .little-body{animation:little-tumble 7.9s ease-in-out var(--ambient-delay) infinite}
+.little-seed .little-body{animation:little-seed-nod calc(var(--detail-duration)*1.8) ease-in-out var(--ambient-delay) infinite}
+.little-wings{transform-origin:0 0;transform-box:view-box;animation:little-wing 2.9s ease-in-out var(--ambient-delay) infinite}
+.little-gull .little-wings{animation:none}
+.gull-wing-near,.gull-wing-far{transform-origin:0 0;transform-box:view-box}
+.gull-wing-near{animation:little-gull-wing var(--detail-duration) ease-in-out var(--ambient-delay) infinite}
+.gull-wing-far{animation:little-gull-far var(--detail-duration) ease-in-out var(--ambient-delay) infinite}
+.little-bee .little-wings{animation:little-buzz .16s ease-in-out var(--ambient-delay) infinite alternate}
+/* Only the folded hull rocks. Its wake remains flat on the water. */
+.little-paperboat .little-body{animation:none}
+.boat-hull{animation:little-boat 5.3s ease-in-out var(--ambient-delay) infinite;transform-origin:0 0;transform-box:view-box}
+.boat-wake{animation:little-wake 4.1s ease-in-out var(--ambient-delay) infinite;transform-origin:0 10px;transform-box:view-box}
+.little-mote .little-body,.little-glint .little-body{animation:little-glimmer var(--ambient-duration) ease-in-out var(--ambient-delay) infinite}
 .scene-snow{fill:#eef5ff;animation:scene-snow var(--ambient-duration) linear var(--ambient-delay) infinite}
-.scene-lamplight{fill:#ffcf73;animation:scene-lamplight var(--ambient-duration) ease-in-out var(--ambient-delay) infinite}
+.scene-lamplight{fill:url(#ambient-winter-glow);animation:scene-lamplight var(--ambient-duration) ease-in-out var(--ambient-delay) infinite}
 /* Away SVG uses xMidYMid slice, matching the existing centered object-fit:cover. */
 .away-landscape .scene-ambient{z-index:1}
 .away-landscape .away-weather{display:none} /* replaced, never stacked */
@@ -31,17 +51,34 @@ body.dialog-open .scene-ambient *{animation-play-state:paused!important}
 #villagers .npc{width:120px;height:128px}
 #villagers .npc:focus-within .npc-sprite,#villagers .npc:active .npc-sprite{animation-play-state:paused}
 body.holding-item #villagers .npc-sprite,body.dragging-prop #villagers .npc-sprite{animation-play-state:paused}
-#villagers .npc-label{max-width:210px;white-space:normal;width:max-content;overflow-wrap:anywhere}
+/* Top anchoring keeps additional role lines below the entire sprite frame.
+   Labels outside the button must not enlarge its hit area over nearby objects. */
+#villagers .npc-label{top:calc(100% + 8px);bottom:auto;box-sizing:border-box;max-width:210px;white-space:normal;width:max-content;overflow-wrap:anywhere;pointer-events:none}
 #villagers .npc:focus-within .npc-label small{display:block}
 #villagers .npc-notice{right:-17px;top:-16px;pointer-events:none}
-@keyframes visitor-flight{0%,100%{transform:translate(0,0)}28%{transform:translate(calc(var(--flight-x)*.28),var(--flight-y))}58%{transform:translate(var(--flight-x),calc(var(--flight-y)*.45))}82%{transform:translate(calc(var(--flight-x)*.65),8px)}}
-@keyframes visitor-hover{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-5px) rotate(7deg)}}
-@keyframes visitor-flutter{from{transform:scaleX(.25)}to{transform:scaleX(1)}}
-@keyframes gull-glide{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
-@keyframes gull-flight-x{0%,100%{transform:translateX(0)}50%{transform:translateX(var(--flight-x))}}
-@keyframes gull-flight-y{0%,100%{transform:translateY(calc(var(--flight-y)*-1))}50%{transform:translateY(var(--flight-y))}}
-@keyframes scene-snow{0%{transform:translate(-12px,-140px);opacity:0}15%,80%{opacity:.65}100%{transform:translate(40px,220px);opacity:0}}
-@keyframes scene-lamplight{0%,100%{opacity:.12}50%{opacity:.38}}
+@keyframes little-steam{0%{transform:translate(0,0) scale(.75);opacity:0}18%{opacity:.45}70%{opacity:.25}100%{transform:translate(var(--flight-x),var(--flight-y)) scale(1.2);opacity:0}}
+@keyframes little-pass{0%{transform:translateX(0);opacity:0}12%{opacity:.88}84%{opacity:.88}100%{transform:translateX(var(--flight-x));opacity:0}}
+@keyframes little-wind{0%{transform:translateX(0);opacity:0}12%{opacity:.88}25%{transform:translateX(calc(var(--flight-x)*var(--wind-first)))}50%{transform:translateX(calc(var(--flight-x)*var(--wind-mid)))}75%{transform:translateX(calc(var(--flight-x)*var(--wind-late)))}84%{opacity:.88}100%{transform:translateX(var(--flight-x));opacity:0}}
+@keyframes little-seed-nod{0%,100%{transform:rotate(-7deg)}30%{transform:rotate(4deg)}65%{transform:rotate(-3deg)}}
+@keyframes little-sink{from{transform:translateY(var(--flight-y))}to{transform:translateY(calc(var(--flight-y)*-1))}}
+@keyframes little-forage{0%,14%,100%{transform:translateX(0)}40%,58%{transform:translateX(var(--flight-x))}78%{transform:translateX(calc(var(--flight-x)*.35))}}
+@keyframes little-hover{0%,100%{transform:translateY(0)}22%{transform:translateY(calc(var(--flight-y)*.35))}48%{transform:translateY(var(--flight-y))}72%{transform:translateY(calc(var(--flight-y)*.6))}}
+@keyframes little-wake{0%,100%{transform:scaleX(.8);opacity:.35}50%{transform:scaleX(1.05);opacity:.7}}
+@keyframes little-boat{0%,100%{transform:translateY(1px) rotate(-2deg)}50%{transform:translateY(-1px) rotate(3deg)}}
+@keyframes little-scuttle{0%,18%,100%{transform:translateX(0)}42%,68%{transform:translateX(var(--flight-x))}}
+@keyframes little-legs{0%,18%,42%,68%,100%{transform:skewX(0deg)}21%,27%,33%,39%,72%,78%,84%,90%,96%{transform:skewX(var(--leg-sweep,9deg))}24%,30%,36%,75%,81%,87%,93%,99%{transform:skewX(calc(var(--leg-sweep,9deg)*-1))}}
+@keyframes little-route-x{0%,100%{transform:translateX(0)}50%{transform:translateX(var(--flight-x))}}
+@keyframes little-route-y{0%,100%{transform:translateY(calc(var(--flight-y)*-1))}50%{transform:translateY(var(--flight-y))}}
+@keyframes little-tilt{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(9deg)}}
+@keyframes little-tumble{0%,100%{transform:rotate(-22deg) scaleX(.7)}50%{transform:rotate(32deg) scaleX(1)}}
+/* A brief pair of strokes, followed by a longer glide; wings have different depth. */
+@keyframes little-gull-wing{0%,42%,100%{transform:rotate(-3deg) scaleY(.85)}12%,34%{transform:rotate(8deg) scaleY(.9)}24%{transform:rotate(-12deg) scaleY(.45)}}
+@keyframes little-gull-far{0%,42%,100%{transform:rotate(2deg) scaleY(.7)}12%,34%{transform:rotate(-6deg) scaleY(.6)}24%{transform:rotate(8deg) scaleY(.9)}}
+@keyframes little-wing{0%,70%,100%{transform:scaleY(.85)}35%{transform:scaleY(.35)}}
+@keyframes little-buzz{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+@keyframes little-glimmer{0%,100%{opacity:.15;transform:scale(.6)}45%{opacity:.8;transform:scale(1)}}
+@keyframes scene-snow{0%{transform:translate(-12px,-140px);opacity:0}15%,80%{opacity:var(--snow-peak,.65)}100%{transform:translate(var(--snow-drift,40px),var(--snow-fall,220px));opacity:0}}
+@keyframes scene-lamplight{0%,100%{opacity:.32}50%{opacity:.65}}
 /* Legacy planted sprites/gears/sparks also animate independently of their parents.
    Keep their identifying artwork visible; stop only nonessential repeated motion. */
 @media(prefers-reduced-motion:reduce){.scene-ambient{display:none}.scene-ambient *,#villagers .npc,#villagers .npc-sprite,#plants .plant,#persistentChanges .prop-art,#world .learning-spark{animation:none!important}}

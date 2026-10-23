@@ -1,0 +1,552 @@
+{
+  "schemaVersion": 1,
+  "kind": "authored-concept-game-knowledge",
+  "candidateRevision": 1,
+  "authoringOnly": true,
+  "answersExposed": true,
+  "doNotUseAsUnseenAssessment": true,
+  "integrated": false,
+  "notEvidenceOfIndependentMastery": true,
+  "provenance": "Authored teaching cases and expected observations; not empirical outcomes or external source cases.",
+  "knowledgePackId": "aib-knowledge",
+  "knowledgeRevision": 3,
+  "knowledgeContentHash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce",
+  "materialBundleId": "aib-knowledge-materials",
+  "materialRevision": 3,
+  "materialContentHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "sources": [
+    {
+      "id": "d1-algorithm",
+      "title": "Algorithm — NIST CSRC",
+      "url": "https://csrc.nist.gov/glossary/term/Algorithm",
+      "excerpt": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-ml",
+      "title": "Machine learning — IBM",
+      "url": "https://www.ibm.com/think/topics/machine-learning",
+      "excerpt": "all machine learning is AI, but not all AI is machine learning.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-simple",
+      "title": "Rules of Machine Learning — Google",
+      "url": "https://developers.google.com/machine-learning/guides/rules-of-ml",
+      "excerpt": "Don’t be afraid to launch a product without machine learning.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-roi",
+      "title": "Monitor return on investment for ML models — AWS",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/mlcost06-bp02.html",
+      "excerpt": "Focusing only on technical metrics like accuracy without linking to business outcomes.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-manage",
+      "title": "AI RMF Playbook: Manage — NIST",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/manage/",
+      "excerpt": "Prepare and document plans for continuous monitoring and feedback mechanisms.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-training",
+      "title": "Model training — IBM",
+      "url": "https://www.ibm.com/think/topics/model-training",
+      "excerpt": "In machine learning, learning involves adjusting the parameters of an ML model.",
+      "verifiedAt": "2026-10-20"
+    }
+  ],
+  "items": [
+    {
+      "id": "deterministic-rule-boundary",
+      "unitIds": [
+        "1.2.1-unit-1"
+      ],
+      "title": {
+        "zh": "阈值试验台",
+        "en": "Threshold test bench"
+      },
+      "objective": {
+        "zh": "保持完整输入、规则版本及执行条件不变，重复观察同一结果，并检验等于阈值的边界。",
+        "en": "Hold complete inputs, rule version, and execution conditions fixed, repeat the run, and test the equality boundary."
+      },
+      "operation": {
+        "zh": "调节金额并重复执行，再切换规则版本；比较输出而非配对术语。",
+        "en": "Adjust the amount and repeat execution, then switch rule version; compare outputs rather than match terms."
+      },
+      "teaching": {
+        "zh": "题设规则v1：金额严格大于5000元才触发人工审批。只测试此条规则是否触发，不代表报销已获批准。v2改为大于或等于5000元。所有金额与政策均为教学假设。",
+        "en": "Rule v1 in this exercise triggers human review only above 5,000 yuan. We test this rule alone; a non-trigger does not mean reimbursement is approved. Version v2 changes the condition to at least 5,000 yuan. All amounts and policies are teaching assumptions."
+      },
+      "ruleVersions": [
+        {
+          "id": "v1",
+          "operator": "gt",
+          "threshold": 5000
+        },
+        {
+          "id": "v2",
+          "operator": "gte",
+          "threshold": 5000
+        }
+      ],
+      "trials": [
+        {
+          "id": "below",
+          "rule": "v1",
+          "amount": 4999,
+          "repeats": 2,
+          "expected": "no_trigger"
+        },
+        {
+          "id": "equal",
+          "rule": "v1",
+          "amount": 5000,
+          "repeats": 2,
+          "expected": "no_trigger"
+        },
+        {
+          "id": "above",
+          "rule": "v1",
+          "amount": 5001,
+          "repeats": 2,
+          "expected": "needs_review"
+        },
+        {
+          "id": "changed-rule",
+          "rule": "v2",
+          "amount": 5000,
+          "repeats": 2,
+          "expected": "needs_review"
+        }
+      ],
+      "outputLabels": {
+        "no_trigger": {
+          "zh": "未触发本条审批规则",
+          "en": "This review rule did not trigger"
+        },
+        "needs_review": {
+          "zh": "触发人工审批",
+          "en": "Human review triggered"
+        }
+      },
+      "example": {
+        "zh": "v1金额5001重复两次都触发审批；v1金额5000重复两次均不触发。",
+        "en": "At 5,001, v1 triggers review twice; at 5,000, v1 does not trigger on either repeat."
+      },
+      "counterexample": {
+        "zh": "金额相同但规则已从v1换为v2，结果不同，不能据此说同一规则不确定。",
+        "en": "Different results at the same amount after switching v1 to v2 do not show that the same rule is nondeterministic."
+      },
+      "boundary": {
+        "zh": "本台无随机数、时钟或外部调用；若系统还读权限、日期等状态，完整输入必须包含它们。有限重复观察不是所有实现永不出错的证明，确定性也不保证规则公平或政策正确。",
+        "en": "This bench has no randomness, clock, or external calls. If a system also reads permissions or dates, those states belong to its complete input. Finite repeats do not prove every implementation is flawless; determinism does not guarantee fairness or correct policy."
+      },
+      "feedbackPrinciple": {
+        "zh": "等于5000未触发时检查“严格大于”；换版本后结果变化时检查是否仍是同一条件。",
+        "en": "For equality, check strictly greater than; after a version switch, check whether the conditions are still the same."
+      },
+      "sourceIds": [
+        "d1-algorithm",
+        "d1-ml"
+      ],
+      "unitBindings": [
+        {
+          "unitId": "1.2.1-unit-1",
+          "contentHash": "c0aa42566e4376e87b68d78d1a26995eaae06fd30ed33d58912b9d453c8d9f3a",
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            }
+          ]
+        }
+      ],
+      "lessonBindings": [
+        {
+          "catalogKey": "legacy4",
+          "courseId": "course-11fu42t",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.2",
+          "lessonId": "1.2-lesson-6",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonContentHash": "4d8cead3f072b637b6b205e66100f2c74b435fc9cebb2b4997563df1f778d5db"
+        },
+        {
+          "catalogKey": "legacy5",
+          "courseId": "course-87vtar",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.2",
+          "lessonId": "1.2-lesson-6",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonContentHash": "4d8cead3f072b637b6b205e66100f2c74b435fc9cebb2b4997563df1f778d5db"
+        },
+        {
+          "catalogKey": "aib4",
+          "courseId": "course-2iajim",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.7",
+          "lessonId": "1.7-lesson-4",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonContentHash": "6520ce0caeb3c37760051d9cc37bae6a2d76de7a1802630b5563352b38578091"
+        },
+        {
+          "catalogKey": "aib5",
+          "courseId": "course-c5mcdg",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.7",
+          "lessonId": "1.7-lesson-4",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonContentHash": "6520ce0caeb3c37760051d9cc37bae6a2d76de7a1802630b5563352b38578091"
+        }
+      ]
+    },
+    {
+      "id": "rules-model-selection",
+      "unitIds": [
+        "1.2-lesson-1"
+      ],
+      "title": {
+        "zh": "选型验证工作台",
+        "en": "Selection and validation desk"
+      },
+      "objective": {
+        "zh": "按已给政策、数据和后果选择下一步，区别明确规则执行与学习模型候选验证。",
+        "en": "Choose the next step from the stated policy, data, and consequences, distinguishing explicit rule execution from evaluation of a learned-model candidate."
+      },
+      "operation": {
+        "zh": "依次揭开政策、样本和业务代价证据，选择可执行的下一步；不是把“简单/复杂”拖到固定答案。",
+        "en": "Reveal policy, sample, and business-cost evidence, then choose an actionable next step; do not map simple or complex labels to fixed answers."
+      },
+      "teaching": {
+        "zh": "明确稳定政策可先用规则；从样本找模式的模型仍需和基线比较、验证错误后果与维护成本。这里不宣称学习模型总更好，也不把规则排除在AI之外。",
+        "en": "An explicit stable policy can be implemented with rules first. A model learning patterns from examples still needs comparison with a baseline, error-consequence checks, and maintenance-cost assessment. Learned models are not always better, and rules are not categorically outside AI."
+      },
+      "cases": [
+        {
+          "id": "explicit-policy",
+          "evidence": {
+            "zh": "题设明确报销金额大于5000元触发复核；要求逐次一致执行该条件。",
+            "en": "The exercise specifies review above 5,000 yuan and requires consistent execution of that condition."
+          },
+          "expectedAction": "implement_stated_rule",
+          "why": {
+            "zh": "已有可执行条件；本题不需要为了技术标签先训练模型。",
+            "en": "The executable condition is already specified; training a model for its label is unnecessary here."
+          }
+        },
+        {
+          "id": "demand-candidate",
+          "evidence": {
+            "zh": "已具备历史实际销量、日期与同口径验证数据；要估计未知需求，尚无方案优越性结论。",
+            "en": "Historical actual sales, dates, and comparable validation data are available; demand is unknown and no method has yet been shown superior."
+          },
+          "expectedAction": "compare_model_with_baseline",
+          "why": {
+            "zh": "可评估学习模型候选，但须比较基线、误差后果、维护和价值后再决定。",
+            "en": "A learned candidate can be evaluated, but compare the baseline, error consequences, maintenance, and value before deciding."
+          }
+        },
+        {
+          "id": "missing-outcomes",
+          "evidence": {
+            "zh": "只记录助手建议备货量，没有实际售出/缺货记录；要声称新方案已减少缺货。",
+            "en": "Only the assistant’s suggested stock is recorded, with no actual sales or stockout record; someone wants to claim the new approach already reduced stockouts."
+          },
+          "expectedAction": "collect_comparable_outcomes",
+          "why": {
+            "zh": "建议不等于实际业务结果；先补同口径结果和比较条件，不能凭建议量证明收益。",
+            "en": "Recommendations are not actual outcomes; obtain comparable outcomes and comparison conditions rather than infer benefits from suggested quantities."
+          }
+        }
+      ],
+      "example": {
+        "zh": "固定政策先规则；未知需求可试验模型并与简单基线比较。",
+        "en": "Use rules for the fixed policy; test a model against a simple baseline for unknown demand."
+      },
+      "counterexample": {
+        "zh": "“业务复杂，所以模型一定值得上线”跳过了证据、验证和错误代价。",
+        "en": "“The business is complex, so the model must be worth deploying” skips evidence, validation, and error costs."
+      },
+      "boundary": {
+        "zh": "expectedAction是本题证据下的下一步，不是所有业务的唯一选型方案；缺销售结果不意味着所有学习方法都无法运行，只是不足以证明本题的缺货收益。",
+        "en": "expectedAction is the next step under these stated facts, not a universal selection rule. Missing sales outcomes does not make every learning method impossible; it prevents substantiating this stockout-benefit claim."
+      },
+      "sourceIds": [
+        "r3-d1-simple",
+        "r3-d1-roi",
+        "r3-d1-manage"
+      ],
+      "unitBindings": [
+        {
+          "unitId": "1.2-lesson-1",
+          "contentHash": "b5ec59b4f2c81a935db51f6746a3b9f5ac5c0a93af87eaf6c155e1017d90a537",
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:17893-17954",
+              "quote": "Don’t be afraid to launch a product without machine learning."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:19616-19702",
+              "quote": "Focusing only on technical metrics like accuracy without linking to business outcomes."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:19833-19910",
+              "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+            }
+          ]
+        }
+      ],
+      "lessonBindings": [
+        {
+          "catalogKey": "legacy4",
+          "courseId": "course-11fu42t",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.2",
+          "lessonId": "1.2-lesson-1",
+          "sourceUnitId": "1.2-lesson-1",
+          "lessonContentHash": "5987187997a0ed31aef1323e9f775cd57d833f88fc37bf41b24096dbd88abcda"
+        },
+        {
+          "catalogKey": "legacy5",
+          "courseId": "course-87vtar",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.2",
+          "lessonId": "1.2-lesson-1",
+          "sourceUnitId": "1.2-lesson-1",
+          "lessonContentHash": "5987187997a0ed31aef1323e9f775cd57d833f88fc37bf41b24096dbd88abcda"
+        },
+        {
+          "catalogKey": "aib4",
+          "courseId": "course-2iajim",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.6",
+          "lessonId": "1.6-lesson-3",
+          "sourceUnitId": "1.2-lesson-1",
+          "lessonContentHash": "a80fc23324cb4ea9e01e9a229f3bd72a03c34f97b6b0a49476fc8e9dbf0c9cd9"
+        },
+        {
+          "catalogKey": "aib5",
+          "courseId": "course-c5mcdg",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.6",
+          "lessonId": "1.6-lesson-3",
+          "sourceUnitId": "1.2-lesson-1",
+          "lessonContentHash": "a80fc23324cb4ea9e01e9a229f3bd72a03c34f97b6b0a49476fc8e9dbf0c9cd9"
+        }
+      ]
+    },
+    {
+      "id": "algorithm-model-artifact",
+      "unitIds": [
+        "1.1-lesson-1",
+        "1.1-lesson-2"
+      ],
+      "title": {
+        "zh": "步骤与产物观察窗",
+        "en": "Procedure and artifact window"
+      },
+      "objective": {
+        "zh": "通过执行步骤、保存产物和使用记录区分算法与本题的参数模型。",
+        "en": "Distinguish an algorithm from this task’s parameter model using procedure execution, stored artifacts, and use records."
+      },
+      "operation": {
+        "zh": "先执行给定排序步骤观察有序记录，再查看已给定参数模型文件及调用记录，分别说明方法、产物和正在发生的过程。",
+        "en": "Execute the given sorting steps to inspect ordered records, then inspect the specified parameter-model file and call record; identify method, artifact, and the ongoing process separately."
+      },
+      "teaching": {
+        "zh": "算法是执行方法；模型是用于映射输入到输出的表示。本题明确给定文件保存的是训练得到的参数模型，不能仅凭文件名猜内容或断言训练正在发生。",
+        "en": "An algorithm is an executable method; a model is a representation mapping inputs to outputs. Here the file is explicitly specified as containing a trained parameter model; a filename alone does not reveal its contents or establish that training is running."
+      },
+      "observations": [
+        {
+          "id": "sort-run",
+          "inputValues": [
+            40,
+            10,
+            25
+          ],
+          "expectedValues": [
+            10,
+            25,
+            40
+          ],
+          "meaning": {
+            "zh": "排序步骤正在执行，得到有序记录；这不等于训练出了需求模型。",
+            "en": "Sorting steps are executing and produce ordered records; this does not mean a demand model was trained."
+          }
+        },
+        {
+          "id": "saved-model",
+          "meaning": {
+            "zh": "明确给定的已训练参数文件是模型产物；文件存在不证明此刻训练。",
+            "en": "The explicitly specified trained-parameter file is a model artifact; its existence does not establish current training."
+          }
+        },
+        {
+          "id": "use-model",
+          "meaning": {
+            "zh": "固定模型接收本题输入生成需求估计；执行过程是推理，估计是输出，经理后续备料是行动。",
+            "en": "The fixed model takes this task’s input and produces a demand estimate; the process is inference, the estimate is an output, and the manager’s later supply choice is an action."
+          }
+        }
+      ],
+      "example": {
+        "zh": "同一个已保存模型可被多次调用；每次调用并非重新训练。",
+        "en": "The same stored model can be called repeatedly; each call is not necessarily retraining."
+      },
+      "counterexample": {
+        "zh": "看到名为model的文件便认定模型已训练且正在训练，缺少内容与执行证据。",
+        "en": "Seeing a file named model does not establish either completed training or current training without content and execution evidence."
+      },
+      "boundary": {
+        "zh": "仅以参数模型作示例，不把所有模型限定为权重文件；排序规则也可用于数据准备，但排序本身不证明发生学习。",
+        "en": "This illustrates a parameter model without restricting every model to a weight file. Sorting can be used in data preparation, but sorting alone does not establish learning."
+      },
+      "sourceIds": [
+        "d1-algorithm",
+        "d1-training"
+      ],
+      "unitBindings": [
+        {
+          "unitId": "1.1-lesson-1",
+          "contentHash": "6fbfff3e1dca7756856301b8302c58e7226df7b8a3da30a352c7a0dd4b8d573c",
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        },
+        {
+          "unitId": "1.1-lesson-2",
+          "contentHash": "aeb14576d4b97cfb2e6d71bce4b6d612e00e3d41eb106a99c3638ec221333b33",
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        }
+      ],
+      "lessonBindings": [
+        {
+          "catalogKey": "legacy4",
+          "courseId": "course-11fu42t",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-8",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonContentHash": "1d65e880955197b1a44cf26fb0ccc1906fd5cbdda11c7d2b44b835b6c9eb71fc"
+        },
+        {
+          "catalogKey": "legacy4",
+          "courseId": "course-11fu42t",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-9",
+          "sourceUnitId": "1.1-lesson-2",
+          "lessonContentHash": "d54f744bd76e66ee8160d586d64b687e861ed8a5f7d2729be04ceb14de25f63c"
+        },
+        {
+          "catalogKey": "legacy5",
+          "courseId": "course-87vtar",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-8",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonContentHash": "1d65e880955197b1a44cf26fb0ccc1906fd5cbdda11c7d2b44b835b6c9eb71fc"
+        },
+        {
+          "catalogKey": "legacy5",
+          "courseId": "course-87vtar",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-9",
+          "sourceUnitId": "1.1-lesson-2",
+          "lessonContentHash": "d54f744bd76e66ee8160d586d64b687e861ed8a5f7d2729be04ceb14de25f63c"
+        },
+        {
+          "catalogKey": "aib4",
+          "courseId": "course-2iajim",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-3",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonContentHash": "c4c869c69f991db089a14c0297b0aa7af25e28b4cdd230b9291e410810c6f193"
+        },
+        {
+          "catalogKey": "aib4",
+          "courseId": "course-2iajim",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-4",
+          "sourceUnitId": "1.1-lesson-2",
+          "lessonContentHash": "fc749e7d93be5865c1c85838c3fc72ec64919cb960e95fa42fef82bda4d7b41c"
+        },
+        {
+          "catalogKey": "aib5",
+          "courseId": "course-c5mcdg",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-3",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonContentHash": "c4c869c69f991db089a14c0297b0aa7af25e28b4cdd230b9291e410810c6f193"
+        },
+        {
+          "catalogKey": "aib5",
+          "courseId": "course-c5mcdg",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5,
+          "sectionId": "1.1",
+          "lessonId": "1.1-lesson-4",
+          "sourceUnitId": "1.1-lesson-2",
+          "lessonContentHash": "fc749e7d93be5865c1c85838c3fc72ec64919cb960e95fa42fef82bda4d7b41c"
+        }
+      ]
+    }
+  ]
+}

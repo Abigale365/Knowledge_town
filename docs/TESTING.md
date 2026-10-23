@@ -1,5 +1,17 @@
 # 当前测试入口
 
+## 2026-10-23 概念小游戏接线
+
+`test-current.cjs`纳入概念游戏实际入口、证据操作与刷新、单物件重开、知识显示投影、来源页面返回和旧代码题替代界面的模拟交互测试。基础确认类测试先通过场景发现及真实小游戏引擎操作取得资格，再验证原有功能；`concept-game-fixture.cjs`只提供合法操作前置，不冒充完整浏览器操作。专门UI测试另逐控件操作11类小游戏。
+
+图像小游戏的独立实际入口回归`tests/concept-image-integration-ui.cjs`同时检查错位置与过度原因断言被拒绝，图上选区跨语言/返回/刷新保留，改正后仍须手动收藏且不自动通章。它使用发布index脚本与模拟SVG事件，不是原生浏览器点击区域验收。
+
+`tests/concept-stage-host.cjs`验证首批小游戏证据升级后仍可回放、不自动收藏，以及四路线92条绑定的新草稿写入/恢复。首批引擎与catalog在系统临时目录组合当前宿主，结束清理；不依赖开发者私有预览目录，也不声称它是完整历史发布包（完整旧存档另由`old-save-ui.cjs`覆盖）。
+
+发布由`apps/game/concept-game-release.json`固定已审交付摘要；B源文件或review变化会阻止构建，须重新交接。知识英文补正只投影显示，不改变原课程摘要。当前真实浏览器不可用，动画观感、原生拖放和触摸仍待验收。
+
+已审侧车文件的Git属性保留原字节，避免Windows自动换行转换使review摘要在重新下载后失效；课程与课时内容也须仍匹配该交付的绑定摘要，失配时构建拒绝发布。
+
 ## 2026-10-22 B5集成验证范围
 
 默认总入口现纳入 `teaching-v5-ui.cjs`、`b5-micro-ui.cjs`、`b5-item-feedback-ui.cjs`，分别验证新版阶段、提前微练习及真实训练/推理逐项反馈。B4和经典入口测试继续保留。`teaching-stage-engine.test.cjs`覆盖两种课程285轮应用与存档门禁；`teaching-feedback-v5.test.cjs`核验323规范题及独立反馈绑定。
@@ -26,6 +38,7 @@ node scripts/test-current.cjs
 | 新手引导 | `node tests/game-guide.cjs` |
 | 档案馆／群岛／寻物社 | `node tests/ui-smoke.cjs`、`node tests/expedition-ui.cjs`、`node tests/hunt-ui.cjs` |
 | 静态美术与入口检查 | `python -X utf8 tests/static-audit.py` |
+| 本地发布实际生效（构建并启动后） | `node scripts/check-local-release.cjs`，核8782身份及四入口所引用资源与dist字节一致；不代替浏览器视觉验收 |
 | 手动容量检查 | `node tests/capacity.cjs` |
 
 容量检查默认更新页面的 `dist/capacity-report.json` 摘要，并把完整本机结果写到忽略上传的 `artifacts/runtime/capacity.json`。仅验证、不更新报告时，设置环境变量 `TOWN_NO_REPORT=1`。

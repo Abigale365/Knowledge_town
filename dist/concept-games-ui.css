@@ -1,0 +1,143 @@
+/* Concept minigame surfaces. Teaching content and checks are supplied by the reviewed engine. */
+.concept-game{--cg-ink:#345347;--cg-paper:#fff9e9;--cg-border:#bdcbb0;color:var(--cg-ink);min-width:0}
+.concept-game h2,.concept-game h3,.concept-game p,.concept-game button,.concept-game label{overflow-wrap:anywhere}
+.concept-game button{min-height:44px;touch-action:manipulation}
+.concept-game button[aria-pressed="true"]{border-color:#638856;background:#dcebcf;box-shadow:0 0 0 2px #a4bd8d66;font-weight:600}
+.concept-game .cg-evidence{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:12px;margin-bottom:18px}
+.concept-game .cg-evidence>section{padding:12px;background:#fff9e9;border:1px solid #bdcbb0;border-radius:12px;min-width:0}
+.concept-game .cg-evidence h3{margin:0 0 9px}
+.concept-game .cg-reference-list{margin:12px 0;padding:10px;border:1px solid #c1cdb1;border-radius:10px;background:#f4f6e8;max-height:270px;overflow:auto}
+.concept-game .cg-reference-list summary{cursor:pointer;min-height:32px;font-weight:600}
+.concept-game .cg-reference-list summary:focus-visible{outline:3px solid #ac963e;outline-offset:3px}
+.concept-game .cg-reference{padding:8px 0;border-top:1px solid #d4dcc9}
+.concept-game .cg-reference h4{margin:5px 0}
+.concept-game .cg-reference p{margin:6px 0;line-height:1.6}
+.concept-game .cg-inspection-image{display:block;width:100%;max-width:600px;height:auto;margin:12px auto;border:2px solid #9aaf99;border-radius:10px}
+.concept-game [data-cg-region]{cursor:pointer;pointer-events:all;vector-effect:non-scaling-stroke}
+.concept-game [data-cg-region]:focus-visible{outline:none;stroke:#ac8136;stroke-width:4;stroke-dasharray:5 3}
+.concept-game fieldset:disabled [data-cg-region]{cursor:default}
+.concept-game .cg-process{padding:14px;margin:0 0 16px;border:1px solid #9aaf99;border-radius:14px;background:#f8f9ed}
+.concept-game .cg-process h3{margin:0 0 12px}
+.concept-game .cg-process-lane{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr) 30px minmax(0,1fr);align-items:center;gap:6px}
+.concept-game .cg-process-lane>section{padding:12px 8px;border:1px solid #bbcaac;border-radius:10px;background:#fffdf2;min-width:0}
+.concept-game .cg-process-lane>section>span{display:block;font-size:.85em;margin-bottom:8px}
+.concept-game .cg-process-lane strong{display:block;min-height:28px}
+.concept-game .cg-process-link{position:relative;text-align:center;font-size:24px;color:#69865a}
+.concept-game .cg-process-link i{position:absolute;top:12px;left:0;width:9px;height:9px;border-radius:50%;background:#ac853c;opacity:0}
+.concept-game .cg-process-motion .cg-process-link i{animation:cg-transfer .42s ease-out 1 both}
+.concept-game .cg-process-motion .cg-process-link-out i{animation-delay:.5s}
+.concept-game .cg-process-motion.cg-process-changed .cg-parameter-after{display:inline-block;animation:cg-parameter-turn .45s ease-out .23s 1 both}
+.concept-game .cg-process-changed .cg-parameter-before{color:#796f5d}
+.concept-game .cg-process-changed .cg-parameter-after{color:#315e43;text-decoration:underline;text-underline-offset:4px}
+.concept-game .cg-stock-row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;margin:8px 0 16px;min-width:0}
+.concept-game .cg-cargo-slot{min-height:45px;position:relative;display:grid;place-items:center;border:1px dashed #bdcbb0;border-radius:5px;background:#f5f4e8;font-size:12px}
+.concept-game .cg-cargo-slot>span{position:relative;z-index:1}
+.concept-game .cg-cargo-present{background:#dce9d1;border-style:solid;border-color:#88a178}
+.concept-game .cg-cargo-present i{position:absolute;inset:5px;border:1px solid #8da27b;border-radius:2px;transform:rotate(3deg)}
+.concept-game .cg-cargo-unpaired{border:2px solid #b58e42;background:#f5e9c8}
+.concept-game .cg-cluster-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.concept-game .cg-cluster-group{min-height:170px;padding:12px;border:2px dashed #9aaf99;border-radius:12px;background:#f7f4e4;min-width:0}
+.concept-game .cg-cluster-group h3{margin:0 0 10px}
+.concept-game .cg-point-tray{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0;min-height:50px}
+.concept-game .cg-point-tray h3{flex-basis:100%;margin:0}
+.concept-game [data-cg-point]{border:2px solid #a0b18b;border-radius:18px;padding:9px;background:#f7fbe9;cursor:grab}
+.concept-game [data-cg-point]:active{cursor:grabbing}
+.concept-game [data-cg-point] strong{display:inline-block;margin-left:8px;font-size:1.25em}
+.concept-game .cg-cluster-shortcuts{margin-top:18px;padding:12px;border-top:1px solid #bdcbb0}
+.concept-game .cg-cluster-shortcuts summary{cursor:pointer;min-height:44px}
+.concept-game .cg-sample-observation{padding:14px;margin:12px 0;border:1px solid #a5b797;border-radius:12px;background:#fafbed}
+.concept-game .cg-sample-plot{display:block;width:100%;max-width:440px;height:auto;margin:10px auto;overflow:visible}
+.concept-game .cg-sample-plot text{font:12px sans-serif;fill:#345347}
+.concept-game .cg-sample-available circle{fill:#eee9c9;stroke:#9b9e7c;stroke-width:1.5}
+.concept-game .cg-sample-chosen circle{fill:#bdd6a4;stroke:#3e694b;stroke-width:4}
+.concept-game .cg-sample-unlabeled{padding:8px;border-left:3px dashed #a4a080}
+.concept-game .cg-sample-fit{padding:10px;background:#e1ebd4;border-radius:8px}
+.concept-game .cg-reward-lane{padding:10px 0;border-top:1px solid #c4ceb9}
+.concept-game .cg-reward-lane h4{margin:0 0 10px}
+.concept-game .cg-reward-trail{list-style:none;display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:4px 0}
+.concept-game .cg-reward-step{position:relative;display:grid;grid-template-columns:30px minmax(0,1fr);gap:7px;align-items:center;max-width:240px;min-width:0;border:1px solid #aabc98;border-radius:10px;padding:10px;background:#f8f7e7}
+.concept-game .cg-reward-step>strong{grid-column:2;font-size:1.3em}
+.concept-game .cg-reward-marker{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:2px solid #7d9871;background:#e1e8d0;color:#345347}
+.concept-game .cg-reward-step:not(:first-child)::before{content:'→';position:absolute;left:-12px;top:15px;color:#7d9871}
+.concept-game .cg-reward-new .cg-reward-marker{animation:cg-route-step .4s ease-out 1 both}
+.concept-game .cg-reward-unknown{padding:10px;border-left:3px dashed #b7bba2}
+.concept-game .cg-model-paths{display:grid;gap:12px;margin:16px 0}
+.concept-game .cg-model-lane{display:grid;grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr) 26px minmax(0,1fr);gap:6px;align-items:center;padding:12px;border:1px solid #a5b797;border-radius:14px;background:#eef1e4}
+.concept-game .cg-model-port{min-width:0;background:#fffbed;border:1px solid #c2cdb1;border-radius:9px;padding:10px}
+.concept-game .cg-model-port>span{display:block;font-size:.87em;margin-bottom:8px}
+.concept-game .cg-model-port>strong{display:block;margin:8px 0;min-height:28px}
+.concept-game .cg-model-port button{max-width:100%;margin-top:8px}
+.concept-game .cg-model-history{grid-column:1/-1}
+.concept-game .cg-model-history summary{cursor:pointer;min-height:32px}
+.concept-game .cg-ledger-scroll{overflow-x:auto;max-width:100%;margin:14px 0;border:1px solid #b8c7a8;border-radius:10px;background:#fffbed;scrollbar-width:thin}
+.concept-game .cg-ledger-scroll:focus-visible{outline:3px solid #ac963e;outline-offset:3px}
+.concept-game .cg-ledger{width:100%;min-width:760px;border-collapse:collapse;font-size:.92em}
+.concept-game .cg-ledger caption{text-align:left;padding:12px;background:#eef2e2;line-height:1.6}
+.concept-game .cg-ledger th,.concept-game .cg-ledger td{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid #d0dac2}
+.concept-game .cg-ledger thead th{background:#e5ecd8}
+.concept-game .cg-ledger tbody tr:nth-child(even){background:#f2f4e8}
+.concept-game .cg-ledger tbody th{white-space:nowrap;font-weight:600}
+.concept-game .cg-ledger-quantity{min-width:65px}
+.concept-game .cg-ledger-source{min-width:200px;max-width:300px;line-height:1.65}
+.concept-game .cg-ledger-decision{min-width:260px}
+.concept-game .cg-ledger .cg-options{gap:6px}
+.concept-game .cg-ledger button{text-align:left;padding:8px;max-width:100%}
+.concept-game .cg-model-motion .cg-process-link i{animation:cg-transfer .42s ease-out 1 both}
+.concept-game .cg-model-motion .cg-process-link-out i{animation-delay:.5s}
+@media(max-width:480px){.concept-game .cg-model-lane{grid-template-columns:1fr}.concept-game .cg-model-lane>.cg-process-link{transform:rotate(90deg);width:30px;justify-self:center}}
+@keyframes cg-route-step{from{transform:translateX(-10px) rotate(-12deg);opacity:.35}to{transform:translateX(0) rotate(0);opacity:1}}
+@media(max-width:480px){.concept-game .cg-cluster-board{grid-template-columns:1fr}.concept-game .cg-cluster-group{min-height:120px}}
+.concept-game .cg-inventory-motion [data-cg-stock-row="demand"] .cg-cargo-present{animation:cg-cargo-arrive .3s ease-out 1 both;animation-delay:calc(var(--cg-cargo-index) * .025s)}
+@keyframes cg-cargo-arrive{from{transform:translateY(8px);opacity:.35}to{transform:translateY(0);opacity:1}}
+@media(max-width:480px){.concept-game .cg-stock-row{gap:2px}.concept-game .cg-cargo-slot{min-height:38px;font-size:11px}.concept-game .cg-cargo-present i{inset:3px}}
+@keyframes cg-transfer{0%{transform:translateX(-5px);opacity:0}20%{opacity:1}90%{opacity:1}100%{transform:translateX(25px);opacity:0}}
+@keyframes cg-parameter-turn{0%{transform:translateY(5px);background:#ead8a0}100%{transform:translateY(0);background:transparent}}
+@media(max-width:480px){.concept-game .cg-process-lane{grid-template-columns:1fr}.concept-game .cg-process-link{transform:rotate(90deg);width:30px;justify-self:center}.concept-game .cg-process-lane>section{width:100%;box-sizing:border-box}}
+.concept-game .cg-operation>button,.concept-game .cg-bin>button{margin:4px;max-width:calc(100% - 8px)}
+.concept-game .cg-operation{padding:12px;margin-bottom:12px;border:1px solid #c8d2bc;border-radius:10px;background:#fffbed}
+.concept-game .cg-operation h4{margin:0 0 8px}
+.concept-game .cg-success{padding:14px;background:#e7efda;border:1px solid #9db78d;border-radius:12px;line-height:1.65}
+.concept-game .cg-secondary{display:block;font-size:.87em;font-weight:400;line-height:1.5;color:#637565;margin-top:3px}
+.concept-game .cg-intro{padding:15px 18px;border:1px solid var(--cg-border);border-radius:14px;background:#eef3e4;line-height:1.7}
+.concept-game .cg-goal{font-weight:600}
+.concept-game .cg-teaching{padding:15px 18px;border-left:4px solid #b9a66e;background:#fbf1d8;line-height:1.75}
+.concept-game .cg-progress{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0;align-items:center;font-size:12px}
+.concept-game .cg-progress span{padding:5px 9px;border:1px solid #c7d1b6;border-radius:12px;background:#f2f4e8}
+.concept-game .cg-progress .cg-current{background:#dae9d5;border-color:#789a6e;font-weight:600}
+.concept-game .cg-workbench{border:1px solid #bbc9b0;border-radius:16px;padding:18px;background:linear-gradient(135deg,#f9f5e6,#e8efdf);min-width:0;margin:16px 0}
+.concept-game .cg-workbench>fieldset{border:0;padding:0;margin:0;min-width:0}
+.concept-game .cg-items,.concept-game .cg-options{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;min-width:0}
+.concept-game .cg-item{min-height:44px;min-width:44px;padding:11px 14px;border:1px solid #c8c4a7;border-radius:10px;background:#fffbee;text-align:left;box-shadow:0 3px 0 #73836318;max-width:100%;touch-action:manipulation}
+.concept-game .cg-item[aria-pressed="true"],.concept-game .cg-selected{border-color:#638856;background:#e2edd7;box-shadow:0 0 0 2px #a4bd8d66}
+.concept-game .cg-bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px;margin-top:16px;min-width:0}
+.concept-game .cg-bin{min-width:0;border:2px dashed #aebd9f;border-radius:14px;padding:13px;background:#f8f8eb}
+.concept-game .cg-bin>button{width:100%;min-height:44px;text-align:left;background:#e5ecd8;border-color:#bac9a5}
+.concept-game .cg-bin .cg-items{padding-top:10px;min-height:54px}
+.concept-game .cg-track{display:flex;gap:8px;align-items:stretch;overflow-x:auto;padding:12px 3px;min-height:85px;scrollbar-width:thin}
+.concept-game .cg-track-slot{flex:0 0 140px;padding:10px;border:1px solid #b8bd9d;background:#f6eac9;border-radius:10px;min-width:0}
+.concept-game .cg-track-slot button{min-height:44px;max-width:100%}
+.concept-game .cg-move{display:flex;gap:5px;margin-top:7px}
+.concept-game .cg-move button{min-width:44px;min-height:44px;padding:6px}
+.concept-game .cg-fields{display:grid;gap:12px}
+.concept-game .cg-field{display:grid;grid-template-columns:minmax(0,1fr) minmax(90px,160px);gap:12px;align-items:center;padding:12px;background:#fff9e9;border:1px solid #c6ceb4;border-radius:10px;min-width:0}
+.concept-game input,.concept-game select{font:inherit;min-height:44px;max-width:100%;min-width:0;padding:8px;border:1px solid #9aaf8d;border-radius:8px;background:#fffef8;color:inherit}
+.concept-game .cg-machine{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;padding:16px;background:#e6eee5;border:2px solid #9aaf99;border-radius:16px}
+.concept-game .cg-machine-port{padding:12px;border-radius:10px;background:#fff8e6;min-width:0}
+.concept-game .cg-machine button{min-height:44px;min-width:44px}
+.concept-game .cg-log{max-height:260px;overflow:auto;border:1px solid #b8c5b1;background:#fbfcf4;border-radius:10px;margin-top:14px;padding:10px}
+.concept-game .cg-log p{margin:7px 0;padding-bottom:7px;border-bottom:1px solid #e1e6d7}
+.concept-game .cg-matrix-wrap{max-width:100%;overflow-x:auto}
+.concept-game .cg-matrix{width:100%;border-collapse:collapse;font-size:14px}
+.concept-game .cg-matrix th,.concept-game .cg-matrix td{padding:8px;text-align:left;border-bottom:1px solid #ccd6bd}
+.concept-game .cg-matrix button{min-width:44px;min-height:44px}
+.concept-game .cg-feedback{padding:14px;border:1px solid #c6c9a6;border-radius:12px;background:#fff8df;margin:14px 0}
+.concept-game .cg-feedback ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.concept-game .cg-feedback li{padding:10px;border-radius:9px;background:#fffdf4;line-height:1.6}
+.concept-game .cg-feedback .cg-correct{border-left:4px solid #6c9762}
+.concept-game .cg-feedback .cg-review{border-left:4px solid #ba954e}
+.concept-game .cg-error{color:#8b513d;background:#fbebdf;padding:12px;border-radius:10px;line-height:1.6}
+.concept-game .cg-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.concept-game .cg-actions button{min-height:44px}
+.concept-game button:focus-visible,.concept-game input:focus-visible,.concept-game select:focus-visible{outline:3px solid #ac963e;outline-offset:3px}
+@media(max-width:650px){.concept-game .cg-workbench{padding:12px}.concept-game .cg-machine{grid-template-columns:1fr}.concept-game .cg-field{grid-template-columns:1fr}.concept-game .cg-track-slot{flex-basis:125px}.concept-game .cg-actions>button{flex:1 1 140px}.concept-game .cg-intro,.concept-game .cg-teaching{padding:12px}}
+@media(prefers-reduced-motion:reduce){.concept-game *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

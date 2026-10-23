@@ -1,8 +1,9 @@
 'use strict';
 const assert=require('node:assert/strict'),harness=require('./town-harness.cjs'),B=require('../packages/learning-design/teaching-logic.v5.cjs');
+const conceptFixture=require('./concept-game-fixture.cjs');
 (async()=>{
  const h=await harness(new Map(),{entrySchedule:true});h.run("close();openTeachingCourse('legacy5')");
- for(const id of h.run('studySection().lessons.map(l=>l.id)')){h.run(`openStudyLesson(${JSON.stringify(id)})`);h.click('confirmFoundation');}
+ for(const id of h.run('studySection().lessons.map(l=>l.id)')){h.run(`openStudyLesson(${JSON.stringify(id)},false,null,true)`);conceptFixture.complete(h,id);h.click('confirmFoundation');}
  h.run('openTaskWorkshop()');h.click('b5DemoDone');const guided=h.run('teachingContext().flow.section(studySection().id).policy.guidedPractice.round');h.run(`Object.assign(teachingContext().p.guided[studySection().id].draft,${JSON.stringify(B.witness(guided))})`);h.click('b5GuidedSubmit');
  let round=h.run('studySection().activity.rounds[WorkshopEngine.progress(studyState(),studySection()).round]');
  while(round.id!=='inspect-model-work'){h.run(`Object.assign(WorkshopEngine.progress(studyState(),studySection()).draft,${JSON.stringify(B.witness(round))})`);h.click('workshopSubmit');h.click('workshopNext');round=h.run('studySection().activity.rounds[WorkshopEngine.progress(studyState(),studySection()).round]');}

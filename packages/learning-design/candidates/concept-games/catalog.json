@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "status": "first-batch-candidate",
+  "knowledge": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+  },
+  "serialization": "Binding SHA256 = UTF8(JSON.stringify(full original object)); replay fingerprints use sorted canonical encoding separately.",
+  "courseSources": [
+    {
+      "name": "B4-aib",
+      "source": "scripts/teaching-catalog.cjs#catalog().aib.course",
+      "courseId": "course-2iajim",
+      "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4"
+    },
+    {
+      "name": "B4-legacy",
+      "source": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+      "courseId": "course-11fu42t",
+      "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66"
+    },
+    {
+      "name": "B5-aib",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+      "courseId": "course-c5mcdg",
+      "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4"
+    },
+    {
+      "name": "B5-legacy",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+      "courseId": "course-87vtar",
+      "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21"
+    }
+  ],
+  "games": [
+    {
+      "schemaVersion": 1,
+      "id": "algorithm-rule",
+      "revision": 1,
+      "kind": "rule-runner",
+      "title": {
+        "zh": "固定规则实验台",
+        "en": "Fixed-rule experiment"
+      },
+      "goal": {
+        "zh": "亲自重跑相同输入和规则，观察是否一致；再用阈值边界检查不同输入。",
+        "en": "Rerun identical input and rule versions, observe consistency, then test the threshold boundary."
+      },
+      "teaching": {
+        "title": {
+          "zh": "算法 Algorithm",
+          "en": "Algorithm"
+        },
+        "explanation": {
+          "zh": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+          "en": "An algorithm is an executable method or sequence of steps. Model training follows algorithms, but an algorithm is not itself the resulting trained model."
+        },
+        "example": {
+          "zh": "本题规则R1：数量达到10（含10）转人工复核，否则直接流转。它是固定规则演练，不是通用审批政策。相同输入和规则版本应可重复；改输入可能改动作。",
+          "en": "Exercise rule R1: quantities at least 10 go to human review; lower quantities proceed. This is an exercise rule, not a general approval policy. Identical input and version should reproduce results; changing input may change the action."
+        }
+      },
+      "instructions": {
+        "zh": "选择输入和预计动作再运行。对同一输入重跑，之后检查9和10两侧，并根据记录说明结论。",
+        "en": "Choose an input and expected action, then run. Repeat an identical input, test 9 and 10, then conclude from the records."
+      },
+      "sourceUnitId": "1.1-lesson-1",
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-1",
+          "unitHash": "6fbfff3e1dca7756856301b8302c58e7226df7b8a3da30a352c7a0dd4b8d573c",
+          "title": {
+            "zh": "算法 Algorithm",
+            "en": "Algorithm"
+          },
+          "explanation": {
+            "zh": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+            "en": "An algorithm is an executable method or sequence of steps. Model training follows algorithms, but an algorithm is not itself the resulting trained model."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        },
+        {
+          "unitId": "1.2.1-unit-1",
+          "unitHash": "c0aa42566e4376e87b68d78d1a26995eaae06fd30ed33d58912b9d453c8d9f3a",
+          "title": {
+            "zh": "确定性与可重复执行",
+            "en": "Determinism and reproducible execution"
+          },
+          "explanation": {
+            "zh": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+            "en": "A rule-based system maps explicit conditions to actions. The same input and rule version should yield the same result, making it suitable for fixed thresholds, required-field checks and explicit approval policies."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            }
+          ]
+        }
+      ],
+      "knowledge": {
+        "id": "aib-knowledge-integration",
+        "revision": 3,
+        "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+      },
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.1-lesson-3",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonHash": "c4c869c69f991db089a14c0297b0aa7af25e28b4cdd230b9291e410810c6f193"
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-8",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonHash": "1d65e880955197b1a44cf26fb0ccc1906fd5cbdda11c7d2b44b835b6c9eb71fc"
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.1-lesson-3",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonHash": "c4c869c69f991db089a14c0297b0aa7af25e28b4cdd230b9291e410810c6f193"
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-8",
+          "sourceUnitId": "1.1-lesson-1",
+          "lessonHash": "1d65e880955197b1a44cf26fb0ccc1906fd5cbdda11c7d2b44b835b6c9eb71fc"
+        }
+      ],
+      "config": {
+        "minInput": 0,
+        "maxInput": 20,
+        "threshold": 10,
+        "ruleVersion": "R1",
+        "below": "proceed",
+        "atOrAbove": "review",
+        "outputs": [
+          {
+            "id": "proceed",
+            "text": {
+              "zh": "直接流转",
+              "en": "Proceed"
+            }
+          },
+          {
+            "id": "review",
+            "text": {
+              "zh": "转人工复核",
+              "en": "Human review"
+            }
+          }
+        ],
+        "conclusions": [
+          {
+            "id": "stable",
+            "text": {
+              "zh": "相同输入和规则版本，结果可重复",
+              "en": "Same input and rule version reproduce the result"
+            }
+          },
+          {
+            "id": "always-same",
+            "text": {
+              "zh": "输入怎样变，输出都必须一样",
+              "en": "Output must stay identical for every input"
+            }
+          },
+          {
+            "id": "learns-by-running",
+            "text": {
+              "zh": "多运行几次就自动从样本学习",
+              "en": "Repeated runs automatically learn from examples"
+            }
+          }
+        ]
+      },
+      "boundary": {
+        "zh": "本次观察只验证给定输入和R1规则，不能据此断言所有AI都不变或已发生学习。",
+        "en": "These observations concern the given inputs and rule R1; they do not prove all AI is invariant or that learning occurred."
+      },
+      "collectionPolicy": {
+        "requiresRealDiscovery": true,
+        "requiresConceptGamePass": true,
+        "preserveExistingCollections": true,
+        "doesNotGrant": [
+          "automatic-favorite",
+          "section-application-pass",
+          "formal-exam-pass",
+          "independent-mastery"
+        ]
+      },
+      "signature": "cg1-b066977b-4847"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "deterministic-replay",
+      "revision": 1,
+      "kind": "rule-runner",
+      "title": {
+        "zh": "固定规则实验台",
+        "en": "Fixed-rule experiment"
+      },
+      "goal": {
+        "zh": "亲自重跑相同输入和规则，观察是否一致；再用阈值边界检查不同输入。",
+        "en": "Rerun identical input and rule versions, observe consistency, then test the threshold boundary."
+      },
+      "teaching": {
+        "title": {
+          "zh": "确定性与可重复执行",
+          "en": "Determinism and reproducible execution"
+        },
+        "explanation": {
+          "zh": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+          "en": "A rule-based system maps explicit conditions to actions. The same input and rule version should yield the same result, making it suitable for fixed thresholds, required-field checks and explicit approval policies."
+        },
+        "example": {
+          "zh": "本题规则R1：数量达到10（含10）转人工复核，否则直接流转。它是固定规则演练，不是通用审批政策。相同输入和规则版本应可重复；改输入可能改动作。",
+          "en": "Exercise rule R1: quantities at least 10 go to human review; lower quantities proceed. This is an exercise rule, not a general approval policy. Identical input and version should reproduce results; changing input may change the action."
+        }
+      },
+      "instructions": {
+        "zh": "选择输入和预计动作再运行。对同一输入重跑，之后检查9和10两侧，并根据记录说明结论。",
+        "en": "Choose an input and expected action, then run. Repeat an identical input, test 9 and 10, then conclude from the records."
+      },
+      "sourceUnitId": "1.2.1-unit-1",
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-1",
+          "unitHash": "6fbfff3e1dca7756856301b8302c58e7226df7b8a3da30a352c7a0dd4b8d573c",
+          "title": {
+            "zh": "算法 Algorithm",
+            "en": "Algorithm"
+          },
+          "explanation": {
+            "zh": "算法是一套可执行的方法或步骤。模型训练也依照算法进行，但算法本身不是训练后得到的模型。",
+            "en": "An algorithm is an executable method or sequence of steps. Model training follows algorithms, but an algorithm is not itself the resulting trained model."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        },
+        {
+          "unitId": "1.2.1-unit-1",
+          "unitHash": "c0aa42566e4376e87b68d78d1a26995eaae06fd30ed33d58912b9d453c8d9f3a",
+          "title": {
+            "zh": "确定性与可重复执行",
+            "en": "Determinism and reproducible execution"
+          },
+          "explanation": {
+            "zh": "规则系统把明确条件映射到动作。同一输入和规则版本应产生同一结果，适合固定阈值、必填校验和明确审批政策。",
+            "en": "A rule-based system maps explicit conditions to actions. The same input and rule version should yield the same result, making it suitable for fixed thresholds, required-field checks and explicit approval policies."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5589-5711",
+              "quote": "A clearly specified mathematical process for computation; a set of rules that, if followed, will give a prescribed result."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            }
+          ]
+        }
+      ],
+      "knowledge": {
+        "id": "aib-knowledge-integration",
+        "revision": 3,
+        "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+      },
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.7-lesson-4",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonHash": "6520ce0caeb3c37760051d9cc37bae6a2d76de7a1802630b5563352b38578091"
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.2-lesson-6",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonHash": "4d8cead3f072b637b6b205e66100f2c74b435fc9cebb2b4997563df1f778d5db"
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.7-lesson-4",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonHash": "6520ce0caeb3c37760051d9cc37bae6a2d76de7a1802630b5563352b38578091"
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.2-lesson-6",
+          "sourceUnitId": "1.2.1-unit-1",
+          "lessonHash": "4d8cead3f072b637b6b205e66100f2c74b435fc9cebb2b4997563df1f778d5db"
+        }
+      ],
+      "config": {
+        "minInput": 0,
+        "maxInput": 20,
+        "threshold": 10,
+        "ruleVersion": "R1",
+        "below": "proceed",
+        "atOrAbove": "review",
+        "outputs": [
+          {
+            "id": "proceed",
+            "text": {
+              "zh": "直接流转",
+              "en": "Proceed"
+            }
+          },
+          {
+            "id": "review",
+            "text": {
+              "zh": "转人工复核",
+              "en": "Human review"
+            }
+          }
+        ],
+        "conclusions": [
+          {
+            "id": "stable",
+            "text": {
+              "zh": "相同输入和规则版本，结果可重复",
+              "en": "Same input and rule version reproduce the result"
+            }
+          },
+          {
+            "id": "always-same",
+            "text": {
+              "zh": "输入怎样变，输出都必须一样",
+              "en": "Output must stay identical for every input"
+            }
+          },
+          {
+            "id": "learns-by-running",
+            "text": {
+              "zh": "多运行几次就自动从样本学习",
+              "en": "Repeated runs automatically learn from examples"
+            }
+          }
+        ]
+      },
+      "boundary": {
+        "zh": "本次观察只验证给定输入和R1规则，不能据此断言所有AI都不变或已发生学习。",
+        "en": "These observations concern the given inputs and rule R1; they do not prove all AI is invariant or that learning occurred."
+      },
+      "collectionPolicy": {
+        "requiresRealDiscovery": true,
+        "requiresConceptGamePass": true,
+        "preserveExistingCollections": true,
+        "doesNotGrant": [
+          "automatic-favorite",
+          "section-application-pass",
+          "formal-exam-pass",
+          "independent-mastery"
+        ]
+      },
+      "signature": "cg1-f034c7e0-4947"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "training-parameter-lab",
+      "revision": 1,
+      "kind": "parameter-lab",
+      "title": {
+        "zh": "参数实验台：使用与学习",
+        "en": "Parameter lab: use and learning"
+      },
+      "goal": {
+        "zh": "亲自使用模型、用核验样本改变参数，再用新输入检查使用过程，区分训练与推理。",
+        "en": "Use a model, change its parameter with a verified example, then try a new input and distinguish training from inference."
+      },
+      "teaching": {
+        "title": {
+          "zh": "训练 Training",
+          "en": "Training"
+        },
+        "explanation": {
+          "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+          "en": "Training uses existing examples to adjust model parameters so the model learns patterns in data. Good training performance does not guarantee good performance on new data; independent validation is needed."
+        },
+        "example": {
+          "zh": "本题简化模型：输出=参数×输入，初始参数2。核验样本输入2、真实结果8。使用模型不改变参数；学习按钮按本题样本拟合参数。一次拟合演练不代表所有模型都这样训练。",
+          "en": "Toy model: output = parameter × input, initially parameter 2. A verified example has input 2 and outcome 8. Using the model leaves the parameter unchanged; the learning button fits this example. This one-step exercise is not a universal training process."
+        }
+      },
+      "instructions": {
+        "zh": "先用初始模型试输入；再用核验样本学习；换个输入使用学后的模型；根据实际记录判断哪次改变了参数。",
+        "en": "Try the initial model, learn from the verified example, use the fitted model on a different input, then judge which recorded operation changed parameters."
+      },
+      "sourceUnitId": "1.1-lesson-3",
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-3",
+          "unitHash": "129f983acc1dc259049e35662c9b405f093d73babff2d05d5779e89ee5449734",
+          "title": {
+            "zh": "训练 Training",
+            "en": "Training"
+          },
+          "explanation": {
+            "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+            "en": "Training uses existing examples to adjust model parameters so the model learns patterns in data. Good training performance does not guarantee good performance on new data; independent validation is needed."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2852-2919",
+              "quote": "models should not be evaluated on the same data they're trained on."
+            }
+          ]
+        },
+        {
+          "unitId": "1.1-lesson-4",
+          "unitHash": "0d281d95a9ec919f320d0d1fe3b9ce3e79e0193d5d58d8980f5c65b7a10b70b9",
+          "title": {
+            "zh": "推理 Inference",
+            "en": "Inference"
+          },
+          "explanation": {
+            "zh": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+            "en": "Inference uses a trained model to process new inputs. Training changes parameters; inference usually uses existing parameters to produce predictions or generated content."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2643-2727",
+              "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        }
+      ],
+      "knowledge": {
+        "id": "aib-knowledge-integration",
+        "revision": 3,
+        "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+      },
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.3-lesson-2",
+          "sourceUnitId": "1.1-lesson-3",
+          "lessonHash": "eabe3ed5de9c1d9763da66a657fe2e17346533f1570eb7df493954328d630656"
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-10",
+          "sourceUnitId": "1.1-lesson-3",
+          "lessonHash": "bed24137e2b1736ffa518cff449b4aff73fd11ae629f56b187f23c78ff240fd6"
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.3-lesson-2",
+          "sourceUnitId": "1.1-lesson-3",
+          "lessonHash": "eabe3ed5de9c1d9763da66a657fe2e17346533f1570eb7df493954328d630656"
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-10",
+          "sourceUnitId": "1.1-lesson-3",
+          "lessonHash": "bed24137e2b1736ffa518cff449b4aff73fd11ae629f56b187f23c78ff240fd6"
+        }
+      ],
+      "config": {
+        "minInput": 1,
+        "maxInput": 5,
+        "initialWeight": 2,
+        "sample": {
+          "input": 2,
+          "target": 8
+        },
+        "operationLabels": {
+          "infer": {
+            "zh": "用现有模型试算",
+            "en": "Use the existing model"
+          },
+          "train": {
+            "zh": "利用核验样本学习",
+            "en": "Learn from the verified example"
+          },
+          "resetModel": {
+            "zh": "回到初始模型",
+            "en": "Return to initial model"
+          }
+        },
+        "judgmentOptions": [
+          {
+            "id": "training",
+            "text": {
+              "zh": "训练：利用样本改变参数",
+              "en": "Training: change parameters from examples"
+            }
+          },
+          {
+            "id": "inference",
+            "text": {
+              "zh": "推理：使用已有参数",
+              "en": "Inference: use existing parameters"
+            }
+          }
+        ]
+      },
+      "boundary": {
+        "zh": "这里只演示单参数与显式核验样本；输出正确不等于真实业务已验证，训练演练通过不代表泛化已经证明。",
+        "en": "This demonstrates one parameter and a verified example. Correct toy outputs do not validate a real use or establish generalization."
+      },
+      "collectionPolicy": {
+        "requiresRealDiscovery": true,
+        "requiresConceptGamePass": true,
+        "preserveExistingCollections": true,
+        "doesNotGrant": [
+          "automatic-favorite",
+          "section-application-pass",
+          "formal-exam-pass",
+          "independent-mastery"
+        ]
+      },
+      "signature": "cg1-9f42fcbf-4877"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "inference-parameter-lab",
+      "revision": 1,
+      "kind": "parameter-lab",
+      "title": {
+        "zh": "参数实验台：使用与学习",
+        "en": "Parameter lab: use and learning"
+      },
+      "goal": {
+        "zh": "亲自使用模型、用核验样本改变参数，再用新输入检查使用过程，区分训练与推理。",
+        "en": "Use a model, change its parameter with a verified example, then try a new input and distinguish training from inference."
+      },
+      "teaching": {
+        "title": {
+          "zh": "推理 Inference",
+          "en": "Inference"
+        },
+        "explanation": {
+          "zh": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+          "en": "Inference uses a trained model to process new inputs. Training changes parameters; inference usually uses existing parameters to produce predictions or generated content."
+        },
+        "example": {
+          "zh": "本题简化模型：输出=参数×输入，初始参数2。核验样本输入2、真实结果8。使用模型不改变参数；学习按钮按本题样本拟合参数。一次拟合演练不代表所有模型都这样训练。",
+          "en": "Toy model: output = parameter × input, initially parameter 2. A verified example has input 2 and outcome 8. Using the model leaves the parameter unchanged; the learning button fits this example. This one-step exercise is not a universal training process."
+        }
+      },
+      "instructions": {
+        "zh": "先用初始模型试输入；再用核验样本学习；换个输入使用学后的模型；根据实际记录判断哪次改变了参数。",
+        "en": "Try the initial model, learn from the verified example, use the fitted model on a different input, then judge which recorded operation changed parameters."
+      },
+      "sourceUnitId": "1.1-lesson-4",
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-3",
+          "unitHash": "129f983acc1dc259049e35662c9b405f093d73babff2d05d5779e89ee5449734",
+          "title": {
+            "zh": "训练 Training",
+            "en": "Training"
+          },
+          "explanation": {
+            "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+            "en": "Training uses existing examples to adjust model parameters so the model learns patterns in data. Good training performance does not guarantee good performance on new data; independent validation is needed."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2852-2919",
+              "quote": "models should not be evaluated on the same data they're trained on."
+            }
+          ]
+        },
+        {
+          "unitId": "1.1-lesson-4",
+          "unitHash": "0d281d95a9ec919f320d0d1fe3b9ce3e79e0193d5d58d8980f5c65b7a10b70b9",
+          "title": {
+            "zh": "推理 Inference",
+            "en": "Inference"
+          },
+          "explanation": {
+            "zh": "推理是使用已训练的模型处理新输入。训练改变参数；推理通常使用已有参数产生预测或生成内容。",
+            "en": "Inference uses a trained model to process new inputs. Training changes parameters; inference usually uses existing parameters to produce predictions or generated content."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2643-2727",
+              "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        }
+      ],
+      "knowledge": {
+        "id": "aib-knowledge-integration",
+        "revision": 3,
+        "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+      },
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.3-lesson-3",
+          "sourceUnitId": "1.1-lesson-4",
+          "lessonHash": "32c540b1b69f9534b08955064f9dc71f410aced2c519ddab509dd72fad7c58b9"
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-11",
+          "sourceUnitId": "1.1-lesson-4",
+          "lessonHash": "ed4e98a08410c89c2b80693e48edc2a5a143ec9996176efbbf3b45d79c526674"
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.3-lesson-3",
+          "sourceUnitId": "1.1-lesson-4",
+          "lessonHash": "32c540b1b69f9534b08955064f9dc71f410aced2c519ddab509dd72fad7c58b9"
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-11",
+          "sourceUnitId": "1.1-lesson-4",
+          "lessonHash": "ed4e98a08410c89c2b80693e48edc2a5a143ec9996176efbbf3b45d79c526674"
+        }
+      ],
+      "config": {
+        "minInput": 1,
+        "maxInput": 5,
+        "initialWeight": 2,
+        "sample": {
+          "input": 2,
+          "target": 8
+        },
+        "operationLabels": {
+          "infer": {
+            "zh": "用现有模型试算",
+            "en": "Use the existing model"
+          },
+          "train": {
+            "zh": "利用核验样本学习",
+            "en": "Learn from the verified example"
+          },
+          "resetModel": {
+            "zh": "回到初始模型",
+            "en": "Return to initial model"
+          }
+        },
+        "judgmentOptions": [
+          {
+            "id": "training",
+            "text": {
+              "zh": "训练：利用样本改变参数",
+              "en": "Training: change parameters from examples"
+            }
+          },
+          {
+            "id": "inference",
+            "text": {
+              "zh": "推理：使用已有参数",
+              "en": "Inference: use existing parameters"
+            }
+          }
+        ]
+      },
+      "boundary": {
+        "zh": "这里只演示单参数与显式核验样本；输出正确不等于真实业务已验证，训练演练通过不代表泛化已经证明。",
+        "en": "This demonstrates one parameter and a verified example. Correct toy outputs do not validate a real use or establish generalization."
+      },
+      "collectionPolicy": {
+        "requiresRealDiscovery": true,
+        "requiresConceptGamePass": true,
+        "preserveExistingCollections": true,
+        "doesNotGrant": [
+          "automatic-favorite",
+          "section-application-pass",
+          "formal-exam-pass",
+          "independent-mastery"
+        ]
+      },
+      "signature": "cg1-3e25431d-4837"
+    }
+  ]
+}

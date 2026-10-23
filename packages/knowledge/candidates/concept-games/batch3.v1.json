@@ -1,0 +1,1979 @@
+{
+  "schemaVersion": 1,
+  "kind": "authoring-concept-game-content",
+  "candidateRevision": 3,
+  "apiCompatibility": "B v1 binding fields only; not an engine descriptor or registered kind",
+  "authoringOnly": true,
+  "answersExposed": true,
+  "doNotUseAsUnseenAssessment": true,
+  "notEvidenceOfIndependentMastery": true,
+  "integrated": false,
+  "scenarioProvenance": "All policies, figures, outcomes and organizations in cases are authored exercise assumptions, not observed external cases.",
+  "knowledge": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+  },
+  "frozenKnowledge": {
+    "id": "aib-knowledge",
+    "revision": 3,
+    "hash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce"
+  },
+  "materialHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "sourceAnalysisHash": "9431ea7d0fac0b495f3ca1e59d754336f94ade1025b5bde48a65fc3b7bc45236",
+  "courseSources": [
+    {
+      "name": "B4-aib",
+      "source": "scripts/teaching-catalog.cjs#catalog().aib.course",
+      "courseId": "course-2iajim",
+      "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4"
+    },
+    {
+      "name": "B4-legacy",
+      "source": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+      "courseId": "course-11fu42t",
+      "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66"
+    },
+    {
+      "name": "B5-aib",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+      "courseId": "course-c5mcdg",
+      "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4"
+    },
+    {
+      "name": "B5-legacy",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+      "courseId": "course-87vtar",
+      "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21"
+    }
+  ],
+  "sources": [
+    {
+      "id": "d1-ai",
+      "title": "Artificial intelligence — IBM",
+      "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+      "excerpt": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-ml",
+      "title": "Machine learning — IBM",
+      "url": "https://www.ibm.com/think/topics/machine-learning",
+      "excerpt": "all machine learning is AI, but not all AI is machine learning.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-training",
+      "title": "Model training — IBM",
+      "url": "https://www.ibm.com/think/topics/model-training",
+      "excerpt": "In machine learning, learning involves adjusting the parameters of an ML model.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-hallucinations",
+      "title": "AI hallucinations — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-hallucinations",
+      "excerpt": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-nlp",
+      "title": "Natural language processing — IBM",
+      "url": "https://www.ibm.com/think/topics/natural-language-processing",
+      "excerpt": "NLP tools can automatically classify, extract key information and summarize content",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-cv",
+      "title": "Computer vision — IBM",
+      "url": "https://www.ibm.com/think/topics/computer-vision",
+      "excerpt": "process, analyze and interpret visual inputs such as images and videos.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-supervised",
+      "title": "Supervised learning — IBM",
+      "url": "https://www.ibm.com/think/topics/supervised-learning",
+      "excerpt": "Supervised learning is a machine learning technique that uses labeled data sets to train artificial intelligence",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-unsupervised",
+      "title": "Unsupervised learning — IBM",
+      "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+      "excerpt": "analyze and cluster unlabeled data sets. These algorithms discover hidden patterns or data groupings",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-rl",
+      "title": "Reinforcement learning — IBM",
+      "url": "https://www.ibm.com/think/topics/reinforcement-learning",
+      "excerpt": "The agent’s only objective is to maximize its cumulative rewards from the environment.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-inference",
+      "title": "AI inference — IBM",
+      "url": "https://www.ibm.com/think/topics/ai-inference",
+      "excerpt": "AI inference is the act of using a trained AI model to make predictions on new data.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-eval",
+      "title": "Define success criteria and build evaluations — Anthropic",
+      "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+      "excerpt": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d1-manage",
+      "title": "AI RMF Playbook: Manage — NIST",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/manage/",
+      "excerpt": "Prepare and document plans for continuous monitoring and feedback mechanisms.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-drift",
+      "title": "Model drift — IBM",
+      "url": "https://www.ibm.com/think/topics/model-drift",
+      "excerpt": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d1-leakage",
+      "title": "Data leakage — IBM",
+      "url": "https://www.ibm.com/think/topics/data-leakage-machine-learning",
+      "excerpt": "models should not be evaluated on the same data they're trained on.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-nist-trust",
+      "title": "NIST AI RMF 1.0 — AI Risks and Trustworthiness",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/",
+      "excerpt": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-nist-bias",
+      "title": "NIST SP1270: Towards a Standard for Identifying and Managing Bias in AI",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf",
+      "excerpt": "Not taking context into consideration during model selection can lead to biased results for sub-populations",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "r3-d34-annotation",
+      "title": "Röttger et al.: Two Contrasting Data Annotation Paradigms for Subjective NLP Tasks",
+      "url": "https://arxiv.org/abs/2112.07475",
+      "excerpt": "there often are diverse valid beliefs about what the correct data labels should be.",
+      "verifiedAt": "2026-10-20"
+    }
+  ],
+  "items": [
+    {
+      "id": "ai-implementation-inspector",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-6"
+      ],
+      "experimentId": "implementation-evidence",
+      "title": {
+        "zh": "AI实现透视窗",
+        "en": "AI implementation inspector"
+      },
+      "objective": {
+        "zh": "根据实现证据区别AI的大范围与ML子集，不凭自动运行判定学习。",
+        "en": "Use implementation evidence to distinguish broad AI from its ML subset; automatic execution alone does not establish learning."
+      },
+      "operation": {
+        "zh": "逐层打开执行记录与实现说明，撤掉证据不足的全称结论。",
+        "en": "Reveal execution records and implementation notes layer by layer, then withdraw unsupported universal claims."
+      },
+      "teaching": {
+        "zh": "本演练明确给出一个专家规则系统和一个从数据拟合的模型；两者不能用“全部AI都需要ML”解释。自动复制文件的记录只证明自动化，不能据此确定AI或ML。",
+        "en": "This exercise explicitly specifies a rule-based expert system and a model fitted from data; they do not support “all AI requires ML.” A file-copy log establishes automation alone, not AI or ML."
+      },
+      "config": {
+        "exhibits": [
+          {
+            "id": "expert",
+            "facts": {
+              "zh": "题设已确认：专家系统按人工写定知识规则推断。",
+              "en": "Specified fact: an expert system reasons with manually authored knowledge rules."
+            },
+            "supported": "ai_without_required_ml"
+          },
+          {
+            "id": "fitted",
+            "facts": {
+              "zh": "题设已确认：模型从带标签样本拟合分类映射。",
+              "en": "Specified fact: a model fits a classification mapping from labeled examples."
+            },
+            "supported": "ml_within_ai"
+          },
+          {
+            "id": "copy",
+            "facts": {
+              "zh": "仅见定时复制文件日志，未提供其他实现。",
+              "en": "Only scheduled file-copy logs are available; no further implementation is supplied."
+            },
+            "supported": "automation_only_evidence"
+          }
+        ]
+      },
+      "example": {
+        "zh": "给定专家规则系统可反驳“所有AI必定通过样本训练”。",
+        "en": "The specified expert system refutes “every AI system must train on examples.”"
+      },
+      "counterexample": {
+        "zh": "运行按钮能自动执行，不足以证明它从数据学习。",
+        "en": "An automatically executing button does not establish learning from data."
+      },
+      "boundary": {
+        "zh": "不凭产品名称或界面给任何现实系统认证AI；此题只按明确给定实现判断。",
+        "en": "Do not certify real systems as AI from product names or interfaces; judge only the implementation facts supplied here."
+      },
+      "sourceIds": [
+        "d1-ai",
+        "d1-ml"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-6",
+          "unitHash": "9de03e59a2c34448945a9a24ebb1029679984072299abff853e128f5d92da9ae",
+          "title": {
+            "zh": "人工智能 AI",
+            "en": "Artificial intelligence (AI)"
+          },
+          "explanation": {
+            "zh": "人工智能是较广的领域，关注让系统执行与智能有关的任务。机器学习是其中一类方法，并非所有自动化都需要机器学习。",
+            "en": "Artificial intelligence is a broad field concerned with enabling systems to perform tasks associated with intelligence. Machine learning is one family of approaches within it; not all automation requires machine learning."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:262-410",
+              "quote": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.1-lesson-1",
+          "sourceUnitId": "1.1-lesson-6",
+          "lessonHash": "76f51ac10cdf3629321a436a33890efebc179dba4ad303eb211aafb586d42bb7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-1",
+          "sourceUnitId": "1.1-lesson-6",
+          "lessonHash": "0d34cb1e7819b53718bc7156859ca5d1cb50503606886a3c2289425a06537711",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.1-lesson-1",
+          "sourceUnitId": "1.1-lesson-6",
+          "lessonHash": "76f51ac10cdf3629321a436a33890efebc179dba4ad303eb211aafb586d42bb7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-1",
+          "sourceUnitId": "1.1-lesson-6",
+          "lessonHash": "0d34cb1e7819b53718bc7156859ca5d1cb50503606886a3c2289425a06537711",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "ml-learning-provenance",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-7"
+      ],
+      "experimentId": "implementation-evidence",
+      "title": {
+        "zh": "学习来源追踪器",
+        "en": "Learning provenance tracer"
+      },
+      "objective": {
+        "zh": "用样本、目标、拟合与验证记录说明为何属于本题学习模型，而不是手写规则。",
+        "en": "Use sample, target, fitting, and validation records to explain why this is a learned model rather than a handwritten rule."
+      },
+      "operation": {
+        "zh": "展开同样输出背后的来源：一条来自手写条件，一条来自样本拟合；核对能否据此推断新任务表现。",
+        "en": "Expand the provenance behind identical outputs: one comes from a handwritten condition and one from fitting examples; check what this says about a new task."
+      },
+      "teaching": {
+        "zh": "两条系统在本次都输出“复核”，输出相同不证明机制相同。题设学习模型有数据与拟合记录；是否适合新任务仍需独立验证。",
+        "en": "Both systems output “review” on this case, but equal outputs do not establish equal mechanisms. The specified learned model has data and fitting records; suitability for a new task still needs independent validation."
+      },
+      "config": {
+        "traces": [
+          {
+            "id": "manual",
+            "output": "review",
+            "provenance": "human_authored_condition",
+            "expected": "not_evidence_of_data_fitting"
+          },
+          {
+            "id": "learned",
+            "output": "review",
+            "provenance": "examples_targets_fitted_mapping",
+            "expected": "learning_provenance_present"
+          }
+        ],
+        "newTask": {
+          "validationPresent": false,
+          "expected": "request_independent_validation"
+        }
+      },
+      "example": {
+        "zh": "相同结果可来自不同方法，展开拟合记录才能区分本题机制。",
+        "en": "The same result can arise from different methods; fitting records distinguish the mechanisms in this exercise."
+      },
+      "counterexample": {
+        "zh": "只看一次答对，就说已经证明模型学到了可泛化规律。",
+        "en": "One correct answer does not establish generalizable learned patterns."
+      },
+      "boundary": {
+        "zh": "记录可能在现实中不完整；缺记录不等于证明从未学习。这里不把所有学习方法限定为一种参数更新。",
+        "en": "Real records may be incomplete; missing records do not prove no learning occurred. Learning is not restricted here to one parameter-update method."
+      },
+      "sourceIds": [
+        "d1-ml",
+        "d1-training"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-7",
+          "unitHash": "42780c6a1de593acb3c5207cddf0c89041b2518faa88738184dacde2511c658f",
+          "title": {
+            "zh": "机器学习 ML",
+            "en": "Machine learning (ML)"
+          },
+          "explanation": {
+            "zh": "机器学习利用数据学习模式，而不是为所有情况逐一编写规则。数据、目标和验证方式共同影响模型是否适用。",
+            "en": "Machine learning learns patterns from data instead of requiring an explicit rule for every case. The data, objective and validation method jointly affect whether a model is suitable."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:521-584",
+              "quote": "all machine learning is AI, but not all AI is machine learning."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:5824-5903",
+              "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.1-lesson-2",
+          "sourceUnitId": "1.1-lesson-7",
+          "lessonHash": "f979b76bb1abceff7b53f0a8a19de5e8119d27f9ce9cbb2f5b3fd956b53fc8a4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-2",
+          "sourceUnitId": "1.1-lesson-7",
+          "lessonHash": "6460ad885ae0a7b57d08dd346bd2a88b4cdbb90c6fddd63561112309aa32830f",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.1-lesson-2",
+          "sourceUnitId": "1.1-lesson-7",
+          "lessonHash": "f979b76bb1abceff7b53f0a8a19de5e8119d27f9ce9cbb2f5b3fd956b53fc8a4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-2",
+          "sourceUnitId": "1.1-lesson-7",
+          "lessonHash": "6460ad885ae0a7b57d08dd346bd2a88b4cdbb90c6fddd63561112309aa32830f",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "generative-grounding-repair",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-8"
+      ],
+      "experimentId": "content-evidence-workbench",
+      "title": {
+        "zh": "流畅草稿修订台",
+        "en": "Fluent-draft repair desk"
+      },
+      "objective": {
+        "zh": "生成文案后逐项核对事实，不把语言流畅当真实。",
+        "en": "Check facts claim by claim after generation rather than equating fluency with truth."
+      },
+      "operation": {
+        "zh": "在虚构政策与流畅草稿间定位无依据片段，保留有据内容并修订越界承诺。",
+        "en": "Locate unsupported spans between a fictional policy and a fluent draft; retain supported content and revise overreaching promises."
+      },
+      "teaching": {
+        "zh": "演练政策仅允许未拆封商品7天内提出申请，不保证退款批准。生成的顺口回复仍须核对条件与权限。",
+        "en": "The exercise policy allows submission for unopened items within 7 days, without guaranteed approval. A fluent generated reply still needs condition and authority checks."
+      },
+      "config": {
+        "policy": {
+          "zh": "未拆封商品可在7天内提出退款申请，批准另审。",
+          "en": "Unopened items may be submitted for refund review within 7 days; approval is separate."
+        },
+        "draft": {
+          "zh": "您好，所有商品都能在7天内保证退款，无需审核。",
+          "en": "Hello, every item is guaranteed a refund within 7 days, without review."
+        },
+        "unsupportedClaims": [
+          "all_items",
+          "guaranteed_approval",
+          "no_review"
+        ],
+        "repair": {
+          "zh": "未拆封商品可在7天内提出申请，是否批准需另行审核。",
+          "en": "Unopened items may be submitted within 7 days; approval requires separate review."
+        }
+      },
+      "example": {
+        "zh": "保留期限，补回未拆封与另行审核条件。",
+        "en": "Retain the time window while restoring unopened-item and separate-review conditions."
+      },
+      "counterexample": {
+        "zh": "把“听起来专业”作为事实核验通过的证据。",
+        "en": "Treating professional-sounding prose as evidence of factual verification."
+      },
+      "boundary": {
+        "zh": "政策及草稿均为虚构；修订一段不保证模型以后无幻觉，也不代表真实商家承诺。",
+        "en": "Policy and draft are fictional; repairing one passage does not guarantee future hallucination-free behavior or establish a real merchant promise."
+      },
+      "sourceIds": [
+        "d1-ai",
+        "d1-hallucinations"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-8",
+          "unitHash": "58ebe0247e61aa3fc8074736be46e22c8692f20b3fda7d2028198ea7786aeefe",
+          "title": {
+            "zh": "生成式人工智能 GenAI",
+            "en": "Generative artificial intelligence (GenAI)"
+          },
+          "explanation": {
+            "zh": "生成式AI能产生文本、图像等内容。语言流畅并不等于事实正确，业务使用需要核对事实、适用性与复核成本。",
+            "en": "Generative AI can produce content such as text and images. Fluent language does not imply factual correctness; business use requires checking facts, suitability and the cost of review."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:262-410",
+              "quote": "technology that enables computers and machines to simulate human learning, comprehension, problem solving, decision making, creativity and autonomy."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:3044-3141",
+              "quote": "produces outputs that sound plausible but are factually wrong, irrelevant or entirely fabricated."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.3-lesson-1",
+          "sourceUnitId": "1.1-lesson-8",
+          "lessonHash": "51b49442cbba344bc39dfd1c5d236e3d6af866bd070e493fa8236a6d7c746939",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-7",
+          "sourceUnitId": "1.1-lesson-8",
+          "lessonHash": "5ef54ac7f25c1fdc562567c17134e3c460ffe5c3957e7a8e5bfc4ee7322c11d7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.3-lesson-1",
+          "sourceUnitId": "1.1-lesson-8",
+          "lessonHash": "51b49442cbba344bc39dfd1c5d236e3d6af866bd070e493fa8236a6d7c746939",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-7",
+          "sourceUnitId": "1.1-lesson-8",
+          "lessonHash": "5ef54ac7f25c1fdc562567c17134e3c460ffe5c3957e7a8e5bfc4ee7322c11d7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "nlp-language-targets",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-18"
+      ],
+      "experimentId": "content-evidence-workbench",
+      "title": {
+        "zh": "语言目标探针",
+        "en": "Language-target probe"
+      },
+      "objective": {
+        "zh": "在同一文本中完成不同语言处理任务，区分分类、抽取与翻译。",
+        "en": "Perform different language-processing tasks on one text, distinguishing classification, extraction, and translation."
+      },
+      "operation": {
+        "zh": "圈出订单号原文片段、标出请求意图，再切到翻译目标；观察输出形式随任务改变。",
+        "en": "Select the original order-ID span, identify request intent, then switch to translation; observe how the output form changes with the task."
+      },
+      "teaching": {
+        "zh": "题设文本“订单A17还没到，请查进度。”，意图是查询进度；A17是抽取值。翻译要保留原意，不把查询改成取消。",
+        "en": "For “Order A17 has not arrived; please check its status,” the intent is a status query and A17 is an extracted value. Translation must preserve that meaning rather than turn it into cancellation."
+      },
+      "config": {
+        "text": {
+          "zh": "订单A17还没到，请查进度。",
+          "en": "Order A17 has not arrived; please check its status."
+        },
+        "extraction": {
+          "field": "orderId",
+          "expected": "A17"
+        },
+        "intent": {
+          "expected": "status_query",
+          "not": "cancellation"
+        },
+        "translation": {
+          "zh": "订单A17还没到，请查进度。",
+          "en": "Order A17 has not arrived; please check its status."
+        }
+      },
+      "example": {
+        "zh": "抽取A17与判断查询意图是不同目标，即使处理同一文本。",
+        "en": "Extracting A17 and identifying query intent are distinct targets even on the same text."
+      },
+      "counterexample": {
+        "zh": "看到语言处理就认为必须生成一段新长文。",
+        "en": "Assuming language processing always requires generating a long new passage."
+      },
+      "boundary": {
+        "zh": "NLP不限生成；多语言与歧义需按任务验证，此简单样例不证明通用翻译质量。",
+        "en": "NLP is not limited to generation; language variation and ambiguity need task-specific validation, and this simple example proves no general translation quality."
+      },
+      "sourceIds": [
+        "d1-nlp"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-18",
+          "unitHash": "a8d0578dec8e33b33fa226716eaac7aa3a3bdf229e370fa183ec7a8526a1b69a",
+          "title": {
+            "zh": "自然语言处理 NLP",
+            "en": "Natural language processing (NLP)"
+          },
+          "explanation": {
+            "zh": "使计算机处理和分析人类语言的AI领域，任务包括分类、抽取和翻译。",
+            "en": "Natural language processing is an AI field that enables computers to process and analyze human language, including classification, extraction and translation tasks."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:1135-1218",
+              "quote": "NLP tools can automatically classify, extract key information and summarize content"
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.2-lesson-3",
+          "sourceUnitId": "1.1-lesson-18",
+          "lessonHash": "6bea8549e2269004cabe9acd62f07c6b1daeb83c7a1bd6974e60c520731d8659",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-5",
+          "sourceUnitId": "1.1-lesson-18",
+          "lessonHash": "6405c4a24a5827df91fbbb28e089ac38c320d3ccc31ea6979c5221489ff808af",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.2-lesson-3",
+          "sourceUnitId": "1.1-lesson-18",
+          "lessonHash": "6bea8549e2269004cabe9acd62f07c6b1daeb83c7a1bd6974e60c520731d8659",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-5",
+          "sourceUnitId": "1.1-lesson-18",
+          "lessonHash": "6405c4a24a5827df91fbbb28e089ac38c320d3ccc31ea6979c5221489ff808af",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "cv-visible-region-inspection",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-19"
+      ],
+      "experimentId": "visible-region-workbench",
+      "title": {
+        "zh": "图像可见区域检查窗",
+        "en": "Visible-region image inspector"
+      },
+      "objective": {
+        "zh": "从给定合成图像定位可见信息，对遮挡区域保留未知。",
+        "en": "Locate visible information in a specified synthetic image and preserve uncertainty in occluded regions."
+      },
+      "operation": {
+        "zh": "放大合成包裹图，框出可见裂口；切换遮挡层，区分看见的区域和不能判断的部分。",
+        "en": "Zoom a synthetic package image and bound a visible tear; toggle an occlusion layer to distinguish visible regions from unassessable areas."
+      },
+      "teaching": {
+        "zh": "B需按下列合成场景绘图，不引用真实商品。画布100×100，可见裂口框为[20,30,40,50]，遮挡框[60,0,100,100]；遮挡后面是否损坏没有信息。",
+        "en": "B should render the specified synthetic scene, not a real product. On a 100×100 canvas the visible tear box is [20,30,40,50], and [60,0,100,100] is occluded; damage behind it is unknown."
+      },
+      "config": {
+        "syntheticScene": {
+          "width": 100,
+          "height": 100,
+          "visibleTearBox": [
+            20,
+            30,
+            40,
+            50
+          ],
+          "occludedBox": [
+            60,
+            0,
+            100,
+            100
+          ]
+        },
+        "expected": {
+          "markVisibleTear": true,
+          "occludedDamage": "unknown"
+        },
+        "coordinateConvention": "[left,top,right,bottom]"
+      },
+      "example": {
+        "zh": "只能标注可见裂口，不能把遮挡区默认判成完好。",
+        "en": "Mark the visible tear; do not default the occluded region to undamaged."
+      },
+      "counterexample": {
+        "zh": "模型给出流畅的“全部完好”，但没有覆盖遮挡部分的视觉证据。",
+        "en": "A fluent “all undamaged” statement lacks visual evidence for occluded areas."
+      },
+      "boundary": {
+        "zh": "此为合成定位练习，不证明真实检测精度；像素坐标是游戏画布单位，不是实际尺寸或生产验收标准。",
+        "en": "This is synthetic localization practice, not evidence of real detection accuracy. Coordinates are canvas units, not physical measurements or production acceptance criteria."
+      },
+      "sourceIds": [
+        "d1-cv"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-19",
+          "unitHash": "8d4e7bf6494e6947c9870afa5247365a55cbab08dc9a25cce40aa9ce19e62b99",
+          "title": {
+            "zh": "计算机视觉 CV",
+            "en": "Computer vision (CV)"
+          },
+          "explanation": {
+            "zh": "从图像或视频中提取和解释信息的AI领域。",
+            "en": "Computer vision is an AI field that extracts and interprets information from images or video."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:1327-1398",
+              "quote": "process, analyze and interpret visual inputs such as images and videos."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.2-lesson-4",
+          "sourceUnitId": "1.1-lesson-19",
+          "lessonHash": "de853288a8305ba7a3557de3ec3ccd172b571c1e1670ef0a72e7d796d50440e4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-6",
+          "sourceUnitId": "1.1-lesson-19",
+          "lessonHash": "aff9cc8a7a608c97b76d2e6190307b57bb941aa10a7b75c280dd57a56c9d085d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.2-lesson-4",
+          "sourceUnitId": "1.1-lesson-19",
+          "lessonHash": "de853288a8305ba7a3557de3ec3ccd172b571c1e1670ef0a72e7d796d50440e4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-6",
+          "sourceUnitId": "1.1-lesson-19",
+          "lessonHash": "aff9cc8a7a608c97b76d2e6190307b57bb941aa10a7b75c280dd57a56c9d085d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "supervised-target-panel",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-20"
+      ],
+      "experimentId": "labeled-unlabeled-table",
+      "title": {
+        "zh": "目标标签控制板",
+        "en": "Target-label panel"
+      },
+      "objective": {
+        "zh": "明确样本输入和目标标签，识别分类与回归都可属于监督学习。",
+        "en": "Specify example inputs and target labels, recognizing that both classification and regression can be supervised."
+      },
+      "operation": {
+        "zh": "分别揭示两个任务的标签列，检查请求输出是否与目标匹配；切掉标签后指出监督证据缺口。",
+        "en": "Reveal the target column for each task, check whether the requested output matches it, and identify the supervised-data gap when labels are removed."
+      },
+      "teaching": {
+        "zh": "本演练分类目标为已核验工单类别，回归目标为已核验处理分钟数。新工单的类别预测不必指未来事件；有目标标签不表示标签永远正确。",
+        "en": "The exercise classification target is a verified ticket category; the regression target is verified handling minutes. Predicting a new ticket’s category need not concern a future event, and target labels are not inherently infallible."
+      },
+      "config": {
+        "tasks": [
+          {
+            "id": "ticket-class",
+            "features": [
+              "ticket_text"
+            ],
+            "target": "verified_category",
+            "targetType": "categorical",
+            "expectedOutput": "category"
+          },
+          {
+            "id": "handling-time",
+            "features": [
+              "ticket_text",
+              "queue_context"
+            ],
+            "target": "verified_minutes",
+            "targetType": "numeric",
+            "expectedOutput": "minutes"
+          }
+        ],
+        "hiddenLabelsConclusion": "no_supervised_target_evidence_in_supplied_table"
+      },
+      "example": {
+        "zh": "类别与分钟数目标不同，但都可用带目标标签的样本学习。",
+        "en": "Category and minute targets differ, but both can be learned from target-labeled examples."
+      },
+      "counterexample": {
+        "zh": "把所有监督学习都等同于分类，或把编号标签当连续数量。",
+        "en": "Equating all supervised learning with classification or treating a class identifier as a continuous quantity."
+      },
+      "boundary": {
+        "zh": "隐藏标签不证明现实系统从未做过监督训练；此表格只说明当前提供的证据。",
+        "en": "Hidden labels do not prove that a real system was never trained with supervision; this table concerns the evidence currently supplied."
+      },
+      "sourceIds": [
+        "d1-supervised"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-20",
+          "unitHash": "638fbf68da5bb1c5bbc026d25be74d45be93e9bd11a8a6a0a1af689092e80f84",
+          "title": {
+            "zh": "监督学习",
+            "en": "Supervised learning"
+          },
+          "explanation": {
+            "zh": "使用带有目标标签的样本学习输入到目标的映射，可用于分类和回归。",
+            "en": "Supervised learning uses examples with target labels to learn a mapping from inputs to targets. It can be used for classification and regression."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:1523-1635",
+              "quote": "Supervised learning is a machine learning technique that uses labeled data sets to train artificial intelligence"
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.4-lesson-1",
+          "sourceUnitId": "1.1-lesson-20",
+          "lessonHash": "62d8f9ac03dae380026e1a9525bcf9e5049a2f2ad67522f7774505d68ed25cf9",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-13",
+          "sourceUnitId": "1.1-lesson-20",
+          "lessonHash": "5cddeef6a1f4a5b98a0fe02f27bff6e2ce4b8d954f177cadeab8cf962c7f2849",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.4-lesson-1",
+          "sourceUnitId": "1.1-lesson-20",
+          "lessonHash": "62d8f9ac03dae380026e1a9525bcf9e5049a2f2ad67522f7774505d68ed25cf9",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-13",
+          "sourceUnitId": "1.1-lesson-20",
+          "lessonHash": "5cddeef6a1f4a5b98a0fe02f27bff6e2ce4b8d954f177cadeab8cf962c7f2849",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "unsupervised-structure-map",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-21"
+      ],
+      "experimentId": "labeled-unlabeled-table",
+      "title": {
+        "zh": "无标签结构地图",
+        "en": "Unlabeled-structure map"
+      },
+      "objective": {
+        "zh": "按明确距离与分组目标发现结构，不擅自给聚类贴真实类别或价值标签。",
+        "en": "Find structure under a specified distance and grouping objective without treating clusters as real classes or value judgments."
+      },
+      "operation": {
+        "zh": "移动分组边界，把近邻点组成两组，再请求能解释这些组含义的外部信息。",
+        "en": "Move grouping boundaries to form two groups of nearby points, then request external information needed to interpret those groups."
+      },
+      "teaching": {
+        "zh": "合成一维数据位置1、2、8、9，无目标标签。题设要求按欧氏距离形成两组紧密点；分组不说明客户好坏或真实身份。",
+        "en": "Synthetic one-dimensional positions are 1, 2, 8, and 9, without target labels. The exercise asks for two compact Euclidean-distance groups; grouping does not establish customer quality or identity."
+      },
+      "config": {
+        "points": [
+          {
+            "id": "p1",
+            "x": 1
+          },
+          {
+            "id": "p2",
+            "x": 2
+          },
+          {
+            "id": "p3",
+            "x": 8
+          },
+          {
+            "id": "p4",
+            "x": 9
+          }
+        ],
+        "groupCount": 2,
+        "distance": "euclidean",
+        "expectedGroups": [
+          [
+            "p1",
+            "p2"
+          ],
+          [
+            "p3",
+            "p4"
+          ]
+        ],
+        "meaningEvidence": "not_supplied"
+      },
+      "example": {
+        "zh": "给定目标下近的点分为两组，但组A不自动等于高价值客户。",
+        "en": "Nearby points form two groups under the stated objective, but group A does not automatically mean high-value customers."
+      },
+      "counterexample": {
+        "zh": "没有真实标签便把聚类编号当已验证业务类别。",
+        "en": "Treating cluster IDs as validated business classes without real labels."
+      },
+      "boundary": {
+        "zh": "更换特征、距离或分组数可能改变结构；本题不证明唯一自然分类，也不代表真实聚类算法已训练。",
+        "en": "Changing features, distance, or group count can change the structure. This does not establish a unique natural classification or show a real clustering algorithm was trained."
+      },
+      "sourceIds": [
+        "d1-unsupervised"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-21",
+          "unitHash": "a2bb18ef85a1d0b304d300c70d7bd652fa9e98ddee21e4f42ec76d242110503f",
+          "title": {
+            "zh": "无监督学习",
+            "en": "Unsupervised learning"
+          },
+          "explanation": {
+            "zh": "从没有目标标签的数据中寻找结构或模式，例如将相似对象聚类。",
+            "en": "Unsupervised learning looks for structure or patterns in data without target labels, for example by clustering similar objects."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:1766-1866",
+              "quote": "analyze and cluster unlabeled data sets. These algorithms discover hidden patterns or data groupings"
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.4-lesson-2",
+          "sourceUnitId": "1.1-lesson-21",
+          "lessonHash": "241bd692ccf3ccb535b745bee0fd098d4fee4844b2d3ed2b6a7fca9bb307380b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-14",
+          "sourceUnitId": "1.1-lesson-21",
+          "lessonHash": "34cfb60e645faa2edd55ba0562a31c2a81c91cb4e7eae8e289b79c75382cac3d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.4-lesson-2",
+          "sourceUnitId": "1.1-lesson-21",
+          "lessonHash": "241bd692ccf3ccb535b745bee0fd098d4fee4844b2d3ed2b6a7fca9bb307380b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-14",
+          "sourceUnitId": "1.1-lesson-21",
+          "lessonHash": "34cfb60e645faa2edd55ba0562a31c2a81c91cb4e7eae8e289b79c75382cac3d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "rl-delayed-reward-route",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-22"
+      ],
+      "experimentId": "delayed-reward-route",
+      "title": {
+        "zh": "延迟奖励路线台",
+        "en": "Delayed-reward route desk"
+      },
+      "objective": {
+        "zh": "比较动作序列的累计回报，不把即时奖励最大当长期最优。",
+        "en": "Compare cumulative returns across action sequences rather than equating the largest immediate reward with the best long-term choice."
+      },
+      "operation": {
+        "zh": "试走两条两步路线，记录每步奖励并比较总和，再解释为何奖励设计影响选择。",
+        "en": "Try two two-step routes, record each reward, compare sums, and explain how reward design affects choice."
+      },
+      "teaching": {
+        "zh": "合成环境仅两步、无随机、折扣因子为1。快路线奖励依次+3、−4；稳路线0、+5。这是奖励观察台，不冒充已训练智能体。",
+        "en": "The synthetic environment has two steps, no randomness, and discount factor 1. The fast route yields +3 then −4; the steady route yields 0 then +5. This is a reward-observation desk, not a claim that an agent has been trained."
+      },
+      "config": {
+        "horizon": 2,
+        "discount": 1,
+        "routes": [
+          {
+            "id": "fast",
+            "rewards": [
+              3,
+              -4
+            ],
+            "total": -1
+          },
+          {
+            "id": "steady",
+            "rewards": [
+              0,
+              5
+            ],
+            "total": 5
+          }
+        ],
+        "expectedHigherReturn": "steady"
+      },
+      "example": {
+        "zh": "此题稳路线即时奖励较小，但累计5高于快路线−1。",
+        "en": "The steady route has a smaller immediate reward but total 5 exceeds the fast route’s −1."
+      },
+      "counterexample": {
+        "zh": "只看第一步+3便宣布快路线长期更优。",
+        "en": "Declaring the fast route better long-term from its first-step +3 alone."
+      },
+      "boundary": {
+        "zh": "奖励是人工设定，不等于真实业务价值或安全；玩家试走不是机器自动学会策略的证据，真实RL还涉及探索和策略学习。",
+        "en": "Rewards are designed quantities, not real business value or safety. A player’s trial does not show machine policy learning; real RL also involves exploration and policy learning."
+      },
+      "sourceIds": [
+        "d1-rl"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-22",
+          "unitHash": "e0592f325c163f82e5ab93c3977b3275c6fe725946f742afada684429218ad03",
+          "title": {
+            "zh": "强化学习",
+            "en": "Reinforcement learning"
+          },
+          "explanation": {
+            "zh": "智能体通过与环境交互和奖励反馈学习行动策略，关注长期累计回报。",
+            "en": "In reinforcement learning, an agent learns an action policy through interactions with its environment and reward feedback, with a focus on long-term cumulative return."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:1989-2075",
+              "quote": "The agent’s only objective is to maximize its cumulative rewards from the environment."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.4-lesson-3",
+          "sourceUnitId": "1.1-lesson-22",
+          "lessonHash": "3142bd1834914b9adbecceac449b5884135d6503f8f14f21f501eaa53cf6adc5",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-15",
+          "sourceUnitId": "1.1-lesson-22",
+          "lessonHash": "1d5fca9e571ee89351d7747293541e6b4d79944f9c90773d42885a6fbd05380c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.4-lesson-3",
+          "sourceUnitId": "1.1-lesson-22",
+          "lessonHash": "3142bd1834914b9adbecceac449b5884135d6503f8f14f21f501eaa53cf6adc5",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-15",
+          "sourceUnitId": "1.1-lesson-22",
+          "lessonHash": "1d5fca9e571ee89351d7747293541e6b4d79944f9c90773d42885a6fbd05380c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "prediction-output-consequences",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-5"
+      ],
+      "experimentId": "prediction-consequence-view",
+      "title": {
+        "zh": "预测结果与后果透镜",
+        "en": "Prediction and consequence lens"
+      },
+      "objective": {
+        "zh": "区分模型估计、真实结果和后续行动，同时比较相同误差的不同业务后果。",
+        "en": "Distinguish estimates, actual outcomes, and downstream actions while comparing different business consequences of equal-sized errors."
+      },
+      "operation": {
+        "zh": "先看模型估计，再揭示实际需求和演练代价，比较高估/低估的损失；另检查当前未知类别也可被预测。",
+        "en": "Inspect the estimate before revealing actual demand and exercise costs; compare over- and underestimation loss, then check that a currently unknown category can also be predicted."
+      },
+      "teaching": {
+        "zh": "题设固定模型估计100杯。实际90为高估10，剩余每杯损失1元；实际110为低估10，缺货每杯损失3元。金额为假设，不是市场规律。",
+        "en": "The specified fixed model estimates 100 cups. Actual 90 means overestimating by 10 at CNY 1 per leftover cup; actual 110 means underestimating by 10 at CNY 3 per missing cup. Costs are assumptions, not market laws."
+      },
+      "config": {
+        "estimate": 100,
+        "cases": [
+          {
+            "actual": 90,
+            "absoluteError": 10,
+            "lossPerUnit": 1,
+            "totalLoss": 10
+          },
+          {
+            "actual": 110,
+            "absoluteError": 10,
+            "lossPerUnit": 3,
+            "totalLoss": 30
+          }
+        ],
+        "additionalTarget": {
+          "input": "new_ticket",
+          "unknown": "current_category",
+          "prediction": "estimated_category",
+          "downstreamAction": "manager_routing"
+        }
+      },
+      "example": {
+        "zh": "相同绝对误差10可造成不同演练损失；分类预测也不必发生在未来。",
+        "en": "The same absolute error of 10 can cause different exercise losses; classification predictions need not concern the future."
+      },
+      "counterexample": {
+        "zh": "将预测值当实际销量，或把经理按预测备货也叫模型输出。",
+        "en": "Treating a prediction as observed sales or calling the manager’s supply action the model output."
+      },
+      "boundary": {
+        "zh": "单次后果比较不证明哪一模型整体最佳；训练前向也可产生预测，看到预测一词不证明只有推理。",
+        "en": "A single consequence comparison does not establish the best model overall. Training forward passes can also produce predictions; the word prediction does not establish inference alone."
+      },
+      "sourceIds": [
+        "d1-inference",
+        "r3-d1-eval",
+        "r3-d1-manage"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-5",
+          "unitHash": "0a66209c7b6e5857bce834004a90451eb22b7fe52d8d16bfb4d0a0735f0b8cfa",
+          "title": {
+            "zh": "预测 Prediction",
+            "en": "Prediction"
+          },
+          "explanation": {
+            "zh": "预测是利用输入和已学习的模式估计未知结果。业务评价既要看误差，也要看错误会造成的后果。",
+            "en": "Prediction uses inputs and learned patterns to estimate an unknown outcome. Business evaluation must consider both error and the consequences of mistakes."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2643-2727",
+              "quote": "AI inference is the act of using a trained AI model to make predictions on new data."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:17650-17747",
+              "quote": "Design evals that mirror your real-world task distribution. Don't forget to factor in edge cases!"
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:19833-19910",
+              "quote": "Prepare and document plans for continuous monitoring and feedback mechanisms."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.3-lesson-4",
+          "sourceUnitId": "1.1-lesson-5",
+          "lessonHash": "32fc3ae7986e4bf2678ab05d8370cd707e2ce7980abbbfe9f66524aef84d93a4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-12",
+          "sourceUnitId": "1.1-lesson-5",
+          "lessonHash": "aa9bf74d1ac0d90d308463afcf796dcadf99340a63c543e3bafb7970d996eaff",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.3-lesson-4",
+          "sourceUnitId": "1.1-lesson-5",
+          "lessonHash": "32fc3ae7986e4bf2678ab05d8370cd707e2ce7980abbbfe9f66524aef84d93a4",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-12",
+          "sourceUnitId": "1.1-lesson-5",
+          "lessonHash": "aa9bf74d1ac0d90d308463afcf796dcadf99340a63c543e3bafb7970d996eaff",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "generalization-condition-window",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-12"
+      ],
+      "experimentId": "data-evaluation-observatory",
+      "title": {
+        "zh": "条件迁移观察窗",
+        "en": "Condition-transfer window"
+      },
+      "objective": {
+        "zh": "根据独立样本与条件差异限制泛化结论，不把过去表现当未来保证。",
+        "en": "Limit generalization claims using independent examples and condition differences, rather than guaranteeing future performance from past results."
+      },
+      "operation": {
+        "zh": "切换历史工作日与独立周末样本，查看表现变化并列出要调查的差异，而非直接猜原因。",
+        "en": "Switch between historical weekday and independent weekend examples, inspect performance changes, and list differences to investigate rather than guess a cause."
+      },
+      "teaching": {
+        "zh": "合成检查记录：工作日100条中90条正确，独立周末100条中60条正确。差异提示需调查条件与采样；本表不证明变化的具体因果机制。",
+        "en": "Synthetic check records show 90 correct out of 100 weekday cases and 60 out of 100 independent weekend cases. Investigate conditions and sampling; the table does not establish the specific causal mechanism."
+      },
+      "config": {
+        "records": [
+          {
+            "id": "weekday",
+            "correct": 90,
+            "total": 100,
+            "accuracy": 0.9
+          },
+          {
+            "id": "weekend",
+            "correct": 60,
+            "total": 100,
+            "accuracy": 0.6
+          }
+        ],
+        "investigate": [
+          "task_mix",
+          "sampling",
+          "data_conditions"
+        ],
+        "expectedConclusion": "historical_score_does_not_guarantee_new_conditions"
+      },
+      "example": {
+        "zh": "保留历史成绩记录，同时对新条件补代表性数据与验证。",
+        "en": "Retain the historical result while obtaining representative data and validation for new conditions."
+      },
+      "counterexample": {
+        "zh": "用历史90%保证每个未来时段都90%，或仅凭两行表格宣布某因素必然导致下降。",
+        "en": "Guaranteeing 90% in every future period from historical 90%, or attributing the drop to one factor from two table rows."
+      },
+      "boundary": {
+        "zh": "独立且小样本检查仍有统计不确定性；该演练不是漂移诊断器，也不宣称所有下降都是概念漂移。",
+        "en": "Independent finite checks retain statistical uncertainty; this is not a drift diagnostic and does not label every decline concept drift."
+      },
+      "sourceIds": [
+        "d1-drift",
+        "d1-leakage"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-12",
+          "unitHash": "46ba141a35d3c74c0a1b568903dad712770b64ba55f5e5fa318912345568ba30",
+          "title": {
+            "zh": "历史数据与泛化",
+            "en": "Historical data and generalization"
+          },
+          "explanation": {
+            "zh": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。",
+            "en": "Historical data reflects past conditions. Use independent data to test whether a model can handle unseen cases, and watch for differences between future conditions and historical data."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:4237-4369",
+              "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2852-2919",
+              "quote": "models should not be evaluated on the same data they're trained on."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.5-lesson-3",
+          "sourceUnitId": "1.1-lesson-12",
+          "lessonHash": "250275ee7212fa47a4d8469a9d402bd67ad7d52014bdeff03bc196f70c6f6fb3",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-19",
+          "sourceUnitId": "1.1-lesson-12",
+          "lessonHash": "72f66be48867bf189ddd2f278c76b5e0fb5c9a15feab5513c1a7de943d386482",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.5-lesson-3",
+          "sourceUnitId": "1.1-lesson-12",
+          "lessonHash": "250275ee7212fa47a4d8469a9d402bd67ad7d52014bdeff03bc196f70c6f6fb3",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-19",
+          "sourceUnitId": "1.1-lesson-12",
+          "lessonHash": "72f66be48867bf189ddd2f278c76b5e0fb5c9a15feab5513c1a7de943d386482",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "validation-leakage-partition",
+      "chapter": 1,
+      "unitIds": [
+        "1.1-lesson-13"
+      ],
+      "experimentId": "data-evaluation-observatory",
+      "title": {
+        "zh": "验证隔离分区台",
+        "en": "Validation isolation partition"
+      },
+      "objective": {
+        "zh": "保持相关记录与答案隔离，区分训练、调参与最终测试的用途。",
+        "en": "Keep related records and answers isolated, distinguishing fitting, tuning, and final-test uses."
+      },
+      "operation": {
+        "zh": "按同一订单分组放置记录，锁定最终测试答案；检查把同一订单副本跨区或用测试答案调参的路径。",
+        "en": "Partition records by order group and lock final-test answers; inspect paths that split copies across partitions or tune with test answers."
+      },
+      "teaching": {
+        "zh": "题设每个订单可有两条相关记录，分区单位为订单而非单行。训练用于拟合，验证用于选择方案，预留最终测试用于评估未见数据；不能反复拿最终测试答案优化后仍称独立最终检查。",
+        "en": "Each exercise order may have two related records, so orders rather than rows are partition units. Training fits, validation selects, and the reserved final test assesses unseen data; repeated optimization against final-test answers invalidates that independent-final-check claim."
+      },
+      "config": {
+        "records": [
+          {
+            "id": "a1",
+            "group": "order-a"
+          },
+          {
+            "id": "a2",
+            "group": "order-a"
+          },
+          {
+            "id": "b1",
+            "group": "order-b"
+          },
+          {
+            "id": "c1",
+            "group": "order-c"
+          }
+        ],
+        "constraint": "same_group_same_partition",
+        "partitions": [
+          "training",
+          "validation",
+          "final_test"
+        ],
+        "forbiddenActions": [
+          "copy_final_answers_into_training",
+          "tune_on_reserved_final_answers"
+        ],
+        "safeExample": {
+          "training": [
+            "a1",
+            "a2"
+          ],
+          "validation": [
+            "b1"
+          ],
+          "final_test": [
+            "c1"
+          ]
+        }
+      },
+      "example": {
+        "zh": "a1与a2留同区，最终测试答案在模型选择前不揭示。",
+        "en": "Keep a1 and a2 together and do not reveal final-test answers before model selection."
+      },
+      "counterexample": {
+        "zh": "把a1训练、a2测试后声称完全独立，或按测试答案反复选模型。",
+        "en": "Training on a1 and testing on a2 while claiming full independence, or repeatedly selecting models using test answers."
+      },
+      "boundary": {
+        "zh": "同组分区只是本题明确约束，不能代替现实时间、人员或分布检查；数据少时不保证分区后估计稳定。",
+        "en": "Grouped partitioning is an explicit exercise constraint, not a substitute for real temporal, person-level, or distribution checks; sparse partitions do not guarantee stable estimates."
+      },
+      "sourceIds": [
+        "d1-leakage"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "1.1-lesson-13",
+          "unitHash": "2fae50898eaa540d8c441a8291b61e9f3b01012fc09d236c082d87e87527bec6",
+          "title": {
+            "zh": "训练集与验证",
+            "en": "Training data and validation"
+          },
+          "explanation": {
+            "zh": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。",
+            "en": "Training data is used for learning; independent validation or testing assesses performance on unseen examples. Bringing test answers into training makes results look overly optimistic."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:2852-2919",
+              "quote": "models should not be evaluated on the same data they're trained on."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "1.5-lesson-4",
+          "sourceUnitId": "1.1-lesson-13",
+          "lessonHash": "5a377e11adf47e3c52443493dd0e91059e5d4096c67d48cb20f75802583df68f",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "1.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "1.1-lesson-20",
+          "sourceUnitId": "1.1-lesson-13",
+          "lessonHash": "b749903d6d3a599c706dbd3d8a9a1f714a1063e679716b51496f7a15d7e1bcf6",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "1.5-lesson-4",
+          "sourceUnitId": "1.1-lesson-13",
+          "lessonHash": "5a377e11adf47e3c52443493dd0e91059e5d4096c67d48cb20f75802583df68f",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "1.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "1.1-lesson-20",
+          "sourceUnitId": "1.1-lesson-13",
+          "lessonHash": "b749903d6d3a599c706dbd3d8a9a1f714a1063e679716b51496f7a15d7e1bcf6",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "1.1",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "bias-subgroup-annotation-audit",
+      "chapter": 3,
+      "unitIds": [
+        "3.3.2-unit-1"
+      ],
+      "experimentId": "data-evaluation-observatory",
+      "title": {
+        "zh": "分组与标注审计镜",
+        "en": "Subgroup and annotation audit"
+      },
+      "objective": {
+        "zh": "拆开汇总表现与群体差异，调查采样和标注分歧，不自动宣判原因或把异议当错标。",
+        "en": "Separate aggregate performance from subgroup differences, investigate sampling and annotation disagreement, and avoid automatically assigning causes or labeling dissent an error."
+      },
+      "operation": {
+        "zh": "展开总体分数为两组，查看样本量；再打开两名标注者对“紧急”的分歧，选择需补的任务规则与证据。",
+        "en": "Expand the aggregate score into two groups and inspect sample sizes; then reveal two annotators’ disagreement on urgency and identify missing task rules and evidence."
+      },
+      "teaching": {
+        "zh": "演练A组90/100正确，B组18/30正确。标注者对同一工单是否“紧急”意见不同，但未给统一紧急定义。差异需要调查，不直接证明某一公平性结论。",
+        "en": "Exercise group A has 90/100 correct and group B 18/30. Annotators disagree about whether a ticket is urgent, but no shared urgency definition is supplied. Investigate the disparity rather than infer a specific fairness conclusion."
+      },
+      "config": {
+        "groups": [
+          {
+            "id": "A",
+            "correct": 90,
+            "total": 100,
+            "accuracy": 0.9
+          },
+          {
+            "id": "B",
+            "correct": 18,
+            "total": 30,
+            "accuracy": 0.6
+          }
+        ],
+        "aggregate": {
+          "correct": 108,
+          "total": 130,
+          "accuracy": 0.8307692307692308
+        },
+        "annotation": {
+          "labels": [
+            "urgent",
+            "not_urgent"
+          ],
+          "sharedDefinitionProvided": false,
+          "expectedAction": "clarify_task_guidelines_and_investigate"
+        },
+        "expectedConclusion": "investigate_context_sampling_labels_and_objective"
+      },
+      "example": {
+        "zh": "总体约83.1%掩盖了两组差异；先核任务、样本与标注规则。",
+        "en": "Aggregate accuracy of about 83.1% hides subgroup differences; inspect task, sample, and annotation rules first."
+      },
+      "counterexample": {
+        "zh": "总体分数高便宣布无偏差，或将不同意见不经核查全部改为多数标签。",
+        "en": "Declaring no bias from a high aggregate score, or replacing all disagreement with majority labels without investigation."
+      },
+      "boundary": {
+        "zh": "本题不规定单一公平指标或通用合格阈值，不从小样本差异证明歧视原因；群体与权益评估必须结合真实用途和背景。",
+        "en": "This exercise prescribes no single fairness metric or universal pass threshold and does not establish discriminatory causes from small-sample differences; group and rights assessments need real purpose and context."
+      },
+      "sourceIds": [
+        "d34-review-nist-trust",
+        "r3-d34-nist-bias",
+        "r3-d34-annotation"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "3.3.2-unit-1",
+          "unitHash": "aed9e5d1171934d8a4e49083cf7dfce9c6b814729329f491fe901cb0a5f7f5d0",
+          "title": {
+            "zh": "采样、标注、目标与部署",
+            "en": "Sampling, labels, objectives and deployment"
+          },
+          "explanation": {
+            "zh": "偏差可能源自缺乏代表性的样本、未妥善处理的标注分歧、优化目标和部署人群差异。标注分歧也可能反映合理的不同观点，应先明确任务与标注规则；对相关群体持续监测，并调查差异的原因。",
+            "en": "Bias may arise from unrepresentative samples, inadequately handled annotation disagreements, optimization objectives, and differences in deployed populations. Annotation disagreements can also reflect legitimate differences in perspective, so first clarify the task and annotation rules. Continuously monitor relevant groups and investigate the causes of disparities."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:12705-12818",
+              "quote": "Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:23080-23187",
+              "quote": "Not taking context into consideration during model selection can lead to biased results for sub-populations"
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:23353-23436",
+              "quote": "there often are diverse valid beliefs about what the correct data labels should be."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "3.6-lesson-4",
+          "sourceUnitId": "3.3.2-unit-1",
+          "lessonHash": "523304a6c51a130d59b5e48780a805600f461adf3fa3b504cd3f5ee843ed0c4b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "3.6",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "3.3-lesson-6",
+          "sourceUnitId": "3.3.2-unit-1",
+          "lessonHash": "ebf1e560ef22302d057f8960b86b88bffc46ac4eed8df52f8f70df4abd36499e",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "3.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "3.6-lesson-4",
+          "sourceUnitId": "3.3.2-unit-1",
+          "lessonHash": "523304a6c51a130d59b5e48780a805600f461adf3fa3b504cd3f5ee843ed0c4b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "3.6",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "3.3-lesson-6",
+          "sourceUnitId": "3.3.2-unit-1",
+          "lessonHash": "ebf1e560ef22302d057f8960b86b88bffc46ac4eed8df52f8f70df4abd36499e",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "3.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    }
+  ],
+  "batchNumber": 3,
+  "coverageSelection": {
+    "basis": "B current coverage sourceConceptsCovered at selection; not a claim of game implementation",
+    "coverageBatch": 1,
+    "coverageContentHash": "711244355126c7b487cd52888cc1bc3c73834f7bd070eb5d440b1d8126264417",
+    "previouslyCovered": [
+      "1.1-lesson-1",
+      "1.2.1-unit-1",
+      "1.1-lesson-3",
+      "1.1-lesson-4"
+    ],
+    "selectedGapUnitIds": [
+      "1.1-lesson-6",
+      "1.1-lesson-7",
+      "1.1-lesson-8",
+      "1.1-lesson-18",
+      "1.1-lesson-19",
+      "1.1-lesson-20",
+      "1.1-lesson-21",
+      "1.1-lesson-22",
+      "1.1-lesson-5",
+      "1.1-lesson-12",
+      "1.1-lesson-13",
+      "3.3.2-unit-1"
+    ],
+    "oldLegacySection": "1.1",
+    "oldLegacyLessonCount": 22,
+    "selectedOldLegacyConcepts": 11
+  },
+  "experiments": [
+    {
+      "id": "implementation-evidence",
+      "conceptIds": [
+        "ai-implementation-inspector",
+        "ml-learning-provenance"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "content-evidence-workbench",
+      "conceptIds": [
+        "generative-grounding-repair",
+        "nlp-language-targets"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "visible-region-workbench",
+      "conceptIds": [
+        "cv-visible-region-inspection"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "labeled-unlabeled-table",
+      "conceptIds": [
+        "supervised-target-panel",
+        "unsupervised-structure-map"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "delayed-reward-route",
+      "conceptIds": [
+        "rl-delayed-reward-route"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "prediction-consequence-view",
+      "conceptIds": [
+        "prediction-output-consequences"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    },
+    {
+      "id": "data-evaluation-observatory",
+      "conceptIds": [
+        "generalization-condition-window",
+        "validation-leakage-partition",
+        "bias-subgroup-annotation-audit"
+      ],
+      "note": "Shared operations may be reused, but each concept keeps its own objective and evidence; not an engine kind."
+    }
+  ]
+}

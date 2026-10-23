@@ -1,5 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict'),harness=require('./town-harness.cjs'),W=require('../dist/task-workshop-engine.js');
+const conceptFixture=require('./concept-game-fixture.cjs');
 const options={exam:true,learning:true,chapters:true,knowledge:true,teaching:true};
 async function exercise(which){
  let h=await harness(new Map(),options);h.run(`close();openTeachingCourse(${JSON.stringify(which)})`);
@@ -14,7 +15,7 @@ async function exercise(which){
    console.log('Checking '+which+' '+sec.id);
    assert.equal(h.run('studySection().id'),sec.id);
    h.run('openTaskWorkshop()');assert.ok(h.get('sealBasket').disabled);
-   for(const lesson of sec.lessons){h.run(`openStudyLesson(${JSON.stringify(lesson.id)})`);assert.equal(h.get('confirmFoundation').disabled,false);h.click('confirmFoundation');}
+   for(const lesson of sec.lessons){h.run(`openStudyLesson(${JSON.stringify(lesson.id)},false,null,true)`);conceptFixture.complete(h,lesson.id);assert.equal(h.get('confirmFoundation').disabled,false);h.click('confirmFoundation');}
    h.run('openTaskWorkshop()');
    for(const r of sec.activity.rounds){
     h.click('workshopSubmit');assert.ok(h.get('workshopFeedback').textContent);assert.equal(h.run('WorkshopEngine.progress(studyState(),studySection()).round'),sec.activity.rounds.indexOf(r));

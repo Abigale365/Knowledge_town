@@ -1,8 +1,9 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),harness=require('./town-harness.cjs');
+const conceptFixture=require('./concept-game-fixture.cjs');
 const options={exam:true,learning:true,chapters:true,knowledge:true,teaching:true};
 test('archived bank survives a sidecar-only update, while the new binding starts empty',async()=>{
- const h=await harness(new Map(),options),old=h.run('state.selected');h.run('close();openStudyLesson(studySection().lessons[0].id)');h.click('confirmFoundation');assert.equal(h.run('studyState().deposited.length'),1);
+ const h=await harness(new Map(),options),old=h.run('state.selected');h.run('close();openStudyLesson(studySection().lessons[0].id,false,null,true)');conceptFixture.complete(h,h.run('studySection().lessons[0].id'));h.click('confirmFoundation');assert.equal(h.run('studyState().deposited.length'),1);
  h.run("TeachingCatalog.legacy.binding='a'.repeat(64)");assert.equal(h.run('!!L.restore(JSON.stringify(state))'),true);
  h.run("openTeachingCourse('legacy')");assert.notEqual(h.run('state.selected'),old);assert.equal(h.run('studyState().deposited.length'),0);
  h.run(`state.selected=${JSON.stringify(old)}`);assert.equal(h.run('studyState().deposited.length'),1);h.run('delete TeachingCatalog.legacy');assert.equal(h.run('!!L.restore(JSON.stringify(state))'),true);

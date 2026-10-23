@@ -1,0 +1,55 @@
+{
+  "source": "packages/learning-design/templates/core-foundations.cjs",
+  "projection": {
+    "id": "repair-mapping",
+    "type": "edit",
+    "prompt": {
+      "zh": "本演练接线：history=过去销量，forecast=模型对明日的估计；模型接收history产生forecast。事件A以现有参数回复新工单；事件B用样本调整参数。错误登记：输入forecast、输出history、A为train、B为infer。用固定代码history/forecast/train/infer修复四槽。",
+      "en": "Exercise wiring: history=past sales and forecast=the model’s estimate for tomorrow; the model receives history and produces forecast. Event A answers a new ticket using existing parameters; event B adjusts parameters using examples. Faulty register: input forecast, output history, A train, B infer. Repair four slots with the exact codes history/forecast/train/infer."
+    },
+    "fields": [
+      {
+        "id": "input",
+        "label": {
+          "zh": "模型输入槽",
+          "en": "Model input slot"
+        },
+        "expected": "history"
+      },
+      {
+        "id": "output",
+        "label": {
+          "zh": "模型输出槽",
+          "en": "Model output slot"
+        },
+        "expected": "forecast"
+      },
+      {
+        "id": "eventA",
+        "label": {
+          "zh": "事件A：参数未更新",
+          "en": "Event A: parameters unchanged"
+        },
+        "expected": "infer"
+      },
+      {
+        "id": "eventB",
+        "label": {
+          "zh": "事件B：样本调整参数",
+          "en": "Event B: examples adjust parameters"
+        },
+        "expected": "train"
+      }
+    ]
+  },
+  "projectionHash": "7b34bf7552ddbea816328fd0a7c5a15f6b184efa0b753738eda24b54229025a2",
+  "originalRoundHash": "0738f5dc42a75337263c30f9c85030c0c2871dea5d11c1501a600d2baa072a6b",
+  "bindingMode": "exact id/type/bilingual prompt/ordered field id+label+expected; skills and reason metadata excluded",
+  "expectedValues": {
+    "input": "history",
+    "output": "forecast",
+    "eventA": "infer",
+    "eventB": "train"
+  },
+  "noActivityOrSaveSignatureChange": true
+}

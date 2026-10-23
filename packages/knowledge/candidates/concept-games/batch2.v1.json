@@ -1,0 +1,1226 @@
+{
+  "schemaVersion": 1,
+  "kind": "authoring-concept-game-content",
+  "candidateRevision": 2,
+  "apiCompatibility": "B v1 binding fields only; not an engine descriptor or registered kind",
+  "authoringOnly": true,
+  "answersExposed": true,
+  "doNotUseAsUnseenAssessment": true,
+  "notEvidenceOfIndependentMastery": true,
+  "integrated": false,
+  "scenarioProvenance": "All policies, figures, outcomes and organizations in cases are authored exercise assumptions, not observed external cases.",
+  "knowledge": {
+    "id": "aib-knowledge-integration",
+    "revision": 3,
+    "hash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80"
+  },
+  "frozenKnowledge": {
+    "id": "aib-knowledge",
+    "revision": 3,
+    "hash": "f28f8ca8e808bb7eb8f135b3a761a2bdd9b86a37e4ce1c47f8f69de5fccb19ce"
+  },
+  "materialHash": "d8d3f37c9a0c3c2aafa2a863db9be589115822421e7a613a7ed3124d29e5508a",
+  "sourceAnalysisHash": "9431ea7d0fac0b495f3ca1e59d754336f94ade1025b5bde48a65fc3b7bc45236",
+  "courseSources": [
+    {
+      "name": "B4-aib",
+      "source": "scripts/teaching-catalog.cjs#catalog().aib.course",
+      "courseId": "course-2iajim",
+      "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4"
+    },
+    {
+      "name": "B4-legacy",
+      "source": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+      "courseId": "course-11fu42t",
+      "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66"
+    },
+    {
+      "name": "B5-aib",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+      "courseId": "course-c5mcdg",
+      "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4"
+    },
+    {
+      "name": "B5-legacy",
+      "source": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+      "courseId": "course-87vtar",
+      "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21"
+    }
+  ],
+  "sources": [
+    {
+      "id": "d2-roiAnalysis",
+      "title": "Create ROI analysis for a proposed AI solution",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-costs-benefits-ai-powered-business-solution/3-create-roi-analysis-proposed-ai-solution-business-process",
+      "excerpt": "ROI % = Net_Benefit / Annual_TCO × 100\nBaseline metrics: task volume, average handle time (AHT), rework/error rate\nModel TCO\nQuality/rework effects",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d2-roiCriteria",
+      "title": "Evaluate ROI criteria for AI-powered solutions",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-costs-benefits-ai-powered-business-solution/2-roi-criteria-ai-powered-business-solution-including-total-cost-ownership",
+      "excerpt": "TCO includes all costs across the AI lifecycle.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-journey",
+      "title": "AWS Prescriptive Guidance — Generative AI adoption journey",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-data-considerations-gen-ai/journey.html",
+      "excerpt": "Make sure that generative AI models can only retrieve information that the user is authorized to access.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-agents-permissions",
+      "title": "AWS — Create a service role for Amazon Bedrock Agents",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-permissions.html",
+      "excerpt": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-bedrock-least-privilege",
+      "title": "AWS Security Blog — Implementing least privilege access for Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/",
+      "excerpt": "Use multiple, dedicated, least privileged roles for each task.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-ms-ground",
+      "title": "Microsoft Learn — Groundedness detection",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness",
+      "excerpt": "A grounded response adheres closely to the given information, avoiding speculation or fabrication.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-policy",
+      "title": "AWS Responsible AI Policy (updated January 13, 2025)",
+      "url": "https://aws.amazon.com/ai/responsible-ai/policy/",
+      "excerpt": "Outputs should be evaluated for accuracy and appropriateness for your use case.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-runbooks",
+      "title": "AWS OPS07-BP03 — Use runbooks to perform procedures",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_ready_to_support_use_runbooks.html",
+      "excerpt": "List the runbook owner and publish it in a central location.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-rollback",
+      "title": "AWS OPS06-BP01 — Plan for unsuccessful changes",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/ops_mit_deploy_risks_plan_for_unsucessful_changes.html",
+      "excerpt": "Require a documented rollback plan to be accessible by all involved.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-aws-failure-management",
+      "title": "AWS Reliability — Failure management",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-failmgmt.html",
+      "excerpt": "Your recovery processes should be as well exercised as your normal production processes.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-aws-gloe",
+      "title": "AWS — Generative AI Lifecycle Operational Excellence framework",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/introduction.html",
+      "excerpt": "Monitor and maintain generative AI applications in production.",
+      "verifiedAt": "2026-10-20"
+    },
+    {
+      "id": "d34-review-nist-rmf-core",
+      "title": "NIST AI RMF 1.0 — Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "excerpt": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions.",
+      "verifiedAt": "2026-10-20"
+    }
+  ],
+  "items": [
+    {
+      "id": "roi-evidence-ledger",
+      "chapter": 2,
+      "unitIds": [
+        "2.2.3-unit-1"
+      ],
+      "title": {
+        "zh": "同口径收益账本",
+        "en": "Comparable-benefit ledger"
+      },
+      "objective": {
+        "zh": "只计同期间可实现且不重复的收益与完整成本，并计算简单ROI。",
+        "en": "Count realizable, nonduplicated benefits and full costs for the same period, then calculate simple ROI."
+      },
+      "operation": {
+        "zh": "逐条纳入或暂缓账目，展示净收益与分母，再解释为何不能把释放工时直接当现金。",
+        "en": "Include or defer ledger entries, expose net benefit and its denominator, then explain why released capacity is not automatically cash."
+      },
+      "teaching": {
+        "zh": "本演练所有金额为同一月人民币；成本均已明确归属本月。只有已核验现金收益计入本题现金ROI，产能等价价值另列；同一收益不得重复登记。",
+        "en": "All exercise amounts are CNY for one month; costs have explicitly been assigned to that month. Only verified cash benefits enter this cash ROI; capacity equivalents are listed separately, and the same benefit cannot be counted twice."
+      },
+      "config": {
+        "period": "one-month",
+        "currency": "CNY",
+        "costs": [
+          {
+            "id": "software",
+            "amount": 1000,
+            "label": {
+              "zh": "软件",
+              "en": "Software"
+            }
+          },
+          {
+            "id": "compute",
+            "amount": 2000,
+            "label": {
+              "zh": "调用与计算",
+              "en": "Calls and compute"
+            }
+          },
+          {
+            "id": "review",
+            "amount": 2000,
+            "label": {
+              "zh": "人工复核",
+              "en": "Human review"
+            }
+          },
+          {
+            "id": "training",
+            "amount": 1000,
+            "label": {
+              "zh": "本月培训",
+              "en": "Training this month"
+            }
+          },
+          {
+            "id": "monitoring",
+            "amount": 1000,
+            "label": {
+              "zh": "监测维护",
+              "en": "Monitoring and maintenance"
+            }
+          },
+          {
+            "id": "migration",
+            "amount": 1000,
+            "label": {
+              "zh": "本月迁移分摊",
+              "en": "Migration allocated to this month"
+            }
+          }
+        ],
+        "benefits": [
+          {
+            "id": "realized-cash",
+            "amount": 10000,
+            "include": true,
+            "label": {
+              "zh": "已核验并实现的现金节支",
+              "en": "Verified realized cash saving"
+            }
+          },
+          {
+            "id": "released-capacity",
+            "amount": 2000,
+            "include": false,
+            "label": {
+              "zh": "释放工时的估算价值，未兑现为现金",
+              "en": "Estimated value of released hours, not realized as cash"
+            }
+          },
+          {
+            "id": "duplicate-cash",
+            "amount": 10000,
+            "include": false,
+            "duplicateOf": "realized-cash",
+            "label": {
+              "zh": "同笔节支在另一报表重复登记",
+              "en": "The same saving repeated in another report"
+            }
+          }
+        ],
+        "expected": {
+          "cost": 8000,
+          "cashBenefit": 10000,
+          "netBenefit": 2000,
+          "roi": 0.25
+        }
+      },
+      "example": {
+        "zh": "本题净收益2000元，除以完整成本8000元，简单现金ROI为25%。",
+        "en": "Net benefit is CNY 2,000 divided by full cost of CNY 8,000: simple cash ROI is 25%."
+      },
+      "counterexample": {
+        "zh": "删去人工复核成本，或把同笔节支与未兑现工时一起加总，会夸大本题现金ROI。",
+        "en": "Removing review costs or adding duplicate savings and unrealized hours overstates this cash ROI."
+      },
+      "boundary": {
+        "zh": "产能与无形收益可以另行评价，不是没有价值；本题不把所有未来支出塞进单月，也不把简单ROI当折现投资评价或因果证明。",
+        "en": "Capacity and intangible benefits may be evaluated separately; they are not worthless. This exercise neither charges every future cost to one month nor treats simple ROI as discounted investment analysis or causal proof."
+      },
+      "sourceIds": [
+        "d2-roiAnalysis",
+        "d2-roiCriteria"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "2.2.3-unit-1",
+          "unitHash": "9627345993db68a1c59018fd982af08d72bec21b1eae116b5f9483efe4d423ff",
+          "title": {
+            "zh": "ROI公式与核算边界",
+            "en": "ROI formula and accounting boundaries"
+          },
+          "explanation": {
+            "zh": "简单ROI等于同期收益减同期完整成本，再除以同期完整成本。明确期间、单位、收益实现条件和成本范围，才能比较不同方案。",
+            "en": "Simple ROI equals benefits for a period minus full costs for that period, divided by those full costs. Specify the period, units, conditions for realizing benefits, and cost scope before comparing solutions."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:9768-9806",
+              "quote": "ROI % = Net_Benefit / Annual_TCO × 100"
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:9463-9510",
+              "quote": "TCO includes all costs across the AI lifecycle."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "2.6-lesson-1",
+          "sourceUnitId": "2.2.3-unit-1",
+          "lessonHash": "9f72843dfce4bea00b8dbf1b009579c52bc999677397ba3aeb502150965f47b2",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "2.6",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "2.2-lesson-9",
+          "sourceUnitId": "2.2.3-unit-1",
+          "lessonHash": "74e608439921c57685fb849cfa8a397aca822b4cde6a7ac3b0fe54f216415f5c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "2.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "2.6-lesson-1",
+          "sourceUnitId": "2.2.3-unit-1",
+          "lessonHash": "9f72843dfce4bea00b8dbf1b009579c52bc999677397ba3aeb502150965f47b2",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "2.6",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "2.2-lesson-9",
+          "sourceUnitId": "2.2.3-unit-1",
+          "lessonHash": "74e608439921c57685fb849cfa8a397aca822b4cde6a7ac3b0fe54f216415f5c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "2.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "volume-cost-simulator",
+      "chapter": 2,
+      "unitIds": [
+        "2.2.5-unit-1"
+      ],
+      "title": {
+        "zh": "业务量与成本试算器",
+        "en": "Volume and cost simulator"
+      },
+      "objective": {
+        "zh": "同时观察总成本和单位成本，保留复核、培训、监测及退出项目。",
+        "en": "Observe total and unit cost together while retaining review, training, monitoring, and exit categories."
+      },
+      "operation": {
+        "zh": "改变演练业务量，逐项展开固定和随量变化的成本；比较总额与单价，不做单一采购价排序。",
+        "en": "Change exercise volume and expand fixed and volume-dependent costs; compare totals and unit cost rather than rank purchase price alone."
+      },
+      "teaching": {
+        "zh": "所有数值为单月同口径演练假设，固定支出已分配到本月。每请求计算费0.2元、复核0.01小时，复核每小时40元；本题假定这些单价和复核比例在给定范围不变。",
+        "en": "All values are comparable one-month exercise assumptions, with fixed charges allocated to this month. Compute is CNY 0.2 per request; review takes 0.01 hours per request at CNY 40 per hour. These rates are assumed constant only over the stated range."
+      },
+      "config": {
+        "currency": "CNY",
+        "period": "one-month",
+        "fixedCosts": [
+          {
+            "id": "integration",
+            "amount": 1000,
+            "label": {
+              "zh": "集成分摊",
+              "en": "Allocated integration"
+            }
+          },
+          {
+            "id": "training",
+            "amount": 500,
+            "label": {
+              "zh": "培训",
+              "en": "Training"
+            }
+          },
+          {
+            "id": "monitor",
+            "amount": 500,
+            "label": {
+              "zh": "监测",
+              "en": "Monitoring"
+            }
+          },
+          {
+            "id": "exit",
+            "amount": 200,
+            "label": {
+              "zh": "本月退出迁移分摊",
+              "en": "Exit migration allocated this month"
+            }
+          }
+        ],
+        "computePerRequest": 0.2,
+        "reviewHoursPerRequest": 0.01,
+        "reviewHourlyRate": 40,
+        "trials": [
+          {
+            "volume": 1000,
+            "total": 2800,
+            "unitCost": 2.8
+          },
+          {
+            "volume": 5000,
+            "total": 5200,
+            "unitCost": 1.04
+          }
+        ]
+      },
+      "example": {
+        "zh": "请求从1000增至5000，总成本从2800增至5200，单位成本从2.8降至1.04；总额与单价方向可不同。",
+        "en": "From 1,000 to 5,000 requests, total cost rises from 2,800 to 5,200 while unit cost falls from 2.8 to 1.04; totals and unit rates can move in different directions."
+      },
+      "counterexample": {
+        "zh": "只把0.2元调用费叫完整单位成本，漏掉复核和固定项目。",
+        "en": "Calling the CNY 0.2 call fee the full unit cost omits review and fixed categories."
+      },
+      "boundary": {
+        "zh": "不能据线性试算保证任何规模都保持单价或复核容量；未给收益时不能据单位成本下降宣布盈利。",
+        "en": "Linear arithmetic does not guarantee rates or review capacity at every scale. Falling unit cost without benefit evidence does not establish profitability."
+      },
+      "sourceIds": [
+        "d2-roiCriteria",
+        "d2-roiAnalysis"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "2.2.5-unit-1",
+          "unitHash": "801bfc250561abe5629bbf9f4731fbea722d0151a9a5cf999a695d643d70d7ad",
+          "title": {
+            "zh": "全生命周期成本",
+            "en": "Lifecycle cost"
+          },
+          "explanation": {
+            "zh": "预算包括数据整理、集成、部署、调用或计算、培训、人工复核、监测、维护和退出迁移。按业务量变化分析单位成本和总成本。",
+            "en": "Include data preparation, integration, deployment, calls or compute, training, human review, monitoring, maintenance, and exit migration in the budget. Analyze unit and total costs as business volume changes."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:9463-9510",
+              "quote": "TCO includes all costs across the AI lifecycle."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:9883-9892",
+              "quote": "Model TCO"
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:9893-9915",
+              "quote": "Quality/rework effects"
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "2.4-lesson-2",
+          "sourceUnitId": "2.2.5-unit-1",
+          "lessonHash": "103c8a80ca7a6fadd937d458d1b8d7ecad6f40c595f800a03d4091d1517fd463",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "2.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "2.2-lesson-12",
+          "sourceUnitId": "2.2.5-unit-1",
+          "lessonHash": "14c15994f1de1985d01baf248ffae249dc28e8b81a0bbde752af9953ef30865b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "2.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "2.4-lesson-2",
+          "sourceUnitId": "2.2.5-unit-1",
+          "lessonHash": "103c8a80ca7a6fadd937d458d1b8d7ecad6f40c595f800a03d4091d1517fd463",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "2.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "2.2-lesson-12",
+          "sourceUnitId": "2.2.5-unit-1",
+          "lessonHash": "14c15994f1de1985d01baf248ffae249dc28e8b81a0bbde752af9953ef30865b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "2.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "permission-before-retrieval",
+      "chapter": 3,
+      "unitIds": [
+        "3.2.3-unit-1"
+      ],
+      "title": {
+        "zh": "检索前权限闸门",
+        "en": "Pre-retrieval permission gate"
+      },
+      "objective": {
+        "zh": "在取回资料或执行工具之前检查身份、用途与明确授权，拒绝先取回再遮盖。",
+        "en": "Check identity, purpose, and explicit authorization before retrieving data or executing tools; reject retrieval followed only by masking."
+      },
+      "operation": {
+        "zh": "先配置最小资源授权，再尝试请求并查看访问日志；只修订越权路径，保留已获准的政策读取。",
+        "en": "Configure minimum resource grants before submitting requests, then inspect access logs; correct unauthorized routes while retaining permitted policy access."
+      },
+      "teaching": {
+        "zh": "题设客服身份已核验；其工作用途允许读取客服政策，不允许读取人事档案或批准退款。能看政策不等于有业务批准权限。",
+        "en": "The exercise verifies the support agent’s identity. The stated purpose permits support-policy access, but not personnel files or refund approval. Reading a policy does not confer business approval authority."
+      },
+      "config": {
+        "identity": "support-agent",
+        "purpose": "support-policy-answer",
+        "resources": [
+          {
+            "id": "support-policy",
+            "allowed": true,
+            "label": {
+              "zh": "客服政策",
+              "en": "Support policy"
+            }
+          },
+          {
+            "id": "personnel-file",
+            "allowed": false,
+            "label": {
+              "zh": "人事档案",
+              "en": "Personnel file"
+            }
+          },
+          {
+            "id": "refund-approval-tool",
+            "allowed": false,
+            "label": {
+              "zh": "退款批准工具",
+              "en": "Refund approval tool"
+            }
+          }
+        ],
+        "requests": [
+          {
+            "id": "policy-answer",
+            "resource": "support-policy",
+            "expected": "retrieve_authorized"
+          },
+          {
+            "id": "payroll-shortcut",
+            "resource": "personnel-file",
+            "expected": "deny_before_retrieval"
+          },
+          {
+            "id": "approve-refund",
+            "resource": "refund-approval-tool",
+            "expected": "refer_authorized_approver"
+          }
+        ],
+        "forbiddenPath": "retrieve_then_mask"
+      },
+      "example": {
+        "zh": "政策请求通过；人事请求在检索前拒绝，不在日志中保存被禁止的人事正文。",
+        "en": "Allow the policy request; deny the personnel request before retrieval, without logging the prohibited personnel contents."
+      },
+      "counterexample": {
+        "zh": "先读人事文件再让模型隐藏姓名，已经越过了本题授权边界。",
+        "en": "Reading a personnel file first and then asking the model to hide names has already crossed the stated authorization boundary."
+      },
+      "boundary": {
+        "zh": "此授权表为演练政策，不替代真实身份系统、用途/隐私审查或工具执行授权；无法确认授权时请求确认，不猜测放行。",
+        "en": "This exercise grant table does not replace real identity systems, purpose/privacy checks, or execution authorization. When authorization is unconfirmed, request confirmation rather than guess permission."
+      },
+      "sourceIds": [
+        "d34-review-aws-journey",
+        "d34-aws-agents-permissions",
+        "d34-aws-bedrock-least-privilege"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "3.2.3-unit-1",
+          "unitHash": "963dae1edab777884f88e1c70c395290fe609bdc9920cd04d99091e7938c67e4",
+          "title": {
+            "zh": "最小权限与检索前过滤",
+            "en": "Least privilege and pre-retrieval filtering"
+          },
+          "explanation": {
+            "zh": "只授予工作所需的数据与工具权限，在检索或执行前验证身份和授权。输出后再遮盖，不能代替阻止越权检索。",
+            "en": "Grant only the data and tool permissions needed for the work, and verify identity and authorization before retrieval or execution. Masking an output afterward cannot replace preventing unauthorized retrieval."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:13365-13469",
+              "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:15684-15771",
+              "quote": "Resource-based policy to allow Amazon Bedrock to invoke an action group Lambda function"
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:15432-15494",
+              "quote": "Use multiple, dedicated, least privileged roles for each task."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "3.5-lesson-1",
+          "sourceUnitId": "3.2.3-unit-1",
+          "lessonHash": "3ea257ee56e9910f8531f251f64dda68fd7326539c6b34407a79805cf04cd5a0",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "3.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "3.2-lesson-7",
+          "sourceUnitId": "3.2.3-unit-1",
+          "lessonHash": "761fac63c0f31505886e6374b4b09f3d4e162cff22d8c090506d803d511b444d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "3.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "3.5-lesson-1",
+          "sourceUnitId": "3.2.3-unit-1",
+          "lessonHash": "3ea257ee56e9910f8531f251f64dda68fd7326539c6b34407a79805cf04cd5a0",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "3.5",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "3.2-lesson-7",
+          "sourceUnitId": "3.2.3-unit-1",
+          "lessonHash": "761fac63c0f31505886e6374b4b09f3d4e162cff22d8c090506d803d511b444d",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "3.2",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "claim-version-evidence",
+      "chapter": 3,
+      "unitIds": [
+        "3.3.4-unit-1"
+      ],
+      "title": {
+        "zh": "结论与版本核验镜",
+        "en": "Claim and version inspector"
+      },
+      "objective": {
+        "zh": "逐项核对结论是否被当前、相关资料支持，保留未知条件并请求复核。",
+        "en": "Check each claim against current relevant material, preserve unknown conditions, and request review."
+      },
+      "operation": {
+        "zh": "切换资料版本、定位支持的条件片段，再保留或收窄结论；不是仅凭“有引用”盖章。",
+        "en": "Switch document versions, locate supporting conditions, and retain or narrow a claim; a citation alone is not a stamp of correctness."
+      },
+      "teaching": {
+        "zh": "以下退款政策是虚构演练，不是任何商家的真实承诺。系统明确v2已生效，v1失效；题设只准使用v2回答。",
+        "en": "The following refund policy is fictional exercise material, not a real merchant commitment. The system explicitly marks v2 active and v1 retired; only v2 may be used here."
+      },
+      "config": {
+        "activeVersion": "v2",
+        "documents": [
+          {
+            "id": "v1",
+            "active": false,
+            "text": {
+              "zh": "旧例：可在14天内提出申请。",
+              "en": "Old illustration: requests may be submitted within 14 days."
+            }
+          },
+          {
+            "id": "v2",
+            "active": true,
+            "text": {
+              "zh": "本演练现行规则：未拆封商品可在收货7天内提出退款申请；批准与否另需审核。",
+              "en": "Current exercise rule: an unopened item may be submitted for refund review within 7 days of receipt; approval requires separate review."
+            }
+          }
+        ],
+        "claims": [
+          {
+            "id": "supported-conditional",
+            "text": {
+              "zh": "未拆封商品可在收货7天内提出申请。",
+              "en": "An unopened item may be submitted within 7 days of receipt."
+            },
+            "expected": "supported_by_v2"
+          },
+          {
+            "id": "universal-approval",
+            "text": {
+              "zh": "所有商品7天内一定获批退款。",
+              "en": "Every item is guaranteed refund approval within 7 days."
+            },
+            "expected": "unsupported_overreach"
+          },
+          {
+            "id": "old-window",
+            "text": {
+              "zh": "当前仍适用14天申请期限。",
+              "en": "The 14-day submission window still applies."
+            },
+            "expected": "retired_version"
+          },
+          {
+            "id": "damaged-case",
+            "text": {
+              "zh": "已拆封且损坏的商品一定能退款。",
+              "en": "An opened, damaged item is guaranteed a refund."
+            },
+            "expected": "insufficient_evidence_review"
+          }
+        ]
+      },
+      "example": {
+        "zh": "保留“未拆封、7天内、提出申请”，不把申请自动改成批准。",
+        "en": "Preserve unopened, within 7 days, and submission; do not turn submission into approval."
+      },
+      "counterexample": {
+        "zh": "附上旧v1链接，也不能证明当前14天结论；引用存在不等于支持结论。",
+        "en": "Linking retired v1 does not support a current 14-day claim; citation existence is not claim support."
+      },
+      "boundary": {
+        "zh": "缺材料不等于证明现实政策禁止退款；版本、条件与批准权限均须单独核对，引用匹配也不保证来源本身真实。",
+        "en": "Missing material does not prove a real policy forbids refunds. Check version, conditions, and approval authority separately; matching a citation does not guarantee the source itself is true."
+      },
+      "sourceIds": [
+        "d34-review-ms-ground",
+        "d34-review-aws-policy"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "3.3.4-unit-1",
+          "unitHash": "1d20887f6cb620c8d42fb8037259ae953864f973d7001e3137ac2eefd4bd3cab",
+          "title": {
+            "zh": "证据支持与不确定性",
+            "en": "Evidence support and uncertainty"
+          },
+          "explanation": {
+            "zh": "幻觉是看似可信却错误或无依据的内容。核对资料相关性、引用支持和版本，对重要未知保留不确定性并升级复核。",
+            "en": "Hallucinations are plausible but incorrect or unsupported content. Check the relevance, citation support, and version of source material; preserve uncertainty about important unknowns and escalate for review."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:14281-14379",
+              "quote": "A grounded response adheres closely to the given information, avoiding speculation or fabrication."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:15120-15199",
+              "quote": "Outputs should be evaluated for accuracy and appropriateness for your use case."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "3.7-lesson-2",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "6937962d971ff83ee61f966ac07da8a92d9b1785aa6822212765d69682e4212a",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "3.7",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "4.7-lesson-4",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "9aaa03e31b4159ae83a4790006e0c10b2568ca5c475b1c7989e5dc085c6df998",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "4.7",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "3.3-lesson-8",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "07d322fea6d3ea6cd21c77d480f3cd830f52be8289f93aacd8a15e11c5af558b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "3.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "3.7-lesson-2",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "6937962d971ff83ee61f966ac07da8a92d9b1785aa6822212765d69682e4212a",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "3.7",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "4.7-lesson-4",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "9aaa03e31b4159ae83a4790006e0c10b2568ca5c475b1c7989e5dc085c6df998",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "4.7",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "3.3-lesson-8",
+          "sourceUnitId": "3.3.4-unit-1",
+          "lessonHash": "07d322fea6d3ea6cd21c77d480f3cd830f52be8289f93aacd8a15e11c5af558b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "3.3",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "operational-handover-rehearsal",
+      "chapter": 4,
+      "unitIds": [
+        "4.4.5-unit-1"
+      ],
+      "title": {
+        "zh": "交接演练控制台",
+        "en": "Handover rehearsal console"
+      },
+      "objective": {
+        "zh": "用负责人、运行步骤、告警接手和回退演练证据判断指定发布条件是否齐备。",
+        "en": "Use ownership, runbook steps, alert handover, and rollback-rehearsal evidence to assess the stated release conditions."
+      },
+      "operation": {
+        "zh": "触发一次虚构检索故障，跟踪告警交给谁，核对运行手册和恢复记录，再决定仅此发布批次的暂停或受控继续。",
+        "en": "Trigger a fictional retrieval fault, trace alert ownership, inspect the runbook and recovery record, then pause or continue only this release batch under the stated controls."
+      },
+      "teaching": {
+        "zh": "题设发布清单要求明确接手者、可用运行手册与已验证回退。模型文件和可打开的演示页面只证明部分交付，不等于清单已通过。",
+        "en": "The exercise release checklist requires an identified responder, usable runbook, and verified rollback. Model files and an accessible demo establish only partial delivery, not checklist completion."
+      },
+      "config": {
+        "releaseScope": "this-release-batch",
+        "requirements": [
+          {
+            "id": "owner",
+            "initial": "missing",
+            "requiredEvidence": {
+              "zh": "值守负责人已接受接手并可联络",
+              "en": "On-call owner has accepted handover and is reachable"
+            }
+          },
+          {
+            "id": "runbook",
+            "initial": "present",
+            "requiredEvidence": {
+              "zh": "运行手册对应当前版本，列故障升级步骤",
+              "en": "Runbook matches the current version and lists escalation steps"
+            }
+          },
+          {
+            "id": "alert-route",
+            "initial": "unverified",
+            "requiredEvidence": {
+              "zh": "测试告警实际到达指定接手者",
+              "en": "A test alert actually reaches the designated responder"
+            }
+          },
+          {
+            "id": "rollback",
+            "initial": "untested",
+            "requiredEvidence": {
+              "zh": "回退至已知版本并核对恢复结果的演练记录",
+              "en": "Rehearsal record of rollback to a known version and recovery checks"
+            }
+          }
+        ],
+        "initialDecision": "pause_this_release",
+        "afterVerifiedDecision": "eligible_for_stated_checklist_only"
+      },
+      "example": {
+        "zh": "先明确接手责任并试发告警，再执行回退演练、验证恢复结果，补齐此清单证据。",
+        "en": "Assign accepted ownership, send a test alert, rehearse rollback, and verify recovery to complete this checklist’s evidence."
+      },
+      "counterexample": {
+        "zh": "上传模型文件或只勾“已回退”但没有执行/验证记录，不证明交接可运行。",
+        "en": "Uploading model files or checking “rolled back” without execution and validation records does not establish operational handover."
+      },
+      "boundary": {
+        "zh": "通过本清单不证明全部生产就绪或法律合规；权限、安全、容量和业务验证仍需相应证据。应按组织预案处置真实事件，不从演练推出所有事故固定顺序。",
+        "en": "Passing this checklist proves neither complete production readiness nor legal compliance. Permissions, security, capacity, and business validation need their own evidence. Real incidents follow organizational response plans, not a universal sequence inferred from this rehearsal."
+      },
+      "sourceIds": [
+        "d34-aws-runbooks",
+        "d34-aws-rollback",
+        "d34-aws-failure-management",
+        "d34-review-aws-gloe"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "4.4.5-unit-1",
+          "unitHash": "381e84165aa8cff4c4c77712ec14b9f5ac2677a70d9a7c7a7585f0b23b46115f",
+          "title": {
+            "en": "On-call coverage, alerts, rollback, and change",
+            "zh": "值守、告警、回退与变更"
+          },
+          "explanation": {
+            "zh": "生产交接要明确负责人、运行手册、监测、故障接手、回退、版本变更与持续资料维护。模型文件交付只是其中一部分。",
+            "en": "Production handover must specify owners, runbooks, monitoring, incident handover, rollback, version changes, and ongoing maintenance of source material. Delivery of model files is only one part."
+          },
+          "evidence": [
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:14036-14098",
+              "quote": "Monitor and maintain generative AI applications in production."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:12431-12537",
+              "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:15992-16052",
+              "quote": "List the runbook owner and publish it in a central location."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:16820-16888",
+              "quote": "Require a documented rollback plan to be accessible by all involved."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:16520-16608",
+              "quote": "Your recovery processes should be as well exercised as your normal production processes."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "4.11-lesson-2",
+          "sourceUnitId": "4.4.5-unit-1",
+          "lessonHash": "f1af3dd8792ed87c77ecf0efd38816f2c3bce0da13f886feb6172217e467deb7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "4.11",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "4.4-lesson-11",
+          "sourceUnitId": "4.4.5-unit-1",
+          "lessonHash": "7391224466919dfd91bf1c14230c369233e4296dc778fe993e8142b48d2e59a2",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "4.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "4.11-lesson-2",
+          "sourceUnitId": "4.4.5-unit-1",
+          "lessonHash": "f1af3dd8792ed87c77ecf0efd38816f2c3bce0da13f886feb6172217e467deb7",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "4.11",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "4.4-lesson-11",
+          "sourceUnitId": "4.4.5-unit-1",
+          "lessonHash": "7391224466919dfd91bf1c14230c369233e4296dc778fe993e8142b48d2e59a2",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "4.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    },
+    {
+      "id": "pilot-transfer-investigation",
+      "chapter": 4,
+      "unitIds": [
+        "4.4.2-unit-1"
+      ],
+      "title": {
+        "zh": "试点迁移调查台",
+        "en": "Pilot transfer investigation"
+      },
+      "objective": {
+        "zh": "找出新部门与试点的数据、支持和负载差异，限定迁移结论并保留暂停点。",
+        "en": "Identify data, support, and load differences between pilot and new department, limit transfer claims, and preserve pause points."
+      },
+      "operation": {
+        "zh": "逐项对照两个部门的证据，选择应补的验证和受影响范围，再用新证据更新迁移结论。",
+        "en": "Compare evidence across two departments, select needed validation and affected scope, then revise the transfer conclusion when new evidence arrives."
+      },
+      "teaching": {
+        "zh": "志愿者试点已在其给定资料与支持条件下通过检查。新部门配置相同，但资料未覆盖当地流程、接手人员未训练、负载尚未验证。以下人数和请求量不是实际试验记录，本题不靠任意数值阈值决定推广。",
+        "en": "The volunteer pilot passed checks under its stated material and support conditions. The new department has the same configuration, but its local procedures are absent, responders are untrained, and load is unvalidated. Any people or request figures would be exercise assumptions, not observed study results; rollout is not decided by an arbitrary numeric threshold here."
+      },
+      "config": {
+        "differences": [
+          {
+            "id": "local-material",
+            "pilot": "covered",
+            "newDepartment": "missing",
+            "requiredAction": "obtain_authorized_local_material_and_validate"
+          },
+          {
+            "id": "support-training",
+            "pilot": "rehearsed",
+            "newDepartment": "not_rehearsed",
+            "requiredAction": "train_and_rehearse_local_handover"
+          },
+          {
+            "id": "load",
+            "pilot": "validated_for_pilot",
+            "newDepartment": "unvalidated",
+            "requiredAction": "test_representative_new_load"
+          }
+        ],
+        "initialDecision": "pause_new_department_scope",
+        "retainedConclusion": "pilot_results_remain_limited_to_tested_conditions",
+        "newEvidenceRule": "reassess_only_the_verified_conditions"
+      },
+      "example": {
+        "zh": "保留已验证试点记录，先暂停新部门范围并补本地资料、接手演练和负载验证。",
+        "en": "Retain the verified pilot record while pausing the new department scope and obtaining local material, handover rehearsal, and load validation."
+      },
+      "counterexample": {
+        "zh": "复制配置就宣布全企业有效，或因新部门缺资料就宣告所有试点结论全错，都超出证据。",
+        "en": "Declaring enterprise-wide success from copied configuration, or declaring all pilot findings false because the new department lacks material, both exceed the evidence."
+      },
+      "boundary": {
+        "zh": "这是题设下的受控推广判断，不是每次推广都必须同一流程；无新证据不自动升级结论，一项修好不代表其他条件也已验证。",
+        "en": "This is a controlled-rollout judgment under the stated facts, not a mandatory workflow for every rollout. Conclusions do not upgrade without evidence, and fixing one condition does not validate the others."
+      },
+      "sourceIds": [
+        "d34-review-aws-journey",
+        "d34-review-nist-rmf-core"
+      ],
+      "sourceUnits": [
+        {
+          "unitId": "4.4.2-unit-1",
+          "unitHash": "67e768ffa73225f7d781bb362fab42edb9aa5d40b9c471252059b0c1974d6254",
+          "title": {
+            "zh": "试点代表性与迁移条件",
+            "en": "Pilot representativeness and transfer conditions"
+          },
+          "explanation": {
+            "zh": "试点结果受参与者、数据和支持条件影响。扩展前检查新部门任务差异、资源、成本与用户能力，分批验证并保留暂停点。",
+            "en": "Pilot results depend on participants, data, and support conditions. Before expansion, examine differences in new departments' tasks, resources, costs, and user capabilities; validate in batches and retain pause points."
+          },
+          "evidence": [
+            {
+              "materialId": "integration-evidence-v3",
+              "locator": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+              "quote": "Limitations of the generalizability beyond the conditions under which the technology was developed are documented."
+            },
+            {
+              "materialId": "integration-evidence-v3",
+              "locator": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+              "quote": "AI system performance or assurance criteria are measured qualitatively or quantitatively and demonstrated for conditions similar to deployment setting(s)."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:13365-13469",
+              "quote": "Make sure that generative AI models can only retrieve information that the user is authorized to access."
+            },
+            {
+              "materialId": "reviewed-primary-sources-r3",
+              "locator": "UTF16:12431-12537",
+              "quote": "Risk management should be continuous, timely, and performed throughout the AI system lifecycle dimensions."
+            }
+          ]
+        }
+      ],
+      "bindings": [
+        {
+          "courseId": "course-2iajim",
+          "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+          "lessonId": "4.10-lesson-3",
+          "sourceUnitId": "4.4.2-unit-1",
+          "lessonHash": "cc0cb0b6838adca4bf11fd2266c9f31b2621d3dab38e38d69d08b47150cacf7c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().aib.course",
+          "catalogName": "B4-aib",
+          "sectionId": "4.10",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-11fu42t",
+          "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+          "lessonId": "4.4-lesson-8",
+          "sourceUnitId": "4.4.2-unit-1",
+          "lessonHash": "c2a0053d78bfd3ea5e158970eec5776e09a20b757a9794849d99855bcf9f4d0b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog.cjs#catalog().legacy.course",
+          "catalogName": "B4-legacy",
+          "sectionId": "4.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 4
+        },
+        {
+          "courseId": "course-c5mcdg",
+          "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+          "lessonId": "4.10-lesson-3",
+          "sourceUnitId": "4.4.2-unit-1",
+          "lessonHash": "cc0cb0b6838adca4bf11fd2266c9f31b2621d3dab38e38d69d08b47150cacf7c",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().aib.course",
+          "catalogName": "B5-aib",
+          "sectionId": "4.10",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        },
+        {
+          "courseId": "course-87vtar",
+          "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+          "lessonId": "4.4-lesson-8",
+          "sourceUnitId": "4.4.2-unit-1",
+          "lessonHash": "c2a0053d78bfd3ea5e158970eec5776e09a20b757a9794849d99855bcf9f4d0b",
+          "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+          "catalogSource": "scripts/teaching-catalog-v5.cjs#catalog().legacy.course",
+          "catalogName": "B5-legacy",
+          "sectionId": "4.4",
+          "knowledgeRevision": 3,
+          "teachingRevision": 5
+        }
+      ]
+    }
+  ]
+}

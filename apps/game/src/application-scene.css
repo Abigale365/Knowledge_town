@@ -1,0 +1,15 @@
+/* Own overlay only. Other scenery, objects, station controls and animations retain their layers. */
+.application-scene{position:absolute;inset:0;pointer-events:none;z-index:30}
+.application-prop{position:absolute;transform:translate(-50%,-50%);width:84px;height:84px;display:grid;place-items:center;padding:0;border:1px solid transparent;background:none;border-radius:18px;pointer-events:auto;touch-action:manipulation}
+.application-prop:hover,.application-prop:focus-visible{background:#fff4c52e;border-color:#c6a95a}
+.application-prop .exploration-art,.application-prop .prop-art{width:43px;height:43px}
+.application-prop.application-workshop .exploration-art,.application-prop.application-workshop .prop-art{width:54px;height:54px}
+.application-prop.application-inspection>svg{width:52px;height:52px;filter:drop-shadow(0 3px 2px #29453833)}
+.application-prop>.application-role-label{position:absolute;top:80%;left:50%;transform:translateX(-50%);width:max-content;max-width:108px;max-height:30px;overflow:hidden;font-size:10px;line-height:1.2;white-space:pre-line;background:#fff7dded;border-radius:6px;padding:2px 5px;pointer-events:none;color:#385748}
+.application-stage-marker{position:absolute;right:-4px;top:-3px;max-width:96px;max-height:29px;overflow:hidden;padding:2px 5px;border:1px solid #acb88b;border-radius:7px;background:#edf3d6;color:#36513b;font-size:10px;line-height:1.15;white-space:pre-line;pointer-events:none}
+[data-application-stage="result"] .application-stage-marker{background:#f6e6b3;border-color:#c7a45b;color:#624e25}
+[data-application-stage="complete"] .application-stage-marker{background:#dae9df;border-color:#8fae99}
+.application-inspection p{line-height:1.7;overflow-wrap:anywhere}
+.application-inspection p,.application-inspection h2,.application-inspection button{white-space:pre-line}
+@media(max-width:650px){.application-prop>.application-role-label{max-width:96px}.application-stage-marker{max-width:90px}}
+@media(prefers-reduced-motion:reduce){.application-prop{transition:none}}
